@@ -1,0 +1,19 @@
+$sizes: (
+  8: 8px,
+  9: 9px,
+  10: 10px,
+  11: 11px,
+  12: 12px,
+  13: 13px,
+  14: 14px,
+  15: 15px,
+  18: 18px,
+  19: 19px,
+  20: 20px,
+  30: 30px,
+);
+@each $element, $size in $sizes {
+  .fs-#{$element} {
+    font-size: $size;
+  }
+}

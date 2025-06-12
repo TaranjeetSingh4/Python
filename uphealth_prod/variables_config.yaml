@@ -1,0 +1,1984 @@
+variables:
+  # connection_str: $MYSQL_CONNECTOR://$MYSQL_USER:$MYSQL_PASSWORD@$MYSQL_HOST/$UP_DB
+  connection_str_sqlite: sqlite:///$YAMLPATH/data/sms.db
+  data-map:
+    overall:
+      year: "district_year_data"
+      quarter: "district_quarter_data"
+      month: "district_data"
+      date: "district_data"
+    division:
+      year: "district_year_data"
+      quarter: "district_quarter_data"
+      month: "district_data"
+      date: "district_data"
+    district:
+      year: "district_year_data"
+      quarter: "district_quarter_data"
+      month: "district_data"
+      date: "district_data"
+    block:
+      year: "block_year_data"
+      quarter: "block_quarter_data"
+      month: "block_data"
+      date: "block_data"
+
+  data-map-area:
+    overall:
+      year: "district_year_data_area"
+      quarter: "district_quarter_data_area"
+      month: "district_data_area"
+      date: "district_data_area"
+    division:
+      year: "district_year_data_area"
+      quarter: "district_quarter_data_area"
+      month: "district_data_area"
+      date: "district_data_area"
+    district:
+      year: "district_year_data_area"
+      quarter: "district_quarter_data_area"
+      month: "district_data_area"
+      date: "district_data_area"
+    block:
+      year: "block_year_data_area"
+      quarter: "block_quarter_data_area"
+      month: "block_data_area"
+      date: "block_data_area"
+
+  data-map-compare:
+    overall:
+      year: "district_year_data_compare"
+      quarter: "district_quarter_data_compare"
+      month: "district_data_compare"
+      date: "district_data_compare"
+    division:
+      year: "district_year_data_compare"
+      quarter: "district_quarter_data_compare"
+      month: "district_data_compare"
+      date: "district_data_compare"
+    district:
+      year: "district_year_data_compare"
+      quarter: "district_quarter_data_compare"
+      month: "district_data_compare"
+      date: "district_data_compare"
+    block:
+      year: "block_year_data_compare"
+      quarter: "block_quarter_data_compare"
+      month: "block_data_compare"
+      date: "block_data_compare"
+
+  download-map:
+    division:
+      year: "division_year_data_download"
+      quarter: "division_quarter_data_download"
+      month: "division_data_download"
+    district:
+      year: "district_year_data_download"
+      quarter: "district_quarter_data_download"
+      month: "district_data_download"
+    block:
+      year: "block_year_data_download"
+      quarter: "block_quarter_data_download"
+      month: "block_data_download"
+
+  download-map-niti:
+    division:
+      year: "division_niti_year_data_download"
+      quarter: "division_niti_quarter_data_download"
+      month: "division_niti_data_download"
+    district:
+      year: "district_niti_year_data_download"
+      quarter: "district_niti_quarter_data_download"
+      month: "district_niti_data_download"
+    block:
+      year: "block_niti_year_data_download"
+      quarter: "block_niti_quarter_data_download"
+      month: "block_niti_data_download"
+
+  download-map-amethi:
+    division:
+      year: "division_amethi_year_data_download"
+      quarter: "division_amethi_quarter_data_download"
+      month: "division_amethi_data_download"
+    district:
+      year: "district_amethi_year_data_download"
+      quarter: "district_amethi_quarter_data_download"
+      month: "district_amethi_data_download"
+    block:
+      year: "block_amethi_year_data_download"
+      quarter: "block_amethi_quarter_data_download"
+      month: "block_amethi_data_download"
+
+  download-map-cmo:
+    division:
+      year: "division_cmo_year_data_download"
+      quarter: "division_cmo_quarter_data_download"
+      month: "division_cmo_data_download"
+    district:
+      year: "district_cmo_year_data_download"
+      quarter: "district_cmo_quarter_data_download"
+      month: "district_cmo_data_download"
+    block:
+      year: "block_cmo_year_data_download"
+      quarter: "block_cmo_quarter_data_download"
+      month: "block_cmo_data_download"
+
+  map_dropdown_indicators_14:
+    - "% of pregnant women received 4 or more ANC and tested for Hb against estimated PW__indicator_1"
+    - "% of pregnant women delivered in institution against estimated delivery__indicator_2"
+    - "% of newborns received HBNC visits (Institutional Delivery and Home Delivery)__indicator_5"
+    - "% of children received full immunization (BCG, Penta 1, 2, 3, Measles)__indicator_7"
+    - "Permanent Method accepted per 1000 EC__indicator_8"
+    - "Reversible Method accepted per 1000 EC__indicator_9"
+    - "% of PW screened for HIV against estimated pregnancy__indicator_11"
+    - "Per ASHA expenditure of ASHA incentive fund__indicator_12"
+    - "% of C-section delivery against reported delivery (70% weightage to CHC)__indicator_31"
+    - "% of C-section delivery against reported delivery (30% to DH)__indicator_32"
+    - "Still birth ratio__indicator_4"
+    - "Ratio of Pentavalent 3 to BCG__indicator_6"
+    - "Total case notification rate of TB against expected TB cases__indicator_10"
+    - "% of facilities reported outlier for the identified indicators of ranking__indicator_13"
+    - "% of facilities reported non blank value (including zero) for the identified indicators of
+      ranking__indicator_14"
+    - "% JSY Incentive__indicator_36"
+    - "% of fund utilized against approved budget__indicator_35"
+    - "Allopathic attendance OPD__indicator_33"
+    - "Inpatient admissions__indicator_34"
+    - "Treatment Success Rate  as per total cases notified__indicator_37"
+
+  indicator-mapping:
+    - {
+        indicator_name: "composite_score",
+        short_name: "Composite Score",
+        unit: "",
+        indicator_id: "composite_score",
+        positive_negative: "positive",
+        type_ind: "",
+      }
+    - {
+        indicator_name: "Composite Score",
+        short_name: "Composite Score",
+        unit: "",
+        indicator_id: "",
+        positive_negative: "positive",
+        type_ind: "",
+      }
+    - { indicator_name: "% of pregnant women received 4 or more ANC
+          and tested for Hb against estimated PW", short_name: "PW received 4 or more ANC with Hb testing", unit: "%", indicator_id: "indicator_1", positive_negative: "positive", type_ind: "district", formula: "1a1: Number of PW received 4 or more ANC check ups,
+          1a2: Estimated number of pregnant women for a particular period (ELA),
+          1b1: Number of PW tested for Haemoglobin (Hb ) 4 or more than 4 times,
+          1b2: Estimated number of pregnant women for a particular period (ELA),
+          Formula = (((1a1/(1a2/12)) + (1b1/(1b2/12)))/2", formula_year: "1a1: Number of PW received 4 or more ANC check ups,
+          1a2: Estimated number of pregnant women for a particular period (ELA),
+          1b1: Number of PW tested for Haemoglobin (Hb ) 4 or more than 4 times,
+          1b2: Estimated number of pregnant women for a particular period (ELA),
+          Formula = (((1a1/(1a2/12)*(number of months)) + (1b1/(1b2/12)*(number of months)))/2" }
+    - {
+        indicator_name: "% of pregnant women received 4 or more ANC against estimated PW",
+        short_name: "PW received 4 or more ANC",
+        unit: "%",
+        indicator_id: "indicator_1",
+        positive_negative: "positive",
+        type_ind: "block",
+      }
+    - {
+        indicator_name: "% of pregnant women tested for Hb for 4 or more times against estimated PW",
+        short_name: "PW received 4 or more HB tests",
+        unit: "%",
+        indicator_id: "indicator_22",
+        positive_negative: "positive",
+        type_ind: "block",
+        formula:
+          "1b1: Number of PW tested for Haemoglobin (Hb ) 4 or more than 4 times,
+          1b2: Estimated number of pregnant women for a particular period (ELA),
+          Formula: (((1a1/(1a2/12)) + (1b1/(1b2/12)))/2",
+        formula_year:
+          "1b1: Number of PW tested for Haemoglobin (Hb ) 4 or more than 4 times,
+          1b2: Estimated number of pregnant women for a particular period (ELA),
+          Formula: (((1a1/(1a2/12)*(number of months)) + (1b1/(1b2/12)*(number of months)))/2",
+      }
+    - { indicator_name: "% of pregnant women delivered in
+          institution against estimated delivery", short_name: " Institutional Delivery rate", unit: "%", indicator_id: "indicator_2", positive_negative: "positive", type_ind: "dist_block", formula: "2a: PW Delivered in institution(Public) (HMIS),
+          2b: Institutional births (%) (NFHS),
+          2c: Institutional births in public facility (%) (NFHS),
+          2d: Estimated annual delivery including 3% still birth rate (as per SRS 2016) in live birth,
+          Formula = (2a+ ((2b-2c)*(2d/12)/100))/(2d/12)", formula_year: "2a: PW Delivered in institution(Public) (HMIS),
+          2b: Institutional births (%) (NFHS),
+          2c: Institutional births in public facility (%) (NFHS),
+          2d: Estimated annual delivery including 3% still birth rate (as per SRS 2016) in live birth,
+          Formula: (2a+ ((2b-2c)*(2d/12)*(number of months)/100)/(2d/12)*(number of months))" }
+    - { indicator_name: "% of C-section delivery against
+          reported delivery (70% weightage to CHC)", short_name: "C-section delivery rate(70% to CHC)", unit: "%", indicator_id: "indicator_31", positive_negative: "positive", type_ind: "district", formula: "3a: Total C -Section deliveries performed at CHC,
+          3c: Reported delivery at CHC,
+          Formula = (3a/3c*0.7)*100", formula_year: "3b: Total C -Section deliveries performed at DH,
+          3d: Reported delivery at DH,
+          Formula = (3b/3d*0.3)*100" }
+    - { indicator_name: "% of C-section delivery against
+          reported delivery (30% to DH)", short_name: "C-section delivery rate (30% to DH)", unit: "%", indicator_id: "indicator_32", positive_negative: "positive", type_ind: "district", formula: "3b: Total C -Section deliveries performed at DH,
+          3d: Reported delivery at DH,
+          Formula = (3b/3d*0.3)*100", formula_year: "3b: Total C -Section deliveries performed at DH,
+          3d: Reported delivery at DH,
+          Formula: (3b/3d*0.3)*100" }
+    - {
+        indicator_name: "Still birth ratio",
+        short_name: "Still birth Ratio",
+        unit: "",
+        indicator_id: "indicator_4",
+        positive_negative: "negative",
+        type_ind: "dist_block",
+        formula: "4a: Number of Still Birth,
+          4b: Total reported live birth (Male),
+          4c: Total reported live birth (Female),
+          Formula = 4a / (4b+4c)*1000",
+        formula_year: "4a: Number of Still Birth,
+          4b: Total reported live birth (Male),
+          4c: Total reported live birth (Female),
+          Formula: 4a / (4b+4c)*1000",
+      }
+    - {
+        indicator_name: "% of newborns received HBNC visits (Institutional Delivery and Home Delivery)",
+        short_name: "Newborns received HBNC visits",
+        unit: "%",
+        indicator_id: "indicator_5",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+        formula:
+          "5a, 5b: Number of newborns received 6 HBNC visits after Institutional Delivery (2.2.2) + Number of
+          newborns received 7 Home Based Newborn Care (HBNC) visits in case of Home delivery (2.1.3),
+          5c, 5d: Total Live Birth Reported (female+male),
+          Formula: (5a+5b)/(5c+5d)*100",
+        formula_year:
+          "5a, 5b: Number of newborns received 6 HBNC visits after Institutional Delivery (2.2.2) + Number of newborns
+          received 7 Home Based Newborn Care (HBNC) visits in case of Home delivery (2.1.3),
+          5c, 5d: Total Live Birth Reported (female+male),
+          Formula: (5a+5b)/(5c+5d)*100",
+      }
+    - {
+        indicator_name: "Ratio of Pentavalent 3 to BCG",
+        short_name: "Ratio of Pentavalent 3 to BCG",
+        unit: "",
+        indicator_id: "indicator_6",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+        formula: "6a: Total number of children received Pentavalent 3,
+          6b: Total number of children received BCG,
+          Formula: 6a/6b",
+        formula_year: "6a: Total number of children received Pentavalent 3,
+          6b: Total number of children received BCG,
+          Formula: 6a/6b",
+      }
+    - {
+        indicator_name: "% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",
+        short_name: "Full Immunization",
+        unit: "%",
+        indicator_id: "indicator_7",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+        formula:
+          "7a: Total number of children fully immunized with DOB in previous financial year,
+          7b:  Estimated annual Live birth / 12,
+          Formula = 7a/(7b)*100",
+        formula_year:
+          "7a: Total number of children fully immunized with DOB in previous financial year,
+          7b: Estimated live birth,
+          Formula = 7a/(7b)*100",
+      }
+    - {
+        indicator_name: "Permanent Method accepted per 1000 EC",
+        short_name: "Permanent Method accepted per 1000 EC",
+        unit: "",
+        indicator_id: "indicator_8",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+        formula: "8a: NSV/Conventional Vasectomy conducted,
+          8b: Laparoscopic sterilizations conducted,
+          8c: Minilap (other than post-partum) sterlisations conducted,
+          8d: Minilap post partum (within 7 days of delivery) sterlizations conducted,
+          8e: Post abortion sterilizations conducted(within 7 days of spontaneous or surgical abortion),
+          8f: Column M (Estimated eligible couple (ELA),
+          8g: 20. Current use_ Female sterilization (%)_cmw 15-49 (NFHS),
+          8h: 21. Current use_ Male sterilization (%)_cmw 15-49 (NFHS),
+          8i: 22. Current use_ IUD/PPIUD (%)_cmw 15-49 (NFHS),
+          Formula: (8a+8b+8c+8d+8e)/ [{100-(8g+8h+8i+5)}*8f/100]*1000",
+        formula_year: "8a: NSV/Conventional Vasectomy conducted,
+          8b: Laparoscopic sterilizations conducted,
+          8c: Minilap (other than post-partum) sterlisations conducted,
+          8d: Minilap post partum (within 7 days of delivery) sterlizations conducted,
+          8e: Post abortion sterilizations conducted(within 7 days of spontaneous or surgical abortion),
+          8f: Column M (Estimated eligible couple (ELA),
+          8g: 20. Current use_ Female sterilization (%)_cmw 15-49 (NFHS),
+          8h: 21. Current use_ Male sterilization (%)_cmw 15-49 (NFHS),
+          8i: 22. Current use_ IUD/PPIUD (%)_cmw 15-49 (NFHS),
+          Formula: (8a+8b+8c+8d+8e)/ [{100-(8g+8h+8i+5)}*8f/100]*1000",
+      }
+    - {
+        indicator_name: "Reversible Method accepted per 1000 EC",
+        short_name: "Reversible Method accepted per 1000 EC",
+        unit: "",
+        indicator_id: "indicator_9",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+        formula: "9a: Post Abortion IUCD insertions (within 12 days),
+          9b: Post partum IUCD insertions (within 48 hours of delivery),
+          9c: DMPA Acceptors Dose 4,
+          9d: Interval IUCD insertion(excluding PPIUCD/PAIUCD),
+          9e: Column M (Estimated eligible couple (ELA),
+          9f: 20. Current use_ Female sterilization (%)_cmw 15-49 (NFHS),
+          9g: 21. Current use_ Male sterilization (%)_cmw 15-49 (NFHS),
+          9h: 22. Current use_ IUD/PPIUD (%)_cmw 15-49 (NFHS)
+          Formula: (9a+9b+9c+9d)/[{100-(9f+9g+9h+5)}*9e/100]*1000",
+        formula_year: "9d: Interval IUCD insertion(excluding PPIUCD/PAIUCD),
+          9e: Column M (Estimated eligible couple (ELA),
+          9f: 20. Current use_ Female sterilization (%)_cmw 15-49 (NFHS),
+          9g: 21. Current use_ Male sterilization (%)_cmw 15-49 (NFHS),
+          9h: 22. Current use_ IUD/PPIUD (%)_cmw 15-49 (NFHS),
+          Formula: (9a+9b+9c+9d)/[{100-(9f+9g+9h+5)}*9e/100]*1000",
+      }
+    - {
+        indicator_name: "Total case notification rate of TB against expected TB cases",
+        short_name: "TB Notification Rate",
+        unit: "",
+        indicator_id: "indicator_10",
+        positive_negative: "positive",
+        type_ind: "district",
+        formula:
+          "10a: Number of new and relapsed TB cases notified (public + private) (ELA),
+          10b: Expected No of TB cases (If it is available) (ELA),
+          Formula: (10a Current month-10a previous month)/(10b/12)*100",
+        formula_year:
+          "10a: Number of new and relapsed TB cases notified (public + private) (ELA),
+          10b: Expected No of TB cases (If it is available) (ELA),
+          Formula: (10a Current month-10a previous month)/(10b/12)*100",
+      }
+    - {
+        indicator_name: "% of PW screened for HIV against estimated pregnancy",
+        short_name: "PW screened for HIV",
+        unit: "%",
+        indicator_id: "indicator_11",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+        formula: "11a:Total number of pregnant women screened for HIV,
+          11b: Estimated number of pregnant women for a particular period (ELA),
+          Formula: 11a/(11b/12)*100",
+        formula_year: "11a:Total number of pregnant women screened for HIV,
+          11b: Estimated number of pregnant women for a particular period (ELA),
+          Formula: 11a/(11b/12)*100",
+      }
+    - {
+        indicator_name: "Per ASHA expenditure of ASHA incentive fund",
+        short_name: "Per ASHA incentive",
+        unit: "Rs",
+        indicator_id: "indicator_12",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+        formula: "12a:Total ASHA Incentive expenditure (ASHA Incentive),
+          12b:# of ASHA (ASHA Incentive),
+          Formula:(12a current month - 12a previous month)*100000/12b",
+        formula_year: "12a:Total ASHA Incentive expenditure (ASHA Incentive),
+          12b:# of ASHA (ASHA Incentive),
+          Formula:(12a current month - 12a previous month)*100000/12b
+          (since the incentive amount mentioned in lakhs hence multiplier of 100000 is used here)
+          Quarterly: (12a*100000/number of months)/12b
+          Yearly: (12a*100000)/12b",
+      }
+    - {
+        indicator_name: "Availability of ASHA to total rural population",
+        short_name: "Availability of ASHA",
+        unit: "",
+        indicator_id: "indicator_121",
+        positive_negative: "negative",
+        type_ind: "block",
+      }
+    - {
+        indicator_name: "% of facilities reported outlier for the identified indicators of ranking",
+        short_name: "Facilities reported outlier",
+        unit: "%",
+        indicator_id: "indicator_13",
+        positive_negative: "negative",
+        type_ind: "dist_block",
+      }
+    - {
+        indicator_name: "Est Delivery load as per available Delivery Point",
+        short_name: "Est Delivery load as per available DP",
+        unit: "",
+        indicator_id: "indicator_131",
+        positive_negative: "negative",
+        type_ind: "block",
+      }
+    - {
+        indicator_name:
+          "% of facilities reported non blank value (including zero) for
+          the identified indicators of ranking",
+        short_name: "Facilities reported non-blank value",
+        unit: "%",
+        indicator_id: "indicator_14",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+      }
+    - {
+        indicator_name: "Est Delivery load as per available SBA trained staff Nurse / ANM",
+        short_name: "Est Delivery load as per available SBA trained staff Nurse / ANM",
+        unit: "",
+        indicator_id: "indicator_141",
+        positive_negative: "negative",
+        type_ind: "block",
+      }
+    - { indicator_name: "coverage", short_name: "Coverage", unit: "" }
+    - { indicator_name: "quality", short_name: "Quality", unit: "" }
+    - { indicator_name: "data_quality", short_name: "Data Quality", unit: "" }
+    - { indicator_name: "availability", short_name: "Availability", unit: "" }
+    - { indicator_name: "ante_natal", short_name: "Ante Natal", unit: "" }
+    - {
+        indicator_name: "communicable_diseases",
+        short_name: "Communicable Diseases",
+        unit: "",
+      }
+    - { indicator_name: "delivery_care", short_name: "Delivery Care", unit: "" }
+    - {
+        indicator_name: "family_planning",
+        short_name: "Family Planning",
+        unit: "",
+      }
+    - { indicator_name: "finance", short_name: "Finance", unit: "" }
+    - { indicator_name: "immunization", short_name: "Immunization", unit: "" }
+    - { indicator_name: "input", short_name: "Input", unit: "" }
+    - {
+        indicator_name: "post_natal_care",
+        short_name: "Post Natal Care",
+        unit: "",
+      }
+
+  indicator-mapping_cm:
+    - { indicator_name: "% of pregnant women delivered in
+          institution against estimated delivery", short_name: " Institutional Delivery rate", unit: "%", indicator_id: "indicator_2", positive_negative: "positive", type_ind: "dist_block", domain: "delivery_care", type: "coverage" }
+    - {
+        indicator_name: "% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",
+        short_name: "Full Immunization",
+        unit: "%",
+        indicator_id: "indicator_7",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+        domain: "immunization",
+        type: "coverage",
+      }
+    - {
+        indicator_name: "Total case notification rate of TB against expected TB cases",
+        short_name: "TB Notification Rate",
+        unit: "",
+        indicator_id: "indicator_10",
+        positive_negative: "positive",
+        type_ind: "district",
+        domain: "communicable_diseases",
+        type: "quality",
+      }
+    - { indicator_name: "coverage", short_name: "Coverage", unit: "" }
+    - { indicator_name: "quality", short_name: "Quality", unit: "" }
+    - { indicator_name: "data_quality", short_name: "Data Quality", unit: "" }
+    - { indicator_name: "availability", short_name: "Availability", unit: "" }
+    - { indicator_name: "ante_natal", short_name: "Ante Natal", unit: "" }
+    - { indicator_name: "JSY", short_name: "JSY", unit: "" }
+    - {
+        indicator_name: "fund_utilization",
+        short_name: "Fund Utilization",
+        unit: "",
+      }
+    - {
+        indicator_name: "communicable_diseases",
+        short_name: "Communicable Diseases",
+        unit: "",
+      }
+    - { indicator_name: "delivery_care", short_name: "Delivery Care", unit: "" }
+    - {
+        indicator_name: "family_planning",
+        short_name: "Family Planning",
+        unit: "",
+      }
+    - { indicator_name: "finance", short_name: "Finance", unit: "" }
+    - { indicator_name: "immunization", short_name: "Immunization", unit: "" }
+    - { indicator_name: "input", short_name: "Input", unit: "" }
+    - {
+        indicator_name: "post_natal_care",
+        short_name: "Post Natal Care",
+        unit: "",
+      }
+    - {
+        indicator_name: "% JSY Incentive",
+        short_name: "JSY Incentive",
+        unit: "%",
+        indicator_id: "indicator_36",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+        domain: "JSY",
+        type: "JSY",
+      }
+    - {
+        indicator_name: "% of fund utilized against approved budget",
+        short_name: "fund utilized",
+        unit: "%",
+        indicator_id: "indicator_35",
+        positive_negative: "positive",
+        type_ind: "district",
+        domain: "Fund",
+        type: "Fund",
+      }
+    - {
+        indicator_name: "Treatment Success Rate  as per total cases notified",
+        short_name: "TB Treatment Success Rate",
+        unit: "",
+        indicator_id: "indicator_37",
+        positive_negative: "positive",
+        type_ind: "district",
+        domain: "TB",
+        type: "TB",
+      }
+
+  indicator-mapping_niti:
+    - {
+        indicator_name: "% ANC registered in First trimester",
+        short_name: "ANC Registered",
+        unit: "%",
+        indicator_id: "indicator_1",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+      }
+    - {
+        indicator_name: "Success rate of positive tuberculosis cases",
+        short_name: "TB Cases Success Rate",
+        unit: "%",
+        indicator_id: "indicator_2",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+      }
+    - {
+        indicator_name: "% of severe anaemic PW treated",
+        short_name: "PW Treated Anaemic",
+        unit: "%",
+        indicator_id: "indicator_4",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+      }
+    - {
+        indicator_name: "% of new born breastfed within one hour of birth",
+        short_name: "New Born Breasted",
+        unit: "%",
+        indicator_id: "indicator_5",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+      }
+    - {
+        indicator_name: "% of live babies weighted at birth",
+        short_name: "Live Babies Weighted",
+        unit: "%",
+        indicator_id: "indicator_6",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+      }
+    - { indicator_name: "ANC", short_name: "ANC", unit: "" }
+    - {
+        indicator_name: "communicable_diseases",
+        short_name: "Communicable Diseases",
+        unit: "",
+      }
+    - { indicator_name: "PNC", short_name: "PNC", unit: "" }
+    - { indicator_name: "delivery_care", short_name: "Delivery Care", unit: "" }
+
+  indicator-mapping_amethi:
+    - {
+        indicator_name: "aggregate_score",
+        short_name: "Aggregate Score",
+        unit: "%",
+        indicator_id: "aggregate_score",
+        positive_negative: "positive",
+        type_ind: "",
+      }
+    - {
+        indicator_name: "Aggregate Score",
+        short_name: "Aggregate Score",
+        unit: "",
+        indicator_id: "aggregate_score",
+        positive_negative: "positive",
+        type_ind: "",
+      }
+    - {
+        indicator_name: "NMR reporting (< 4 weeks)",
+        short_name: "NMR reporting",
+        unit: "",
+        indicator_id: "indicator_1",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+        formula: "Formula: (# deaths <4 weeks) / (# live births),
+          Source: UP-HMIS,
+          Target: 12 per 1000",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "IMR reporting (4 weeks to 12 months)",
+        short_name: "IMR reporting",
+        unit: "",
+        indicator_id: "indicator_2",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+        formula: "Formula: (# deaths 1m to 12m) / ((# live births),
+          Source: UP-HMIS,
+          Target: 4.5 per 1000",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "ANC Registration reporting (line-list vs. summary)",
+        short_name: "ANC reg (RCH portal vs HMIS)",
+        unit: "%",
+        indicator_id: "indicator_3",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+        formula:
+          "Formula: (Number of ANC reg. on RCH portal) / (Number of ANC reg. on HMIS),
+          Source: UP-HMIS and RCH Portal,
+          Target: 90%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "Full Immunization Coverage (line-list vs. summary)",
+        short_name: "Full Imm (RCH portal vs HMIS)",
+        unit: "%",
+        indicator_id: "indicator_4",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+        formula:
+          "Formula: (Full Immunization on RCH portal) / (Full Immunization on HMIS),
+          Source: UP-HMIS and RCH Portal,
+          Target: 90%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "% ARI/ILI cases reported",
+        short_name: "ARI/ILI cases reported",
+        unit: "%",
+        indicator_id: "indicator_5",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+        formula: "Formula: (# ARI cases reported) / (Population of block),
+          Source: IDSP Portal,
+          Target: 80% of expected monthly target (variable)",
+        decimal: "0,0.00",
+      }
+    - {
+        indicator_name: "% pneumonia cases reported",
+        short_name: "Pneumonia cases reported",
+        unit: "%",
+        indicator_id: "indicator_6",
+        positive_negative: "positive",
+        formula: "Formula: (# pneumonia cases reported) / (Population of block),
+          Source: IDSP Portal,
+          Target: 80% of expected monthly target (variable)",
+        decimal: "0,0.00",
+      }
+    - {
+        indicator_name: "% diarrhea cases reported",
+        short_name: "Diarrhea cases reported",
+        unit: "%",
+        indicator_id: "indicator_7",
+        positive_negative: "positive",
+        formula: "Formula: (# diarrhoea cases reported) / (Population of block),
+          Source: IDSP Portal,
+          Target: 80% of expected monthly target (variable)",
+        decimal: "0,0.00",
+      }
+    - {
+        indicator_name: "% children below 6 years reported underweight",
+        short_name: "Children <6yrs reported UW",
+        unit: "%",
+        indicator_id: "indicator_8",
+        positive_negative: "negative",
+        formula:
+          "Formula: (# underweight children (0-6 yrs) / (# children weighed),
+          Source: ICDS Monthly Progress Report,
+          Target: 20%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "% children below 6 years reported severely underweight",
+        short_name: "Children <6yrs reported sev. UW",
+        unit: "%",
+        indicator_id: "indicator_9",
+        positive_negative: "negative",
+        formula:
+          "Formula: (# severely underweight children (0-6 yrs) / (# children weighed),
+          Source: ICDS Monthly Progress Report,
+          Target: 4.3%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "% PMJAY enrollment (against target)",
+        short_name: "PMJAY enrollment",
+        unit: "%",
+        indicator_id: "indicator_10",
+        positive_negative: "positive",
+        formula: "Formula: (# people enrolled) / (Target block population),
+          Source: PMJAY Portal,
+          Target: 100%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "% officer-visits conducted (Darpan App)",
+        short_name: "Visit on Darpan",
+        unit: "%",
+        indicator_id: "indicator_11",
+        positive_negative: "positive",
+        formula:
+          "Formula: (#  Darpan inspections conducted by block officials) / (Expected visits)
+          Source: Darpan
+          Target: 100%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "% facilities reported non-blank values for identified indicators",
+        short_name: "Non-blank reporting",
+        unit: "%",
+        indicator_id: "indicator_12",
+        positive_negative: "negative",
+        formula:
+          "Formula: (# facilities reporting all non-blank values (including zero)
+          for selected indicators) / (# facilities in block),
+          Source: UP-HMIS,
+          Target: 100%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "% facilities reported outlier values for identified indicators",
+        short_name: "Outlier values reported",
+        unit: "%",
+        indicator_id: "indicator_13",
+        positive_negative: "negative",
+        formula: "Formula: (# outlier data elements of facility) /
+          (# facilities in block * 21) [Note: 21 data elements used currently],
+          Source: UP-HMIS,
+          Target: 100%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "Proportion of institutional deliveries (against estimated deliveries)",
+        short_name: "Institutional deliveries",
+        unit: "%",
+        indicator_id: "indicator_14",
+        positive_negative: "positive",
+        formula:
+          "Formula: (# Institutional deliveries) / (# Estimated deliveries),
+          Source: UP-HMIS (deliveries) Estimated deliveries calculated using population and crude birth rate,
+          Target: 100%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "1st trim ANC reg. (RCH portal)",
+        short_name: "1st trim ANC reg. (RCH portal)",
+        unit: "%",
+        indicator_id: "indicator_15",
+        positive_negative: "positive",
+        formula:
+          "Formula: (# ANC registered in first trimester) / (# Estimated pregnant women)
+          Source: RCH Portal, Estimated pregnant women calculated using population and crude birth rate
+          Target: 100%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "% PW who received 4 or more ANC (against estimated PW)",
+        short_name: "4 or more ANC coverage",
+        unit: "%",
+        indicator_id: "indicator_16",
+        positive_negative: "positive",
+        formula:
+          "Formula: (# pregnant women with 4 or more ANC) / (# Estimated pregnant women),
+          Source: UP-HMIS (reported) Estimated pregnant women calculated using population and crude birth rate,
+          Target: 100%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "% PW tested for Hb for 4 or more times (against estimated PW)",
+        short_name: "4 or more Hb testing",
+        unit: "%",
+        indicator_id: "indicator_17",
+        positive_negative: "positive",
+        formula:
+          "Formula: (# pregnant women tested for Hb 4 or more times) / (# Estimated pregnant women),
+          Source: UP-HMIS (reported) Estimated pregnant women calculated using population and crude birth rate,
+          Target: 100%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "Post-Partum Checkup Within 48 Hours (for reported delivery)",
+        short_name: "Post-partum checkup 48hrs",
+        unit: "%",
+        indicator_id: "indicator_18",
+        positive_negative: "positive",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "PW Screened For HIV (against estimated PW)",
+        short_name: "PW screend for HIV",
+        unit: "%",
+        indicator_id: "indicator_19",
+        positive_negative: "positive",
+        formula:
+          "Formula: (# pregnant women tested for HIV) / (# Estimated pregnant women),
+          Source: UP-HMIS (reported) Estimated pregnant women calculated using population and crude birth rate,
+          Target: 100%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "Ratio Of Pentavalent 3 To BCG",
+        short_name: "Pentavalent 3 to BCG",
+        unit: "%",
+        indicator_id: "indicator_20",
+        positive_negative: "positive",
+        formula: "Formula: (# Pentavalent dose) / (# BCG dose),
+          Source: UP-HMIS,
+          Target: 100%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "Full immunization coverage (against target)",
+        short_name: "Full Imm. Coverage",
+        unit: "%",
+        indicator_id: "indicator_21",
+        positive_negative: "positive",
+        formula:
+          "Formula: (# fully immunised children) / (full immunization target),
+          Source: HMIS States full immunization targets for Amethi,
+          Target: 100%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "Permanent FP method accepted per 1000 EC",
+        short_name: "Permanent FP method",
+        unit: "",
+        indicator_id: "indicator_22",
+        positive_negative: "positive",
+        formula:
+          "Formula: (# EC who received Minilap Lap PPS PPAS NSV) / (Estimated current non-users),
+          Source: State health dashboard,
+          Target: 1.5 or more,
+          Note: Value for previous month is used (e.g. for Feb-20 rankings data for Jan-20 is taken for this metric)",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "Spacing FP method accepted per 1000 EC",
+        short_name: "Spacing FP method",
+        unit: "",
+        indicator_id: "indicator_23",
+        positive_negative: "positive",
+        formula:
+          "Formula: (# EC who received IUCD PPIUCD 4th dose DMPA) / (Estimated current non users),
+          Source: State health dashboard,
+          Target: 15 or more,
+          Note: Value for previous month is used (e.g. for Feb-20 rankings data for Jan-20 is taken for this metric)",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "Malaria slides collected",
+        short_name: "Malaria slides collected",
+        unit: "%",
+        indicator_id: "indicator_24",
+        positive_negative: "positive",
+        formula:
+          "Formula: (# Malaria blood smears examined during month) / (Block population / 12),
+          Source: UP-HMIS,
+          Target: 8%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "Total case notification rate of TB (per 1L pop)",
+        short_name: "TB case notification",
+        unit: "%",
+        indicator_id: "indicator_25",
+        positive_negative: "positive",
+        formula:
+          "Formula: (TB notification achievement) / (notification target),
+          Source: Nikshay (RNTCP),
+          Target: 80%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "Hypertension cases diagnosed (vs. expected)",
+        short_name: "Hypertension cases diagnosed",
+        unit: "%",
+        indicator_id: "indicator_26",
+        positive_negative: "positive",
+        formula: "Formula: (# OPD Hypertension) / (Block population),
+          Source: UP-HMIS,
+          Target: 1.25%",
+        decimal: "0,0.00",
+      }
+    - {
+        indicator_name: "Diabetes cases diagnosed (vs. expected)",
+        short_name: "Diabetes cases diagnosed",
+        unit: "%",
+        indicator_id: "indicator_27",
+        positive_negative: "positive",
+        formula: "Formula: (# OPD Diabetes) / (Block population),
+          Source: UP-HMIS,
+          Target: 1.1%",
+        decimal: "0,0.00",
+      }
+    - {
+        indicator_name: "Avg. OPD during month at PHCs",
+        short_name: "Avg OPD during months (PHC)",
+        unit: "%",
+        indicator_id: "indicator_28",
+        positive_negative: "positive",
+        formula:
+          "Formula: (Total OPDs at PHCs in the block during month) / (Total PHCs in the block),
+          Source: UP-HMIS,
+          Target: 800",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "Still Birth Rate",
+        short_name: "Still Birth Rate",
+        unit: "",
+        indicator_id: "indicator_29",
+        positive_negative: "negative",
+        formula:
+          "Formula: (# still births) / (live births + still births) * 1000,
+          Source: UP-HMIS,
+          Target: 3 to 5 per 1000",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "Proportion of LBW among new born",
+        short_name: "Low-birth weight newborns",
+        unit: "%",
+        indicator_id: "indicator_30",
+        positive_negative: "negative",
+        formula: "Formula: (# newborns < 2.5 kg) / (live births),
+          Source: UP-HMIS,
+          Target: Within 10 to 15% range",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "Block fund utilization (against target)",
+        short_name: "Block fund utilization",
+        unit: "%",
+        indicator_id: "indicator_31",
+        positive_negative: "positive",
+        formula:
+          "Formula: (Amount of fund utilized until current month) / (Pro-rated budget allocated to block),
+          Source: DPMU,
+          Target: 100% of YTD target",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "% newborns received HBNC visits",
+        short_name: "HBNC visit coverage",
+        unit: "%",
+        indicator_id: "indicator_32",
+        positive_negative: "positive",
+        formula:
+          "Formula: (#newborns received 6 HBNC + #newborns received 7 HBNC) / (# Estimated live births),
+          Source: UP-HMIS (reported) Estimated live births calculated using population and crude birth rate,
+          Target: 100%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "Average ASHA incentive",
+        short_name: "Avg. ASHA incentive",
+        unit: "",
+        indicator_id: "indicator_33",
+        positive_negative: "positive",
+        formula:
+          "Formula: (Total ASHA incentive paid in current month) / (Number of ASHAs in block),
+          Source: BCPM MIS,
+          Target: Rs. 6000 or more (minimum Rs. 3000)",
+        decimal: "0,0",
+      }
+    - {
+        indicator_name: "TB treatment success rate",
+        short_name: "TB treatment success rate",
+        unit: "%",
+        indicator_id: "indicator_34",
+        positive_negative: "positive",
+        formula:
+          "Formula: (# patients successfully completed treatment) / (TB notifications in similar period previous year),
+          Source: Nikshay (RNTCP),
+          Target: 90%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "Visit on RMNCH+A portal",
+        short_name: "Visit on RMNCH+A portal",
+        unit: "%",
+        indicator_id: "indicator_35",
+        positive_negative: "positive",
+        formula:
+          "Formula: (# supervision forms submitted on RMNCH+A portal) / (Expected visits),
+          Source: RMNCH+A tool Darpan,
+          Target: 100%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "1st trim ANC reg. (HMIS)",
+        short_name: "1st trim ANC reg. (HMIS)",
+        unit: "%",
+        indicator_id: "indicator_36",
+        positive_negative: "positive",
+        formula:
+          "Formula: (# ANC registered in first trimester) / (# Estimated pregnant women),
+          Source: HMIS, Estimated pregnant women calculated using population and crude birth rate,
+          Target: 100%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "% facilities with >80% drugs available",
+        short_name: "Input availability - Drugs",
+        unit: "%",
+        indicator_id: "indicator_37",
+        positive_negative: "positive",
+        formula:
+          "Formula: (Number of facilities with >80% drugs available) / (Number of inspected facilities in block)
+          Source: Darpan
+          Target: 100%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "% facilities with >80% tests available",
+        short_name: "Input availability - Tests",
+        unit: "%",
+        indicator_id: "indicator_38",
+        positive_negative: "positive",
+        formula:
+          "Formula: (Number of facilities with >80% test available) / (Number of inspected facilities in block)
+          Source: Darpan
+          Target: 100%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "% facilities with >80% equipment available",
+        short_name: "Input availability - Equipment",
+        unit: "%",
+        indicator_id: "indicator_39",
+        positive_negative: "positive",
+        formula:
+          "Formula: (Number of facilities with >80% equipment available) / (Number of inspected facilities in block)
+          Source: Darpan
+          Target: 100%",
+        decimal: "0,0.0",
+      }
+    - {
+        indicator_name: "% staff marking attendance via Darpan app",
+        short_name: "Staff attendance",
+        unit: "%",
+        indicator_id: "indicator_40",
+        positive_negative: "positive",
+        formula:
+          "Formula: (Number of staff marking attendance in block) / (Number of staff in block)
+          Source: Darpan
+          Target: 100%",
+        decimal: "0,0.0",
+      }
+    - { indicator_name: "CD", short_name: "CD", unit: "" }
+    - { indicator_name: "RMNCH", short_name: "RMNCH", unit: "" }
+    - { indicator_name: "NCD", short_name: "NCD", unit: "" }
+    - { indicator_name: "Nutrition", short_name: "Nutrition", unit: "" }
+    - { indicator_name: "System", short_name: "System", unit: "" }
+
+  indicator-mapping_cmo:
+    - {
+        indicator_name: "ANC registered within first trimester",
+        short_name: "ANC Registered",
+        unit: "%",
+        indicator_id: "indicator_1",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+      }
+    - {
+        indicator_name: "PW received 4 or more ANC",
+        short_name: "PW Received",
+        unit: "%",
+        indicator_id: "indicator_2",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+      }
+    - {
+        indicator_name: "PW treated with severe anemia",
+        short_name: "PW Treated Anemia",
+        unit: "%",
+        indicator_id: "indicator_3",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+      }
+    - {
+        indicator_name: "HBNC visits",
+        short_name: "HBNC visits",
+        unit: "%",
+        indicator_id: "indicator_5",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+      }
+    - {
+        indicator_name: "Full immunization",
+        short_name: "Full immunization",
+        unit: "%",
+        indicator_id: "indicator_6",
+        positive_negative: "positive",
+        type_ind: "dist_block",
+      }
+    - {
+        indicator_name: "Communicable disease",
+        short_name: "Communicable Disease",
+        unit: "%",
+        indicator_id: "indicator_7",
+        positive_negative: "positive",
+        type_ind: "district",
+      }
+    - {
+        indicator_name: "Success rate of positive tuberculosis cases",
+        short_name: "TB Cases Success Rate",
+        unit: "%",
+        indicator_id: "indicator_8",
+        positive_negative: "positive",
+        type_ind: "district",
+      }
+    - {
+        indicator_name: "% of positive malaria cases identified against total tested in the district up to the month",
+        short_name: "Positive Malaria Cases Identified",
+        unit: "%",
+        indicator_id: "indicator_9",
+        positive_negative: "positive",
+        type_ind: "district",
+      }
+    - { indicator_name: "Ante natal", short_name: "Ante Natal", unit: "" }
+    - { indicator_name: "New born care", short_name: "New Born Care", unit: "" }
+    - { indicator_name: "Immunization", short_name: "Immunization", unit: "" }
+    - {
+        indicator_name: "Communicable disease",
+        short_name: "Communicable Disease",
+        unit: "",
+      }
+
+  data_prof_dist:
+    {
+      "Bagpat": "Baghpat",
+      "Bhadohi": "Sant Ravidas Nagar",
+      "Unnav": "Unnao",
+      "Lakhimpur Kheri": "Kheri",
+      "Maunathbhanjan": "Mau",
+    }
+
+  landing_page_list:
+    - name: "Institutional Delivery"
+      href:
+        "href=table_noauth?select=district&district=Agra&indicator=%25%20of%20pregnant%20\
+        women%20delivered%20in%20institution%20against%20estimated%20delivery&indicator_id=indicator_2"
+      img: "img/pw_inst.png"
+      value: 65.39 %
+      date: "FEB 2023"
+      indicator_id: 2
+
+    - name: "JSY Incentive"
+      href: "href=table_noauth?select=district&district=Agra&indicator=%25%20JSY%20Incentive&indicator_id=indicator_36"
+      img: "img/JSY.png"
+      value: 47.69 %
+      date: "FEB 2023"
+      indicator_id: 36
+
+    - name: "Full Immunization"
+      href:
+        "href=table_noauth?select=district&district=Agra&indicator=%25%20of%20children%20\
+        received%20full%20immunization%20(BCG%2C%20Penta%201%2C%202%2C%203%2C%20Measles)&indicator_id=indicator_7"
+      img: "img/full_imm.png"
+      value: 96.19 %
+      date: "FEB 2023"
+      indicator_id: 7
+
+    - name: "TB Cases Notification Rate"
+      href:
+        "href=table_noauth?select=district&district=Agra&indicator=Total%20case%20notification%20\
+        rate%20of%20TB%20against%20expected%20TB%20cases&indicator_id=indicator_10"
+      img: "img/TB.png"
+      value: 91.95
+      date: "FEB 2023"
+      indicator_id: 10
+
+    - name: "TB Treatment Success Rate"
+      href:
+        "href=table_noauth?select=district&district=Agra&indicator=Treatment%20Success%20Rate%20%20\
+        as%20per%20total%20cases%20notified&indicator_id=indicator_37"
+      img: "img/tb_rate.png"
+      value: 86.38
+      date: "FEB 2023"
+      indicator_id: 37
+
+    - name: "Fund Utilized"
+      href:
+        "href=table_noauth?select=district&district=Agra&indicator=%25%20of%20fund\
+        %20utilized%20against%20approved%20budget&indicator_id=indicator_35"
+      img: "img/Fund.png"
+      value: 32.36 %
+      date: "FEB 2023"
+      indicator_id: 35
+
+  data-map-cm:
+    overall_cm:
+      year: "district_cm_year_data"
+      quarter: "district_cm_quarter_data"
+      month: "district_cm_data"
+      date: "district_cm_data"
+    division_cm:
+      year: "district_cm_year_data"
+      quarter: "district_cm_quarter_data"
+      month: "district_cm_data"
+      date: "district_cm_data"
+    district_cm:
+      year: "district_cm_year_data"
+      quarter: "district_cm_quarter_data"
+      month: "district_cm_data"
+      date: "district_cm_data"
+    block_cm:
+      year: "block_cm_year_data"
+      quarter: "block_cm_quarter_data"
+      month: "block_cm_data"
+      date: "block_cm_data"
+    sub_indicator:
+      district: "subindicator_districts_cm"
+      block: "subindicator_blocks_cm"
+    sub-indicators:
+      indicator_35: ["35a"]
+      indicator_36: ["36a", "36b"]
+      indicator_37: ["37a"]
+      indicator_2: ["2a", "2b", "2c", "2d"]
+      indicator_7: ["7a", "7b"]
+      indicator_10: ["10a", "10b"]
+    sub-ind-names:
+      2a: "Institutional delivery(including c-section)"
+      2b: "Institutional births (%)"
+      2c: "Institutional births in public facility (%)"
+      2d: "Estimated delivery using AHS CBR"
+      7a: "Total number of children fully immunized with DOB in previous financial year"
+      7b: "Estimated annual Live birth"
+      10a: "Number of new and relapsed TB cases notified (public + private)"
+      10b: "Expected No of TB cases (If it is available)"
+      35a: "% of fund utilized against fund available"
+      36a: "Number of beneficiaries recievd JSY incentive"
+      36b: "Total nuber of institutional delivery"
+      37a: "Treatment success rate of new smear positive tuberculosis (TB) cases"
+
+  data-map-niti:
+    overall_niti:
+      year: "district_niti_year_data"
+      quarter: "district_niti_quarter_data"
+      month: "district_niti_data"
+      date: "district_niti_data"
+    division_niti:
+      year: "district_niti_year_data"
+      quarter: "district_niti_quarter_data"
+      month: "district_niti_data"
+      date: "district_niti_data"
+    district_niti:
+      year: "district_niti_year_data"
+      quarter: "district_niti_quarter_data"
+      month: "district_niti_data"
+      date: "district_niti_data"
+    block_niti:
+      year: "block_niti_year_data"
+      quarter: "block_niti_quarter_data"
+      month: "block_niti_data"
+      date: "block_niti_data"
+
+  data-map-area-niti:
+    overall_niti:
+      year: "district_niti_year_data_area"
+      quarter: "district_niti_quarter_data_area"
+      month: "district_niti_data_area"
+      date: "district_niti_data_area"
+    division_niti:
+      year: "district_niti_year_data_area"
+      quarter: "district_niti_quarter_data_area"
+      month: "district_niti_data_area"
+      date: "district_niti_data_area"
+    district_niti:
+      year: "district_niti_year_data_area"
+      quarter: "district_niti_quarter_data_area"
+      month: "district_niti_data_area"
+      date: "district_niti_data_area"
+    block_niti:
+      year: "block_niti_year_data_area"
+      quarter: "block_niti_quarter_data_area"
+      month: "block_niti_data_area"
+      date: "block_niti_data_area"
+
+  data-map-amethi:
+    overall_amethi:
+      year: "district_amethi_year_data"
+      quarter: "district_amethi_quarter_data"
+      month: "district_amethi_data"
+      date: "district_amethi_data"
+    division_amethi:
+      year: "district_amethi_year_data"
+      quarter: "district_amethi_quarter_data"
+      month: "district_amethi_data"
+      date: "district_amethi_data"
+    district_amethi:
+      year: "district_amethi_year_data"
+      quarter: "district_amethi_quarter_data"
+      month: "district_amethi_data"
+      date: "district_amethi_data"
+    block_amethi:
+      year: "block_amethi_year_data"
+      quarter: "block_amethi_quarter_data"
+      month: "block_amethi_data"
+      date: "block_amethi_data"
+
+  data-map-cmo:
+    overall_cmo:
+      year: "district_cmo_year_data"
+      quarter: "district_cmo_quarter_data"
+      month: "district_cmo_data"
+      date: "district_cmo_data"
+    division_cmo:
+      year: "district_cmo_year_data"
+      quarter: "district_cmo_quarter_data"
+      month: "district_cmo_data"
+      date: "district_cmo_data"
+    district_cmo:
+      year: "district_cmo_year_data"
+      quarter: "district_cmo_quarter_data"
+      month: "district_cmo_data"
+      date: "district_cmo_data"
+    block_cmo:
+      year: "block_cmo_year_data"
+      quarter: "block_cmo_quarter_data"
+      month: "block_cmo_data"
+      date: "block_cmo_data"
+
+  mat_view_name:
+    {
+      "state": "State Name",
+      "state_id": "Sr. No.",
+      "State Name": "State Name",
+      "corrected_total_points": "TB Index",
+      "district_name": "District Name",
+      "score": "TB Index",
+      "notify_target": "1a Annual Target ",
+      "notify_target_quarter": "1b Target prorata",
+      "notify_total": "1c Achievement ",
+      "points_notify": "1. TB Notification (wt=20)",
+      "notify_hiv_total": "2a Notification (Target)",
+      "notify_hiv_screened": "2b HIV Status Known (Achievement)",
+      "points_notify_hiv": "2. HIV status  known(wt=10)",
+      "udst_notified": "3a Notification",
+      "udst_tested": "3b UDST eligibility (Target)",
+      "udst_tested_quarter": "3c  UDST Tested (Achievement)",
+      "points_udst": "3. UDST (wt=10)",
+      "success_total_patient": "4a Notification (Target)",
+      "success_patients": "4b Treatment Success (Achievement)",
+      "points_sucess_rate": "4. Treatment Success (wt=15)",
+      "npy_total_benef": "5a Beneficiaries Eligible(NPY)-(Target)",
+      "npy_benef_paid": "5b Beneficiaries Paid atleast once (Achievement)",
+      "points_npy": "5. Beneficiaries paid-NPY (wt=10)",
+      "drtb_mdr_patients": "6a DRTB diagnosed (Target)",
+      "drtb_initiated": "6b DRTB Treatment Initiated (Achievement)",
+      "points_drtb_patients": "6. DRTB Treatment initiation(wt=15)",
+      "exp_state_rop": "7a  ROP (in Lakhs)",
+      "exp_total": "7b Expenditure (in Lakhs)",
+      "points_expenditure": "7. Expenditure (wt=10)",
+      "child_indentified": "8a Child Contacts",
+      "child_treatment": "8b Child contacts on TB treatment",
+      "child_eligible_chemo": "8c Chemoprophylaxis eligibility",
+      "child_given_chemo": "8d Chemoprophylaxis given",
+      "points_chemo": "8. Chemoprophylaxis (wts=5)",
+      "plhiv_active_care": "9a PLHIV on active care",
+      "plhiv_eligible_tpt": "9b PLHIV eligible for TPT",
+      "plhiv_initiated_tpt": "9c Cumulative PLHIV initiated on TPT",
+      "points_plhiv": "9. TPT to PLHIV(wts=5)",
+    }
+
+  data_table_dict:
+    [
+      { "data": "State Name", "title": "State Name" },
+      { "data": "TB Score", "title": "TB Score" },
+      {
+        "data": "Points on TB notification achieved (wts 20)",
+        "title": "Points on TB notification achieved (wts 20)",
+      },
+      {
+        "data": "Points on TB notified patients with HIV (wts 10)",
+        "title": "Points on TB notified patients with HIV (wts 10)",
+      },
+      { "data": "Points on UDST (wts 10)", "title": "Points on UDST (wts 10)" },
+      {
+        "data": "Points on treatment success rate (wts 15)",
+        "title": "Points on treatment success rate (wts 15)",
+      },
+      {
+        "data": "Points on Beneficiaries Paid under Nikshay Poshan Yojana (wts 10)",
+        "title": "Points on Beneficiaries Paid under Nikshay Poshan Yojana (wts 10)",
+      },
+      {
+        "data": "Points on DRTB Patients treatment initiation regimen (wts 15)",
+        "title": "Points on DRTB Patients treatment initiation regimen (wts 15)",
+      },
+      {
+        "data": "Points Expenditure (wts 10)",
+        "title": "Points Expenditure (wts 10)",
+      },
+      {
+        "data": "Points on chemoprophylaxis (wts 5)",
+        "title": "Points on chemoprophylaxis (wts 5)",
+      },
+      {
+        "data": "Points PLHIV Received (wts 5)",
+        "title": "Points PLHIV Received (wts 5)",
+      },
+    ]
+
+  annotations_coordinates:
+    [
+      { "ny": 80, "nx": 85 },
+      { "ny": 185, "nx": 85 },
+      { "ny": 345, "nx": 85 },
+      { "ny": 90, "nx": 390 },
+    ]
+
+  order_ind:
+    [
+      "corrected_total_points",
+      "points_notify",
+      "points_notify_hiv",
+      "points_udst",
+      "points_sucess_rate",
+      "points_npy",
+      "points_drtb_patients",
+      "points_expenditure",
+      "points_chemo",
+      "points_plhiv",
+    ]
+
+  tooltip_data:
+    [
+      {
+        "id": 1,
+        "indicator_name": "ANC registered within first trimester",
+        "short_name": "ANC registered within first trimester",
+        "note": "% of ANC registered within the first trimester
+          against total ANC registration in the district up to the month",
+        "sub_indicator": ["1a", "1b"],
+        "1a": "PW registered in 1st Trimester",
+        "1b": "Total PW registered",
+      },
+      {
+        "id": 2,
+        "indicator_name": "PW received 4 or more ANC",
+        "short_name": "PW received 4 or more ANC",
+        "note": "% of pregnant women received 4 or more ANC
+          against estimated pregnancy in the district up to the month",
+        "sub_indicator": ["2a", "2b"],
+        "2a": "Number of PW received 4 or more ANC check-ups in the district up to the month",
+        "2b": "Estimated number of pregnant women in the district up to the month",
+      },
+      {
+        "id": 3,
+        "indicator_name": "PW treated with severe anemia",
+        "short_name": "PW treated with severe anemia",
+        "note": "% of pregnant women having severe anemia treated
+          against PW identified with severe anemia (tested cases) in the district up to the month",
+        "sub_indicator": ["3a", "3b"],
+        "3a": "Number of pregnant women having severe anemia treated in the district up to the month",
+        "3b": "Total number of pregnant women identified as severe anemic in the district up to the month",
+      },
+      {
+        "id": 4,
+        "indicator_name": "Institutional delivery (private)",
+        "short_name": "Institutional delivery (private)",
+        "note": "% of pregnant women delivered in private institution against
+          estimated private sector delivery (as per NFHS 4) in the district up to the month",
+        "sub_indicator": ["4a", "4b"],
+        "4a": "Number of pregnant women delivered in private facilities in the district up to the month",
+        "4b":
+          "Estimated number of delivery based on private facility contribution
+          (as per NFHS 4) in the district up to the month",
+      },
+      {
+        "id": 5,
+        "indicator_name": "HBNC visits",
+        "short_name": "HBNC visits",
+        "note":
+          "% of new-born received complete HBNC visits (6 for institutional delivery
+          and 7 for home delivery) in the district up to the month",
+        "sub_indicator": ["5a", "5b"],
+        "5a":
+          "Total number of new-born received complete HBNC visits (6 for institutional
+          delivery and 7 for home delivery) in the district up to the month",
+        "5b": "Total number of live birth in the district up to the month",
+      },
+      {
+        "id": 6,
+        "indicator_name": "Full immunization",
+        "short_name": "Full immunization",
+        "note":
+          "% of children received full immunization (BCG,OPV 1,2,3, Penta 1, 2, 3, Measles/MR)
+          against estimated live birth in the district up to the month",
+        "sub_indicator": ["6a", "6b"],
+        "6a": "Number of children received full immunization",
+        "6b": "Estimated live births",
+      },
+      {
+        "id": 7,
+        "indicator_name": "Communicable disease",
+        "short_name": "Tb notification rate",
+        "note":
+          "Total case notification rate of TB (public + private) against expected TB
+          cases in the district up to the month",
+        "sub_indicator": ["7a", "7b"],
+        "7a": "New TB cases notified",
+        "7b": "Expected TB cases",
+      },
+      {
+        "id": 8,
+        "indicator_name": "Success rate of positive tuberculosis cases",
+        "short_name": "TB success rate",
+        "note":
+          "Proportion of total TB notified cases with successful treatment outcome in the
+          district up to the month against TB cases notified a year prior to reporting year",
+      },
+      {
+        "id": 9,
+        "indicator_name":
+          "% of positive malaria cases identified against total tested in the
+          district up to the month",
+        "short_name": "Positive malaria cases",
+        "note": "% of positive malaria cases identified against total tested in the district up to the month",
+        "sub_indicator": ["9a", "9b"],
+        "9a": "Malaria positive cases identified",
+        "9b": "Number of malarial cases tested",
+      },
+      {
+        "id": 10,
+        "indicator_name": "Child death reported (U5)",
+        "short_name": "Child death reported (U5)",
+        "note": "% of child (U5) death reported against estimated number of U5 death",
+        "sub_indicator": ["10a", "10b"],
+        "10a": "Number of child death reported",
+        "10b": "Estimated number of child death",
+      },
+      {
+        "id": 13,
+        "indicator_name": "Couple accepted modern FP",
+        "short_name": "Couple accepted modern FP",
+        "note":
+          "% of eligible couple accepted modern family planning method against total
+          modern method target in the district up to the month Excluding data dependent
+          on distribution method (OCP, Condom and Centchroman)",
+        "sub_indicator": ["13a", "13b"],
+        "13a": "Eligible couple accepted modern FP methods",
+        "13b": "Estimate number",
+      },
+      {
+        "id": 14,
+        "indicator_name": "Asha incentive percentile",
+        "short_name": "Asha incentive percentile",
+        "note":
+          "Average incentive paid per ASHA by the district against highest average
+          incentive paid per ASHA by district in the state up to the month (excluding
+          incentives for additionalities)",
+        "sub_indicator": ["14a", "14b"],
+        "14a": "Average incentive paid per ASHA",
+        "14b": "Highest average incentive paid per ASHA",
+      },
+      {
+        "id": 15,
+        "indicator_name": "Activated HWC",
+        "short_name": "Activated HWC",
+        "note": "% of HWC activated against annual target in the district up to the month",
+        "sub_indicator": ["15a", "15b"],
+        "15a": "Number of HWC activated in the district up to the month X 100",
+        "15b": "Total annual target for HWC",
+      },
+      {
+        "id": 17,
+        "indicator_name": "Mother registeration RCH",
+        "short_name": "Mother registeration RCH",
+        "note":
+          "% of mother registered in RCH portal against estimated pregnant women in
+          the district up to the month",
+        "sub_indicator": ["17a", "17b"],
+        "17a":
+          "Total mother registered in RCH portal in the district up to the month
+          (as on 1st of the month)",
+        "17b": "Estimated number of pregnancy in the district up to the month",
+      },
+      {
+        "id": 18,
+        "indicator_name": "Maternal death audited",
+        "short_name": "Maternal death audited",
+        "note": "% of maternal death audited against estimated number of maternal death",
+        "sub_indicator": ["18a", "18b"],
+        "18a": "Maternal deaths audited",
+        "18b": "Estimated number",
+      },
+      {
+        "id": 19,
+        "indicator_name": "Birth registeration CRS",
+        "short_name": "Birth registeration CRS",
+        "note": "% of birth registered in CRS portal against live birth in public health facility",
+        "sub_indicator": ["19a", "19b"],
+        "19a": "Children registered",
+        "19b": "Live births in facility",
+      },
+      {
+        "id": 20,
+        "indicator_name": "RU reporting",
+        "short_name": "RU reporting",
+        "note":
+          "Proportion of Reporting Units (RU) reporting in stipulated time period
+          against total Reporting Units, for P and L forms during a specific month",
+        "sub_indicator": ["20a", "20b"],
+        "20a": "Units reported P&L form",
+        "20b": "Total units",
+      },
+      {
+        "id": 21,
+        "indicator_name": "LaQshya certified CHC's",
+        "short_name": "LaQshya certified CHC's",
+        "note": "% of CHCs certified in LaQshya in the district up to the quarter",
+        "sub_indicator": ["21a", "21b"],
+        "21a": "CHCs accredited",
+        "21b": "Total CHCs",
+      },
+      {
+        "id": 23,
+        "indicator_name": "Golden card percentile",
+        "short_name": "Golden card percentile",
+        "note":
+          "% of golden card generated by the district against the golden card
+          generated by best performing district up to the month",
+        "sub_indicator": ["23a", "23b"],
+        "23a": "Number of golden card generated by the district up to the month",
+        "23b": "Number of golden card generated by the best performing district",
+      },
+      {
+        "id": 26,
+        "indicator_name": "CHC with BMW management",
+        "short_name": "CHC with BMW management",
+        "note": "% of CHCs reported having BMW management",
+        "sub_indicator": ["26a", "26b"],
+        "26a": "CHCs with deep burial Pit",
+        "26b": "Total CHCs",
+      },
+      {
+        "id": 11,
+        "indicator_name": "Institutional delivery (public + private)",
+        "short_name": "Institutional delivery (public + private)",
+        "note": "% of pregnant women delivered in institution against estimated
+          delivery in the district up to the month",
+        "sub_indicator": ["11a", "11b", "11c", "11d"],
+        "11a": "PW Delivered in institution(Public) (HMIS)",
+        "11b": "Institutional births (%) (NFHS)",
+        "11c": "Institutional births in public facility (%) (NFHS)",
+        "11d": "Estimated delivery (2017-18) using AHS CBR (ELA)",
+      },
+      {
+        "id": 12,
+        "indicator_name": "Active FRUs",
+        "short_name": "Active FRUs",
+        "note": "Proportion of active FRUs (>= 5 C- section/month)
+          against designated FRUs *Excluding district hospital/ medical college",
+        "sub_indicator": ["12a", "12b"],
+        "12a": "Active FRUs",
+        "12b": "Designated FRUs",
+      },
+      {
+        "id": 16,
+        "indicator_name": "Data consistency",
+        "short_name": "Data consistency",
+        "note": "% of critical indicators with consistent
+          value as compared to previous reporting period in the month",
+      },
+      {
+        "id": 22,
+        "indicator_name": "CHC's grading",
+        "short_name": "CHC's grading",
+        "note": "% of CHCs with grading of 4 points or above",
+        "sub_indicator": ["22a", "22b"],
+        "22a": "4 star and above CHCs",
+        "22b": "Total CHCs",
+      },
+      {
+        "id": 24,
+        "indicator_name": "Pre-authorisations raised percentile",
+        "short_name": "Pre-authorisations raised percentile",
+        "note": "% of pre-authorisations raised by the district against the
+          pre-authorization raised by the best performing district per 1 lakh
+          eligible population under PMJAY scheme",
+        "sub_indicator": ["24a"],
+        "24a": "Pre authorization raised(Max = 25 a)",
+      },
+      {
+        "id": 25,
+        "indicator_name": "PHC with burial pit",
+        "short_name": "PHC with burial pit",
+        "note": "% of PHCs reported having deep burial pit",
+        "sub_indicator": ["25a", "25b"],
+        "25a": "PHCs with deep burial pit",
+        "25b": "Total PHCs",
+      },
+      {
+        "id": 27,
+        "indicator_name": "Equipment condemned at CHC",
+        "short_name": "Equipment condemned at CHC",
+        "note": "% of equipment at CHC condemned against condemnable list of equipment",
+        "sub_indicator": ["27a", "27b"],
+        "27a": "Equipments condemned",
+        "27b": "Total equipments for condemnation",
+      },
+    ]
+  second_list:
+    [
+      "id",
+      "name",
+      "% of positive malaria cases identified against total tested in the district up to the month",
+      "9a",
+      "9b",
+      "ANC registered within first trimester",
+      "1a",
+      "1b",
+      "TB Notification",
+      "7a",
+      "7b",
+      "Full immunization",
+      "6a",
+      "6b",
+      "HBNC visits",
+      "5a",
+      "5b",
+      "PW received 4 or more ANC",
+      "2a",
+      "2b",
+      "PW treated with severe anemia",
+      "3a",
+      "3b",
+      "Success rate of positive tuberculosis cases",
+      "Institutional delivery (private)",
+      "4a",
+      "4b",
+      "Child Death Reported (U5)",
+      "10a",
+      "10b",
+      "Institutional delivery (public + private)",
+      "11a",
+      "11b",
+      "11c",
+      "11d",
+      "Couple Accepted Modern FP",
+      "13a",
+      "13b",
+      "Asha Incentive percentile",
+      "14a",
+      "14b",
+      "Activated HWC",
+      "15a",
+      "15b",
+      "Mother Registeration RCH",
+      "17a",
+      "17b",
+      "Maternal Death audited",
+      "18a",
+      "18b",
+      "Birth registeration CRS",
+      "19a",
+      "19b",
+      "RU Reporting",
+      "20a",
+      "20b",
+      "LaQshya certified CHC's",
+      "21a",
+      "21b",
+      "Golden Card percentile",
+      "23a",
+      "23b",
+      "CHC with BMW management",
+      "26a",
+      "26b",
+      "Active FRUs",
+      "12a",
+      "12b",
+      "CHC's Grading",
+      "22a",
+      "22b",
+      "Pre-Authorisations Raised percentile",
+      "24a",
+      "PHC with burial pit",
+      "25a",
+      "25b",
+      "Equipment Condemned at CHC",
+      "27a",
+      "27b",
+    ]
+  sub_ind_col_names:
+    {
+      "1a": "PW registered in 1st Trimester",
+      "1b": "Total PW registered",
+      "2a": "PW received 4 or more ANC",
+      "2b": "PW received 4 or more ANC",
+      "3a": "PW with Severe Anemia treated",
+      "3b": "Total PW identified",
+      "4a": "PW delivered in Private Facility",
+      "4b": "Estimated number",
+      "5a": "New Born received HBNC",
+      "5b": "Total Live Birth",
+      "6a": "Children received full immunization",
+      "6b": "Estimated live births",
+      "7a": "New TB Cases Notified",
+      "7b": "Estimated number",
+      "8a": "TB Success Rate",
+      "9a": "Malaria Positive Cases Identified",
+      "9b": "Cases tested for malarial",
+      "10a": "U5 Child deaths reported",
+      "10b": "Estimated number",
+      "11a": "PW delivered in Institution(Public + Private)",
+      "11b": "Institutional births (%) (NFHS)",
+      "11c": "Institutional births in public facility (%) (NFHS)",
+      "11d": "Estimated delivery (2017-18) using AHS CBR (ELA)",
+      "13a": "Eligible Couple accepted modern FP methods",
+      "13b": "Estimate number",
+      "14a": "Average incentive paid per ASHA",
+      "14b": "Highest average incentive paid per ASHA",
+      "15a": "Activated HWC",
+      "15b": "Annual Target",
+      "17a": "Mother Registered ",
+      "17b": "Estimated number",
+      "18a": "Maternal Deaths Audited",
+      "18b": "Estimated number",
+      "19a": "Children Registered",
+      "19b": "Live Births in Facility",
+      "20a": "Units Reported P&L form",
+      "20b": "Total Units",
+      "21a": "CHCs Accredited",
+      "21b": "Total CHCs",
+      "23a": "Number of golden card generated by the district up to the month",
+      "23b": "Number of golden card generated by the best performing district",
+      "26a": "CHCs with Deep Burial Pit",
+      "26b": "Total CHCs",
+      "12a": "Active FRUs",
+      "12b": "Designated FRUs",
+      "22a": "4 Star and above CHCs",
+      "22b": "Total CHCs",
+      "24a": "Pre Authorization Raised(Max = 25 a)",
+      "25a": "PHCs with Deep Burial Pit",
+      "25b": "Total PHCs",
+      "27a": "Equipments Condemned",
+      "27b": "Total Equipments for Condemnation",
+      "NA": "NA",
+    }
+
+  ind_list:
+    [
+      "name",
+      "% of positive malaria cases identified against total tested in the district up to the month",
+      "ANC registered within first trimester",
+      "TB Notification",
+      "Full immunization",
+      "HBNC visits",
+      "PW received 4 or more ANC",
+      "PW treated with severe anemia",
+      "Success rate of positive tuberculosis cases",
+      "Institutional delivery (private)",
+      "Child Death Reported (U5)",
+      "Institutional delivery (public + private)",
+      "Couple Accepted Modern FP",
+      "Asha Incentive percentile",
+      "Activated HWC",
+      "Mother Registeration RCH",
+      "Maternal Death audited",
+      "Birth registeration CRS",
+      "RU Reporting",
+      "LaQshya certified CHC's",
+      "Golden Card percentile",
+      "CHC with BMW management",
+      "Active FRUs",
+      "CHC's Grading",
+      "Pre-Authorisations Raised percentile",
+      "PHC with burial pit",
+      "Equipment Condemned at CHC",
+    ]
+
+  sub_ind_list:
+    [
+      "name",
+      "9a",
+      "9b",
+      "1a",
+      "1b",
+      "7a",
+      "7b",
+      "6a",
+      "6b",
+      "5a",
+      "5b",
+      "2a",
+      "2b",
+      "3a",
+      "3b",
+      "4a",
+      "4b",
+      "10a",
+      "10b",
+      "11a",
+      "11b",
+      "11c",
+      "11d",
+      "13a",
+      "13b",
+      "14a",
+      "14b",
+      "15a",
+      "15b",
+      "17a",
+      "17b",
+      "18a",
+      "18b",
+      "19a",
+      "20a",
+      "20b",
+      "21a",
+      "21b",
+      "23a",
+      "23b",
+      "26a",
+      "24a",
+      "25a",
+      "25b",
+      "27a",
+      "27b",
+    ]
+
+  pivot_cols:
+    [
+      "id",
+      "rank",
+      "name",
+      "ANC registered within first trimester",
+      "PW treated with severe anemia",
+      "HBNC visits",
+      "% of positive malaria cases identified against total tested in the district up to the month",
+      "Child Death Reported (U5)",
+      "Asha Incentive percentile",
+      "Data Consistency",
+      "Mother Registeration RCH",
+      "Maternal Death audited",
+      "RU Reporting",
+      "CHC's Grading",
+      "PHC with burial pit",
+      "CHC with BMW management",
+      "Equipment Condemned at CHC",
+      "PW received 4 or more ANC",
+      "Institutional delivery (private)",
+      "Full immunization",
+      "Communicable disease",
+      "Success rate of positive tuberculosis cases",
+      "Institutional delivery (public + private)",
+      "Active FRUs",
+      "Couple Accepted Modern FP",
+      "Activated HWC",
+      "Birth registeration CRS",
+      "LaQshya certified CHC's",
+      "Golden Card percentile",
+      "Pre-Authorisations Raised percentile",
+    ]

@@ -1,0 +1,139 @@
+<link rel="stylesheet" href="comic_styles/style1.css">
+<div class="indicator-summary">
+ <div class='WorstPerformingIndicatorCopy w-334 h-192 tracking-zero text-grey0 bg-white'>
+    <img class='WorstPerformingIndicatorCopy-panelBg w-1318px' src='assets/comic/images/panel_bg_2.png' alt="icon">
+    <div class='Panel w-255 h-734px text-15 leading-21 font-digi-bb font-bold italic top-25'>
+      <img class='Panel-pgPanelFigure w-200px' src='assets/comic/images/pg_2_panel_1_figure_85dd92.png' alt="icon">
+      <!-- here we will take only 13 indicators instead of 15, because those 2 are used to calculate data quality
+      which are not needed to show in insights -->
+      <p class='Panel-sureOutOfThe mb-2 trans-en <%= parse_url().searchKey.lang == "hi" ? "d-none" : "d-block" %>'>
+        Sure! out of the <span class="hilight">13 indicators, <%= comp_up_avg.above_up_avg %> indicators are performing above UP avg & <%= comp_up_avg.below_up_avg %> are
+        below UP Avg.</span>
+      </p>
+      <p class='Panel-sureOutOfThe mb-2 trans-hi <%= parse_url().searchKey.lang == "hi" ? "d-block" : "d-none" %>'>
+        ज़रूर! <span class="hilight">13 इंडिकेटर्स में से <%= comp_up_avg.above_up_avg %> इंडिकेटर्स कि उपलब्धि यू0पी0 औसत से ऊपर रही जबकि <%= comp_up_avg.below_up_avg %> इंडिकेटर्स यू0पी0 औसत से नीचे हैं।</span>
+      </p>
+      <p class='Panel-outOfTheseRat trans-en <%= parse_url().searchKey.lang == "hi" ? "d-none" : "d-block" %>'>
+        Out of these <span class="hilight"><%= comp_up_avg.below_up_avg > 0 ? comp_up_avg.below_up_avg: '' %>, “<%= worst_indicator.name %>” is the poor performing indicator
+        with it’s score as <%= worst_indicator.score.toFixed(2) %> when compared to UP avg, which is at <%= worst_indicator.up_avg.toFixed(1) %>.</span>
+        <% if(district_worst_indicator != worst_indicator.name) { %>
+          </br>oh' the block level data for <%= worst_indicator.name %> is not available, let us focus on next poor performing indicator which is "<%= district_worst_indicator %>"
+        <% } %>
+      </p>
+      <p class='Panel-outOfTheseRat trans-hi <%= parse_url().searchKey.lang == "hi" ? "d-block" : "d-none" %>'>
+        इन <span class="hilight"><%= comp_up_avg.below_up_avg > 0 ? comp_up_avg.below_up_avg: '' %> में से, “<span class=""><%= worst_indicator.name %></span>” की उपलब्धि नियुन्तम रही  जिसके इंडिकेटर का  स्कोर <%= worst_indicator.score.toFixed(2) %> है जबकि  यू0पी0 का औसत <%= worst_indicator.up_avg.toFixed(1) %> है।</span>
+        <% if(district_worst_indicator != worst_indicator.name) { %>
+          </br>ओह' <span class=""><%= worst_indicator.name %></span> के लिए ब्लॉक स्तर का डेटा उपलब्ध नहीं है| आइए हम अगले खराब प्रदर्शन वाले  Indicator पर ध्यान केंद्रित करें जो है "<span class=""><%= district_worst_indicator %></span>"
+        <% } %>
+      </p>
+      <img class='Panel-panelLine w-11 mt-20' src='assets/comic/images/panel_1_line_2.png' alt="icon">
+    </div>
+    <div class='Chart w-649px h-181 text-12 leading-default font-robo font-normal'>
+      <!-- <img class='Chart-chart w-649px' src='assets/comic/images/chart_2.png'> -->
+      <div class="Chart-chart w-649px bg-white">
+        <div class="border-7 p-2 mr-1">
+          <p class="mb-0 fs-18 text-center font-bold px-5"><span>Prioritisation of indicators for District Specific Programaming</span>, <span><%= curr_mn %></span> <%= curr_yr %></p>
+          <table class="table table-borderless best-toleast w-full">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-color2 fs-12 fw-500 ls-1 align-middle text-left pl-3 py-2"><span>Block Indicators Performance</span></th>
+                  <th scope="col" class="text-color2 fs-12 fw-500 ls-1 align-middle text-left pl-3 py-2"><span><%= curr_mn %></span> <span>Score (% change w.r.t. UP Avg.)</span></th>
+                  <th scope="col" class="text-color2 fs-12 fw-500 ls-1 align-middle text-left pl-3 py-2"><span>UP Avg. Score</span></th>
+                  <th scope="col" class="text-color2 fs-12 fw-500 ls-1 align-middle text-left pl-3 py-2"><span>Best Performing District</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <% _.each(table_data, function(row){ %>
+                <tr>
+                  <th scope="row" class="font-normal text-color2 fs-11 ls-1 align-middle text-left pl-3 py-1"><span></span><%= row.indicator_name %></span></th>
+                  <td class="align-middle text-left pl-3 py-0"><div class="d-flex items-center"><div class="text-color2 fs-13 fw-500 min-w-45"><%= row.indicator_name == 'Permanent Method accepted per 1000 EC' || row.indicator_name == 'Reversible Method accepted per 1000 EC' ? indian_number_format(row.month_wise.toFixed(2)) : row.indicator_name == 'Per ASHA expenditure of ASHA incentive fund' ? indian_number_format(Math.round(row.month_wise))  : indian_number_format(row.month_wise.toFixed(1)) %></div><div class="circle-1 <%- row.percent_diff >= 0 ? 'bg-success' : 'bg-failure' %> mr-2 rounded-full"></div><span class="fs-13 ls-1 text-color3">(<%- row.percent_diff ? row.percent_diff.toFixed(1) : 0 %>%)</span></div></td>
+                  <td class="text-color2 fs-13 ls-1 fw-500 align-middle text-left pl-3 py-0"><%= row.indicator_name == 'Permanent Method accepted per 1000 EC' || row.indicator_name == 'Reversible Method accepted per 1000 EC' ? indian_number_format(row.up_avg.toFixed(2)) : row.indicator_name == 'Per ASHA expenditure of ASHA incentive fund' ? indian_number_format(Math.round(row.up_avg))  : indian_number_format(row.up_avg.toFixed(1)) %></td>
+                  <td class="text-color2 fs-13 ls-1 align-middle text-left pl-3 py-0"><%= row.indicator_name == 'Permanent Method accepted per 1000 EC' || row.indicator_name == 'Reversible Method accepted per 1000 EC' ? indian_number_format(row.best_district_score.toFixed(2)) : row.indicator_name == 'Per ASHA expenditure of ASHA incentive fund' ? indian_number_format(Math.round(row.best_district_score))  : indian_number_format(row.best_district_score.toFixed(1)) %> (<span><%= row.best_district_name %></span>)</td>
+                </tr>
+                <% }) %>
+                <% _.each(last, function(row){ %>
+                  <tr>
+                    <th scope="row" class="font-normal text-color2 fs-11 ls-1 align-middle text-left pl-3 py-1"><span><%= row.indicator_name %></span></th>
+                    <td class="align-middle text-left pl-3 py-0"><div class="d-flex items-center"><div class="text-color2 fs-13 fw-500 min-w-45"><%= indian_number_format(row.month_wise.toFixed(1)) %></div><div class="circle-1 <%- row.percent_diff >= 0 ? 'bg-success' : 'bg-failure' %> mr-2 rounded-full"></div><span class="fs-13 ls-1 text-color3">(<%- row.percent_diff ? row.percent_diff.toFixed(1) : 0 %>%)</span></div></td>
+                    <td class="text-color2 fs-13 ls-1 fw-500 align-middle text-left pl-3 py-0"><%= indian_number_format(row.up_avg.toFixed(1)) %></td>
+                    <td class="text-color2 fs-13 ls-1 align-middle text-left pl-3 py-0"><%= indian_number_format(row.best_district_score.toFixed(2)) %> (<span><%= row.best_district_name %></span>)</td>
+                  </tr>
+                  <% }) %>
+              </tbody>
+            </table>
+            <p class="text-color2 fs-12 italic ls-1 text-right pt-5">*<span>Prioritization of indicators is based on % Change from most to least priority Indicators excluding two data quality indicators</span></p>
+        </div>
+      </div>
+    </div>
+    <div class='Panel1 w-413px h-729px text-15 leading-21 font-digi-bb font-bold left-auto top-28'>
+      <!-- <img class='Panel1-chart w-413px' src='assets/comic/images/chart_3.png'> -->
+      <div class="Panel1-chart w-413px">
+      <div class="border-7 p-2 font-robo bg-white">
+        <p class="mb-0 fs-18 text-center font-weight-bold px-3 "> Rank & Score of “<%= worst_indicator.name %>”, <%= dname %></p>
+        <!-- <p class="mb-0 fs-18 text-center font-weight-bold px-3 trans-hi <%= parse_url().searchKey.lang == 'hi' ? 'd-block' : 'd-none' %>"> "<span><%= worst_indicator.name %></span>", <span><%= dname %></span> . का रैंक और स्कोर</p> -->
+        <div class="d-flex justify-center my-2">
+          <div class="mr-3 d-flex items-center font-normal"><span class="border-grey1 border px-3 mr-1"></span><span class="fs-12 italic ls-1">SCORE</span></div>
+          <div class="d-flex items-center font-normal">
+            <span class="bg-color4 circle-1 rounded-full"></span>
+            <span class="bg-color6 circle-1 rounded-full"></span>
+            <span class="bg-color7 circle-1 rounded-full"></span>
+            <span class="fs-12 italic ls-1 mx-2">RANK (Top to Bottom)</span>
+          </div>
+        </div>
+        <div>
+          <section class="ml-0 pl-5">
+            <div class="bubble-main">
+              <% mon_dict = {'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6, 'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12} %>
+              <% mon_ind = {1: 'Jan', 2: 'Feb', 3: 'Mar',4: 'Apr', 5: 'May', 6: 'Jun', 7: 'Jul', 8: 'Aug', 9: 'Sep', 10: 'Oct', 11: 'Nov', 12: 'Dec'} %>
+              <% arr = [] %>
+              <% ind = mon_dict[curr_mn] + 1 %>
+              <% while(arr.length < 12) { %>
+                <% arr.push(mon_ind[ind]) %>
+                <% ind += 1 %>
+                <% if (ind > 12) { ind = 1} %>
+              <% } %>
+              <% arr = [] %>
+              <div class="row">
+                <% _.each(arr, function(mon){ %>
+                <div class="bubbles col-1">
+                  <p class="month"><%= mon %></p>
+                  <% var dt = chart_data.filter((row) => [mon_dict[mon]].includes(row.month))[0] %>
+                  <span class="dot <%- dt.indicator_rank < 26 ? 'green' : dt.indicator_rank < 51 ? 'yellow': 'pink' %>"><%= dt.indicator_rank %></span>
+                </div>
+                <% }) %>
+              </div>
+            </div>
+            <div id="my_dataviz"></div>
+          </section>
+        </div>
+        </div>
+      </div>
+      <div class='Panel2 w-294px h-351px pt-4 top-52 left-118'>
+        <p class='Panel2-alsoTheIndicator font-digi-bb italic trans-en <%= parse_url().searchKey.lang == "hi" ? "d-none" : "d-block" %>'>
+          <% var curr = chart_data[chart_data.length-1] %>
+          <% var prev2 = chart_data[chart_data.length-2] %>
+          <% var diff__ = parseFloat(curr.value.toFixed(1) - prev2.value.toFixed(1)) %>
+          <% if(diff__ !== 0) { %>
+            Also, the indicator “<%= worst_indicator.name %>” is <%= diff__ < 0 ? 'decreasing' : 'increasing' %> AS COMPARED TO <%= mon_ind[prev2.month] %>
+            <%= moment(prev2.date).format('YYYY') %>.
+          <% } else { %>
+            Also, the indicator “<%= worst_indicator.name %>” has no change AS COMPARED TO <%= mon_ind[prev2.month] %>
+            <%= moment(prev2.date).format('YYYY') %>.
+          <% } %>
+        </p>
+        <p class='Panel2-alsoTheIndicator font-digi-bb italic trans-hi <%= parse_url().searchKey.lang == "hi" ? "d-block" : "d-none" %>'>
+          <% var curr = chart_data[chart_data.length-1] %>
+          <% var prev2 = chart_data[chart_data.length-2] %>
+          <% var diff__ = parseFloat(curr.value.toFixed(1) - prev2.value.toFixed(1)) %>
+          <% if(diff__ !== 0) { %>
+            साथ ही, <span class=""><%= mon_ind[prev2.month] %></span> <%= moment(prev2.date).format('YYYY') %> की तुलना में "<span class=""><%= worst_indicator.name %></span>" संकेतक <span class="trn"><%= diff__ < 0 ? 'decreasing' : 'increasing' %></span> रहा है।
+          <% } else { %>
+            साथ ही, <span class=""><%= mon_ind[prev2.month] %></span> <%= moment(prev2.date).format('YYYY') %> की तुलना में संकेतक "<span class=""><%= worst_indicator.name %></span>" में कोई बदलाव नहीं हुआ है।
+          <% } %>
+        </p>
+        <img class='Panel2-panelLine w-11' src='assets/comic/images/panel_3_line_1.png' alt="icon">
+        <img class='Panel2-panelFigure w-217px' src='assets/comic/images/panel_3_figure_1.png' alt="icon">
+      </div>
+    </div>
+  </div>
+</div>

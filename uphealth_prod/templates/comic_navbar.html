@@ -1,0 +1,18 @@
+<div class="navbar w-334">
+  <a href="./" class="btn right-align"><span class="trn">Home</span></a>
+  <div class="dropdown">
+      <button class="dropbtn">
+          <span class="btn-text "></span>
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+          <% _.each(districts, function(district) { %>
+              <a class="select_district cursor_pointer" data-id="<%= district.district_id_num %>"><span><%= district.district_name %></span></a>
+          <% }) %>
+      </div>
+    </div>
+  <button class="btn button-pdf"><span class="trn">Download</span></button>
+  <button class="btn translate" value="hi">हिंदी</button>
+  <p><span class="trn">Date</span>: <input type="text" id="datepicker"><i class="fa fa-caret-down"></i></p>
+  <!-- <a href="./logout" class="btn btn-logout">Logout</button> -->
+</div>

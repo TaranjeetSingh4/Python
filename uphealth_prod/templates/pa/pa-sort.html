@@ -1,0 +1,38 @@
+<div class="dropdown custom-dropdown custom-nav">
+  <div class="dropdown-toggle custom-dropdown-toggle" data-toggle="dropdown" id="sort">
+    <p class="h1 mb-2 text-color5 text-uppercase opacity-50 font-weight-bold"><span class="d-block sm5">SORT BY</span>
+    </p>
+    <div class="h2 d-block cursor-pointer ">
+      <div
+        class=" sm4 font-weight-bold text-uppercase pb-2 nav-select custom-dropdown-display-text <%- _.includes(['', null, undefined], selected_opt)? '' : 'text-primary' %>">
+        <span class="ml-n2 sort-selected-text">
+          <span><%- option[selected_opt] %></span>
+          <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </span>
+    </div>
+    </div>
+  </div>
+  <div class="dropdown-menu comp-dropdown-menu p-0 m-0 border-0 border-radius" role="menu" aria-labelledby="sort">
+    <!----dropdown card-->
+    <div class="card border-radius w-100 px-2 tail-tc dropdown-template" id="sort-dropdown">
+      <div class="card-body pb-2 px-0 bg-transparent">
+        <div class="row">
+          <div class="col sort_list overflow-y" value="">
+            <ul class="nav flex-column h5 mb-0 text-uppercase font-weight-bold">
+              <% _.each(option, function (v, k) { %>
+                <li class="nav-item">
+                  <a class="nav-link mb-2 sm3 p-0 cursor-pointer <%- ((selected_opt == k) ? 'text-primary' : 'opacity-30') %>"
+                    value="<%- k %>"><%- v %><i class="fa fa-circle float-right" aria-hidden="true"></i></a>
+                </li>
+              <% }) %>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer px-0 bg-transparent border-top-1 text-center">
+        <button
+          class="sm1 text-uppercaset text-primary font-weight-bold bg-transparent border-0 sort-dropdown-submit">APPLY</button>
+      </div>
+    </div>
+  </div>
+</div>

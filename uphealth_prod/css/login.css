@@ -1,0 +1,134 @@
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.background-gradient {
+  background: linear-gradient(to top left, #a42500 0%, #fd9331 90%);
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background-color: transparent !important;
+  background-image: none !important;
+  color: rgb(0, 0, 0) !important;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+h6,
+.h6 {
+  font-size: 18px;
+}
+
+.carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.custom-height {
+  height: 350px;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.p-12 {
+  font-size: 12px;
+}
+
+.w-35 {
+  width: 35%;
+}
+
+.bg-image {
+  background-image: url("../img/login-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-shadow-black {
+  background-color: #000;
+  position: relative;
+}
+
+.bg-shadow-black:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #000;
+  transform-origin: bottom left;
+  -ms-transform: skew(-30deg, 0deg);
+  -webkit-transform: skew(-30deg, 0deg);
+  transform: skew(-30deg, 0deg);
+}
+
+.bg-rgba-black {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.line-height-1 {
+  line-height: 0.9;
+}
+.health-indicator {
+  width: 192px;
+  text-align: right;
+}
+
+@media (max-width: 1120px) {
+  .w-80 {
+    width: 100%;
+  }
+
+  .p-12 {
+    font-size: 11px;
+  }
+}
+
+.navbar-brand img {
+  max-height: 2em;
+}
+
+.home-action-desc {
+  white-space: normal; /* Allow wrapping inside buttons */
+}
+
+/* Responsive button widths */
+.home-action {
+  width: 15rem;
+}
+@media (max-width: 576px) {
+  .home-action {
+    width: 10rem;
+  }
+}
+
+.bg-gradient-nav {
+  background: linear-gradient(56.21deg, #a49b94 0%, #4d4742 100%);
+}
+
+.active-tab {
+  background-color: #db5f3b;
+  color: #fff !important;
+}
+
+.user-analysis-icon {
+  z-index: 2;
+}
+
+.modal-body {
+  width: 450px;
+  height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}

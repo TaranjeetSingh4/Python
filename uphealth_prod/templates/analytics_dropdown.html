@@ -1,0 +1,9 @@
+<% _.each(data, function(item) { %>
+  <li class="<%- add_class %> list-group-item pt-3 mb-2 px-3 bg-transparent border-0">
+    <div class="btn bg-white border pb-0 px-0 pt-2 rounded-0 w-100">
+      <label for="<%- item.label %>" class="d-block mb-0 p-10 bg-white text-left px-3 clr-1"><%- item.name %></label>
+      <script class="<%- item.class %>" type="text/html" src="templates/dropdown.html">
+      </script>
+    </div>
+  </li>
+<% })%>

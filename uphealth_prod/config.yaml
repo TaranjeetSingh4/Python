@@ -1,0 +1,165 @@
+settings:
+  # ... TODO: configure head, navbar, footer, script, style sections
+render: $LOGVIEWER_PATH_RENDER
+layout:
+  section:
+    # filters
+    - "@class": filters bg-white shadow pt-2 pb-2
+      div:
+        - "@class": container-fluid px-0
+          _$:
+            {
+              "tpl": "lv-filters",
+              "values":
+                [
+                  { "on": "filter-time", "type": "daterange" },
+                  {
+                    "on": "filter-status",
+                    "type": "select",
+                    "name": "status",
+                    "value": "Status - (All)",
+                  },
+                  {
+                    "on": "filter-users",
+                    "type": "select",
+                    "name": "user.id",
+                    "value": "User Name - (All)",
+                  },
+                  {
+                    "on": "filter-uri",
+                    "type": "select",
+                    "name": "uri",
+                    "value": "Page Name - (All)",
+                  },
+                  {
+                    "on": "filter-ip",
+                    "type": "select",
+                    "name": "ip",
+                    "value": "IP - (All)",
+                  },
+                  {
+                    "on": "filter-app",
+                    "type": "select",
+                    "name": "application",
+                    "value": "Application - (All)",
+                  },
+                ],
+            }
+    # KPIs
+    - "@class": d-flex flex-wrap my-4
+      _$:
+        [
+          {
+            "tpl": "lv-kpi",
+            "on": "kpi-pageviews",
+            "title": "Page Views",
+            "tooltip_text": "Count of pages viewed.",
+          },
+          {
+            "tpl": "lv-kpi",
+            "on": "kpi-sessions",
+            "title": "Sessions",
+            "tooltip_text": "Count of sessions.",
+          },
+          {
+            "tpl": "lv-kpi",
+            "on": "kpi-users",
+            "title": "Users",
+            "tooltip_text": "Count of Unique users.",
+          },
+          {
+            "tpl": "lv-kpi",
+            "on": "kpi-avgtimespent",
+            "title": "Avg.Session Time",
+            "tooltip_text": "Average duration of each session.",
+          },
+          {
+            "tpl": "lv-kpi",
+            "on": "kpi-urls",
+            "title": "URLs",
+            "tooltip_text": "Count of Unique URLs accessed.",
+          },
+          {
+            "tpl": "lv-kpi",
+            "on": "kpi-avgloadtime",
+            "title": "Avg.Load Time",
+            "tooltip_text": "Average page load time server side.",
+          },
+        ]
+    # Heading
+    - _$: { "tpl": "lv-header", "values": { "title": "Traffic Trend" } }
+    - div:
+        "@class": container-fluid pr-lg-0
+        _$:
+          {
+            "tpl": "lv-card-deck",
+            "values":
+              [
+                {
+                  "on": "vegam-pageviewstrend",
+                  "title": "Page Views",
+                  "tooltip_text": "Trend line for page views over selected time period.",
+                },
+                {
+                  "on": "vegam-sessionstrend",
+                  "title": "Sessions",
+                  "tooltip_text": "Unique sessions  over selected time period.",
+                },
+              ],
+          }
+    - _$: { "tpl": "lv-header", "values": { "title": "Top Metrics" } }
+    - div:
+        "@class": container-fluid pr-lg-0
+        _$:
+          - {
+              "tpl": "lv-card-deck",
+              "values":
+                [
+                  {
+                    "on": "vegam-toptenuri",
+                    "title": "Top URLs",
+                    "tooltip_text": "List of most visited URLs.",
+                  },
+                  {
+                    "on": "vegam-toptenusers",
+                    "title": "Top Users",
+                    "tooltip_text": "List of User with most page views.",
+                  },
+                ],
+            }
+          - {
+              "tpl": "lv-card-deck",
+              "values":
+                [
+                  {
+                    "on": "vegam-toptenstatus",
+                    "title": "Top Status",
+                    "tooltip_text": "List of status with most server requests.",
+                  },
+                  {
+                    "on": "vegam-toptenip",
+                    "title": "Top IPs",
+                    "tooltip_text": "List of IPs with most requests.",
+                  },
+                ],
+            }
+    - _$: { "tpl": "lv-header", "values": { "title": "Server Load" } }
+    - div:
+        "@class": container-fluid pr-lg-0
+        _$:
+          {
+            "tpl": "lv-card-deck",
+            "values":
+              [
+                {
+                  "on": "vegam-loadtimetrend",
+                  "title": "Server Response Time",
+                  "tooltip_text": "Trend of Server side load time over selected time period.",
+                },
+                {
+                  "on": "vegam-loadtimerequeststrend",
+                  "title": "Response Time and Requests",
+                  "tooltip_text": "Trend of total requests with average server load time over selected time period.",
+                },
+              ],
+          }

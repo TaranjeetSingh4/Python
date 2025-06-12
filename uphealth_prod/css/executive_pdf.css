@@ -1,0 +1,184 @@
+.capture-map {
+  /* height: 25vh !important; */
+  height: 180px !important;
+}
+.capture-map-state {
+  /* height: 35vh !important; */
+  height: 280px !important;
+}
+.map-align {
+  height: 25vh !important;
+}
+.map-align-state {
+  height: 50vh !important;
+}
+.leaflet-container {
+  background: none !important;
+}
+.leaflet-marker-pane {
+  display: none;
+}
+.border-grey {
+  border-color: #c8c8c8 !important;
+}
+
+/* Page 2 css starts*/
+.h-custom-100 {
+  height: 100%;
+}
+.screen-custom-h-1 {
+  height: 90vh;
+}
+
+@media (max-width: 1080px) {
+  .screen-custom-h-1 {
+    height: auto;
+  }
+}
+
+nav.navbar.navbar-expand-md .nav-link {
+  padding: 0.5rem 0.5rem;
+}
+
+/*Table component CSS start*/
+.custom-striped .table-striped tbody tr:nth-of-type(odd) {
+  background-color: #fff;
+}
+.custom-striped .table-striped tbody tr:nth-of-type(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* width */
+.table-wrap::-webkit-scrollbar {
+  width: 4px;
+  height: 6px;
+}
+
+/* Track */
+.table-wrap::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.table-wrap::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.table-wrap::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.table-scroll table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table-scroll th,
+.table-scroll td {
+  padding: 5px 10px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.clone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.clone th,
+.clone td {
+  visibility: hidden;
+  border-color: transparent;
+}
+
+.clone tbody th {
+  visibility: visible;
+}
+
+.clone .fixed-side {
+  background: #f9f9f9;
+  visibility: visible;
+}
+
+.clone thead,
+.clone tfoot {
+  background: transparent;
+}
+/*Table component CSS end*/
+
+/*Rank chart tooltip*/
+.rank_tooltip {
+  /*width: 120px;*/
+  background-color: black;
+  color: #fff;
+  border-radius: 0px;
+  font-size: 12px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 9999;
+}
+
+@media (max-width: 1300px) {
+  /* Reducing font-size when screen size is equal or less than 1300px. */
+  .font-control h4 {
+    font-size: 16px !important;
+  }
+  .font-control h4 span {
+    font-size: 12px !important;
+  }
+}
+
+.filler_div {
+  height: 2.2rem !important;
+}
+
+/* Calendar css starts*/
+.cal_container {
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10000 !important;
+}
+
+.cal_wid {
+  width: 30% !important;
+  top: 8% !important;
+  z-index: 10000 !important;
+}
+
+#close-cal {
+  top: -5px;
+  right: 0px;
+  position: absolute;
+}
+
+.cal-text {
+  color: #344052 !important;
+}
+
+#active,
+p#active_q,
+p#active_q span {
+  background-color: #4a90e2 !important;
+  color: white !important;
+}
+
+.collapse-border {
+  border-collapse: inherit !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.bg-color4 {
+  background-color: #f4f6f8 !important;
+}
+
+/* Calendar css ends*/

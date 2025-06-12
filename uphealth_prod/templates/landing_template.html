@@ -1,0 +1,31 @@
+<div class="py-4 h-100 mt-5">
+  <div class="container h-full-80 overflow-y">
+    <div class="h-100">
+      <div id="main_card">
+        <div class="class_cards_container">
+          <div class="row ml-n2">
+            <% _.each(landing_page_list, function(d) { %>
+            <div class="col-4 col-sm-4 col-md-4 col-xl-3 pl-2  mb-4 pb-2">
+              <div
+                class="card border-radius landing-div shadow border-transparent cursor-pointer h-100 position-relative">
+                <div class="card-body px-3">
+                  <div class="card-title p-0 mb-0 h2 h-75 text-center">
+                    <span><img class="w-50" src="<%- d.img %>" <%- 'style="height: 80px"' %> alt="Avatar"></span>
+                    <span class="sm3 p-3 d-block"><%- d.name %></span>
+                    <span class="sm3 d-block"><%- d.value ? 'UP Value ' + d.date : '' %></span>
+                    <span class="sm3 font-weight-bold d-block p-0"><%- d.value %> %</span>
+                  </div>
+                </div>
+                <div class="card-footer border-top p-0 bg-transparent">
+                  <a class="font-weight-bold small py-3 text-center nav-link explore-hover-bg opacity-40 text-color1" <%- d.href %>>explore
+                    <i class="fa fa-arrow-right ml-1 sm1" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+            <% }) %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

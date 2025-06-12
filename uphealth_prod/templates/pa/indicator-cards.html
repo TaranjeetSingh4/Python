@@ -1,0 +1,128 @@
+<div class="tab-pane <%- (tab == 'map') ? 'active' :'' %>" id="pills-map" role="tabpanel" aria-labelledby="pills-map-tab">
+  <div class="d-flex mt-n5 mb-4 justify-content-end">
+    <span class="sm1 text-color9 mx-2"> LO </span>
+    <div class="card bg-transparent border-0 rounded-0">
+      <div class="slider-image round"></div>
+    </div>
+    <span class="sm1 text-color9 mx-2"> HI </span>
+  </div>
+  <div id="carouselmap" class="carousel slide" data-ride="carousel" data-interval="false">
+    <a class="pos-cl z-9  cursor-pointer ml-n4 <%- (_.size(data) <= 1) ? 'd-none' : '' %>" href="#carouselmap" role="button" data-slide="prev">
+      <img src="img/left-icon.svg" alt="left-icon" class="carousel-control-prev-icon" width="32px" height="32px">
+    </a>
+    <a class=" pos-cr z-9  cursor-pointer mr-n4 <%- (_.size(data) <= 1) ? 'd-none' : '' %>" href="#carouselmap" role="button" data-slide="next">
+      <img src="img/right-icon.svg" alt="left-icon" class="carousel-control-next-icon" width="32px" height="32px">
+    </a>
+    <div class="carousel-inner">
+      <% var slide = url.searchKey['slide'] || 0 %>
+      <% _.each(data, function(items, k) { %>
+      <div class="carousel-item <%- (k == 0) ? 'active' : '' %>" data-attr="<%- k %>">
+        <div class="card-body row px-3 pt-1">
+          <% _.each(items[k], function(item, key) { %>
+            <div class="col-4 px-1">
+              <div class="card bg-white border-radius py-3 px-0 border-0 shadow h-100">
+                <div class="card-header border-0 rounded-0 bg-transparent p-0">
+                  <p class="text-center mb-0 px-3"><%- item.indicator %></p>
+                </div>
+                <div class="card-body py-2">
+                  <div class="map-div" id="ind-<%- slug_(item.indicator) %>-map">
+                    <% setTimeout(function() { %>
+                      <% var map_config = data['map_config']; map_config.data = item[item.indicator]; map_config.max=item.best; map_config.map_id = 'ind-'+slug_(item.indicator)+'-map'  %>
+                      <% map_config.data_attr = 'district'; map_config.isCompare = true; compare_map(map_config) %>
+                    <% },500) %>
+                  </div>
+                  <i class="fa fa-spin fa-circle-notch text-color5 opacity-20 spin-icon"></i>
+                </div>
+                <div class="h4 mb-0 pt-3 px-0 pb-0 card-footer border-0 rounded-0 bg-transparent">
+                  <div class="row align-items-center">
+                    <div class="col-9 px-0">
+                      <ol class="d-block h4 mb-0">
+                        <% _.each(regions, function(region) { %>
+                          <li class="d-flex nav-item sm3 mb-2 font-weight-bold justify-content-around">
+                            <div class="col-6 px-0">
+                            <span class="text-dark"><%- region.toUpperCase() %></span></div>
+                            <div class="col-3 px-0">
+                            <span class="<%- item.scores[region] > 0 ? 'text-dark': 'text-warning' %>"><%- item.scores[region] ? item.scores[region].toFixed(2) : 'NA'  %></span></div>
+                            <div class="col-3 px-0">
+                            <% var change = _.filter(item[item.indicator], function(d) { if(d[comp_type] == region) return d }) %>
+                            <span class=""><i class="fa <%- (change[0] && isFinite(change[0].change) && change[0].change > 0) ? 'fa-caret-up text-success' : 'fa-caret-down text-warning' %> mr-2" aria-hidden="true"></i><%- (change[0] && isFinite(change[0].change)) ?  change[0].change.toFixed(1) : 'NA' %></span>
+                          </div>
+                          </li>
+                        <% }) %>
+                      </ol>
+                    </div>
+                    <div class="col-3 pl-1 text-center h5 border-left">
+                      <h4 class="mb-0 text-uppercase text-color9 font-weight-bold"><span class="sm3 d-block">UP VALUE</span></h4>
+                      <p class="mb-0 sm1 font-weight-bold text-color9"><%- item.avg ? item.avg.toFixed(2) : 'NA' %></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% }) %>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+</div>
+<div class="tab-pane <%- (tab == 'trends') ? 'active' :'' %>" id="pills-trend" role="tabpanel" aria-labelledby="pills-trend-tab">
+  <div id="carouseltrend" class="carousel slide" data-ride="carousel" data-interval="false">
+      <a class="pos-cl z-9  cursor-pointer ml-n4 <%- (_.size(data) <= 1) ? 'd-none' : '' %>" href="#carouseltrend" role="button" data-slide="prev">
+        <img src="img/left-icon.svg" alt="left-icon" class="carousel-control-prev-icon" width="32px" height="32px">
+      </a>
+      <a class=" pos-cr z-9  cursor-pointer mr-n4 <%- (_.size(data) <= 1) ? 'd-none' : '' %>" href="#carouseltrend" role="button" data-slide="next">
+        <img src="img/right-icon.svg" alt="left-icon" class="carousel-control-next-icon" width="32px" height="32px">
+      </a>
+      <div class="carousel-inner">
+        <% var reg = _.cloneDeep(regions.sort()) %>
+        <% reg.push('up value') %>
+        <% _.each(data, function(items, k) { %>
+        <div class="carousel-item <%- (k == 0) ? 'active' : '' %>">
+          <div class="card-body row  px-3 pt-1">
+            <% _.each(items[k], function(item, key) { %>
+              <div class="col-4 px-1">
+                <div class="card bg-white border-radius  py-3 px-0 border-0 shadow h-100">
+                  <div class="card-header border-0 rounded-0 bg-transparent p-0">
+                    <p class="text-center mb-0 px-3"><%- item.indicator %></p>
+                  </div>
+                  <div class="card-body py-2">
+                    <div class="trend-div" id="<%- slug_(item.indicator) %>">
+                        <% setTimeout(function() { %>
+                          <% var spec_data = get_trend_line_data(chart_data[item.indicator_id], up_data[item.indicator_id]); render_multi_line_chart(spec_data, '#' + slug_(item.indicator)); %>
+                          <% },250) %>
+                    </div>
+                  </div>
+                  <div class="h4 mt-3 mb-0 pt-0 px-3 pb-0 card-footer border-0 rounded-0 bg-transparent">
+                    <div class="row align-items-center">
+                      <div class="container">
+                      <% var i = 0, disp_txt = "" %>
+                      <% for(i=0; _.size(reg) > i; i=i+2) { %>
+                        <% disp_txt = _.includes(reg[i], 'Division')?_.replace(reg[i], "Division", "Div"):reg[i] %>
+                        <div class="row">
+                          <div class="col sm3 mb-2 font-weight-bold justify-content-around">
+                              <span class="col-1 px-0 sm4" <%- 'style=color:' %><%- (_.includes(['up value'], reg[i])) ? 'grey' : color_arr[i] %>><i class="fa fa-minus fa-5x"></i></span>
+                              <span class="pl-2 text-dark"><%- disp_txt.toUpperCase() %></span>
+                          </div>
+                          <% var x = i+1 %>
+                          <% disp_txt = _.includes(reg[x], 'Division')?_.replace(reg[x], "Division", "Div"):reg[x] %>
+                          <% if(_.size(reg) > x) { %>
+                            <div class="col sm3 mb-2 font-weight-bold justify-content-around">
+                                <span class="col-1 px-0 sm4" <%- 'style=color:' %><%- (_.includes(['up value'], reg[x])) ? 'grey' : color_arr[x] %>><i class="fa fa-minus fa-5x"></i></span>
+                                <span class="pl-2 text-dark"><%- disp_txt.toUpperCase() %></span>
+                            </div>
+                          <% } %>
+                        </div>
+                      <% } %>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <% }) %>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+  </div>
+</div>

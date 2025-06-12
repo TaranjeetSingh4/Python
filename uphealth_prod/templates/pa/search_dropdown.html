@@ -1,0 +1,35 @@
+<div class="dropdown-menu border-0 w-400 border-radius shadow pt-4" id="search_dropdown">
+  <div class="card-body py-0">
+    <!-- All search keywords are displayed by default -->
+    <% _.each(keywords, function(word){ %>
+    <button keyword_attr="<%=word.replace(/\s+/g, '_')%>" class="keyword_btn round border-primary h3 py-1 btn-sm btn text-primary bg-transparent">
+      <span class="sm1 d-block"> <%=word%>
+        <i class="fa fa-plus pl-2" aria-hidden="true"></i>
+      </span>
+    </button>
+    <% }) %>
+  </div>
+  <!-- All indicators are displayed by default -->
+  <div class="card-body">
+    <div class="overflow-y overflow-x-hidden autocomplete-height">
+      <div class="pr-4 h4">
+        <% _.each(pa_classes, function(_class){ %>
+
+        <p class="sm3 mb-2 font-weight-bold text-primary text-uppercase"><%=_class%></p>
+
+        <ul class="nav flex-column">
+          <% _.each(data[_class], function(item) { %>
+          <li indicator_attr="<%=item.indicator_id%>" class="nav-item">
+            <p class="nav-link px-0 my-0 sm3 "><%=item.indicator_name%></p>
+            <p class="underline border-color1 border-1 opacity-30 shadow"></p>
+          </li>
+          <% }) %>
+        </ul>
+
+        <% }) %>
+      </div>
+    </div>
+  </div>
+
+  <span class="px-3 d-block sm2 font-weight-bold text-secondary"> Note : Try searching for other keywords if no results are displayed for the various program categories ! </span>
+</div>

@@ -1,0 +1,42 @@
+<div class="h-100">
+  <div class="d-flex justify-content-between px-3 pb-3">
+    <div class="align-self-center custom-tabs-left">
+      <ul class="nav nav-pills text-capitalize" id="pills-tab" role="tablist">
+        <li class="nav-item pr-3 border-bottom">
+          <a class="compare-active-tab nav-link <%- tab == 'score' ? 'active' : ''  %> px-0 font-weight-bold rounded-0 opacity-50 text-color1"
+            id="pills-score-tab" data-toggle="pill" data-attr="score" href="#pills-score" role="tab" aria-controls="pills-score"
+            aria-selected="true">score matrix</a>
+        </li>
+        <li class="nav-item px-3 border-bottom">
+          <a class="compare-active-tab nav-link <%- tab == 'trends' ? 'active' : ''  %> font-weight-bold px-0 rounded-0 opacity-50 text-color1"
+            id="pills-trends-tab" data-toggle="pill" data-attr="trends" href="#pills-trends" role="tab" aria-controls="pills-trends"
+            aria-selected="true">Trend cards</a>
+        </li>
+        <li class="nav-item pl-3 border-bottom">
+          <a class="compare-active-tab nav-link <%- tab == 'map' ? 'active' : ''  %> font-weight-bold px-0 rounded-0 opacity-50 text-color1"
+            id="pills-map-tab" data-toggle="pill" data-attr="map" href="#pills-map" role="tab" aria-controls="pills-map"
+            aria-selected="true">Map cards</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="h-100 compare-container">
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane compare-pane <%- (tab == 'score') ? 'active' : ''  %>" id="pills-score" role="tabpanel" aria-labelledby="pills-score-tab">
+        <div class="d-flex mt-n5 mb-4 justify-content-end">
+          <span class="sm1 text-color9 mx-2"> LO </span>
+          <div class="card bg-transparent border-0 rounded-0">
+            <div class="slider-image round"></div>
+            <div class="for-slider mt-n5">
+              <input type="text" class="js-range-slider w-100" name="slider" value="">
+            </div>
+          </div>
+          <span class="sm1 text-color9 mx-2"> HI </span>
+        </div>
+        <script class="score-matrix" type="text/html" src="templates/pa/score-matrix.html"></script>
+      </div>
+      <script class="indicator-cards" type="text/html" src="templates/pa/indicator-cards.html"></script>
+    </div>
+  </div>
+  <script class="compare_no_data" type="text/html" src="templates/pa/no_data.html"></script>
+</div>

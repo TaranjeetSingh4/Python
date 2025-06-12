@@ -1,0 +1,159 @@
+<div class="col px-0" id="view1-table-container">
+  <div class="col-12 px-0 overflow-hidden">
+    <table class="table mb-0 bg-color46 border-color46 border border-radius table-scroll custm-table view1_table"
+      id="view1_table" data-SheetName="TB-Index">
+      <thead class="position-relative d-block">
+        <!-- <tr>
+          <th class="custom-bg"></th>
+          <th class="custom-bg"></th>
+          <% if (url.searchKey.indicator_value){ %>
+            <% var ind_type = url.searchKey.indicator_value.split(' ')[0] %>
+            <% var col_span = ind_type == 'Process' ? '14' : '13' %>
+            <th colspan=<%- col_span %> class="<%- ind_type == 'Process' ? 'border-1' : 'border-2'%> text-center"><%- ind_type %></th>
+          <% }else{ %>
+            <th colspan="14" class="border-1 text-center">Process</th>
+            <th colspan="13" class="border-2 border-left border-color40 text-center">Outcome</th>
+          <% }%>
+        </tr> -->
+        <tr class="h4 mb-0">
+          <% map_data= _.orderBy(map_data, ['rank','name'], ['asc']) %>
+          <% var col_num = 0 %>
+          <% _.keys(map_data[0]).forEach(function(key, idx){ %>
+          <% if(idx == 0) {%>
+          <th class="font-weight-bold sm3 border-right border-color40 align-top" data-seq="<%- idx %>">
+            <div class="d-flex justify-content-between">
+              <span class="text-break">
+                <%= url.searchKey.category=="all_blocks" ? "Block Name" : url.searchKey.category=="all_divisions" ? "Division Name" : "District Name" %></span>
+              <span class="mx-1">
+                <img src="assets/img/no-sort.svg" class="table_sort" data-key="<%= key %>"
+                  data-col_type="<%- (idx == 0) ? 'text' : 'number' %>" data-col_num="<%= col_num %>" alt="sorting">
+              </span>
+            </div>
+          </th>
+          <% } else if(key == 'rank'){ %>
+            <% col_num = 1 %>
+            <th class="font-weight-bold sm3 border-right border-color40 align-top rank_th" data-seq="<%- idx %>">
+              <div class="d-flex justify-content-between">
+                <span class="text-break">
+                  <% var _indicator_val = url.searchKey.indicator_value %>
+                  <% var r_col = _indicator_val ? _indicator_val.split(' ')[0] +" " + key : 'overall ' + key %>
+                  <%= toCamelCase(r_col) %></span>
+                <span class="mx-1">
+                  <img src="assets/img/no-sort.svg" class="table_sort" data-key="<%= key %>"
+                    data-col_type="<%- (idx == 0) ? 'text' : 'number' %>" data-col_num="<%= col_num %>" alt="sorting">
+                </span>
+              </div>
+            </th>
+          <% } else if(key!='name' && key!='filter_id' && key!='id' && key!='rank') {%>
+            <% col_num = col_num + 1 %>
+          <% short_name_1 = _.filter(tooltip_data, function(d){ return d['indicator_name'].toLowerCase()==key.toLowerCase()})[0].short_name %>
+          <% ind_type =_.filter(distinct_ind, function(d){ return d['ind_name'].toLowerCase()==key.toLowerCase()})[0].category.split(' ')[0] %>
+          <th class="font-weight-bold sm3 border-right border-color40 align-top <%- ind_type == 'Process' ? 'border-1' : 'border-2' %>" data-seq="<%- idx %>">
+            <div class="d-flex justify-content-between">
+              <a href="<%- '?'+key %>"><span class="text-break">
+                  <%= short_name_1 %> </span>
+                <% title = _.filter(tooltip_data, function(d){ return d['indicator_name'].toLowerCase()==key.toLowerCase()})[0] %>
+              </a>
+              <img src="assets/img/info_icon.svg" class="info-icon-hover" alt="info" data-placement="right"
+                data-toggle="tooltip" data-html="true" title="
+                            <div class='mb-0 p-3 shadow text-left text-dark h5'>
+                              <p class='mb-0 sm3 font-weight-normal text-darker opacity-70'>Note: </p>
+                              <p class='mb-0 sm3 pb-3 font-weight-normal opacity-70'>
+                                  <%= _.filter(tooltip_data, function(d){ return d['indicator_name'].toLowerCase()==key.toLowerCase()})[0].note %>
+                              </p>
+                            </div>" height="15" />
+              <span class="mx-1">
+                <img src="assets/img/no-sort.svg" class="table_sort" data-key="<%= key %>"
+                  data-col_type="<%- (idx == 0) ? 'text' : 'number' %>" data-col_num="<%= col_num %>"
+                  alt="sorting" />
+              </span>
+            </div>
+            <div>
+              <% if(key!='name' && key!='filter_id' && key!='id' && key!='rank' && short_name_1 != 'TB Success Rate') { %>
+              <img src="assets/img/icon-expand.svg" indicator="<%= key %>" data-id="cont<%= idx%>" class="cursor-pointer expand-btn"
+                alt="icon expand" id="table_view_expand_btn" />
+              <% } %>
+            </div>
+          </th>
+          <% sub_id_data = _.filter(tooltip_data, function(d){ return d['indicator_name'].toLowerCase()==key.toLowerCase()})[0] %>
+          <% sub_data_header=_.filter(tooltip_data, function(d){ return d['indicator_name'].toLowerCase()==key.toLowerCase()})[0].sub_indicator %>
+              <% _.each(sub_data_header,function(key_1, i){  %>
+                <% col_num = col_num + 1 %>
+              <th class="font-weight-bold sm3 border-right border-color40 align-top matrix-th-table dont-highlight d-none"
+                id="cont<%= idx %>">
+                <div class="d-flex justify-content-between">
+              <span> <%= sub_id_data[key_1] %> </span>
+              <span class="d-block mt-1"><img src="assets/img/no-sort.svg"
+                  class="d-block mt-2 mx-auto table_sort" data-key="<%= key%>" alt="icon-nosort"
+                  data-col_type="number" data-col_num="<%= col_num %>" /></span>
+                </div>
+              </th>
+              <% }) %>
+          <% } %>
+          <% }) %>
+        </tr>
+      </thead>
+      <tbody class="position-relative d-block overflow-scroll">
+        <% _.each(map_data, function(list_item){ %>
+        <tr class="h4 mb-0 view1-table-rows" data-category="<%-  %>">
+          <% _.each(Object.keys(list_item), function(k,i){ %>
+          <% if(i == 0){ %>
+          <td class="sm3 open-text align-middle py-2 border-color54 border-right"
+            data-value="<%= toCamelCase(list_item.name) %>" data-seq="<%- i %>">
+            <span><%= toCamelCase(list_item.name) %></span>
+            <% filter_column = 'id' %>
+            <!-- <div
+              class="font-weight-bold rounded-pill text-middle w-100 map_view_text bg-color-40 text-white px-2 mt-2 mr-5 z-1 py-1 d-none"
+              level_id_data="<%= _.filter(map_data,function(d){return d['name']==list_item.name})[0][filter_column] %>"
+              filter_level="<%= filter_column %>"
+              filter_name="<%= list_item.name %>">
+              <span>"<%= url.searchKey.category=="all_divisions" ? 'Districts' : 'Blocks' %>"<img src="assets/img/arrow-forward.svg" class="float-right custm-mt-1"
+                  alt="arrow_forward"></span>
+            </div> -->
+          </td>
+          <% } else if (i==1) { %>
+            <td class="sm3 open-text align-middle py-2 border-color54 border-right rank_td"
+            data-value="<%= list_item.rank %>" data-seq="<%- i %>">
+            <span><%= list_item.rank %></span>
+            <% filter_column = 'rank' %>
+            <!-- <div
+              class="font-weight-bold rounded-pill text-middle w-100 map_view_text bg-color-40 text-white px-2 mt-2 mr-5 z-1 py-1 d-none"
+              level_id_data="<%= _.filter(map_data,function(d){return d['rank']==list_item.rank})[0][filter_column] %>"
+              filter_level="<%= filter_column %>"
+              filter_name="<%= list_item.rank %>">
+              <span>"<%= url.searchKey.category=="all_divisions" ? 'Districts' : 'Blocks' %>"<img src="assets/img/arrow-forward.svg" class="float-right custm-mt-1"
+                  alt="arrow_forward"></span>
+            </div> -->
+          </td>
+          <% } else if(k!=='name' && k!='id' && k!='filter_id' && k!='rank'){ %>
+            <% row_data_color = list_item[k]!= null? mat_color_obj[k](list_item[k]): '#808080' %>
+          <% row_data_value = list_item[k]!= null && list_item[k]!= 'NA' ? numeral(list_item[k]).format('0,0.00'): 'NA' %>
+          <% color_string = 'style=background-color:'+ d3.color(row_data_color).hex() %>
+          <td class="align-middle py-2 sm3 open-text border-color54 border-right" data-value="<%= list_item[k]!==null ? list_item[k]: -1 %>"
+            data-seq="<%- i %>" data-key="<%= 'view'+k %>">
+            <div class="d-flex justify-content-start align-items-center">
+              <span class="<%=row_data_value != 'NA' ? 'dot-1': ' ' %> d-block mr-2"<%- color_string %>>
+              </span>
+              <span class="<%=row_data_value == 'NA' ? 'text-black mx-auto': ' ' %>"><%- row_data_value %></span>
+            </div>
+          </td>
+          <% let data = _.filter(sub_indi,function(d){return d['id']==list_item['id']}) %>
+          <% let sub_data = _.filter(data,function(d){return d.ind_id==_.filter(distinct_ind,function(d){return d.ind_name.toLowerCase()==k.toLowerCase()})[0].ind_id})[0] %>
+          <% let sub_head=_.filter(tooltip_data, function(d){ return d['indicator_name'].toLowerCase()==k.toLowerCase()})[0].sub_indicator %>
+          <% _.each(sub_head,function(key){ %>
+          <% let  row_data = sub_data != undefined && sub_data[key] != null ? numeral(sub_data[key]).format('0,0.00') : 'NA' %>
+          <td class="align-middle py-2 sm3 open-text border-color54 border-right matrix-td d-none" id="cont<%= i %>"
+            data-value="<%=  sub_data != undefined && sub_data[key] != null ? sub_data[key] : -1 %>">
+            <div class="d-flex justify-content-start align-items-center">
+            <span class="text-black mx-auto"><%= row_data %></span>
+          </div>
+        </td>
+        <% }) %>
+          <% } %>
+          <% }) %>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</div>

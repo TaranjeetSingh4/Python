@@ -1,0 +1,8 @@
+.bg-gradient-nav {
+  background: linear-gradient(56.21deg, #a49b94 0%, #4d4742 100%);
+}
+
+.active-tab {
+  background-color: #db5f3b;
+  color: #fff !important;
+}

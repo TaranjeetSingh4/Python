@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>UP-TSU</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/registration_bootstrap.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-select/dist/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" type="text/css" href="ui/noty/lib/noty.css">
+</head>
+
+<body class="bg-color bg-no-repeat small m-0 p-0 mx-auto">
+  <section class="main in">
+    <div class="container-fluid py-1 px-4 p-md-2 position-relative">
+      <div class="card-title text-center">
+        <h3 class="text-white text-capitalize font-weight-bold mb-1">Uttar Pradesh Health Dashboard</h3>
+      </div>
+      <div class="h-75 w-100">
+        <div class="d-flex h-100">
+          <div class="align-self-md-center col-8 mx-auto">
+            <div class="card text-center p-4">
+              <div class="card-body p-0">
+                <form method="POST" enctype="multipart/form-data" id="files" action="">
+                  <input type="hidden" name="_xsrf" value="{{ handler.xsrf_token }}">
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <button type="submit" class="bg-transparent font-weight-bold text-capitalize text-dark h4 mb-0 border-0">Register</button>
+                    </div>
+                  </div>
+                  <div class="card-login py-3">
+                    <span class="text-danger float-left mb-2">* Fields are mandatory</span>
+                    <div class="input-group my-2">
+                      <input name="user" type="text" id="username" class="username form-control border custom-color-login py-2 rounded-0" placeholder="Name *" aria-label="Name" required autocomplete="off">
+                    </div>
+                    <div class="input-group my-2">
+                      <input name="mobile" type="text" id="phonenumber" class="phonenumber form-control border custom-color-login py-2 rounded-0" placeholder="Phonenumber *" aria-label="Phonenumber" required autocomplete="off">
+                    </div>
+                    <div class="input-group my-2">
+                      <input name="email" type="text" id="email" class="email form-control border custom-color-login py-2 rounded-0" placeholder="Email" aria-label="Email" autocomplete="off">
+                    </div>
+                    <div class="input-group my-2">
+                      <span class="text-dark font-weight-bold mr-1">*</span>
+                      <div class="form-check form-check-inline text-dark col-3 px-0 mr-1">
+                        <input id="radio-state" value="state" name="radio" type="radio" class="form-check-input region_level" checked>
+                        <label class="form-check-label" for="radio-state">State</label>
+                      </div>
+                      <div class="form-check form-check-inline text-dark col-3 px-0 mr-1">
+                        <input id="radio-district" value="district" name="radio" type="radio" class="form-check-input region_level">
+                        <label class="form-check-label" for="radio-district">District</label>
+                      </div>
+                      <div class="form-check form-check-inline text-dark col-2 px-0 mr-1">
+                        <input id="radio-block" value="block" name="radio" type="radio" class="form-check-input region_level">
+                        <label class="form-check-label" for="radio-block">Block</label>
+                      </div>
+                    </div>
+                    <div class="col-7 my-2" id="district_div">
+                      <div class="dropdown w-100 bg-white text-dark p-11">
+                      <label for="district" class="font-weight-bold float-left">District</label>
+                        <script class="district-dropdown" type="text/html" src="templates/dropdown.html"></script>
+                      </div>
+                    </div>
+                    <div class="col-7 my-2" id="block_div">
+                      <div class="dropdown w-100 bg-white text-dark p-11">
+                        <label for="block" class="font-weight-bold float-left">Block</label>
+                        <script class="block-dropdown" type="text/html" src="templates/dropdown.html"></script>
+                      </div>
+                    </div>
+                    <div class="col-7 my-2">
+                      <div class="dropdown w-100 bg-white text-dark p-11">
+                        <label for="designation" class="font-weight-bold float-left">Designation *</label>
+                        <script class="designation-dropdown" type="text/html" src="templates/dropdown.html"></script>
+                      </div>
+                    </div>
+                    <div class="input-group my-2">
+                      <label for="program" class="font-weight-bold mr-2">Program *</label>
+                      <div class="form-check form-check-inline text-dark col-2 px-0 mr-1">
+                        <input id="radio-yes" value="program-yes" name="radio-program" type="radio" class="form-check-input program_level">
+                        <label class="form-check-label" for="radio-yes">Yes</label>
+                      </div>
+                      <div class="form-check form-check-inline text-dark col-2 p-11 mr-1">
+                        <input id="radio-no" value="program-no" name="radio-program" type="radio" class="form-check-input program_level" checked>
+                        <label class="form-check-label" for="radio-no">No</label>
+                      </div>
+                    </div>
+
+                    <div class="col-7 my-2" id="program_div">
+                      <div class="input-group dropdown w-100 bg-white text-dark p-11">
+                        <script class="program-dropdown" type="text/html" src="templates/dropdown.html"></script>
+                      </div>
+                    </div>
+                    <div class="input-group my-2">
+                        <span class="font-weight-bold float-left mr-2 my-auto">Upload Profile Picture</span>
+                        <input type="file" id="file-input" class="Upload profile-pic-upload" accept=".png, .svg" >
+                    </div>
+                  </div>
+                  <div class="input-group my-2" id="enter-div">
+                    <input name="otp" type="text" id="enter-otp" class="otp form-control border custom-color-login py-2 rounded-0 " placeholder="Enter OTP" aria-label="Enter OTP" required disabled>
+                  </div>
+                  <div class="input-group my-2">
+                    <button type="button" class="col-12 mx-auto rounded-0 border border-warning bg-transparent text-capitalize text-warning py-3 h6 mb-0 cursor-pointer" id="otp-button">Get OTP</button>
+                  </div>
+                  <div class="input-group my-2" id="resend-div">
+                    <button type="button" class="col-12 mx-auto rounded-0 border border-warning bg-transparent text-capitalize text-warning py-3 h6 mb-0 cursor-pointer" id="resend-otp">Resend OTP</button>
+                  </div>
+                  <div class="footer pt-2" id="submit-form">
+                    <div class="w-100 mx-auto" >
+                      <input type="hidden" name="_xsrf" id = "xsrf" value="{{ handler.xsrf_token }}">
+                      <button type="button" class="col-12 mx-auto rounded-0 border border-success bg-transparent text-capitalize text-success py-3 h6 mb-0 cursor-pointer">Submit</button>
+                    </div>
+                  </div>
+                  <div class="w-50 mx-auto p-3 text-center" id="register">
+                    <a href="login" class="text-capitalize text-warning p-12 font-italic cursor-pointer nav-link p-0">Login</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="ui/jquery/dist/jquery.min.js"></script>
+  <script src="ui/popper.js/dist/umd/popper.min.js"></script>
+  <script src="ui/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+  <script src="ui/lodash/lodash.min.js"></script>
+  <script src="ui/noty/lib/noty.min.js"></script>
+  <script src="ui/g1/dist/g1.min.js"></script>
+  <script type="text/javascript" src="js/register.js"></script>
+  <script>
+  // $("#file-input").on("change",function(){
+  //     var file = $(this)[0].files[0];
+  //     console.log(file)
+  //     var upload = new Upload(file);
+  //     upload.doUpload();
+  // });
+  </script>
+</body>
+</html>

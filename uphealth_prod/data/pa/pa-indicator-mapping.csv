@@ -1,0 +1,50 @@
+program_area,class,indicator_id,indicator_name,type
+MH,PMSMA,1,% PW whose ultrasounds done (Private + Public Institution) against registered PW,percentage
+MH,MDR,2,% of maternal death reported against estimated maternal death,percentage
+MH,MDR,3,Number of maternal death reported by Reporting (ASHA/Health facility/Other),number
+MH,MDR,4,Number of maternal death reported by Place of Death (Facility/Home/On the way),number
+MH,MDR,5,% of reported maternal death reviewed (CBMDR and FBMDR),percentage
+MH,MDR,6,% of reviewed maternal death presented to CMO/district officials,percentage
+MH,JSSK,9,% of pregnant women received free transport facility from home to health unit against delivery,percentage
+MH,JSSK,10,% of pregnant women received free transport facility from health unit to home against delivery,percentage
+MH,JSSK,11,% of pregnant women received free meals against delivery,percentage
+MH,JSSK,12,% of pregnant women receiving free treatment against maternal complication,percentage
+MH,JSSK,13,% of pregnant women received free ultrasound check-ups against delivery,percentage
+MH,JSSK,14,% of pregnant women offered free blood transfusion against severely anemic pregnant women,percentage
+MH,JSSK,15,% of newborn infants receiving treatment against newborn with complication,percentage
+MH,JSSK,16,% of complication received against delivery,percentage
+MH,JSSK,17,% of complaints disposed against complaints recieved,percentage
+MH,JSSK,18,% of newborn babies with free transport facility available from health unit to home against live birth,percentage
+MH,JSY,19,% of home deliveries bpl received JSY Payment,percentage
+MH,JSY,20,% of rural deliveries received JSY Payment,percentage
+MH,JSY,21,% of urban deliveries received JSY Payment,percentage
+MH,JSY,22,% of caesarean sections of bpl in private accredited centers received JSY Payment,percentage
+MH,JSY,23,% of caesarean sections in private accredited centers district mainpuri kasganj chitrakoot shrawasti sonebhadra and sambhal received JSY Payment,percentage
+MH,JSY,24,% of ASHA of rural delivery received JSY Payment against rural deliveries,percentage
+MH,JSY,25,% of urban asha received JSY Payment against urban deliveries,percentage
+MH,JSY,26,% of District level JSY adiminstrative fund expenses against approved fund,percentage
+MH,JSY,27,% of state level JSY adiminstrative fund expenses against approved fund,percentage
+MH,JSSK,28,% PW recieved 180 or more IFA,percentage
+MH,JSSK,30,% of PW received 360 or more calcium against PW registered,percentage
+MH,JSSK,31,% of pregnant women received Albendazole against PW registered,percentage
+MH,JSSK,32,% of PW given other JSSK drugs against PW registered,percentage
+MH,JSSK,33,"Delivery distribution by level of delivery point (L1, L2, L3)",percentage
+MH,JSSK,34,% C-section against reported delivery by DH and FRU CHC,percentage
+MH,JSSK,35,% of free Diagnostics for Pregnant women under JSSK against estimated pregnancy,percentage
+HR,Availability,36,Number of Gynaecologist,number
+HR,Availability,37,Number of Anaesthetist,number
+HR,Availability,38,Number of Paediatrician,number
+HR,Specialist Availability,39,No of MBBS Doctor and Nursing retiring,number
+HR,Specialist Availability,40,No of Trained MBBS in EMOC,number
+HR,Specialist Availability,41,No of Trained MBBS in LSAS,number
+HR,Specialist Availability,42,No of Trained MBBS in FIMNCI,number
+HR,Staff-Service Delivery,43,Specialist Vs C-Section Ratio,number
+HR,Staff-Service Delivery,44,Nursing Vs OPD Ratio in CHC,number
+HR,Staff-Service Delivery,45,Nursing Vs OPD Ratio in DH,number
+HR,Staff-Service Delivery,46,MBBS Vs OPD Ratio in CHC,number
+HR,Staff-Service Delivery,47,MBBS Vs OPD Ratio in DH,number
+FP,Service uptake,48,"Total no. of Registered Couples Methodwise (OCP, Condoms, IUCD, Sterilization, Injectibles, Chhaya)",number
+FP,Injection Doses,49,1st Dose of Injectibles,number
+FP,Injection Doses,50,2nd Dose of Injectibles,number
+FP,Injection Doses,51,3rd Dose of Injectibles,number
+FP,Injection Doses,52,4th Dose of Injectibles,number

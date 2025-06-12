@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>PLAY-button</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5.83333333,9.625 L9.33333333,7 L5.83333333,4.375 L5.83333333,9.625 L5.83333333,9.625 Z M7,1.16666667 C3.78,1.16666667 1.16666667,3.78 1.16666667,7 C1.16666667,10.22 3.78,12.8333333 7,12.8333333 C10.22,12.8333333 12.8333333,10.22 12.8333333,7 C12.8333333,3.78 10.22,1.16666667 7,1.16666667 L7,1.16666667 Z M7,11.6666667 C4.4275,11.6666667 2.33333333,9.5725 2.33333333,7 C2.33333333,4.4275 4.4275,2.33333333 7,2.33333333 C9.5725,2.33333333 11.6666667,4.4275 11.6666667,7 C11.6666667,9.5725 9.5725,11.6666667 7,11.6666667 L7,11.6666667 Z" id="path-1"></path>
+        <rect id="path-3" x="0" y="0" width="29.1666667" height="29.1666667"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rev1.3-iPad-Map-new--View" transform="translate(-748.000000, -711.000000)">
+            <g id="Group-7" transform="translate(747.000000, 707.000000)">
+                <g id="Material-Icons/AV/play/circle_outline" transform="translate(0.000000, 3.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <g id="🎨-Color" stroke-width="1" fill-rule="evenodd" mask="url(#mask-2)">
+                        <g transform="translate(-7.583333, -7.583333)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use id="Black" stroke="none" fill="#000000" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

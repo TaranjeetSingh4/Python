@@ -1,0 +1,37 @@
+<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+    <div class="modal-content border-radius shadow-2 px-4 w-75 bg-linear-3 mx-auto">
+      <div class="modal-header border-0 px-0 d-flex align-items-center">
+        <% if(files_list.length !=0 ){%>
+        <h5 class="modal-title font-weight-bold" id="_delete_modal">Click on a file to delete</h5>
+        <% } else { %>
+          <h5 class="modal-title font-weight-bold" id="_delete_modal">No files to delete</h5>
+        <% } %>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body pb-4 pt-0 px-0">
+        <div class="list-group files_list_grp text-truncate">
+          <% if(files_list.length !=0 ){%>
+          <% _.each(files_list, function(_file, i){ %>
+          <div class="list-group-item list-group-item-action delete_pdf_item" spec_delete="spec_delete?filename=<%- _file %>"
+            file_attr="<%- _file %>">
+            <div class="custom-control custom-radio">
+              <input type="radio" id="customRadio + <%- i %>" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio + <%- i %>"><%- _file %></label>
+            </div>
+          </div>
+          <% })%>
+          <% } %>
+        </div>
+      </div>
+      <div class="modal-footer border-top-0">
+        <button type="button" class="btn btn-block text-white py-3 lh-1 bg-color8 fs-13 border-0"
+          data-dismiss="modal">Close</button>
+        <button  class="delete_pdf btn btn-block btn-danger text-white mt-0 py-3 lh-1 fs-13 border-0">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

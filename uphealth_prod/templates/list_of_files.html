@@ -1,0 +1,32 @@
+<div class="modal fade" id="download" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+    <div class="modal-content border-radius shadow-2 px-4 w-75 bg-linear-3 mx-auto">
+      <div class="modal-header border-0 px-0 d-flex align-items-center">
+        <% if(files_list.length !=0 ){%>
+        <h5 class="modal-title font-weight-bold" id="exampleModalCenterTitle">Click on a file to download</h5>
+        <% } else{ %>
+          <h5 class="modal-title font-weight-bold" id="_delete_modal">No Files Available to Download</h5>
+        <% } %>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body pb-4 pt-0 px-0">
+        <div class="list-group files_list_grp text-truncate">
+          <% if(files_list.length !=0 ){%>
+          <% _.each(files_list, function(_file){ %>
+          <a href="spec_download?filename=<%- _file %>" file_attr="<%- _file %>" class="list-group-item list-group-item-action">
+            <%- _file %>
+          </a>
+          <% })%>
+          <% } %>
+        </div>
+      </div>
+      <div class="modal-footer border-top-0">
+        <button type="button" class="btn btn-block text-white py-3 lh-1 bg-color8 fs-13 border-0"
+          data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

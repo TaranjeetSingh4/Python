@@ -1,0 +1,10 @@
+<% var data_parent = data_parent ? data_parent : '' %>
+<select class="w-100 selectpicker bg-white text-dark p-11 border" data-style="btn bg-white w-100 text-dark p-11 text-capitalize" tabindex="-98" id="<%- id %>" data-parent="<%- data_parent %>">
+  <% _.each(data, function(row) { %>
+    <% if(column === false) { %>
+      <option value="<%-row%>" class="text-capitalize p-12"><%- row.split('_').join(' ') %></option>
+    <% } else { %>
+      <option data-id="<%-_.find(mapping, {indicator_name: row[column]}).indicator_id%>" value="<%-row[column]%>" class="text-capitalize p-12"><%- _.find(mapping, {indicator_name: row[column]}).short_name %></option>
+    <% } %>
+  <% }) %>
+</select>

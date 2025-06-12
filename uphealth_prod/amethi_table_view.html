@@ -1,0 +1,291 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>UP-TSU | Table View</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/temp_bootstrap1.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-select/dist/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="ui/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/by_domain.css">
+  <link rel="stylesheet" href="css/table_view.css">
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-sweetalert/dist/sweetalert.css">
+  <link rel="stylesheet" href="node_modules/jquery-ui-dist/jquery-ui.css">
+  <link rel="stylesheet" href="node_modules/jquery-ui-slider-pips-npm/dist/jquery-ui-slider-pips.min.css">
+</head>
+
+<body class="h-100">
+  {% set import json %}
+  {% set import numpy as np %}
+  {% set import up_tsu_desktop_app %}
+  {% set user_session_id = handler.get_session().get("id", {}) %}
+  {% set from gramex.config import variables %}
+  {% set user_info = handler.get_session().get("user", {}) %}
+  {% if user_info == {} %}
+    {% set user_info = {'district': None, 'map_id': None, 'division': None, 'block': None, 'user': 'CM_Office1', 'name': None, 'phonenumber': '0', 'otp': None, 'designation': 'cm', 'Approval': 'Approved', 'temp_password': '0', 'email': None, 'created_on': None, 'last_updated_by': None, 'id': 'CM_Office1'} %}
+  {% end %}
+  {% set username = user_info.get("user","") %}
+  {% set user_data = {} %}
+  {% for k, v in user_info.items() %}
+    {% set user_data[k] = np.asscalar(v) if isinstance(v, np.generic) else v %}
+  {% end %}
+  {% set isStateUser = (user_data['division'] in ['', None]) and (user_data['district'] in ['', None]) %}
+  {% set isDistUser = (user_data['division'] in ['', None]) and not (user_data['district'] in ['', None]) %}
+  <div class="loading-icon">
+    <i class="fa fa-circle-o-notch fa-spin pos-cc"></i>
+  </div>
+  <nav class="navbar navbar-expand-md bg-gradient-nav py-0 position-fixed pos-t">
+    <!-- Toggler/collapsibe Button -->
+    <!-- <img src="img/hamburger.png" alt="search" width="19" height="12" id="openNav" class="cursor-pointer mr-2"> -->
+    <!-- <a class="mr-3" aria-hidden="true" href="./"><i class="fa fa-home fa-2x text-white"></i></a> -->
+    {% set x = handler.request.uri %}
+    {% if (("amethi_map" in x) or("amethi_table" in x))%}
+    <a class="mr-3" aria-hidden="true" href="./">
+      <img src="img/logo-orange.svg" alt="logo-orange">
+    </a>
+    <span class="h5 mb-0 text-light">Amethi Dashboard</span>
+    {% else %}
+    <span class="h5 mb-0 text-light">Amethi Dashboard</span>
+    {% end %}
+    <!--navbar-search-->
+    <!-- Navbar links -->
+    <div class="d-flex ml-auto custom-menu">
+      <div class="search-input">
+        <div class="text-right pt-1 px-3">
+          <span class="input-group-text custom-class bg-transparent no-border-radius rounded-0 border-0 cursor-pointer" id="icon"><i class="fa fa-search cursor-pointer text-white"></i></span>
+        </div>
+        <div id="myInput1">
+          <div class="input-group custom-class pos-t w-100 bg-white">
+            <div class="input-group-append">
+              <span class="input-group-text bg-white no-border-radius rounded-0 border-0 "><i class="fa fa-search cursor-pointer text-dark "></i></span>
+            </div>
+            <input type="text" id="myInput" class="form-control border-0 px-0" placeholder="Search District">
+            <p id="empty-message" class="w-50 mx-auto alert alert-warning alert-dismissible fade"></p>
+            <div class="input-group-append ">
+              <span class="input-group-text bg-white no-border-radius rounded-0 border-0"><i id="close_nav" class="fa fa-remove cursor-pointer text-dark "></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="nav">
+        {% set x = handler.request.uri %}
+        {% if (("amethi_map" in x) or("amethi_table" in x))%}
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" href="amethi_map">Amethi Map view</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white active-tab text-uppercase cursor-pointer" href="amethi_table">Amethi Table view</a>
+        </li>
+        {% else %}
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" href="map_view">Map view</a>
+        </li>
+        {% if ((user_info['district'] == "Amethi") or (user_info['user'] == 'admin')) %}
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white active-tab text-uppercase cursor-pointer" href="amethi_map">Amethi Map view</a>
+        </li>
+        {% end %}
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" href="niti_table">niti</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" href="cmo_table">cmo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" data-attr="cmo_table" href="cmo_new">cmo new
+            design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" href="table">table view</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" href="compare">Analytics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" href="executive-summary" id="executive_nav">Executive Summary</a>
+        </li>
+        {% end %}
+      </ul>
+    </div>
+    <script class="mapview-sidenav" type="text/html" src="templates/side_nav.html"></script>
+  </nav>
+  <div class="pt-3 mt-1"></div>
+  <!--Calendar-->
+  <div class="sidenav" id="cal">
+  <script class="calendar" type="text/html" src="templates/calendar.html"></script>
+  </div>
+  <div class="card rounded-0 mt-4 px-3 border-0">
+    <div class="alert no_data_show d-none alert-dark text-center" role="alert"> Data not Available </div>
+    <div class="amethi_data_table pt-4">
+    <div class="d-flex">
+      <div class="col-5 amethi_col5">
+        <div class="d-flex w-100 justify-content-between">
+          <div class="d-flex w-100 justify-content-between align-self-center sm1 h-26">
+            <div class="font-weight-bold pr-2 hindi-text-font">
+              <img src="./img/hindi-left-text.png" alt="किसी ब्लॉक के इंडिकेटर-वार स्कोर देखने के लिए टेबल में ब्लॉक के नाम पर क्लिक करें">
+            </div>
+            <!-- <div class="font-weight-bold pr-2 p-12" >"Click on block name to view Indicator Breakup"</div> -->
+          </div>
+              <!-- <span class="font-weight-bold pr-2 p-1 blinking text-danger">Nov-19 to Jan-20 rankings are based on 30 metrics (total 75% weight). Rankings Feb-20 onwards include 33 metrics (total
+              85% weight). Total score shown is normalized to 100% for all months.</span> -->
+        </div>
+        <div class="d-flex pt-3">
+          <div class="col-6 amethi_col7">
+            <div class="dropdown w-100 bg-white text-dark p-11 custom-border_bottom_left">
+              <script class="table-dropdown" type="text/html" src="templates/dropdown.html">
+              </script>
+            </div>
+          </div>
+          <script type="text/html" class="download-button">
+            <% if(user_info.user != 'CM_Office1'){ %>
+            <div class="col-6 text-right pr-0 cursor-pointer dropdown tetttt">
+                <i class="fa fa-download dropdown-toggle" aria-hidden="true" id="dropdownMenuButton" data-toggle="dropdown"></i>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <!-- <a class="download-data dropdown-item" geography='district'>District</a>
+                  <a class="download-data dropdown-item" geography='division'>Division</a> -->
+                  <a class="download-data dropdown-item" geography='block'>Block</a>
+                </div>
+              </div>
+            <% } %>
+          </script>
+        </div>
+        <div class="table-container my-2 amethi_left_table">
+          <script class="table" type="text/html" src="templates/deepdive_amethi_table.html"></script>
+        </div>
+      </div>
+      <div class="col-7 amethi_2_col7">
+        <div class="card no-border-radius border-0 bg-transparent">
+          <div class="d-flex justify-content-between">
+          <marquee class="w-75 text-danger d-none amethi_ticker_msg mx-3"></marquee>
+          <!-- <div class="font-weight-bold pr-2 hindi-text-font">नीचे टेबल में इंडिकेटर का क्रम "Current Month Score" out of "Total Weight" के अनुसार
+          है | प्रत्येक ब्लॉक के सर्वश्रेष्ठ इंडिकेटर ऊपर हैं</div> -->
+          <img src="./img/hindi_text.png" alt="नीचे टेबल में इंडिकेटर का क्रम Current Month Score out of Total Weight के अनुसार
+            है | प्रत्येक ब्लॉक के सर्वश्रेष्ठ इंडिकेटर ऊपर हैं">
+          <!-- <p class="font-weight-bold w-50 p-12 mb-0">नीचे टेबल में इंडिकेटर का क्रम "Current Month Score" out of "Total Weight" के अनुसार
+            है | प्रत्येक ब्लॉक के सर्वश्रेष्ठ
+            इंडिकेटर ऊपर हैं</p> -->
+            <div class="align-self-center">
+              <ul class="nav d-flex align-items-center justify-content-end">
+                <li class="nav-item p-9 text-right align-self-center text-uppercase">
+                  <p class="mb-0">Selected Time period</p>
+                  <p class="mb-0 font-weight-bold" id="date-label">Jul 2018</p>
+                </li>
+                <li class="nav-item align-self-center pl-2 pr-4 cursor-pointer">
+                  <img src="./img/calendar-face-2.svg" alt="icon" id="for-date">
+                </li>
+                <!-- <li class="nav-item align-self-center cursor-pointer" title="Nov-19 to Jan-20 rankings are based on 30 metrics (total 75% weight). Rankings Feb-20 onwards include 33 metrics (total
+                                  85% weight). Total score shown is normalized to 100% for all months.">
+                  <img src="img/info_icon.png" alt="icon" class="cursor-pointer mr-3 small " data-toggle="modal"
+                    data-target="#info-modal">
+                </li> -->
+                <li>
+                <img src="img/info_icon.png" class="bg-white mr-3 nav-item info-icon-hover" alt="info"
+                  data-toggle="tooltip" data-html="true" title="Nov-19 to Jan-20 rankings are based on 30 metrics (total 75% weight). Rankings Feb-20 onwards include 33 metrics (total
+                  85% weight). Total score shown is normalized to 100% for all months.">
+                </li>
+                <li class="nav-item align-self-center cursor-pointer png-download" title="Screenshot">
+                  <img src="./img/screen-capture.png" alt="icon">
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="align-self-center"> -->
+                <!-- <ul class="nav d-flex"> -->
+                <!-- <li class="nav-item align-self-center cursor-pointer" title="Nov-19 to Jan-20 rankings are based on 30 metrics (total 75% weight). Rankings Feb-20 onwards include 33 metrics (total
+                  85% weight). Total score shown is normalized to 100% for all months.">
+                  <img src="img/info_icon.png" alt="icon" class="cursor-pointer mr-3 small " data-toggle="modal"
+                    data-target="#info-modal">
+                </li>
+                <li class="nav-item align-self-center cursor-pointer png-download" title="Screenshot">
+                  <img src="./img/screen-capture.png" alt="icon">
+                </li> -->
+              <!-- </ul> -->
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="d-flex justify-content-between pt-2 mt-1">
+          <div class="col-6 align-self-center px-0">
+            <p class="mb-0 font-weight-bold p-12 text-uppercase">Indicator breakup for <span class=" table-title">Amethi</span></p>
+          </div>
+          <div class="col-6 align-self-center px-0">
+            <div class="dropdown bootstrap-select w-100 bg-white text-dark p-11">
+              <select class="selectpicker w-100 bg-white text-dark p-11 border" data-style="btn bg-white w-100 text-dark p-11" tabindex="-98" id="filter-type">
+                <option value="indicator" class="p-12">By Indicator</option>
+                <option value="type" class="p-12">By Type</option>
+                <option value="domain" class="p-12">By Domain</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="indicator-table-container my-2">
+          <script class="indicator-table" type="text/html" src="templates/amethi_indicator_table.html"></script>
+        </div>
+        <div class="">
+          <script class="indicator-insights" type="text/html" src="templates/indicator_insights.html"></script>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <script type="text/html" class="file_upload" src="templates/file_upload_template.html"></script>
+  <script type="text/html" class="avail_file_list" src="templates/available_file_list.html"></script>
+  <script type="text/html" class="insert_ticker_msg" src="templates/insert_ticker_msg.html"></script>
+  <script type="text/html" class="insert_ticker_msg_amethi" src="templates/insert_ticker_msg_amethi.html"></script>
+  <script type="text/html" class="list_of_files" src="templates/list_of_files.html"></script>
+  {% include templates/video-modals.html %}
+  <script class="insights" type="text/html" src="templates/insights.html"></script>
+  <script class="user-profile" type="text/html" src="templates/user_profile.html"></script>
+  <!--footer-->
+  <script src="ui/g1/dist/g1.min.js"></script>
+  <script src="ui/noty/lib/noty.min.js"></script>
+  <script type="text/javascript">
+    /* global g1 */
+    /* exported js_user, user_info, defaults, indicator_mapping, data_map,session_id, download_map */
+    var user_info = {{ json.dumps(user_data) }}
+    var defaults = {% raw up_tsu_desktop_app.get_config(handler) %}
+    var session_id = {{ json.dumps(user_session_id) }}
+    var indicator_mapping = {{ json.dumps(variables['indicator-mapping_amethi']) }}
+    var data_map = {{ json.dumps(variables['data-map-amethi']) }}
+    var js_user = {{ json.dumps(username) }}
+    var download_map = {{ json.dumps(variables['download-map-amethi']) }}
+    if(g1.url.parse(location.href).file == "landing"){
+      user_info = {
+        "district": null,
+        "map_id": null,
+        "division": null,
+        "block": null,
+        "user": "CM_Office1",
+        "name": null,
+        "phonenumber": "0",
+        "otp": "78105",
+        "designation": "cm",
+        "Approval": "Approved",
+        "temp_password": "0",
+        "email": null,
+        "created_on": null,
+        "last_updated_by": null,
+        "id": "CM_Office1"
+      }
+    }
+    if(user_info.user == 'CM_Office1')
+      indicator_mapping = {{ json.dumps(variables['indicator-mapping_cm']) }}
+    if(user_info.user == 'CM_Office1')
+      data_map = {{ json.dumps(variables['data-map-cm']) }}
+  </script>
+  {% set scripts = [] %}
+  {% include 'templates/scripts.html' %}
+  <script src="js/common_calendar.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/common_new.js"></script>
+  <script src="js/click_events_common_table.js"></script>
+  <script type="text/javascript" src="components/area_chart.js"></script>
+  <script type="text/javascript" src="js/amethi_tableview.js"></script>
+  {% include 'templates/google-analytics-script.html' %}
+</body>
+
+</html>

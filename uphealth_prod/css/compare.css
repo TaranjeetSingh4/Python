@@ -1,0 +1,110 @@
+.custom-bg {
+  background-color: #f7f6f5;
+}
+
+.switch-secondary > label:before {
+  background: #d1d2d4;
+}
+
+.switch-secondary > label:after {
+  background: #0071ff;
+}
+
+.bg-image {
+  background-image: url("../img/face-2-bg.svg");
+  background-size: cover;
+}
+
+.custom-bg-clr1 {
+  background-color: #ff8e04;
+}
+
+.custom-bg-clr2 {
+  background-color: #846734;
+}
+
+.custom-bg-clr3 {
+  background-color: #f2f0f0;
+}
+
+.custom-bg-clr4 {
+  background-color: #db5f3b;
+}
+
+.custom-bg-clr5 {
+  background-color: #81321a;
+}
+
+.custom-bg-clr6 {
+  background-color: #8b8b8b;
+}
+
+.custom-bg-clr7 {
+  background-color: #0776ff;
+}
+
+.clr-1 {
+  color: #545454;
+}
+
+.nav-pills .nav-link.active {
+  color: #fff !important;
+  background-color: #0776ff;
+}
+
+.custom-border {
+  border: 1px solid #e1e1e1;
+}
+
+.custom-border_bottom_left {
+  border-bottom: 2px solid #db5f3b;
+}
+
+.custom-border_bottom_right {
+  border-bottom: 2px solid #000000;
+}
+
+.bootstrap-select > .dropdown-toggle {
+  z-index: 0 !important;
+}
+
+.dropdown-menu {
+  max-height: 250px !important;
+}
+
+@media (max-width: 375px) {
+  .phase2 .p-15 {
+    font-size: 10px;
+  }
+}
+
+.custom_label1,
+.custom_label2,
+.custom_label3,
+.custom_label4,
+.custom_label5,
+.custom_label6 {
+  height: 11px;
+  width: 11px;
+}
+.custom_label1 {
+  background-color: #ff8e04;
+}
+.custom_label2 {
+  background-color: #846734;
+}
+.custom_label3 {
+  background-color: #e09c24;
+}
+.custom_label4 {
+  background-color: blue;
+}
+.custom_label5 {
+  background-color: #ccc;
+}
+.text-blue {
+  color: #1e90ff;
+}
+.text-green {
+  color: #006400;
+}

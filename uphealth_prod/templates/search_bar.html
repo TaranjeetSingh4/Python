@@ -1,0 +1,10 @@
+<ul id="myUL" class="nav flex-column position-absolute pos-tr p-3 w-100 bg-light mt-5 vh-100">
+  <div class="search-check w-50 mx-auto alert alert-warning alert-dismissible fade show"><strong>Warning!</strong> No Data Available</div>
+  <% _.each(data, function(d){ %>
+    <li class="nav-item cursor-pointer">
+      <span id="<%- d.map_id %>" data-attr="<%- d.div_map_id %>" data-attr2= "<%- d.division %>" class="nav-link text-dark">
+        <%-d[area]%>
+      </span>
+    </li>
+  <%})%>
+</ul>

@@ -1,0 +1,491 @@
+<div class="container-fluid px-md-5">
+  <div class="px-md-4">
+    <!--user section-->
+    <div class="d-flex align-items-center justify-content-between py-4">
+      <div class="">
+        <h5 class="mb-0 text-uppercase text-color4 ls-1"><span class="d-block sm3">USER</span></h5>
+        <h3 class="mb-0 font-weight-bold">
+          <%- user %>
+        </h3>
+      </div>
+      <!-- <h5 class="mb-0 text-uppercase text-color4 ls-1"><span class="d-block sm3">6 DASHBOARDS</span></h5> -->
+    </div>
+    <!--end-->
+    <div class="row">
+      <% if(user !=='CM_Office1' ){%>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 pb-4 mb-1">
+          <div class="card h-100 shadow-1 border-0 border-radius">
+            <div class="card-body px-4">
+              <div class="card-title mb-2 d-flex align-items-center">
+                <img src="img/health_logo.svg" alt="icon" />
+                <h6 class="mb-0 font-weight-bold text-color4 pl-3">Health Ranking Dashboard</h6>
+              </div>
+              <p class="card-text text-color5 lh-2">A comprehensive platform to measure the relative performance of
+                districts with …<a class="" href="#" data-toggle="modal" data-target="#HealthRanking">more</a></p>
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a href="map_view"
+                    class="bg-color6 text-color7 btn d-flex align-items-center lh-2 rounded-pill px-4 py-2 h3 mb-0"><span
+                      class="d-block sm1 text-capitalize">view</span><img src="img/right-arrow.svg" alt="right-arrow"
+                      class="pl-3 ml-2"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-12 col-sm-12 col-md-6 col-lg-4 pb-4 mb-1">
+          <div class="card h-100 shadow-1 border-0 border-radius">
+            <div class="card-body px-4">
+              <div class="card-title mb-2 d-flex align-items-center">
+                <img src="img/cmo_cms_logo.svg" alt="icon" />
+                <h6 class="mb-0 font-weight-bold text-color4 pl-3">CMO Dashboard</h6>
+              </div>
+              <p class="card-text text-color5 lh-2">A digital platform to showcase different indicators, as decided by
+                NITI Aayog, ...<a class="" href="#" data-toggle="modal" data-target="#cmodashboard">more</a></p>
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a href="cmo_new"
+                    class="bg-color6 text-color7 btn d-flex align-items-center lh-2 rounded-pill px-4 py-2 h3 mb-0"><span
+                      class="d-block sm1 text-capitalize">view</span><img src="img/right-arrow.svg" alt="right-arrow"
+                      class="pl-3 ml-2"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 pb-4 mb-1">
+          <div class="card h-100 shadow-1 border-0 border-radius">
+            <div class="card-body px-4">
+              <div class="card-title mb-2 d-flex align-items-center">
+                <img src="img/niti_logo.svg" alt="icon" />
+                <h6 class="mb-0 font-weight-bold text-color4 pl-3">NITI Dashboard</h6>
+              </div>
+              <p class="card-text text-color5 lh-2">A digital platform to showcase different indicators, as decided by
+                NITI Aayog …<a class="" href="#" data-toggle="modal" data-target="#nitidashboard">more</a></p>
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a href="niti_table"
+                    class="bg-color6 text-color7 btn d-flex align-items-center lh-2 rounded-pill px-4 py-2 h3 mb-0"><span
+                      class="d-block sm1 text-capitalize">view</span><img src="img/right-arrow.svg" alt="right-arrow"
+                      class="pl-3 ml-2"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 pb-4 mb-1">
+          <div class="card h-100 shadow-1 border-0 border-radius">
+            <div class="card-body px-4">
+              <div class="card-title mb-2 d-flex align-items-center">
+                <img src="img/health_logo.svg" alt="icon" />
+                <h6 class="mb-0 font-weight-bold text-color4 pl-3">Comicgen</h6>
+              </div>
+              <p class="card-text text-color5 lh-2">A platform to track and monitor key indicators visually with comics,
+                …<a class="" href="#" data-toggle="modal" data-target="#comicgen">more</a></p>
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a href="comicgen"
+                    class="bg-color6 text-color7 btn d-flex align-items-center lh-2 rounded-pill px-4 py-2 h3 mb-0"><span
+                      class="d-block sm1 text-capitalize">view</span><img src="img/right-arrow.svg" alt="right-arrow"
+                      class="pl-3 ml-2"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <% } %>
+          <% if (user=='CM_Office1' || user=='admin' ) {%>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 pb-4 mb-1">
+              <div class="card h-100 shadow-1 border-0 border-radius">
+                <div class="card-body px-4">
+                  <div class="card-title mb-2 d-flex align-items-center">
+                    <img src="img/cm_logo.svg" alt="icon" />
+                    <h6 class="mb-0 font-weight-bold text-color4 pl-3">CM Dashboard</h6>
+                  </div>
+                  <p class="card-text text-color5 lh-2">A platform to track and monitor key indicators, by the Chief
+                    Minister's office, …<a class="" href="#" data-toggle="modal" data-target="#cmdashboard">more</a></p>
+                  <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a href="landing"
+                        class="bg-color6 text-color7 btn d-flex align-items-center lh-2 rounded-pill px-4 py-2 h3 mb-0"><span
+                          class="d-block sm1 text-capitalize">view</span><img src="img/right-arrow.svg"
+                          alt="right-arrow" class="pl-3 ml-2"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <% } %>
+              <!-- Program area -->
+              <% if(user !=='CM_Office1' ) { %>
+                <!-- <div class="col-12 col-sm-12 col-md-6 col-lg-4 pb-4 mb-1">
+                  <div class="card h-100 shadow-1 border-0 border-radius">
+                    <div class="card-body px-4">
+                      <div class="card-title mb-2 d-flex align-items-center">
+                        <img src="img/pa_logo.svg" alt="icon" />
+                        <h6 class="mb-0 font-weight-bold text-color4 pl-3">Program Area Dashboard</h6>
+                      </div>
+                      <p class="card-text text-color5 lh-2">A platform to measure and track the performance of
+                        indicators …<a class="" href="#" data-toggle="modal" data-target="#padashboard">more</a></p>
+                      <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                          <a href="./pa-landing"
+                            class="bg-color6 text-color7 btn d-flex align-items-center lh-2 rounded-pill px-4 py-2 h3 mb-0"><span
+                              class="d-block sm1 text-capitalize">view</span><img src="img/right-arrow.svg"
+                              alt="right-arrow" class="pl-3 ml-2"></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> -->
+                <% } %>
+                  <!-- Amethi -->
+                  <% if (user=='CMO_Amethi' || user=='amethi_admin' ) {%>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 pb-4 mb-1">
+                      <div class="card h-100 shadow-1 border-0 border-radius">
+                        <div class="card-body px-4">
+                          <div class="card-title mb-2 d-flex align-items-center">
+                            <img src="img/amethi_logo.svg" alt="icon" />
+                            <h6 class="mb-0 font-weight-bold text-color4 pl-3">Amethi Dashboard</h6>
+                          </div>
+                          <p class="card-text text-color5 lh-2">Comprehensive health and nutrition block rankings for
+                            the ...<a class="" href="#" data-toggle="modal" data-target="#amethidashboard">more</a></p>
+                          <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                              <a href="amethi_map"
+                                class="bg-color6 text-color7 btn d-flex align-items-center lh-2 rounded-pill px-4 py-2 h3 mb-0"><span
+                                  class="d-block sm1 text-capitalize">view</span><img src="img/right-arrow.svg"
+                                  alt="right-arrow" class="pl-3 ml-2"></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <% } %>
+                      <!-- <% if(user.includes('DMNE') || user == 'admin') { %>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 pb-4 mb-1">
+                                  <div class="card h-100 shadow-1 border-0 border-radius">
+                                    <div class="card-body px-4">
+                                      <div class="card-title mb-2 d-flex align-items-center">
+                                        <img src="img/health_logo.svg" alt="icon" />
+                                        <h6 class="mb-0 font-weight-bold text-color4 pl-3">Comicgen</h6>
+                                      </div>
+                                      <p class="card-text text-color5 lh-2">A platform to track and monitor key indicators visually with comics, …<a class="" href="#" data-toggle="modal" data-target="#comicgen">more</a></p>
+                                        <ul class="nav justify-content-end">
+                                          <li class="nav-item">
+                                            <a href="comicgen"
+                                              class="bg-color6 text-color7 btn d-flex align-items-center lh-2 rounded-pill px-4 py-2 h3 mb-0"><span
+                                              class="d-block sm1 text-capitalize">view</span><img src="img/right-arrow.svg" alt="right-arrow" class="pl-3 ml-2"></a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                  </div>
+                                  </div>
+                              <% } %> -->
+    </div>
+  </div>
+  <!--container-fluid -->
+  <div class="container-fluid px-md-4 px-0">
+    <div class="px-md-0">
+      <!--about-->
+      <div class="py-4">
+        <h4 class="mb-0 pb-4 font-weight-bold text-center">About</h4>
+        <div class="row d-flex overflow-auto flex-nowrap">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="d-flex justify-content-between border-radius h-100 bg-white p-3 shadow border">
+              <div class="pr-3">
+                <a class="pb-2 mb-0 text-info" href="#" data-toggle="modal" data-target="#download">
+                  <h4 class="pb-2 mb-0 text-info"><span class="sm3 d-block">
+                      DOWNLOAD FILE (PDF)
+                    </span></h4>
+                </a>
+                <p class="mb-0 fs-11">Option to download any PDF document available in the dashboard.</p>
+              </div>
+              <!-- <img src="img/version.svg" alt="icon"> -->
+              <i class="fas fa-download align-self-center text-color18 down-load"></i>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="d-flex justify-content-between border-radius h-100 bg-white p-3 shadow border">
+              <div class="pr-3">
+                <a href="files/user_manual.pdf" download>
+                  <h4 class="pb-2 mb-0 text-info"><span class="sm3 d-block">
+                      USER MANUAL
+                    </span></h4>
+                </a>
+                <p class="mb-0 fs-11">A quick reference guide for users to understand the features and functioning of
+                  the dashboard.</p>
+              </div>
+              <img src="img/manual.svg" alt="icon">
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="d-flex justify-content-between border-radius h-100 bg-white p-3 shadow border">
+              <div class="pr-3">
+                <a class="short-video" href="#" data-toggle="modal" data-target="#forVideo">
+                  <h4 class="pb-2 mb-0 text-info"><span class="sm3 d-block">
+                      SHORT TUTORIAL
+                    </span></h4>
+                </a>
+                <p class="mb-0 fs-11">A short tutorial video to help the user navigate through the dashboard.</p>
+              </div>
+              <img src="img/short_tut.svg" alt="icon">
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="d-flex justify-content-between border-radius h-100 bg-white p-3 shadow border">
+              <div class="pr-3">
+                <a class="long-video" href="#" data-toggle="modal" data-target="#forVideoLong">
+                  <h4 class="pb-2 mb-0 text-info"><span class="sm3 d-block">
+                      LONG TUTORIAL
+                    </span></h4>
+                </a>
+                <p class="mb-0 fs-11">A detailed tutorial video to help the user navigate through the dashboard.</p>
+              </div>
+              <img src="img/long_tut.svg" alt="icon">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end-->
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="HealthRanking" tabindex="-1" role="dialog" aria-labelledby="HealthRankingLabel"
+  aria-hidden="true">
+  <div class="modal-dialog d-flex align-items-center h-100">
+    <div class="modal-content border-radius shadow-2 px-4 w-75 bg-linear-3 mx-auto">
+      <div class="modal-header px-0 pb-0 border-0 d-flex align-items-center justify-content-between">
+        <div class="card-title mb-0 d-flex align-items-center">
+          <img src="img/health_logo.svg" alt="icon">
+          <h6 class="mb-0 font-weight-bold text-color4 pl-3">Health Ranking Dashboard</h6>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body px-0 py-1">
+        <form>
+          <p class="">
+            A comprehensive platform to measure the relative performance of districts with respect to the
+            high-performance district
+            (internal benchmarking) across health indicators. </p>
+          <p class="">The dashboard also helps district administration to identify the reasons for low performance
+            (Availability, Quality and
+            Utilization) and helps take appropriate actions, on a semi-annual basis.</p>
+      </div>
+      <div class="modal-footer border-0 px-0 pt-1 pb-3">
+        <ul class="nav justify-content-center mx-auto pb-2">
+          <li class="nav-item">
+            <a href="map_view"
+              class="bg-color6 text-color7 btn d-flex align-items-center lh-2 rounded-pill px-4 py-2 h3 mb-0"><span
+                class="d-block sm1">View</span><img src="img/right-arrow.svg" alt="right-arrow" class="pl-3 ml-2"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="cmodashboard" tabindex="-1" role="dialog" aria-labelledby="cmodashboardLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content border-radius shadow-2 px-4 w-75 bg-linear-3 mx-auto">
+      <div class="modal-header px-0 pb-0 border-0 d-flex align-items-center justify-content-between">
+        <div class="card-title mb-0 d-flex align-items-center">
+          <img src="img/cmo_cms_logo.svg" alt="icon">
+          <h6 class="mb-0 font-weight-bold text-color4 pl-3">CMO Dashboard</h6>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body px-0 py-1">
+        <form>
+          <p class="">
+            A digital platform to showcase different indicators, as decided by NITI Aayog, to track and monitor the
+            performance of
+            health care centers, which will further help in identifying key focus areas and develop improvement plan
+            accordingly. </p>
+      </div>
+      <div class="modal-footer border-0 px-0 pt-1 pb-3">
+        <ul class="nav justify-content-center mx-auto pb-2">
+          <li class="nav-item">
+            <a href="cmo_new"
+              class="bg-color6 text-color7 btn d-flex align-items-center lh-2 rounded-pill px-4 py-2 h3 mb-0"><span
+                class="d-block sm1">View</span><img src="img/right-arrow.svg" alt="right-arrow" class="pl-3 ml-2"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="nitidashboard" tabindex="-1" role="dialog" aria-labelledby="nitidashboardLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content border-radius shadow-2 px-4 w-75 bg-linear-3 mx-auto">
+      <div class="modal-header px-0 pb-0 border-0 d-flex align-items-center justify-content-between">
+        <div class="card-title mb-0 d-flex align-items-center">
+          <img src="img/niti_logo.svg" alt="icon">
+          <h6 class="mb-0 font-weight-bold text-color4 pl-3">NITI Dashboard</h6>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body px-0 py-1">
+        <form>
+          <p class="">
+            A digital platform to showcase different indicators, as decided by NITI Aayog, to track and monitor the
+            performance,
+            which will help in identifying key focus areas, thus improving the district hospitals, and also help in
+            developing
+            policies and framework accordingly. </p>
+      </div>
+      <div class="modal-footer border-0 px-0 pt-1 pb-3">
+        <ul class="nav justify-content-center mx-auto pb-2">
+          <li class="nav-item">
+            <a href="niti_table"
+              class="bg-color6 text-color7 btn d-flex align-items-center lh-2 rounded-pill px-4 py-2 h3 mb-0"><span
+                class="d-block sm1">View</span><img src="img/right-arrow.svg" alt="right-arrow" class="pl-3 ml-2"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="cmdashboard" tabindex="-1" role="dialog" aria-labelledby="cmdashboardLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content border-radius shadow-2 px-4 w-75 bg-linear-3 mx-auto">
+      <div class="modal-header px-0 pb-0 border-0 d-flex align-items-center justify-content-between">
+        <div class="card-title mb-0 d-flex align-items-center">
+          <img src="img/cm_logo.svg" alt="icon">
+          <h6 class="mb-0 font-weight-bold text-color4 pl-3">CM Dashboard</h6>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body px-0 py-1">
+        <form>
+          <p class="">
+            A platform to track and monitor key indicators, by the Chief Minister's office, to plan the overall health
+            requirement
+            in the State or focussed districts. </p>
+      </div>
+      <div class="modal-footer border-0 px-0 pt-1 pb-3">
+        <ul class="nav justify-content-center mx-auto pb-2">
+          <li class="nav-item">
+            <a href="landing"
+              class="bg-color6 text-color7 btn d-flex align-items-center lh-2 rounded-pill px-4 py-2 h3 mb-0"><span
+                class="d-block sm1">View</span><img src="img/right-arrow.svg" alt="right-arrow" class="pl-3 ml-2"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="comicgen" tabindex="-1" role="dialog" aria-labelledby="comicgenLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content border-radius shadow-2 px-4 w-75 bg-linear-3 mx-auto">
+      <div class="modal-header px-0 pb-0 border-0 d-flex align-items-center justify-content-between">
+        <div class="card-title mb-0 d-flex align-items-center">
+          <img src="img/cm_logo.svg" alt="icon">
+          <h6 class="mb-0 font-weight-bold text-color4 pl-3">Comicgen</h6>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body px-0 py-1">
+        <form>
+          <p class="">
+            A platform to track and monitor key indicators with comics. </p>
+      </div>
+      <div class="modal-footer border-0 px-0 pt-1 pb-3">
+        <ul class="nav justify-content-center mx-auto pb-2">
+          <li class="nav-item">
+            <a href="comicgen"
+              class="bg-color6 text-color7 btn d-flex align-items-center lh-2 rounded-pill px-4 py-2 h3 mb-0"><span
+                class="d-block sm1">View</span><img src="img/right-arrow.svg" alt="right-arrow" class="pl-3 ml-2"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="padashboard" tabindex="-1" role="dialog" aria-labelledby="padashboardLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content border-radius shadow-2 px-4 w-75 bg-linear-3 mx-auto">
+      <div class="modal-header px-0 pb-0 border-0 d-flex align-items-center justify-content-between">
+        <div class="card-title mb-0 d-flex align-items-center">
+          <img src="img/pa_logo.svg" alt="icon">
+          <h6 class="mb-0 font-weight-bold text-color4 pl-3">Program Area Dashboard</h6>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body px-0 py-1">
+        <form>
+          <p class="">
+            A platform to measure and track the performance of indicators within a program (e.g. Maternal Health,
+            Finance
+            Controller, Community Process (Asha Incentives), among others), across districts, when compared to the UP
+            average.
+          </p>
+          <p class="">
+            It also helps District/Divisional Managers identify the reasons for low performance and help take
+            appropriate actions,
+            on a monthly basis. </p>
+      </div>
+      <div class="modal-footer border-0 px-0 pt-1 pb-3">
+        <ul class="nav justify-content-center mx-auto pb-2">
+          <li class="nav-item">
+            <a href="pa-landing"
+              class="bg-color6 text-color7 btn d-flex align-items-center lh-2 rounded-pill px-4 py-2 h3 mb-0"><span
+                class="d-block sm1">View</span><img src="img/right-arrow.svg" alt="right-arrow" class="pl-3 ml-2"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="amethidashboard" tabindex="-1" role="dialog" aria-labelledby="padashboardLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content border-radius shadow-2 px-4 w-75 bg-linear-3 mx-auto">
+      <div class="modal-header px-0 pb-0 border-0 d-flex align-items-center justify-content-between">
+        <div class="card-title mb-0 d-flex align-items-center">
+          <img src="img/pa_logo.svg" alt="icon">
+          <h6 class="mb-0 font-weight-bold text-color4 pl-3">Amethi Dashboard</h6>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body px-0 py-1">
+        <form>
+          <p class="">
+            Comprehensive health and nutrition block rankings for the district of Amethi. Generated based on monthly
+            performance of
+            all blocks across key domains such as RMNCH, NCD, CD and Nutrition. </p>
+      </div>
+      <div class="modal-footer border-0 px-0 pt-1 pb-3">
+        <ul class="nav justify-content-center mx-auto pb-2">
+          <li class="nav-item">
+            <a href="map_view"
+              class="bg-color6 text-color7 btn d-flex align-items-center lh-2 rounded-pill px-4 py-2 h3 mb-0"><span
+                class="d-block sm1">View</span><img src="img/right-arrow.svg" alt="right-arrow" class="pl-3 ml-2"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

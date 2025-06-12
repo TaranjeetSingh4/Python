@@ -1,0 +1,76 @@
+division,div_map_id,map_id,district,aspirational,high_priority
+Agra Division,146,146,Agra,,
+Agra Division,146,147,Firozabad,,
+Agra Division,146,148,Mainpuri,,
+Agra Division,146,145,Mathura,,
+Alligarh Division,201,143,Aligarh,,
+Alligarh Division,201,201,Etah,,TRUE
+Alligarh Division,201,144,Hathras,,
+Alligarh Division,201,202,Kasganj,,TRUE
+Ayodhya Division,176,178,Ambedkar Nagar,,
+Ayodhya Division,176,206,Amethi,,
+Ayodhya Division,176,177,Ayodhya,,TRUE
+Ayodhya Division,176,176,Barabanki,,TRUE
+Ayodhya Division,176,179,Sultanpur,,
+Azamgarh Division,193,191,Azamgarh,,
+Azamgarh Division,193,193,Ballia,,
+Azamgarh Division,193,192,Maunathbhanjan,,
+Bareilly Division,150,150,Bareilly,,TRUE
+Bareilly Division,150,149,Budaun,,TRUE
+Bareilly Division,150,151,Pilibhit,,TRUE
+Bareilly Division,150,152,Shahjahanpur,,TRUE
+Basti Division,185,185,Basti,,
+Basti Division,185,186,Sant Kabir Nagar,,TRUE
+Basti Division,185,184,Siddharth Nagar,TRUE,TRUE
+Chitrakoot Division,170,170,Banda,,
+Chitrakoot Division,170,171,Chitrakoot,TRUE,
+Chitrakoot Division,170,168,Hamirpur,,
+Chitrakoot Division,170,169,Mahoba,,
+Gonda Division,182,180,Bahraich,TRUE,TRUE
+Gonda Division,182,182,Balrampur,TRUE,TRUE
+Gonda Division,182,183,Gonda,,TRUE
+Gonda Division,182,181,Shrawasti,TRUE,TRUE
+Gorakhpur Division,188,190,Deoria,,
+Gorakhpur Division,188,188,Gorakhpur,,
+Gorakhpur Division,188,189,Kushinagar,,
+Gorakhpur Division,188,187,Maharajganj,,TRUE
+Jhansi Division,165,165,Jalaun,,
+Jhansi Division,165,166,Jhansi,,
+Jhansi Division,165,167,Lalitpur,,
+Kanpur Nagar Division,161,162,Auraiya,,
+Kanpur Nagar Division,161,161,Etawah,,
+Kanpur Nagar Division,161,159,Farrukhabad,,TRUE
+Kanpur Nagar Division,161,160,Kannauj,,TRUE
+Kanpur Nagar Division,161,163,Kanpur Dehat,,
+Kanpur Nagar Division,161,164,Kanpur Nagar,,
+Lucknow Division,155,155,Hardoi,,TRUE
+Lucknow Division,155,153,Lakhimpur Kheri,,TRUE
+Lucknow Division,155,157,Lucknow,,
+Lucknow Division,155,158,Rae Bareli,,
+Lucknow Division,155,154,Sitapur,,TRUE
+Lucknow Division,155,156,Unnav,,
+Meerut Division,140,139,Bagpat,,
+Meerut Division,140,142,Bulandshahar,,
+Meerut Division,140,141,Gautam Buddha Nagar,,
+Meerut Division,140,140,Ghaziabad,,
+Meerut Division,140,204,Hapur,,
+Meerut Division,140,138,Meerut,,
+Mirzapur Division,200,198,Bhadohi,,
+Mirzapur Division,200,199,Mirzapur,,TRUE
+Mirzapur Division,200,200,Sonbhadra,TRUE,TRUE
+Moradabad Division,134,137,Amroha,,
+Moradabad Division,134,134,Bijnor,,
+Moradabad Division,134,135,Moradabad,,
+Moradabad Division,134,136,Rampur,,TRUE
+Moradabad Division,134,205,Sambhal,,
+Prayagraj Division,172,172,Fatehpur,TRUE,
+Prayagraj Division,172,174,Kaushambi,,TRUE
+Prayagraj Division,172,173,Pratapgarh,,
+Prayagraj Division,172,175,Prayagraj,,TRUE
+Saharanpur Division,132,133,Muzaffarnagar,,
+Saharanpur Division,132,132,Saharanpur,,
+Saharanpur Division,132,203,Shamli,,
+Varanasi Division,195,196,Chandauli,TRUE,
+Varanasi Division,195,195,Ghazipur,,
+Varanasi Division,195,194,Jaunpur,,
+Varanasi Division,195,197,Varanasi,,

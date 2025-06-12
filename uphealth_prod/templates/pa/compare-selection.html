@@ -1,0 +1,68 @@
+<!-- <div class="col-12 col-sm-12 col-md-12 col-lg-8 pr-1 pl-1"> -->
+  <div class="bg-white d-flex border-radius border-color-11 h-54 border">
+    <div class="col-sm-7 px-0 border-right border-color-11">
+      <div class="h4 mb-0 py-1 px-1 d-flex flex-wrap comp-drpdwn h-95 overflow-auto">
+        <% selected_list = g1.url.parse(location.href).searchList.comp_list || selected_list %>
+        <% _.each(selected_list, function(d){ %>
+          <a class="border-color1  border text-secondary p-1 mr-1 h-22 sm3 rounded font-weight-600 custom-mb-1">
+          <%- d %>  <span class="pl-1 cursor-pointer comp-close" id="<%- d %>"><img src="img/close.png" alt="close" class="align-baseline" /></span>
+          </a>
+        <% }) %>
+      <% if(selected_list.length < 6 ) { %>
+        <button class="btn bg-color-14 text-black sm3 px-2 py-0 h-22 dropdown-toggle multiple custom-dropdown custom-dropdown-toggle" id="d1"  data-toggle="dropdown">+ add</button>
+      <% } %>
+      <div class="dropdown-menu comp-dropdown-menu p-0 m-0 border-0 border-radius" role="menu" aria-labelledby="d1">
+          <!----dropdown card-->
+          <div class="card border-radius w-100 px-3 tail-tc dropdown-template" id="district-dropdown">
+            <div class="card-header px-0 bg-transparent border-0 d-flex align-items-center">
+                <div class="input-group round bg-transparent border col-10  px-0">
+                    <div class="input-group-prepend py-1 h-auto bg-transparent round px-2">
+                        <div class="d-flex align-self-center  border-0 round rounded-right">
+                            <i class="fa fa-search opacity-30" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <input type="text" class="district-dropdown-search sm2 pl-0 pr-1 py-1 h-auto form-control round border-0 bg-transparent" id="inlineFormInputGroup"
+                        placeholder="Search District" data-search="@text" data-target=".districts_list .nav .nav-item" data-hide-class="d-none">
+                </div>
+                <div class="col-2 pl-3 pr-0 district-dropdown-reset cursor-pointer" title="Reset Selection" parent-id="#d1">
+                    <i class="fa fa-sync sm1" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="card-body pb-2 px-0 bg-transparent">
+                <div class="row">
+                    <div class="col districts_list overflow-y" value="">
+                        <ul class="nav flex-column h5 mb-0 text-uppercase font-weight-bold district_all">
+                          <% _.each(data.option, function (opt) { %>
+                                <li class="nav-item" id="<%- slug_(opt[data.opt_type]) %>" data-val="<%- opt[data.opt_type] %>">
+                                    <a class="nav-link mb-2 sm3 p-0 cursor-pointer <%- (((data.opt_type == opt[data.opt_type]) || (_.includes(selected_list, opt[data.opt_type]))) ? 'text-primary' : 'opacity-30') %>"><%- opt[data.opt_type] %></a>
+                                </li>
+                            <% }) %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer px-0 bg-transparent border-0 text-center">
+                <button class="sm1 text-uppercaset text-primary font-weight-bold bg-transparent border-0 district-dropdown-submit" data-value="d1">APPLY</button>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-5 p-0">
+      <div class="d-flex px-4 align-items-center justify-content-around">
+        <div class="font-weight-bold text-color-15 font-18 text-middle">Compare</div>
+        <div class="h3 mb-0 mt-1">
+            <select class="selectpicker urlfilter comp-list-selected text-color1 aelect_arrow font-weihgt-600"
+            data-style="btn-light w-100 bg-color4 text-color1 sm3 font-weight-600" data-width="108px" data-target="comp-list">
+            <option value="district" <%- (data.opt_type == 'district')?'selected':'' %> >District</option>
+            <option value="division" <%- (data.opt_type == 'division')?'selected':'' %> >Division</option>
+            <option value="block" disabled <%- (data.opt_type == 'block')?'selected':'' %> >Block</option>
+          </select>
+        </div>
+        <a href="pa-overview">
+          <span class="pl-1 cursor-pointer comp-back"><img src="img/compare-close.svg" alt="close" class="align-baseline" /></span>
+        </a>
+      </div>
+    </div>
+  </div>
+<!-- </div> -->

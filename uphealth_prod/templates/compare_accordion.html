@@ -1,0 +1,77 @@
+<div class="tab-content border border-left-0 border-right-0 border-bottom-0" id="pills-tabContent">
+  <div class="card-title mb-0">
+  <% if(display !== 'indicator') { %>
+      <div id="accordion">
+        <% _.each(data, function(row){ %>
+          <div class="card rounded-0 text-dark border-0 bg-white">
+            <div class="collapse-header" data-attr="<%-row.category.split(' ').join('_')%>">
+              <a class="collapsed text-dark card-link p-12 collapse-title" data-toggle="collapse" href="#collapse_<%-row.category.split(' ').join('_')%>">
+                <div class="d-flex border border-left-0 border-right-0 px-3 py-2 border-top-0">
+                  <div class="col-3 d-flex px-0 align-self-center">
+                    <i class="fa fa-plus"></i>
+                    <p class="mb-0 ml-1 p-10 font-weight-bold text-uppercase">
+                    <%- row.category.split('_').join(' ') %></p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div id="collapse_<%-row.category.split(' ').join('_')%>" class="collapse bg-white collapse-body" data-parent="#accordion">
+              <% _.each(ind_data[row.category], function(value){ %>
+                <div class="d-flex border border-left-0 border-right-0 px-3 py-2 border-top-0">
+                  <div class="col-3 px-0 align-self-center" title="<%- value.indicator %>">
+                    <p class="mb-0 p-10 font-weight-bold text-uppercase">
+                      <% var map_obj =  _.find(mapping, {indicator_name: value.indicator}) %>
+                      <%- map_obj.short_name %></p>
+                  </div>
+                  <div class="col-4 px-0 align-self-center">
+                    <div class="d-flex mb-1">
+                      <div class="acc-bar p-1 rounded bar-one" width="<%-(map_obj.unit == 'Rs')?(row.curr_val/100):row.curr_val/1.1 %>"></div>
+                      <span class="sm2 ml-1"><%- map_obj.unit == 'Rs' ? numeral(value.curr_val).format('0,0.00') :  value.curr_val %><%- map_obj.unit %></span>
+                    </div>
+                    <div class="d-flex mb-1">
+                      <div class="acc-bar p-1 rounded bar-two" width="<%-(map_obj.unit == 'Rs')?(row.prev_val/100):row.prev_val/1.1 %>"></div>
+                      <span class="sm2 ml-1"><%- map_obj.unit == 'Rs' ? numeral(value.prev_val).format('0,0.00') :  value.prev_val %><%- map_obj.unit %></span>
+                    </div>
+                  </div>
+                  <div class="col-5">
+                    <div class="mb-0" id="<%-value.indicator.split(/[ \(,\)\%\+/]+/).join('_')%>_trend">
+                    </div>
+                    <% setTimeout(function() { %>
+                      <% draw_combo_chart('#'+value.indicator.split(/[ \(,\)\%\+/]+/).join('_')+'_trend', view, area_data[value.indicator]) %>
+                    <% }, 1000) %>
+                  </div>
+                </div>
+              <% })%>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+  <% } else { %>
+    <% _.each(data, function(row){ %>
+      <div class="d-flex border border-left-0 border-right-0 px-3 py-2 border-top-0">
+        <div class="col-3 px-0 align-self-center" title="<%- row.category %>">
+          <p class="mb-0 p-10 font-weight-bold text-uppercase">
+            <% var map_obj =  _.find(mapping, {indicator_name: row.category}) %>
+          <%- map_obj.short_name %></p>
+        </div>
+        <div class="col-4 px-0 align-self-center">
+          <div class="d-flex mb-1">
+            <div class="acc-bar p-1 rounded bar-one" width="<%-(map_obj.unit == 'Rs')?(row.curr_val/100):row.curr_val/1.1 %>"></div>
+            <span class="sm2 ml-1"><%-map_obj.unit == 'Rs' ? numeral(row.curr_val).format('0,0.00') :  row.curr_val %><%- map_obj.unit %></span>
+          </div>
+          <div class="d-flex mb-1">
+            <div class="acc-bar p-1 rounded bar-two" width="<%-(map_obj.unit == 'Rs')?(row.prev_val/100):row.prev_val/1.1 %>"></div>
+            <span class="sm2 ml-1"><%- map_obj.unit == 'Rs' ? numeral(row.prev_val).format('0,0.00') :  row.prev_val %><%- map_obj.unit %></span>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="mb-0" id="<%-row.category.split(/[ \(,\)\%\+/]+/).join('_')%>_trend"></div>
+          <% setTimeout(function() { %>
+            <% draw_combo_chart('#'+row.category.split(/[ \(,\)\%\+/]+/).join('_')+'_trend', view, area_data[row.category]) %>
+          <% }, 1000) %>
+        </div>
+      </div>
+    <% }) %>
+  <% } %>
+  </div>
+</div>

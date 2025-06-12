@@ -1,0 +1,93 @@
+<% table_body.forEach(function(row, index){ %>
+<tr class="border-dot table-rows cursor-pointer" data-category="<%- 'district' %>" id="category-<%- index +1 %>">
+  <td class="align-middle py-2 border-0 px-0 pl-4">
+    <div class="h4 mb-0 text-info py-1">
+      <div class="oval-1 rounded-circle d-block font-weight-bold sm3 sr_no">
+        <%- (index+1) %>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle py-2 border-0 px-0 state_name" data-value="<%- 'district name' %>">
+    <div class="mb-0 text-info h3">
+      <div class=" font-weight-bold sm3">
+        <%- toCamelCase('district name') %>
+      </div>
+    </div>
+  </td>
+
+  <td class="align-middle py-2 border-0 px-0 col-rank-percent" <% if(configs.score_type[0]=='abs-score' ) { %>
+    data-value="<%- parseFloat(100) %>" <% } else { %> data-value="<%- (50* 100) %>" <% } %>
+    data-per-change-value="<%- (50* 100) %>" data-abs-value="<%- parseFloat(100) %>">
+    <div class="h4 mb-0 text-info my-1 score-block">
+      <div class="d-flex d-block sm3">
+        <div class="progress sm single-progress">
+          <div class="progress-bar font-weight-bold text-dark" role="progressbar" aria-valuenow="<%- 100 %>"
+            aria-valuemin="<%- 1 %>" aria-valuemax="<%- 10 %>"
+            <%- 'style=width:' + parseFloat(100)/10 * 100 %>%>
+            <span class="abs-score">
+              <%- round_val(100) %></span>
+          </div>
+        </div>
+        <div class="ml-2 my-2">
+          <% if(isFinite(50)){ %>
+          <% if(row.quarter == 'Q1') {%>
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="svg-score-text font-weight-700">
+          </text>
+          <% } else if(50 == 0) { %>
+          <text class="svg-score-text font-weight-700">NA</text>
+          <% } else if(50 < 0){ %>
+          <text class="svg-score-text font-weight-700"><span class="text-color43 font-weight-bolder">-</span>
+            <%- Math.abs(round_val(50* 100)) %>%</text>
+          <% } else if (50 > 0) { %>
+          <text class="svg-score-text font-weight-700"><span class="text-color44 font-weight-bolder">+</span>
+            <%- round_val(50* 100) %>%</text>
+          <% } %>
+          <% } else { %>
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="svg-score-text font-weight-700">
+          </text>
+          <% } %>
+        </div>
+      </div>
+    </div>
+    <div class="h4 mb-0 text-info percent-block">
+      <div class="d-block sm3">
+        <div class="progress sm">
+          <svg width="64" height="28">
+            <% if(isFinite(50)){ %>
+            <% if(row.quarter == 'Q1') {%>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+              class="svg-score-text font-weight-700">
+            </text>
+            <% } else if(50 == 0) { %>
+            <rect x="<%- rect_value + rect_value*50 %>" y="0" width="<%-  -1 *rect_value*50 %>"
+              height="28" fill="#FF8871" /><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+              class="svg-score-text font-weight-700">NA</text>
+            <% } else if(50 < 0){ %>
+            <rect x="<%- rect_value + rect_value*50 %>" y="0" width="<%-  -1 *rect_value*50 %>"
+              height="28" fill="#FF8871" />
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+              class="svg-score-text font-weight-700">
+              <%- round_val(50* 100) %> %</text>
+            <% } else if (50 > 0) { %>
+            <rect x="<%- rect_value %>" y="0" width="<%- rect_value*50 %>" height="28" fill="#7ED321" />
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+              class="svg-score-text font-weight-700"> +
+              <%- round_val(50*100) %>%</text>
+            <% } %>
+            <% } else { %>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+              class="svg-score-text font-weight-700">
+            </text>
+            <% } %>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td class="align-middle py-2 border-0 px-0 pr-4">
+    <div class="ml-4 my-1 cursor-pointer district-drill-down" id="<%- 'district' %>">
+      <img src="assets/img/forward-arrow.svg" alt="f-arrow" class="drill-down-arrow" />
+    </div>
+  </td>
+</tr>
+<% }) %>

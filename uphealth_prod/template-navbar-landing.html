@@ -1,0 +1,95 @@
+<div class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-linear-1 py-0 h-70 px-md-5 px-3">
+    <div class="navbar-brand px-md-4 d-flex align-items-center" href="{{ base }}">
+      <!-- Replace with your logo. Just specify height, not width. -->
+      <!-- <img height="36"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkAQAAAADJe6U1AAAABGdBTUEAALGPC/xhBQAAAAJ0Uk5TAAB2k804AAAANUlEQVR42mNgwAX4/x8AkvZgsh5M/geTP8CyH0ggP1BKMoLIH8wfwG54AHbPA7jb+P9jcz0AKpcxBQbNJ8sAAAAASUVORK5CYII="
+        alt="Logo"> -->
+      <img height="56" width="56" alt="logo" src="img/up_logo.svg"/>
+      <div class="ml-2">
+        <p class="mb-0 fs-12 lh-18">उत्तर प्रदेश सरकार</p>
+        <p class="mb-0 fs-11 lh-15">Government of</p>
+        <p class="mb-0 fs-15 lh-20">Uttar Pradesh</p>
+      </div>
+      <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"> -->
+      <!-- <span class="text-uppercase">UP Health Dashboard</span> -->
+    </div>
+  </nav>
+  <div class="bg-color1 py-2 px-md-5 px-3">
+    <div class="px-md-4 d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <!-- <button class="bg-transparent border-0 p-0"><i class="fa fa-bars text-white"></i></button> -->
+        <h5 class="mb-0 text-uppercase text-white font-weight-bold">up health dashboard</h5>
+      </div>
+      <div class="d-flex align-items-center">
+        <!-- <div class="mr-2">
+          <img src="img/notification_logo.svg" alt="icon" data-toggle="modal" data-target="#notification" class="cursor-pointer" />
+        </div> -->
+
+        <div class="dropdown h4 mb-0">
+          <button class="btn ml-0 sm3 bg-transparent border-0 px-4 btn-secondary btn-sm dropdown-toggle" type="button"
+            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            My Account
+          </button>
+          <div class="dropdown-menu fs-14 py-0 text-color10 border-0 shadow tail-tc font-weight-normal"
+            aria-labelledby="dropdownMenuButton">
+            <!-- <a class="dropdown-item pb-3 font-weight-bold" href="#">Profile</a> -->
+            <% if (user == 'admin'){ %>
+            <a class="dropdown-item py-2" href="admin">Admin</a>
+            <% } %>
+            <!-- <a class="dropdown-item pb-3" href="#">Dashboards</a>
+            <a class="dropdown-item pb-3" href="#">Versions</a>
+            <a class="dropdown-item pb-3" href="files/user_manual.pdf" download>User manual</a>
+            <a class="dropdown-item pb-3" href="#">Advanced Analytics</a> -->
+            <% if (user == 'admin'){ %>
+            <a class="dropdown-item py-2" data-toggle="modal" data-target="#notification_tck_msg" href="#">Create Ticker
+              Message</a>
+            <a class="dropdown-item py-2" href="#" data-toggle="modal" data-target="#upload">Upload File (PDF)</a>
+            <a class="dropdown-item py-2" href="#" data-toggle="modal" data-target="#delete">Delete File (PDF)</a>
+            <% } %>
+            <% if (user == 'amethi_admin'){ %>
+            <a class="dropdown-item py-2" data-toggle="modal" data-target="#notification_tck_msg_amethi" href="#">Create
+              Ticker Message</a>
+            <% } %>
+            <!-- <a class="dropdown-item py-2" href="#" data-toggle="modal" data-target="#download">Download File (PDF)</a> -->
+            <a class="dropdown-item text-warning py-2 border-top border-cb" href="logout">Log-out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-color2 px-md-5 px-3">
+    <div class="px-md-4 d-flex align-items-center justify-content-between">
+      <div class="w-100">
+        <!-- <marquee>
+
+          <span>
+          hello there
+          </span>
+          <a>here</a>
+          <a>edit</a>
+          </marquee> -->
+          <marquee class="text-white mx-3 home_marq h4">
+            <!-- <span class = "ticker_msg sm3">
+              hello world
+            </span> -->
+            <span class = "landing_ticker sm3">hello world</span>
+            <!-- <a class="underline text-white mb-0 border-white ml-1 sm3" href=""><span class="">here</span></a> -->
+            <% if(user == 'admin' ) { %>
+            <a class="text-color3 ml-2 mb-0 cursor-pointer sm3" href="#" data-toggle="modal"
+              data-target="#notification_tck_msg"><span class="">edit</span></a>
+            <% } %>
+          </marquee>
+        <!-- <h4 class="mb-0 text-white"><span class="d-block sm3 ticker_msg">Sample Ticker Message : The dashboard are updated with
+            data till 12th of June 2020. Other updated can be found</span></h4> -->
+        <!-- <a class="underline text-white h4 mb-0 border-white ml-1" href=""><span class="d-block sm3">here</span></a> -->
+        <!-- <% if (user == 'admin'){ %> -->
+        <!-- <a class="text-color3 ml-2 h4 mb-0 cursor-pointer" href="#" data-toggle="modal" data-target="#notification_tck_msg"><span -->
+            <!-- class="d-block sm3">edit</span></a> -->
+        <!-- <% } %> -->
+      </div>
+      <!-- <h4 class="mb-0 text-white"><span class="d-block sm3">yahoo here edit</span></h4> -->
+    </div>
+  </div>
+</div>
