@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 53.1 (72631) - https://sketchapp.com -->
+    <title>05D1323C-0434-4E1C-9478-78843C9BD709@1.5x</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="all-Files" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-959.000000, -656.000000)">
+            <g id="Articles-section" transform="translate(75.000000, 545.000000)">
+                <g id="carousel" transform="translate(0.000000, 111.000000)">
+                    <g id="right" transform="translate(884.000000, 0.000000)">
+                        <rect id="Rectangle-Copy-2" fill="#000000" x="0" y="0" width="32" height="32" rx="16"></rect>
+                        <polygon id="arrow--left-carousel" fill="#FFFFFF" transform="translate(16.000000, 15.636364) scale(1, -1) translate(-16.000000, -15.636364) " points="20 15.6363636 12 23.2727273 12 8"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

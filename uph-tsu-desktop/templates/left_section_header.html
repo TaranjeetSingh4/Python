@@ -1,0 +1,84 @@
+<% var url = g1.url.parse(location.href) %>
+<% if (overall_score.length > 0) { %>
+  <% if (url.file != 'amethi_map'){ %>
+    <% var level_name  = (url.searchKey.check == 'yes') ? 'Divisions' : 'Districts' %>
+    <div class="up_default d-flex mt-3 mb-3 pr-3">
+      <label class="custom-control custom-radio mr-3">
+        <input id="radio" name="radio" type="radio" checked class="custom-control-input bg-dark">
+        <span class="custom-control-label cursor-pointer"></span>
+        <span class="custom-control-description p-12"> By Performance</span>
+      </label>
+      <!-- <label class="custom-control custom-radio">
+        <input id="radio1" name="radio" type="radio" class="custom-control-input">
+        <span class="custom-control-label cursor-pointer"></span>
+        <span class="custom-control-description">By Benchmark</span>
+      </label> -->
+    </div>
+    <% var count =(level_name == 'Divisions' ) ? 6 : 25 %>
+    <% if (url.searchKey.district_level == undefined && url.searchKey.division_level == undefined) {%>
+      <div class="d-flex up_default mb-4 pr-3 perf-filter">
+        <div class="col text-middle text-center cursor-pointer h3 mr-1 p-2 _green gauge_click" data-value="t-25">
+          <div class="p-15 text-white"><span class="smf">Top </span>
+            <p class="second_text p-0 m-0"><%= count %></p><span class="smf"><%= level_name %></span>
+          </div>
+        </div>
+        <div class="col text-middle text-center cursor-pointer h3 mr-1 p-2 _orange gauge_click" data-value="m-25">
+          <div class="p-15 text-white"><span class="smf">Moderate </span>
+            <p class="second_text p-0 m-0"><%= count %></p><span class="smf"><%= level_name %></span>
+          </div>
+        </div>
+        <div class="col text-middle text-center cursor-pointer h3 mr-1 p-2 _red gauge_click" data-value="b-25">
+          <div class="p-15 text-white"><span class="smf">Bottom </span>
+            <p class="second_text p-0 m-0"><%= count %></p><span class="smf"><%= level_name %></span>
+          </div>
+        </div>
+      </div>
+    <% }%>
+  <% } %>
+  <div id="power-gauge"></div>
+  <div class="container legend_pos position-relative p-0">
+    <div class="row mx-auto">
+      <div class="col-12 text-center p-0">
+        <% if(url.file != 'amethi_map'){%>
+          <% if (url.searchKey.check == 'yes' && url.searchKey.division_level != undefined){ %>
+          <ul class="legend_rank ml-4 <%- (url.searchKey.capture)?'pt-5 ml-5':'' %>">
+            <li id="superawesome"><span class="superawesome"></span>13-18</li>
+            <li id="awesome"><span class="awesome"></span> 7-12</li>
+            <li id="kindaawesome"><span class="kindaawesome"></span> 1-6</li>
+          </ul>
+          <%} else if(url.searchKey.district_level != undefined) {%>
+          <ul class="legend_rank ml-4 <%- (url.searchKey.capture)?'pt-5 ml-5':'' %>">
+            <li id="superawesome"><span class="superawesome"></span> 51-75</li>
+            <li id="awesome"><span class="awesome"></span> 26-50</li>
+            <li id="kindaawesome"><span class="kindaawesome"></span> 1-25</li>
+          </ul>
+          <% }%>
+        <% } else { %>
+          <p class="mb-0 <%- (url.searchKey.capture)?'pt-5':''%>">Block Rank</p>
+          <ul class="legend_rank ml-4 amethi_legend_rank">
+            <li id="superawesome"><span class="superawesome"></span>10 - 13</li>
+            <li id="awesome"><span class="awesome"></span> 6 - 9</li>
+            <li id="kindaawesome"><span class="kindaawesome"></span> 1- 5</li>
+          </ul>
+        <% } %>
+      </div>
+    </div>
+  </div>
+  <div class="status sm2 px-4 py-2 position-relative text-center align-middle">
+  </div>
+  <div class="card-title left-top-2 left_accord">
+    <div class="card-title left-top-3">
+      <ul class="nav" id="left-section-nav">
+        <li class="nav-item text-center category-button" data="performance" id="performance">
+          <a class="nav-link p-7 py-1 bg-success text-dark text-uppercase cursor-pointer">By Indicators</a>
+        </li>
+        <li class="nav-item text-center category-button" data="type" id="type">
+          <a class="nav-link p-7 py-1 bg-success text-dark border border-white border-top-0 border-bottom-0 text-uppercase cursor-pointer active">By Type</a>
+        </li>
+        <li class="nav-item text-center category-button" data="domain" id="domain">
+          <a class="nav-link p-7 py-1 bg-success text-dark border border-white border-top-0 border-bottom-0 text-uppercase cursor-pointer">By Domain</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+<% } %>

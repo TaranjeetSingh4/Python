@@ -1,0 +1,141 @@
+.WorstPerformingIndicatorCopy {
+  position: relative;
+}
+
+.WorstPerformingIndicatorCopy-panelBg {
+  position: absolute;
+  top: 10px;
+  left: 9px;
+}
+
+.Panel {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
+.Panel-pgPanelFigure {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+}
+
+.Panel-sureOutOfThe {
+  position: absolute;
+  top: 0px;
+  left: 1px;
+}
+
+.Panel-outOfTheseRat {
+  position: absolute;
+  top: 85px;
+  left: 1px;
+}
+
+.Panel-panelLine {
+  position: absolute;
+  top: 276px;
+  left: 128px;
+}
+
+.Panel-panelLine1 {
+  position: absolute;
+  top: 59px;
+  right: 66px;
+}
+
+.Chart {
+  position: absolute;
+  top: 27px;
+  left: 291px;
+}
+
+.Chart-chart {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.Chart-forMoreDetailsPl {
+  position: absolute;
+  bottom: 0px;
+  left: 4px;
+}
+
+.Panel1 {
+  position: absolute;
+  top: 28px;
+  right: 10px;
+}
+
+.Panel1-chart {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.Panel2 {
+  position: absolute;
+  bottom: 0px;
+  left: 118px;
+}
+
+.Panel2-alsoTheIndicator {
+  position: absolute;
+  top: 10px;
+  left: -16px;
+  right: 140px;
+}
+
+.Panel2-panelLine {
+  position: absolute;
+  top: 154px;
+  left: 54px;
+}
+
+.Panel2-panelFigure {
+  position: absolute;
+  left: 85px;
+  bottom: 0;
+}
+
+.bubbles .dot {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+}
+.bubbles {
+  display: inline-block;
+}
+.green {
+  background-color: #85d5aa;
+}
+.yellow {
+  background-color: #f8e06a;
+}
+.pink {
+  background-color: #e74d4d80;
+}
+.month {
+  font-size: 12px;
+  color: #747474;
+}
+.bg-color22 {
+  background-color: #e1dcd1;
+}
+.domain {
+  visibility: hidden;
+}
+.tick line {
+  visibility: hidden;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}

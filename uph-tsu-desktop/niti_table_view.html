@@ -1,0 +1,243 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>UP-TSU | Table View</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/temp_bootstrap1.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-select/dist/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="ui/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/by_domain.css">
+  <link rel="stylesheet" href="css/table_view.css">
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-sweetalert/dist/sweetalert.css">
+  <link rel="stylesheet" href="node_modules/jquery-ui-dist/jquery-ui.css">
+  <link rel="stylesheet" href="node_modules/jquery-ui-slider-pips-npm/dist/jquery-ui-slider-pips.min.css">
+</head>
+
+<body class="h-100">
+  {% set import json %}
+  {% set import numpy as np %}
+  {% set import up_tsu_desktop_app %}
+  {% set user_session_id = handler.get_session().get("id", {}) %}
+  {% set from gramex.config import variables %}
+  {% set user_info = handler.get_session().get("user", {}) %}
+  {% if user_info == {} %}
+    {% set user_info = {'district': None, 'map_id': None, 'division': None, 'block': None, 'user': 'CM_Office1', 'name': None, 'phonenumber': '0', 'otp': None, 'designation': 'cm', 'Approval': 'Approved', 'temp_password': '0', 'email': None, 'created_on': None, 'last_updated_by': None, 'id': 'CM_Office1'} %}
+  {% end %}
+  {% set username = user_info.get("user","") %}
+  {% set user_data = {} %}
+  {% for k, v in user_info.items() %}
+    {% set user_data[k] = np.asscalar(v) if isinstance(v, np.generic) else v %}
+  {% end %}
+  {% set isStateUser = (user_data['division'] in ['', None]) and (user_data['district'] in ['', None]) %}
+  {% set isDistUser = (user_data['division'] in ['', None]) and not (user_data['district'] in ['', None]) %}
+  <div class="loading-icon">
+    <i class="fa fa-circle-o-notch fa-spin pos-cc"></i>
+  </div>
+  <script class="nav-bar" type="text/html" src="templates/nav_bar.html"></script>
+  <div class="card rounded-0 mt-4 px-3 border-0">
+    <div class="d-flex">
+      <div class="col-7">
+        <div class="d-flex w-100 justify-content-between pt-4">
+          <div class="w-50 align-self-center sm1">
+            <span class="font-weight-bold font-italic pr-2 p-12">Deep dive</span>
+            <label for="level" class="font-weight-bold p-12 mb-0 level-division text-secondary"> By Division</label>
+            <div class="switch-secondary round mx-1 position-relative overflow-hidden">
+              <input type="checkbox" id="level" name="level" class="overflow-hidden">
+              <label for="level" class="mb-0"></label>
+            </div>
+            <label for="level" class="font-weight-bold p-12 mb-0 level-district">By Districts</label>
+          </div>
+          <div class="w-50 mb-0 mt-3 align-self-center sm1 d-none" id="double-label-slider"></div>
+        </div>
+        <div class="d-flex pt-3">
+          <div class="col-3 px-0 align-self-center">
+            <p class="mb-0 p-9">Note : Select Divisions/Districts to view Indicator wise breakup</p>
+          </div>
+          <div class="col-7">
+            <div class="dropdown w-100 bg-white text-dark p-11 custom-border_bottom_left">
+              <script class="table-dropdown" type="text/html" src="templates/dropdown.html">
+              </script>
+            </div>
+          </div>
+          <script type="text/html" class="download-button">
+            <% if(user_info.user != 'CM_Office1'){ %>
+            <div class="col-2 cursor-pointer dropdown tetttt">
+                <i class="fa fa-download dropdown-toggle" aria-hidden="true" id="dropdownMenuButton" data-toggle="dropdown"></i>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="download-data dropdown-item" geography='district'>District</a>
+                  <a class="download-data dropdown-item" geography='division'>Division</a>
+                  <a class="download-data dropdown-item" geography='block'>Block</a>
+                </div>
+              </div>
+            <% } %>
+          </script>
+        </div>
+        <div class="table-container my-2">
+          <script class="table" type="text/html" src="templates/deepdive_table.html"></script>
+        </div>
+
+        <div class="sm2 font-weight-bold text-dark font-italic negative_indication m-2">This is Negative Indicator</div>
+
+        <div class="">
+          <div class="d-flex flex-column p-9">
+            <script class="table-insights" type="text/html" src="templates/table_insights.html"></script>
+          </div>
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="card no-border-radius border-0 bg-transparent  py-3">
+          <div class="d-flex justify-content-end pt-1">
+          <!-- <marquee class="w-50 text-danger ticker_msg mx-3"></marquee> -->
+          <marquee class="w-50 text-danger niti_ticker mx-3"></marquee>
+            <div class="align-self-center">
+              <ul class="nav d-flex">
+                <li class="nav-item p-9 text-right align-self-center text-uppercase">
+                  <p class="mb-0">Selected Time period</p>
+                  <p class="mb-0 font-weight-bold" id="date-label">Jul 2018</p>
+                </li>
+                <li class="nav-item align-self-center pl-2 pr-4 cursor-pointer">
+                  <img src="./img/calendar-face-2.svg" alt="icon" id="for-date">
+                </li>
+              </ul>
+            </div>
+            <div class="align-self-center">
+              <ul class="nav d-flex">
+                <li class="nav-item align-self-center cursor-pointer png-download" title="Screenshot">
+                  <img src="./img/screen-capture.png" alt="icon">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="col-6 align-self-center px-0">
+            <p class="mb-0 font-weight-bold p-12 text-uppercase">Indicator breakup for <span class="d-block table-title">Uttar Pradesh</span></p>
+          </div>
+          <div class="col-6 align-self-center px-0">
+            <div class="dropdown bootstrap-select w-100 bg-white text-dark p-11">
+              <select class="selectpicker w-100 bg-white text-dark p-11 border" data-style="btn bg-white w-100 text-dark p-11" tabindex="-98" id="filter-type">
+                <option value="indicator" class="p-12">By Indicator</option>
+                <option value="type" class="p-12">By Type</option>
+                <option value="domain" class="p-12">By Domain</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="indicator-table-container my-2">
+          <script class="indicator-table" type="text/html" src="templates/indicator_table.html"></script>
+        </div>
+        <div class="">
+          <script class="indicator-insights" type="text/html" src="templates/indicator_insights.html"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/html" class="file_upload" src="templates/file_upload_template.html"></script>
+  <script type="text/html" class="avail_file_list" src="templates/available_file_list.html"></script>
+  <script type="text/html" class="insert_ticker_msg" src="templates/insert_ticker_msg.html"></script>
+  <script type="text/html" class="insert_ticker_msg_amethi" src="templates/insert_ticker_msg_amethi.html"></script>
+  <script type="text/html" class="list_of_files" src="templates/list_of_files.html"></script>
+  {% include templates/video-modals.html %}
+  <script class="insights" type="text/html" src="templates/insights.html"></script>
+  <script class="user-profile" type="text/html" src="templates/user_profile.html"></script>
+  <!--footer-->
+  <script src="ui/g1/dist/g1.min.js"></script>
+  <script src="ui/noty/lib/noty.min.js"></script>
+  <script type="text/javascript">
+    /* global g1 */
+    /* exported js_user, user_info, defaults, indicator_mapping, data_map,session_id, download_map, data_map_area, FULL_LATEST_DATE */
+    var user_info = {{ json.dumps(user_data) }}
+    var defaults = {% raw up_tsu_desktop_app.get_config(handler) %}
+    var FULL_LATEST_DATE = new Date();
+    // update defaults date related values
+    fetch("./get_niti_maximum_date_district").then(function (response) {
+        return response.json();
+      }).then(function (resp) {
+        let timestmp = resp ? resp[0].date : null
+        if(timestmp){
+          FULL_LATEST_DATE = timestmp;
+          let date = new Date(timestmp);
+          let month = (parseInt(date.getMonth()) + 1)
+          if (month < 10) {
+            month = '0' + month;
+          }
+          let date_format = (date.getFullYear() + '-' + (month) + '-' + "01");
+          let financial_yr_start = (date.getMonth() + 1) >= 4 ? parseInt(date.getFullYear()) : parseInt(date.getFullYear()) - 1;
+          defaults["date"] = date_format;
+          defaults["year"] = financial_yr_start;
+        }
+      }).catch(function (err) {
+        console.log("latest date error", err)
+    });
+
+
+    var session_id = {{ json.dumps(user_session_id) }}
+    var indicator_mapping = {{ json.dumps(variables['indicator-mapping_niti']) }}
+    var data_map = {{ json.dumps(variables['data-map-niti']) }}
+    var data_map_area = {{ json.dumps(variables['data-map-area-niti']) }}
+    var js_user = {{ json.dumps(username) }}
+    var download_map = {{ json.dumps(variables['download-map-niti']) }}
+    if(g1.url.parse(location.href).file == "landing"){
+      user_info = {
+        "district": null,
+        "map_id": null,
+        "division": null,
+        "block": null,
+        "user": "CM_Office1",
+        "name": null,
+        "phonenumber": "0",
+        "otp": "78105",
+        "designation": "cm",
+        "Approval": "Approved",
+        "temp_password": "0",
+        "email": null,
+        "created_on": null,
+        "last_updated_by": null,
+        "id": "CM_Office1"
+      }
+    }
+    if(user_info.user == 'CM_Office1')
+      indicator_mapping = {{ json.dumps(variables['indicator-mapping_cm']) }}
+    if(user_info.user == 'CM_Office1')
+      data_map = {{ json.dumps(variables['data-map-cm']) }}
+  </script>
+  <!-- Matomo -->
+
+  <script>
+
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "https://uphealthdashboard.in/matomo/";
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      _paq.push(['setUserId', user_info.user]);
+      _paq.push(['setDocumentTitle','Niti Table View']);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+    })();
+
+  </script>
+
+  <!-- End Matomo Code -->
+  {% set scripts = [] %}
+  {% include 'templates/scripts.html' %}
+  <script src="js/common_calendar.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/common_new.js"></script>
+  <script src="js/click_events_common_table.js"></script>
+  <script type="text/javascript" src="components/area_chart.js"></script>
+  <script type="text/javascript" src="js/tableview.js"></script>
+  <script src="js/log_capture.js"></script>
+  {% include 'templates/google-analytics-script.html' %}
+</body>
+
+</html>

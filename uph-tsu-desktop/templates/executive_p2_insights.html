@@ -1,0 +1,115 @@
+<!--   var sample =
+  {curr_month : "Dec'18",
+  prev_month : "Nov'18",
+  rank: {increase : {block: 'b1', prev: '5/20', curr:'1/20'},
+  decrease : {block: 'b2', prev: '7/20', curr:'19/20'}},
+  indicator: {increase : {block: 'b1', prev: '8.2', curr:'9.1', growth: 0.7, indicator_name: 'indicator1'},
+  decrease : {block: 'b2', prev: '7.3', curr:'10.1', growth: 0.8, indicator_name: 'indicator2'}}
+} -->
+<div class="h-custom-100 bg-info px-3 mt-10">
+  <div class="title h3 py-3 d-flex mb-0">
+    <span class="text-uppercase sm2 align-self-center">INSIGHTS</span>
+  </div>
+  <div class="row">
+    <% var visible_class = (d.rank.increase.curr == d.rank.increase.prev) ? 'd-none' : '' %>
+    <% var show_error = (visible_class == 'd-none')? '' : 'd-none' %>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6 pr-lg-2 mb-3">
+      <div class="bg-white p-2 h-custom-100 position-relative">
+        <div class="h4 mb-0">
+          <p class="sm3 mb-0 font-weight-bold">Highest increase in rank from last month based on composite score</p>
+          <span class="h6 mt-3 font-weight-bold <%- show_error %>">No change in the rank from last month</span>
+        </div>
+        <div class="<%- visible_class %>">
+          <p class="h4 mb-0 opacity-90  font-weight-bold"><span class="sm3"><%= _.startCase(d.area)%> Name</span></p>
+          <p class="h5"><span class="sm3 text-uppercase"><%- d.rank.increase.name %></span></p>
+          <div class="d-flex">
+            <div class="w-50 text-center">
+              <h5 class="mb-0 font-weight-bold"><span class=""><%- d.rank.increase.curr %></span></h5>
+              <h2 class="opacity-90 font-weight-bold text-uppercase mb-0 sm3"><%- d.curr_month %></h2>
+              <img src="img/up-bold-arrow-round.png" alt="up-bold-arrow" class="my-2">
+              <h5 class="mb-0 font-weight-bold"><span class=""><%- d.rank.increase.prev %></span></h5>
+              <h2 class="opacity-90 font-weight-bold text-uppercase mb-0 sm3"><%- d.prev_month %></h2>
+            </div>
+            <div class="w-50 align-self-center text-center">
+              <img src="img/graeen-icon.png" alt="green-icon"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% var visible_class = (d.rank.decrease.curr == d.rank.decrease.prev) ? 'd-none' : '' %>
+    <% var show_error = (visible_class == 'd-none')? '' : 'd-none' %>
+
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 pl-lg-2 mb-3">
+        <div class="bg-white p-2 h-custom-100 position-relative">
+          <div class="h4 mb-0">
+            <p class="sm3 mb-0 font-weight-bold">Maximum decrease in rank from last month based on composite score</p>
+            <span class="h6 mt-3 font-weight-bold <%- show_error %>">No change in the rank from last month</span>
+          </div>
+          <div class=" <%- visible_class %> ">
+            <p class="h4 mb-0 opacity-90 font-weight-bold"><span class="sm3"><%= _.startCase(d.area)%> Name</span></p>
+            <p class="h5"><span class="sm3 text-uppercase"><%- d.rank.decrease.name %></span></p>
+            <div class="d-flex">
+              <div class="w-50 text-center">
+                <h5 class="mb-0 font-weight-bold"><span class=""><%- d.rank.decrease.curr %></span></h5>
+                <h2 class="opacity-90 font-weight-bold text-uppercase mb-0 sm3"><%- d.curr_month %></h2>
+                <img src="img/down-bold-arrow-round.png" alt="down-bold-arrow" class="my-2">
+                <h5 class="mb-0 font-weight-bold"><span class=""><%- d.rank.decrease.prev %></span></h5>
+                <h2 class="opacity-90 font-weight-bold text-uppercase mb-0 sm3"><%- d.prev_month %></h2>
+              </div>
+              <div class="w-50 align-self-center text-center">
+                <img src="img/graeen-icon.png" alt="green-icon"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 pr-lg-2 mb-3">
+          <div class="bg-white p-2 h-custom-100 position-relative">
+            <div class="h4 mb-0">
+              <p class="sm3 mb-0 font-weight-bold">Highest increase in indicator from last month</p>
+            </div>
+            <div class="">
+              <p class="h4 mb-0 opacity-90 font-weight-bold"><span class="sm3"><%= _.startCase(d.area)%> Name</span></p>
+              <p class="h5"><span class="sm3 text-uppercase"><%- d.indicator.increase.name %></span></p>
+              <div class="mb-5">
+                <p class="h4 mb-0 opacity-90 font-weight-bold"><span class="sm3">Indicator</span></p>
+                <p class="h5 mb-0 lh-1"><span class="sm3 text-uppercase"><%- _.find(indicator_mapping, {indicator_name: d.indicator.increase.indicator_name}).short_name %></span></p>
+
+              </div>
+              <div class="d-flex justify-content-between  pos-bc w-100 px-2 pb-2 font-control">
+                <h4 class="mb-0 font-weight-bold align-self-center"><%- d.indicator.increase.curr.toFixed(2)%><%- _.find(indicator_mapping, {indicator_name: d.indicator.increase.indicator_name}).unit %><span class="font-weight-light sm1"> (<%- isInt(d.indicator.increase.growth)? d.indicator.increase.growth : d.indicator.increase.growth.toFixed(1) %>%)</span></h4>
+                <% indicator_polarity = _.find(indicator_mapping, {indicator_name: d.indicator.increase.indicator_name}).positive_negative %>
+                <% if (indicator_polarity == 'positive'){ %>
+                <img src="img/up-bold-arrow-round.png" alt="up-bold-arrow-round" class="align-self-center"></div>
+                <% } else { %>
+                <img src="img/neg_up-bold-arrow-round.svg" alt="up-bold-arrow-round" class="align-self-center"></div>
+                <% } %>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 pl-lg-2 mb-3">
+            <div class="bg-white p-2 h-custom-100 position-relative">
+              <div class="h4 mb-0">
+                <p class="sm3 mb-0 font-weight-bold">Maximum decrease in indicator from last month</p>
+              </div>
+              <div class="">
+                <p class="h4 mb-0 opacity-90 font-weight-bold"><span class="sm3"><%= _.startCase(d.area)%> Name</span></p>
+                <p class="h5"><span class="sm3 text-uppercase"><%- d.indicator.decrease.name %></span></p>
+                <div class="mb-5">
+                  <p class="h4 mb-0 opacity-90 font-weight-bold"><span class="sm3">Indicator</span></p>
+                  <p class="h5 mb-0 lh-1"><span class="sm3 text-uppercase"><%- _.find(indicator_mapping, {indicator_name: d.indicator.decrease.indicator_name}).short_name %></span></p>
+                </div>
+                <div class="d-flex justify-content-between  pos-bc w-100 px-2 pb-2 font-control">
+                  <h4 class="mb-0 font-weight-bold align-self-center"><%- d.indicator.decrease.curr ? d.indicator.decrease.curr.toFixed(2) : d.indicator.decrease.curr %><%- _.find(indicator_mapping, {indicator_name: d.indicator.decrease.indicator_name}).unit%><span class="font-weight-light sm1"> (<%- Math.abs(isInt(d.indicator.decrease.growth)? d.indicator.decrease.growth : d.indicator.decrease.growth.toFixed(1)) %>%)</span></h4>
+                  <% indicator_polarity = _.find(indicator_mapping, {indicator_name: d.indicator.decrease.indicator_name}).positive_negative %>
+                  <% if (indicator_polarity == 'positive'){ %>
+                  <img src="img/down-bold-arrow-round.png" alt="down-bold-arrow-round" class="align-self-center"></div>
+                  <% } else { %>
+                  <img src="img/neg_down-bold-arrow-round.svg" alt="down-bold-arrow-round" class="align-self-center"></div>
+                  <% } %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>

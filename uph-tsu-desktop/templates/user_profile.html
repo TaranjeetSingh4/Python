@@ -1,0 +1,21 @@
+<div class="sidenav align-self-center" id="user-profile">
+  <div class="container-fluid col-12 col-sm-12 col-md-4 col-lg-3 h-75 position-absolute pos-cc px-0 bg-white vh-100">
+    <div class="bg-gradient row mx-0 py-3">
+      <div class="col-10 pr-0 align-self-center d-flex">
+        <img src="img/man.png" alt="admin-image" width="50px" height="50px" class="round bg-dark">
+        <h6 class="text-white text-uppercase font-weight-bold m-3"><%- user_name %></h6>
+      </div>
+      <div class="col-2 pl-0 align-self-center text-right">
+        <div class="close-icon">
+          <a href="javascript:void(0)" class="h3 mb-0 text-white" id="close-user-profile">&times;</a>
+        </div>
+      </div>
+    </div>
+    <% _.each(details, function(value, key) { %>
+      <div class="mx-3 my-1 text-capitalize ">
+        <span class="font-weight-bold"><%- key %> : </span>
+        <span class="font-italic"> <%- value %></span>
+      </div>
+    <% }) %>
+  </div>
+</div>

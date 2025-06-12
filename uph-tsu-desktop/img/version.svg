@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="28px" viewBox="0 0 35 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>0FEC98EC-55C8-4735-8D64-1A7918A86122@1x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="5.12292025%" x2="50%" y2="81.2958424%" id="linearGradient-1">
+            <stop stop-color="#ACC4F8" offset="0%"></stop>
+            <stop stop-color="#738DD8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A_HomePage_Idle" transform="translate(-289.000000, -659.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <path d="M323.127576,659.5 L323.127576,686.5 L308.429553,686.5 L308.429553,659.5 L323.127576,659.5 Z M306.726202,662.528179 L306.726202,683.471821 L297.706014,683.471821 L297.706014,662.528179 L306.726202,662.528179 Z M296.002664,665.556358 L296.002664,680.443642 L289,680.443642 L289,665.556358 L296.002664,665.556358 Z" id="versions"></path>
+        </g>
+    </g>
+</svg>

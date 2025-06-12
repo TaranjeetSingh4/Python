@@ -1,0 +1,114 @@
+<% var cols = selection == 'month' ? ['UP Avg', 'Best Perf.', 'Monthly', 'FY'] : selection == 'quarter' ? ['UP Avg', 'Best Perf.', 'Quarterly', 'FY'] : ['UP Avg', 'Best Perf.', 'FY']%>
+<% var col_keys = selection == 'month' ? ['avg', 'max', 'monthly', 'fy'] : selection == 'quarter' ? ['avg', 'max', 'quarterly', 'fy'] : ['avg', 'max', 'fy'] %>
+<div class="indicator_break_table">
+  <div class="d-flex nav-fill nav sm3 font-weight-bold border border-left-0 border-right-0 border-top-0 border-white bg-lighten">
+    <div class="nav-item w-25 py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-uppercase table-header" id="table-header"><%-type %></div>
+    <% _.each(cols, function(col) { %>
+      <div class="nav-item w-15 py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-uppercase font-italic table-header">
+        <p class="mb-0 text-uppercase"><%- col %></p>
+      </div>
+    <% }) %>
+  </div>
+  <div class="deepdive-table t2 <%- (url.searchKey.capture)? '': 'deepdive-position' %>">
+    <% if(type == 'indicator') { %>
+    <% _.each(indicator_data, function(item) { %>
+    <% var indicator = _.find(mapping, {indicator_name: item.name}) %>
+      <div class="card-body p-0">
+        <div id="<%-item.name.split(' ').join('_')%>">
+          <div class="card border-0 rounded-0">
+            <div class="p-0 border border-left-0 border-right-0 border-top-0 border-white">
+              <a class="card-link p-0">
+                <div class="d-flex nav-fill nav sm3 font-weight-bold border border-left-0 border-right-0 border-top-0 border-white">
+                  <div class="w-25 pl-1 nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize text-left p-11" title="<%- indicator.indicator_name %>"><%- indicator.short_name == "TB Notification Rate" ? "*"+indicator.short_name : indicator.short_name %></div>
+                  <% _.each(col_keys, function(key) { %>
+                    <% if(key == 'monthly' || key == 'quarterly') { %>
+                      <div class="w-15 justify-content-around ind-color-cell nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize d-flex p-11" value="<%- item[key+'_score'] %>" domain-attr="<%- item.ind_max %>" domain-attr_min="<%-item.min%>" indicator_sign="<%- indicator.positive_negative %>">
+                        <%- isFinite(item[key+'_score'])? ( (indicator.unit == 'Rs' ? numeral(_.round(item[key+'_score'], 2)).format('0,0.00') : _.round(item[key+'_score'], 2) ) || 0 ) + indicator.unit : '0' %>
+                      </div>
+                    <% } else if (key == 'max') { %>
+                      <div class="w-15 justify-content-around ind-color-cell nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize d-flex p-11 cursor-pointer" title="<%-item[select]%>" value="<%- indicator.positive_negative == 'positive' ? item.max : item.min %>" domain-attr="<%-item.ind_max%>" domain-attr_min="<%-item.min%>" indicator_sign="<%- indicator.positive_negative %>">
+                        <%- (item.max)? (indicator.positive_negative == 'positive' ? (((indicator.unit == 'Rs') ?  numeral(_.round(item.max, 2)).format('0,0.00') : _.round(item.max, 2) ) || 0 %> <%- indicator.unit ) : (((indicator.unit == 'Rs' && item.min !==undefined) ?  numeral(_.round(item.min, 2)).format('0,0.00') : _.round(item.min, 2) ) || 0 %> <%- indicator.unit )) : ((indicator.positive_negative == 'negative' && item.min == 0) ? item.min : '0') %>
+                      </div>
+                    <% } else { %>
+                      <div class="w-15 justify-content-around ind-color-cell nav-item py-2 text-capitalize p-11 d-flex" value="<%- key=='avg' ? item.avg : item[key+'_score']%>" domain-attr="<%-item[key+'_max']%>" domain-attr_min="<%-item[key+'_min']%>" indicator_sign="<%- indicator.positive_negative %>">
+                        <% if(key == 'avg') { %>
+                          <%- item.avg ? (((indicator.unit == 'Rs') ? numeral(_.round(item.avg, 2)).format('0,0.00') : _.round(item.avg, 2) ) || 0 %> <%- indicator.unit) : ((indicator.positive_negative == 'negative' && item.avg == 0) ? item.avg : '0') %>
+                        <% } else { %>
+                          <%- isFinite(item[key+'_score']) ? (((indicator.unit == 'Rs' && item[key+'_score'] !==undefined) ? numeral(_.round(item[key+'_score'], 2)).format('0,0.00') : _.round(item[key+'_score'], 2) ) || 0 %> <%- indicator.unit ): '0' %>
+                        <% } %>
+                      </div>
+                    <% } %>
+                  <% }) %>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% }) %>
+    <% } else { %>
+      <div id="accordion">
+        <% var _grpBy = _.groupBy(indicator_data, type) %>
+        <% var _type_data = {} %>
+        <% Object.keys(_grpBy).sort()
+                        .forEach(function(v, i) {
+                            <!-- console.log(v, _grpBy[v]); -->
+                            _type_data[v] = _grpBy[v]
+                        }); %>
+        <% _.each(_type_data, function(items, type){ %>
+          <div class="card rounded-0 text-dark border-0 bg-white">
+            <div class="collapse-header">
+              <a class="collapsed text-dark card-link p-12 collapse-title" data-toggle="collapse" href="#collapse_<%-type.split(' ').join('_')%>">
+                <div class="d-flex border border-left-0 border-right-0 px-3 py-2 border-top-0">
+                  <div class="col-3 d-flex px-0 align-self-center">
+                    <i class="fa fa-plus align-self-center"></i>
+                    <p class="mb-0 ml-1 p-12 font-weight-bold text-uppercase">
+                    <%- type.split('_').join(' ') %></p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div id="collapse_<%-type.split(' ').join('_')%>" class="collapse bg-white collapse-body" data-parent="#accordion">
+              <% _.each(items, function(item) { %>
+                <% var indicator = _.find(mapping, {indicator_name: item.name}) %>
+                <div class="card border-0 rounded-0">
+                    <div class="p-0 border border-left-0 border-right-0 border-top-0 border-white">
+                      <a class="card-link p-0">
+                        <div class="d-flex nav-fill nav sm3 font-weight-bold border border-left-0 border-right-0 border-top-0 border-white">
+                          <div class="w-25 pl-1 nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize p-11" title="<%- indicator.indicator_name %>"><%- indicator.short_name %></div>
+                          <% _.each(col_keys, function(key) { %>
+                            <% if(key == 'monthly' || key == 'quarterly') { %>
+                              <div class="w-15 justify-content-around ind-color-cell nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize d-flex p-11" value="<%- item[key+'_score'] %>" domain-attr="<%- item.ind_max %>" domain-attr_min="<%-item.min%>" indicator_sign="<%- indicator.positive_negative %>">
+                                <!-- <%-(indicator.unit == 'Rs' ? numeral(_.round(item[key+'_score'], 2)).format('0,0.00') : _.round(item[key+'_score'], 2) ) || 0 %> <%- indicator.unit %> -->
+                                <%- isFinite(item[key+'_score']) ? ( (indicator.unit == 'Rs' ? numeral(_.round(item[key+'_score'], 2)).format('0,0.00') : _.round(item[key+'_score'], 2) ) || 0 ) + indicator.unit : '0' %>
+                              </div>
+                            <% } else if (key == 'max') { %>
+                              <div class="w-15 justify-content-around ind-color-cell nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize d-flex p-11 cursor-pointer" title="<%-item[select]%>" value="<%- indicator.positive_negative == 'positive' ? item.max : item.min %>" domain-attr="<%-item.ind_max%>" domain-attr_min="<%-item.min%>" indicator_sign="<%- indicator.positive_negative %>">
+                                <%- (item.max)? (indicator.positive_negative == 'positive' ? (((indicator.unit == 'Rs' && item.max !==undefined) ?  numeral(_.round(item.max, 2)).format('0,0.00') : _.round(item.max, 2) ) || 0 %> <%- indicator.unit ) : (((indicator.unit == 'Rs' && item.min !==undefined) ?  numeral(_.round(item.min, 2)).format('0,0.00') : _.round(item.min, 2) ) || 0 ) + indicator.unit ) : '0' %>
+                                <!-- <%- (item.max)? (indicator.positive_negative == 'positive' ? (((indicator.unit == 'Rs') ?  numeral(_.round(item.max, 2)).format('0,0.00') : _.round(item.max, 2) ) || 0 %> <%- indicator.unit ) : (((indicator.unit == 'Rs' && item.min !==undefined) ?  numeral(_.round(item.min, 2)).format('0,0.00') : _.round(item.min, 2) ) || 0 %> <%- indicator.unit )) : ((indicator.positive_negative == 'negative' && item.min == 0) ? item.min : 'NA') %> -->
+
+                              </div>
+                            <% } else { %>
+                              <div class="w-15 justify-content-around ind-color-cell nav-item py-2 text-capitalize p-11 d-flex" value="<%- key=='avg' ? item.avg : item[key+'_score']%>" domain-attr="<%-item[key+'_max']%>" domain-attr_min="<%-item[key+'_min']%>" indicator_sign="<%- indicator.positive_negative %>">
+                                <% if(key == 'avg') { %>
+                                  <!-- <%-((indicator.unit == 'Rs' && item.avg !==undefined) ? numeral(_.round(item.avg, 2)).format('0,0.00') : _.round(item.avg, 2) ) || 0 %> <%- indicator.unit %> -->
+                                  <%- item.avg ? (((indicator.unit == 'Rs' && item.avg !==undefined) ? numeral(_.round(item.avg, 2)).format('0,0.00') : _.round(item.avg, 2) ) + indicator.unit || 0 + indicator.unit) : '0' %>
+                                  <% } else { %>
+                                  <!-- <%-((indicator.unit == 'Rs' && item[key+'_score'] !==undefined) ? numeral(_.round(item[key+'_score'], 2)).format('0,0.00') : _.round(item[key+'_score'], 2) ) || 0 %> <%- indicator.unit %> -->
+                                <%- isFinite(item[key+'_score'])? ( (indicator.unit == 'Rs' ? numeral(_.round(item[key+'_score'], 2)).format('0,0.00') : _.round(item[key+'_score'], 2) ) || 0 ) + indicator.unit : '0' %>
+                                <% } %>
+                              </div>
+                            <% } %>
+                          <% }) %>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+              <% })%>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    <% } %>
+  </div>
+</div>

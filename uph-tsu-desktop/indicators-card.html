@@ -1,0 +1,87 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+{% set page_title = 'Compare' %}
+{% include 'templates/pa/pa-head.html' %}
+
+{% set import json %}
+{% set from gramex.config import variables %}
+
+{% set user_session_id = handler.get_session().get("id", {}) %}
+{% set user_info = handler.get_session().get("user", {}) %}
+{% set username = user_info.get("user", "") %}
+
+<body class="lh-2">
+  <link rel="stylesheet" href="css/d3_tip.css">
+  <!--Header-->
+  <section class="bg-secondary pb-4">
+    <!-- top-filters template here -->
+    <script class="nav-top-filters" type="text/html" src="templates/pa/top-filters.html"></script>
+    <script class="calendar" type="text/html" src="templates/pa/pa_calendar.html"></script>
+    <script class="datepicker" type="text/html" src="templates/pa/datepicker.html"></script>
+  </section>
+  <!--Peogram area cards 1-->
+  <section class="program-area-indicators mt-n5 mb-5">
+    <div class="card bg-transparent rounded-0 border-0 mt-4">
+      <div class="container">
+        <div class="row mt-n1">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-1 pr-1">
+              <div class="bg-color4 cursor-pointer h-54 border-radius border border-color-11 px-2 shadow text-center home-btn">
+                  <p class="mb-0 d-block text-color5 opacity-50 font-weight-bold"><img src="img/home-icon.svg" alt="home icon"/></p>
+                </div>
+            <!-- <div class="bg-color4 border-radius px-2 pt-2 shadow text-center home-btn">
+              <p class="h1 mb-0 d-block text-color5 opacity-50 font-weight-bold"><span class="d-block sm5">HOME</span></p>
+              <div class="display-3 d-block cursor-pointer">
+                <div class="sm5 text-uppercase text-secondary opacity-50 pb-2 font-weight-bold border border-color4">UP</div>
+              </div>
+            </div> -->
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-8 pr-1 pl-1">
+            <script class="compare-selection" type="text/html" src="templates/pa/compare-selection.html"></script>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-3 pl-1">
+            <div class="d-flex justify-content-between h-54">
+              <div data-toggle="modal" data-target=".insights" class="cursor-pointer border-radius border border-color-11 w-100 px-3 py-2 bg-white shadow">
+                <div class="text-center">
+                  <p class="h1 mb-0 d-block text-color5 opacity-50 font-weight-bold"><span class="d-block sm5">IN-DEPTH AUTOMATED INSIGHTS</span></p>
+                  <div class="display-3 d-block">
+                    <div class="sm5 text-color5 opacity-50 font-weight-bold">Auto-Narratives</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-2 h-100">
+      <div class="container h-100">
+        <script class="compare-tab" type="text/html" src="templates/pa/compare_tab.html"></script>
+      </div>
+    </div>
+  </section>
+
+  <!--Modal for insights-->
+  <section>
+  <div class="modal_container">
+    <script class="auto_insights" type="text/html" src="templates/pa/pa_insights.html"></script>
+  </div>
+  </section>
+  {% set scripts = ['vega', 'map'] %}
+  {% include 'templates/pa/pa-scripts.html' %}
+  <script>
+    /* exported program_config, session_id, program_image_mapping, user_data */
+    var program_config = {{ json.dumps(variables['program-config']) }}
+    var program_image_mapping = {{ json.dumps(variables['program-config']['program_image_mapping']) }}
+    var session_id = {{ json.dumps(user_session_id) }}
+    var user_data = {{json.dumps(user_info)}}
+  </script>
+  <script src="node_modules/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+  <script src="js/pa_map.js"></script>
+  <script src="components/pa/area_chart.js"></script>
+  <script src="components/pa/multi_line.js"></script>
+  <script src="js/d3-tip.min.js"></script>
+  <script src="js/pa_compare.js"></script>
+
+</body>
+</html>

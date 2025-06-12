@@ -1,0 +1,23 @@
+<% var unique_dists = [
+    "Agra", "Aligarh", "Ambedkar Nagar", "Amethi", "Amroha", "Auraiya", "Ayodhya", "Azamgarh",
+    "Bagpat", "Bahraich", "Ballia", "Balrampur", "Banda", "Barabanki", "Bareilly", "Basti", "Bhadohi",
+    "Bijnor", "Budaun", "Bulandshahar", "Chandauli", "Chitrakoot", "Deoria", "Etah", "Etawah", "Farrukhabad",
+    "Fatehpur", "Firozabad", "Gautam Buddha Nagar", "Ghaziabad", "Ghazipur", "Gonda", "Gorakhpur", "Hamirpur", "Hapur",
+    "Hardoi", "Hathras", "Jalaun", "Jaunpur", "Jhansi", "Kannauj", "Kanpur Dehat", "Kanpur Nagar", "Kasganj", "Kaushambi",
+    "Kushinagar", "Lakhimpur Kheri", "Lalitpur", "Lucknow", "Maharajganj", "Mahoba", "Mainpuri", "Mathura", "Maunathbhanjan",
+    "Meerut", "Mirzapur", "Moradabad", "Muzaffarnagar", "Pilibhit", "Pratapgarh", "Prayagraj", "Rae Bareli", "Rampur",
+    "Saharanpur", "Sambhal", "Sant Kabir Nagar", "Shahjahanpur", "Shamli", "Shrawasti", "Siddharth Nagar", "Sitapur",
+    "Sonbhadra", "Sultanpur", "Unnav", "Varanasi"]
+%>
+<% var url = parse_url() %>
+<% var category = url.searchList.category %>
+<select class="selectpicker show-menu-arrow show-tick select-regions h-28" id="state-select-dropdown" data-size="10"
+  data-width="190" data-style="fs-14 btn bg-c-warning text-white border border-color-41 border-radius-lg py-1 mb-0"
+  multiple data-actions-box="true" data-select-all-text='All Districts' data-deselect-all-text="None" data-title="All Districts">
+  <!-- <option class="border-bottom border-warning" value="all_divisions"> All Divisions</option> -->
+  <!-- <option class="border-bottom border-warning" value="all_districts", id="all_districts" <%= url.searchKey.category == undefined ? 'selected' : '' %> > All Districts</option> -->
+  <!-- <option class="border-bottom border-warning" value="all_blocks"> All Blocks</option> -->
+  <% _.each(unique_dists,function(d){ %>
+      <option class="border-bottom border-warning" selected> <%- d %> </option>
+  <% }) %>
+</select>

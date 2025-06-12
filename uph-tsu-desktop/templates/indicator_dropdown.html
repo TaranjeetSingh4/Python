@@ -1,0 +1,9 @@
+<% dropdown_names = { "corrected_total_points": "TB Index", "points_notify": "1. TB Notification (wt=20)", "points_notify_hiv": "2. HIV status  known(wt=10)", "points_udst": "3. UDST (wt=10)", "points_sucess_rate": "4. Treatment Success (wt=15)", "points_npy": "5. Beneficiaries paid-NPY (wt=10)", "points_drtb_patients": "6. DRTB Treatment initiation(wt=15)", "points_expenditure": "7. Expenditure (wt=10)", "points_chemo": "8. Chemoprophylaxis (wts=5)", "points_plhiv": "9. TPT to PLHIV(wts=5)"} %>
+<% _.each(res, function(item){ %>
+<% item.view_column_name = dropdown_names[item.mapping_name] %>
+<% }) %>
+<select class="selectpicker show-tick" data-width="432" data-style="sm3 bg-color-40 custom-arrow text-white border border-light border-radius-lg font-weight-bold py-0 box-shadow-1 h-28">
+  <% _.each(res, function(d){ %>
+    <option value="<%- d['mapping_name'] %>"><%- d['view_column_name'] %></option>
+  <% }) %>
+</select>

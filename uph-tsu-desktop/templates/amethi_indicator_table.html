@@ -1,0 +1,383 @@
+<% var cols = selection == 'month' ? ['Calculation Period','Total Weightage','Curr. Month Score',
+      'Cur. Month Performance' , 'Curr. Month Best Block',
+      'Curr. Month District'] : selection == 'quarter' ? ['Total Weightage', 'Calculation Period','Curr. Month Score',
+      'Cur. Month Performance' , 'Pre. Month Performance', 'Curr. Month Best Block',
+      'Curr. Month District', 'Quarterly', 'FY'] : ['Total Weightage', 'Calculation Period','Curr. Month Score',
+      'Cur. Month Performance' , 'Pre. Month Performance', 'Curr. Month Best Block',
+      'Curr. Month District', 'FY']%>
+<% var col_keys = selection == 'month' ? ['calc_type','Weight','curr_month_scr','curr_month_perf','pre_month_perf','best_in_dist','dist_aggr'] : selection == 'quarter' ? ['Weight', 'calc_type','indicator_index',
+        'best_in_dist','dist_aggr', 'avg', 'max', 'quarterly', 'fy'] : ['Weight', 'calc_type','indicator_index',
+        'best_in_dist','dist_aggr', 'avg', 'max', 'fy'] %>
+<!--table snippet-->
+<div class="border border-dark table-bg1 border-2 mb-2 h-300 positive-relative card  rounded-0">
+  <div class="table-box">
+      <% if(type == 'indicator') { %>
+      <table class="table border-0 table-new mb-0">
+      <thead class="p-11 bg-table">
+        <tr>
+          <th scope="col" class="text-left border-0">
+            <div
+              class="pl-1 py-2 border border-2 border-left-0 border-right-0 border-top-0 border-left-c h-67 text-uppercase">
+              indicator</div>
+          </th>
+          <th scope="col" class="text-center border-0">
+            <div
+              class="py-2 border border-2 border-right-0 border-top-0 border-left-c h-67 border-bottom-c border-left-c text-uppercase">
+              CALCULATION PERIOD</div>
+          </th>
+          <th scope="col" class="text-center border-0">
+            <div
+              class="py-2 border-2 border border-right-0 border-top-0 border-left-c h-67 border-bottom-c border-left-c border text-uppercase">
+              TOTAL WEIGHTAGE</div>
+          </th>
+          <th scope="col" class="text-center border-0">
+            <div
+              class="py-2 h-67 border border-2  border-right-0 border-top-0 border-left-c border-left-dark text-uppercase">
+              CURR. MONTH SCORE</div>
+          </th>
+          <th scope="col" class="text-center border-0 pb-0">
+            <div class="h-67  border-2 border border-2 border-left-c border-right-0 border-top-0 ">
+              <div class="border border-2 border-left-0 border-right-0 border-top-0 py-2 text-uppercase">PERFORMANCE
+              </div>
+              <div class="d-flex justify-content-between p-10">
+                <div class="w-50 py-1 text-uppercase">CURR. MONTH</div>
+                <div class="w-50 py-1 border border-2 border-bottom-0 border-right-0 border-top-0 text-uppercase">PREV.
+                  MONTH</div>
+              </div>
+            </div>
+          </th>
+          <th scope="col" class="text-center border-0">
+            <div
+              class="py-2 border border-2 border-right-0 border-top-0 border-left-dark border-left-c h-67 text-uppercase">
+              CURR. MONTH BEST BLOCK</div>
+          </th>
+          <th scope="col" class="text-center border-0">
+            <div
+              class="py-2  border-left-c border border-2  border-right-0 border-top-0 border-left-c h-67 text-uppercase">
+              CURR. MONTH DISTRICT</div>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="p-11 font-weight-bold">
+        <% indicator_data = custom_sort_indicators(indicator_data,'weightage') %>
+          <% _.each(indicator_data, function(item) { %>
+            <% var indicator = _.find(mapping, {indicator_name: item.indicator}) %>
+          <tr>
+          <td scope="row" class="text-left border-0">
+            <div
+              class="pl-1 cpy-10 border border-2 border-left-0 border-right-0 border-top-0 border-left-c flex-nowrap"
+              title="<%- indicator.short_name == '1st trim ANC reg. (HMIS)' || indicator.short_name == '1st trim ANC reg. (RCH portal)' ? 'ANC Registration within first trimester (against estimated PW)' : indicator.short_name == 'Visit on RMNCH+A portal' || indicator.short_name == 'Visit on Darpan & RMNCH+A' ? '% officer-visits conducted (RMNCH+A portal, Darpan App)' : indicator.indicator_name %>">
+              <%- indicator.short_name %></div>
+          </td>
+            <% _.each(col_keys, function(key) { %>
+              <% if (key == 'calc_type') { %>
+          <td class="text-center border-0">
+            <div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-c" title="<%-item[select]%>"
+              value="<%-  %>" domain-attr="<%-item.ind_max%>" domain-attr_min="<%-item.min%>"
+              indicator_sign="<%- indicator.positive_negative %>">
+              <%- item['calc_type'] %></div>
+          </td>
+          <% } else if (key == 'Weight') { %>
+          <td class="text-center border-0">
+            <div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-c" title="<%-item[select]%>"
+              value="<%-  %>" domain-attr="<% %>"
+                      domain-attr_min="<% %>" indicator_sign="<%- indicator.positive_negative %>">
+              <%- numeral(item['Weight']*100).format('0,0.0') + '%' %></div>
+          </td>
+          <% } else if (key == 'curr_month_scr') { %>
+          <td class="text-center border-0">
+            <div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-dark border-bottom-c"
+              title="<%-item[select]%>" value="<%-  %>" domain-attr="<%-item['indicator_index|max']*100 %>"
+              domain-attr_min="<%- %>" indicator_sign="<%- indicator.positive_negative %>">
+              <%- item['amethi_dist_score']!=undefined ? numeral(item['amethi_dist_score']*100).format('0,0.0') + '%' : numeral(item['indicator_index']*100).format('0,0.0') + '%' %>
+            </div>
+          </td>
+          <td class="text-center border-0">
+            <div class=" border border-2 border-left-c border-bottom-c border-right-0 border-top-0">
+              <div class="d-flex justify-content-between">
+                <% } else if (key == 'curr_month_perf') { %>
+                <div class="w-50 cpy-10 ind-color-cell"
+                  title="<%- item['block']!=undefined ?'indicator rank: ' + item.indicator_rank: item[select] %>"
+                  value="<%- item['block']!=undefined ? (item.indicator_rank==undefined)?'NA': item.indicator_rank: ' ' %>"
+                  domain-attr="<%- item['block']!=undefined ? _.filter(table_range_data,function(d){return d.indicator==item['indicator']})[0]==undefined? 'NA': _.filter(table_range_data,function(d){return d.indicator==item['indicator']})[0]['indicator_rank_min']: ' ' %>"
+                  domain-attr_min="<%- item['block']!=undefined ? _.filter(table_range_data,function(d){return d.indicator==item['indicator']})[0]==undefined? 'NA': _.filter(table_range_data,function(d){return d.indicator==item['indicator']})[0]['indicator_rank_max']: ' ' %>"
+                  >
+                  <% if(indicator.unit=='%'){ %>
+                  <%- item['block']!=undefined ? (item['perc_point']==undefined)?'NA':numeral(item['perc_point']*100).format(indicator.decimal) + '%' : (item['dist_aggr']==undefined)?'NA': numeral(item['dist_aggr']*100).format(indicator.decimal) + indicator.unit %>
+                  <% }else{ %>
+                  <%- item['block']!=undefined ? (item['perc_point']==undefined)?'NA':numeral(item['perc_point']).format(indicator.decimal) :(item['dist_aggr']==undefined)?'NA': numeral(item['dist_aggr']).format(indicator.decimal) %>
+                  <% } %>
+                </div>
+                <% } else if (key == 'pre_month_perf') { %>
+                <div class="w-50 cpy-10 border border-2 border-bottom-0 border-right-0 border-top-0 ind-color-cell"
+                  title="<%- item['block']!=undefined ? item.pre_indicator_rank== undefined ? 'indicator rank: NA': 'indicator rank:' + item.pre_indicator_rank : ' '%>"
+                  value="<%- item['block']!=undefined ? (item.pre_indicator_rank==undefined)?'NA': item.pre_indicator_rank: ' ' %>"
+                  domain-attr="<%- item['block']!=undefined ? _.filter(table_range_data,function(d){return d.pre_indicator==item['pre_indicator']})[0]==undefined? 'NA': _.filter(table_range_data,function(d){return d.pre_indicator==item['pre_indicator']})[0]['pre_indicator_rank_min']: ' ' %>"
+                  domain-attr_min="<%- item['block']!=undefined ? _.filter(table_range_data,function(d){return d.pre_indicator==item['pre_indicator']})[0]==undefined? 'NA': _.filter(table_range_data,function(d){return d.pre_indicator==item['pre_indicator']})[0]['pre_indicator_rank_max']: ' ' %>"
+                  >
+                  <% if(indicator.unit=='%'){ %>
+                  <%- item['block']!=undefined ? (item['pre_perc_point']==undefined)?'NA': numeral(item['pre_perc_point']*100).format(indicator.decimal) + '%' : (item['pre_dist_aggr']==undefined)?'NA': numeral(item['pre_dist_aggr']*100).format(indicator.decimal) + indicator.unit %>
+                  <% }else{ %>
+                  <%- item['block']!=undefined ? (item['pre_perc_point']==undefined)?'NA': numeral(item['pre_perc_point']).format(indicator.decimal) : (item['pre_dist_aggr']==undefined)?'NA': numeral(item['pre_dist_aggr']).format(indicator.decimal) %>
+                  <% } %>
+                </div>
+              </div>
+          </td>
+          <% } else if (key == 'best_in_dist') { %>
+          <td class="text-center border-0">
+            <div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-dark border-bottom-c"
+              title="<%- %>" value="<%-  %>" domain-attr="<%- %>" domain-attr_min="<%- %>"
+              indicator_sign="<%- indicator.positive_negative %>">
+              <% if(indicator.unit=='%'){ %>
+              <%- numeral(item['best_in_dist']*100).format(indicator.decimal) + indicator.unit %>
+              <% }else{ %>
+              <%- numeral(item['best_in_dist']).format(indicator.decimal) %>
+              <% } %>
+            </div>
+          </td>
+          <% } else if (key == 'dist_aggr') { %>
+          <td class="text-center border-0">
+            <div class="cpy-10 border-bottom-c border-left-c  border border-2  border-right-0 border-top-0"
+              title="<%- %>" value="<%-  %>" domain-attr="<%-item['dist_aggr|max']*100 %>"
+              domain-attr_min="<%-item['dist_aggr|min']*100 %>" indicator_sign="<%- indicator.positive_negative %>">
+              <% if(indicator.unit=='%'){ %>
+              <%- numeral(item['dist_aggr']*100).format(indicator.decimal) + indicator.unit %>
+              <% }else{ %>
+              <%- numeral(item['dist_aggr']).format(indicator.decimal) %>
+              <% } %>
+            </div>
+          </td>
+        </tr>
+        <% } %>
+        <% }) %>
+        <% }) %>
+        </tbody>
+        </table>
+        <% }else { %>
+        <div id="accordion" class="pr-0">
+          <% indicator_data = custom_sort_indicators(indicator_data,'weightage') %>
+          <% var grp_type =_.groupBy(indicator_data, type) %>
+          <% function preferredOrder(obj, order) { %>
+          <% var newObject = {}; %>
+          <% for(var i = 0; i < order.length; i++) { if(obj.hasOwnProperty(order[i])) { newObject[order[i]]=obj[order[i]]; } } %>
+          <% return newObject; %>
+          <% } %>
+          <% type == 'type' ? grp_type = preferredOrder(grp_type, ['Input',"Int Outcome", "Outcome"]): grp_type %>
+          <% type=='domain' ? grp_type=preferredOrder(grp_type, ['RMNCH',"Nutrition", "CD", "NCD", "System"]): grp_type %>
+          <% _.each(grp_type, function(items, type){  %>
+          <div class="card rounded-0 text-dark border-0 bg-white">
+            <div class="collapse-header border border-dark border-top-0 border-left-0 border-right-0">
+              <a class="collapsed text-dark card-link p-12 collapse-title" data-toggle="collapse"
+                href="#collapse_<%-type.split(' ').join('_')%>">
+                <div class="d-flex  px-3 py-2 ">
+                  <div class="col-3 d-flex px-0 align-self-center">
+                    <i class="fa fa-plus align-self-center"></i>
+                    <p class="mb-0 ml-1 p-12 font-weight-bold text-uppercase">
+                      <%- type.split('_').join(' ') %></p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div id="collapse_<%-type.split(' ').join('_')%>" class="collapse bg-white collapse-body"
+              data-parent="#accordion">
+              <div class="table-box2">
+              <table class="table border-0 table-new mb-0">
+                <thead class="p-11 bg-table">
+                  <tr>
+                    <th scope="col" class="text-left border-0">
+                      <div
+                        class="pl-1 py-2 border border-2 border-left-0 border-right-0 border-top-0 border-left-c h-67 text-uppercase">
+                        indicator</div>
+                    </th>
+                    <th scope="col" class="text-center border-0">
+                      <div
+                        class="py-2 border border-2 border-right-0 border-top-0 border-left-c h-67 border-bottom-c border-left-c text-uppercase">
+                        CALCULATION PERIOD</div>
+                    </th>
+                    <th scope="col" class="text-center border-0">
+                      <div
+                        class="py-2 border-2 border border-right-0 border-top-0 border-left-c h-67 border-bottom-c border-left-c border text-uppercase">
+                        TOTAL WEIGHTAGE</div>
+                    </th>
+                    <th scope="col" class="text-center border-0">
+                      <div
+                        class="py-2 h-67 border border-2  border-right-0 border-top-0 border-left-c border-left-dark text-uppercase">
+                        CURR. MONTH SCORE</div>
+                    </th>
+                    <th scope="col" class="text-center border-0 pb-0">
+                      <div class="h-67  border-2 border border-2 border-left-c border-right-0 border-top-0 ">
+                        <div class="border border-2 border-left-0 border-right-0 border-top-0 py-2 text-uppercase">
+                          PERFORMANCE
+                        </div>
+                        <div class="d-flex justify-content-between p-10">
+                          <div class="w-50 py-1 text-uppercase">CURR. MONTH</div>
+                          <div class="w-50 py-1 border border-2 border-bottom-0 border-right-0 border-top-0 text-uppercase">
+                            PREV.
+                            MONTH</div>
+                        </div>
+                      </div>
+                    </th>
+                    <th scope="col" class="text-center border-0">
+                      <div
+                        class="py-2 border border-2 border-right-0 border-top-0 border-left-dark border-left-c h-67 text-uppercase">
+                        CURR. MONTH BEST BLOCK</div>
+                    </th>
+                    <th scope="col" class="text-center border-0">
+                      <div class="py-2  border-left-c border border-2  border-right-0 border-top-0 border-left-c h-67 text-uppercase">
+                        CURR. MONTH DISTRICT</div>
+                    </th>
+                  </tr>
+                </thead>
+              <% _.each(items, function(item) { %>
+              <% var indicator = _.find(mapping, {indicator_name: item.indicator}) %>
+                <tbody class="p-11 font-weight-bold table-bg2">
+                  <tr>
+                    <td scope="row" class="text-left border-0">
+                      <div
+                        class="pl-1 cpy-10 border border-2 border-left-0 border-right-0 border-top-0 border-left-c flex-nowrap"
+                        title="<%- indicator.short_name == '1st trim ANC reg. (HMIS)' || indicator.short_name == '1st trim ANC reg. (RCH portal)' ? 'ANC Registration within first trimester (against estimated PW)' : indicator.short_name == 'Visit on RMNCH+A portal' || indicator.short_name == 'Visit on Darpan & RMNCH+A' ? '% officer-visits conducted (RMNCH+A portal, Darpan App)' : indicator.indicator_name %>"
+                      ><%- indicator.short_name %></div>
+                    </td>
+                    <% _.each(col_keys, function(key) { %>
+                    <% if (key == 'calc_type') { %>
+                    <td class="text-center border-0">
+                      <div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-c"
+                        title="<%-item[select]%>" value="<%-  %>" domain-attr="<%-item.ind_max%>"
+                        domain-attr_min="<%-item.min%>" indicator_sign="<%- indicator.positive_negative %>">
+                        <%- item['calc_type'] %></div>
+                    </td>
+                    <% } else if (key == 'Weight') { %>
+                    <td class="text-center border-0">
+                      <div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-c"
+                        title="<%-item[select]%>" value="<%-  %>" domain-attr="<% %>"
+                                                    domain-attr_min="<% %>"
+                        indicator_sign="<%- indicator.positive_negative %>">
+                        <%- numeral(item['Weight']*100).format('0,0.0') + '%' %></div>
+                    </td>
+                    <% } else if (key == 'curr_month_scr') { %>
+                    <td class="text-center border-0">
+                      <div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-dark border-bottom-c"
+                        title="<%-item[select]%>" value="<%-  %>" domain-attr="<%-item['indicator_index|max']*100 %>"
+                        domain-attr_min="<%- %>" indicator_sign="<%- indicator.positive_negative %>">
+                        <%- item['amethi_dist_score']!=undefined ? numeral(item['amethi_dist_score']*100).format('0,0.0') + '%' : numeral(item['indicator_index']*100).format('0,0.0') + '%' %>
+                      </div>
+                    </td>
+                    <td class="text-center border-0">
+                      <div class=" border border-2 border-left-c border-bottom-c border-right-0 border-top-0">
+                        <div class="d-flex justify-content-between">
+                          <% } else if (key == 'curr_month_perf') { %>
+                          <div class="w-50 cpy-10 ind-color-cell"
+                            title="<%- item['block']!=undefined ?'indicator rank: ' + item.indicator_rank: item[select] %>"
+                            value="<%- item['block']!=undefined ? (item.indicator_rank==undefined)?'NA': item.indicator_rank: ' ' %>"
+                            domain-attr="<%- item['block']!=undefined ? _.filter(table_range_data,function(d){return d.indicator==item['indicator']})[0]==undefined? 'NA': _.filter(table_range_data,function(d){return d.indicator==item['indicator']})[0]['indicator_rank_min']: ' ' %>"
+                            domain-attr_min="<%- item['block']!=undefined ? _.filter(table_range_data,function(d){return d.indicator==item['indicator']})[0]==undefined? 'NA': _.filter(table_range_data,function(d){return d.indicator==item['indicator']})[0]['indicator_rank_max']: ' ' %>"
+                            >
+                            <% if(indicator.unit=='%'){ %>
+                            <%- item['block']!=undefined ? (item['perc_point']==undefined)?'NA':numeral(item['perc_point']*100).format(indicator.decimal) + '%' : (item['dist_aggr']==undefined)?'NA': numeral(item['dist_aggr']*100).format(indicator.decimal) + indicator.unit %>
+                            <% }else{ %>
+                            <%- item['block']!=undefined ? (item['perc_point']==undefined)?'NA':numeral(item['perc_point']).format(indicator.decimal) :(item['dist_aggr']==undefined)?'NA': numeral(item['dist_aggr']).format(indicator.decimal) %>
+                            <% } %>
+                          </div>
+                          <% } else if (key == 'pre_month_perf') { %>
+                          <div
+                            class="w-50 cpy-10 border border-2 border-bottom-0 border-right-0 border-top-0 ind-color-cell"
+                            title="<%- item['block']!=undefined ? item.pre_indicator_rank== undefined ? 'indicator rank: NA': 'indicator rank:' + item.pre_indicator_rank : ' '%>"
+                            value="<%- item['block']!=undefined ? (item.pre_indicator_rank==undefined)?'NA': item.pre_indicator_rank: ' ' %>"
+                            domain-attr="<%- item['block']!=undefined ? _.filter(table_range_data,function(d){return d.pre_indicator==item['pre_indicator']})[0]==undefined? 'NA': _.filter(table_range_data,function(d){return d.pre_indicator==item['pre_indicator']})[0]['pre_indicator_rank_min']: ' ' %>"
+                            domain-attr_min="<%- item['block']!=undefined ? _.filter(table_range_data,function(d){return d.pre_indicator==item['pre_indicator']})[0]==undefined? 'NA': _.filter(table_range_data,function(d){return d.pre_indicator==item['pre_indicator']})[0]['pre_indicator_rank_max']: ' ' %>"
+                            >
+                            <% if(indicator.unit=='%'){ %>
+                            <%- item['block']!=undefined ? (item['pre_perc_point']==undefined)?'NA': numeral(item['pre_perc_point']*100).format(indicator.decimal) + '%' : (item['pre_dist_aggr']==undefined)?'NA': numeral(item['pre_dist_aggr']*100).format(indicator.decimal) + indicator.unit %>
+                            <% }else{ %>
+                            <%- item['block']!=undefined ? (item['pre_perc_point']==undefined)?'NA': numeral(item['pre_perc_point']).format(indicator.decimal) : (item['pre_dist_aggr']==undefined)?'NA': numeral(item['pre_dist_aggr']).format(indicator.decimal) %>
+                            <% } %>
+                          </div>
+                        </div>
+                    </td>
+                    <% } else if (key == 'best_in_dist') { %>
+                    <td class="text-center border-0">
+                      <div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-dark border-bottom-c"
+                        title="<%- %>" value="<%-  %>" domain-attr="<%- %>" domain-attr_min="<%- %>"
+                        indicator_sign="<%- indicator.positive_negative %>">
+                        <% if(indicator.unit=='%'){ %>
+                        <%- numeral(item['best_in_dist']*100).format(indicator.decimal) + indicator.unit %>
+                        <% }else{ %>
+                        <%- numeral(item['best_in_dist']).format(indicator.decimal) %>
+                        <% } %>
+                      </div>
+                    </td>
+                    <% } else if (key == 'dist_aggr') { %>
+                    <td class="text-center border-0">
+                      <div class="cpy-10 border-bottom-c border-left-c  border border-2  border-right-0 border-top-0"
+                        title="<%- %>" value="<%-  %>" domain-attr="<%-item['dist_aggr|max']*100 %>"
+                        domain-attr_min="<%-item['dist_aggr|min']*100 %>"
+                        indicator_sign="<%- indicator.positive_negative %>">
+                        <% if(indicator.unit=='%'){ %>
+                        <%- numeral(item['dist_aggr']*100).format(indicator.decimal) + indicator.unit %>
+                        <% }else{ %>
+                        <%- numeral(item['dist_aggr']).format(indicator.decimal) %>
+                        <% } %>
+                      </div>
+                    </td>
+                    <% } %>
+                    <% }) %>
+                  </tr>
+                </tbody>
+              <% }) %>
+              </table>
+              </div>
+              </div>
+              </div>
+              <% }) %>
+          <% } %>
+        </div>
+    <div
+      class="card-footer table-footer-bg p-11 table-new  py-0 pl-0 pr-1 border border-left-0 border-right-0 border-bottom-0 rounded-0">
+      <table class="table border-0 table-new mb-0 font-weight-bold">
+        <tbody>
+          <!--row-->
+          <tr>
+            <td scope="row" class="text-left border-0">
+              <div
+                class="pl-1 cpy-10 border border-2 border-left-0 border-right-0 border-top-0 border-left-c flex-nowrap text-uppercase">
+                total</div>
+            </td>
+            <td class="text-center border-0">
+              <div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-c "></div>
+            </td>
+            <td class="text-center border-0">
+              <div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-c">
+                <%- numeral((_.sumBy(indicator_data, function(o) { return o.Weight; })*100)).format('0,0.0') + '%' %>
+              </div>
+            </td>
+            <td class="text-center border-0">
+              <div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-dark border-bottom-c">
+                <% if (url.searchKey.select!='block'){ %>
+                <%- numeral((_.sumBy(indicator_data, function(o) { return o['amethi_dist_score']; })*100)).format('0,0.0') + '%' %>
+                <% } else {%>
+                <%- numeral((_.sumBy(indicator_data, function(o) { return o['indicator_index']; })*100)).format('0,0.0') + '%' %>
+                <% } %>
+              </div>
+            </td>
+            <td class="text-center border-0">
+              <div class=" border border-2 border-left-c border-bottom-c border-right-0 border-top-0">
+                <div class="d-flex justify-content-between">
+                  <div class="w-50 cpy-10"></div>
+                  <div class="w-50 cpy-10 border border-2 border-bottom-0 border-right-0 border-top-0"></div>
+                </div>
+              </div>
+            </td>
+            <td class="text-center border-0">
+              <div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-dark border-bottom-c"></div>
+            </td>
+            <td class="text-center border-0">
+              <div class="cpy-10 border-bottom-c border-left-c  border border-2  border-right-0 border-top-0"></div>
+            </td>
+          </tr>
+          <!--row end-->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!--snippets end-->

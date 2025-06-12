@@ -1,0 +1,135 @@
+<% var level_three = level_three_data ? true : false %>
+<% var unit = _.find(indicator_mapping, {indicator_name: indicator})['unit'] %>
+<% view_type = type %>
+<div class="d-flex nav-fill nav sm3 font-weight-bold border border-left-0 border-right-0 border-top-0 border-white bg-lighten overflow-x">
+  <div class="nav-item w-5 py-2 border border-left-0 border-bottom-0 border-top-0 text-uppercase table-header"></div>
+  <div class="nav-item w-15 py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-uppercase table-header sort-table cursor-pointer" id="table-header" data-attr="name">All <%-type %>s <i class="mx-2 fa fa-sort"></i></div>
+  <% _.each(display_values, function(d) { %>
+    <div class="nav-item w-<%-d.w%> py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-uppercase font-italic table-header sort-table cursor-pointer" data-attr="<%- d.name %><%- (d.name == 'rank') ? '' : '_score' %>">
+      <p class="mb-0 text-uppercase"><%- d.name %>
+        <% if(d.sort) { %><i class="mx-2 fa fa-sort"></i><% } %>
+      </p>
+    </div>
+  <% }) %>
+  <% _.each(data_map['sub-indicators'][url.searchKey.indicator_id], function(d) { %>
+    <div class="nav-item py-2 w-5 border border-left-0 border-bottom-0 border-top-0 border-white text-uppercase font-italic table-header cursor-pointer"
+    title="<%- data_map['sub-ind-names'][d] %>">
+      <p class="mb-0 text-uppercase"><%- d %></p>
+    </div>
+  <% }) %>
+</div>
+<div class="deepdive-table <%- (url.searchKey.capture)? '': 'deepdive-position' %>" id="level-one">
+<% _.each(level_one_data, function(row) { %>
+  <div class="card level-one-card border-0 rounded-0" data-attr="<%- level_three ? row.div_map_id : row.map_id %>">
+    <div class="p-0 border border-left-0 border-right-0 border-top-0 border-white">
+      <a class="card-link p-0">
+        <div class="d-flex nav-fill nav sm3 font-weight-bold border border-left-0 border-right-0 border-top-0 border-white">
+          <% if(row.next) { %>
+            <div class="w-5 cursor-pointer nav-item level-one text-middle" data-toggle="collapse" href="#<%-slugify(row.name)%>"><i class="p-2 fa fa-plus text-primary table-plus" data-attr="<%- level_three ? 'division' : 'district'%>"></i></div>
+          <% } else { %>
+            <div class="w-5 cursor-pointer nav-item level-one text-middle" ></div>
+          <% } %>
+          <div class="w-15 nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize text-left <%-row.type%>-name level-one cursor-pointer p-12 area-card" data-val="<%-slugify(row.name)%>" data-attr="<%-row.name%>"><%-_.includes(Object.keys(district_name_change), row.name.trim()) ? district_name_change[row.name.trim()] :row.name%></div>
+          <% _.each(display_values, function(d) { %>
+            <% var class_name = d.name == 'rank' ? 'level-one' : 'color-cell' %>
+            <div class="w-<%-d.w%> nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize p-12 d-flex justify-content-center level-one <%- class_name %>"
+            value="<%-_.round(row[d.name+'_score'], 2) || 0 %>" domain-attr="<%- level_one_domain[d.name] ? level_one_domain[d.name][d.name+'_score'] : 0 %>" domain-attr_min="<%- level_one_domain[d.name+'_min'] ? level_one_domain[d.name+'_min'][d.name+'_score'] : 0 %>">
+            <% if(d.name=='rank') { %> <%- row[d.name] %>
+            <% } else { %>
+              <div class="w-50"><%-((unit == 'Rs' && row[d.name+'_score'] !==undefined)  ? numeral(_.round(row[d.name+'_score'], 2)).format('0,0.00') : _.round(row[d.name+'_score'], 2) ) || 0 %> <%- unit %></div>
+            <% } %>
+            </div>
+          <% }) %>
+          <% _.each(data_map['sub-indicators'][url.searchKey.indicator_id], function(d) { %>
+            <div class="w-5 nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize p-12 d-flex justify-content-center level-one">
+              <%- row[d] %>
+            </div>
+          <%})%>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div id="<%-slugify(row.name)%>" class="collapse" data-parent="#level-one">
+    <% _.each(level_two_data[row.name], function(item) { %>
+      <div class="card-body p-0">
+        <div id="<%-slugify(item.name)%>">
+          <div class="card border-0 rounded-0">
+            <div class="p-0 border border-left-0 border-right-0 border-top-0 border-white">
+              <a class="card-link p-0">
+                <div class="d-flex nav-fill nav sm3 font-weight-bold border border-left-0 border-right-0 border-top-0 border-white">
+                  <% if(item.next) { %>
+                    <div class="w-5 cursor-pointer nav-item bg-table-clr2" data-toggle="collapse" href="#<%-slugify(item.name)%>-level-two"><i class="p-2 fa fa-plus text-primary table-plus mt-1" data-attr="district"></i></div>
+                  <% } else { %>
+                    <div class="w-5 cursor-pointer nav-item bg-table-clr2"></div>
+                  <% } %>
+                  <div class="w-15 nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize p-12 text-left <%- item.type %>-name bg-table-clr2 cursor-pointer" data-attr="<%-item.name%>" data-parent="<%-row.name%>"><%- _.includes(Object.keys(district_name_change), item.name.trim()) ? district_name_change[item.name.trim()] : item.name%></div>
+                  <% _.each(display_values, function(d) { %>
+                    <% var class_name = d.name == 'rank' ? 'level-two' : 'color-cell' %>
+
+                    <% var level_2_domain_max =  (view_type == 'district') ? (district_block_domain[item.district][d.name] ? district_block_domain[item.district][d.name][d.name+'_score'] : 0) : (level_two_domain[d.name] ? level_two_domain[d.name][d.name+'_score'] : 0 )%>
+
+                    <% var level_2_domain_min =  (view_type == 'district') ? (district_block_domain[item.district][d.name+'_min'] ? district_block_domain[item.district][d.name+'_min'][d.name+'_score'] : 0) : (level_two_domain[d.name+'_min'] ? level_two_domain[d.name+'_min'][d.name+'_score'] : 0 )%>
+                    <div class="w-<%-d.w%> nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize p-12 bg-table-clr2 d-flex justify-content-center <%- class_name %>"
+                    value="<%-_.round(item[d.name+'_score'], 2) || 0 %>"
+                    domain-attr="<%-level_2_domain_max%>" domain-attr_min="<%-level_2_domain_min%>">
+                    <% if(d.name=='rank') { %> <%- item[d.name] %>
+                    <% } else { %>
+                      <div class="w-50"><%-((unit == 'Rs' && item[d.name+'_score'] !==undefined)  ? numeral(_.round(item[d.name+'_score'], 2)).format('0,0.00') : _.round(item[d.name+'_score'], 2) ) ||   (isFinite(item[d.name+'_score']) ? 0 : 'NA') %> <%- unit %></div>
+                    <% } %>
+                    </div>
+                  <% }) %>
+                  <% _.each(data_map['sub-indicators'][url.searchKey.indicator_id], function(d) { %>
+                    <div class="w-5 nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize p-12 d-flex justify-content-center bg-table-clr2">
+                      <%- item[d] %>
+                    </div>
+                  <%})%>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% if(level_three) { %>
+        <div id="<%-slugify(item.name)%>-level-two" class="collapse" data-parent="#<%-slugify(row.name)%>">
+          <% _.each(level_three_data[item.name], function(value) { %>
+            <div class="card-body p-0">
+              <div id="<%-slugify(value.name)%>">
+                <div class="card border-0 rounded-0">
+                  <div class="p-0 border border-left-0 border-right-0 border-top-0 border-white">
+                    <a class="card-link p-0">
+                      <div class="d-flex nav-fill nav sm3 font-weight-bold border border-left-0 border-right-0 border-top-0 border-white">
+                        <div class="w-5 nav-item bg-white"></div>
+                        <div class="w-15 nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize <%- value.type %>-name p-12 cursor-pointer text-align-start" data-attr="<%-value.name%>" data-parent="<%-item.name%>"><%-value.name%></div>
+                        <% _.each(display_values, function(d) { %>
+                          <% var class_name = d.name == 'rank' ? 'level-three' : 'color-cell' %>
+
+                        <% var level_3_domain_max = district_block_domain[value.district][d.name] ? district_block_domain[value.district][d.name][d.name+'_score'] : 0%>
+
+                        <% var level_3_domain_min = district_block_domain[value.district][d.name+'_min'] ? district_block_domain[value.district][d.name+'_min'][d.name+'_score'] : 0%>
+
+                          <div class="w-<%-d.w%> nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize p-12 d-flex justify-content-center <%- class_name %>"
+                          value="<%-_.round(value[d.name+'_score'], 2) || 0 %>" domain-attr="<%- level_3_domain_max%>" domain-attr_min="<%- level_3_domain_min %>">
+                          <% if(d.name=='rank') { %> <%- value[d.name] %>
+                          <% } else if(d.name !='trend') { %>
+                            <div class="w-50"><%-((unit == 'Rs' && value[d.name+'_score'] !==undefined) ? numeral(_.round(value[d.name+'_score'], 2)).format('0,0.00') : _.round(value[d.name+'_score'], 2) ) || 0 %> <%- unit %></div>
+                          <% } %>
+                          </div>
+                        <% }) %>
+                        <% _.each(data_map['sub-indicators'][url.searchKey.indicator_id], function(d) { %>
+                          <div class="w-5 nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize p-12 d-flex justify-content-center level-three">
+                            <%- value[d] %>
+                          </div>
+                        <%})%>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% }) %>
+        </div>
+      <% } %>
+    <% }) %>
+  </div>
+<% }) %>
+</div>

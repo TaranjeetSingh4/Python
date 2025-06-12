@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Material Icons/Navigation/arrow/drop_down_circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10,0 C4.48,0 0,4.48 0,10 C0,15.52 4.48,20 10,20 C15.52,20 20,15.52 20,10 C20,4.48 15.52,0 10,0 L10,0 Z M9.5,13.5 L5,9 L14,9 L9.5,13.5 L9.5,13.5 Z" id="path-1"></path>
+        <rect id="path-3" x="4" y="4" width="50" height="50"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rev1.3-iPad-Map-View-Executive-dashboard-2A" transform="translate(-975.000000, -128.000000)">
+            <g id="Material-Icons/Navigation/arrow/drop_down_circle" transform="translate(985.000000, 138.000000) rotate(-90.000000) translate(-985.000000, -138.000000) translate(975.000000, 128.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g id="🎨-Color" mask="url(#mask-2)">
+                    <g transform="translate(-19.000000, -19.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Black" stroke="none" fill="#000000" fill-rule="evenodd" transform="translate(29.000000, 29.000000) rotate(-80.000000) translate(-29.000000, -29.000000) " xlink:href="#path-3"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

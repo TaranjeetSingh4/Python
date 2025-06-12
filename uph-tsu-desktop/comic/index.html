@@ -1,0 +1,88 @@
+{% set user = handler.get_session().get("user", {}) %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Comicgen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="bundle.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="css/jquerythemes_v1.12.1.css">
+</head>
+{% set import up_tsu_desktop_app %}
+{% set users = up_tsu_desktop_app.session_vals() %}
+<body>
+  <!-- {% set base = '.' %}
+  {% set import json %}
+  {% set user_info = handler.get_session().get("user", {}) %} -->
+  <script src="templates/comic_navbar.html" type="text/html" class="navbar_custom">
+  </script>
+  <!-- <div class="p-4"><button class="button-pdf"><a href="capture?ext=pdf&selector=.content&delay=5000&width=10000&format=A3">PDF screenshot</a></button></div> -->
+  <div class="content">
+    <div class="page1-container">
+      <script src="templates/comic_page1.html" type="text/html" class="district-summary-wrapper">
+      </script>
+      </div>
+    <div class="page2-container">
+      <script src="templates/comic_page2.html" type="text/html" class="indicator-summary-wrapper">
+      </script>
+    </div>
+    <div class="page3-container">
+      <script src="templates/comic_page3.html" type="text/html" class="block-summary-wrapper">
+      </script>
+    </div>
+  </div>
+  <script type="text/javascript">
+    /* exported user_info */
+    // console.log({{user_info}}, 'usr')
+    // var user_info = {{ json.dumps(user_info) }}
+  </script>
+  <!-- TODO: Filter bars -->
+  <script src="ui/jquery/dist/jquery.min.js"></script>
+  <script src="js/jqueryui_v1.12.1.js"></script>
+  <script src="ui/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="ui/g1/dist/g1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+  <script src="node_modules/d3-scale-chromatic/dist/d3-scale-chromatic.min.js"></script>
+  <script src="js/comic/dumbell_chart.js"></script>
+  <script src="js/comic/new_map.js"></script>
+  <script src="ui/lodash/lodash.min.js"></script>
+  <script src="ui/morphdom/dist/morphdom-umd.min.js"></script>
+  <script src="ui/moment/min/moment-with-locales.min.js"></script>
+  <!-- <script src="ui/daterangepicker/daterangepicker.js"></script> -->
+  <script src="ui/leaflet/dist/leaflet.js"></script>
+  <script src="ui/topojson/dist/topojson.min.js"></script>
+  <script src="js/comic/translate.js"></script>
+  <script src="js/comic/locale.js"></script>
+  <script src="js/comic/script.js"></script>
+  <script src="js/log_capture.js"></script>
+  <script>
+    var user_district = '{{ user.get("district") }}'
+    var user_name = '{{user.get("user")}}'
+  </script>
+  <!-- Matomo -->
+
+  <script>
+
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "https://uphealthdashboard.in/matomo/";
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      _paq.push(['setUserId', user_name]);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+    })();
+
+  </script>
+
+  <!-- End Matomo Code -->
+</body>
+
+</html>

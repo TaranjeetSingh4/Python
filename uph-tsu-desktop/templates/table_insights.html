@@ -1,0 +1,9 @@
+<div id="table-insights">
+    <div class="mb-1 pb-1 border border-top-0 border-right-0 border-left-0">Ranking <%-level%> based on <span class="text-capitalize font-weight-bold"><%- selected_name.split('_').join(' ') %></span> shows the overall peformance of Health in each of the <%-level%> across <span class="font-weight-bold">Uttar Pradesh.</span></div>
+    <div class="mb-1 pb-1 border border-top-0 border-right-0 border-left-0">In the selected time period <span class="font-weight-bold"></span> the overall UP <%- selected_name.split('_').join(' ') %> <span class="font-weight-bold">
+    <% if(change > 0) { %> increased by <span class="px-1 badge-success round"><%- change %>%</span>
+    <% } else { %> decreased by <span class="px-1 badge-danger round"><%- change %>%</span><% } %>.
+    <%- inc_count %> out of <%- total %> <%-level%>s in UP grew</span> in <%- selected_name.split('_').join(' ') %> and <span class="font-weight-bold badge-danger round px-1"> <%-dec_count%> shrank</span></div>
+    <div class="mb-1"><span class="font-weight-bold"><%- top_three %></span> were the <span class="font-weight-bold badge-success round px-1">top</span><span class="font-weight-bold"> performing <%- level %>s</span> with respect to <%- selected_name.split('_').join(' ') %> and <span class="font-weight-bold"><%- bottom_three %></span> were the <span class="font-weight-bold badge-danger round px-1">bottom</span><span class="font-weight-bold"> performing <%- level %>s.</span> </div>
+    </div>
+</div>

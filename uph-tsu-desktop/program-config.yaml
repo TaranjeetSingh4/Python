@@ -1,0 +1,257 @@
+variables:
+  program-config:
+    date: "2018-07-01"
+    default_type: "month"
+    default_program: "MH"
+    type: "month"
+    compare_type: "district"
+    default_district: "Agra"
+    default_selection:
+      {
+        "district": ["Lakhimpur Kheri", "Agra", "Lucknow"],
+        "division": ["Agra Division", "Ayodhya Division", "Lucknow Division"],
+      }
+    map_defaults:
+      {
+        data_attr: { "district": "map_id", "division": "div_map_id" },
+        map_attr: { "district": "DT_CODE", "division": "Id" },
+        area_attr: { "district": "DT_NAME", "division": "DIVISION" },
+      }
+    program_image_mapping:
+      - name: Maternal Health
+        description:
+        image_name: "maternal-health.png"
+        short_name: MH
+        href: "href=pa?program=MH"
+        pa_cal: ["month"]
+        cal_type: ["month", "year", "quarter"]
+        type: "month"
+        date: "2018-07-01"
+        default_class: "MDR"
+        default_indicator: "2"
+
+      - name: Family Planning
+        description:
+        image_name: "rksk.png"
+        short_name: FP
+        href: "href=pa?program=FP"
+        pa_cal: ["month"]
+        cal_type: ["month", "year", "quarter"]
+        type: "month"
+        date: "2018-07-01"
+        default_class: "Service uptake"
+        default_indicator: "48"
+
+      - name: Finance Controller
+        description:
+        image_name: "finance-controller.png"
+        short_name: FC
+        href: ""
+        pa_cal: ["month"]
+        cal_type: ["month", "year", "quarter"]
+        type: "month"
+        date: "2018-07-01"
+
+      - name: Community Process
+        description:
+        image_name: "community-process.png"
+        short_name: CP
+        href: ""
+        pa_cal: ["month"]
+        cal_type: ["month", "year", "quarter"]
+        type: "month"
+        date: "2018-07-01"
+
+      - name: Human Resources
+        description:
+        image_name: "human-resources.png"
+        short_name: HR
+        href: "href=pa?program=HR"
+        pa_cal: ["year"]
+        cal_type: ["year"]
+        type: "year"
+        date: "2018-04-01"
+        default_class: "Availability"
+        default_indicator: "36"
+
+      - name: National Program
+        description:
+        image_name: "national-program.png"
+        short_name: NP
+        href: ""
+        pa_cal: ["month"]
+        cal_type: ["month", "year", "quarter"]
+        type: "month"
+        date: "2018-07-01"
+
+      - name: RKSK
+        description: Rashtriya Kishor Swasthya Karyakram
+        image_name: "rksk.png"
+        short_name: RKSK
+        href: ""
+        pa_cal: ["month"]
+        cal_type: ["month", "year", "quarter"]
+        type: "month"
+        date: "2018-07-01"
+
+      - name: EMTS
+        description: Emergency Medical Transport System
+        image_name: "emts.png"
+        short_name: EMTS
+        href: ""
+        pa_cal: ["month"]
+        cal_type: ["month", "year", "quarter"]
+        type: "month"
+        date: "2018-07-01"
+
+      - name: NPCDCS
+        description: National Program for Prevention and Control of Cancer, Diabetes, CVD and Stroke
+        image_name: "npcdcs.png"
+        short_name: NPCDCS
+        href: ""
+        pa_cal: ["month"]
+        cal_type: ["month", "year", "quarter"]
+        type: "month"
+        date: "2018-07-01"
+
+      - name: Executive Engineer
+        description:
+        image_name: "executive-engineer.png"
+        short_name: EE
+        href: ""
+        pa_cal: ["month"]
+        cal_type: ["month", "year", "quarter"]
+        type: "month"
+        date: "2018-07-01"
+
+      - name: National Leprosy Eradication Programme
+        description:
+        image_name: "leprosy.png"
+        short_name: NLEP
+        href: ""
+        pa_cal: ["month"]
+        cal_type: ["month", "year", "quarter"]
+        type: "month"
+        date: "2018-07-01"
+
+      - name: Non Communicable Disease
+        description:
+        image_name: "non-communicable-disease.png"
+        short_name: NCD
+        href: ""
+        pa_cal: ["month"]
+        cal_type: ["month", "year", "quarter"]
+        type: "month"
+        date: "2018-07-01"
+
+      - name: National Vector Borne Disease Control Programme
+        description:
+        image_name: "vector-borne.png"
+        short_name: NVBDCP
+        href: ""
+        pa_cal: ["month"]
+        cal_type: ["month", "year", "quarter"]
+        type: "month"
+        date: "2018-07-01"
+
+    program_indicator_list:
+      #contains each program area & classes
+      MH:
+        name: "maternal heath"
+        classes:
+          MDR:
+            name: "Maternal Death Review"
+          PMSMA:
+            name: "Pradhan Mantri Surakshit Matritva Abhiyan"
+          JSSK:
+            name: "Janani Shishu Suraksha Karyakram"
+          JSY:
+            name: "Janani Suraksha Yojana"
+      HR:
+        name: "Human Resources"
+        classes:
+          Availability:
+            name: "Availability"
+          Specialist Availability:
+            name: "Specialist Availability"
+          Staff-Service Delivery:
+            name: "Staff-Service Delivery"
+
+      FP:
+        name: "Family Planning"
+        classes:
+          Service uptake:
+            name: "Service uptake"
+          Injection Doses:
+            name: "Injection Doses"
+
+    data-file:
+      district:
+        year: "district-year-scores"
+        quarter: "district-quarter-scores"
+        month: "district-scores"
+      division:
+        year: "division-year-scores"
+        quarter: "division-quarter-scores"
+        month: "division-scores"
+      state:
+        year: "state-year-scores"
+        quarter: "state-quarter-scores"
+        month: "state-scores"
+
+    search_keywords:
+      MH:
+        - ultrasound
+        - pregnant women
+        - maternal death
+        - meeting
+        - reported
+        - free meals
+        - free transport
+        - complication
+        - delivery
+        - check-ups
+        - anemic
+        - folic acid
+        - born
+        - payment
+        - rural
+        - urban
+        - c-section
+        - asha
+        - calcium
+        - drugs
+        - diagnostic
+      HR:
+        - gynaecologist
+        - anaesthetist
+        - paediatrician
+        - trained
+        - mbbs
+        - doctor
+        - nursing
+        - specialist
+        - opd
+      FP:
+        - Injectibles
+        - Dose
+        - Registered
+        - couples
+
+    indicator_sort_options:
+      score: "Score"
+      alphabetic: "A - Z"
+      alphabetic_desc: "Z - A"
+      high_low: "Rank: High to Low"
+      low_high: "Rank: Low to High"
+      top: "Top 10"
+      bottom: "Bottom 10"
+      change: "% Change: Low - High"
+      change_desc: "%Change: High - low"
+
+    class_short_name:
+      "Availability": "Availability"
+      "Specialist Availability": "Specialist"
+      "Staff-Service Delivery": "Staff"
+      "Injection Doses": "Injection"
+      "Service uptake": "Service"

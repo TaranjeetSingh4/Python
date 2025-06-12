@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 59.1 (101010) - https://sketch.com -->
+    <title>B82D07A5-DBD0-44B6-9231-903AFD7C805E@1x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="40" rx="20"></rect>
+        <filter x="-13.8%" y="-8.8%" width="127.5%" height="127.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.076677229 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="RWRK_Table_matrix" transform="translate(-1170.000000, -109.000000)">
+            <g id="Group-12" transform="translate(1173.000000, 110.000000)">
+                <g id="close-icon-red">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#F5582D" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M26.6843195,13.3156981 C27.1052336,13.736622 27.1052258,14.4190666 26.6843019,14.8399807 L21.524,20 L26.6843107,25.1600281 C27.1052298,25.5809471 27.1052298,26.2633917 26.6843107,26.6843107 C26.2633917,27.1052298 25.5809471,27.1052298 25.1600281,26.6843107 L20,21.524 L14.8399631,26.6840453 C14.4190392,27.1049594 13.7365946,27.1049516 13.3156804,26.6840276 C12.8947663,26.2631037 12.8947742,25.5806592 13.3156981,25.1597451 L18.475,19.999 L13.3156893,14.8399719 C12.8947702,14.4190529 12.8947702,13.7366083 13.3156893,13.3156893 C13.7366083,12.8947702 14.4190529,12.8947702 14.8399719,13.3156893 L19.999,18.475 L25.1600369,13.3156804 C25.5809608,12.8947663 26.2634054,12.8947742 26.6843195,13.3156981 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

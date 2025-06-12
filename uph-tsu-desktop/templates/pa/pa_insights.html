@@ -1,0 +1,311 @@
+<div class="modal insights modal-right" tabindex="-1" role="dialog" aria-labelledby="insights-section" aria-hidden="true">
+  <div class="modal-dialog modal-lg w-50 shadow">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Auto-Narratives</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body overflow-y">
+
+        <% if (level == 'l1' || level == 'l3' ) {%>
+        <div id="insight_set_1">
+          <!-- INSIGHT 1 -->
+          <% if (i1.best_text != '') {%>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              <span class="text-success">The best performing <%=region%>s </span> are <strong><%=i1['best_text']%></strong>
+            </div>
+          </div>
+          <% } %>
+
+          <!-- INSIGHT 2 -->
+          <% if (i1.best_text != '') {%>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+                <span class="text-warning">The low performing <%=region%>s</span> are <strong><%=i2['worst_text']%> </strong>
+            </div>
+          </div>
+          <% } %>
+
+          <!-- INSIGHT 3 -->
+          <% if (i3.increase || i3.decline) {%>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              <strong class="text-success">Maximum growth (<%=_.round(i3.increase.change,2)%><%=unit%>)</strong> from last month is for <strong><%=i3.increase[region]%></strong>
+              and <strong class="text-warning">maximum decline (<%=_.round(i3.decline.change,2)%><%=unit%>)</strong> is for <strong><%=i3.decline[region]%></strong> from last month
+            </div>
+          </div>
+          <% } %>
+
+          <!-- INSIGHT 4 -->
+          <% if (i4.growth) {%>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              <% var growth_color = i4.growth_text %>
+              In the selected time period, for <strong><%=ind_name%></strong>, overall UP <strong class="<%= (_.includes(growth_color, 'decreased') ? 'text-warning' : 'text-success') %>"><%=i4.growth_text%> <%=i4.growth%>%</strong>.
+              <strong><%=i4.increase_count%></strong> out of <strong><%=count%></strong> districts in UP grew and <strong><%=i4.shrink_count%></strong> shrank
+            </div>
+          </div>
+          <% } %>
+
+          <!-- INSIGHT 5 -->
+          <% if (i5_6.increase_rank) {%>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              <span class="text-success">Highest increase</span> in the rank of <strong><%=i5_6.increase_rank[region]%></strong> as compared to last month. This district has moved from <strong><%=i5_6.increase_rank['prev_rank']%></strong> in <strong><%=from_date%></strong> to <strong><%=i5_6.increase_rank['rank']%></strong> in <strong><%=to_date%></strong>
+            </div>
+          </div>
+          <% } %>
+
+          <!-- INSIGHT 6 -->
+          <% if (i5_6.decrease_rank) {%>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+                <span class="text-warning">Highest decrease</span> in the rank of <strong><%=i5_6.decrease_rank[region]%></strong> as compared to last month. This district has moved from <strong><%=i5_6.decrease_rank['prev_rank']%></strong> in <strong><%=from_date%></strong> to <strong><%=i5_6.decrease_rank['rank']%></strong> in <strong><%=to_date%></strong>
+            </div>
+          </div>
+          <% } %>
+
+          <!-- No data case -->
+          <% if (i1.best_text == '' && !i3.increase && !i4.growth && !i5_6.decrease_rank) {%>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm2">
+              <strong>No Data Available </strong>
+            </div>
+          </div>
+          <% } %>
+
+        </div>
+        <% } %>
+
+        <% if (level == 'l2' || level == 'l4' ) {%>
+        <div id="insight_set_2">
+
+          <!-- INSIGHT 7 -->
+          <% if (i7.increase){ %>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              Indicator <strong><%=i7.increase.indicator_name%></strong> has
+              <strong class="text-success">highest increase (<%=_.round(i7.increase.change, 2)%>%)</strong> vs last month
+            </div>
+          </div>
+          <% } %>
+
+          <!-- INSIGHT 8 -->
+          <% if (i8.decrease){ %>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              Indicator <strong><%=i8.decrease.indicator_name%></strong> has
+              <strong class="text-warning">maximum decrease (<%=_.round(i8.decrease.change, 2)%>%)</strong> vs last month
+            </div>
+          </div>
+          <% } %>
+
+          <!-- INSIGHT 9 -->
+          <% if (_.size(i9.above_up)){ %>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              The indicators which are performing <span class="text-success">above UP average</span> are
+              <ul>
+                <% _.each(i9.above_up, function(item) { %>
+                <li><strong><%=item%></strong></li>
+                <% }) %>
+              </ul>
+            </div>
+          </div>
+          <% } %>
+
+          <!-- INSIGHT 10 -->
+          <% if (_.size(i10.below_up)){ %>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              The indicators which are performing <span class="text-warning">below UP average</span> are
+              <ul>
+                <% _.each(i10.below_up, function(item) { %>
+                <li><strong><%=item%></strong></li>
+                <% }) %>
+              </ul>
+            </div>
+          </div>
+          <% } %>
+
+          <!-- INSIGHT 11 -->
+          <% if (ind_9_val!=='' || ind_10_val!==''){ %>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              Free transport facility for PW is usually a 1 way affair. <strong><%=ind_9_val%>% of PW</strong> could avail the facility from their home to the HU, however, only <strong><%=ind_10_val%>% of PW</strong> could rely on the free transport facility back from the HU to their home
+            </div>
+          </div>
+          <% } %>
+
+          <!-- INSIGHT 12 -->
+          <% if (ind_21_urban > ind_20_rural ){ %>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              More JSY payment to <strong>urban deliveries (<%=ind_21_urban%>%)</strong> were recorded as compared to <strong>rural deliveries (<%=ind_20_rural%>%)</strong> in <strong><%=region_name%></strong>
+            </div>
+          </div>
+          <% } %>
+
+          <!-- No data case -->
+          <% if ((ind_21_urban == ind_20_rural ) && (ind_9_val=='' || ind_10_val=='') && (!_.size(i9.above_up)) && (!_.size(i10.below_up)) && (!i7.increase) && (!i8.decrease) ) {%>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm2">
+              <strong>No Data Available </strong>
+            </div>
+          </div>
+          <% } %>
+
+        </div>
+        <% } %>
+
+        <% if (page_name == 'compare') {%>
+        <div id="insight_set_3">
+
+          <% if (no_data_case == 'false') {%>
+          <!-- INSIGHT 13 -->
+          <% if (i13.positive_text != ''){ %>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              <strong class="text-success"><%=i13.positive_text%></strong> has shown <strong class="text-success">maximum increase</strong> vs last month for the indicator <strong><%=i13.pos_indicator%></strong>
+            </div>
+          </div>
+          <% } %>
+
+          <!-- INSIGHT 14 -->
+          <% if (i14.negative_text != ''){ %>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              <strong class="text-warning"><%=i14.negative_text%></strong> has shown <strong class="text-warning">maximum decline</strong> vs last month for the indicator <strong><%=i14.neg_indicator%></strong>
+            </div>
+          </div>
+          <% } %>
+
+          <!-- INSIGHT 15 -->
+          <% if (i15.area_name != ''){ %>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              <strong><%=i15.area_name%></strong> has shown <strong class="text-success">highest positive difference</strong> wrt to <strong>UP value</strong> for the indicator <strong><%=i15.ind_name%></strong>
+            </div>
+          </div>
+          <% } %>
+
+          <!-- INSIGHT 16 -->
+          <% if (i16.area_name != ''){ %>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              <strong><%=i16.area_name%></strong> has shown <strong class="text-warning">highest negative difference</strong> wrt to <strong>UP value</strong> for the indicator <strong><%=i16.ind_name%></strong>
+            </div>
+          </div>
+          <% } %>
+
+          <!-- INSIGHT 17 -->
+          <% if (i17.area_name != ''){ %>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              <strong><%=i17.area_name%></strong> has shown <strong class="text-success">highest positive difference</strong> wrt to <strong>Best performing  <%=region_type%></strong> for the indicator <strong><%=i17.ind_name%></strong>
+            </div>
+          </div>
+          <% } %>
+
+          <!-- INSIGHT 18 -->
+          <% if (i18.area_name != ''){ %>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              <strong><%=i18.area_name%></strong> has shown <strong class="text-warning">highest negative difference</strong> wrt to <strong>Best performing  <%=region_type%></strong> for the indicator <strong><%=i18.ind_name%></strong>
+            </div>
+          </div>
+          <% } %>
+
+          <!-- No data case -->
+          <% if ((i18.area_name == '') && (i17.area_name == '') && (i16.area_name == '') && (i15.area_name == '') && (i14.negative_text == '') && (i13.positive_text == '')) {%>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm2">
+              <strong>No Data Available </strong>
+            </div>
+          </div>
+          <% } %>
+
+          <% } %>
+
+          <!-- No data case -->
+          <% if (no_data_case == 'true') {%>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm2">
+              <strong>No Data Available </strong>
+            </div>
+          </div>
+          <% } %>
+
+        </div>
+        <% } %>
+
+        <% if (page_name == 'home') {%>
+        <div id="insight_set_4">
+
+          <!-- INSIGHT 1 -->
+          <% if (i1.length != 0){ %>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              Under <strong><%=program_name%> program </strong>, indicator <strong> <%=i1[0]%></strong> has shown <strong class="text-success">highest positive jump </strong> followed by <strong><%= i1[1]%></strong>, as compared to <strong> last <%=period_type%> </strong> across all program classes
+            </div>
+          </div>
+          <% } %>
+
+          <!-- INSIGHT 2 -->
+          <% if (i2.length != 0){ %>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              Under <strong><%=program_name%> program </strong>, indicator <strong> <%=i2[0]%></strong> has shown <strong class="text-warning">highest negative jump </strong> followed by <strong><%= i2[1]%></strong>, as compared to <strong> last <%=period_type%> </strong> across all program classes
+            </div>
+          </div>
+          <% } %>
+
+
+          <!-- INSIGHT 3 -->
+          <% if (i3.improve_text.length != 0){ %>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              Following indicators have <strong class="text-success">improved continuously</strong> over a period of time
+              <ul>
+                <% _.each(i3.improve_text, function(item) { %>
+                <li><strong><%=item%></strong></li>
+                <% }) %>
+              </ul>
+            </div>
+          </div>
+          <% } %>
+
+          <!-- INSIGHT 4 -->
+          <% if (i3.decline_text.length != 0){ %>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm3">
+              Following indicators have <strong class="text-success">declined continuously </strong> over a period of time
+              <ul>
+                <% _.each(i3.decline_text, function(item) { %>
+                <li><strong><%=item%></strong></li>
+                <% }) %>
+              </ul>
+            </div>
+          </div>
+          <% } %>
+
+          <!-- No data case -->
+          <% if ((i1.length == 0) && (i2.length == 0) && (i3.improve_text.length == 0) && (i3.decline_text.length == 0) ) {%>
+          <div class="card shadow h3 mb-0 p-4 mb-2 rounded border-0">
+            <div class="sm2">
+              <strong>No Data Available </strong>
+            </div>
+          </div>
+          <% } %>
+
+
+        <% } %>
+        </div>
+
+      </div> <!-- Modal body ends -->
+    </div>
+  </div>
+</div>

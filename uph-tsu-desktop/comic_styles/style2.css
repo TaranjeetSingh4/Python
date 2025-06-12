@@ -1,0 +1,134 @@
+.BlocksPerformanceInAgraWorstCopy {
+  position: relative;
+}
+
+.BlocksPerformanceInAgraWorstCopy-panelBg {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+}
+
+.Panel {
+  position: absolute;
+  top: 19px;
+  left: 12px;
+}
+
+.Panel1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.Panel1-pgPanelFigure {
+  position: absolute;
+  top: 117px;
+  left: 0px;
+}
+
+.Panel1-iSeeIWillCheck {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+.Panel1-panelLine {
+  position: absolute;
+  top: 124px;
+  right: 109px;
+}
+
+.Panel-kpiCard {
+  position: absolute;
+  bottom: 0px;
+  left: 14px;
+}
+
+.Panel2 {
+  position: absolute;
+  top: 19px;
+  left: 374px;
+}
+
+.Panel2-sureForRatioOf {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.Panel2-letMeCheckWithTh {
+  position: absolute;
+  top: 180px;
+  left: 0px;
+}
+
+.Panel2-panelFigureBody {
+  position: absolute;
+  top: 267px;
+  left: 18px;
+}
+
+.Panel2-panelLine {
+  position: absolute;
+  top: 271px;
+  right: 95px;
+}
+
+.Panel2-panelLine1 {
+  position: absolute;
+  top: 138px;
+  right: 6px;
+}
+
+.BlocksPerformanceInAgraWorstCopy-panelFigureHead {
+  position: absolute;
+  top: 284px;
+  left: 428px;
+}
+
+.BlocksPerformanceInAgraWorstCopy-forMoreDetailsPl {
+  position: absolute;
+  bottom: 47px;
+  right: 20px;
+}
+
+.BlocksPerformanceInAgraWorstCopy-chart {
+  position: absolute;
+  top: 30px;
+  right: 22px;
+}
+
+.dumbell_chart {
+  height: 500px;
+}
+
+.axis path {
+  stroke: none;
+}
+
+.axis .tick line {
+  stroke: none;
+}
+
+.x .tick text {
+  text-align: left;
+}
+
+.z {
+  font-family: "roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 200 !important;
+}
+
+.y {
+  font-family: "roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 200 !important;
+}
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}

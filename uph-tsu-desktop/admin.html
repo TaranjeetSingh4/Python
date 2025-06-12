@@ -1,0 +1,210 @@
+{% set user = handler.get_session().get("user", {}) %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>UP-TSU</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/error_pages.css">
+  <link rel="stylesheet" href="ui/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-select/dist/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+
+
+{% set import up_tsu_desktop_app %}
+{% set users = up_tsu_desktop_app.session_vals() %}
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-gradient-nav navbar-dark bg-dark mb-3">
+    <a class="fa fa-home mr-3 fa-2x text-white" aria-hidden="true" href="./"></a>
+    <span class="h5 mb-0 text-light">Admin Dashboard</span>
+    <!-- <a class="navbar-brand py-0 d-flex" href="./">
+      <span class="h5 mb-0 text-light">UP Health Dashboard</span> -->
+        <!-- <img class="pr-2" src="https://gramener.com/uistatic/gramener.png" alt="">
+      <div class="text-middle d-flex-inline">Admin  Page Options</div> -->
+    </a>
+    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer active-tab" data-attr="users" href="admin">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" data-attr="logs" href="logs">logs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" data-attr="analysis" href="analysis">Analysis</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="user-dropdown" title="User Account"
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-user text-light"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="user-dropdown">
+              <h6 class="dropdown-header">{{ user.get("designation") }}</h6>
+              <a class="dropdown-item" href="logout">Log out</a>
+            </div>
+          </li>
+        </ul>
+    </div>
+  </nav>
+  <div class="users"></div>
+  <script src="ui/jquery/dist/jquery.min.js"></script>
+  <script src="ui/popper.js/dist/umd/popper.min.js"></script>
+  <script src="ui/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="ui/lodash/lodash.min.js"></script>
+  <script src="node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+  <script src="g1.js"></script>
+  <script id="action-template" type="text/html">
+    <td class="text-center" nowrap>
+      <!-- <i class="fa fa-lg mr-2 cursor-pointer fa-trash" title="Delete user"    data-action="delete"></i> -->
+      <i class="fa fa-lg mr-2 cursor-pointer fa-check-circle" title="Approve user" data-action="reset_password"></i>
+    </td>
+  </script>
+ 
+  <script>
+    var users = '{{ users }}'
+    $.when($.get('db?_by=designation&_c='), $.get('block_data_register'))
+      .then(function(designation_res, mapping_res) {
+        var designation = _.keys(_.groupBy(designation_res[0], 'designation'))
+        var division = _.keys(_.groupBy(mapping_res[0], 'division'))
+        var district = _.keys(_.groupBy(mapping_res[0], 'district'))
+        var block = _.keys(_.groupBy(mapping_res[0], 'block'))
+        var division_mapping = _.groupBy(mapping_res[0], 'division')
+        var district_mapping = _.groupBy(mapping_res[0], 'district')
+        $('.users').formhandler({
+          src: 'db',         // Assuming the admin page is at db/
+          edit: true,        // Allow editing users
+          add: true,         // Allow adding users
+          columns: [
+            { name: '*' },
+            {
+              name: 'designation',
+              unique: designation,
+              editable: {
+                input: 'select',
+                options:  ['ACMO', 'DPM', 'DM']
+              }
+            },
+            {
+              name: 'district',
+              unique: district,
+              editable: {
+                input: 'select',
+                options: district,
+                attrs: {
+                  class: 'select-district form-control form-control-sm'
+                }
+              }
+            },
+            {
+              name: 'division',
+              unique: division,
+              editable: {
+                input: 'select',
+                options: division,
+                attrs: {
+                  class: 'select-division form-control form-control-sm',  // To render the dropdown as select2 library dropdown, add class attribute as identifier
+                }
+              }
+            },
+            {
+              name: 'block',
+              unique: block,
+              editable: {
+                input: 'select',
+                options: block,
+                attrs: {
+                  class: 'select-block form-control form-control-sm',  // To render the dropdown as select2 library dropdown, add class attribute as identifier
+                }
+              }
+            },
+            { name: 'map_id', hide: true },
+            { name: 'otp', hide: true },
+            // { name: 'Approval', unique:['Approved', 'Not Approved'], editable: false },
+            { name: 'Approval', hide: true},
+            { name: 'created_on', hide: true},
+            { name: 'last_updated_by', hide: true},
+            { name: 'temp_password', hide: true},
+            { name: 'user', editable: false},
+            { name: 'actions', template: function(args) {
+              // fa-circle - active, fa-circle-thin - inactive
+              return args.row.Approval !== 'Approved' ? (args.row.Approval == 'Disapproved' ? `<td class="text-center" nowrap>Disapproved</td>` : `<td class="text-center" nowrap>
+                <i class="fa fa-lg mr-2 cursor-pointer fa-check-circle text-success" title="Approve user" data-action="reset_password"></i> <i class="fa fa-lg mr-2 cursor-pointer fa-times-circle text-danger" title="Disapprove user" data-action="deny_approval"></i> </td>`) : users.indexOf(args.row.user) > -1 ? `<td class="text-center" nowrap>
+                <i class="fa fa-lg mr-2 fa-circle" title="Active user"></i>
+              </td>` : `<td class="text-center" nowrap>
+                <i class="fa fa-lg mr-2 fa-circle-thin" title="Inactive user"></i>
+              </td>`
+              }
+            }
+          ],
+          actions: [{
+            'reset_password': function (obj) {
+              var data = obj.row
+              if(obj.row['Approval'] == 'Approved'){
+                data['Approval'] = 'Not Approved'
+              }else if(obj.row['Approval'] != 'Disapproved') {
+                data['Approval'] = 'Approved'
+              }
+              return $.ajax({url: 'user_approval', method: 'POST', data: data })
+                .done(function() { obj.notify('Approved user Successfully!')})
+                .fail(function() { obj.notify('Unable to approve user') })
+            }
+          }, {
+            'deny_approval': function(obj) {
+              var data = obj.row
+              if(obj.row['Approval'] == 'Not Approved')
+                data['Approval'] = 'Disapproved'
+              return $.ajax({url: 'user_approval', method: 'POST', data: data })
+                .done(function() { obj.notify('User not approved')})
+                .fail(function() { obj.notify('Unable to disapprove user') })
+            }
+          }]
+        })
+        $('.users').on('load', function () {
+          $('.formhandler-table-header .add button').on('click', () => {
+            // removing default options
+            add_select_options('district', [], '.select-district')
+            add_select_options('block', [], '.select-block')
+            // adding district option based on division selection
+            $('.select-division').on('change', function () {
+              add_select_options('district', division_mapping, this)
+              add_select_options('block', [], this)
+            })
+            // adding block option based on district selection
+            $('.select-district').on('change', function () {
+              add_select_options('block', district_mapping, this)
+            })
+          })
+          $('.formhandler-table-header .edit button').on('click', () => {
+            // disable edits for users who aren't approved yet
+            $('.fa-check-circle').closest('tr').find('input').attr('disabled', true)
+            $('.fa-check-circle').closest('tr').find('select').attr('disabled', true)
+            // adding district option based on division selection
+            $('.select-division').on('change', function () {
+              add_select_options('district', division_mapping, this)
+              add_select_options('block', [], this)
+            })
+            // adding block option based on district selection
+            $('.select-district').on('change', function () {
+              add_select_options('block', district_mapping, this)
+            })
+          })
+      })
+    })
+    function add_select_options(mapping_type, mapping_list, selector){
+      var options = _.uniq(_.map(mapping_list[$(selector).val()], mapping_type))
+      var d = $(selector).closest('tr').find("td[data-key='"+mapping_type+"']").find('select')
+      $(d).find('option').remove()
+      var add_options = "<option value='' disabled='' selected=''>-- select --</option>"
+      _.each(options, function(d){
+        add_options+= "<option value='"+d+"'>"+d+"</option>"
+      })
+      $(d).append(add_options)
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+
+{% set page_title = 'Program Area Selected' %}
+{% include 'templates/pa/pa-head.html' %}
+
+{% set import json %}
+{% set from gramex.config import variables %}
+{% set user_session_id = handler.get_session().get("id", {}) %}
+{% set user_info = handler.get_session().get("user", {}) %}
+
+<body class="lh-2 overflow-hidden">
+
+  <section class="header">
+    <!-- Top pane : top-filters template here -->
+    <script class="nav-top-filters" type="text/html" src="templates/pa/pa-top-filters.html"></script>
+    <script class="calendar" type="text/html" src="templates/pa/pa_calendar.html"></script>
+    <div class="card bg-transparent rounded-0 border-0 mt-n1 shadow">
+      <!-- 2nd Top pane:  pa-page-nav template here -->
+      <script class="pa-page-nav" type="text/html" src="templates/pa/pa-page-nav.html"></script>
+
+      <!-- search and class links start here -->
+      <div class="container mt-2">
+        <div class="card-title mb-0">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="pa_class_container"> </div>
+            <script class="pa_class_links" data-target=".pa_class_container" type="text/html" src="templates/pa/pa_class.html"></script>
+
+            <div class="d-flex justify-content-around align-self-center h4 mb-0 col-6 pr-0 pl-5">
+                <script class="search_input" data-target="#search_container_outer" type="text/html" src="templates/pa/search_input.html"></script>
+                <div id="search_container_outer" class="input-group rounded bg-color2 border-0 w-100 h-32 h3 mb-2 px-1 mb-0">
+                </div>
+
+              <!-- Search dropdown  template -->
+              <script class="search_dropdown" type="text/html" src="templates/pa/search_dropdown.html"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="program-area-selected-cards">
+
+    <!--Program details pane-->
+    <div class="py-4 h-100">
+      <script class="no_data" type="text/html" src="templates/pa/no_data.html"></script>
+      <div class="container h-full-80 overflow-y">
+        <div class="h-100">
+          <script class="programs_details" type="text/html" src="templates/pa/program_details.html"></script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Modal for insights-->
+  <section>
+    <div class="modal_container shadow">
+      <script class="auto_insights" type="text/html" src="templates/pa/pa_insights.html"></script>
+    </div>
+  </section>
+
+  {% set scripts = ['vega', 'choices'] %}
+  {% include 'templates/pa/pa-scripts.html' %}
+  <script type="text/javascript">
+    /* exported default_date, default_program, search_keywords, session_id, program_image_mapping, program_config, user_data, class_short_name  */
+    var program_config = {{ json.dumps(variables['program-config']) }}
+    var default_date = {{ json.dumps(variables['program-config']['date']) }}
+    var session_id = {{ json.dumps(user_session_id) }}
+    var user_data = {{json.dumps(user_info)}}
+    var default_program = {{ json.dumps(variables['program-config']['default_program']) }}
+    var search_keywords = {{ json.dumps(variables['program-config']['search_keywords']) }}
+    var program_image_mapping = {{ json.dumps(variables['program-config']['program_image_mapping']) }}
+
+  </script>
+  <script src="js/pa_selected.js"></script>
+  <script src="components/pa/trend_line.js"></script>
+  <script src="ui/moment/min/moment-with-locales.min.js"></script>
+  <script src="js/log_capture.js"></script>
+
+</body>
+</html>

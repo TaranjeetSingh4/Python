@@ -1,0 +1,232 @@
+<% if(url.searchKey.chart === "map" || url.searchKey.chart === undefined) { %>
+  <% var chart_name = "Map" %>
+<% } else { %>
+  <% var chart_name = "Trend Line" %>
+<% }
+%>
+<div class="d-flex align-items-end pos-tr sm1 px-0 p-10 download-map pr-3 cursor-pointer"><a>Download Chart</a></div>
+  <div class="d-flex flex-column mb-3">
+    <div class="d-flex flex-column">
+      <marquee class="w-100 text-danger ticker_msg"></marquee>
+      <div class="d-flex justify-content-between align-items-end mt-4 my-3 map-trend-wrapper">
+        <div class="d-flex flex-column">
+          <span class="fs-10 w-100 text-color20 mb-1">View</span>
+          <div class="btn-group font-weight-bold" role="group">
+            <button type="button" class="btn border border-color19 fs-10 lh-1 chart-by <%= (url.searchKey.chart === 'trend') ? 'bg-color19 text-white' : 'bg-white text-color20' %>" map-val="trend">Trend</button>
+            <button type="button"
+              class="btn border border-color19 fs-10 lh-1 chart-by <%= (url.searchKey.chart !== 'trend') ? 'bg-color19 text-white' : 'bg-white text-color20' %>" map-val="map">Map</button>
+            <img src="img/info_icon.png" class="bg-white mr-3 ml-2" alt="info" data-toggle="tooltip"
+                      data-html="true" title="<%= chart_name %> displays the indicator values based on the indicator selection from the left side panel or from the bottom of the page">
+          </div>
+        </div>
+        <div class="d-flex align-items-end">
+          <div class="d-flex flex-column">
+            <span class="fs-10 w-100 text-color20 mb-1 w-auto">View By</span>
+            <div class="btn-group font-weight-bold" role="group">
+              <button type="button"
+                class="map-view-by btn border border-color19 fs-10 lh-1 <%= (url.searchKey.check === 'yes') ? 'bg-color19 text-white' : 'bg-white text-color20' %>" mapview="yes">Division</button>
+              <button type="button"
+                class="map-view-by btn border border-color19 fs-10 lh-1 <%= (url.searchKey.check !== 'yes') ? 'bg-color19 text-white' : 'bg-white text-color20' %>" mapview="no">District</button>
+            </div>
+          </div>
+          <% if(url.searchKey.check !== 'yes' && url.searchKey.district_level === undefined) { %>
+            <div class="fs-10 mb-1 font-weight-bold map-categories">
+              <div class="pretty p-default p-round p-thick ml-3">
+                <% if(url.searchKey.slider === 'all' || url.searchKey.slider === undefined) { %>
+                  <input class="asd-priority-sel" type="radio" name="trend" checked/>
+                <% } else { %>
+                  <input class="asd-priority-sel" type="radio" name="trend"/>
+                <% } %>
+                <div class="state p-primary-o">
+                  <label class="ml-1">Show All</label>
+                </div>
+              </div>
+              <div class="pretty p-default p-round p-thick">
+                <% if(url.searchKey.slider === 'asd') { %>
+                  <input class="asd-priority-sel" data-val="asd" type="radio" name="trend" checked/>
+                <% } else { %>
+                  <input class="asd-priority-sel" data-val="asd" type="radio" name="trend" />
+                <% } %>
+                <div class="state p-primary-o">
+                  <label class="ml-1">Aspiration</label>
+                </div>
+              </div>
+              <div class="pretty p-default p-round p-thick">
+                <% if(url.searchKey.slider === 'hpds') { %>
+                  <input class="asd-priority-sel" data-val="hpds" type="radio" name="trend" checked/>
+                <% } else { %>
+                  <input class="asd-priority-sel" data-val="hpds" type="radio" name="trend"/>
+                <% } %>
+                <div class="state p-primary-o">
+                  <label class="ml-1">High Priority</label>
+                </div>
+              </div>
+            </div>
+          <% } %>
+        </div>
+      </div>
+    </div>
+    <% var drill_level = get_drilldown(url) %>
+    <% var start_level = (url.searchKey.check === 'yes') ? 'division_level' : 'district_level' %>
+    <% if(viewby == 'trend') { %>
+    <div id="trend-png">
+      <div class="d-flex col-12 m-0 trend-legend-section border-bottom border-color-black">
+        <div class="d-flex justify-content-between w-100 mt-2">
+          <div class="col-2 flex-column p-0 trend-legend-comp-sel d-none">
+            <span class="fs-10 w-100 text-color20 w-auto">District:</span>
+            <select class="selectpicker trend-compare-options" id="trend-compare-select" data-style="fs-10 font-weight-bold border border-color19" data-width="100px" data-size="7">
+              <option class="p-1" value="na">None Selected</option>
+              <% var trend_comp_items = url.searchKey.trend_comp || '' %>
+              <% var block_level = url.searchKey.block_level %>
+              <% var district_level = url.searchKey.district_level %>
+              <% if(block_level !== undefined){ %>
+                <% comp_dist = _.filter(comp_dist, function(d){ return d.map_id !== parseInt(block_level) }) %>
+                <% } else if(district_level !== undefined){ %>
+                  <% comp_dist = _.filter(comp_dist, function(d){ return d.map_id !== parseInt(district_level) }) %>
+                <% } %>
+              <% _.each(_.sortBy(_.uniqBy(comp_dist, 'map_id'), drop_metric), function(d) { %>
+                <% if(trend_comp_items.split(',').map(c => parseInt(c)).indexOf(d.map_id) > -1) {%>
+                  <option class="p-1" value="<%= d.map_id %>" selected><%= d[drop_metric] %></option>
+                <% } else { %>
+                  <option class="p-1" value="<%= d.map_id %>"><%= d[drop_metric] %></option>
+                <% } %>
+              <% }) %>
+            </select>
+          </div>
+          <div class="d-flex col-7 trend-legend p-0 trend_chart mr-auto">
+            <div class="flex-column mr-2 ml-3 text-color23 d-none">
+              <p class="d-flex fs-10 font-weight-semi-bold mb-1 main-trend-div">
+                <span class="d-flex m-0 main-trend-name"></span>
+                <span class="d-flex align-self-center ml-2 border border-color23 border-bottom border-dashed main-trend"></span>
+              </p>
+              <div class="p-12 bg-color26 py-1 px-2 font-weight-bold border-radius-sm trend-value lh-1 main-trend-val"></div>
+            </div>
+            <div class="flex-column mr-2 ml-1 text-color22 d-none">
+              <p class="d-flex fs-10 font-weight-semi-bold mb-1 right-sel-trend-div">
+                <span class="d-flex m-0 right-sel-trend-name <%- (url.file=='capture')?'text-wrap':'' %>"></span>
+                <span class="d-flex align-self-center ml-2 border border-color22 border-bottom"></span>
+              </p>
+              <div class="p-12 bg-color25 py-1 px-2 font-weight-bold border-radius-sm trend-value lh-1 right-sel-trend-val"></div>
+            </div>
+            <div class="flex-column mr-2 ml-1 text-color24 d-none">
+              <p class="d-flex fs-10 font-weight-semi-bold mb-1 drop1-sel-trend-div">
+                <span class="d-flex m-0 drop1-sel-trend-name <%- (url.file=='capture')?'text-wrap':'' %>"></span>
+                <span class="d-flex align-self-center ml-2 border border-color24 border-bottom"></span>
+              </p>
+              <div class="p-12 bg-color27 py-1 px-2 font-weight-bold border-radius-sm trend-value lh-1 drop1-sel-trend-val"></div>
+            </div>
+          </div>
+          <div class="rank_details col-3 p-0 w-100 <%= ((drill_level.length) > 0 && url.searchKey.block_level === undefined) ? 'd-block' : 'd-none' %>">
+            <div class="district_level d-flex align-items-start text-right py-2">
+              <a class="bla p-8 text-right w-100 font-weight-bold text-uppercase map-next-level"><%= drill_level %></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% } %>
+    <div class="position-relative pt-4 <%= (viewby === 'map') ? 'bg-map-gray' : '' %>">
+      <% if(viewby === 'map') { %>
+        <div class="rank_details col-3 pt-2 pr-3 pos-tr w-100 <%= ((drill_level.length) > 0 || url.searchKey.block_level !== undefined) ? 'd-block' : 'd-none' %>">
+          <div class="d-flex justify-content-end">
+            <div class="d-flex align-items-start bg-white mr-2 sm2">
+              <a class="nav-link p-0  text-center">
+                <div class="bg-white px-2 py-1" id="rank_div">
+                  <div id="rank_svg">
+                </div>
+                <svg width="22px" height="29px" viewBox="0 0 22 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>Created with sketchtool.</desc>
+                  <defs>
+                    <rect id="path-1" x="0" y="0" width="22" height="30"></rect>
+                    <path d="M9.95613694,39.0990446 C5.27480638,39.0990446 1.47976015,35.3039984 1.47976015,30.6226678 C1.47976015,25.9412448 5.27480638,22.146291 9.95613694,22.146291 C14.6374675,22.146291 18.4325137,25.9413373 18.4325137,30.6226678 C18.4284457,35.3023342 14.6358033,39.0949766 9.95613694,39.0990446 Z M4.85255929,18.1373938 L14.5937358,18.1373938 L14.5937358,16.9687485 L4.85255929,16.9687485 L4.85255929,18.1373938 Z M2.00491089,15.4894506 L5.4738644,15.4894506 L5.4738644,1.52487874 L2.00491089,1.52487874 L2.00491089,15.4894506 Z M6.95316227,15.4894506 L12.5005293,15.4894506 L12.5005293,1.52487874 L6.95316227,1.52487874 L6.95316227,15.4894506 Z M13.9798271,15.4894506 L17.4487807,15.4894506 L17.4487807,1.52487874 L13.9798271,1.52487874 L13.9798271,15.4894506 Z M10.6957859,20.7039756 L10.6957859,19.6166917 L14.5937358,19.6166917 C15.410678,19.6166917 16.0730336,18.9544285 16.0730336,18.1373938 L16.0730336,16.9687485 L17.4487807,16.9687485 C18.2657229,16.9687485 18.9280785,16.3064853 18.9280785,15.4894506 L18.9280785,1.52487874 C18.9280785,0.707844031 18.2657229,0.0455808656 17.4487807,0.0455808656 L2.00491089,0.0455808656 C1.18787619,0.0455808656 0.525613024,0.707844031 0.525613024,1.52487874 L0.525613024,15.4894506 C0.525613024,16.3064853 1.18787619,16.9687485 2.00491089,16.9687485 L3.37326142,16.9687485 L3.37326142,18.1373938 C3.37326142,18.9544285 4.03552459,19.6166917 4.85255929,19.6166917 L9.21648801,19.6166917 L9.21648801,20.7039756 C3.73328554,21.1124467 -0.380549377,25.8886373 0.0280142034,31.3717473 C0.436485328,36.8549498 5.21258341,40.9687847 10.6957859,40.5603135 C16.1789883,40.1518424 20.2928233,35.3756519 19.8842597,29.8924494 C19.5181335,24.9774822 15.6108455,21.0701018 10.6957859,20.7039756 Z" id="path-3"></path>
+                  </defs>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Rev1.4-Summary-1" transform="translate(-143.000000, -563.000000)">
+                      <g id="Group-9" transform="translate(143.000000, 548.000000)">
+                        <g id="Group-17" transform="translate(0.000000, 15.000000)">
+                          <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                          </mask>
+                          <g id="Mask"></g>
+                          <g mask="url(#mask-2)">
+                            <g transform="translate(1.000000, -12.000000)">
+                              <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                              </mask>
+                              <use id="Rank" stroke="#000" stroke-width="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                              <text id="21" stroke="none" fill="none" font-family="OpenSans-Bold, Open Sans" font-size="10" font-weight="bold" line-spacing="12">
+                                <tspan x="4.14705882" class="rank_value" y="35" fill="#000">21</tspan>
+                              </text>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <p class="p-8 mb-0 font-weight-light text-dark text-uppercase wrap_text">rank</p>
+                </div>
+              </a>
+            </div>
+            <div class="d-flex align-items-start bg-white sm2">
+              <a class="nav-link p-0 float-left view_prof text-center cursor-pointer">
+                  <div class="bg-white px-1 py-1" id="profile_div">
+                    <img src="img/Profile.png" alt="icon" class="mb-1" height="29" width="20">
+                    <p class="p-8 mb-0 font-weight-light text-dark text-uppercase wrap_text">
+                      Profile</p>
+                  </div>
+                </a>
+            </div>
+          </div>
+          <div class="district_level d-flex align-items-start text-right py-2">
+            <a class="bla p-8 text-right w-100 font-weight-bold text-uppercase map-next-level"><%= drill_level %></a>
+          </div>
+        </div>
+      <% } %>
+
+      <div class="pos-tl map-back-btn align-items-start <%= (viewby === 'map') ? 'px-3 py-2' : 'p-0' %> cursor-pointer <%= ((drill_level.length) || (url.searchKey.division_level !== undefined) || (url.searchKey.district_level !== undefined)) ? 'd-block' : 'd-none' %>">Back</div>
+      <div class="d-flex <%= (viewby === 'map') ? 'mapid' : 'trend_chart' %>" id="<%= (viewby === 'map') ? 'mapid' : 'trend' %>"></div>
+      <% if(viewby === 'map') { %>
+        <div class="pos-bl map-hide-names text-primary sm1 p-3 active cursor-pointer">Hide <%= _.capitalize(get_hierarchy(url).replace('_level', '')) %> Names</div>
+      <% } %>
+    </div>
+    <% if(viewby === 'trend') { %>
+    </div>
+    <% } %>
+  </div>
+
+  <div class="w-100">
+    <div class="card-title mb-0">
+      <div class="justify-content-center d-flex">
+        <div class="col-1 h1-100 px-0 text-right">
+          <img src="img/arrow-left.png" alt="icon" class="mr-low-1 h1-100 indicator-change-button align-self-center cursor-pointer" id="prev-indicator">
+        </div>
+        <div class="col-10 h1-100 bg-text-color px-0 position-relativess">
+          <div class="pos-c">
+            <h6 class="text-white py-1 bg-text-color w-100 text-center text-uppercase small mb-0 px-2 align-self-center" id="indicator_nav"><%= get_ind_text(url) %></h6>
+          </div>
+        </div>
+        <div class="col-1 h1-100 px-0">
+          <img src="img/arrow-right.png" alt="icon" class="ml-low-1 h1-100 indicator-change-button align-self-center  cursor-pointer" id="next-indicator">
+        </div>
+      </div>
+    </div>
+    <div class="card-title mb-2">
+      <div class="justify-content-center d-flex">
+        <div class="px-0 col-lg-1 col-xl-2 text-lg-right">
+          <img src="img/btn-next.png" id="prev-indicator" alt="icon" class="indicator-change-button cursor-pointer rotate-indicator">
+        </div>
+          <div class="px-0 col-lg-3 col-xl-3">
+            <div class="d-flex justify-content-xl-start justify-content-lg-end">
+              <div class="px-0 sm3 pl-2 pt-1 align-self-top">
+                <img src="img/btn-next.png" alt="icon" class="indicator-change-button cursor-pointer" id="next-indicator">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="play pos-br">
+      <%var ids= (url.file == 'amethi_map')?'play_inds':'play_indicator'%>
+      <img src="<%= gbl_next_img %>" alt="icon" class="cursor-pointer pr-1" id="<%= ids%>">
+      <span class="p-10 play_text"><%= gbl_next_state %></span>
+    </div>
+  </div>

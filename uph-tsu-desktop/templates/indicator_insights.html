@@ -1,0 +1,20 @@
+<div class="d-flex flex-column p-9" id="indicator-insights">
+  <div class="mb-1 pb-1 border border-top-0 border-right-0 border-left-0">
+    <span class="font-weight-bold"><%-name%>'s </span>
+    overall <%-filter_type%> score
+    <span class="font-weight-bold">
+    <% if(change > 0) { %> increased <% } else { %> decreased <% } %> </span>
+    during the selected time period by
+    <span class="font-weight-bold round px-1 <%- change > 0 ? 'badge-success' : 'badge-danger' %>"> <%- Math.abs(change) %>%</span>
+  </div>
+  <div class="mb-1 pb-1 border border-top-0 border-right-0 border-left-0">
+    <span class="font-weight-bold text-capitalize"><%- first[filter_type].split('_').join(' ') %></span> witnessed the <span class="font-weight-bold">highest increase</span> of <span class="font-weight-bold badge-success px-1 round"><%- first['change'] %>%</span>
+  </div>
+  <div class="mb-1">
+    <% if(last['change'] > 0) { %>
+      <span class="font-weight-bold text-capitalize"><%- last[filter_type].split('_').join(' ') %></span> increased the <span class="font-weight-bold">least</span> with a change of <span class="font-weight-bold px-1 round badge-success"><%- Math.abs(last['change'])%>%</span>
+    <% } else { %>
+      <span class="font-weight-bold text-capitalize"><%- last[filter_type].split('_').join(' ') %></span> shrunk the most with a change of <span class="font-weight-bold badge-danger px-1 round"><%- Math.abs(last['change'])%>%</span>
+    <% } %>
+  </div>
+</div>

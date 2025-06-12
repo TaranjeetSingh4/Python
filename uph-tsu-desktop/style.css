@@ -1,0 +1,96 @@
+/*  UI component styles. Customize via ?bootstrap-variable=encoded-value. Example:
+Colors. Can be a name or a number (e.g. %23aabbcc). Preserve the hues below.
+primary=blue
+success=green
+info=cyan
+warning=orange
+danger=red
+secondary=grey
+light=lightgrey
+dark=darkgrey
+body-bg=white
+body-color=black
+Fonts. Can be a system font or Open+Sans, Roboto, Lato, Anton, Monserrat font-family-base=Segoe+UI headings-font-family=Segoe+UI
+Other
+https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss
+*/
+@import url("css/style_bootstrap.css");
+@import url("custom");
+/* For v4 icons, use url("ui/font-awesome/css/font-awesome.min.css") */
+@import url("ui/@fortawesome/fontawesome-free/css/all.min.css");
+/* for Vietnam font */
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@500&display=swap");
+.font-vietnam {
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 10px;
+}
+.ticker_drpdwn.dropdown-toggle::after {
+  vertical-align: 0.155em !important;
+}
+
+/* custom styles for app: tb */
+.bg-linear-1 {
+  background: linear-gradient(63.74deg, #c14b00 0%, #cf5e00 100%);
+}
+.bg-linear-2 {
+  background: linear-gradient(164.2deg, #f9ebd7 0%, #dddddd 100%);
+}
+.bg-linear-3 {
+  background: linear-gradient(180deg, #f8f9fb 0%, #ffffff 100%);
+}
+.h-46 {
+  height: 46px;
+}
+.h-70 {
+  height: 70px;
+}
+.border-dotted {
+  border-style: dotted;
+}
+.border-ct {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.border-cb {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.shadow-1 {
+  box-shadow: 0 20px 24px 0 rgba(199, 196, 214, 0.53);
+}
+.shadow-2 {
+  box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.04), 0 23px 60px 0 rgba(0, 0, 0, 0.03);
+}
+.down-load {
+  font-size: 30px;
+}
+/* custom fonts */
+.fs-11 {
+  font-size: 11px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-15 {
+  font-size: 15px;
+}
+.lh-15 {
+  line-height: 15px;
+}
+.lh-18 {
+  line-height: 18px;
+}
+.lh-20 {
+  line-height: 20px;
+}
+.bg-color16 {
+  background-color: rgba(222, 236, 255, 0.5) !important;
+}
+.bg-landing {
+  background-image: url(img/bg_home.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
