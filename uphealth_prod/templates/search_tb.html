@@ -1,0 +1,16 @@
+<div class="position-absolute w-100">
+<ul id="myUL" class="nav flex-column px-3 pt-1 pb-4 w-100 bg-white shadow border-radius-bottom-4">
+    <% _.each(data, function(d){ %>
+        <li class="nav-item cursor-pointer h4 mb-0 border-bottom font-weight-bold">
+            <span id="<%- d['id'] %>" view="<%- d['view'] %>" total_name="<%- d['name'] +' '+ d['view'] %>" class="nav-link text-dark d-flex search_option allign-items-center sm3 px-0 py-2">
+                <div class="p-14 py-1 pr-1">
+                    <%- d['name'] %>
+                </div>
+                <div class="opacity-70 py-1">
+                    <%- d['view'] %>
+                </div>
+            </span>
+        </li>
+    <% }) %>
+</ul>
+</div>

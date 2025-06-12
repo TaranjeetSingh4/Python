@@ -1,0 +1,257 @@
+# Configurable variables
+# LOGVIEWER_PATH_UI
+# LOGVIEWER_PATH_RENDER
+# $LOGVIEWER_FORMHANDLER_KWARGS
+# $LOGVIEWER_FORMHANDLER_QUERIES
+# $LOGVIEWER_CAPTURE_KWARGS
+# $LOGVIEWER_SCHEDULER_PORT
+# $LOGVIEWER_SCHEDULER_SETUP
+# $LOGVIEWER_SCHEDULER_KWARGS
+
+variables:
+  LOGVIEWER_SCHEDULER_PORT:
+    default: ""
+  LOGVIEWER_PATH_UI:
+    default: $YAMLPATH/config.yaml
+  LOGVIEWER_PATH_RENDER:
+    default: $YAMLPATH/js/render.js
+
+import:
+  apps/logviewer/ui:
+    path: $GRAMEXAPPS/ui/gramex.yaml
+    YAMLURL: $YAMLURL/ui/
+
+url:
+  apps/logviewer/layout-$*:
+    pattern: /$YAMLURL/logs
+    handler: FileHandler
+    kwargs:
+      path: $YAMLPATH/logs.html
+      auth:
+        login_url: /$YAMLURL/login
+        membership:
+          designation: [Admin]
+      template: true
+      headers:
+        Cache-Control: max-age=3600
+      path_ui: $LOGVIEWER_PATH_UI
+      path_render: $LOGVIEWER_PATH_RENDER
+      import.merge: $LOGVIEWER_LAYOUT_KWARGS
+
+  apps/logviewer/static-$*:
+    pattern: /$YAMLURL/logs(.*)
+    handler: FileHandler
+    kwargs:
+      path: $YAMLPATH
+      auth:
+        login_url: /$YAMLURL/login
+        membership:
+          designation: [Admin]
+      default_filename: logs.html
+      headers:
+        Cache-Control: max-age=86400
+
+  apps/logviewer/query-$*:
+    pattern: /$YAMLURL/query/(?P<table>\w+)/(?P<query>[\w-]+)/
+    handler: FormHandler
+    kwargs:
+      url: sqlite:///$GRAMEXDATA/up-tsu-desktop/logviewer.db
+      execution_options:
+        sqlite_raw_colnames: True
+      queryfunction: logviewer.query(handler, args)
+      headers:
+        Cache-Control: max-age=18000
+      import.merge: $LOGVIEWER_FORMHANDLER_KWARGS
+      kwargs:
+        queries:
+          filterstatus: SELECT DISTINCT status
+            FROM {table} {where}
+            ORDER BY status
+          filterusers: SELECT DISTINCT "user.id"
+            FROM {table}
+            WHERE "user.id_1" == 1 {where}
+            ORDER BY "user.id"
+          filteruri: SELECT uri, SUM(duration_count) AS views
+            FROM {table}
+            WHERE uri_1 == 1 {where}
+            GROUP BY uri ORDER BY views DESC LIMIT 100
+          filterip: SELECT DISTINCT ip
+            FROM {table} {where}
+            ORDER BY ip
+          filterapp: SELECT DISTINCT application
+            FROM {table} {where}
+            ORDER BY application
+          kpi-pageviews: SELECT SUM(duration_count) AS value
+            FROM {table}
+            WHERE uri_1 == 1 {where}
+          kpi-sessions: SELECT SUM(new_session_sum) AS value
+            FROM {table}
+            WHERE "user.id_1" == 1 {where}
+          kpi-users: SELECT COUNT(DISTINCT "user.id") AS value
+            FROM {table}
+            WHERE "user.id_1" == 1 {where}
+          kpi-avgtimespent:
+            SELECT SUM(session_time_sum)/SUM(new_session_sum) AS value
+            FROM {table}
+            WHERE "user.id_1" == 1 {where}
+          kpi-urls: SELECT COUNT(DISTINCT uri) AS value
+            FROM {table}
+            WHERE uri_1 == 1 {where}
+          kpi-avgloadtime: SELECT SUM(duration_sum)/SUM(duration_count) AS value
+            FROM {table} {where}
+          toptenusers: SELECT "user.id", SUM(duration_count) AS views
+            FROM {table}
+            WHERE "user.id_1" == 1 {where}
+            GROUP BY "user.id"
+            ORDER BY views DESC LIMIT 10
+          toptenip: SELECT ip, SUM(duration_count) AS requests
+            FROM {table} {where}
+            GROUP BY ip ORDER BY requests DESC LIMIT 10
+          toptenstatus: SELECT status, SUM(duration_count) AS requests
+            FROM {table} {where}
+            GROUP BY status ORDER BY requests DESC LIMIT 10
+          toptenuri: SELECT uri, SUM(duration_count) AS views
+            FROM {table}
+            WHERE uri_1 == 1 {where}
+            GROUP BY uri ORDER BY views DESC LIMIT 10
+          pageviewstrend: SELECT time, SUM(duration_count) AS pageviews
+            FROM {table}
+            WHERE uri_1 == 1 {where}
+            GROUP BY time
+          sessionstrend: SELECT time, SUM(new_session_sum) AS sessions
+            FROM {table}
+            WHERE "user.id_1" == 1 {where}
+            GROUP BY time
+          loadtimetrend:
+            SELECT time, SUM(duration_sum)/SUM(duration_count) AS loadtime
+            FROM {table} {where}
+            GROUP BY time
+          loadtimerequeststrend:
+            SELECT time, SUM(duration_sum)/SUM(duration_count) AS loadtime,
+            SUM(duration_count) AS requests
+            FROM {table} {where}
+            GROUP BY time
+          top50users: SELECT "user.id", SUM(duration_count) AS views
+            FROM {table}
+            WHERE "user.id_1" == 1 {where}
+            GROUP BY "user.id"
+            ORDER BY views DESC LIMIT 50
+          import.merge: $LOGVIEWER_FORMHANDLER_QUERIES
+
+schedule:
+  ? >
+    apps/logviewer-$* if '--listen.port=' + LOGVIEWER_SCHEDULER_PORT
+    in ''.join(sys.argv[1:]) or not LOGVIEWER_SCHEDULER_PORT
+  : function: logviewer.summarize
+    kwargs:
+      session_threshold: 15
+      transforms:
+        - type: derive
+          expr:
+            col: uri
+            op: REPLACE
+            value:
+              '^\/\?.*': "Desktop - Home"
+              '^\/login.*': "Desktop - Login"
+              '^\/table.*': "Desktop - Table"
+              '^\/niti_table.*': "Desktop - Niti Table"
+              '^\/compare.*': "Desktop - Analytics"
+              '^\/executive-summary.*': "Desktop - Executive Summary"
+              '^\/map_view.*': "Desktop - Map"
+              '^\/amethi_map.*': "Desktop - Amethi Map View"
+              '^\/amethi_table.*': "Desktop - Amethi Table View"
+              '^\/admin.*': "Desktop - Admin Page"
+              '^\/logs.*': "Desktop - Logviewer"
+              '^\/analysis.*': "Desktop - User Analysis"
+              '^\/pa-landing.*': "Desktop - PA Landing"
+              '^\/pa-overview.*': "Desktop - PA Overview"
+              '^\/pa-compare.*': "Desktop - PA Compare"
+              '^\/pa.*': "Desktop - PA Home"
+              '^\/up-tsu-v2/login.*': "Mobile - Login"
+              '^\/up-tsu-v2/\?.*': "Mobile - Home"
+              '^\/up-tsu-v2/summary.*': "Mobile - Summary"
+              '^\/up-tsu-v2/deepdive.*': "Mobile - Deepdive"
+              '^\/up-tsu-v2/analytics.*': "Mobile - Analytics"
+              '^\/up-tsu-v2/executive-summary.*': "Mobile - Executive Summary"
+              '^\/up-tsu-v2/niti_deepdive.*': "Mobile - Niti Deepdive"
+              '^\/up-tsu-v2/pa-landing.*': "Mobile - PA Landing"
+              '^\/up-tsu-v2/pa-overview.*': "Mobile - PA Overview"
+              '^\/up-tsu-v2/pa-compare.*': "Mobile - PA Compare"
+              '^\/up-tsu-v2/pa.*': "Mobile - PA Home"
+              '^\/comicgen.*': "Desktop - Comicgen"
+              '^\/up-tsu-desktop/.*': "_OTHER_"
+              '^\/.*': "_OTHER_"
+            kwargs:
+              regex: True
+          as: uri
+        - type: derive
+          expr:
+            col: uri
+            op: REPLACE
+            value:
+              "^/.*": "_OTHER_"
+            kwargs:
+              regex: True
+          as: uri
+        - type: derive
+          expr:
+            col: user.id
+            op: LOWER
+          as: user.id
+        - type: derive
+          expr:
+            col: uri
+            op: MAP
+            value:
+              "Desktop - Map": "Desktop"
+              "Desktop - Table": "Desktop"
+              "Desktop - Niti Table": "Desktop"
+              "Desktop - Amethi Map view": "Desktop"
+              "Desktop - Amethi Table view": "Desktop"
+              "Desktop - Analytics": "Desktop"
+              "Desktop - Login": "Desktop"
+              "Desktop - Home": "Desktop"
+              "Desktop - Admin Page": "Desktop"
+              "Desktop - Logviewer": "Desktop"
+              "Desktop - User Analysis": "Desktop"
+              "Desktop - Executive Summary": "Desktop"
+              "Desktop - PA Landing": "Desktop"
+              "Desktop - PA Home": "Desktop"
+              "Desktop - PA Overview": "Desktop"
+              "Desktop - PA Compare": "Desktop"
+              "Desktop - Comicgen": "Desktop"
+              "Mobile - Home": "Mobile"
+              "Mobile - Deepdive": "Mobile"
+              "Mobile - Analytics": "Mobile"
+              "Mobile - Login": "Mobile"
+              "Mobile - Executive Summary": "Mobile"
+              "Mobile - PA Landing": "Mobile"
+              "Mobile - PA Home": "Mobile"
+              "Mobile - PA Overview": "Mobile"
+              "Mobile - PA Compare": "Mobile"
+              "Mobile - Summary": "Mobile"
+              "Mobile - Niti Deepdive": "Mobile"
+              "_OTHER_": "-"
+          as: application
+      post_transforms:
+        - type: derive
+          expr:
+            col: uri
+            op: NOTCONTAINS
+            value: "_OTHER_"
+          as: uri_1
+        - type: derive
+          expr:
+            col: user.id
+            op: NOTIN
+            value: ["-", "dev", "alpha", "test_sitapur"]
+          as: user.id_1
+      import.merge: $LOGVIEWER_SCHEDULER_KWARGS
+    startup: true
+    # Run at 6pm local time. In India, this is a bit after 0:00 UTC,
+    # which means log file rotation would've been done even if it's UTC based
+    minutes: 0
+    hours: 6
+    # When running in production
+    thread: true
+    import.merge: $LOGVIEWER_SCHEDULER_SETUP

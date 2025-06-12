@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 59.1 (101010) - https://sketch.com -->
+    <title>E14D3065-819A-4044-9194-C5EF7AA93A89@1x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="20" height="20" rx="10"></rect>
+        <filter x="-37.5%" y="-27.5%" width="175.0%" height="175.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.158353365 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="RWRK_Table_matrix" transform="translate(-823.000000, -161.000000)">
+            <g id="Matrix" transform="translate(142.000000, 87.000000)">
+                <g id="Table">
+                    <g id="Open-1" transform="translate(685.000000, 76.000000)">
+                        <g id="Rectangle">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use stroke-opacity="0.165564904" stroke="#5C7DAF" stroke-width="1" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <polygon id="+" fill="#5C7DAF" fill-rule="nonzero" points="13.904 9.504 13.904 10.512 10.496 10.512 10.496 13.904 9.504 13.904 9.504 10.512 6.096 10.512 6.096 9.504 9.504 9.504 9.504 6.096 10.496 6.096 10.496 9.504"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

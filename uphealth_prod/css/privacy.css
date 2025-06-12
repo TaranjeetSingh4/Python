@@ -1,0 +1,9 @@
+.navbar {
+  background-color: rgb(249, 124, 9);
+}
+.navbar a {
+  color: white !important;
+}
+h5 {
+  font-weight: bold !important;
+}

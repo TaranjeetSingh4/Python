@@ -1,0 +1,98 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+
+{% set page_title = 'Program Area' %}
+{% include 'templates/pa/pa-head.html' %}
+
+{% set import json %}
+{% set from gramex.config import variables %}
+
+{% set user_info = handler.get_session().get("user", {}) %}
+{% set user_session_id = handler.get_session().get("id", {}) %}
+
+<body class="lh-1">
+  <!--Header-->
+  <section class="bg-secondary">
+    <div class="container">
+      <div class="py-1">
+        <span class="bg-primary text-white pl-3 pr-5 py-4 font-weight-bold sm2 text-capitalize rounded-0">
+          <a class="mr-3" aria-hidden="true" href="./"><i class="fa fa-home fa-2x text-white"></i></a>  Program Area Dashboard
+        </span>
+      </div>
+
+      <script class="sidenav" type="text/html" src="templates/side_nav.html"></script>
+    </div>
+  </section>
+  <!--Peogram area cards-->
+  <section class="program-area-cards">
+    <div class="card rounded-0 border-0 py-3">
+      <div class="container">
+        <div class="card-title mb-0 row">
+          <p class="color1 mb-0">12 Program Areas</p>
+          <marquee class="w-50 text-danger pa_ticker mx-3"></marquee>
+        </div>
+      </div>
+    </div>
+    <div class="py-3">
+      <div class="container">
+        <script class="all_programs" type="text/html" src="templates/pa/all_programs.html"></script>
+      </div>
+    </div>
+  </section>
+  {% set scripts = [] %}
+  {% include 'templates/pa/pa-scripts.html' %}
+  <script src="ui/moment/min/moment-with-locales.min.js"></script>
+  <script src="js/log_capture.js"></script>
+  <script type="text/javascript">
+    /* exported program_image_mapping, session_id */
+    var session_id = {{ json.dumps(user_session_id) }}
+    var program_image_mapping = {{ json.dumps(variables['program-config']['program_image_mapping']) }}
+
+    // Program Blocks template
+    $('.all_programs').template({data : program_image_mapping })
+
+    // Side Navigation pane
+    var user_data = {{json.dumps(user_info)}}
+
+    $('.sidenav')
+    .on('template', function () {
+      // $('.user_name').text(user_data.name)
+      $('.user_name').text(user_data.user)
+      $('#aside-nav').addClass('d-none') // hides side nav on default loads
+    })
+    .template({ user: user_data.designation || 'Admin' })
+
+    $(document)
+    .on('click', '.hamburger', function() {
+      $('#aside-nav').removeClass('d-none')
+      $('.user-profile, .versions, .user_manual, .short-video, .long-video, .analytics, .update_text').addClass('d-none')
+      $('.home_tab').text('District Ranking Dashboard')
+    })
+    .on('click', '.close-icon', function() {
+      $('#aside-nav').addClass('d-none')
+    })
+
+  </script>
+  <script>
+
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "https://uphealthdashboard.in/matomo/";
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      _paq.push(['setUserId', user_data.user]);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+    })();
+
+  </script>
+
+  <!-- End Matomo Code -->
+
+</body>
+
+</html>

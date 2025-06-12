@@ -1,0 +1,62 @@
+<div class="sidenav align-self-center" id="district-stats">
+  <div class="container-fluid col-12 col-sm-12 col-md-4 col-lg-3 h-75 position-absolute pos-cc px-0 bg-light vh-100 district-profile">
+    <div class="bg-gradient py-3">
+      <div class="row mx-0">
+        <div class="col-10 pr-0 align-self-center">
+          <h5 class="text-light font-weight-bold mb-0">
+            <%- data.district %>
+          </h5>
+        </div>
+        <div class="col-2 pl-0 align-self-center text-right">
+          <div class="close-icon">
+            <a href="javascript:void(0)" class="closebtn h3 mb-0 text-light" id="close-profile">&times;</a>
+          </div>
+        </div>
+      </div>
+      <div class="data-panel pt-2">
+      <div class="row mx-0">
+          <% _.each(data.header_data, function(d){ %>
+            <div class="col-4 pr-0">
+              <div class="row mx-0">
+                <div class="col-3 col-sm-1 px-0">
+                  <img src="img/<%-d.name%>.png" alt="population">
+                </div>
+                <div class="col-9 col-sm-11 pr-0 pl-3 text-left">
+                  <p class="nav-link p-10 p-0 text-light mb-0 font-italic">
+                    <%- d.name %>
+                    <!-- <span class="d-block">(2017)</span> -->
+                  </p>
+                </div>
+              </div>
+              <p class="mb-0 mt-2 p-19 text-light">
+                <%- d.value %>
+              </p>
+            </div>
+            <% }) %>
+        </div>
+      </div>
+    </div>
+    <div class="nav-area pt-2">
+      <ul class="nav nav_ d-flex flex-column">
+        <% _.each(data.profile_data, function(d){ %>
+          <li class="nav-item">
+            <div class="nav-link px-3 text-dark p-11 border border-secondary border-left-0 border-right-0 border-top-0">
+              <div class="row mx-0">
+                <div class="col-10 px-0">
+                  <p class="mb-0 p-13 font-weight-light color-purple">
+                    <%- d.name %>
+                  </p>
+                </div>
+                <div class="col-2 px-0 text-right">
+                  <p class="mb-0 font-weight-bold p-15 text-dark">
+                    <%- d.value %>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <% }) %>
+      </ul>
+    </div>
+  </div>
+</div>

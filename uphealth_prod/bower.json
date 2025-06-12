@@ -1,0 +1,22 @@
+{
+  "name": "anvesh",
+  "description": "install jQuery ui slider pips",
+  "main": ".eslintrc.js",
+  "authors": [
+    "anvesh.dasari"
+  ],
+  "license": "MIT",
+  "homepage": "login",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery-ui-Slider-Pips": "jquery-ui-slider-pips#^1.11.4",
+    "jquery-date-range-picker": "^0.20.0"
+  }
+}

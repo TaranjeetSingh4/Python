@@ -1,0 +1,165 @@
+<% var level_three = level_three_data ? true : false %>
+<% var unit = _.find(indicator_mapping, {indicator_name: indicator})['unit'] %>
+<% var decimal=_.filter(indicator_mapping,function(d){return d.indicator_name==indicator})[0].decimal %>
+<% if(indicator !== "aggregate_score") { %>
+<% var curr_perc_pnt_max= level_two_data['Amethi']==undefined? 'NA' : _.minBy(level_two_data['Amethi'], function(o) { return o.indicator_rank; }).indicator_rank; %>
+<% var curr_perc_pnt_min= level_two_data['Amethi']==undefined? 'NA' : _.maxBy(level_two_data['Amethi'], function(o) { return o.indicator_rank; }).indicator_rank; %>
+<% var pre_perc_pnt_max= (_.minBy(level_two_data['Amethi'], function(o) { return o.pre_indicator_rank; })==undefined)?0: _.minBy(level_two_data['Amethi'], function(o) { return o.pre_indicator_rank; }).pre_indicator_rank; %>
+<% var pre_perc_pnt_min= (_.maxBy(level_two_data['Amethi'], function(o) { return o.pre_indicator_rank; })==undefined)?0: _.maxBy(level_two_data['Amethi'], function(o) { return o.pre_indicator_rank; }).pre_indicator_rank; %>
+<% } else { %>
+<% var curr_comp_max= level_two_data['Amethi']==undefined? 'NA' : _.minBy(level_two_data['Amethi'], function(o) { return o.composite_rank; }).composite_rank; %>
+<% var curr_comp_min= level_two_data['Amethi']==undefined? 'NA' : _.maxBy(level_two_data['Amethi'], function(o) { return o.composite_rank; }).composite_rank; %>
+<% var pre_comp_max= (_.minBy(level_two_data['Amethi'], function(o) { return o.pre_composite_rank; })==undefined)?0: _.minBy(level_two_data['Amethi'], function(o) { return o.pre_composite_rank; }).pre_composite_rank; %>
+<% var pre_comp_min= (_.maxBy(level_two_data['Amethi'], function(o) { return o.pre_composite_rank; })==undefined)?0: _.maxBy(level_two_data['Amethi'], function(o) { return o.pre_composite_rank; }).pre_composite_rank; %>
+<%  } %>
+<% if (url.searchKey.indicator == undefined || url.searchKey.indicator === "aggregate_score"){ %>
+<% var col_dict = {'Curr. Month Block rank': 'composite_rank', 'Prev. Month Block rank': 'pre_composite_rank', 'Curr. Month Performance': 'monthly_score', 'Prev. Month Performance': 'pre_monthly_score', 'Blocks': 'block'} %>
+<% }else{ %>
+<% var col_dict = {'Curr. Month Block rank': 'indicator_rank', 'Prev. Month Block rank': 'pre_indicator_rank', 'Curr. Month Performance': 'monthly_score', 'Prev. Month Performance': 'pre_monthly_score', 'Blocks': 'block'} %>
+<% } %>
+<% view_type = type %>
+<!--snippet start-->
+<div class="border table-bg1 border-dark border-2 mb-2 h-300">
+  <div class="table-box">
+    <table class="left-tab table border-0 table-new mb-0">
+      <thead class="p-11 bg-table">
+        <tr>
+          <th scope="col" class="text-left border-0">
+            <div class="pl-1 py-2 border border-2 border-left-0 border-right-0 border-top-0 border-left-c h-67 text-uppercase sort-table cursor-pointer"
+            data-attr="block">Blocks<i class="mx-2 fa fa-sort"></i></div></th>
+          <th scope="col" class="text-center border-0">
+            <div class="py-2 border border-2 border-right-0 border-top-0 border-left-c h-67 border-bottom-c border-left-c text-uppercase sort-table cursor-pointer"
+            data-attr="<%- url.searchKey.indicator == undefined || url.searchKey.indicator === "aggregate_score" ? "composite_rank" : "indicator_rank" %>">CURR. MONTH BLOCK RANK<i class="mx-2 fa fa-sort"></i></div></th>
+          <th scope="col" class="text-center border-0">
+            <div class="py-2 border-2 border border-right-0 border-top-0 border-left-c h-67 border-bottom-c border-left-c border text-uppercase sort-table cursor-pointer"
+            data-attr="<%- url.searchKey.indicator == undefined || url.searchKey.indicator === "aggregate_score" ? "pre_composite_rank" : "pre_indicator_rank" %>">PREV. MONTH BLOCK RANK<i class="mx-2 fa fa-sort"></i></div></th>
+          <th scope="col" class="text-center border-0">
+            <div class="py-2 h-67 border border-2  border-right-0 border-top-0 border-left-c border-left-dark text-uppercase sort-table cursor-pointer"data-attr="monthly_score">CURR. MONTH PERFORMANCE<i class="mx-2 fa fa-sort"></i></div></th>
+          <th scope="col" class="text-center border-0">
+            <div class="py-2 border border-2 border-right-0 border-top-0 border-left-dark border-left-c h-67 text-uppercase sort-table cursor-pointer"data-attr="pre_monthly_score">PREV. MONTH PERFORMANCE<i class="mx-2 fa fa-sort"></i></div></th>
+          <th scope="col" class="text-center border-0">
+            <div
+              class="py-2 border border-2 border-right-0 border-top-0 border-left-dark border-left-c h-67 text-uppercase">
+              Trend
+              <p class="mb-0 d-flex justify-content-around"></p>
+                <% _.each(display_values, function(d) { %>
+                <% _.each(d.labels, function(item) { %>
+                <span class="text-uppercase p-10" id="<%-d.name%>-<%-item%>"><%-item%></span>
+                <% }) }) %>
+              </p>
+              </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="p-11 font-weight-bold">
+        <!--row-->
+        <tr>
+          <td scope="row" class="cursor-pointer text-left border-0"><div class="pl-1 cpy-10 border border-2 border-left-0 border-right-0 border-top-0 border-left-c flex-nowrap level-one amethi_block"
+            data-val="<%-slugify('Amethi')%>" data-attr="Amethi">Amethi District</div></td>
+          <td class="text-center border-0"><div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-c ">-</div></td>
+          <td class="text-center border-0"><div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-c">-</div></td>
+          <td class="text-center border-0"><div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-dark border-bottom-c"><% if (unit=='%'){ %>
+          <% if (url.searchKey.indicator == undefined || url.searchKey.indicator === "aggregate_score"){ %>
+          <%- level_two_data['Amethi'][0]['amethi_aggregate_score']== undefined ? 'NA' : numeral((level_two_data['Amethi'][0]['amethi_aggregate_score']*100/level_two_data['Amethi'][0]['weightage'])).format(decimal == undefined ? '0,0.0':decimal) + ' %' %>
+          <% }else{ %>
+          <%- level_two_data['Amethi']==undefined? 'NA' : numeral(_.sumBy(level_two_data['Amethi'], 'monthly_score') / level_two_data['Amethi'].length*100).format(decimal == undefined ? '0,0.0':decimal) + ' %' %>
+          <% } %>
+          <% }else{ %>
+          <% if (url.searchKey.indicator == undefined || url.searchKey.indicator === "aggregate_score"){ %>
+          <%- level_two_data['Amethi'][0]['amethi_aggregate_score']== undefined ? 'NA' : numeral((level_two_data['Amethi'][0]['amethi_aggregate_score']*100/level_two_data['Amethi'][0]['weightage'])).format(decimal == undefined ? '0,0.0':decimal) + ' %' %>
+          <% }else{ %>
+          <%- level_two_data['Amethi']==undefined? 'NA' : numeral(_.sumBy(level_two_data['Amethi'], 'monthly_score') / level_two_data['Amethi'].length).format(decimal == undefined ? '0,0.0':decimal) %>
+          <% } %>
+          <% } %>
+          </div></td>
+          <td class="text-center border-0"><div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-dark border-bottom-c"><% if (unit=='%'){ %>
+          <% if (url.searchKey.indicator == undefined || url.searchKey.indicator === "aggregate_score"){ %>
+          <%- level_two_data['Amethi'][0]['pre_amethi_aggregate_score']== undefined ? 'NA' : numeral((level_two_data['Amethi'][0]['pre_amethi_aggregate_score']*100/(level_two_data['Amethi'][0].pre_Weight_sum))).format(decimal == undefined ? '0,0.0':decimal) + ' %' %>
+          <% }else{ %>
+          <%- level_two_data["Amethi"]==undefined? 'NA' : (level_two_data["Amethi"][0].pre_monthly_score==undefined)?'NA':
+                        numeral(_.sumBy(level_two_data['Amethi'], 'pre_monthly_score') / level_two_data['Amethi'].length*100).format(decimal == undefined ? '0,0.0':decimal) + ' %' %>
+          <% } %>
+          <% }else{ %>
+          <% if (url.searchKey.indicator == undefined || url.searchKey.indicator === "aggregate_score"){ %>
+          <%- level_two_data['Amethi'][0]['pre_amethi_aggregate_score']== undefined ? 'NA' : numeral((level_two_data['Amethi'][0]['pre_amethi_aggregate_score']*100/(level_two_data['Amethi'][0].pre_Weight_sum))).format(decimal == undefined ? '0,0.0':decimal) + ' %' %>
+          <% }else{ %>
+          <%- level_two_data["Amethi"]==undefined? 'NA' : (level_two_data["Amethi"][0].pre_monthly_score==undefined)?'NA':
+                          numeral(_.sumBy(level_two_data['Amethi'], 'pre_monthly_score') / level_two_data['Amethi'].length).format(decimal == undefined ? '0,0.0':decimal)  %>
+          <% } %>
+          <% } %>
+          </div></td>
+          <td class="text-center border-0"><div class="cpy-10 border-bottom-c border-left-c  border border-2  border-right-0 border-top-0"
+            id="trend_<%-slugify('StsLkYw1G0m')%>" data-val="<%-slugify('Amethi')%>" data-attr="Amethi"><%- %></div></td>
+        </tr>
+        <% _.each(level_two_data['Amethi'],  function(row) { %>
+        <tr>
+          <td scope="row" class="text-left border-0">
+            <div class="cursor-pointer pl-1 cpy-10 border border-2 border-left-0 border-right-0 border-top-0 border-left-c flex-nowrap block-name level-one"
+            data-val="<%-slugify(row.block)%>" data-attr="<%-row.block%>">
+              <%- row.block %>
+              </div>
+            </td>
+            <td class="text-center border-0">
+              <div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-c ">
+                <%- url.searchKey.indicator == undefined || url.searchKey.indicator === "aggregate_score" ? row['composite_rank']:row['indicator_rank'] %>
+              </div>
+            </td>
+            <td class="text-center border-0">
+              <div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-c">
+                <%- url.searchKey.indicator == undefined || url.searchKey.indicator === "aggregate_score"  ?(row['pre_composite_rank']==undefined)?'NA' :row['pre_composite_rank']:(row['pre_indicator_rank']==undefined)?'NA' :row['pre_indicator_rank']%>
+              </div>
+            </td>
+            <td class="text-center border-0">
+              <div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-dark border-bottom-c color-cell"
+              value="<%- (url.searchKey.indicator!=undefined && url.searchKey.indicator !== "aggregate_score")? level_two_data['Amethi']==undefined? 'NA' : row['indicator_rank'] : (url.searchKey.indicator==undefined || url.searchKey.indicator === "aggregate_score") ? row['composite_rank']==undefined? 'NA' : row['composite_rank'] : ' '  %>"
+                domain-attr="<%- (url.searchKey.indicator==undefined || url.searchKey.indicator === "aggregate_score") ? curr_comp_max :
+                (url.searchKey.indicator!=undefined && url.searchKey.indicator !== "aggregate_score")? curr_perc_pnt_max : ' '  %>"
+                domain-attr_min="<%-  (url.searchKey.indicator==undefined || url.searchKey.indicator === "aggregate_score") ? curr_comp_min :
+                (url.searchKey.indicator!=undefined || url.searchKey.indicator !== "aggregate_score")? curr_perc_pnt_min : ' '  %>"
+              >
+                <% if (unit=='%'){ %>
+                <%- url.searchKey.indicator==undefined || url.searchKey.indicator === "aggregate_score"? numeral((row['monthly_score']/(level_two_data['Amethi'][0]['weightage']*100))*100*100).format(decimal == undefined ? '0,0.0':decimal) + ' %' :numeral((row['monthly_score'])*100).format(decimal == undefined ? '0,0.0':decimal) + ' %' %>
+                <% }else{ %>
+                <%- url.searchKey.indicator==undefined || url.searchKey.indicator === "aggregate_score"? numeral((row['monthly_score']/(level_two_data['Amethi'][0]['weightage']*100))*100).format(decimal == undefined ? '0,0.0':decimal) :numeral((row['monthly_score'])).format(decimal == undefined ? '0,0.0':decimal) %>
+                <% } %>
+                </div>
+            </td>
+            <td class="text-center border-0">
+              <div class="cpy-10 border border-2  border-right-0 border-top-0 border-left-dark border-bottom-c color-cell"
+              value="<%- (url.searchKey.indicator!=undefined && url.searchKey.indicator !== "aggregate_score")? row['pre_indicator_rank'] : (url.searchKey.indicator==undefined || url.searchKey.indicator === "aggregate_score")? row['pre_composite_rank'] : ' '  %>"
+                domain-attr="<%- (url.searchKey.indicator==undefined || url.searchKey.indicator === "aggregate_score")? pre_comp_max :
+                (url.searchKey.indicator!=undefined && url.searchKey.indicator !== "aggregate_score")? pre_perc_pnt_max: ' '  %>"
+                domain-attr_min="<%- (url.searchKey.indicator==undefined || url.searchKey.indicator === "aggregate_score")? pre_comp_min :
+                (url.searchKey.indicator!=undefined || url.searchKey.indicator !== "aggregate_score")? pre_perc_pnt_min: ' '  %>"
+              >
+                <% if (unit=='%'){ %>
+                <%- url.searchKey.indicator==undefined || url.searchKey.indicator === "aggregate_score"? (row['pre_monthly_score']==undefined)?'NA' :numeral((row['pre_monthly_score']/(level_two_data['Amethi'][0].pre_Weight_sum*100))*100*100).format(decimal == undefined ? '0,0.0':decimal) + ' %' : (row['pre_monthly_score']==undefined)?'NA' :numeral((row['pre_monthly_score'])*100).format(decimal == undefined ? '0,0.0':decimal) +' %' %>
+                <% }else{ %>
+                <%- url.searchKey.indicator==undefined || url.searchKey.indicator === "aggregate_score"?(row['pre_monthly_score']==undefined)?'NA' : numeral((row['pre_monthly_score']/(level_two_data['Amethi'][0].pre_Weight_sum*100))*100).format(decimal == undefined ? '0,0.0':decimal) : (row['pre_monthly_score']==undefined)?'NA' :numeral((row['pre_monthly_score'])).format(decimal == undefined ? '0,0.0':decimal) %>
+                <% } %>
+              </div>
+            </td>
+            <td class="text-center border-0">
+              <div class="cpy-10 border-bottom-c border-left-c  border border-2  border-right-0 border-top-0 trend"
+              id="trend_<%-slugify(row.block_id)%>"
+              ></div>
+            </td>
+          </tr>
+          <% setTimeout(function() { %>
+          <%  var config = { unit: unit,decimal: decimal,id: "trend_"+slugify(row.block_id),width: "150",height:"20",margin:{left: 5, top:5,bottom: 3,right:5},parseTime:parsetime,data:area_data[row.block_id]};area_chart(config); %>
+          <% },1000) %>
+          <% }) %>
+          <!--row end-->
+      </tbody>
+    </table>
+  </div>
+</div>
+<!-- <div class="sm2 font-weight-bold text-dark font-italic negative_indication m-2">This is Negative Indicator</div> -->
+<!--snippet end-->
+<% let unit_type = '%' %>
+<% if (url.searchKey.indicator !== undefined && url.searchKey.indicator !== "aggregate_score") {
+  unit_type = _.find(indicator_mapping, { 'indicator_name': url.searchKey['indicator'] })['unit']
+} %>
+<% setTimeout(function() { %>
+<%  var config = { 'unit': unit_type,decimal: decimal, id: "trend_"+slugify('StsLkYw1G0m'),width: "120",height:"20",margin:{left: 5, top:5,bottom: 3,right:5},parseTime:parsetime,data:district_map['StsLkYw1G0m']};area_chart(config); %>
+<% },1000) %>

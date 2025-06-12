@@ -1,0 +1,105 @@
+<link rel="stylesheet" href="comic_styles/style2.css">
+<div class="block-summary">
+  <div class='BlocksPerformanceInAgraWorstCopy w-334 h-192 tracking-zero text-grey0 bg-white'>
+    <img class='BlocksPerformanceInAgraWorstCopy-panelBg w-1318px' src='assets/images/panel_bg_3.png' alt="icon">
+    <div class='Panel w-322px h-703px text-15 leading-21 font-digi-bb font-bold'>
+      <div class='Panel1 w-322px h-379px italic'>
+        <img class='Panel1-pgPanelFigure w-182px' src='assets/images/pg_2_panel_1_figure_b3f04b.png' alt="icon">
+        <p class='Panel1-iSeeIWillCheck uppercase'>
+          I see. I will check the other bottom performing indicators on the dashboard later.
+          Let’s <span class="hilight">focus on the poor performing indicator and the blocks that are responsible</span>
+          for this.
+        </p>
+        <img class='Panel1-panelLine w-11' src='assets/images/panel_1_line_8044e2.png' alt="icon">
+      </div>
+      <!-- <img class='Panel-kpiCard w-295px' src='assets/images/kpi_card_2.png'> -->
+      <div class="Panel-kpiCard font-robo">
+        <div class="border-light p-2 col-sm-7 font-robo mt-1 bg-white">
+          <p class="mb-0 fs-18 text-center font-weight-bold px-5">Score of “<%= short_indicators[worst_indicator.indicator_name] %>”, <%= dname %> Vs. UP</p>
+          <table class="table table-borderless mb-0 w-full agras-table mt-3">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-color2 fs-14 align-middle py-3 text-left"><%= dname %> Performance</th>
+                  <th scope="col" class="text-color2 fs-14 align-middle py-3 text-center">UP Average</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="align-middle text-center py-3 border-right-1">
+                    <div class="items-center text-color2 fw-500 mb-3">
+                      <div class="fs-14 ls-1 mb-3"><%= curr_mn %> Score</div>
+                      <% var district_avg_diff = (district_avg[1].month_wise - district_avg[0].month_wise).toFixed(2) %>
+                      <div class="d-flex items-center text-color2 text-2xl fw-500"><%= district_avg[1].month_wise.toFixed(2) %> <span class="<%- district_avg_diff > 0 ? 'bg-success' : 'bg-failure' %> rounded-full mx-2 circle-1"></span> <span class="fs-14 text-color3">(<%- district_avg_diff >= 0 ? '+' : ''%><%= district_avg_diff %>%)</span></div>
+                    </div>
+                  </td>
+                  <td class="align-middle text-center py-3 pl-3">
+                      <div class="items-center text-color2 fw-500 mb-3">
+                        <div class="fs-14 ls-1 mb-3"><%= curr_mn %> Score</div>
+                        <% var up_avg_diff = (up_avg_curr_mnth.up_avg - up_avg_prev_mnth.up_avg).toFixed(2) %>
+                        <div class="d-flex items-center text-color2 text-2xl fw-500"><%= up_avg_curr_mnth.up_avg.toFixed(2) %><span class="<%- up_avg_diff > 0 ? 'bg-success' : 'bg-failure' %> rounded-full mx-2 circle-1"></span> <span class="fs-14 text-color3">(<%- up_avg_diff >= 0 ? '+' : ''%><%= up_avg_diff %>%)</span></div>
+                      </div>
+                    </td>
+                </tr>
+                <tr>
+                  <td class="align-middle text-center py-3 border-right-1">
+                      <div class="items-center text-color2 fw-500">
+                        <div class="fs-14 ls-1 mb-3"><%= prev_mn %> Score</div>
+                        <div class="text-color2 text-2xl fw-500"><%= district_avg[0].month_wise.toFixed(2) %></div>
+                      </div>
+                    </td>
+                  <td class="align-middle text-center py-3">
+                    <div class="items-center text-color2 fw-500">
+                      <div class="fs-14 ls-1 mb-3"><%= prev_mn %> Score</div>
+                      <div class="text-color2 text-2xl fw-500"><%= up_avg_prev_mnth.up_avg.toFixed(2) %></div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+    <% metric = negative_indicators.includes(worst_indicator.indicator_name) ? 'above' : 'below' %>
+    <% metric2 = negative_indicators.includes(worst_indicator.indicator_name) ? 'top' : 'bottom' %>
+    <div class='Panel2 w-299px h-739px text-15 leading-21 font-digi-bb font-bold italic uppercase'>
+      <p class='Panel2-sureForRatioOf'>
+        Sure! For “<%= short_indicators[worst_indicator.indicator_name] %>”, <span class="hilight"><%= reduced_performance.length %> Out of the <%= total_blocks %></span> blocks in <%= dname %>
+        <span class="hilight">performing <%= metric %> district average</span> in <%= curr_mn %> <%= curr_yr %> compared to <%= dname %> (Overall)<% if(reduced_performance.length > 0) { %>, with <span class="hilight"><%= least_blocks %></span> at the <%= metric2 %> <% } %>.
+      </p>
+      <% if(reduced_performance.length > 0) { %>
+      <p class='Panel2-letMeCheckWithTh top-175'>
+        Let me analyse the detailed factor and prepare the action plan in conversation with
+        MOIC of <%= least_blocks %> and I will be looking for
+        the decision taken in The review meeting
+      </p>
+      <% } %>
+      <img class='Panel2-panelFigureBody w-244px top-auto bottom-0' src='assets/images/panel_2_figure_body.png' alt="icon">
+      <img class='Panel2-panelLine w-11 custom-lefttop' src='assets/images/panel_2_line_2.png' alt="icon">
+      <img class='Panel2-panelLine1 w-11' src='assets/images/panel_2_line_1.png' alt="icon">
+    </div>
+    <img class='BlocksPerformanceInAgraWorstCopy-panelFigureHead w-84 worstcopy' src='assets/images/panel_2_figure_head.png' alt="icon">
+    <!-- if page 2 worst indicator is not present in page 3 worst indicator we will show this message.
+    some of the indicators are only present in the district level -->
+    <% if(short_indicators[page2_indicator].toUpperCase() != short_indicators[worst_indicator.indicator_name].toUpperCase()) { %>
+      <p class='BlocksPerformanceInAgraWorstCopy-forMoreDetailsPl text-12 leading-default font-robo font-normal'>
+        Note: <b>"Poor performance indicator not present at block level hence, Next poor performing indicator has been displayed"</b>
+      </p>
+    <% } %>
+    <!-- <img class='BlocksPerformanceInAgraWorstCopy-chart w-623px' src='assets/images/chart_4.png'> -->
+    <div class="BlocksPerformanceInAgraWorstCopy-chart w-623px custom-h-1">
+      <div class="border-7 p-2 col-sm-8 bg-white">
+        <p class="mb-0 fs-18 text-center font-bold px-5">Block wise comparison with previous year data for ‘<%= short_indicators[worst_indicator.indicator_name] %>’, <%= dname %></p>
+        <div class="d-flex justify-between mt-8 mb-2 px-3">
+          <div class="text-color2 fs-14 fw-500 align-middle py-2">Blocks in <%= dname %> (<%= total_blocks %>)</div>
+          <div class="text-color2 fs-14 fw-500 align-middle py-2 d-flex items-center mr-3">
+            <span class="border border-grey1 rounded-full circle-2 mr-2 block"></span><span class="mr-5"><%= curr_mn%> <%= prev_yr%></span>
+            <span class="border border-grey1 bg-grey1 rounded-full circle-2 mr-2 block"></span><span><%= curr_mn %> <%= curr_yr %></span>
+          </div>
+
+          <div class="text-color2 fs-14 fw-500 align-middle py-2">Change %</div>
+        </div>
+        <div class="dumbell_chart"></div>
+      </div>
+    </div>
+  </div>
+</div>

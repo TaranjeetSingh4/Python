@@ -1,0 +1,64 @@
+<div class="card bg-white border-0 shadow py-0">
+  <div class="arrows">
+    <a class="position-absolute top-40 left-n-1 z-index-1 leftarrow cursor-pointer <%- (url.searchKey.slide || 0) == 0 ? 'd-none' : ''%>"><img src="img/left-icon.svg" alt="leftarrow" /></a>
+    <a class="position-absolute top-40 right-n-1 z-index-1 rightarrow cursor-pointer <%- (url.searchKey.slide || 0) == _.size(ind_data)-1 ? 'd-none' : '' %>"><img src="img/right-icon.svg" alt="rightarrow" /></a>
+  </div>
+  <div class="d-flex border-bottom border-color-11">
+    <div class="col-2 border-right border-color-11 py-2"></div>
+    <% _.each(indicator_data, function(ind) { %>
+    <div class="text-secondary col border-right border-color-11 py-2">
+      <span class="h3 font-weight-bold lh-16"><span class="sm3"><%- ind.indicator_name %></span></span>
+      <span class="h5 border-radius-5 badge bg-color-1 text-white mb-0 p-1 font-10"><%- ind.class %></span>
+    </div>
+    <% }) %>
+  </div>
+  <div class="d-flex border-bottom border-color-12 bg-alt-class">
+    <div class="col-2 border-right border-color-11 font-italic text-secondary h4 mb-0 text-middle py-2"><span class="sm3">UP - AVERAGE</span></div>
+    <% _.each(indicator_data, function(_up) { %>
+      <div class="col border-right border-color-12 font-italic <%- (_up.avg) ? 'text-info' : 'text-color-19' %> h4 mb-0 text-center text-middle py-2"><span class="sm3"><%- isFinite(_up.avg) ? _up.avg.toFixed(2) : 'NA' %></span></div>
+    <% }) %>
+  </div>
+  <div class="d-flex border-bottom border-color-12 bg-alt-class">
+    <div class="col-2 border-right border-color-11 font-italic text-color-1 h4 mb-0 text-middle py-2 pr-0"><span class="sm3">BEST PERFORMING <%- _.toUpper(compare_type) %></span></div>
+    <% _.each(indicator_data, function(perf) { %>
+    <div class="col border-right border-color-12 font-italic <%- perf.best ? 'text-color-1' : 'text-color-19' %> h4 mb-0 text-center text-middle py-2"><span class="sm3"><%- perf.best_dist %> <%- isFinite(perf.best) ? '-' : 'NA' %> <%- isFinite(perf.best) ? perf.best.toFixed(2) : '' %></span></div>
+    <% }) %>
+  </div>
+  <div class="hiden-scroll-moz"> <!--hack for mozilla -->
+    <div class="custom-scroll-1 overflow-auto mb-5 fadeInRight">
+      <% _.each(region, function(key) { %>
+        <div class="d-flex border-bottom border-color-12 bg-alt-class">
+          <div class="col-2 border-right border-color-11 text-middle py-2">
+            <div class="w-75 text-middle">
+                <div class="text-secondary display-3 font-weight-bold"><div class="sm5"><%- key %></div></div>
+                <div class="text-secondary opacity-50 h5 "><span class="sm3 score_data text-uppercase">JUL-19 to DEC-19</span></div>
+            </div>
+          </div>
+          <% var get_dist_data = data[key] %>
+          <% _.each(indicator_data, function(d) { %>
+            <% var temp = _.find(get_dist_data, function(d1){ return d1.indicator_id == d.indicator_id }) %>
+            <div class="col border-right border-color-12 py-2">
+              <div class="d-flex align-items-start justify-content-between my-3">
+                <div class="h4 mb-0">
+                  <div class="text-secondary sm3 mb-1"><span class="<%- (temp && _.isFinite(temp.up_avg_change)) ?  (temp.up_avg_change >= d.avg ? 'text-color-16' : 'text-color-17') : 'text-color-19' %> font-weight-600"><%- (temp && _.isFinite(temp.up_avg_change)) ?  Math.abs(temp.up_avg_change.toFixed(2)) : 'NA' %></span> wrt. UP Avg.</div>
+                  <div class="text-secondary sm3"><span class="<%- (temp && _.isFinite(temp.dist_best_change)) ?  (temp.dist_best_change >= d.best ? 'text-color-16' : 'text-color-17') : 'text-color-19' %> font-weight-600"><%- (temp && _.isFinite(temp.dist_best_change)) ? Math.abs(temp.dist_best_change.toFixed(2)) : 'NA' %></span> Best Perf. Dist</div>
+                </div>
+                <div class="display-2 mt-n1 text-right">
+                  <div class="sm5 font-weight-bold color-cell" data-max="100"><%- (temp && _.isFinite(temp.value)) ? temp.value.toFixed(2) : 'NA' %></div>
+                </div>
+              </div>
+              <!--image -->
+              <div class="chart pa-area-chart <%- slug_(key+' '+d.indicator_id) %>">
+                <% if(chart_data[key] && chart_data[key][d.indicator_id]) { %>
+                <% setTimeout(function() { %>
+                  <% var _data = chart_data[key][d.indicator_id]; render_area_chart(_data, slug_(key+' '+d.indicator_id)); %>
+                <% },250) %>
+                <% } %>
+              </div>
+            </div>
+          <% }) %>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</div>

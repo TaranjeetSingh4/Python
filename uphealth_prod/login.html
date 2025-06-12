@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>UP-TSU</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/login_bootstrap.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" type="text/css" href="ui/noty/lib/noty.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="background-gradient bg-no-repeat small m-0 p-0 mx-auto vh-100">
+  <section class="main in vh-100 w-80 mx-auto">
+    <div class="container-fluid vh-100 py-3 px-5 px-md-5 py-md-3 position-relative">
+      <div class="login-input h-100">
+        <div class="admin-names">
+          <div class="d-flex ">
+            <div class="col-4 px-0 bg-shadow-black text-white p-4 position-relative ">
+              <div class="h-100 align-self-center pt-2">
+              <h5 class="mb-0 font-weight-bold text-uppercase">UTTAR PRADESH </h5>
+              <h5 class="mb-0 font-weight-light text-uppercase">Health Dashboard</h5>
+            </div>
+          </div>
+            <div class="col-8 px-0 align-self-md-center py-2 bg-rgba-black">
+              <div class="d-flex justify-content-center text-center">
+                <div class="px-5">
+                  <img src="img/cm_yogi.png" alt="Hon'ble Chief Minister, U.P." height="70px">
+                  <p class="mb-0 font-weight-bold p-14 line-height-1 text-white pt-1">Shri Yogi Adityanath</p>
+                  <p class="mb-0 font-weight-light p-12 text-white">Hon'ble Chief Minister, U.P.</p>
+                  </div>
+                  <div class="px-5">
+                  <img src="img/shribrijeshpathak.png" alt="Hon’ble Deputy Chief Minister" height="70px">
+                  <p class="mb-0 font-weight-bold p-14 line-height-1 text-white pt-1">Shri Brajesh Pathak</p>
+                  <p class="mb-0 font-weight-light p-12 text-white">Hon’ble Deputy Chief Minister,
+                  Medical Health & Family Welfare Department</p>
+                  </div>
+                  <div class="px-5">
+                  <img src="img/shrimayankeshwar.png" alt="Hon’ble Minister" height="70px">
+                  <p class="mb-0 font-weight-bold p-14 line-height-1 text-white pt-1">Shri Mayankeshwar Singh</p>
+                  <p class="mb-0 font-weight-light p-12 text-white">Hon’ble Minister, Medical Health & Family Welfare Department</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-lg-flex row mx-0 pt-2">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 px-md-0 ">
+            <div class="card text-center h-100 bg-white pt-3 pb-1 px-4 border-0 rounded-0">
+              <div class="card-body text-white p-0">
+                <form method="POST" autocomplete="on" id="loginform">
+                  <input type="hidden" autocomplete="off" name="_xsrf" value="{{ handler.xsrf_token }}">
+                  <div class="row">
+                    <div class="col-12 text-left">
+                      <button type="text" class="bg-transparent text-capitalize text-danger h6 mb-0 border-0 invalid_text d-none">Invalid Credentials!</button>
+                      <p class="text-dark ml-2 p-10 invalid_msg d-none"> Please re-enter username and password. Response will be delayed by 1 min after 5 invalid login attempts. </p>
+                      <button type="text" class="bg-transparent font-weight-bold text-uppercase text-dark h6 mb-0 border-0">log in</button>
+                    </div>
+                  </div>
+                  <div class="card-login pt-1">
+                    <div class="input-group">
+                      {% if error %}
+                      <input name="user" type="text" autocomplete="off" class="username form-control border border-danger py-3 px-2 rounded-0 border-top-0 border-left-0 border-right-0" placeholder="Username" autofocus aria-label="Username" required> {% else %}
+                      <input name="user" type="text" autocomplete="off" class="username form-control border py-3 px-2 rounded-0 border-top-0 border-left-0 border-right-0" placeholder="Username" autofocus aria-label="Username" required> {% end %}
+                    </div>
+                    <div class="input-group mt-2">
+                      {% if error %}
+                      <input id="inputPassword" name="password" type="password" class="password form-control border border-danger  px-2 py-3 rounded-0 border-top-0 border-left-0 border-right-0" placeholder="Password" aria-label="Password" autocomplete="off" required> {% else %}
+                      <input id="inputPassword" name="password" type="password" class="password form-control border py-3 px-2 border-top-0 border-left-0 border-right-0 rounded-0" placeholder="Password" aria-label="Password" autocomplete="off" required> {% end %}
+                    </div>
+                    <div class="form-group form-check pl-0 text-left mt-2 mb-0">
+                      <input type="checkbox" checked="checked" name="remember" value="remember-me" id="remember_me">
+                      <label class="text-dark" for="remember_me">Remember me</label>
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <div class="d-flex justify-content-between">
+                      <div class="w-50 mx-auto py-2 px-0 text-left" id="reset">
+                        <a href="#" class="text-capitalize text-secondary p-12 font-italic cursor-pointer nav-link p-0">Forgot Password</a>
+                      </div>
+                      <div class="w-50 mx-auto py-2 px-0 text-right" id="register">
+                        <a href="register" class="text-capitalize text-secondary p-12 font-italic cursor-pointer nav-link p-0">Register</a>
+                      </div>
+                    </div>
+                    <div class="form-group h4 lh-2">
+                      <p class="text-danger sm3 my-2 captcha_msg position-absolute mt-n2 d-none">please retry captcha</p>
+                      <input  autocomplete="off" type="text" class="form-control border py-3 px-2 rounded-0 border-top-0 border-left-0 border-right-0"
+                        name="captcha" id="captcha" placeholder="Captcha" autofocus required>
+                    </div>
+                    <div class="row">
+                      <div class="col-5">
+                        <img id="captcha_img" height="45" class="w-100" src="#" alt="captcha-img">
+                      </div>
+                      <div class="col-2 p-0">
+                        <img src="img/refresh.png" height="45" class="w-90 btn" id="captcha-reload" alt="reload-icon">
+                      </div>
+                    </div>
+                    <div class="w-100 mx-auto">
+                      <button type="submit" class="col-12 mx-auto text-white rounded-0 border border-secondary bg-secondary py-2 h6 mb-1 cursor-pointer text-uppercase" id="signin" disabled>sign in</button>
+                    </div>
+                    <div class="d-flex pl-0 mb-0 justify-content-between pt-2">
+                      <img src="img/nhm-logo-2.png" alt="uttar-pradesh-government" width="80" height="80" class=" text-center">
+		      <div>
+           		 <div class="my-2">
+                 		 <a href="https://play.google.com/store/apps/details?id=com.nhm.uptsu" rel="noopener" target="_blank" style="color:white;background-color:#293d3d; padding:10px 10px;font-size:10px; "><span><i class="fa-brands fa-google-play"></i></span> Play Store</a>
+             		 </div>
+              		 <div class="mt-3">
+                    		 <a href="https://apps.apple.com/us/app/up-health-dashboard/id6459793519"  rel="noopener" target="_blank" style="color:white ;background-color:#293d3d; padding:10px 7px; font-size:10px"><span><i class="fa-brands fa-apple"></i></span>  Apple Store</a>
+                 	 </div>
+		      </div>
+                      <img src="img/nhm-logo-1.png" alt="uttar-pradesh-government"  height="80" class=" text-center">
+                    </div>
+                    <div class="privacy-statement pt-2 d-flex justify-content-between">
+                      <a class="text-dark" href="privacy" rel="noopener" target="_blank">Privacy Statement</a>
+<!--                      <a href="https://play.google.com/store/apps/details?id=com.nhm.uptsu" rel="noopener">Download APK</a> -->
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-8 px-md-0 ">
+            <div class="card text-center p-4 border-0 rounded-0 bg-image h-100">
+              <div class="card-body text-white p-0">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner custom-height">
+                    <div class="carousel-item active">
+                      <div class="">
+                        <img src="img/s1.png" alt="icon-4" height="270px">
+                      </div>
+                      <div class="text-center">
+                        <h6 class="font-weight-light mb-0">"SMART way to track </h6>
+                        <h6 class="font-weight-bold text-uppercase mb-0 py-2">Health Service performance</h6>
+                        <h6 class="font-weight-light mb-0">across the state"</h6>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="p-12">
+                        <div class="text-center pb-2">
+                          <p class="mb-0">Android and web-based dashboard,</p>
+                          <p class="mb-0">compatible on mobile phone,</p>
+                          <p class="mb-0 pb-2"> tabs and desktop devices.</p>
+                          <img src="img/r1.svg" alt="icon">
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <div class="">
+                            <div class="text-right mb-4 d-flex justify-content-end">
+                              <div class="pr-3 align-self-md-center">
+                                <p class="mb-0">Interactive GIS based</p>
+                                <p class="mb-0"> visualisation.</p>
+                              </div>
+                              <div class="align-self-md-center">
+                                <img src="img/r2.svg" alt="icon">
+                              </div>
+                            </div>
+                            <div class="text-right d-flex justify-content-end">
+                              <div class="pr-3 d-flex flex-wrap align-self-md-center justify-content-end health-indicator">
+                                Health indicators ranking and scores being tracked with help of monthly reports, ad hoc analysis and monthly bulletin.
+                              </div>
+                              <div class="align-self-md-start">
+                                <img src="img/r4.svg" alt="icon">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="text-center align-self-md-center px-3">
+                            <img src="img/center-3.png" alt="icon">
+                          </div>
+                          <div class="">
+                            <div class="text-left mb-4 d-flex justify-content-start">
+                              <div class="align-self-md-center">
+                                <img src="img/r3.svg" alt="icon">
+                              </div>
+                              <div class="d-flex flex-wrap align-self-md-center justify-content-start health-indicator">
+                                <p class="mb-2 pl-3 text-left">Comprehensive dashboard using multiple data-sources</p>
+                              </div>
+                            </div>
+                            <div class="text-left d-flex">
+                              <div class="align-self-md-start">
+                                <img src="img/r10.svg" alt="icon">
+                              </div>
+                              <div class="d-flex flex-wrap align-self-md-center justify-content-start health-indicator">
+                                <p class="mb-0 pl-3 text-left">Drill-down facility available till blocks for all the indicators. Comparison of performances geography and time-period wise.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-center">
+                          <img src="img/r11.svg" alt="icon">
+                          <p class="mb-0 pt-2">Textual insights</p>
+                          <p class="mb-0"> making dashboard more explanatory </p>
+                          <p class="mb-0">and easing decision-making.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="pb-3 pt-4">
+                        <img src="img/s3.png" alt="icon-4" >
+                      </div>
+                      <div class="text-center">
+                        <h6 class="font-weight-light mb-2">Explore the performance on the map and visually  </h6>
+                        <h6 class="font-weight-light mb-0">identify Top and Bottom performing geographies</h6>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="pb-3">
+                        <img src="img/s4.png" alt="icon-4">
+                      </div>
+                      <div class="text-center">
+                        <h6 class="font-weight-light mb-1">Explore and Deep dive into indicators and </h6>
+                        <h6 class="font-weight-light mb-0">Geographies and evaluate performace across UP</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-0">
+                    <ol class="carousel-indicators mr-0 justify-content-end mb-0">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reset-password h-75 d-none">
+        <div class="d-flex h-100 row">
+          <div class="align-self-md-center col-12 col-sm-12 col-md-8 col-lg-4 mx-auto">
+            <div class="card text-center p-4">
+              <div class="card-body text-white p-0">
+                <form method="POST">
+                  <input type="hidden" name="_xsrf" value="{{ handler.xsrf_token }}">
+                  <div class="row">
+                    <div class="col-12 text-center mb-2">
+                      <button type="submit" class="bg-transparent font-weight-bold text-capitalize text-dark h4 mb-0 border-0">Forgot Password</button>
+                    </div>
+                  </div>
+                  <div class="card-login py-3">
+                    <div class="input-group">
+                      <input name="phonenumber" id="phonenumber" type="text" class="phonenumber form-control border custom-color-login py-3 rounded-0" placeholder="Mobile Number" aria-label="Phonenumber" autocomplete="off" required>
+                    </div>
+                  </div>
+                  <div class="footer pt-2">
+                    <div class="w-100 mx-auto">
+                      <button type="submit" class="col-12 mx-auto rounded-0 border border-warning bg-transparent text-capitalize text-warning py-3 h6 mb-0 cursor-pointer" id="send-otp">Send OTP</button>
+                    </div>
+                    <div class="w-50 mx-auto p-3 text-center" id="login">
+                      <a href="#" class="text-capitalize text-warning p-12 font-italic cursor-pointer nav-link p-0">Login</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="ui/jquery/dist/jquery.min.js"></script>
+  <script src="ui/popper.js/dist/umd/popper.min.js"></script>
+  <script src="ui/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="ui/noty/lib/noty.min.js"></script>
+  <script src="ui/g1/dist/g1.min.js"></script>
+  <script src="node_modules/crypto-js/crypto-js.js"></script>
+  <script src="js/login.js"></script>
+</body>
+<script>
+  /* global */
+  // CryptoJS
+  // $(document).on("submit", "#loginform", function() {
+  //   var pass = document.getElementById("inputPassword").value
+  //   document.getElementById("inputPassword").value = CryptoJS.SHA256(pass).toString()
+  // })
+
+  var hours = 45*24*60*60*1000 // Reset when storage is more than 24hours
+  var now = new Date().getTime()
+  var setupTime = localStorage.getItem('setupTime')
+  if (setupTime == null) {
+      localStorage.setItem('setupTime', now)
+    } else {
+      if (now - setupTime > hours) {
+        localStorage.clear()
+        localStorage.setItem('setupTime', now)
+      }
+    }
+  if (localStorage.chkbx && localStorage.chkbx != '') {
+      $('#remember_me').attr('checked', 'checked')
+      $('.username').val(localStorage.usrname)
+      $('.password').val(localStorage.pass)
+    } else {
+      $('#remember_me').removeAttr('checked')
+      $('.username').val('')
+      $('.password').val('')
+    }
+    $('#remember_me').click(function () {
+      if ($('#remember_me').is(':checked')) {
+        // save username and password
+        localStorage.usrname = $('.username').val()
+        localStorage.pass = $('.password').val()
+        localStorage.chkbx = $('#remember_me').val()
+      } else {
+        localStorage.usrname = ''
+        localStorage.pass = ''
+        localStorage.chkbx = ''
+      }
+    })
+</script>
+</html>

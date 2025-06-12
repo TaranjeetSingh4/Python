@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="124px" height="13px" viewBox="0 0 124 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 59.1 (101010) - https://sketch.com -->
+    <title>156DB058-B2AC-4A32-BC95-DCE2974AD7BA@1x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="124" height="13" rx="6.5"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="RWRK_OUtcome-DistrictPerformance" transform="translate(-1079.000000, -131.000000)">
+            <g id="Total-COntainer" transform="translate(40.000000, 36.000000)">
+                <g id="Right-Container" transform="translate(384.000000, 0.000000)">
+                    <g id="MAP" transform="translate(24.000000, 85.000000)">
+                        <g id="legend" transform="translate(631.000000, 10.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Rectangle" fill="#EACCC8" xlink:href="#path-1"></use>
+                            <rect id="Rectangle" fill="#CC5C5C" mask="url(#mask-2)" x="0" y="0" width="42" height="13" rx="6.5"></rect>
+                            <rect id="Rectangle" fill="#E17A7A" mask="url(#mask-2)" x="27" y="0" width="23" height="13" rx="6.5"></rect>
+                            <rect id="Rectangle" fill="#EFA286" mask="url(#mask-2)" x="39" y="0" width="23" height="13" rx="6.5"></rect>
+                            <rect id="Rectangle" fill="#F0D07F" mask="url(#mask-2)" x="52" y="0" width="23" height="13" rx="6.5"></rect>
+                            <rect id="Rectangle" fill="#B1CA7A" mask="url(#mask-2)" x="65" y="0" width="23" height="13" rx="6.5"></rect>
+                            <rect id="Rectangle" fill="#6CBB71" mask="url(#mask-2)" x="78" y="0" width="23" height="13" rx="6.5"></rect>
+                            <rect id="Rectangle" fill="#3F9F57" mask="url(#mask-2)" x="91" y="0" width="51" height="13" rx="6.5"></rect>
+                            <text id="LOW" mask="url(#mask-2)" font-family="OpenSans-SemiBold, Open Sans" font-size="9" font-weight="500" line-spacing="12" fill="#FFFFFF">
+                                <tspan x="4.5" y="10">LOW</tspan>
+                            </text>
+                            <text id="HIGH" mask="url(#mask-2)" font-family="OpenSans-SemiBold, Open Sans" font-size="9" font-weight="500" line-spacing="12" fill="#FFFFFF">
+                                <tspan x="97" y="10">HIGH</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

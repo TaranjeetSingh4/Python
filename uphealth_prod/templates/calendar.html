@@ -1,0 +1,71 @@
+<div class="cal_wid pos-tr m-3 p-3">
+  <div class="card no-border-radius h-50 border-0 bg-primary pt-3 align-self-center">
+    <div class="container-fluid h-50">
+      <!--calendar-top-->
+      <span class="text-right cursor-pointer p-14 m-2" id="close-cal">
+        <i class="fa fa-close float-right text-white"></i>
+      </span>
+      <!--calendar-year-->
+      <div class="card-title mb-0 cal-bg py-2 no-border-radius border-0 px-0 mt-10 calendar_header_class">
+        <div class="row mx-0">
+          <div class="col-2 text-left text-light">
+            <p class="mb-0 fa fa-chevron-left float-left color-light pl-2 pt-1 cursor-pointer"></p>
+          </div>
+          <div class="col-8 text-center cursor-pointer">
+            <p class="mb-0 text-light year" data-attr="<%-current_year%>">
+              <%-current_year-1%> - <%-current_year%>
+            </p>
+          </div>
+          <div class="col-2 text-right text-light">
+            <p class="mb-0 fa fa-chevron-right next-yr float-right color-light pl-2 pt-1 cursor-pointer"></p>
+          </div>
+        </div>
+      </div>
+      <!--calendar-block-->
+      <div class="row mx-0 quarter_row">
+        <%_.each(quarter, function(d, i){%>
+          <div class="col-3 cursor-pointer text-center pb-3 px-1">
+            <p class="mb-0 cal-bg p-12 text-light btn p-1 w-100 quarter <%-i%>" data-attr="<%-i%>">
+              <%-i%>
+              <span class="d-block sm1 text-uppercase"><%-d%></span>
+            </p>
+          </div>
+        <%})%>
+      </div>
+      <div class="card-title mb-0 bg-transparent no-border-radius border-0 pb-3 px-0">
+        <table class="table table-bordered text-center text-primary mb-0 border-primary month_row">
+          <tbody>
+            <% _.each(months, function(d, i){ %>
+              <% var active = "" %>
+              <% if (d == current_month){ %>
+                <% active = "active" %>
+              <% } else {%>
+                <% active = ""%>
+              <%}%>
+              <% if ([0,4,8].indexOf(i) >= 0){ %>
+                <tr>
+              <% } %>
+              <td class="cal-bg px-3 px-sm-2 py-4 py-sm-4 border-primary <%-d%> text-uppercase h6 mb-0 month cursor-pointer" id="<%-active%>" data-attr="<%-d%>" data-year="<%- i > 8 ? current_year : current_year-1 %>">
+              <%- d %>
+              </td>
+              <% if ([3,7,11].indexOf(i) >= 0){ %>
+                </tr>
+              <% } %>
+            <% }) %>
+          </tbody>
+        </table>
+      </div>
+      <!--calendar-bottom-->
+      <div class="card-title mb-0 bg-transparent no-border-radius border-0 pb-3 px-0">
+        <!--calendar-submit-->
+        <div class="card-title mb-0 bg-transparent no-border-radius border-0 pb-3 px-0 ">
+          <div class="row ">
+            <div class="col-12 text-center">
+              <button class="btn bg-color-submit text-light w-100 submit text-uppercase p-14 cursor-pointer">submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

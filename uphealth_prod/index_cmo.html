@@ -1,0 +1,256 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CMO Dashboard</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="ui/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="ui/@fortawesome/fontawesome-free/css/all.min.css">
+    <link href="css/index_cmo_bootstrap.css" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/introjs.min.css">
+      <link rel="stylesheet" href="css/style_tb.css">
+      <link rel="stylesheet" href="css/view1.css">
+      <link rel="stylesheet" href="node_modules/ion-rangeslider/css/ion.rangeSlider.min.css">
+      <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-sweetalert/dist/sweetalert.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,900&display=swap" rel="stylesheet">
+      <script src="js/app_cookie.js"></script>
+    </head>
+    <body>
+      <script>
+      /* globals createCookie */
+      createCookie("userfrom", "nikshay", 30, "/")
+      // function goBack() {
+      //     window.history.back()
+      //     // url = g1.url.parse(location.href)
+      //     // debugger
+      //     setTimeout(draw_view1_table() , 1000);
+      //   }
+      </script>
+      {% set import json %}
+      {% set user_session_id = handler.get_session().get("id", {}) %}
+      {% set user_info = handler.get_session().get("user", {}) %}
+      {% set from gramex.config import variables %}
+      {% set base = '.' %}
+      {% include template-navbar.html %}
+      <div class="background">
+        <div class="loader"></div>
+      </div>
+      <div class="d-flex">
+        <div class="container-fluid border-radius position-absolute mt-n6">
+          <div class="bg-danger  border-radius top-filtres h-100">
+            <div class="bg-lg-primary px-md-3 py-2 border-radius top-filtres br-blr"></div>
+            <div class="mt-n5">
+              <div class="px-3">
+                <div class="filter-one">
+                  <div class="d-flex ml-3 h3 mb-0 mr-4 mt-0 state-filter">
+                    <script type="text/html" src="templates/state_select.html" class="render_state_template"></script>
+                  </div>
+                  <div class="d-flex ml-3 h3 mb-0 mr-4 mt-0 district-filter"></div>
+                  <div class="tab-state-filter bg-cu-color70 text-white px-0 mt-0 mr-5 z-6 h-70 ">
+                    <script type="text/html" src="templates/catorgry_select.html" class="render_category_template"></script>
+                  </div>
+                </div>
+                <div class="filter-two">
+                  <!-- Composite Score only dropdown -->
+                  <div class="d-flex flex-wrap w-100 mt-0 composite-filters align-items-center justify-content-xl-between justify-content-md-start justify-content-between">
+                    <!--indicator start -->
+                    <div class="d-flex mt-1 h3 mb-0 mr-4 z-1 mr-3" id="indicator_dropdown_wrapper">
+                      <script type="text/html" src="templates/indicator_dropdown.html" class="render_indicator_template"></script>
+                    </div>
+                    <!--indicator end -->
+                    <!--  calendar start -->
+                    <div class="tab-state-filter text-white px-0 mt-2 mr-xl-4 mr-lg-3 z-6 h-70">
+                      <script type="text/html" src="templates/state_select.html" class="render_state_template1"></script>
+                    </div>
+                    <div class="z-10 mr-3">
+                      <script class="calendar" type="text/html" src="templates/calendar_tb.html"></script>
+                    </div>
+                    <!-- calendar end -->
+                    <div class="d-md-none">
+                    <figure class="d-flex mb-0 round btn bg-white p-2 w-c32 toggle-search"><img src="img/search-1.svg" alt="search-1"></figure>
+                  </div>
+                  <div class="table-opt d-md-flex d-none h3 mb-0 z-10 w-100 col-lg-8 col-md-5 justify-content-between px-0 col-12">
+                    <!--search column-->
+                    <div class="col-12 px-md-4 px-0 pt-md-0 pt-3 col-lg-10 position-relative">
+                      <!-- <div class="tab_search h-28 d-flex box-shadow-x1 bg-white flex-fill border br-14" data-step="2"
+                        data-intro="Filter the table based on State and Indicator with ease.">
+                        <input type="text" autocomplete="off"
+                        class="form-control border-0 py-0 h-28 bg-transparent text-color45 sm3 font-weight-800 name-ph search_text"
+                        placeholder="Search District" id="view1-search"><span class="px-2 d-flex"><img
+                        src="assets/img/search-icon.svg" alt="search"></span>
+                      </div> -->
+                      <div class="position-relative">
+                        <!-- <script class="search_tb" type="text/html" src="templates/search_tb.html"></script> -->
+                      </div>
+                    </div>
+                    <!--dropdown column-->
+                    <div class="dropdown position-relative d-md-flex d-none custom-dropdown">
+                      <button class="btn d-flex justify-content-between align-items-center fs-14 btn bg-c-primary text-white border border-color-41 border-radius-lg py-1 mb-0 h-28" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Download<img class="pl-3" src="assets/img/download.svg" alt="download">
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <!--<a class="dropdown-item nav-link divison_data cursor-pointer"><img class="pr-2" src="assets/img/data_set.svg" alt="download">Division data</a>-->
+                        <a class="dropdown-item nav-link district_data cursor-pointer"><img class="pr-2" src="assets/img/data_set.svg" alt="download">District data</a>
+                        <!--<a class="dropdown-item nav-link block_data cursor-pointer"><img class="pr-2" src="assets/img/data_set.svg" alt="download">Block data</a>-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap col-12 h-83 overview-tabs border-radius custom-r-0 bg-danger pl-lg-3 pr-lg-3 px-2 pb-3 pt-4">
+              <div class="d-flex h-auto align-items-center justify-content-between w-100 pt-2 pb-3">
+                <!-- overview and rankings ing tabs starts here -->
+                <ul class="nav nav-pills px-0" id="pills-tab" role="tablist">
+                  <li class="nav-item lh-1 mr-3 pl-2">
+                    <a class="text-decoration-underline text-decoration-thickness d-block font-weight-900 text-black active" id="pills-overview-tab"
+                      data-toggle="pill" role="tab" aria-controls="pills-overview"
+                    aria-selected="true"></a>
+                  </li>
+                </ul>
+                <!-- <marquee class="w-50 text-color66 ticker_msg mx-3"></marquee> -->
+                <marquee class="w-50 text-color66 cmo_ticker mx-3"></marquee>
+                <div class="d-lg-flex d-none justify-content-end ml-auto ">
+                  <!-- <div class="bg-transparent text-primary note d-none last_update mr-3"></div> -->
+                  <!-- <div class="slider-image d-none round h-auto"></div> -->
+                  <div class="d-flex align-items-center h4 mb-0 mr-3">
+                    <p class="d-flex align-items-center sm3 mb-0 mr-3"><span class="tbl-legend border-1 mr-1"></span><span>Process</span></p>
+                    <p class="d-flex align-items-center sm3 mb-0 mr-3"><span class="tbl-legend border-2 mr-1"></span><span>Outcome</span></p>
+                  </div>
+                  <img src="img/legend-cmo.svg" alt="legend-cmo">
+                </div>
+                <img src="img/legend-cmo.svg" alt="legend-cmo" class="d-lg-none d-flex">
+              </div>
+              <!-- overview content -->
+              <div class="tab-content w-100 h-100" id="pills-tabContent">
+                <div class="alert no_data_show d-none alert-dark text-center" role="alert"> Data not Available </div>
+                <div class="tab-pane fade show active" id="pills-overview" role="tabpanel" aria-labelledby="pills-overview-tab">
+                  <div class="d-flex flex-wrap col-12 px-0 mt-3">
+                    <script type="text/html" class="view1-table" src="templates/view1_table.html"></script>
+                    <div class="d-flex flex-wrap row">
+                    </div>
+                  </div>
+                  <!-- <section class="mt-n5 mb-5 d-none" id="GFG_DOWN"> -->
+                  <div class="py-2 mt-4 d-none" id="GFG_DOWN">
+                    <div class="row border-0 border-radius">
+                      <div class="text-center h-full col-12 m-auto">
+                        <p class="font-weight-bold"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- </section> -->
+                </div>
+              </div>
+              <!-- Ranking content -->
+            </div>
+          </div>
+        </div>
+        </div><!-- container end -->
+        <!-- Modal -->
+        <div class="modal fade" id="expand_graph" tabindex="-1" role="dialog" aria-labelledby="expand_graph"
+          aria-hidden="true">
+          <script class="expand_chart_modal" type="text/html" src="templates/chart_modal.html"></script>
+        </div>
+      </div>
+      <script type="text/html" src="templates/district_select.html" class="render_district_template"
+      data-target=".district-filter"></script>
+      <script type="text/javascript">
+      /* exported indicator_mapping, data_table_dict, annotations_coordinates, tooltip_data, order_ind, session_id, FULL_LATEST_DATE */
+      let indicator_mapping = {{ json.dumps(variables['indicator-mapping_cmo']) }}
+      let tooltip_data = {{ json.dumps(variables['tooltip_data']) }}
+      let data_table_dict = {{ json.dumps(variables['data_table_dict']) }}
+      let annotations_coordinates = {{ json.dumps(variables['annotations_coordinates']) }}
+      let order_ind = {{ json.dumps(variables['order_ind']) }}
+      var session_id = {{ json.dumps(user_session_id) }}
+      var user_data = {{ json.dumps(user_info) }}
+      var FULL_LATEST_DATE = new Date();
+      // update
+      fetch("./get_maximum_date").then(function (response) {
+        return response.json();
+      }).then(function (resp) {
+        let timestmp = resp ? resp[0].date : null
+        if (timestmp) {
+          FULL_LATEST_DATE = timestmp;
+          // let from_date = new Date(timestmp);
+          // let from_month = (parseInt(from_date.getMonth()) + 1);
+          // let prev_month = new Date(timestmp).setMonth(-1);
+          // let to_date = new Date(prev_month);
+          // let to_month = (parseInt(to_date.getMonth()) + 1);
+          // if (from_month < 10) {
+          //   from_month = '0' + from_month;
+          // }
+          // if (to_month < 10) {
+          //   to_month = '0' + to_month;
+          // }
+          // let from_ = (from_date.getFullYear() + '-' + (from_month) + '-' + "01");
+          // let to_ = (to_date.getFullYear() + '-' + (to_month) + '-' + "01");
+          // let month_name = from_date.toLocaleString('en-us', { month: 'short', year: 'numeric' })
+          // defaults["from_"] = from_;
+          // defaults["to_"] = to_;
+          // defaults["month"] = month_name;
+          // default_params["from_"] = from_;
+          // default_params["to_"] = to_;
+          // default_params["month"] = month_name;
+        }
+      }).catch(function (err) {
+        console.log("latest latest_date error", err)
+      });
+
+      </script>
+      <!-- Matomo -->
+
+      <script>
+
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+          var u = "https://uphealthdashboard.in/matomo/";
+          _paq.push(['setTrackerUrl', u + 'matomo.php']);
+          _paq.push(['setSiteId', '1']);
+          _paq.push(['setUserId', user_data.user]);
+          var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+          g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+        })();
+
+      </script>
+
+      <!-- End Matomo Code -->
+      <script src="ui/jquery/dist/jquery.min.js"></script>
+      <script src="node_modules/@sentry/browser/build/bundle.min.js"></script>
+      <script src="ui/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="ui/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+      <script src="ui/moment/min/moment-with-locales.min.js"></script>
+      <script src="ui/lodash/lodash.min.js"></script>
+      <script src="ui/g1/dist/g1.min.js"></script>
+      <script src="node_modules/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+      <script src="ui/d3/build/d3.min.js"></script>
+      <script src="ui/d3-scale-chromatic/dist/d3-scale-chromatic.min.js"></script>
+      <script src="ui/vega/build/vega.min.js"></script>
+      <script src="ui/topojson/dist/topojson.min.js"></script>
+      <script src="node_modules/d3-color/dist/d3-color.min.js"></script>
+      <script type="text/javascript" src="node_modules/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
+      <!-- <script type="text/javascript" src="js/d3-annotation_v2.3.2.js"></script> -->
+      <script type="text/javascript" src="node_modules/d3-svg-annotation/d3-annotation.js"></script>
+      <script src="node_modules/vega-tooltip/build/vega-tooltip.min.js"></script>
+      <script type="text/javascript" src="node_modules/mathjs/dist/math.min.js"></script>
+      <script type="text/javascript" src="node_modules/intro.js/minified/intro.min.js"></script>
+      <script src="js/helper.js"></script>
+      <script src="js/common_calendar.js"></script>
+      <script src="ui/numeral/min/numeral.min.js"></script>
+      <script src="js/common_tb.js"></script>
+      <script src="js/common.js"></script>
+      <script src="js/log_capture.js"></script>
+      <script type="text/javascript">
+      $(".toggle-search").click(function(){
+      $(".table-opt").toggleClass('d-none d-block');
+      });
+      </script>
+    </body>
+  </html>

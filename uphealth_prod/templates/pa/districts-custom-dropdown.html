@@ -1,0 +1,83 @@
+<div class="card border-radius w-100 px-3 tail-tc dropdown-template" id="district-dropdown">
+    <div class="card-header px-0 bg-transparent border-0 d-flex align-items-center">
+        <div class="input-group round bg-transparent border col-10  px-0">
+            <div class="input-group-prepend py-1 h-auto bg-transparent round px-2">
+                <div class="d-flex align-self-center  border-0 round rounded-right">
+                    <i class="fa fa-search opacity-30" aria-hidden="true"></i>
+                </div>
+            </div>
+            <input type="text" class="district-dropdown-search sm2 pl-0 pr-1 py-1 h-auto form-control round border-0 bg-transparent" id="inlineFormInputGroup"
+                placeholder="Search District" data-search="@text" data-target=".districts_list .nav .nav-item" data-hide-class="d-none">
+        </div>
+        <div class="col-2 pl-3 pr-0 district-dropdown-reset cursor-pointer" title="Reset Selection" parent-id="<%=data.parent_id%>">
+            <i class="fa fa-sync sm1" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="card-body pb-2 px-0 bg-transparent">
+        <div class="row">
+            <div class="col-6 border-right">
+                <ul class="nav flex-column h5 mb-0 text-uppercase font-weight-bold districts_type" value="">
+                    <li class="nav-item" value="district_all">
+                        <a class="nav-link mb-2 text-color1 sm3 p-0 cursor-pointer">Districts
+                        <i class="fa fa-caret-right ml-2" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item" value="district_asp">
+                        <a class="nav-link mb-2 text-color1 sm3 p-0 opacity-30 cursor-pointer">
+                            Aspiration Dist.
+                            <i class="fa fa-caret-right ml-2 d-none" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" value="district_hp">
+                        <a class="nav-link mb-2 text-color1 sm3 p-0 opacity-30 cursor-pointer">
+                            High Priority Dist.
+                            <i class="fa fa-caret-right ml-2 d-none" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none" value="division_list">
+                        <a class="nav-link mb-2 text-color1 sm3 p-0 opacity-30 cursor-pointer">
+                            Divisions
+                            <i class="fa fa-caret-right ml-2 d-none" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 districts_list overflow-y" value="">
+                <ul class="nav flex-column h5 mb-0 text-uppercase font-weight-bold district_all">
+                    <% _.each(data.dist_list, function (d) { %>
+                        <li class="nav-item" data-val="<%- d.district %>">
+                            <a class="nav-link mb-2 sm3 p-0 cursor-pointer <%- ((url.searchKey.area === d.district) ? 'text-primary' : 'opacity-30') %>"><%- d.district %></a>
+                        </li>
+                    <% }) %>
+                </ul>
+                <ul class="nav flex-column h5 mb-0 text-uppercase font-weight-bold district_asp d-none">
+                    <% _.each(data.dist_list, function (d) { %>
+                        <% if (d.aspirational === true){ %>
+                            <li class="nav-item" data-val="<%- d.district %>">
+                                <a class="nav-link mb-2 sm3 p-0 cursor-pointer <%- ((url.searchKey.area === d.district) ? 'text-primary' : 'opacity-30') %>"><%- d.district %></a>
+                            </li>
+                        <% } %>
+                    <% }) %>
+                </ul>
+                <ul class="nav flex-column h5 mb-0 text-uppercase font-weight-bold district_hp d-none">
+                    <% _.each(data.dist_list, function (d) { %>
+                        <% if (d.high_priority === true){ %>
+                            <li class="nav-item" data-val="<%- d.district %>">
+                                <a class="nav-link mb-2 sm3 p-0 cursor-pointer <%- ((url.searchKey.area === d.district) ? 'text-primary' : 'opacity-30') %>"><%- d.district %></a>
+                            </li>
+                        <% } %>
+                    <% }) %>
+                </ul>
+                <ul class="nav flex-column h5 mb-0 text-uppercase font-weight-bold division_list d-none">
+                    <% _.each(data.div_list, function (d) { %>
+                        <li class="bpl nav-item" data-val="<%- d.division %>">
+                            <a class="nav-link mb-2 sm3 p-0 cursor-pointer <%- ((url.searchKey.area === d.division) ? 'text-primary' : 'opacity-30') %>"><%- d.division %></a>
+                        </li>
+                    <% }) %>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer px-0 bg-transparent border-0 text-center">
+        <button class="sm1 text-uppercaset text-primary font-weight-bold bg-transparent border-0 district-dropdown-submit">APPLY</button>
+    </div>
+</div>

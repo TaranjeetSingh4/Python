@@ -1,0 +1,39 @@
+download_table_view_data: >
+  SELECT @row_number := @row_number+1 AS 'Sr. No.', state 'State Name',
+  round(corrected_total_points) AS "TB Index",
+  round(points_notify) AS "Points on TB notification achieved (wts 20)",
+  round(points_notify_hiv) AS "Points on TB notified patients with HIV (wts 10)",
+  round(points_udst) AS "Points on UDST (wts 10)",
+  round(points_sucess_rate) AS "Points on treatment success rate (wts 15)",
+  round(points_npy) AS "Points on Beneficiaries Paid under Nikshay Poshan Yojana (wts 10)",
+  round(points_drtb_patients) AS "Points on DRTB Patients treatment initiation regimen (wts 15)",
+  round(points_expenditure) AS "Points Expenditure (wts 10)",
+  round(points_chemo) AS "Points on chemoprophylaxis (wts 5)",
+  round(points_plhiv) AS "Points PLHIV Received (wts 5)"
+  from state_master_table,
+  (SELECT @row_number:=0) AS t
+  where quarter = '{quarter}' and year = {year}
+  order by state
+
+download_district_view_data: >
+  SELECT @row_number := @row_number+1 AS 'Sr. No.', state 'State Name',
+  district_name 'District Name',
+  CASE WHEN (corrected_total_points) IS NULL THEN 'NA' ELSE corrected_total_points END
+    AS "TB Index",
+  round(points_notify) AS "Points on TB notification achieved (wts 20)",
+  round(points_notify_hiv) AS "Points on TB notified patients with HIV (wts 10)",
+  round(points_udst) AS "Points on UDST (wts 10)",
+  round(points_sucess_rate) AS "Points on treatment success rate (wts 15)",
+  CASE WHEN (points_npy) IS NULL THEN 'NA' ELSE points_npy END
+    AS "Points on Beneficiaries Paid under Nikshay Poshan Yojana (wts 10)",
+  CASE WHEN (points_drtb_patients) IS NULL THEN 'NA' ELSE points_drtb_patients END
+    AS "Points on DRTB Patients treatment initiation regimen (wts 15)",
+  CASE WHEN (points_expenditure) IS NULL THEN 'NA' ELSE points_expenditure END
+    AS "Points Expenditure (wts 10)",
+  round(points_chemo) AS "Points on chemoprophylaxis (wts 5)",
+  CASE WHEN (points_plhiv) IS NULL THEN 'NA' ELSE points_plhiv END
+    AS "Points PLHIV Received (wts 5)"
+  from district_master_table,
+  (SELECT @row_number:=0) AS t
+  where quarter = '{quarter}' and year = {year} and state_id = '{state_id}'
+  order by district_name

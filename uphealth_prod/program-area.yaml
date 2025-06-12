@@ -1,0 +1,58 @@
+url:
+  up-tsu-desktop/program-area:
+    pattern: /$YAMLURL/pa-landing
+    handler: FileHandler
+    kwargs:
+      path: $YAMLPATH/program-area.html
+      template: true
+      auth: &AUTH
+        login_url: /$YAMLURL/login
+        membership:
+          Approval: Approved
+        template: $YAMLPATH/error/403.html
+
+  up-tsu-desktop/program-area-selected:
+    pattern: /$YAMLURL/pa
+    handler: FileHandler
+    kwargs:
+      path: $YAMLPATH/program-area-selected.html
+      template: true
+      auth: *AUTH
+
+  up-tsu-desktop/selected-states-view:
+    pattern: /$YAMLURL/pa-overview
+    handler: FileHandler
+    kwargs:
+      path: $YAMLPATH/selected-states-view.html
+      template: true
+      auth: *AUTH
+
+  up-tsu-desktop/pa-compare:
+    pattern: /$YAMLURL/pa-compare
+    handler: FileHandler
+    kwargs:
+      path: $YAMLPATH/indicators-card.html
+      template: true
+      auth: *AUTH
+
+  # up-tsu-desktop/$*:
+  #   pattern: /$YAMLURL/(\w+[-\w+]*)
+  #   handler: FormHandler
+  #   kwargs:
+  #     url: $YAMLPATH/data/pa/{_0}.csv
+  #     auth: *AUTH
+
+  up-tsu-desktop/district-indicator-mapping:
+    pattern: /$YAMLURL/(pa-indicator-mapping|district-mapping)
+    handler: FormHandler
+    kwargs:
+      url: $YAMLPATH/data/pa/{_0}.csv
+      auth: *AUTH
+
+  up-tsu-desktop/tables:
+    pattern: /$YAMLURL/(state-scores|state-quarter-scores|state-year-scores|division-year-scores|division-quarter-scores|division-scores|district-scores|district-quarter-scores|district-year-scores)
+    handler: FormHandler
+    kwargs:
+      url: $connection_str
+      table: "{_0}"
+      auth: *AUTH

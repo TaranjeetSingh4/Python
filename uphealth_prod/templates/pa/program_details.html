@@ -1,0 +1,76 @@
+<!-- growth = increase: 1, descrese: -1, no change: 0, NA : NA  -->
+<!-- if prev val is 0 , then show __ -->
+<!-- if prev val is not 0 , then show 0 -->
+<% img_dict = {'1' : 'fa fa-caret-up', '-1' : 'fa fa-caret-down', '0' : '', 'NA' : 'fa fa-minus'   }%>
+<% color_dict = {'1' : 'text-success', '-1' : 'text-warning', '0' : '', 'NA' : ''   }%>
+<% unit_dict = {'percentage' : '%', 'number' : ''}%>
+<% pa_classes = pa_classes.sort() %>
+
+<div id="main_card">
+  <% _.each(pa_classes, function(_class){ %>
+
+  <div class="class_cards_container" data-class= "<%=_class.replace(/\s+/g, '_')%>" >
+    <div class="card-title mb-3 pb-2">
+      <h5 class="font-weight-bold text-primary mb-1 text-uppercase"><%=_class%></h5>
+      <div class="underline border-color1 border-1 shadow"></div>
+    </div>
+    <div class="row ml-n2">
+      <% _.each(data[_class], function(item) { %>
+      <div indicator_attr= "<%= item.indicator_id%>" class="col-4 col-sm-4 col-md-4 col-xl-3 pl-2  mb-4 pb-2">
+        <div class="card border-radius shadow border-transparent cursor-pointer h-100 position-relative">
+
+          <% if (item.indicator_id == neg_indicator){ %>
+          <div class="bg-warning mx-4 mt-n2 text-center py-1 round text-white h2 mb-0 pos-tc col-10 px-0">
+            <span class="d-block sm4">Highest Negative Jump wrt. last month</span>
+          </div>
+          <% } %>
+          <% if (item.indicator_id == pos_indicator){ %>
+          <div class="bg-success mx-4 mt-n2 text-center py-1 round text-white h2 mb-0 pos-tc col-10 px-0">
+            <span class="d-block sm4">Highest Positive Jump wrt. last month</span>
+          </div>
+          <% } %>
+
+          <div class="card-body px-3">
+            <div class="card-title p-0 mb-0 h4 h-45 text-center">
+              <% id_23_name = '% of C-sections in private accredited centers district received JSY Payment' %>
+              <span class="sm3 d-block"><%= (item.indicator_id!= 23)? item.indicator_name: id_23_name %></span>
+            </div>
+            <div class="h-97 py-3 line_chart_div_<%=item.indicator_id%>">
+            </div>
+            <div class="row pt-1">
+              <div class="col-7 pr-0">
+                <div class="d-flex">
+                  <% var unit = (item.value)? unit_dict[item.unit] : '' %>
+                  <h4 class="text-secondary mb-0 mr-2 lh-1 font-weight-bold"><%= (item.value)?(unit!='')?item.value.toFixed(2): item.value.toFixed(2): 'NA' %><%= unit%></h4>
+                  <h3 class="mb-0 <%= color_dict[item.growth] ? color_dict[item.growth] : 'text-color3' %> lh-1 font-weight-bold align-self-end"><span class="d-block sm3"><%= (item.diff)?(item.diff).toFixed(1): (item.prev_value != 0 )?0:' ' %><i class="<%= img_dict[item.growth] %>" aria-hidden="true"></i></span></h3>
+                </div>
+              </div>
+              <div class="col-5">
+                <% unit = (item.prev_value != 0 && item.prev_value != 'NA')? unit_dict[item.unit] : '' %>
+                <h5 class="mb-0 font-weight-bold text-secondary text-right"><span class="sm2"> <%= (item.prev_value != 'NA')? 'LM ' + _.round(item.prev_value, 2) : 'NA' %><%= unit%></span></h5>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer border-top p-0 bg-transparent">
+            <% _params = '?program='+pa_program+'&indicator_id='+item.indicator_id+'&class='+_class+'&date='+_date %>
+            <a class="font-weight-bold small py-3 text-center nav-link explore-hover-bg opacity-40 text-color1" href="pa-overview<%=_params %>">explore <i class="fa fa-arrow-right ml-1 sm1" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <% }) %>
+
+    </div>
+
+  <% if (!_.has(data, _class)) { %>
+  <div class="container no_data_card card shadow h3 p-4 mx-2 rounded border-0 align-items-center">
+    <div class="sm2 text-uppercase">
+      <strong>Data not Available </strong>
+    </div>
+  </div>
+  <% } %>
+
+
+  </div>
+
+  <% }) %>
+</div>

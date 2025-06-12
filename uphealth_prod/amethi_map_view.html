@@ -1,0 +1,375 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>UP-TSU | Map View</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/amethi_mapview_bootstrap.css">
+  <link rel="stylesheet" href="ui/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/by_domain.css">
+  <link rel="stylesheet" href="ui/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="node_modules/jquery-ui-dist/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-sweetalert/dist/sweetalert.css">
+  <link rel="stylesheet" href="node_modules/jquery-ui-slider-pips-npm/dist/jquery-ui-slider-pips.min.css">
+</head>
+
+<body class="h-100 map-view">
+  {% set import json %}
+  {% set import up_tsu_desktop_app %}
+  {% set from gramex.config import variables %}
+  {% set user_session_id = handler.get_session().get("id", {}) %}
+  {% set user_info = handler.get_session().get("user", {}) %}
+  {% set username = user_info.get("user","") %}
+  {% if 'temp_password' in user_info.keys() and user_info['temp_password'] == '1' %}
+    <script type="text/javascript">
+      var user_obj = {{ json.dumps(user_info) }}
+      sessionStorage['phonenumber'] = user_obj['phonenumber']
+      sessionStorage['user'] = user_obj['user']
+      window.location.href = 'password'
+    </script>
+  {% end %}
+  {% if username == 'CM_Office1' %}
+    {% set handler.redirect('landing') %}
+  {% end %}
+
+  <script type="text/javascript">
+    /* exported default_params, indicator_mapping, js_user, user_data, prof_dist,session_id */
+    var default_params = {% raw up_tsu_desktop_app.get_config(handler) %}
+    var session_id = {{ json.dumps(user_session_id) }}
+    var indicator_mapping = {{ json.dumps(variables['indicator-mapping_amethi']) }}
+    var prof_dist = {{ json.dumps(variables['data_prof_dist']) }}
+    var user_data = {{ json.dumps(user_info) }}
+  </script>
+
+  <i class="user_name" id="{{username}}"></i>
+  <div class="loading-icon">
+    <i class="fa fa-circle-o-notch fa-spin pos-cc"></i>
+  </div>
+  <nav class="navbar navbar-expand-md bg-gradient-nav py-0 position-fixed pos-t">
+    <!-- Toggler/collapsibe Button -->
+    {% set x = handler.request.uri %}
+    {% if (("amethi_map" in x) or("amethi_table" in x))%}
+    <a class="fa fa-home mr-3 fa-2x" aria-hidden="true" href="./"></a>
+    <span class="h5 mb-0 text-light">Amethi Dashboard</span>
+    {% else %}
+    <span class="h5 mb-0 text-light">Amethi Dashboard</span>
+    {% end %}
+    <!--navbar-search-->
+    <!-- Navbar links -->
+    <div class="d-flex ml-auto custom-menu">
+      <div class="search-input">
+        <div class="text-right pt-1 px-3">
+          <span class="input-group-text custom-class bg-transparent no-border-radius rounded-0 border-0 cursor-pointer" id="icon"><i class="fa fa-search cursor-pointer text-white"></i></span>
+        </div>
+        <div id="myInput1">
+          <div class="input-group custom-class pos-t w-100 bg-white">
+            <div class="input-group-append">
+              <span class="input-group-text bg-white no-border-radius rounded-0 border-0 "><i class="fa fa-search cursor-pointer text-dark "></i></span>
+            </div>
+            <input type="text" id="myInput" class="form-control border-0 px-0" placeholder="Search District">
+            <p id="empty-message" class="w-50 mx-auto alert alert-warning alert-dismissible fade"></p>
+            <div class="input-group-append ">
+              <span class="input-group-text bg-white no-border-radius rounded-0 border-0"><i id="close_nav" class="fa fa-remove cursor-pointer text-dark "></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="nav">
+        {% set x = handler.request.uri %}
+        {% if (("amethi_map" in x) or("amethi_table" in x))%}
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white active-tab text-uppercase cursor-pointer" href="amethi_map">Amethi Map view</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" href="amethi_table">Amethi Table view</a>
+        </li>
+        {% else %}
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" href="map_view">Map view</a>
+        </li>
+        {% if ((user_info['district'] == "Amethi") or (user_info['user'] == 'admin')) %}
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white active-tab text-uppercase cursor-pointer" href="amethi_map">Amethi Map view</a>
+        </li>
+        {% end %}
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" href="niti_table">niti</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" href="cmo_table">cmo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" data-attr="cmo_table" href="cmo_new">cmo new
+            design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" href="table">table view</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" href="compare">Analytics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" href="executive-summary" id="executive_nav">Executive Summary</a>
+        </li>
+        {% end %}
+      </ul>
+    </div>
+    <script class="mapview-sidenav" type="text/html" src="templates/side_nav.html"></script>
+  </nav>
+  <!--space needed-->
+  <div class="pt-4 mt-2"></div>
+  <!--Calender-->
+  <script class="mapview-header" type="text/html" src="templates/page_header.html"></script>
+  <script class="user-profile" type="text/html" src="templates/user_profile.html"></script>
+  <!--cards-->
+  <!--cards-main-->
+  <div class="card no-border-radius border-0 h-100">
+    <div class="alert no_data_show d-none alert-dark text-center" role="alert"> Data not Available </div>
+    <div class="container-fluid h-100">
+      <div class="row overflow-hidden">
+        <div class="pl-2 pr-0 pt-2 my-left position-relative my-0 mx-auto">
+          <div class="h-100">
+            <div class="d-flex justify-content-start">
+              <h5 class="font-weight-bold mb-0 p-18 text-uppercase text-dark">SUMMARY - </h5>
+              <h5 class="mb-0 p-18 text-uppercase text-dark px-1" id="header-text"><%- title %></h5>
+            </div>
+            <script src="templates/left_section_header.html" type="text/html" class="left-section-header"></script>
+            <script src="templates/accordion_map_view.html" type="text/html" class="accordion-section"></script>
+          </div>
+        </div>
+        <div class=" my-center position-relative my-0 mx-auto">
+          <div class="">
+            <!-- <nav aria-label="breadcrumb  bg-white">
+              <ol class="d-flex nav py-1 bg-white p-9">
+                <li class="breadcrumb-item text-dark">Uttar Pradesh</li>
+                <li class="breadcrumb-item division_bc d-none text-dark" aria-current="page">Division</li>
+                <li class="breadcrumb-item district_bc d-none text-dark" aria-current="page">District</li>
+                <li class="breadcrumb-item block_bc d-none text-dark" aria-current="page">Block</li>
+              </ol>
+            </nav> -->
+          <marquee class="w-75 text-danger amethi_ticker_msg"></marquee>
+          </div>
+          <script type="text/html" src="templates/amethi_map_section.html" class="map-section"></script>
+        </div>
+        <div class=" pl-0 my-right position-relative my-0 mx-auto">
+          <div class="d-flex  justify-content-end pt-1">
+            <div class="align-self-center">
+              <ul class="nav d-flex">
+                <li class="nav-item p-9 text-right align-self-center text-uppercase">
+                  <!-- <p class="mb-0">Selected Time period</p> -->
+                  <p class="mb-0 font-weight-bold" id="date-label">Aug 2018</p>
+                </li>
+                <li class="nav-item align-self-center pl-2 pr-4 cursor-pointer">
+                  <img src="img/calendar-face-2.svg" alt="icon" id="for-date">
+                    </li>
+              </ul>
+            </div>
+            <div class="align-self-center">
+              <ul class="nav d-flex">
+                  <li>
+                    <img src="img/info_icon.png" class="bg-white mr-3 nav-item info-icon-hover" alt="info" data-toggle="tooltip"
+                      data-html="true" title="Nov-19 to Jan-20 rankings are based on 30 metrics (total 75% weight). Rankings Feb-20 onwards include 33 metrics (total
+                                    85% weight). Total score shown is normalized to 100% for all months.">
+                  </li>
+                  <!-- <li class="nav-item align-self-center px-3 cursor-pointer" title="insights">
+                      <img src="img/insight-face-2.svg" alt="icon" class="cursor-pointer mr-3" data-toggle="modal" data-target="#insights-modal">
+                    </li> -->
+                <li class="nav-item align-self-center cursor-pointer png-download" title="screenshot">
+                  <img src="img/screen-capture.png" alt="icon">
+                    </li>
+              </ul>
+            </div>
+          </div>
+          <script type="text/html" src="templates/amethi_overall_district_ranking.html" class="overall-district-ranking-section"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script type="text/html" class="file_upload" src="templates/file_upload_template.html"></script>
+  <script type="text/html" class="insert_ticker_msg" src="templates/insert_ticker_msg.html"></script>
+  <script type="text/html" class="insert_ticker_msg_amethi" src="templates/insert_ticker_msg_amethi.html"></script>
+  <script type="text/html" class="list_of_files" src="templates/list_of_files.html"></script>
+  <script type="text/html" class="avail_file_list" src="templates/available_file_list.html"></script>
+  {% include templates/video-modals.html %}
+  <!--note-->
+  <!--footer-->
+
+  {% set scripts = [''] %}
+  {% include 'templates/scripts.html' %}
+  <script src="ui/noty/lib/noty.min.js"></script>
+  <script src="components/area_chart.js "></script>
+  <script src="components/new_gauge.js"></script>
+  <script src="components/trend_line.js"></script>
+  <script src="js/common_calendar.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/common_new.js"></script>
+  <script src="components/new_map.js"></script>
+  <script src="js/amethi_map_view.js"></script>
+  <!--
+  D3: ui/d3/build/d3.min.js
+  Lodash: ui/lodash/lodash.min.js
+  Moment: ui/moment/min/moment-with-locales.min.js
+  Noty: ui/noty/lib/noty.min.js
+  Daterangepicker: ui/daterangepicker/daterangepicker.js
+  Leaflet: ui/leaflet/dist/leaflet.js
+  TopoJSON: ui/topojson/dist/topojson.min.js
+  g1: ui/g1/dist/g1.min.js
+  -->
+  <script>
+  /* global url, url_update, render, g1*/
+  var url = g1.url.parse(location.href)
+  if(url.file == "amethi_map" || url.file == "amethi_table"){
+  url.searchKey.by === undefined ? url_update({ 'by': 'performance' }) : ""
+  url_update({ 'district': 'Amethi', 'district_level': '206' })
+  $('.search-input').hide()
+  $('.fa-home').css('color',"white")
+  }
+  $(document)
+    .on('keydown', "#myInput", function(e) {
+      var key = e.which;
+      var search_fil = "",
+        search_fil1 = "",
+        search_fil2 = ""
+      if (key == 13) {
+        _.each($('#myUL li'), function(d) {
+          if (($(d).text().trim()) === $("#myInput")[0].value) {
+            search_fil = $(d).find('span').attr('id')
+            search_fil1 = $(d).find('span').attr('data-attr')
+            search_fil2 = $(d).find('span').attr('data-attr2')
+            if (url.searchKey.check === "yes") {
+              var search_filter = {
+                "district_level": search_fil,
+                "division_level": search_fil1,
+                "division": search_fil2,
+                "district": "",
+                "block": "",
+                "block_level": ""
+              }
+            } else {
+              search_filter = {
+                "district_level": search_fil,
+                "division_level": "",
+                "division": "",
+                "district": "",
+                "block": "",
+                "block_level": ""
+              }
+            }
+            url_update(search_filter)
+            $('#close_nav').click()
+            render()
+          }
+        })
+      }
+    })
+    .on("click", ".close", function(){
+      $('.video_pause').get(0).pause()
+    })
+    .on("click", document, function(){
+      $('.video_pause').get(0).pause()
+    })
+    .on("click", ".ui-autocomplete li", function() {
+      var search_fil = "",
+        search_fil1 = "",
+        search_fil2 = "",
+        check = $(this).text()
+      _.each($('#myUL li'), function(d) {
+        if (($(d).text().trim()) === check) {
+          search_fil = $(d).find('span').attr('id')
+          search_fil1 = $(d).find('span').attr('data-attr')
+          search_fil2 = $(d).find('span').attr('data-attr2')
+        }
+      })
+      if (url.searchKey.check === "yes") {
+        var search_filter = {
+          "district_level": search_fil,
+          "division_level": search_fil1,
+          "division": search_fil2,
+          "district": "",
+          "block": "",
+          "block_level": ""
+        }
+      } else {
+        search_filter = {
+          "district_level": search_fil,
+          "division_level": "",
+          "division": "",
+          "district": "",
+          "block": "",
+          "block_level": ""
+        }
+      }
+      url_update(search_filter)
+      $('#close_nav').click()
+      render()
+    })
+
+  </script>
+  <script>
+  $(document)
+    .on("click", "#c", function() {
+      $("#right-aside-nav").hide();
+    })
+    .on("click", "body", function(event) {
+      if (['right-aside-nav'].indexOf($(event.target).attr('id')) < 0) {
+        if ($(event.target).attr('id') === 'p' && $("#right-aside-nav").css("display") === 'none')
+          $("#right-aside-nav").show();
+        else
+          $("#right-aside-nav").hide();
+      }
+    })
+
+  </script>
+  <script>
+  /* global rgb2hex */
+  $(document)
+    .on("click", "#cc", function() {
+      $("#right-aside-nav1").hide();
+    })
+    .on("click", "body", function(event) {
+      if (['right-aside-nav1'].indexOf($(event.target).attr('id')) < 0) {
+        if ($(event.target).attr('id') === 'pp' && $("#right-aside-nav1").css("display") === 'none')
+          $("#right-aside-nav1").show();
+        else
+          $("#right-aside-nav1").hide();
+      }
+    })
+    .on('click', '#power-gauge path, .gauge_click', function() {
+      $('.back_nav').show()
+      _.includes($('.show_text').text(), 'Show') ? $('.label_text').hide() : $('.label_text').show()
+      $('.back_nav').css('z-index', 1)
+      var color = $(this).attr('fill') || rgb2hex($(this).css("background-color")).toUpperCase()
+      $(".leaflet-interactive, .label_text").css('opacity', 0.1)
+      $('.badge-pill').parent().css('opacity', 1)
+      _.each($('.leaflet-interactive'), function(d) {
+        if (_.upperCase($(d).attr('fill')) == _.upperCase(color)) {
+          $('.' + _.split($(d).attr('stroke-dasharray'), '_')[0]).parent().show()
+          $('.' + _.split($(d).attr('stroke-dasharray'), '_')[0]).parent().css('opacity', 1)
+          $('.label_text.' + _.split($(d).attr('stroke-dasharray'), '_')[0]).css('opacity', 1)
+          $(d).css('opacity', 1)
+        }
+      })
+    })
+    .on('click', ".show_text", function() {
+      if ($('.label_text').css('display') === "none") {
+        $('.label_text').show()
+        $('.show_text a').text('Hide ' + _.capitalize(_.split($('.text_name').text(), ' ')[0]) + ' Names')
+      } else {
+        $('.show_text a').text('Show ' + _.capitalize(_.split($('.text_name').text(), ' ')[0]) + ' Names')
+        $('.label_text').hide()
+      }
+    })
+
+  </script>
+  <script type="text/javascript">
+  </script>
+  {% include 'templates/google-analytics-script.html' %}
+</body>
+
+</html>

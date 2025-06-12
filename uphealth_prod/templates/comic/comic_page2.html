@@ -1,0 +1,117 @@
+<link rel="stylesheet" href="comic_styles/style1.css">
+<div class="indicator-summary">
+ <div class='WorstPerformingIndicatorCopy w-334 h-192 tracking-zero text-grey0 bg-white'>
+    <img class='WorstPerformingIndicatorCopy-panelBg w-1318px' src='assets/comic/images/panel_bg_2.png' alt="icon">
+    <div class='Panel w-255 h-734px text-15 leading-21 font-digi-bb font-bold italic top-25 uppercase'>
+      <img class='Panel-pgPanelFigure w-317px' src='assets/comic/images/pg_2_panel_1_figure_85dd92.png' alt="icon">
+      <!-- here we will take only 13 indicators instead of 15, because those 2 are used to calculate data quality
+      which are not needed to show in insights -->
+      <p class='Panel-sureOutOfThe mb-2'>
+        Sure! out of the <span class="hilight">13 indicators, <%= comp_up_avg.above_up_avg %> indicators are perfoming above UP avg & <%= comp_up_avg.below_up_avg %> are
+        below UP Avg.</span>
+      </p>
+      <p class='Panel-outOfTheseRat'>
+        Out of these <span class="hilight"><%= comp_up_avg.below_up_avg > 0 ? comp_up_avg.below_up_avg: '' %>, “<%= worst_indicator.name %>” is the poor performing indicator
+        with it’s score as <%= worst_indicator.score.toFixed(2) %> when compared to UP avg, which is at <%= worst_indicator.up_avg.toFixed(1) %>.</span> The data
+        shows that <%= worst_indicator.best_dist %> is the best performer in <%= curr_mn %> <%= curr_yr %> with <%= worst_indicator.best_dist_score.toFixed(2) %> as it’s score.
+      </p>
+      <img class='Panel-panelLine w-11 mt-10' src='assets/comic/images/panel_1_line_2.png' alt="icon">
+    </div>
+    <div class='Chart w-649px h-181 text-12 leading-default font-robo font-normal'>
+      <!-- <img class='Chart-chart w-649px' src='assets/comic/images/chart_2.png'> -->
+      <div class="Chart-chart w-649px bg-white">
+        <div class="border-7 p-2 mr-1">
+          <p class="mb-0 fs-18 text-center font-bold px-5">Prioritisation of indicators for District Specific Programaming, <%= curr_mn %> <%= curr_yr %></p>
+          <table class="table table-borderless best-toleast w-full">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-color2 fs-12 fw-500 ls-1 align-middle text-left pl-3 py-2">Block Indicators Performance</th>
+                  <th scope="col" class="text-color2 fs-12 fw-500 ls-1 align-middle text-left pl-3 py-2"><%= curr_mn %> Score (% change w.r.t. UP Avg.)</th>
+                  <th scope="col" class="text-color2 fs-12 fw-500 ls-1 align-middle text-left pl-3 py-2">UP Avg. Score</th>
+                  <th scope="col" class="text-color2 fs-12 fw-500 ls-1 align-middle text-left pl-3 py-2">Best Performing District</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% _.each(table_data, function(row){ %>
+                <tr>
+                  <th scope="row" class="font-normal text-color2 fs-11 ls-1 align-middle text-left pl-3 py-1"><%= row.indicator_name %></th>
+                  <td class="align-middle text-left pl-3 py-0"><div class="d-flex items-center"><div class="text-color2 fs-13 fw-500 min-w-45"><%= indian_number_format(row.month_wise.toFixed(1)) %></div><div class="circle-1 <%- row.percent_diff > 0 ? 'bg-failure' : 'bg-success' %> mr-2 rounded-full"></div><span class="fs-13 ls-1 text-color3">(<%= row.percent_diff.toFixed(1) %>%)</span></div></td>
+                  <td class="text-color2 fs-13 ls-1 fw-500 align-middle text-left pl-3 py-0"><%= indian_number_format(row.up_avg.toFixed(1)) %></td>
+                  <td class="text-color2 fs-13 ls-1 align-middle text-left pl-3 py-0"><%= indian_number_format(row.best_district_score.toFixed(2)) %> (<%= row.best_district_name %>)</td>
+                </tr>
+                <% }) %>
+                <% _.each(last, function(row){ %>
+                  <tr>
+                    <th scope="row" class="font-normal text-color2 fs-11 ls-1 align-middle text-left pl-3 py-1"><%= row.indicator_name %></th>
+                    <td class="align-middle text-left pl-3 py-0"><div class="d-flex items-center"><div class="text-color2 fs-13 fw-500 min-w-45"><%= indian_number_format(row.month_wise.toFixed(1)) %></div><div class="circle-1 <%- row.percent_diff > 0 ? 'bg-failure' : 'bg-success' %> mr-2 rounded-full"></div><span class="fs-13 ls-1 text-color3">(<%= row.percent_diff.toFixed(1) %>%)</span></div></td>
+                    <td class="text-color2 fs-13 ls-1 fw-500 align-middle text-left pl-3 py-0"><%= indian_number_format(row.up_avg.toFixed(1)) %></td>
+                    <td class="text-color2 fs-13 ls-1 align-middle text-left pl-3 py-0"><%= indian_number_format(row.best_district_score.toFixed(2)) %> (<%= row.best_district_name %>)</td>
+                  </tr>
+                  <% }) %>
+              </tbody>
+            </table>
+            <p class="text-color2 fs-12 italic ls-1 text-right pt-5">*Prioritisation of indicators is based on %Change vs. UP Score</p>
+        </div>
+      </div>
+    </div>
+    <div class='Panel1 w-413px h-729px text-15 leading-21 font-digi-bb font-bold left-auto top-28'>
+      <!-- <img class='Panel1-chart w-413px' src='assets/comic/images/chart_3.png'> -->
+      <div class="Panel1-chart w-413px">
+      <div class="border-7 p-2 font-robo bg-white">
+        <p class="mb-0 fs-18 text-center font-weight-bold px-3"> Rank & Score of “<%= worst_indicator.name %>”, <%= dname %></p>
+        <div class="d-flex justify-center my-2">
+          <div class="mr-3 d-flex items-center font-normal"><span class="border-grey1 border px-3 mr-1"></span><span class="fs-12 italic ls-1">SCORE</span></div>
+          <div class="d-flex items-center font-normal">
+            <span class="bg-color4 circle-1 rounded-full"></span>
+            <span class="bg-color6 circle-1 rounded-full"></span>
+            <span class="bg-color7 circle-1 rounded-full"></span>
+            <span class="fs-12 italic ls-1 mx-2">RANK (Top to Bottom)</span>
+          </div>
+        </div>
+        <div>
+          <section class="ml-0 pl-5">
+            <div class="bubble-main">
+              <% mon_dict = {'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6, 'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12} %>
+              <% mon_ind = {1: 'Jan', 2: 'Feb', 3: 'Mar',4: 'Apr', 5: 'May', 6: 'Jun', 7: 'Jul', 8: 'Aug', 9: 'Sep', 10: 'Oct', 11: 'Nov', 12: 'Dec'} %>
+              <% arr = [] %>
+              <% ind = mon_dict[curr_mn] + 1 %>
+              <% while(arr.length < 12) { %>
+                <% arr.push(mon_ind[ind]) %>
+                <% ind += 1 %>
+                <% if (ind > 12) { ind = 1} %>
+              <% } %>
+              <% arr = [] %>
+              <div class="row">
+                <% _.each(arr, function(mon){ %>
+                <div class="bubbles col-1">
+                  <p class="month"><%= mon %></p>
+                  <% var dt = chart_data.filter((row) => [mon_dict[mon]].includes(row.month))[0] %>
+                  <span class="dot <%- dt.indicator_rank < 26 ? 'green' : dt.indicator_rank < 51 ? 'yellow': 'pink' %>"><%= dt.indicator_rank %></span>
+                </div>
+                <% }) %>
+              </div>
+            </div>
+            <div id="my_dataviz"></div>
+          </section>
+        </div>
+        </div>
+      </div>
+      <div class='Panel2 w-294px h-351px pt-4 top-52 left-118'>
+        <p class='Panel2-alsoTheIndicator font-digi-bb uppercase italic'>
+          <% var curr = chart_data[chart_data.length-1] %>
+          <% var prev2 = chart_data[chart_data.length-2] %>
+          <% var diff__ = parseFloat(curr.value.toFixed(1) - prev2.value.toFixed(1)) %>
+          <% if(diff__ !== 0) { %>
+            Also, the indicator “<%= worst_indicator.name %>” is <%= diff__ < 0 ? 'decreasing' : 'increasing' %> AS COMPARED TO <%= mon_ind[prev2.month] %>
+            <%= moment(prev2.date).format('YYYY') %>.
+          <% } else { %>
+            Also, the indicator “<%= worst_indicator.name %>” has no change AS COMPARED TO <%= mon_ind[prev2.month] %>
+            <%= moment(prev2.date).format('YYYY') %>.
+          <% } %>
+        </p>
+        <img class='Panel2-panelLine w-11' src='assets/comic/images/panel_3_line_1.png' alt="icon">
+        <img class='Panel2-panelFigure w-217px' src='assets/comic/images/panel_3_figure_1.png' alt="icon">
+      </div>
+    </div>
+  </div>
+</div>
