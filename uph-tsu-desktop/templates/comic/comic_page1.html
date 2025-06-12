@@ -1,0 +1,224 @@
+<link rel="stylesheet" href="comic_styles/style.css">
+<div class="district-summary">
+<div class='AgraSOverallPerformance w-334 h-210 tracking-zero bg-white'>
+    <div class='Header border border-solid w-329 h-66px font-normal border-grey1 text-white bg-grey0'>
+      <p class='Header-agraSHealthIndica fs-26 leading-22 font-digi-bb'>
+        <%= dname.toUpperCase() %>’S HEALTH INDICATORS’ PERFORMANCE, <%= curr_mn.toUpperCase() %> <%= curr_yr %>
+      </p>
+      <p class='Header-forMoreDetailsPl text-12 leading-default font-robo italic'>
+        For more details, please visit uphealthdashboard.in
+      </p>
+    </div>
+    <div class='Bar w-1318px h-249px text-15 leading-21 font-digi-bb font-bold text-grey0'>
+      <img class='Bar-panelBgRow w-1318px' src='assets/images/panel_bg_row_1.png' alt="icon">
+      <div class='Panel w-307px h-241px italic top-8'>
+        <img class='Panel-panelFigure w-173px top-n9' src='assets/images/panel_1_figure.png'>
+        <p class='Panel-hiAIWantToKn'>
+          HI DATA SINGH, I WANT TO KNOW THE KEY INSIGHTS FOR <%= dname.toUpperCase() %> FOR <%= curr_mn.toUpperCase() %> <%= curr_yr %>. COULD YOU CHECK
+          IF THE DATA HAS BEEN UPDATED ON THE DASHBOARD?
+        </p>
+        <img class='Panel-panelLine w-11' src='assets/images/panel_1_line_8044e2.png' alt="icon">
+      </div>
+      <div class='Panel1 w-76 h-246px italic left-359'>
+        <p class='Panel1-hiBYesTheDat mr-24'>
+          HI AROGYA KUMAR! YES, THE DATA FOR <%= curr_mn.toUpperCase() %> <%= curr_yr %> HAS BEEN UPDATED. LET ME PRESENT THE DATA ON OUR
+          DISTRICT, <%= dname.toUpperCase() %>’S PERFORMANCE.
+        </p>
+        <img class='Panel1-panelFigure w-62 bottom-0 top-auto right-0 left-auto' src='assets/images/panel_2_figure.png' alt="icon">
+      </div>
+      <div class='Panel2 w-277px h-42 italic left-50'>
+        <img class='Panel2-panelLine w-11 top-118 left-0' src='assets/images/panel_1_line_8044e2.png' alt="icon">
+        <p class='Panel2-agraIsRankedAt'>
+          <% diff_ = rank_curr['composite_rank'] - rank_prev['composite_rank'] %>
+          <%= dname.toUpperCase() %> IS RANKED AT <span class="hilight"><%= rank_curr['composite_rank'] %> OUT OF THE 75 DISTRICTS </span> IN <%= curr_mn.toUpperCase() %> <%= curr_yr %>, WHICH WAS AT
+          <span class="hilight"><%= rank_prev['composite_rank'] %>TH POSITION</span> IN <%= prev_mn.toUpperCase() %> <%= prev_yr %>. IT HAS <span class="hilight"><%= diff_ <= 0 ? 'IMPROVED' : 'DECLINED' %>
+          BY <%= diff_ < 0 ? diff_ *= -1 : diff_ %> POSITIONS</span>, HOWEVER I SEE THAT THE COMPOSITE
+          SCORE HAS <span class="hilight">REACHED <%= rank_curr['composite_index'].toFixed(2) %> WHICH WAS AT" <%= rank_prev['composite_index'].toFixed(2) %> IN <%= prev_mn.toUpperCase() %> <%= prev_yr %></span>
+        </p>
+      </div>
+      <!-- <img class='Bar-kpiCard w-363px' src='assets/images/kpi_card_1.png'> -->
+      <div class="Bar-kpiCard w-363px bg-white">
+        <div class="border-7 p-2 col-sm-7 font-robo mt-1">
+          <p class="mb-0 fs-18 text-center font-weight-bold px-5"><%= dname %>’s Rank & Composite Score, <%= curr_mn %> vs. <%= prev_mn %> </p>
+          <table class="table table-borderless mb-0 w-full agras-table mt-3">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-color2 fs-14 align-middle py-3"></th>
+                  <th scope="col" class="text-color2 fs-14 align-middle py-3 text-left">Ranking</th>
+                  <th scope="col" class="text-color2 fs-14 align-middle py-3 text-left">Composite Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-color2 fs-14 align-middle py-3 text-left pl-3"><%= curr_mn %> <%= curr_yr %></th>
+                  <td class="align-middle py-3"><div class="d-flex align-items-center text-color2 fs-36 fw-500 pl-2"><%= rank_curr['composite_rank'] %>
+                    <% var sym = rank_curr['composite_rank'] - rank_prev['composite_rank'] %>
+                    <% if(!sym == 0) { %>
+                      <img src="<%- sym <0 ? 'assets/images/triangle-green.svg' : 'assets/images/triangle-red.svg' %>" class="mr-1" alt="triangle">
+                      <span class="fs-18 text-color3">(<%= sym <0 ? -(sym)  :  -sym %>)</span></div></td>
+                    <% } %>
+                  <td class="text-color2 fs-36 fw-500 align-middle py-3 pl-5"><%= rank_curr['composite_index'].toFixed(2) %></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-color2 fs-14 align-middle py-3 text-left pl-3"><%= prev_mn %> <%= prev_yr %></th>
+                  <td class="align-middle py-3"><div class="d-flex align-items-center text-color2 fs-36 fw-500 pl-3"><%= rank_prev['composite_rank'] %></div></td>
+                  <td class="text-color2 fs-36 fw-500 align-middle py-3 pl-5"><%= rank_prev['composite_index'].toFixed(2) %></td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+    <div class='Bar1 w-1317px h-121 text-15 leading-21 font-digi-bb font-bold text-grey0'>
+      <div class='Panel3 w-357px h-481px italic'>
+        <div class='Panel4 w-88 h-245px'>
+          <img class='Panel4-panelFigure w-191px' src='assets/images/panel_4_figure.png' alt="icon">
+          <p class='Panel4-goodToKnowThatWe'>
+            <%- sym < 0 || sym == 0 ? 'GOOD TO KNOW THE PERFORMANCE OF DISTRICT!' : 'OH, BAD TO KNOW ABOUT THE PERFORMANCE OF DISTRICT'  %> I AM INTERESTED IN KNOWING THE TOP AND THE BOTTOM PERFOMING BLOCKS.
+          </p>
+          <img class='Panel4-panelLine w-11' src='assets/images/panel_1_line_8044e2.png' alt="icon">
+        </div>
+        <div class='Panel5 w-310px h-221px'>
+          <img class='Panel5-panelFigure w-37' src='assets/images/panel_5_figure.png' alt="icon">
+          <p class='Panel5-thanksLetSLookA'>
+            THANKS! LET’S LOOK AT THE INDICATOR PERFORMANCE FOR <%= dname.toUpperCase()%> IN <%= curr_mn.toUpperCase() %> & HOW
+            IT HAS PERFORMED WHEN COMPARED TO UP AVG
+          </p>
+          <img class='Panel5-panelLine w-11' src='assets/images/panel_1_line_8044e2.png' alt="icon">
+        </div>
+      </div>
+      <% len = block_data.length %>
+      <% len2 = block_data_prev.length %>
+      <% var top_blocks = [] %>
+      <% top_blocks.push(block_data[0].block_name.toUpperCase()) %>
+      <% if(block_data.length > 2) { %>
+        <% top_blocks.push(block_data[1].block_name.toUpperCase()) %>
+      <% } %>
+      <% if(block_data.length > 3) { %>
+        <% top_blocks.push(block_data[2].block_name.toUpperCase()) %>
+      <% } %>
+      <% var bottom_blocks = [] %>
+      <% if(block_data.length > 1) { %>
+        <% bottom_blocks.push(block_data[len-1].block_name.toUpperCase()) %>
+      <% } %>
+      <% if(block_data.length > 4) { %>
+        <% bottom_blocks.push(block_data[len-2].block_name.toUpperCase()) %>
+      <% } %>
+      <% if(block_data.length > 5) { %>
+        <% bottom_blocks.push(block_data[len-3].block_name.toUpperCase()) %>
+      <% } %>
+      <% top_blocks = top_blocks.join(', ') %>
+      <% bottom_blocks= bottom_blocks.join(', ') %>
+      <div class='Panel6 w-271px h-474px italic'>
+        <img class='Panel6-panelFigure mt-12-new' width="211" src='assets/images/panel_7_figure.png' alt="icon">
+        <p class='Panel6-outOfTheBlocks mr-8'>
+          OUT OF THE <span class="hilight"><%= len %> BLOCKS IN <%= dname.toUpperCase() %>, <%= top_blocks %></span>
+          ARE THE TOP PERFORMING BLOCKS IN <%= curr_mn.toUpperCase() %> <%= curr_yr %>.
+        </p>
+        <img class='Panel6-bitmap w-11' src='assets/images/bitmap.png' alt="icon">
+        <p class='Panel6-whileAhirAchnera'>
+          WHILE <span class="hilight"><%= bottom_blocks %></span> ARE AT THE BOTTOM.
+        </p>
+      </div>
+      <!-- <img class='Bar1-choropleth w-705px' src='assets/images/choropleth1.png'> -->
+      <div class="Bar1-choropleth w-705px font-robo bg-white">
+        <div class="border-7 p-4 col-sm-8">
+          <div class="d-flex items-center">
+            <p class="mb-0 fs-18 font-weight-bold align-middle col-2 px-0">Block-wise Performance in <%= dname %></p>
+            <div class="min-h-265 col-8 px-0 min-w-413px map_view"></div>
+            <div class="mb-0 fs-18 font-weight-bold align-middle col-2 px-0">
+              <!-- <svg id="my_dataviz3" height="100%" width="100%"></svg> -->
+              <img src="assets/images/top-bottom.svg" alt="top-bottom" width="75px">
+            </div>
+          </div>
+          <div class="d-flex justify-end my-2 pr-3">
+            <button class="bg-color4 px-3 py-1 mr-1 rounded-full border-0"></button>
+            <button class="bg-color6 px-3 py-1 mr-1 rounded-full border-0"></button>
+            <p class="sm1 text-color2 mb-0 mr-4"><%= curr_mn %> <%= curr_yr %></p>
+            <button class="bg-color22 px-3 py-1 mr-1 rounded-full border-0"></button>
+            <p class="sm1 text-color2 mb-0"><%= prev_mn %> <%= prev_yr %></p>
+          </div>
+          <table class="table table-borderless topblocks mb-0 w-full">
+            <tr>
+              <td scope="row" class="text-color2 h6 mb-0 align-middle py-0">Top Blocks</td>
+              <td class="align-middle py-0">
+                <div class="d-flex justify-between bg-color4 rounded-full px-2 py-1 h-26 items-center fw-500 fs-13">
+                  <div class="d-flex"><%= block_data[0].composite_rank %> <span class="ml-2 top-blocks-content"><%= block_data[0].block_name.substr(block_data[0].block_name.indexOf(" ") + 1) %></span></div>
+                  <div><%= block_data[0].composite_index.toFixed(2) %></div>
+                </div>
+                <div class="d-flex justify-between bg-color5 rounded-full px-2 py-1 h-26 items-center mb-2 fw-500 fs-13 mt-1">
+                    <div class="d-flex"><%= block_data_prev[0].composite_rank %> <span class="ml-2 top-blocks-content"><%= block_data_prev[0].block_name.substr(block_data_prev[0].block_name.indexOf(" ") + 1) %></span></div>
+                    <div><%= block_data_prev[0].composite_index.toFixed(2) %></div>
+                  </div>
+              </td>
+              <% if(block_data.length > 2) { %>
+                <td class="align-middle py-0">
+                    <div class="d-flex justify-between bg-color4 rounded-full px-2 py-1 h-26 items-center fw-500 fs-13">
+                      <div class="d-flex"><%= block_data[1].composite_rank %> <span class="ml-2 top-blocks-content"><%= block_data[1].block_name.substr(block_data[1].block_name.indexOf(" ") + 1) %></span></div>
+                      <div><%= block_data[1].composite_index.toFixed(2) %></div>
+                    </div>
+                    <div class="d-flex justify-between bg-color5 rounded-full px-2 py-1 h-26 items-center mb-2 fw-500 fs-13 mt-1">
+                        <div class="d-flex"><%= block_data_prev[1].composite_rank %> <span class="ml-2 top-blocks-content"><%= block_data_prev[1].block_name.substr(block_data_prev[1].block_name.indexOf(" ") + 1) %></span></div>
+                        <div><%= block_data_prev[1].composite_index.toFixed(2) %></div>
+                    </div>
+                </td>
+              <% } %>
+              <% if(block_data.length > 3) { %>
+                  <td class="align-middle py-0">
+                    <div class="d-flex justify-between bg-color4 rounded-full px-2 py-1 h-26 items-center fw-500 fs-13">
+                      <div class="d-flex"><%= block_data[2].composite_rank %> <span class="ml-2 top-blocks-content"><%= block_data[2].block_name.substr(block_data[2].block_name.indexOf(" ") + 1) %></span></div>
+                      <div><%= block_data[2].composite_index.toFixed(2) %></div>
+                    </div>
+                    <div class="d-flex justify-between bg-color5 rounded-full px-2 py-1 h-26 items-center mb-2 fw-500 fs-13 mt-1">
+                        <div class="d-flex"><%= block_data_prev[2].composite_rank %> <span class="ml-2 top-blocks-content"><%= block_data_prev[2].block_name.substr(block_data_prev[2].block_name.indexOf(" ") + 1) %></span></div>
+                        <div><%= block_data_prev[2].composite_index.toFixed(2) %></div>
+                    </div>
+                  </td>
+              <% } %>
+            </tr>
+            <tr>
+                <td scope="row" class="text-color2 h6 mb-0 align-middle py-0">Bottom Blocks</td>
+                <% if(block_data.length > 1) { %>
+                  <td class="align-middle py-0">
+                    <div class="d-flex justify-between bg-color6 rounded-full px-2 py-1 h-26 items-center fw-500 fs-13 mb-1">
+                      <div class="d-flex"><%= block_data[len-1].composite_rank %> <span class="ml-2 top-blocks-content"><%= block_data[len-1].block_name.substr(block_data[len-1].block_name.indexOf(" ") + 1) %></span></div>
+                      <div><%= block_data[len-1].composite_index.toFixed(2) %></div>
+                    </div>
+                    <div class="d-flex justify-between bg-color5 rounded-full px-2 py-1 h-26 items-center fw-500 fs-13">
+                        <div class="d-flex"><%= block_data_prev[len2-1].composite_rank %> <span class="ml-2 top-blocks-content"><%= block_data_prev[len2-1].block_name.substr(block_data[len2-1].block_name.indexOf(" ") + 1) %></span></div>
+                        <div><%= block_data_prev[len2-1].composite_index.toFixed(2) %></div>
+                    </div>
+                  </td>
+                <% } %>
+                <% if(block_data.length > 4) { %>
+                  <td class="align-middle py-0">
+                    <div class="d-flex justify-between bg-color6 rounded-full px-2 py-1 h-26 items-center fw-500 fs-13 mb-1">
+                      <div class="d-flex"><%= block_data[len-2].composite_rank %> <span class="ml-2 top-blocks-content"><%= block_data[len-2].block_name.substr(block_data[len-2].block_name.indexOf(" ") + 1) %></span></div>
+                      <div><%= block_data[len-2].composite_index.toFixed(2) %></div>
+                    </div>
+                    <div class="d-flex justify-between bg-color5 rounded-full px-2 py-1 h-26 items-center fw-500 fs-13">
+                        <div class="d-flex"><%= block_data_prev[len2-2].composite_rank %><span class="ml-2 top-blocks-content"><%= block_data_prev[len2-2].block_name.substr(block_data[len2-2].block_name.indexOf(" ") + 1) %></span></div>
+                        <div><%= block_data_prev[len2-2].composite_index.toFixed(2) %></div>
+                    </div>
+                  </td>
+                  <% } %>
+                  <% if(block_data.length > 5) { %>
+                    <td class="align-middle py-0">
+                      <div class="d-flex justify-between bg-color6 rounded-full px-2 py-1 h-26 items-center fw-500 fs-13 mb-1">
+                        <div class="d-flex"><%= block_data[len-3].composite_rank %> <span class="ml-2 top-blocks-content"><%= block_data[len-3].block_name.substr(block_data[len-3].block_name.indexOf(" ") + 1) %></span></div>
+                        <div><%= block_data[len-3].composite_index.toFixed(2) %></div>
+                      </div>
+                      <div class="d-flex justify-between bg-color5 rounded-full px-2 py-1 h-26 items-center fw-500 fs-13">
+                          <div class="d-flex"><%= block_data_prev[len2-3].composite_rank %> <span class="ml-2 top-blocks-content"><%= block_data_prev[len2-3].block_name.substr(block_data[len2-3].block_name.indexOf(" ") + 1) %></span></div>
+                          <div><%= block_data_prev[len2-3].composite_index.toFixed(2) %></div>
+                      </div>
+                    </td>
+                  <% } %>
+              </tr>
+
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

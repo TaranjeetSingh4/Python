@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1366px" height="515px" viewBox="0 0 1366 515" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>898C629D-7570-4757-B9CF-AF60CF5A4C32@1x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="36.220014%" y1="46.1139916%" x2="74.7408706%" y2="65.4695298%" id="linearGradient-1">
+            <stop stop-color="#F9EBD7" offset="0%"></stop>
+            <stop stop-color="#DDDDDD" offset="100%"></stop>
+        </linearGradient>
+        <path d="M0,0 L1366,0 L1365.57358,476 C1156.22167,502.435895 934.697143,515.435895 701,515 C467.302857,514.564105 233.63619,500.715077 0,473.452915 L0,0 Z" id="path-2"></path>
+        <linearGradient x1="21.6288985%" y1="7.47725769%" x2="40.1348251%" y2="72.2834785%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#DED8D7" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="44.1378026%" y1="50%" x2="73.7971205%" y2="49.6028218%" id="linearGradient-5">
+            <stop stop-color="#DFD9D8" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#E5E1DB" stop-opacity="0.434959572" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="62.3519908%" y1="58.9520977%" x2="43.1773598%" y2="45.2082862%" id="linearGradient-6">
+            <stop stop-color="#E0DFDC" offset="0%"></stop>
+            <stop stop-color="#FCEFDD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Background">
+            <g id="BG">
+                <g id="Second-Layer">
+                    <g id="CS">
+                        <g>
+                            <mask id="mask-3" fill="white">
+                                <use xlink:href="#path-2"></use>
+                            </mask>
+                            <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                            <g id="Group-17" mask="url(#mask-3)">
+                                <g transform="translate(0.000000, 73.000000)">
+                                    <path d="M5.1159077e-13,0 C104.333775,30.5254458 181.995108,56.5254458 232.984,78 C283.972892,99.4745542 331.932211,126.381127 376.861958,158.719718 L335,436 L5.1159077e-13,436 L5.1159077e-13,0 Z" id="Path-6" fill="url(#linearGradient-4)"></path>
+                                    <path d="M1.47792889e-12,432 C132.300534,404.584192 287.9672,383.084555 467,367.501086 C646.0328,351.917618 827.366133,344.083923 1011,344 L1121.99851,441.5 L1.47792889e-12,444 L1.47792889e-12,432 Z" id="Path-6" fill="url(#linearGradient-5)"></path>
+                                    <path d="M407,192 C560.615703,260.577711 716.615703,308.911044 875,337 C1033.3843,365.088956 1196.90882,373.422289 1365.57358,362 L1365.57358,9 L493.136,55 C469.192545,75.2860904 450.813878,95.6194237 438,116 C425.186122,136.380576 414.852788,161.71391 407,192 Z" id="Path-7" fill="url(#linearGradient-6)"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

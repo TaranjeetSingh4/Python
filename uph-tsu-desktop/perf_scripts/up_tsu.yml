@@ -1,0 +1,15 @@
+execution:
+  concurrency: 1
+  ramp-up: 3s
+  hold-for: 5m
+  scenario:
+    script: up_tsu.jmx
+    data-sources:
+        path:login.csv
+
+
+reporting:
+- module: blazemeter
+  report-name: Taurus test report
+  test: Taurus test
+  project: Taurus test project

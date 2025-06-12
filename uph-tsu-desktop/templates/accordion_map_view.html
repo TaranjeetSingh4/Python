@@ -1,0 +1,183 @@
+<div id="accordion" class="<%- (url.file == 'amethi_map')?((url.searchKey.capture)? 'scroll_amethi': 'scroll'):'scroll' %>">
+    <% if(!_.includes(["", undefined], g1.url.parse(location.href).searchKey.block_level)){%>
+    <%var amethi_agg = numeral(_.round((accordion_data[0]['amethi_aggregate_score']/_.sumBy(accordion_data, 'Weight') * 100) ,2)).format('0,0.0') +'%' %>
+    <%} else { %>
+    <% amethi_agg = numeral(_.round((accordion_data[0]['amethi_aggregate_score']* 100/nomralize_val) * 100,1)).format('0,0.0') +'%' %>
+    <% } %>
+    <% if(_.isArray(accordion_data)){%>
+    <% accordion_data = custom_sort_indicators(accordion_data, 'weightage') %>
+    <% indicator_list = _.map(accordion_data, 'indicator_id') %>
+    <% } %>
+    <% if (_.keys(accordion_data).length > 0){%>
+    <% delete accordion_data.undefined %>
+    <% if(filter_by === 'type' || filter_by === 'domain' || filter_by === undefined) { %>
+        <div class="card rounded-0 bg-transparent border-0">
+            <div class="checking card-header rounded-0 py-2 px-2 border border-left-0 border-right-0 border-top-0 bg-dark adding-tail tail-rc" data-key="overall">
+                <div class="card-link text-white p-10 text-uppercase" id="overall_score" data-toggle="collapse" href="#">
+                    <div class="d-flex row mx-0">
+                        <div class="p-10 align-self-center col-8 px-0 cursor-pointer">
+                            <%- (url.file == 'amethi_map')?'Aggregate score':'Overall composite score' %>
+                        </div>
+                        <% if(accordion_data.length > 0) { %>
+                        <div class="d-flex justify-content-end p-13 col-4 p-0">
+                            <span class="pr-5 composite_rank">
+                            </span>
+                            <span class="p-13 align-self-center">
+                            <%= amethi_agg %>
+                            </span>
+                            <!-- <img src="img/plus.png" alt="icon" class="pl-1 ml-2 invisible"> -->
+                        </div>
+                        <% } else { %>
+                            <div class="p-13">
+                                <span class="p-13 align-self-center"><%= (!_.isNaN(overall_score[0]['composite_index']) && _.isFinite(overall_score[0]['composite_index'])) ? a + '%' : 'NA' %>%</span>
+                                <!-- <img src="img/plus.png" alt="icon" class="px-1 invisible align-self-center"> -->
+                            </div>
+                        <% } %>
+                        <!-- <img src="img/plus.png" alt="icon" class="px-1 invisible"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% let uniq_ = _.orderBy(_.map(_.uniqBy(accordion_data,filter_by),filter_by,'type'),['asc'])%>
+        <% if(filter_by === 'domain' ) { %>
+            <% uniq_ = ['RMNCH','Nutrition','CD','NCD','System'] %>
+        <% } %>
+        <% if(filter_by === 'type'){ %>
+        <% uniq_ = ["Input","Int Outcome","Outcome"] %>
+        <% } %>
+        <% _.forEach(uniq_, function(key) { %>
+            <div class="card rounded-0 bg-transparent border-0">
+                <div class="checking card-header rounded-0 py-2 px-2 border border-left-0 border-right-0 border-top-0 accordion_head adding-tail <%= color_mapping[key] %> <%= (filter_by === undefined) ? 'type' : filter_by %>" data-key="<%= key %>">
+                    <a class="card-link text-white p-10 text-uppercase collapsed" data-toggle="collapse" href="#<%= key.replace(' ','_') %>">
+                        <div class="d-flex justify-content-between">
+                            <div class="p-10 align-self-center col-8 px-0 cursor-pointer">
+                                <%= key %>
+                            </div>
+                                <div class="p-13 col-4 px-0"><div class="d-flex justify-content-between">
+                                        <i class="fa fa-arrow-up align-self-center invisible"></i>
+                                <span class="p-10 align-self-center">
+                                </span>
+                                    <img src="img/plus.png" alt="icon" class="pl-1 ml-2  invisible">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="<%= key.replace(' ','_') %>" class="collapse accordion_collapse" data-parent="#accordion">
+                    <div class="card-body bg-color7 rounded-0 pb-2 pt-1 px-0">
+                        <% let category_filter ={}%>
+                        <% category_filter[filter_by] = key %>
+                        <% let value = _.filter(accordion_data, category_filter)%>
+                        <% _.forEach(value, function(d) { %>
+                            <div class="d-flex text-dark justify-content-between px-2 pb-1 pt-2 indicator_list cutsom-color-left cursor-pointer" id="<%= d.indicator_id %>" data="<%= d.indicator_id %>" desc="<%= d.indicator %>"  title="<%= d.indicator %>">
+                                <div class="p-12 col-8 px-0 text-left line-height-1">
+                            <% var long_name = d.indicator %>
+                            <%- _.find(indicator_mapping, {indicator_name: long_name}).short_name %>
+                                </div>
+                                <div class="p-13 px-0 col-4">
+                                    <div class="p-13 d-flex">
+                                        <span class="col-6 p-0 p-13 text-center rank_"></span>
+                                        <% if(url.file == 'amethi_map'){%>
+                                            <% x = "" %>
+                                        <% } else {%>
+                                            <% x = "Rs." %>
+                                        <% } %>
+                                        <% if(url.file != 'amethi_map'){%>
+                                        <% var value_ = d['perc_point'] === undefined ? 'NA' : _.includes(['indicator_12'], d.indicator_id) ? ( d['perc_point'] !=0 ? x + numeral(_.round(d['perc_point'], 2)).format('0,0.00') : x + d['perc_point'] ) : _.includes(['indicator_121', 'indicator_131', 'indicator_141', 'indicator_4', 'indicator_6'], d.indicator_id) ? _.round(d['perc_point'], 2) : _.round(d['perc_point'], 2) + "%" %>
+                                        <%} else {%>
+                                        <% var unit =_.filter(indicator_mapping,{indicator_name: d.indicator})[0].unit %>
+                                        <% var decimal =_.filter(indicator_mapping,{indicator_name: d.indicator})[0].decimal %>
+                                        <%value_ = (unit === "%") ? numeral(_.round(d['perc_point'], 2)).format(decimal)+ '%' : numeral(_.round(d['perc_point'], 2)/100).format(decimal) %>
+                                        <% } %>
+                                        <span class="col-6 p-0 p-12 text-right"><%= value_ %></span>
+                                        <!-- <img src="img/plus.png" alt="icon" class="px-1 invisible"> -->
+                                    </div>
+                                </div>
+                            </div>
+                        <% }) %>
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+    <% } else { %>
+        <div class="checking indicator_list card-header rounded-0 py-2 px-2 border border-left-0 border-right-0 border-top-0 bg-dark adding-tail tail-rc">
+        <div class="d-flex row mx-0">
+        <% if(url.file == "amethi_map"){%>
+        <div class="p-13 align-self-center col-7 px-0 cursor-pointer text-white">
+            Aggregate score
+        </div>
+        <%} else {%>
+        <div class="p-13 align-self-center col-7 px-0 cursor-pointer text-white">
+            Overall composite score
+        </div>
+        <% } %>
+        <% if(accordion_data.length > 0) { %>
+        <% if(url.file == "amethi_map"){%>
+        <div class="p-13 col-4 p-0 text-white d-flex justify-content-end">
+        <span class="composite_rank pr-5"></span>
+        <span>
+        <% if(!_.includes(["", undefined], g1.url.parse(location.href).searchKey.block_level)){ %>
+        <%= amethi_agg %>
+        <%} else { %>
+        <%= amethi_agg %>
+        <%}%>
+        </span>
+        </div>
+        <%} else {%>
+        <div class="p-13 col-4 p-0 text-white d-flex justify-content-end">
+        <span class="composite_rank pr-5"></span>
+        <span>
+        <%= (!_.isNaN(overall_score[0]['composite_index']) && _.isFinite(overall_score[0]['composite_index'])) ? overall_score[0]['composite_index'].toFixed(2) : 0 %>
+        </span>
+        </div>
+        <% } %>
+        </div>
+        </div>
+        <%}%>
+        <% _.forEach(accordion_data, function(d, i) { %>
+            <% var color_class = ((i%2 === 0) ? 'performance-dark-color' : 'performance-light-color') %>
+            <% if(url.file == 'amethi_map'){%>
+            <!-- <% tip_text = (d.indicator_id === 'indicator_11' || d.indicator_id === 'indicator_35') ? "% officer-visits conducted to facilities (against minimum requirement)": d.indicator %> -->
+            <% tip_text = (d.indicator_id === 'indicator_15' || d.indicator_id === 'indicator_36') ? "ANC Registration within first trimester (against estimated PW)": ((d.indicator_id === 'indicator_35') ? "% officer-visits conducted to facilities (against minimum requirement)": d.indicator) %>
+            <% } %>
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body bg-success rounded-0 pb-2 pt-1 px-2 indicator_list cursor-pointer <%= color_class %>" data="<%= d.indicator_id %>" desc="<%= d.indicator %>" id="<%= d.indicator_id %>">
+                    <div class="d-flex row justify-content-between pb-1 pt-1">
+                        <div class="col-7 align-self-center p-12 line-height-1" data-toggle="tooltip" data-placement="bottom"
+                        title="<%= (url.file == 'amethi_map')?tip_text: d.indicator%>">
+                            <% var long_name = d.indicator %>
+                            <%- _.find(indicator_mapping, {indicator_name: long_name}).short_name %>
+                        </div>
+                        <%if(url.file == 'amethi_map'){%>
+                          <% formula_var = 'formula' %>
+                        <%} else {%>
+                        <% formula_var = (url.searchKey.month == undefined)? 'formula': 'formula_year' %>
+                        <%}%>
+                        <% if(_.filter(indicator_mapping,{'indicator_name':d.indicator})[0][formula_var] != undefined) { %>
+                        <% var formula = _.filter(indicator_mapping,{'indicator_name':d.indicator})[0][formula_var].split(',')%>
+                        <% var form_list  = _.join(_.map(formula, function(d){return "<li class='p-12 pb-2 ml-2 no-bullets'>"+d+"</li>"})) %>
+                        <% form_list = form_list.replace(/,/g, "")%>
+                        <% form_list = form_list.replace(/Formula/g, "<b class='p-14'>Formula</b>")%>
+                        <% form_list = form_list.replace(/Source/g, "<b class='p-14'>Source</b>")%>
+                        <% form_list = form_list.replace(/Target/g, "<b class='p-14'>Target</b>")%>
+                        <div class="col px-0 p-13">
+                            <span class="fa fa-info-circle align-items-center align-items-left example" data-toggle="tooltip" data-placement="right"
+                            title="<ul class='no-bullets'><%= form_list %></ul>" data-html="true" data-template="<div class='tooltip' role='tooltip'><div class=''></div><div class='tooltip-inner info_icon p-10 text-left pl-1'></div></div>"></span>
+                        </div>
+                        <% } %>
+                        <div class="col-3 pl-0 pt-1 p-12 text-center">
+                            <% if(url.file != 'amethi_map'){ %>
+                                <%= _.includes(['indicator_12'], d.indicator_id) ? (d['perc_point']!= 0 ? "Rs." + numeral(_.round(d['perc_point'], 2)).format('0,0.00') : "Rs." + d['perc_point']  ) : _.includes(['indicator_121', 'indicator_131', 'indicator_141', 'indicator_4', 'indicator_6', 'indicator_8', 'indicator_9'], d.indicator_id) ? _.round(d['perc_point'], 2) : _.round(d['perc_point'], 2) + '%' %>
+                            <% } else {%>
+                                <% var unit =_.filter(indicator_mapping,{indicator_name: d.indicator})[0].unit %>
+                                <% var decimal =_.filter(indicator_mapping,{indicator_name: d.indicator})[0].decimal %>
+                                <%= unit === "%" ? numeral(_.round(d['perc_point'], 2)).format(decimal)+ '%' : numeral(_.round(d['perc_point'], 2)/100).format(decimal) %>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+    <% } %>
+    <% } %>
+</div>

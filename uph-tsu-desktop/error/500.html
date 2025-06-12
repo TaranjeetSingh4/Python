@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Application error</title>
+  <link rel="stylesheet" href="css/error_pages.css">
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+  <section class="content">
+    <h1>Application error</h1>
+    <p>This application made a mistake.</p>
+    {% set exception = kwargs['exc_info'][1] %}
+    {% if hasattr(exception, 'reason') %}
+      <p><strong>Reason:</strong> {{ exception.reason }}</p>
+    {% end %}
+    <pre>{{ repr(exception) }}</pre>
+    <p>Details are on the server log.</p>
+  </section>
+
+  {% from gramex import conf %}
+  {% if conf.app.settings.serve_traceback %}
+    <div id="traceback">
+      {% import traceback %}
+      <pre><code>{{ ''.join(traceback.format_exception(*kwargs['exc_info'])) }}</code></pre>
+      <p class="content">Traceback is only for development. Disable it in <code>gramex.yaml</code> with <code>app.settings.serve_traceback: false</code></p>
+    </div>
+    <p id="show-traceback">Show traceback</p>
+    <script>
+      var $show = document.getElementById('show-traceback')
+      var $traceback = document.getElementById('traceback')
+      $show.addEventListener('click', function() {
+        $traceback.style.display = 'block'
+        $show.style.display = 'none'
+      }, false)
+    </script>
+  {% end %}
+</body>
+
+</html>

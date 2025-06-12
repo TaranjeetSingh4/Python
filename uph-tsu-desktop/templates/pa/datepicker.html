@@ -1,0 +1,95 @@
+<% url = g1.url.parse(location.href) %>
+<% var fdate = moment(url.searchKey.fdate, 'YYYY-MM-DD'), tdate = moment(url.searchKey.date, 'YYYY-MM-DD'), cal_tab = (url.searchKey.type || 'month') %>
+<div class="datepicker-container h-100 w-100 position-fixed">
+  <div class="date_picker_cal_wid pos-tr m-0 mx-3 mt-n3 p-0">
+    <div class="mb-3 bg-white tail-tc w-75 border-radius shadow">
+      <div class="cal-nav-pills">
+        <ul class="nav nav-pills cust-nav-pills justify-content-between px-3 py-2 border-color-12 border-bottom mb-3 h3" id="pills-tab" role="tablist">
+          <% cal_vals = ['year', 'quarter', 'month'] %>
+          <% _.each(cal_vals, function(d){ %>
+            <li class="nav-item" data-tab="<%- d %>">
+              <a class="nav-link <%- (d == (url.searchKey.type || 'month'))?'active':'' %> text-color-19 font-weight-bold sm3 rounded-0 px-1 pb-1 cal-id" id="pills-<%- d %>-tab" data-toggle="pill" href="#pills-<%- d %>" role="tab" aria-controls="pills-<%- d %>" aria-selected="false">By <%- _.capitalize(d) %></a>
+            </li>
+          <% }) %>
+        </ul>
+        <span class="text-right cursor-pointer h4 m-2 text-dark" id="close-cal">
+          <i class="fa fa-times float-right sm3"></i>
+        </span>
+      </div>
+      <div class="tab-content" id="pills-tabContent">
+        <% var d_year = ['2005-04-01','2006-04-01','2007-04-01','2008-04-01','2009-04-01','2010-04-01','2011-04-01','2012-04-01','2013-04-01','2014-04-01','2015-04-01','2016-04-01','2017-04-01','2018-04-01','2019-04-01','2020-04-01'] %>
+        <% var d_month_yr = ['2018','2019','2020'], d_month = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']%>
+        <% var d_quarter = ['2016-2017', '2017-2018', '2018-2019', '2019-2020'] %>
+        <% var min_year = 2017, min_month = 10, min_date = moment('2017-10-01','YYYY-MM-DD'), min_quarter = 3, curr_year = parseInt(moment().format('YYYY'))%>
+        <% var curr_month = _.toUpper(moment().format("MMM")), curr_date = moment()%>
+        <% _.each(cal_vals, function(tab){%>
+          <div class="tab-pane fade <%- (tab == (url.searchKey.type || 'month'))?'show active':''%>" id="pills-<%- tab %>" role="tabpanel" aria-labelledby="pills-<%- tab %>-tab">
+            <div class="d-flex h3 align-items-center justify-content-center mt-4 mb-5 pb-2">
+              <img src="img/back-face2.png" alt="left-arrow" class="rotate-180 cursor-pointer" />
+              <div class="text-info font-weight-bold sm3 mx-4">
+                <% if(tab == 'year'){ %>
+                  <%- d_year[0].trim().split("-")[0]+"-"+d_year[d_year.length-1].trim().split("-")[0]%>
+                <% } else if( tab == 'quarter'){ %>
+                  <%- d_quarter[0].trim().split("-")[0]+"-"+d_quarter[d_quarter.length-1].trim().split("-")[1]%>
+                <% } else if( tab == 'month'){ %>
+                  <%- d_month_yr[0]+"-"+d_month_yr[2] %>
+                <% } %>
+              </div>
+              <img src="img/back-face2.png" alt="left-arrow cursor-pointer" />
+            </div>
+            <% if(tab == 'year'){ %>
+              <div class="d-flex flex-wrap justify-content-between h4 mb-4 pb-3 px-3 n-child-mr-0">
+                <% _.each(d_year, function(d){ %>
+                  <% var yr = parseInt(d.trim().split("-")[0]), highlgt = 'bg-color-20 text-color-1' %>
+                  <% if(cal_tab == 'year'){ %>
+                    <% highlgt = ((moment(d, 'YYYY-MM-DD').isSame(fdate)) || (moment(d, 'YYYY-MM-DD').isSame(tdate)))?'bg-color-15 text-white active':(((moment(d, 'YYYY-MM-DD') > fdate) && (moment(d, 'YYYY-MM-DD') < tdate))?'bg-color-21 text-white':'bg-color-20 text-color-1') %>
+                  <% } %>
+                  <span class=" cal-cell cal-tab-<%-tab %> rounded sm3 w-23 text-middle py-3 font-weight-600 text-center mb-1 <%- highlgt %> cursor-pointer <%- (yr >= min_year && yr <= curr_year)?'':'pointer-events-none' %>" data-attr="<%- d %>"><span class="opacity-70 lh-1"><%- yr %></span></span>
+                <% }) %>
+              </div>
+            <% } else if( tab == 'quarter'){ %>
+              <div class="px-3 mb-4 pb-3">
+                <% _.each(d_quarter, function(d){ %>
+                  <% var lyw_qrtr = d.trim().split('-')[0], prsnt_qrtr = d.trim().split('-')[1] %>
+                  <div class="font-weight-bold text-color-1 h3 mb-0 mt-n3"><span class="sm3"><%- d %></span></div>
+                  <div class="d-flex flex-wrap justify-content-between h4 mb-1 n-child-mr-0">
+                    <% var q_1 = moment(lyw_qrtr+'-04-01', 'YYYY-MM-DD'), q_2 = moment(lyw_qrtr+'-07-01', 'YYYY-MM-DD'), q_3 = moment(lyw_qrtr+'-10-01', 'YYYY-MM-DD'), q_4 = moment(prsnt_qrtr+'-01-01', 'YYYY-MM-DD') %>
+                    <% var highlgt_1 = 'bg-color-20 text-color-1', highlgt_2 = 'bg-color-20 text-color-1', highlgt_3 = 'bg-color-20 text-color-1', highlgt_4 = 'bg-color-20 text-color-1'%>
+                      <% if(cal_tab == 'quarter'){ %>
+                        <% highlgt_1 = ((q_1.isSame(fdate)) || (q_1.isSame(tdate)))?'bg-color-15 text-white active':(((q_1 > fdate) && (q_1 < tdate))?'bg-color-21 text-white':'bg-color-20 text-color-1') %>
+                        <% highlgt_2 = ((q_2.isSame(fdate)) || (q_2.isSame(tdate)))?'bg-color-15 text-white active':(((q_2 > fdate) && (q_2 < tdate))?'bg-color-21 text-white':'bg-color-20 text-color-1') %>
+                        <% highlgt_3 = ((q_3.isSame(fdate)) || (q_3.isSame(tdate)))?'bg-color-15 text-white active':(((q_3 > fdate) && (q_3 < tdate))?'bg-color-21 text-white':'bg-color-20 text-color-1') %>
+                        <% highlgt_4 = ((q_4.isSame(fdate)) || (q_4.isSame(tdate)))?'bg-color-15 text-white active':(((q_4 > fdate) && (q_4 < tdate))?'bg-color-21 text-white':'bg-color-20 text-color-1') %>
+                      <% } %>
+                    <span class="cal-cell cal-tab-<%-tab %> rounded sm3 w-23 text-middle py-3 font-weight-600 text-center mb-1 cursor-pointer h-42 <%- highlgt_1 %> <%- (q_1 >= min_date && q_1 <= curr_date )?'':'pointer-events-none' %> " data-attr="<%- lyw_qrtr %>-04-01"><span class="opacity-70 lh-1">Q1</span></span>
+                    <span class="cal-cell cal-tab-<%-tab %> rounded sm3 w-23 text-middle py-3 font-weight-600 text-center mb-1 cursor-pointer h-42 <%- highlgt_2 %> <%- (q_2 >= min_date && q_2 <= curr_date )?'':'pointer-events-none' %>" data-attr="<%- lyw_qrtr %>-07-01"><span class="opacity-70 lh-1">Q2</span></span>
+                    <span class="cal-cell cal-tab-<%-tab %> rounded sm3 w-23 text-middle py-3 font-weight-600 text-center mb-1 cursor-pointer h-42 <%- highlgt_3 %> <%- (q_3 >= min_date && q_3 <= curr_date )?'':'pointer-events-none' %>" data-attr="<%- lyw_qrtr %>-10-01"><span class="opacity-70 lh-1">Q3</span></span>
+                    <span class="cal-cell cal-tab-<%-tab %> rounded sm3 w-23 text-middle py-3 font-weight-600 text-center mb-1 cursor-pointer h-42 <%- highlgt_4 %> <%- (q_4 >= min_date && q_4 <= curr_date )?'':'pointer-events-none' %>" data-attr="<%- prsnt_qrtr %>-01-01"><span class="opacity-70 lh-1">Q4</span></span>
+                  </div>
+                <% }) %>
+              </div>
+            <% } else if( tab == 'month'){ %>
+              <div class="px-3 mb-4 pb-3">
+                <% _.each(d_month_yr, function(yr){ %>
+                  <div class="font-weight-bold text-color-1 h3 mb-0 mt-n3"><span class="sm3"><%- yr %></span></div>
+                  <div class="d-flex flex-wrap justify-content-between h4 mb-1 n-child-mr-0 mb-4">
+                  <% _.each(d_month, function(mnth, i){ %>
+                    <% var mn = moment(yr+'-'+(i+1)+'-01', 'YYYY-MM-DD'), highlgt = 'bg-color-20 text-color-1'  %>
+                    <% if(cal_tab == 'month'){ %>
+                      <% highlgt = ((mn.isSame(fdate)) || (mn.isSame(tdate)))?'bg-color-15 text-white active':(((mn > fdate) && (mn < tdate))?'bg-color-21 text-white':'bg-color-20 text-color-1') %>
+                    <% } %>
+                    <span class=" cal-tab-<%-tab %> rounded sm3 w-15 text-middle py-2 font-weight-600 text-center mb-1 cursor-pointer <%- highlgt %> cal-cell <%- (mn >= min_date && mn <= curr_date )?'':'pointer-events-none' %>" data-attr="<%- yr+'-'+(i+1) %>-01" ><span class="opacity-70"><%- mnth %></span></span>
+                  <% }) %>
+                  </div>
+                <% }) %>
+              </div>
+            <% } %>
+            <div class="h3 mb-0">
+              <button type="button" class="btn btn-success text-white py-2 lh-4 font-weight-bold br-tl-tr-0 w-100 sm3 ls-1 apply-date">APPLY</button>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+  </div>
+</div>
+</div>

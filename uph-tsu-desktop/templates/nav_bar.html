@@ -1,0 +1,91 @@
+<nav class="navbar navbar-expand-md bg-gradient-nav py-0 position-fixed pos-t">
+  <!-- Toggler/collapsibe Button -->
+  <!-- <img src="img/hamburger.png" alt="search" width="19" height="12" id="openNav" class="cursor-pointer mr-3"><span class="h5 mb-0 text-white">UP Health Dashboard</span> -->
+  <a class="mr-3" aria-hidden="true" href="./"><i class="fa fa-home fa-2x text-white"></i></a>
+  <% var _title = {'table': 'Health Ranking Dashboard', 'table_noauth':'CM Dashboard',
+                    'niti_table': 'NITI Dashboard', 'cmo_new': 'CMO Dashboard'} %>
+  <span class="h5 mb-0 text-white"><%- _title[url.file] %></span>
+  <!--navbar-search-->
+  <!-- Navbar links -->
+  <div class="d-flex ml-auto custom-menu">
+    <% if(url.file === 'table') { %>
+    <div class="search-input">
+      <div class="text-right pt-1 px-3">
+        <span class="input-group-text custom-class bg-transparent no-border-radius rounded-0 border-0 cursor-pointer"
+          id="icon"><i class="fa fa-search cursor-pointer text-white"></i></span>
+      </div>
+      <div id="myInput1">
+        <div class="input-group custom-class pos-t w-100 bg-white">
+          <div class="input-group-append">
+            <span class="input-group-text bg-white no-border-radius rounded-0 border-0 "><i
+                class="fa fa-search cursor-pointer text-dark "></i></span>
+          </div>
+          <input type="text" id="myInput" class="form-control border-0 px-0" placeholder="Search District">
+          <p id="empty-message" class="w-50 mx-auto alert alert-warning alert-dismissible fade"></p>
+          <div class="input-group-append ">
+            <span class="input-group-text bg-white no-border-radius rounded-0 border-0"><i id="close_nav"
+                class="fa fa-remove cursor-pointer text-dark "></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script class="search-bar" type="text/html" src="templates/search_bar.html"></script>
+    <% } %>
+    <% if(user != 'CM_Office1') { %>
+      <ul class="nav">
+        <% if(!_.includes(['niti_table', 'table_noauth'], url.file)) {%>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" data-attr="map" href="map_view">Map view</a>
+        </li>
+        <% } %>
+        <% if (((user_info['district'] == "Amethi") || (user_info['user'] == 'amethi_admin')) && (url.file !== 'niti_table')) {%>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" data-attr="amethi_map" href="amethi_map">Amethi Dashboard</a>
+        </li>
+        <% } %>
+        <% if(url.file == "niti_table"){ %>
+        <li class="nav-item">
+          <!-- <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" data-attr="niti_table" href="niti_table">Table View</a> -->
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-default" data-attr="niti_table">Table</a>
+        </li>
+        <% } %>
+        <!-- <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" data-attr="cmo_table" href="cmo_table">cmo</a>
+        </li> -->
+        <% if(url.file == 'cmo_new'){ %>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" data-attr="cmo_table" href="cmo_new">cmo new design</a>
+        </li>
+        <% } %>
+        <% if(!_.includes(['niti_table', 'table_noauth'], url.file)) { %>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" data-attr="table" href="table">table view</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" data-attr="analytics" href="compare">Analytics</a>
+        </li>
+        <li class="nav-item">
+          <a id="executive_nav" class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" href="executive-summary">Executive Summary</a>
+        </li>
+        <% } %>
+      </ul>
+    <% }
+    if(url.file == 'table_noauth' || user == 'CM_Office1') { %>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" data-attr="landing" href="landing">Home Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" data-attr="table_noauth" href="table_noauth?select=district&district=Agra&indicator=%25%20of%20pregnant%20women%20delivered%20in%20institution%20against%20estimated%20delivery&indicator_id=indicator_2">table view</a>
+        </li>
+      </ul>
+    <% } %>
+  </div>
+  <script class="page-sidenav" type="text/html" src="templates/side_nav.html"></script>
+</nav>
+<!--space needed-->
+<div class="pt-3 mt-1"></div>
+<!--Calendar-->
+<div class="sidenav" id="cal">
+  <script class="calendar" type="text/html" src="templates/calendar.html"></script>
+</div>

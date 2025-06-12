@@ -1,0 +1,30 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>UP-TSU</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/errormsg.css">
+</head>
+
+<body class="pt-3 overflow-hidden">
+{% set base = '.' %}
+<!-- {% set message_dict = {'400': 'URL argument missing', '401': 'User not logged in', '403': 'user does not have access', '404': 'File not found', '500': 'Internal server error'} %} -->
+ 
+<!-- TODO: Filter bars -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 h-full text-middle">
+        <p class = "msg_txt">please <a href="login">click here</a> to re-login</p>
+        <div class="text-center px-4">
+          <!-- <img src="img/error{{  status }}.png" alt="error" class="h-85vh"> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

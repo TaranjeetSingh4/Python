@@ -1,0 +1,282 @@
+.custom-control-label {
+  position: absolute !important;
+}
+
+.card-header > a:before {
+  float: right !important;
+  font-family: FontAwesome, sans-serif;
+  content: "\f068";
+  padding-right: 5px;
+}
+
+.card-header > a.collapsed:before {
+  float: right !important;
+  font-family: FontAwesome, sans-serif;
+  content: "\f067";
+}
+
+.text-bg {
+  background-image: url(../img/bg-text.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-color1 {
+  background-color: #0776ff;
+}
+
+.bg-color2 {
+  background-color: #2c77ab !important;
+}
+
+.bg-color_new {
+  background-color: #59cfed !important;
+}
+
+.bg-color3 {
+  background-color: #1f1f1f;
+}
+
+.bg-color4 {
+  background-color: #ff8e04;
+}
+
+.bg-color5 {
+  background-color: #db5f3b;
+}
+
+.bg-color6 {
+  background-color: #4f4644;
+}
+
+.bg-color7 {
+  background-color: #f7e4c4;
+}
+
+.bg-color8 {
+  background-color: #f6f6f6;
+}
+
+.bg-color9 {
+  background-color: #1f1f1f;
+}
+
+.bg-color10 {
+  background-color: #923c23;
+}
+
+.bg-color11 {
+  background-color: #9f9d97;
+}
+
+.bg-color12 {
+  background-color: #696864;
+}
+
+.bg-color13 {
+  background-color: #433f3c;
+}
+
+.cutsom-color-left {
+  color: #a9936c;
+}
+
+.color-inactive {
+  color: #9d9d9d;
+}
+
+.ml-low-1 {
+  margin-left: -2px;
+}
+
+.mr-low-1 {
+  margin-right: -2px;
+}
+
+.w-80 {
+  width: 70%;
+}
+
+.left-top-3 .nav-link {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.left-top-3 .active {
+  background-color: #0071ff !important;
+  color: #fff !important;
+}
+
+.left-top-3 .nav-item {
+  width: 33.3%;
+}
+
+.left-top-3 .nav > li > a:hover,
+.left-top-3 .nav > li > a:focus {
+  background-color: #0071ff !important;
+  color: #fff !important;
+}
+
+.table-responsive {
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  padding: 2px 10px;
+}
+
+.pagination .active {
+  background-color: #fb3353 !important;
+  color: #fff !important;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 0px;
+}
+
+.table-responsive::-webkit-scrollbar {
+  width: 0px;
+  background: #fff;
+  height: 0px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+.tail-rc:after {
+  border-style: solid;
+  width: 0px;
+  height: 0px;
+  content: " ";
+  right: -20px;
+  top: 18px;
+  position: absolute;
+}
+
+.bg-color7 .tail-rc:after {
+  border-color: transparent transparent transparent #f7e4c4;
+}
+
+.bg-color10.tail-rc:after {
+  border-color: transparent transparent transparent #923c23;
+}
+
+.bg-color11.tail-rc:after {
+  border-color: transparent transparent transparent #9f9d97;
+}
+
+.bg-color12.tail-rc:after {
+  border-color: transparent transparent transparent #696864;
+}
+
+.bg-color13.tail-rc:after {
+  border-color: transparent transparent transparent #433f3c;
+}
+
+#area_chart {
+  width: 230px;
+}
+
+.screen_h {
+  height: 150vh !important;
+}
+
+@media (min-width: 1200px) {
+  .p-7 {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1180px) {
+  .h-100 {
+    height: 87vh !important;
+  }
+  .p-10 {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .h-100 {
+    height: 84vh !important;
+  }
+  .p-10 {
+    font-size: 10px;
+  }
+}
+
+@media (min-height: 700px) {
+  .p-10 {
+    font-size: 10px;
+  }
+
+  .table-responsive {
+    max-height: 520px;
+  }
+
+  .scroll {
+    height: 47vh;
+  }
+}
+.my-left {
+  width: 28% !important;
+}
+.my-right {
+  width: 22% !important;
+}
+.my-center {
+  width: 48% !important;
+}
+#accordion {
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+  padding-right: 1.6rem;
+}
+
+.rotate-indicator {
+  transform: rotate(180deg);
+}
+
+.tooltip {
+  pointer-events: none;
+}
+
+.performance-dark-color {
+  background-color: #eee !important;
+}
+
+.performance-highlight-color {
+  background-color: #1f1f1f !important;
+}
+
+.performance-highlight-color.tail-rc:after {
+  border-color: transparent transparent transparent #1f1f1f;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 0px;
+}
+
+/* width */
+.scroll::-webkit-scrollbar {
+  width: 0px;
+  background: #fff;
+  height: 0px;
+}
+
+/* Handle on hover */
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+.row {
+  overflow: hidden;
+}
+
+.second_text {
+  font-size: 36px !important;
+}

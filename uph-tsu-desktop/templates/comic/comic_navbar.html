@@ -1,0 +1,15 @@
+<div class="navbar">
+  <a href="./" class="btn right-align">Home</a>
+  <div class="dropdown">
+      <button class="dropbtn">
+          <span class="btn-text"></span>
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+          <% _.each(districts, function(district) { %>
+              <a class="select_district cursor_pointer" data-id="<%= district.district_id_num %>"><%= district.district_name %></a>
+          <% }) %>
+      </div>
+    </div>
+  <button class="btn button-pdf">Download</button>
+</div>

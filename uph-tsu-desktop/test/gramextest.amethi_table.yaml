@@ -1,0 +1,40 @@
+variables: # Define variables for re-use in the app
+  BASE: https://bmgf.gramener.com/up-tsu-desktop/amethi_table #   Define the base URL
+
+urltest: # Run tests on URLs without a browser               # Fetch this URL
+  - fetch: $BASE # Fetch this URL                          # Check the response as HTML
+    code: 200
+
+# Open browsers to run tests. Download drivers from https://www.seleniumhq.org/download/
+browsers: # Open multiple browsers to run UI tests
+  Chrome: true # Run tests on Chrome
+  # Firefox: true
+  # Edge: true
+uitest:
+  - name: idp-login-url
+  - fetch: $BASE
+  - wait: 3
+  - name: login_type_username
+    script:
+      - $$('#loginform > div.card-login.pt-1 > div:nth-child(1) > input').val('alpha')
+  - wait: 3
+  - name: login_type_password
+    script:
+      - $$('#inputPassword').val("alpha")
+  - wait: 3
+  - click: xpath //*[@id="signin"]
+  - wait: 3
+  - name: "default dropdown check"
+    script:
+      return $('div.col-5.amethi_col5 > div.d-flex.pt-3 > div > div > div > button > div > div > div').text(): "Aggregate Score"
+  - name: "Table-1 presence"
+    script:
+      return $('.amethi_left_table > div.d-flex.nav-fill.nav.sm3.font-weight-bold').text().length!=0: true
+  - name: "Table-2 presence"
+    script:
+      return $('.indicator-table-container.my-2 > div > div.d-flex.nav-fill.nav.sm3').text().length!=0: true
+  - name: "default type selection"
+    script:
+      return $('.amethi_2_col7.pt-3 div.d-flex div:nth-child(2) div div button div div div').text(): "By Indicator"
+  - name: "block click"
+    click: ".amethi_left_table > div:nth-child(5) > div > a > div > div.block-name.level-one"

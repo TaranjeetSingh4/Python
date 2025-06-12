@@ -1,0 +1,111 @@
+<!-- <% var sample = {i1 : [ {name:'c', curr: 25, prev: 45, growth: '-1'}, {name:'a', curr: 75, prev: 45, growth: '1'}, {name:'b', curr: 45, prev: 45, growth: '0'}, {name:'d', curr: 0, prev: 45, growth: 'NA'} ], i2 : [ {name:'c', curr: 25, prev: 45, growth: '-1'}, {name:'a', curr: 75, prev: 45, growth: '1'}, {name:'b', curr: 45, prev: 45, growth: '0'}, {name:'d', curr: 0, prev: 45, growth: 'NA'} ] } %> -->
+
+<!-- growth = increase: 1, descrese: -1, no change: 0, NA : NA  -->
+<% img_dict = {'1' : 'table-icon-1', '-1' : 'table-icon-2', '0' : 'table-icon-3', '1n' : 'table-icon-1_neg', '-1n' : 'table-icon-3_neg'   }%>
+<!-- [i1, i2, i3] -->
+<% var indicators = _.keys(d) %>
+<% var sorted_indicators = _.sortBy(indicators) %>
+<!-- [b1, b2, b3] -->
+<% var sorted_blocks = _.sortBy(uniq_blocks) %>
+
+<div class="">
+  <div class="h3 py-0 mb-2 text-uppercase text-md-left text-center">
+    <span class="sm2 d-block">INDICATORS PERFORMANCE AT <%- _.toUpper(_area)%> FOR THE MONTH OF <%-curr_month %> </span>
+  </div>
+
+  <!-- toggle starts -->
+  <% if (isStateUser){ %>
+  <div class="w-50 align-self-center sm1">
+    <label for="level" class="font-weight-bold p-12 mb-0 level-division text-secondary"> By Divisions</label>
+    <div class="switch-secondary round mx-1 position-relative overflow-hidden">
+      <input type="checkbox" id="level" name="level" class="overflow-hidden" checked="checked">
+      <label for="level" class="mb-0"></label>
+    </div>
+    <label for="level" class="font-weight-bold p-12 mb-0 level-district ">By Districts</label>
+  </div>
+  <% } %>
+  <!-- toggle ends -->
+
+  <div class="d-md-flex justify-content-md-between d-block pb-1">
+    <ul class="nav d-flex justify-content-md-start justify-content-center mb-3 mb-md-0">
+      <li class="nav-item  align-self-center pr-2">
+        <a class="nav-link p-0 h6 mb-0"><img src="img/table-icon-1.svg" alt="table-icon-1"></a>
+      </li>
+      <li class="nav-item  align-self-center pr-2">
+        <a class="nav-link p-0 h6 mb-0"><img src="img/table-icon-2.svg" alt="table-icon-2"></a>
+      </li>
+      <li class="nav-item align-self-center pr-2">
+        <a class="nav-link p-0 h6 mb-0"><img src="img/table-icon-3.svg" alt="table-icon-3"></a>
+      </li>
+      <li class="nav-item align-self-center">
+        <a class="nav-link p-0 h6 mb-0"><span class="sm1"> Change vs Previous month</span></a>
+      </li>
+    </ul>
+    <ul class="nav d-flex justify-content-md-end justify-content-center mb-3 mb-md-0">
+      <li class="nav-item align-self-center pr-2">
+        <a class="nav-link p-0 h5 mb-0"><span class="sm1 font-weight-bold">Total <%- _.startCase(_area)%>s : <%- count_blocks%></span></a>
+      </li>
+    </ul>
+  </div>
+  <div id="table-scroll" class="table-scroll position-relative m-auto overflow-hidden">
+    <div class="table-wrap custom-striped w-100 overflow-auto">
+      <table class="table table-striped main-table w-100 m-auto">
+        <thead class="bg-secondary h3 mb-0 text-white">
+          <tr>
+            <th scope="col" class="font-weight-light bg-secondary text-uppercase sm3 py-3 border-0 fixed-side visible">Indicators</th>
+            <% _.each(sorted_blocks, function(block) { %>
+              <th scope="col" class="font-weight-light text-uppercase sm3 py-3 border-0"><%- block%></th>
+            <% }) %>
+          </tr>
+        </thead>
+        <tbody class="h4 mb-0">
+          <!-- Composite rank starts-->
+          <tr class="font-weight-bold">
+            <th scope="row" class="sm3 text-uppercase font-weight-bold py-2 fixed-side visible">Overall Rank</th>
+            <% sorted_blocks_obj = _.sortBy(comp_rank_data, 'area') %>
+            <% _.each(sorted_blocks_obj, function(col) { %>
+              <td class="sm3 py-2">
+                <div class="d-flex justify-content-left text-uppercase">
+                  <% if (col.growth != 'NA' ) { %>
+                  <img src="img/<%-img_dict[col.growth]%>.svg" alt="<%-img_dict[col.growth]%>"
+                  class="mr-2">
+                  <% } %>
+                  <% if (col.growth != 'NA') { %>
+                  <p class="mb-0"><%- isInt(col.curr)? col.curr : col.curr.toFixed(2) %> </p>
+                  <% } else { %>
+                  <p class="mb-0 ml-4">0</p>
+                  <% } %>
+                </div>
+              </td>
+            <% }) %>
+          </tr>
+          <!-- Composite rank ends -->
+
+          <!-- Indicator perc point starts -->
+          <% _.each(sorted_indicators, function(row) { %>
+          <tr>
+            <th scope="row" class="sm3 text-uppercase font-weight-light py-2 fixed-side visible"><%- _.find(indicator_mapping, {indicator_name: row}).short_name %></th>
+            <% sorted_blocks_obj = _.sortBy(d[row], 'name') %>
+            <% _.each(sorted_blocks_obj, function(col) { %>
+              <td class="sm3 py-2">
+                <div class="d-flex justify-content-left text-uppercase">
+                  <% if (col.growth != 'NA' ) { %>
+                  <img src="img/<%-img_dict[col.growth]%>.svg" alt="<%-img_dict[col.growth]%>"
+                  class="mr-2">
+                  <% } %>
+                  <% if (col.growth != 'NA') { %>
+                  <p class="mb-0"><%- isInt(col.curr)? col.curr : col.curr.toFixed(2) %> <%- _.find(indicator_mapping, {indicator_name: row}).unit %></p>
+                  <% } else { %>
+                  <p class="mb-0 ml-4">0</p>
+                  <% } %>
+                </div>
+              </td>
+            <% }) %>
+          </tr>
+          <% }) %>
+          <!-- Indicator perc point ends -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

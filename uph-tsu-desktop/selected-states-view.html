@@ -1,0 +1,268 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+
+{% set page_title = 'Program Area Overview' %}
+
+<head>
+  {% include 'templates/pa/pa-head.html' %}
+  <link rel="stylesheet" href="ui/leaflet/dist/leaflet.css">
+</head>
+
+{% set import json %}
+{% set from gramex.config import variables %}
+
+{% set user_session_id = handler.get_session().get("id", {}) %}
+{% set user_info = handler.get_session().get("user", {}) %}
+{% set username = user_info.get("user", "") %}
+
+<body class="lh-2">
+  <!--Header-->
+  <section class="header pb-4">
+    <!-- top-filters template here -->
+    <script class="nav-top-filters" type="text/html" src="templates/pa/top-filters.html"></script>
+    <script class="calendar" type="text/html" src="templates/pa/pa_calendar.html"></script>
+    <div class="card bg-transparent rounded-0 border-0 mt-n1">
+      <!-- pa-page-nav template here -->
+      <script class="pa-page-nav" type="text/html" src="templates/pa/pa-page-nav.html"></script>
+    </div>
+  </section>
+  <!--Peogram area cards 1-->
+  <script class="overview_no_data" type="text/html" src="templates/pa/no_data.html"></script>
+  <section class="program-area-view-cards mt-n5 mb-5" id="home-panel">
+    <div class="py-2 h-100 mt-4">
+      <div class="container h-100" id="up-overview">
+        <div class="h-100 bg-color10 card border-0 border-radius shadow">
+          <div class="row">
+            <div class="col-7 border-right overview_home" id="rank-chart-div">
+              <div class="position-relative h-100">
+                <div class="pt-3 pl-3 d-flex justify-content-between w-100 top-header">
+                  <div class="chart-district-options">
+                    <ul class="nav flex-column h5 mb-0 text-uppercase font-weight-bold chart-districts-filter"
+                      value="all">
+                      <li class="nav-item">
+                        <a class="nav-link mb-1 text-color1 sm3 p-0 opacity-30 cursor-pointer" value="all"><i
+                            class="fas fa-circle mr-2"></i>ALL</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link mb-1 text-color1 sm3 p-0 opacity-30 cursor-pointer" value="aspirational"><i
+                            class="fa fa-circle mr-2"></i>ASPIRATIONAL
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link mb-1 text-color1 sm3 p-0 opacity-30 cursor-pointer" value="high_priority"><i
+                            class="fa fa-circle mr-2"></i>HIGH
+                          PRIORITY</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pull-right">
+                    <div class="d-flex align-items-center h5 mb-2">
+                      <span class="sm3 mr-1">LO</span>
+                      <span class="legend-color c1"></span><span class="legend-color c2"></span><span class="legend-color c3"></span>
+                      <span class="sm3 ml-1">Hi</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <p class="bg-color6 mb-0 px-2 py-1 border round align-self-center"></p>
+                      <p class="h5 mb-0 ml-2 sm2 align-self-center"><span class=" d-block legend-area-label">DISTRICT SCORE</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-0 pb-4 pl-3 mb-4 d-flex justify-content-between rad-chart-div">
+                </div>
+                <i class="fa fa-spin fa-circle-notch text-color5 opacity-20 rd-spin-icon"></i>
+                <div class="pl-3 d-flex justify-content-between position-absolute" id="map-container">
+                  <div id="mapid"></div>
+                </div>
+                <div class="pt-4 pl-3 d-flex justify-content-between align-items-end pos-b w-100">
+                  <ul class="nav nav-pills mb-3 h4 font-weight-bold nav_area_selection" id="pills-tab" role="tablist">
+                    <li class="nav-item pr-3 cursor-pointer">
+                      <span class="nav-link active sm3 py-0 rounded-0 px-0 opacity-50 text-color1 text-uppercase" id="pills-district-tab"
+                        data-toggle="pill" role="tab" data-val="district" aria-controls="pills-district" aria-selected="true">Districts</span>
+                    </li>
+                    <li class="nav-item cursor-pointer">
+                      <span class="nav-link rounded-0 sm3 py-0 px-0 opacity-50 text-color1 text-uppercase" id="pills-division-tab"
+                        data-toggle="pill" role="tab" data-val="division" aria-controls="pills-division" aria-selected="false">Divisions</span>
+                    </li>
+                  </ul>
+                  <div class="">
+                    <p class="cursor-pointer mb-0 h5 font-weight-bold">
+                      <span id="fullscreen-button" toggle="false" class="nav-link py-2 border border-radius border-bottom-0 text-color1 sm3 ">
+                        <span>FULLSCREEN</span>
+                        <i class="ml-1 fa fa-expand-arrows-alt" aria-hidden="true"></i>
+                      </span>
+                    </p>
+                  </div>
+                  <div class="h5 mb-0 d-flex align-items-center mb-3 font-weight-bold names-switch">
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="sw2" checked>
+                      <label class="custom-control-label sm2 cursor-pointer" for="sw2"></label>
+                    </div>
+                    <span class="sm3 ml-0">DIST. NAMES</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-ms-12 col-md-12 col-lg-5 pl-0" id="district-indicator-div">
+              <!-- pa indicator template -->
+              <script class="pa-indicator-card" type="text/html"
+                src="templates/pa/program_indicator_card.html"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Program area cards 2-->
+  <section class="program-area-view-cards mt-n5 mb-5 d-none" id="district-view-section">
+    <div class="py-2 h-100">
+      <div class="container h-100 mt-4" id="district-profile">
+        <div class="h-100 card bg-color10 border-0 border-radius shadow">
+          <div class="row">
+            <div class="col-12 col-ms-12 col-md-12 col-lg-6 pr-0">
+              <script class="pa-district-card" type="text/html" src="templates/pa/pa_district_card.html"></script>
+            </div>
+            <div class="col-12 col-ms-12 col-md-12 col-lg-6 border-left area_profile">
+              <div class="position-relative h-100">
+                <div class="py-3 px-3 d-flex justify-content-between">
+                  <div class="">
+                  </div>
+                  <div class="">
+                      <div class="d-flex align-items-center h5 mb-2">
+                        <span class="sm3 mr-1">LO</span>
+                        <span class="legend-color c1"></span><span class="legend-color c2"></span><span class="legend-color c3"></span>
+                        <span class="sm3 ml-1">Hi</span>
+                      </div>
+                  </div>
+                </div>
+                <div class="py-3 px-3 w-100 align-items-center justify-content-between d-flex">
+                  <div id="profile_map"></div>
+                </div>
+                <div class="pt-3 px-3 pr-3 justify-content-end align-items-end pos-b w-100 d-none">
+                  <div class="h5 mb-0 align-items-center mb-3">
+                    <div class="round switch-info p-0"><input type="checkbox" id="sw2" checked><label for="sw2 cursor-pointer"></label>
+                    </div><span class="sm3 ml-2">DIST. NAMES</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Program area cards 3-->
+  <section class="program-area-view-cards mt-n5 mb-5 d-none" id="block-view-section">
+    <div class="py-2 h-100 mt-4">
+      <div class="container h-100">
+        <div class="h-100 card border-0 bg-color10 border-radius shadow">
+          <div class="row">
+            <div class="col-7 rank-chart-div border-right block_view">
+              <div class="position-relative h-100">
+                <div class="py-3 pr-3 d-flex justify-content-between">
+                  <div class="">
+                    <div class="align-items-center h5 mb-2 block-back-btn">
+                      <span class="sm2 btn btn-link cursor-pointer">Back</span>
+                    </div>
+                  </div>
+                  <div class="">
+                      <div class="d-flex align-items-center h5 mb-2">
+                        <span class="sm3 mr-1">LO</span>
+                        <span class="legend-color c1"></span><span class="legend-color c2"></span><span class="legend-color c3"></span>
+                        <span class="sm3 ml-1">Hi</span>
+                      </div>
+                  </div>
+                </div>
+                <div class="py-3 px-3 w-100 align-items-center justify-content-between d-flex">
+                  <div id="block_map"></div>
+                </div>
+                <div class="pt-3 pl-3 pr-3 justify-content-end align-items-end pos-b w-100 d-none">
+                  <div class="h5 mb-0  align-items-center mb-3">
+                    <div class="round switch-info p-0"><input type="checkbox" id="sw2" checked><label for="sw2 cursor-pointer"></label>
+                    </div><span class="sm3 ml-2">DIST. NAMES</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 pl-0 districts-cards-div">
+              <!-- pa indicator template -->
+              <div class="districts_list_cards">
+                <script class="pa-indicator-card-block" type="text/html"
+                  src="templates/pa/program_indicator_card.html"></script>
+              </div>
+              <div class="indicators_list_cards d-none">
+                <span class="close-block-details pos-tl pt-4 ml-n3 h4"><i class="fa fa-times-circle bg-white cursor-pointer"></i></span>
+                <script class="pa-district-card-block" type="text/html"
+                    src="templates/pa/pa_district_card.html"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Modal for insights-->
+  <section>
+    <div class="modal_container shadow">
+      <script class="auto_insights" type="text/html" src="templates/pa/pa_insights.html"></script>
+    </div>
+  </section>
+
+<section class="program-area-view-cards mt-n5 mb-5 d-none" id="notification-section">
+  <div class="py-2 h-100 mt-4">
+    <div class="container h-100">
+      <div class="h-100 card border-0 bg-color10 border-radius shadow">
+        <div class="row h-full">
+          <div class="col-12 m-auto ">
+            <div class="text-center h-100">
+              <h3>No Data Available</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  {% set scripts = ['vega', 'map'] %}
+  {% include 'templates/pa/pa-scripts.html' %}
+
+  <script>
+    /* global g1 */
+    /* exported url, program_config, session_id, default_program, program_image_mapping, user_data */
+    var url = g1.url.parse(location.href)
+    var program_config = {{ json.dumps(variables['program-config']) }}
+    var default_program = {{ json.dumps(variables['program-config']['default_program']) }}
+    var session_id = {{ json.dumps(user_session_id) }}
+    var user_data = {{json.dumps(user_info)}}
+    var program_image_mapping = {{ json.dumps(variables['program-config']['program_image_mapping']) }}
+    var type_dist = url.searchKey.chart_districts || 'all'
+    $('.chart-districts-filter li').find('a[value='+type_dist+']').removeClass('opacity-30')
+  </script>
+  <!-- Matomo -->
+
+  <script>
+
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "https://uphealthdashboard.in/matomo/";
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      _paq.push(['setUserId', user_data.user]);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+    })();
+
+  </script>
+
+  <!-- End Matomo Code -->
+  <script src="components/pa/radial_chart.js"></script>
+  <script src="components/pa/area_chart.js"></script>
+  <script src="js/pa_map.js"></script>
+  <script src="js/pa_overview.js"></script>
+</body>
+
+</html>

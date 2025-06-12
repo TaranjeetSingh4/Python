@@ -1,0 +1,13 @@
+<ul class="nav nav-pills custm-nav-pills-1 mb-0" id="pills-tab" role="tablist">
+
+  <li class="class_links nav-item mr-4 pr-0" data-link="ALL">
+    <a class="nav-link active font-weight-bold font-18 text-secondary rounded-0 px-2" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">ALL</a>
+  </li>
+
+<% _.each(pa_classes, function(_class){ %>
+  <li class="class_links nav-item mr-4 pr-0" data-link="<%= _class.replace(/\s+/g, '_')%>">
+    <a class="nav-link font-weight-bold font-18 text-secondary rounded-0 px-2" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><%= class_short_name[_class] ? class_short_name[_class] : _class%></a>
+  </li>
+<% }) %>
+
+</ul>

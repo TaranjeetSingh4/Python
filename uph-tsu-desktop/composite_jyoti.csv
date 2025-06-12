@@ -1,0 +1,892 @@
+,block,composite_index,rank,month,district
+0,Samrer,0.660224,737.0,Sep 2023,Budaun
+13,Maya Bazar,0.68369,667.0,Sep 2023,Ayodhya
+26,Bhiti,0.818379,37.0,Sep 2023,Ambedkar Nagar
+39,Kurebhar,0.650212,755.0,Sep 2023,Sultanpur
+51,Khair,0.790686,132.0,Sep 2023,Aligarh
+64,Gonda,0.648293,761.0,Sep 2023,Aligarh
+76,Kasimabad,0.671109,700.0,Sep 2023,Ghazipur
+88,Colonelganj,0.687556,652.0,Sep 2023,Gonda
+101,Wazirganj,0.740079,439.0,Sep 2023,Gonda
+114,Jhanjhari,0.724283,524.0,Sep 2023,Gonda
+124,Mujhana,0.75964,329.0,Sep 2023,Gonda
+137,Haldharmau,0.768308,276.0,Sep 2023,Gonda
+150,Chamraua,0.816607,42.0,Sep 2023,Rampur
+163,Lar,0.730349,491.0,Sep 2023,Deoria
+175,Birdpur,0.697966,619.0,Sep 2023,Siddharth Nagar
+188,Mithwal,0.674278,695.0,Sep 2023,Siddharth Nagar
+201,Munda Pandey,0.78352,175.0,Sep 2023,Moradabad
+214,Kasiya,0.628296,793.0,Sep 2023,Kushinagar
+227,Sukrauli,0.770888,251.0,Sep 2023,Kushinagar
+240,Kaptanganj,0.724999,520.0,Sep 2023,Kushinagar
+253,Dudhahi,0.689325,642.0,Sep 2023,Kushinagar
+266,Marori,0.76932,264.0,Sep 2023,Pilibhit
+279,Amariya,0.8141,48.0,Sep 2023,Pilibhit
+292,Barsathi,0.766088,289.0,Sep 2023,Jaunpur
+305,Kerakat,0.722614,530.0,Sep 2023,Jaunpur
+318,Muftiganj,0.831087,6.0,Sep 2023,Jaunpur
+331,Nandgaon,0.771986,243.0,Sep 2023,Mathura
+344,Govardhan,0.771354,248.0,Sep 2023,Mathura
+357,Sikandrabad,0.745974,407.0,Sep 2023,Bulandshahar
+370,Lakhaothi,0.720265,541.0,Sep 2023,Bulandshahar
+383,Asoha,0.819366,32.0,Sep 2023,Unnav
+396,Bighapur,0.821078,28.0,Sep 2023,Unnav
+409,Safipur,0.815087,45.0,Sep 2023,Unnav
+422,Mianganj,0.724519,523.0,Sep 2023,Unnav
+434,Fatehpur Chaurasi,0.785274,167.0,Sep 2023,Unnav
+447,Ballia Kheri,0.772909,237.0,Sep 2023,Saharanpur
+460,Jamalpur,0.787771,145.0,Sep 2023,Mirzapur
+473,Hallia,0.806732,70.0,Sep 2023,Mirzapur
+486,Bithrichainpur,0.681798,674.0,Sep 2023,Bareilly
+499,Sataon,0.737247,451.0,Sep 2023,Rae Bareli
+512,Harchandpur,0.733075,480.0,Sep 2023,Rae Bareli
+525,Unchahar,0.683184,670.0,Sep 2023,Rae Bareli
+537,Malasa,0.764419,303.0,Sep 2023,Kanpur Dehat
+550,Ghiror,0.68724,656.0,Sep 2023,Mainpuri
+562,Sultanganj,0.595024,823.0,Sep 2023,Mainpuri
+574,Mainpuri,0.769646,260.0,Sep 2023,Mainpuri
+587,Visheshwarganj,0.614483,806.0,Sep 2023,Bahraich
+600,Shivpur,0.701721,609.0,Sep 2023,Bahraich
+613,Risia,0.716451,552.0,Sep 2023,Bahraich
+626,Holagarh,0.807293,67.0,Sep 2023,Prayagraj
+639,Jasra,0.750276,381.0,Sep 2023,Prayagraj
+652,Jalalabad,0.593425,825.0,Sep 2023,Shahjahanpur
+664,Bhawal Khera,0.716283,553.0,Sep 2023,Shahjahanpur
+677,Bangra,0.77668,218.0,Sep 2023,Jhansi
+690,Jhansi (Urban),0.689188,643.0,Sep 2023,Jhansi
+703,Bamaur,0.711568,568.0,Sep 2023,Jhansi
+715,Akola,0.84542,2.0,Sep 2023,Agra
+728,Chail,0.781463,185.0,Sep 2023,Kaushambi
+741,Amauli,0.781159,188.0,Sep 2023,Fatehpur
+754,Bhitaura,0.771353,249.0,Sep 2023,Fatehpur
+767,Azmatgarh,0.685662,660.0,Sep 2023,Azamgarh
+780,Mirzapur,0.626675,796.0,Sep 2023,Azamgarh
+792,Sidhpura,0.706355,592.0,Sep 2023,Kasganj
+805,Etawah (Urban),0.64222,771.0,Sep 2023,Etawah
+818,Chakarnagar,0.571366,841.0,Sep 2023,Etawah
+831,DHQ Hapur,0.561361,847.0,Sep 2023,Hapur
+844,Tondarpur,0.764816,298.0,Sep 2023,Hardoi
+857,Mohammadabad Gohana,0.669932,706.0,Sep 2023,Maunathbhanjan
+870,Ranipur,0.728905,497.0,Sep 2023,Maunathbhanjan
+883,Sambhal,0.76881,271.0,Sep 2023,Sambhal
+896,Panwasa,0.676625,686.0,Sep 2023,Sambhal
+909,Kamasin,0.727609,506.0,Sep 2023,Banda
+921,Bisanda,0.751988,364.0,Sep 2023,Banda
+934,Jaitpur,0.78945,139.0,Sep 2023,Mahoba
+947,Kanpur Nagar (Urban),0.37716,886.0,Sep 2023,Kanpur Nagar
+959,Noorpur,0.759646,328.0,Sep 2023,Bijnor
+972,Kaptanganj,0.743382,420.0,Sep 2023,Basti
+985,Basti (Urban),0.551576,852.0,Sep 2023,Basti
+998,Dhanaura,0.782707,181.0,Sep 2023,Amroha
+1011,Joya,0.78994,136.0,Sep 2023,Amroha
+1024,Bansdih,0.705309,595.0,Sep 2023,Ballia
+1036,Revati,0.203089,889.0,Sep 2023,Ballia
+1045,Dubhad,0.756081,345.0,Sep 2023,Ballia
+1058,Kharkhoda,0.818209,38.0,Sep 2023,Meerut
+1071,Hastinapur,0.785699,161.0,Sep 2023,Meerut
+1084,Sarurpur Khurd,0.81237,59.0,Sep 2023,Meerut
+1097,Machra,0.791797,125.0,Sep 2023,Meerut
+1110,Baghpat,0.817947,39.0,Sep 2023,Bagpat
+1123,Utraula,0.742349,428.0,Sep 2023,Balrampur
+1136,Nadigaon,0.731504,486.0,Sep 2023,Jalaun
+1149,Sotha,0.715339,557.0,Sep 2023,Sant Kabir Nagar
+1162,Aliganj,0.714851,558.0,Sep 2023,Etah
+1175,Siddhaur,0.768995,269.0,Sep 2023,Barabanki
+1188,Dariyabad,0.768247,278.0,Sep 2023,Barabanki
+1201,Bani Kodar,0.723021,526.0,Sep 2023,Barabanki
+1214,Bhojpur,0.779555,203.0,Sep 2023,Ghaziabad
+1227,Musafir Khana,0.783271,178.0,Sep 2023,Amethi
+1240,Sant Ravidas Nagar (Urban),0.603215,818.0,Sep 2023,Bhadohi
+1253,Garh Mukteshwar,0.735955,458.0,Sep 2023,Hapur
+1266,Bijua,0.716584,551.0,Sep 2023,Lakhimpur Kheri
+1279,Pasgawan,0.736305,456.0,Sep 2023,Lakhimpur Kheri
+1292,Barhalganj,0.705499,594.0,Sep 2023,Gorakhpur
+1304,Campierganj,0.660522,735.0,Sep 2023,Gorakhpur
+1317,Pali,0.779138,206.0,Sep 2023,Gorakhpur
+1330,Umarda,0.730718,489.0,Sep 2023,Kannauj
+1343,Kannauj (Urban),0.502281,866.0,Sep 2023,Kannauj
+1355,Paniwara,0.749368,386.0,Sep 2023,Maharajganj
+1368,Karvi (Chitrakoot Dham),0.73737,450.0,Sep 2023,Chitrakoot
+1695,Bisauli,0.687286,654.0,Sep 2023,Budaun
+1696,Sahaswan,0.725298,519.0,Sep 2023,Budaun
+1697,Dataganj,0.649222,758.0,Sep 2023,Budaun
+1699,Qadar Chowk,0.631914,787.0,Sep 2023,Budaun
+1700,Budaun (Urban),0.495526,873.0,Sep 2023,Budaun
+1701,Jagat,0.663958,730.0,Sep 2023,Budaun
+1702,Wazirganj,0.751219,368.0,Sep 2023,Budaun
+1703,Sohawal,0.745878,408.0,Sep 2023,Ayodhya
+1705,Pura Bazar,0.784743,170.0,Sep 2023,Ayodhya
+1706,Harringtonganj,0.812617,57.0,Sep 2023,Ayodhya
+1707,Ayodhya (Urban),0.591803,828.0,Sep 2023,Ayodhya
+1709,Amaniganj,0.721876,534.0,Sep 2023,Ayodhya
+1710,Milkipur,0.75453,353.0,Sep 2023,Ayodhya
+1711,Tarun,0.780991,189.0,Sep 2023,Ayodhya
+1712,Baskhari,0.731116,488.0,Sep 2023,Ambedkar Nagar
+1713,Akbarpur,0.796146,110.0,Sep 2023,Ambedkar Nagar
+1715,Ambedkar Nagar  (Urban),0.576866,837.0,Sep 2023,Ambedkar Nagar
+1716,Jahangirganj,0.681547,676.0,Sep 2023,Ambedkar Nagar
+1720,Jalalpur,0.747753,397.0,Sep 2023,Ambedkar Nagar
+1722,Dostpur,0.797798,99.0,Sep 2023,Sultanpur
+1723,Jai Singh Pur,0.779138,206.0,Sep 2023,Sultanpur
+1724,Dubey Pur,0.792782,119.0,Sep 2023,Sultanpur
+1725,Waldi Rai,0.728692,498.0,Sep 2023,Sultanpur
+1726,Kadipur,0.653541,749.0,Sep 2023,Sultanpur
+1727,Bhadayeea,0.753082,361.0,Sep 2023,Sultanpur
+1729,Pratap Pur Kamaicha,0.75301,362.0,Sep 2023,Sultanpur
+1731,Aligarh (Urban),0.650918,753.0,Sep 2023,Aligarh
+1732,Atrauli,0.777438,214.0,Sep 2023,Aligarh
+1733,Bijauli,0.813312,54.0,Sep 2023,Aligarh
+1734,Gangiri,0.740057,440.0,Sep 2023,Aligarh
+1736,Akrabad,0.745074,411.0,Sep 2023,Aligarh
+1737,Iglas,0.810926,61.0,Sep 2023,Aligarh
+1739,Manihari,0.682481,671.0,Sep 2023,Ghazipur
+1740,Mohammadabad,0.772559,239.0,Sep 2023,Ghazipur
+1741,Karanda,0.72261,531.0,Sep 2023,Ghazipur
+1742,Bhadaura,0.570973,842.0,Sep 2023,Ghazipur
+1744,Jakhania,0.701488,610.0,Sep 2023,Ghazipur
+1746,Ghazipur,0.650451,754.0,Sep 2023,Ghazipur
+1747,Zamania,0.691204,637.0,Sep 2023,Ghazipur
+1749,Deokali,0.744572,416.0,Sep 2023,Ghazipur
+1751,Virno,0.701112,611.0,Sep 2023,Ghazipur
+1752,Sahpau,0.823598,19.0,Sep 2023,Hathras
+1753,Mursan,0.773367,235.0,Sep 2023,Hathras
+1754,Sasni,0.785528,163.0,Sep 2023,Hathras
+1756,Paraspur,0.722084,532.0,Sep 2023,Gonda
+1757,Pandri Krapal,0.783238,180.0,Sep 2023,Gonda
+1759,Chhapia,0.801217,87.0,Sep 2023,Gonda
+1761,Belsar,0.741472,429.0,Sep 2023,Gonda
+1762,Itia Thok,0.707692,583.0,Sep 2023,Gonda
+1764,Babhanjot,0.712715,562.0,Sep 2023,Gonda
+1766,Mankapur,0.711343,571.0,Sep 2023,Gonda
+1767,Shahabad,0.786196,159.0,Sep 2023,Rampur
+1768,Bilaspur,0.774521,230.0,Sep 2023,Rampur
+1771,Milak,0.81289,56.0,Sep 2023,Rampur
+1774,Rampur (Urban),0.637711,779.0,Sep 2023,Rampur
+1775,Suar,0.764794,300.0,Sep 2023,Rampur
+1776,Bakshi-Ka-Talab,0.756844,340.0,Sep 2023,Lucknow
+1777,Lucknow (Urban),0.611315,807.0,Sep 2023,Lucknow
+1779,Mohanlalganj,0.761571,318.0,Sep 2023,Lucknow
+1783,Chinhat,0.720887,539.0,Sep 2023,Lucknow
+1785,Malihabad,0.742715,425.0,Sep 2023,Lucknow
+1786,Sarojaninagar,0.697446,621.0,Sep 2023,Lucknow
+1787,Kakori,0.761813,314.0,Sep 2023,Lucknow
+1788,Gosaiganj,0.711382,570.0,Sep 2023,Lucknow
+1790,Sakaldiha,0.734471,467.0,Sep 2023,Chandauli
+1792,Chandauli,0.608873,810.0,Sep 2023,Chandauli
+1794,Chakia,0.787031,154.0,Sep 2023,Chandauli
+1796,Barhani,0.791355,128.0,Sep 2023,Chandauli
+1797,Chandauli (Urban),0.508016,865.0,Sep 2023,Chandauli
+1798,Deoria (Urban),0.438807,882.0,Sep 2023,Deoria
+1800,Desai Deoria,0.639261,775.0,Sep 2023,Deoria
+1801,Rampur Karkhana,0.698906,616.0,Sep 2023,Deoria
+1803,Rudrapur,0.630343,792.0,Sep 2023,Deoria
+1804,Pathar Dewa,0.737101,452.0,Sep 2023,Deoria
+1806,Itwa,0.588689,832.0,Sep 2023,Siddharth Nagar
+1807,Siddharth Nagar (Urban),0.435215,883.0,Sep 2023,Siddharth Nagar
+1808,Khesraha,0.639425,774.0,Sep 2023,Siddharth Nagar
+1809,Jogia Khas,0.512251,863.0,Sep 2023,Siddharth Nagar
+1810,Shoharatgarh,0.590122,829.0,Sep 2023,Siddharth Nagar
+1811,Lotan,0.710858,574.0,Sep 2023,Siddharth Nagar
+1812,Bilari,0.727938,502.0,Sep 2023,Moradabad
+1813,Moradabad,0.700218,612.0,Sep 2023,Moradabad
+1814,Chhajlet,0.771699,245.0,Sep 2023,Moradabad
+1815,Bhagatpur Tanda,0.798508,95.0,Sep 2023,Moradabad
+1816,Fazilnagar,0.722626,529.0,Sep 2023,Kushinagar
+1817,Hata,0.733565,478.0,Sep 2023,Kushinagar
+1819,Motichak,0.780851,192.0,Sep 2023,Kushinagar
+1821,Kushinagar (Urban),0.562507,846.0,Sep 2023,Kushinagar
+1822,Sevarhi,0.794292,116.0,Sep 2023,Kushinagar
+1825,Nebua Naurangiya,0.746241,406.0,Sep 2023,Kushinagar
+1827,Padrauna,0.636968,781.0,Sep 2023,Kushinagar
+1829,Lalaurikhera,0.808309,64.0,Sep 2023,Pilibhit
+1830,Pilibhit (Urban),0.554667,851.0,Sep 2023,Pilibhit
+1831,Puranpur,0.775133,226.0,Sep 2023,Pilibhit
+1833,Barkhera,0.801758,86.0,Sep 2023,Pilibhit
+1834,Bisalpur,0.769702,259.0,Sep 2023,Pilibhit
+1835,Mariahu,0.668676,710.0,Sep 2023,Jaunpur
+1837,Shahganj,0.750382,377.0,Sep 2023,Jaunpur
+1838,Badlapur,0.791523,127.0,Sep 2023,Jaunpur
+1839,Dobhi,0.693731,630.0,Sep 2023,Jaunpur
+1842,Jalalpur,0.677976,681.0,Sep 2023,Jaunpur
+1843,Baksha,0.710681,575.0,Sep 2023,Jaunpur
+1844,Sujanganj,0.714597,559.0,Sep 2023,Jaunpur
+1847,Sikrara,0.780033,200.0,Sep 2023,Jaunpur
+1848,Suithakala,0.716187,554.0,Sep 2023,Jaunpur
+1849,Mathura (Urban),0.522524,858.0,Sep 2023,Mathura
+1850,Mathura,0.786687,157.0,Sep 2023,Mathura
+1851,Nohjhil,0.750337,379.0,Sep 2023,Mathura
+1853,Farah,0.657316,740.0,Sep 2023,Mathura
+1854,Araniya,0.721363,536.0,Sep 2023,Bulandshahar
+1855,Jahangirabad,0.768953,270.0,Sep 2023,Bulandshahar
+1856,Khurja,0.643674,768.0,Sep 2023,Bulandshahar
+1857,Bulandshahr,0.66956,708.0,Sep 2023,Bulandshahar
+1858,Bhawan Bahadur Nagar,0.651204,752.0,Sep 2023,Bulandshahar
+1859,Syana,0.750179,383.0,Sep 2023,Bulandshahar
+1860,Unchagaon,0.746609,402.0,Sep 2023,Bulandshahar
+1861,Unnao (Urban),0.70311,603.0,Sep 2023,Unnav
+1864,Sumerpur,0.677059,684.0,Sep 2023,Unnav
+1866,Purwa,0.779549,204.0,Sep 2023,Unnav
+1867,Ganj Moradabad,0.811829,60.0,Sep 2023,Unnav
+1868,Hasanganj,0.77715,216.0,Sep 2023,Unnav
+1870,Hilauli,0.709191,580.0,Sep 2023,Unnav
+1871,Auras,0.749153,389.0,Sep 2023,Unnav
+1872,Gangoh,0.734095,472.0,Sep 2023,Saharanpur
+1873,Nakur,0.821523,25.0,Sep 2023,Saharanpur
+1874,Sarsawan,0.738286,444.0,Sep 2023,Saharanpur
+1875,Puwarka,0.790961,130.0,Sep 2023,Saharanpur
+1876,Nagal,0.785596,162.0,Sep 2023,Saharanpur
+1877,Rampur Maniharan,0.733719,476.0,Sep 2023,Saharanpur
+1880,Majhawa,0.649592,756.0,Sep 2023,Mirzapur
+1883,Chhanvey,0.78536,166.0,Sep 2023,Mirzapur
+1884,Narainpur,0.826057,17.0,Sep 2023,Mirzapur
+1888,Nagar (City),0.801189,88.0,Sep 2023,Mirzapur
+1890,Lalganj,0.787161,152.0,Sep 2023,Mirzapur
+1891,Pahari,0.747739,398.0,Sep 2023,Mirzapur
+1893,Kon,0.798056,97.0,Sep 2023,Mirzapur
+1894,Nawabganj,0.724608,522.0,Sep 2023,Bareilly
+1895,Shergarh,0.796933,103.0,Sep 2023,Bareilly
+1897,Bhadpura,0.706474,588.0,Sep 2023,Bareilly
+1898,Faridpur,0.668277,713.0,Sep 2023,Bareilly
+1899,Majhgawan,0.661366,733.0,Sep 2023,Bareilly
+1900,Baheri,0.654561,748.0,Sep 2023,Bareilly
+1901,Bareily (Urban),0.5332,855.0,Sep 2023,Bareilly
+1902,Mirganj,0.731922,484.0,Sep 2023,Bareilly
+1903,Bhojipura,0.677095,683.0,Sep 2023,Bareilly
+1905,Salon,0.7426,426.0,Sep 2023,Rae Bareli
+1906,Khiron,0.796699,106.0,Sep 2023,Rae Bareli
+1907,Rohniya,0.803276,83.0,Sep 2023,Rae Bareli
+1908,Amawan,0.787051,153.0,Sep 2023,Rae Bareli
+1911,Rae Bareli (Urban),0.620651,801.0,Sep 2023,Rae Bareli
+1912,Rahi,0.729406,496.0,Sep 2023,Rae Bareli
+1913,Jagatpur,0.822296,22.0,Sep 2023,Rae Bareli
+1914,Sandalpur,0.717357,547.0,Sep 2023,Kanpur Dehat
+1915,Derapur,0.670246,703.0,Sep 2023,Kanpur Dehat
+1917,Rajpur,0.787499,148.0,Sep 2023,Kanpur Dehat
+1920,Akbarpur,0.765258,296.0,Sep 2023,Kanpur Dehat
+1921,Maitha,0.734708,466.0,Sep 2023,Kanpur Dehat
+1922,Jagir,0.667608,716.0,Sep 2023,Mainpuri
+1923,Bewar,0.664879,725.0,Sep 2023,Mainpuri
+1924,Barnahal,0.631029,789.0,Sep 2023,Mainpuri
+1925,Karhal,0.55507,850.0,Sep 2023,Mainpuri
+1926,Kuraoli,0.694332,629.0,Sep 2023,Mainpuri
+1928,Kishni,0.711227,573.0,Sep 2023,Mainpuri
+1929,Araon,0.748625,392.0,Sep 2023,Firozabad
+1931,Shikohabad,0.696705,625.0,Sep 2023,Firozabad
+1932,Eka,0.572431,839.0,Sep 2023,Firozabad
+1933,Phakharpur,0.608284,814.0,Sep 2023,Bahraich
+1934,Huzoorpur,0.710011,577.0,Sep 2023,Bahraich
+1935,Mahasi,0.704509,598.0,Sep 2023,Bahraich
+1936,Tejwapur,0.649184,759.0,Sep 2023,Bahraich
+1937,Kaisarganj,0.70973,578.0,Sep 2023,Bahraich
+1938,Mihinpurwa,0.675872,688.0,Sep 2023,Bahraich
+1939,Payagpur,0.780437,196.0,Sep 2023,Bahraich
+1943,Bahraich (Urban),0.410475,885.0,Sep 2023,Bahraich
+1944,Balaha,0.737943,448.0,Sep 2023,Bahraich
+1945,Manda,0.822849,21.0,Sep 2023,Prayagraj
+1946,Soraon,0.67879,678.0,Sep 2023,Prayagraj
+1947,Handia,0.776934,217.0,Sep 2023,Prayagraj
+1949,Bahria,0.737971,446.0,Sep 2023,Prayagraj
+1950,Saidabad,0.826748,14.0,Sep 2023,Prayagraj
+1953,Kaurihar,0.774203,232.0,Sep 2023,Prayagraj
+1955,Uruwan,0.81406,49.0,Sep 2023,Prayagraj
+1956,Prayagraj (Urban),0.625391,798.0,Sep 2023,Prayagraj
+1958,Chaka,0.78604,160.0,Sep 2023,Prayagraj
+1959,Shankargarh,0.759745,327.0,Sep 2023,Prayagraj
+1960,Dhanupur,0.813993,50.0,Sep 2023,Prayagraj
+1962,Bahadurpur,0.750254,382.0,Sep 2023,Prayagraj
+1963,Phulpur,0.816531,43.0,Sep 2023,Prayagraj
+1964,Powayan,0.593594,824.0,Sep 2023,Shahjahanpur
+1965,Mirzapur,0.635837,783.0,Sep 2023,Shahjahanpur
+1966,Khutar,0.691963,635.0,Sep 2023,Shahjahanpur
+1967,Sindhauli,0.6931,632.0,Sep 2023,Shahjahanpur
+1968,Katra (Khudaganj),0.656118,745.0,Sep 2023,Shahjahanpur
+1969,Kalan,0.667611,715.0,Sep 2023,Shahjahanpur
+1970,Shahjahanpur (Urban),0.511001,864.0,Sep 2023,Shahjahanpur
+1972,Jaitipur,0.693297,631.0,Sep 2023,Shahjahanpur
+1974,Tilhar,0.762056,312.0,Sep 2023,Shahjahanpur
+1975,Nigohi,0.484173,876.0,Sep 2023,Shahjahanpur
+1976,Banda,0.608858,811.0,Sep 2023,Shahjahanpur
+1978,Chirgaon,0.821511,26.0,Sep 2023,Jhansi
+1979,Moth,0.808584,63.0,Sep 2023,Jhansi
+1980,Gursarai,0.806809,69.0,Sep 2023,Jhansi
+1982,Babina,0.834677,4.0,Sep 2023,Jhansi
+1984,Shamsabad,0.681664,675.0,Sep 2023,Agra
+1986,Jagner,0.790665,133.0,Sep 2023,Agra
+1987,Khandauli,0.736748,454.0,Sep 2023,Agra
+1988,Barauli Ahir,0.702993,605.0,Sep 2023,Agra
+1989,Achhnera,0.726364,513.0,Sep 2023,Agra
+1990,Pinahat,0.814558,46.0,Sep 2023,Agra
+1993,Etmadpur,0.762441,310.0,Sep 2023,Agra
+1994,Newada,0.737962,447.0,Sep 2023,Kaushambi
+1995,Sarsawan,0.821926,24.0,Sep 2023,Kaushambi
+1996,Sirathu,0.768306,277.0,Sep 2023,Kaushambi
+1997,Kaushambi,0.780302,198.0,Sep 2023,Kaushambi
+1998,Manjhanpur,0.766178,288.0,Sep 2023,Kaushambi
+2000,Kaushambi (Urban),0.670146,704.0,Sep 2023,Kaushambi
+2001,Ghorawal,0.781794,184.0,Sep 2023,Sonbhadra
+2002,Robertsganj,0.738239,445.0,Sep 2023,Sonbhadra
+2003,Nagwa,0.778853,209.0,Sep 2023,Sonbhadra
+2004,Devmai,0.751005,370.0,Sep 2023,Fatehpur
+2005,Hathgaon,0.688207,647.0,Sep 2023,Fatehpur
+2006,Vijayipur,0.802894,84.0,Sep 2023,Fatehpur
+2007,Bahua,0.774793,228.0,Sep 2023,Fatehpur
+2010,Asothar,0.746533,403.0,Sep 2023,Fatehpur
+2011,Airaya,0.764301,304.0,Sep 2023,Fatehpur
+2012,Dhata,0.791901,123.0,Sep 2023,Fatehpur
+2013,Rani Ki Sarai,0.720043,543.0,Sep 2023,Azamgarh
+2014,Mehnagar,0.676646,685.0,Sep 2023,Azamgarh
+2015,Jahanaganj,0.600761,820.0,Sep 2023,Azamgarh
+2017,Tarwa,0.605254,817.0,Sep 2023,Azamgarh
+2018,Mohammadpur,0.638396,778.0,Sep 2023,Azamgarh
+2019,Bilariyaganj,0.664613,726.0,Sep 2023,Azamgarh
+2020,Tahbarpur,0.458187,879.0,Sep 2023,Azamgarh
+2021,Pawai,0.669992,705.0,Sep 2023,Azamgarh
+2022,Martinganj,0.665268,723.0,Sep 2023,Azamgarh
+2023,Haraiya,0.674646,692.0,Sep 2023,Azamgarh
+2024,Atraulia,0.75116,369.0,Sep 2023,Azamgarh
+2026,Pindra,0.76131,319.0,Sep 2023,Varanasi
+2027,Baragaon,0.801003,89.0,Sep 2023,Varanasi
+2028,Sevapuri,0.803783,80.0,Sep 2023,Varanasi
+2029,Varanasi (Urban),0.643616,769.0,Sep 2023,Varanasi
+2030,Chirai Gaon,0.734135,471.0,Sep 2023,Varanasi
+2031,Sahawar,0.697846,620.0,Sep 2023,Kasganj
+2032,Amanpur,0.74831,394.0,Sep 2023,Kasganj
+2033,Kasganj,0.791867,124.0,Sep 2023,Kasganj
+2034,Soron,0.707098,586.0,Sep 2023,Kasganj
+2036,Ganj Dundwara,0.719896,544.0,Sep 2023,Kasganj
+2038,Ailiya,0.696365,626.0,Sep 2023,Sitapur
+2039,Kasmanda,0.743718,418.0,Sep 2023,Sitapur
+2041,Maholi,0.75091,372.0,Sep 2023,Sitapur
+2042,Khairabad,0.773719,234.0,Sep 2023,Sitapur
+2043,Machhrehta,0.731342,487.0,Sep 2023,Sitapur
+2045,Biswan,0.687344,653.0,Sep 2023,Sitapur
+2047,Hargaon,0.754433,354.0,Sep 2023,Sitapur
+2048,Sitapur (Urban),0.611216,808.0,Sep 2023,Sitapur
+2049,Parsendi,0.753915,356.0,Sep 2023,Sitapur
+2050,Laharpur,0.754227,355.0,Sep 2023,Sitapur
+2051,Rampur Mathura,0.785192,168.0,Sep 2023,Sitapur
+2052,Pisawan,0.779308,205.0,Sep 2023,Sitapur
+2054,Sakran,0.732659,482.0,Sep 2023,Sitapur
+2055,Barhpura,0.778968,207.0,Sep 2023,Etawah
+2056,Jaswantnagar,0.707124,584.0,Sep 2023,Etawah
+2057,Mahewa,0.764801,299.0,Sep 2023,Etawah
+2058,Sefai,0.290395,888.0,Sep 2023,Etawah
+2059,Mandawara,0.73363,477.0,Sep 2023,Lalitpur
+2061,Lalitpur  (Urban),0.680283,677.0,Sep 2023,Lalitpur
+2062,Jakhaura,0.803636,82.0,Sep 2023,Lalitpur
+2064,Talbehat,0.775393,224.0,Sep 2023,Lalitpur
+2067,Mahrauni,0.736923,453.0,Sep 2023,Lalitpur
+2069,Bar,0.74916,388.0,Sep 2023,Lalitpur
+2071,Ahrori,0.803771,81.0,Sep 2023,Hardoi
+2072,Mallawan,0.746392,405.0,Sep 2023,Hardoi
+2073,Shahabad,0.756644,342.0,Sep 2023,Hardoi
+2076,Harpalpur,0.786486,158.0,Sep 2023,Hardoi
+2077,Bilgram,0.780967,190.0,Sep 2023,Hardoi
+2079,Madhoganj,0.787262,150.0,Sep 2023,Hardoi
+2081,Hariyawan,0.708007,582.0,Sep 2023,Hardoi
+2082,Sandila,0.766186,287.0,Sep 2023,Hardoi
+2084,Bharawan,0.795841,112.0,Sep 2023,Hardoi
+2086,Maunathbhanjan (Urban),0.57858,836.0,Sep 2023,Maunathbhanjan
+2087,Fatehpur Madaun,0.815165,44.0,Sep 2023,Maunathbhanjan
+2089,Ghosi,0.790554,134.0,Sep 2023,Maunathbhanjan
+2090,Ratanpura,0.819574,30.0,Sep 2023,Maunathbhanjan
+2094,Dohari Ghat,0.824683,18.0,Sep 2023,Maunathbhanjan
+2095,Sambhal (Urban),0.678138,680.0,Sep 2023,Sambhal
+2097,Bahjoi,0.77427,231.0,Sep 2023,Sambhal
+2098,Badokhar Khurd,0.734037,474.0,Sep 2023,Banda
+2101,Naraini,0.726623,510.0,Sep 2023,Banda
+2102,Banda (Urban) ,0.652086,750.0,Sep 2023,Banda
+2104,Tindwari,0.516418,861.0,Sep 2023,Banda
+2105,Jaspura,0.740152,437.0,Sep 2023,Banda
+2106,Kabrai (Mahoba),0.760047,326.0,Sep 2023,Mahoba
+2107,Mahoba (Urban),0.677951,682.0,Sep 2023,Mahoba
+2109,Charkhari,0.735203,463.0,Sep 2023,Mahoba
+2110,Ghatampur,0.708933,581.0,Sep 2023,Kanpur Nagar
+2112,Kalyanpur,0.796469,108.0,Sep 2023,Kanpur Nagar
+2113,Bilhaur,0.739278,441.0,Sep 2023,Kanpur Nagar
+2114,Patara,0.721983,533.0,Sep 2023,Kanpur Nagar
+2116,Haldaur(Khari Jhalu),0.647355,764.0,Sep 2023,Bijnor
+2117,Budhanpur Seohara,0.758561,336.0,Sep 2023,Bijnor
+2118,Kotwali,0.766225,286.0,Sep 2023,Bijnor
+2120,Bijnor  (Urban)  ,0.692418,633.0,Sep 2023,Bijnor
+2121,Nehtaur,0.746433,404.0,Sep 2023,Bijnor
+2122,Kiratpur,0.744667,415.0,Sep 2023,Bijnor
+2123,Patti,0.726523,512.0,Sep 2023,Pratapgarh
+2124,Baba Belkharnath,0.640319,773.0,Sep 2023,Pratapgarh
+2125,Mandhata,0.706419,591.0,Sep 2023,Pratapgarh
+2127,Rampur Sangramgarh,0.684692,664.0,Sep 2023,Pratapgarh
+2129,Pratapgarh (Sadar),0.779683,201.0,Sep 2023,Pratapgarh
+2130,Magraura,0.572181,840.0,Sep 2023,Pratapgarh
+2131,Vihar,0.687267,655.0,Sep 2023,Pratapgarh
+2132,Pratapgarh (Urban),0.50193,869.0,Sep 2023,Pratapgarh
+2133,Kalakankar,0.702952,606.0,Sep 2023,Pratapgarh
+2135,Bankati,0.655107,747.0,Sep 2023,Basti
+2136,Dubaulia,0.727613,505.0,Sep 2023,Basti
+2137,Bahadurpur,0.686879,658.0,Sep 2023,Basti
+2138,Rudhauli,0.761127,321.0,Sep 2023,Basti
+2139,Paras Rampur,0.785505,164.0,Sep 2023,Basti
+2140,Gaur,0.714288,560.0,Sep 2023,Basti
+2142,Saltaua Gopal Pur,0.768056,279.0,Sep 2023,Basti
+2144,Basti,0.568775,843.0,Sep 2023,Basti
+2145,Gajraula,0.76983,257.0,Sep 2023,Amroha
+2147,Amroha (Urban),0.496729,871.0,Sep 2023,Amroha
+2148,Gangeshwari,0.796132,111.0,Sep 2023,Amroha
+2150,Amroha,0.743312,421.0,Sep 2023,Amroha
+2154,Rath,0.745831,409.0,Sep 2023,Hamirpur
+2156,Kurara,0.794402,115.0,Sep 2023,Hamirpur
+2158,Sarila,0.728172,501.0,Sep 2023,Hamirpur
+2160,Maudaha,0.806575,71.0,Sep 2023,Hamirpur
+2161,Sumerpur,0.786901,155.0,Sep 2023,Hamirpur
+2163,Beruarwari,0.738305,443.0,Sep 2023,Ballia
+2164,Bairia,0.744828,412.0,Sep 2023,Ballia
+2166,Sohaon,0.735572,460.0,Sep 2023,Ballia
+2168,Maniyar,0.684563,665.0,Sep 2023,Ballia
+2170,Garwar,0.765038,297.0,Sep 2023,Ballia
+2172,Navanagar,0.770405,254.0,Sep 2023,Ballia
+2174,Belhari,0.687635,651.0,Sep 2023,Ballia
+2175,Dankaur,0.765631,292.0,Sep 2023,Gautam Buddha Nagar
+2177,Jewar,0.649439,757.0,Sep 2023,Gautam Buddha Nagar
+2178,Meerut,0.747392,400.0,Sep 2023,Meerut
+2179,Daurala,0.798131,96.0,Sep 2023,Meerut
+2180,Parikshitgarh,0.80652,72.0,Sep 2023,Meerut
+2181,Mawana Kalan,0.728224,500.0,Sep 2023,Meerut
+2182,Pilana,0.666636,718.0,Sep 2023,Bagpat
+2183,Khekra,0.462164,878.0,Sep 2023,Bagpat
+2184,Binauli,0.764196,305.0,Sep 2023,Bagpat
+2185,Chhaprauli,0.528418,857.0,Sep 2023,Bagpat
+2186,Harriya Satgharwa,0.739124,442.0,Sep 2023,Balrampur
+2188,Pachperwa,0.744713,413.0,Sep 2023,Balrampur
+2189,Gaindas Buzurg,0.767313,281.0,Sep 2023,Balrampur
+2190,Gainsari,0.767194,282.0,Sep 2023,Balrampur
+2191,Sriduttganj,0.773808,233.0,Sep 2023,Balrampur
+2193,Tulsipur,0.721175,537.0,Sep 2023,Balrampur
+2194,Madhogarh,0.76563,293.0,Sep 2023,Jalaun
+2196,Jalaun  (Urban),0.641281,772.0,Sep 2023,Jalaun
+2197,Jalaun,0.669365,709.0,Sep 2023,Jalaun
+2198,Kuthaund,0.74783,396.0,Sep 2023,Jalaun
+2199,Dakor,0.493954,874.0,Sep 2023,Jalaun
+2202,Rampura,0.843998,3.0,Sep 2023,Jalaun
+2203,Hariharpur Rani,0.796879,104.0,Sep 2023,Shrawasti
+2206,Haisar Bazar,0.72108,538.0,Sep 2023,Sant Kabir Nagar
+2207,Semariyawan,0.728449,499.0,Sep 2023,Sant Kabir Nagar
+2210,Baghauli,0.742727,424.0,Sep 2023,Sant Kabir Nagar
+2211,Mehdawal,0.762045,313.0,Sep 2023,Sant Kabir Nagar
+2212,Nath Nagar,0.715923,555.0,Sep 2023,Sant Kabir Nagar
+2213,Sakit,0.719004,545.0,Sep 2023,Etah
+2214,Marehra,0.703258,602.0,Sep 2023,Etah
+2215,Shitalpur,0.647321,765.0,Sep 2023,Etah
+2216,Suratganj,0.702689,607.0,Sep 2023,Barabanki
+2219,Ramnagar,0.727925,503.0,Sep 2023,Barabanki
+2220,Dewa,0.750289,380.0,Sep 2023,Barabanki
+2221,Nindaura,0.76636,285.0,Sep 2023,Barabanki
+2223,Masauli,0.712979,561.0,Sep 2023,Barabanki
+2224,Puredalai,0.756126,344.0,Sep 2023,Barabanki
+2226,Trivediganj,0.674634,693.0,Sep 2023,Barabanki
+2227,Barabanki (Urban),0.631455,788.0,Sep 2023,Barabanki
+2228,Harakh,0.769285,266.0,Sep 2023,Barabanki
+2230,Banki,0.726017,516.0,Sep 2023,Barabanki
+2231,Razapur,0.776422,219.0,Sep 2023,Ghaziabad
+2233,Muradnagar,0.750636,374.0,Sep 2023,Ghaziabad
+2235,Sangrampur,0.792027,122.0,Sep 2023,Amethi
+2236,Jamo,0.796761,105.0,Sep 2023,Amethi
+2238,Bhadar,0.830403,8.0,Sep 2023,Amethi
+2239,Shahgarh,0.828495,12.0,Sep 2023,Amethi
+2240,Tiloi,0.805202,76.0,Sep 2023,Amethi
+2241,Singhpur,0.789385,140.0,Sep 2023,Amethi
+2244,Bhadohi,0.729779,493.0,Sep 2023,Bhadohi
+2246,Digh,0.759236,332.0,Sep 2023,Bhadohi
+2249,Aurai,0.79619,109.0,Sep 2023,Bhadohi
+2252,Abholi,0.740403,435.0,Sep 2023,Bhadohi
+2254,Suriyawan,0.726258,514.0,Sep 2023,Bhadohi
+2255,Jansath,0.789955,135.0,Sep 2023,Muzaffarnagar
+2256,Morna,0.688974,644.0,Sep 2023,Muzaffarnagar
+2257,Charthawal,0.747948,395.0,Sep 2023,Muzaffarnagar
+2258,Khatauli,0.750392,376.0,Sep 2023,Muzaffarnagar
+2259,Budhana,0.791014,129.0,Sep 2023,Muzaffarnagar
+2260,Baghara,0.800621,91.0,Sep 2023,Muzaffarnagar
+2262,Dhaulana,0.781183,187.0,Sep 2023,Hapur
+2263,Hapur,0.75153,366.0,Sep 2023,Hapur
+2265,Simbhawali,0.649106,760.0,Sep 2023,Hapur
+2266,Erwa Katra,0.70391,599.0,Sep 2023,Auraiya
+2269,Bidhuna,0.666443,719.0,Sep 2023,Auraiya
+2270,Achhalda,0.729548,495.0,Sep 2023,Auraiya
+2271,Auraiya (Urban),0.33991,887.0,Sep 2023,Auraiya
+2273,Sahar,0.760321,324.0,Sep 2023,Auraiya
+2275,Nighasan,0.497719,870.0,Sep 2023,Lakhimpur Kheri
+2276,Bankeyganj,0.76327,308.0,Sep 2023,Lakhimpur Kheri
+2277,Palia,0.769251,267.0,Sep 2023,Lakhimpur Kheri
+2278,Isanagar,0.797371,101.0,Sep 2023,Lakhimpur Kheri
+2280,Ramia Behar,0.720587,540.0,Sep 2023,Lakhimpur Kheri
+2281,Uruwa,0.711722,567.0,Sep 2023,Gorakhpur
+2284,Sahjanwa,0.697414,622.0,Sep 2023,Gorakhpur
+2285,Kauri Ram,0.633313,786.0,Sep 2023,Gorakhpur
+2286,Chirgawan,0.756147,343.0,Sep 2023,Gorakhpur
+2287,Pipraich,0.767518,280.0,Sep 2023,Gorakhpur
+2288,Gaugaha,0.711253,572.0,Sep 2023,Gorakhpur
+2289,Piprauli,0.820149,29.0,Sep 2023,Gorakhpur
+2291,Gorakhpur (Urban),0.606653,816.0,Sep 2023,Gorakhpur
+2292,Sardarnagar,0.668462,711.0,Sep 2023,Gorakhpur
+2294,Gugrapur,0.76368,306.0,Sep 2023,Kannauj
+2295,Chhibramau,0.821206,27.0,Sep 2023,Kannauj
+2296,Kannauj,0.762429,311.0,Sep 2023,Kannauj
+2298,Saurikh,0.72282,527.0,Sep 2023,Kannauj
+2299,Talgram,0.635841,782.0,Sep 2023,Kannauj
+2300,Pharenda,0.771491,246.0,Sep 2023,Maharajganj
+2301,Nichlaul,0.749957,384.0,Sep 2023,Maharajganj
+2303,Brijmanganj,0.75501,352.0,Sep 2023,Maharajganj
+2305,Maharajganj (Urban),0.68966,641.0,Sep 2023,Maharajganj
+2307,Siswa,0.763529,307.0,Sep 2023,Maharajganj
+2308,Dhani,0.830247,9.0,Sep 2023,Maharajganj
+2309,Ghughuli,0.775811,222.0,Sep 2023,Maharajganj
+2311,Thana Bhawan,0.788054,144.0,Sep 2023,Shamli
+2312,Shamli,0.804549,78.0,Sep 2023,Shamli
+2313,Kandhla,0.783258,179.0,Sep 2023,Shamli
+2314,UN,0.797229,102.0,Sep 2023,Shamli
+2315,Mau,0.757298,339.0,Sep 2023,Chitrakoot
+2316,Chitrakoot (Urban),0.521308,859.0,Sep 2023,Chitrakoot
+2317,Rajepur,0.772739,238.0,Sep 2023,Farrukhabad
+2319,Kaimganj,0.764678,301.0,Sep 2023,Farrukhabad
+2320,Asafpur,0.683464,668.0,Sep 2023,Budaun
+2321,Chandaus,0.797772,100.0,Sep 2023,Aligarh
+2322,Mardah,0.792071,121.0,Sep 2023,Ghazipur
+2324,Mal,0.513357,862.0,Sep 2023,Lucknow
+2325,Shahabganj,0.747597,399.0,Sep 2023,Chandauli
+2326,Bhaluani,0.730166,492.0,Sep 2023,Deoria
+2327,Khuniyaon,0.678568,679.0,Sep 2023,Siddharth Nagar
+2328,Vishunpura,0.716949,549.0,Sep 2023,Kushinagar
+2329,Rampur,0.769588,261.0,Sep 2023,Jaunpur
+2331,Gulaothi,0.778601,210.0,Sep 2023,Bulandshahar
+2332,Bichhiya,0.797888,98.0,Sep 2023,Unnav
+2333,Shivgarh,0.740149,438.0,Sep 2023,Rae Bareli
+2336,Jaitpur Kalan,0.671599,699.0,Sep 2023,Agra
+2337,Saiyan,0.778207,211.0,Sep 2023,Agra
+2338,Telyani,0.759503,330.0,Sep 2023,Fatehpur
+2340,Mahrajganj,0.664121,729.0,Sep 2023,Azamgarh
+2345,Sidhauli,0.685548,662.0,Sep 2023,Sitapur
+2346,Behta,0.784762,169.0,Sep 2023,Sitapur
+2348,Birdha,0.783634,174.0,Sep 2023,Lalitpur
+2352,Asmauli,0.699965,614.0,Sep 2023,Sambhal
+2353,Janawai,0.805872,75.0,Sep 2023,Sambhal
+2359,Sau Ghat,0.735023,464.0,Sep 2023,Basti
+2366,Purkazi,0.829926,11.0,Sep 2023,Muzaffarnagar
+2367,Brahmpur,0.712488,565.0,Sep 2023,Gorakhpur
+2369,Ujhani,0.706921,587.0,Sep 2023,Budaun
+2370,Mion,0.727752,504.0,Sep 2023,Budaun
+2373,Motigarpur,0.808618,62.0,Sep 2023,Sultanpur
+2374,Dhanipur,0.751335,367.0,Sep 2023,Aligarh
+2378,Hasayan,0.771416,247.0,Sep 2023,Hathras
+2379,Sikandra Rao,0.78761,147.0,Sep 2023,Hathras
+2384,Naugarh,0.769888,256.0,Sep 2023,Chandauli
+2385,Bhatni,0.665963,720.0,Sep 2023,Deoria
+2386,Domariyaganj,0.608714,812.0,Sep 2023,Siddharth Nagar
+2387,Khadda,0.656971,742.0,Sep 2023,Kushinagar
+2390,Ramnagar,0.732158,483.0,Sep 2023,Jaunpur
+2391,Karanjakala,0.696937,623.0,Sep 2023,Jaunpur
+2392,Baldeo,0.735982,457.0,Sep 2023,Mathura
+2396,Sikandarpur Sarausi,0.830453,7.0,Sep 2023,Unnav
+2398,Aalampur Jafarabad,0.645194,766.0,Sep 2023,Bareilly
+2399,Richha,0.748395,393.0,Sep 2023,Bareilly
+2401,Lalganj,0.656478,744.0,Sep 2023,Rae Bareli
+2403,Jhinjhak,0.710676,576.0,Sep 2023,Kanpur Dehat
+2404,Sarbankhera,0.787332,149.0,Sep 2023,Kanpur Dehat
+2409,Jasrana,0.727579,507.0,Sep 2023,Firozabad
+2410,Nawabganj,0.642759,770.0,Sep 2023,Bahraich
+2414,Kanth,0.698413,617.0,Sep 2023,Shahjahanpur
+2417,Bichpuri,0.676391,687.0,Sep 2023,Agra
+2418,Kheragarh,0.735814,459.0,Sep 2023,Agra
+2422,Myorpur,0.826363,15.0,Sep 2023,Sonbhadra
+2423,Chopan,0.784482,173.0,Sep 2023,Sonbhadra
+2425,Azamgarh (Urban),0.539638,854.0,Sep 2023,Azamgarh
+2433,Tadiyawan,0.779625,202.0,Sep 2023,Hardoi
+2434,Pardaha,0.817861,40.0,Sep 2023,Maunathbhanjan
+2436,Kakwan,0.627515,794.0,Sep 2023,Kanpur Nagar
+2442,Lakshamanpur,0.670579,702.0,Sep 2023,Pratapgarh
+2443,Hamirpur (Urban),0.68971,640.0,Sep 2023,Hamirpur
+2444,Pandah,0.782436,182.0,Sep 2023,Ballia
+2449,Gilaula,0.796478,107.0,Sep 2023,Shrawasti
+2450,Ekona,0.75942,331.0,Sep 2023,Shrawasti
+2451,Belhar Kala,0.687871,649.0,Sep 2023,Sant Kabir Nagar
+2453,Awagarh,0.755143,351.0,Sep 2023,Etah
+2455,Sirauli Gauspur,0.806046,73.0,Sep 2023,Barabanki
+2458,Gyanpur,0.789576,138.0,Sep 2023,Bhadohi
+2460,Shahpur,0.72653,511.0,Sep 2023,Muzaffarnagar
+2461,Mitauli,0.619879,802.0,Sep 2023,Lakhimpur Kheri
+2462,Nakaha,0.803996,79.0,Sep 2023,Lakhimpur Kheri
+2465,Haseran,0.78978,137.0,Sep 2023,Kannauj
+2470,Manikpur,0.799258,93.0,Sep 2023,Chitrakoot
+2471,Islamnagar,0.7157,556.0,Sep 2023,Budaun
+2475,Ambiapur,0.726674,509.0,Sep 2023,Budaun
+2478,Salarpur,0.775969,220.0,Sep 2023,Budaun
+2487,Rudauli,0.647881,763.0,Sep 2023,Ayodhya
+2490,Mavai,0.807535,66.0,Sep 2023,Ayodhya
+2491,Masodha,0.75578,347.0,Sep 2023,Ayodhya
+2493,Bikapur,0.756033,346.0,Sep 2023,Ayodhya
+2497,Bhiyaon,0.758487,337.0,Sep 2023,Ambedkar Nagar
+2499,Ramnagar,0.798682,94.0,Sep 2023,Ambedkar Nagar
+2500,Katehari,0.772557,240.0,Sep 2023,Ambedkar Nagar
+2502,Tanda,0.780965,191.0,Sep 2023,Ambedkar Nagar
+2511,Sultanpur (Urban),0.502014,868.0,Sep 2023,Sultanpur
+2512,Dhanpatganj,0.7534,357.0,Sep 2023,Sultanpur
+2513,Lambhua,0.717241,548.0,Sep 2023,Sultanpur
+2516,Akhand Nagar,0.608588,813.0,Sep 2023,Sultanpur
+2522,Tappal,0.822124,23.0,Sep 2023,Aligarh
+2528,Lodha,0.793623,118.0,Sep 2023,Aligarh
+2529,Jawan Sikanderpur,0.780707,195.0,Sep 2023,Aligarh
+2537,Saidpur,0.770544,253.0,Sep 2023,Ghazipur
+2539,Ghazipur (Urban),0.516632,860.0,Sep 2023,Ghazipur
+2540,Varachakwar,0.709582,579.0,Sep 2023,Ghazipur
+2544,Bhanwarkol,0.634921,785.0,Sep 2023,Ghazipur
+2546,Hathras (Urban),0.662493,731.0,Sep 2023,Hathras
+2550,Hathras,0.765544,294.0,Sep 2023,Hathras
+2552,Nawabganj,0.785442,165.0,Sep 2023,Gonda
+2555,Tarabganj,0.750364,378.0,Sep 2023,Gonda
+2557,Katra Bazar,0.674621,694.0,Sep 2023,Gonda
+2559,Rupaidih,0.667582,717.0,Sep 2023,Gonda
+2560,Saidnagar,0.800915,90.0,Sep 2023,Rampur
+2577,Dhanapur,0.637375,780.0,Sep 2023,Chandauli
+2582,Bankata,0.660478,736.0,Sep 2023,Deoria
+2585,Baitalpur,0.662252,732.0,Sep 2023,Deoria
+2588,Gauri Bazar,0.671932,698.0,Sep 2023,Deoria
+2596,Uska Bazar,0.639214,776.0,Sep 2023,Siddharth Nagar
+2597,Bansi,0.611038,809.0,Sep 2023,Siddharth Nagar
+2601,Bhanwapur,0.635393,784.0,Sep 2023,Siddharth Nagar
+2605,Moradabad (Urban),0.658096,739.0,Sep 2023,Moradabad
+2609,Kundarki Dingpur,0.772946,236.0,Sep 2023,Moradabad
+2613,Ramkola,0.56131,848.0,Sep 2023,Kushinagar
+2619,Bilsanda,0.688881,645.0,Sep 2023,Pilibhit
+2623,Mahrajganj,0.734453,468.0,Sep 2023,Jaunpur
+2624,Dharampur,0.813437,53.0,Sep 2023,Jaunpur
+2633,Jaunpur (Urban),0.603083,819.0,Sep 2023,Jaunpur
+2635,Machhlishahr,0.703814,600.0,Sep 2023,Jaunpur
+2642,Khuthan,0.729586,494.0,Sep 2023,Jaunpur
+2643,Raya,0.766636,284.0,Sep 2023,Mathura
+2644,Mat,0.759745,327.0,Sep 2023,Mathura
+2649,Pahasu,0.765842,290.0,Sep 2023,Bulandshahar
+2653,Bulandshahar (Urban),0.573139,838.0,Sep 2023,Bulandshahar
+2654,Danpur,0.751973,365.0,Sep 2023,Bulandshahar
+2657,Dibai,0.788468,143.0,Sep 2023,Bulandshahar
+2660,Shikarpur,0.740643,431.0,Sep 2023,Bulandshahar
+2671,Anupshahr,0.813829,52.0,Sep 2023,Bulandshahar
+2672,Bangarmau,0.770673,252.0,Sep 2023,Unnav
+2680,Deoband,0.758193,338.0,Sep 2023,Saharanpur
+2683,Sadauli Qadeem,0.813856,51.0,Sep 2023,Saharanpur
+2686,Rajgarh,0.813127,55.0,Sep 2023,Mirzapur
+2688,Marihan,0.812514,58.0,Sep 2023,Mirzapur
+2693,Fatehganj Pashchim,0.725734,518.0,Sep 2023,Bareilly
+2697,Bhuta,0.644889,767.0,Sep 2023,Bareilly
+2701,Ramnagar,0.657272,741.0,Sep 2023,Bareilly
+2702,Kyara,0.769725,258.0,Sep 2023,Bareilly
+2707,Sareni,0.774779,229.0,Sep 2023,Rae Bareli
+2708,Dalmau,0.768375,275.0,Sep 2023,Rae Bareli
+2710,Mahrajganj,0.733042,481.0,Sep 2023,Rae Bareli
+2713,Deenshah Gaura,0.818483,36.0,Sep 2023,Rae Bareli
+2714,Dih,0.71836,546.0,Sep 2023,Rae Bareli
+2715,Chhatoh,0.734049,473.0,Sep 2023,Rae Bareli
+2726,Amrodha,0.735442,462.0,Sep 2023,Kanpur Dehat
+2734,Mainpuri (Urban),0.496301,872.0,Sep 2023,Mainpuri
+2736,Kotla (Narkhi),0.695441,628.0,Sep 2023,Firozabad
+2737,Tundla,0.638487,777.0,Sep 2023,Firozabad
+2740,Kheragarh (Hathwant),0.688832,646.0,Sep 2023,Firozabad
+2742,Jarwal,0.706323,593.0,Sep 2023,Bahraich
+2750,Meja,0.712535,564.0,Sep 2023,Prayagraj
+2751,Mauaima,0.75328,358.0,Sep 2023,Prayagraj
+2756,Koraon,0.753213,359.0,Sep 2023,Prayagraj
+2758,Dadrol,0.673612,696.0,Sep 2023,Shahjahanpur
+2762,Madnapur,0.759051,333.0,Sep 2023,Shahjahanpur
+2771,Mauranipur,0.791588,126.0,Sep 2023,Jhansi
+2780,Agra (Urban),0.454982,880.0,Sep 2023,Agra
+2788,Fatehabad,0.760347,323.0,Sep 2023,Agra
+2796,Kara,0.749468,385.0,Sep 2023,Kaushambi
+2805,Babhani,0.799956,92.0,Sep 2023,Sonbhadra
+2807,Duddhi,0.819447,31.0,Sep 2023,Sonbhadra
+2808,Haswa,0.699909,615.0,Sep 2023,Fatehpur
+2811,Khajuha,0.805935,74.0,Sep 2023,Fatehpur
+2818,Lalganj,0.704829,597.0,Sep 2023,Azamgarh
+2820,Thekma,0.77236,241.0,Sep 2023,Azamgarh
+2822,Koilsa,0.675202,690.0,Sep 2023,Azamgarh
+2825,Ahiraula,0.707121,585.0,Sep 2023,Azamgarh
+2827,Palhani,0.630987,790.0,Sep 2023,Azamgarh
+2829,Sathiyaon,0.734006,475.0,Sep 2023,Azamgarh
+2830,Phulpur,0.685109,663.0,Sep 2023,Azamgarh
+2835,Arajiline,0.788808,142.0,Sep 2023,Varanasi
+2837,Harhua,0.819328,33.0,Sep 2023,Varanasi
+2846,Patiyali,0.745093,410.0,Sep 2023,Kasganj
+2858,Mahmudabad,0.761754,316.0,Sep 2023,Sitapur
+2872,Takha,0.760186,325.0,Sep 2023,Etawah
+2884,Sursa,0.73421,470.0,Sep 2023,Hardoi
+2885,Pihani,0.787193,151.0,Sep 2023,Hardoi
+2887,Bawan,0.665209,724.0,Sep 2023,Hardoi
+2895,Kopaganj,0.76863,273.0,Sep 2023,Maunathbhanjan
+2898,Baniyakhera,0.760414,322.0,Sep 2023,Sambhal
+2899,Gunnaur,0.742403,427.0,Sep 2023,Sambhal
+2901,Rajpura,0.789064,141.0,Sep 2023,Sambhal
+2903,Baberu,0.731558,485.0,Sep 2023,Banda
+2913,Vidhunu,0.790833,131.0,Sep 2023,Kanpur Nagar
+2916,Shivrajpur,0.752232,363.0,Sep 2023,Kanpur Nagar
+2919,Bhitargaon,0.768683,272.0,Sep 2023,Kanpur Nagar
+2922,Jalilpur,0.783365,176.0,Sep 2023,Bijnor
+2924,Najibabad,0.656738,743.0,Sep 2023,Bijnor
+2925,Allahpur,0.720096,542.0,Sep 2023,Bijnor
+2931,Afzalgarh,0.783301,177.0,Sep 2023,Bijnor
+2932,Shivgarh,0.62675,795.0,Sep 2023,Pratapgarh
+2934,Sandwa Chandrika,0.699998,613.0,Sep 2023,Pratapgarh
+2938,Lalganj Ajhara,0.765779,291.0,Sep 2023,Pratapgarh
+2943,Harraiya,0.771745,244.0,Sep 2023,Basti
+2949,Kudaraha,0.73043,490.0,Sep 2023,Basti
+2956,Hasanpur,0.688122,648.0,Sep 2023,Amroha
+2962,Ballia (Urban),0.590062,830.0,Sep 2023,Ballia
+2965,Chilkahar,0.70643,590.0,Sep 2023,Ballia
+2967,Siar,0.595686,822.0,Sep 2023,Ballia
+2968,Rasra,0.749241,387.0,Sep 2023,Ballia
+2970,Dadri,0.750948,371.0,Sep 2023,Gautam Buddha Nagar
+2972,Bisrakh,0.846244,1.0,Sep 2023,Gautam Buddha Nagar
+2973,Janikhurd,0.698023,618.0,Sep 2023,Meerut
+2975,Rohta,0.814515,47.0,Sep 2023,Meerut
+2980,Sardhana,0.743687,419.0,Sep 2023,Meerut
+2986,Bagpat (Urban),0.672295,697.0,Sep 2023,Bagpat
+2987,Balrampur,0.769484,263.0,Sep 2023,Balrampur
+2991,Rehra Bazar,0.769495,262.0,Sep 2023,Balrampur
+2995,Maheva,0.777344,215.0,Sep 2023,Jalaun
+3001,Shrawasti (Urban),0.471175,877.0,Sep 2023,Shrawasti
+3009,Khalilabad,0.782012,183.0,Sep 2023,Sant Kabir Nagar
+3011,Pauli,0.740562,432.0,Sep 2023,Sant Kabir Nagar
+3018,Jalesar,0.77566,223.0,Sep 2023,Etah
+3022,Jaithara,0.794102,117.0,Sep 2023,Etah
+3029,Haidargarh,0.755749,348.0,Sep 2023,Barabanki
+3032,Bhetua,0.833281,5.0,Sep 2023,Amethi
+3037,Gauriganj,0.755313,350.0,Sep 2023,Amethi
+3038,Bahadurpur,0.818517,35.0,Sep 2023,Amethi
+3048,Muzaffarnagar (Urban),0.716779,550.0,Sep 2023,Muzaffarnagar
+3063,Auraiya,0.744515,417.0,Sep 2023,Auraiya
+3065,Lakhimpur,0.617603,803.0,Sep 2023,Lakhimpur Kheri
+3066,Mohammadi,0.733231,479.0,Sep 2023,Lakhimpur Kheri
+3069,Dhaurehra,0.786788,156.0,Sep 2023,Lakhimpur Kheri
+3071,Kumbhigola,0.750472,375.0,Sep 2023,Lakhimpur Kheri
+3073,Gola,0.726227,515.0,Sep 2023,Gorakhpur
+3076,Khorabar,0.703043,604.0,Sep 2023,Gorakhpur
+3079,Khajani,0.686958,657.0,Sep 2023,Gorakhpur
+3080,Bhathat,0.690932,638.0,Sep 2023,Gorakhpur
+3081,Bansgaon,0.593332,826.0,Sep 2023,Gorakhpur
+3091,Mithaura,0.780803,193.0,Sep 2023,Maharajganj
+3094,Mahrajganj,0.750907,373.0,Sep 2023,Maharajganj
+3098,Lakshmipur,0.775925,221.0,Sep 2023,Maharajganj
+3100,Nautanawa,0.753208,360.0,Sep 2023,Maharajganj
+3101,Partawal,0.740526,433.0,Sep 2023,Maharajganj
+3107,Shamli (Urban),0.623218,799.0,Sep 2023,Shamli
+3109,Pahari,0.8048,77.0,Sep 2023,Chitrakoot
+3111,Barhpura,0.761721,317.0,Sep 2023,Farrukhabad
+3112,Shamsabad,0.768474,274.0,Sep 2023,Farrukhabad
+3115,Farrukhabad  (Urban),0.617188,804.0,Sep 2023,Farrukhabad
+3116,Nawabganj,0.777566,212.0,Sep 2023,Farrukhabad
+3117,Kamalganj,0.761275,320.0,Sep 2023,Farrukhabad
+3118,Dahgavan,0.589546,831.0,Sep 2023,Budaun
+3127,Chaumuha,0.725822,517.0,Sep 2023,Mathura
+3143,Behadar,0.73439,469.0,Sep 2023,Hardoi
+3159,Kairana,0.764445,302.0,Sep 2023,Shamli
+3175,Thakurdwara,0.775163,225.0,Sep 2023,Moradabad
+3180,Sirkoni,0.702463,608.0,Sep 2023,Jaunpur
+3185,Nanauta,0.780357,197.0,Sep 2023,Saharanpur
+3192,Firozabad (Urban),0.607074,815.0,Sep 2023,Firozabad
+3193,Karchhana,0.769292,265.0,Sep 2023,Prayagraj
+3196,Pratappur,0.784583,171.0,Sep 2023,Prayagraj
+3202,Fatehpur Sikri,0.686556,659.0,Sep 2023,Agra
+3208,Cholapur,0.721498,535.0,Sep 2023,Varanasi
+3209,Kashi Vidya Peeth,0.817678,41.0,Sep 2023,Varanasi
+3217,Sarsol,0.735518,461.0,Sep 2023,Kanpur Nagar
+3219,Babaganj,0.630788,791.0,Sep 2023,Pratapgarh
+3223,Murli Chhapra,0.784541,172.0,Sep 2023,Ballia
+3230,Sirsiya,0.795473,114.0,Sep 2023,Shrawasti
+3235,Loni,0.564386,844.0,Sep 2023,Ghaziabad
+3251,Usawan,0.826281,16.0,Sep 2023,Budaun
+3276,Kurwar,0.712675,563.0,Sep 2023,Sultanpur
+3278,Karaundi Kala,0.682384,673.0,Sep 2023,Sultanpur
+3305,Revatipur,0.690352,639.0,Sep 2023,Ghazipur
+3312,Sadabad,0.774919,227.0,Sep 2023,Hathras
+3320,Gonda (Urban),0.671068,701.0,Sep 2023,Gonda
+3338,Niyamatabad,0.778934,208.0,Sep 2023,Chandauli
+3339,Chahniya,0.734761,465.0,Sep 2023,Chandauli
+3342,Barhaj,0.668173,714.0,Sep 2023,Deoria
+3350,Tarkulwa,0.665478,721.0,Sep 2023,Deoria
+3362,Dilari,0.761785,315.0,Sep 2023,Moradabad
+3382,Mogra Badshahpur,0.742963,423.0,Sep 2023,Jaunpur
+3392,Chhata,0.648084,762.0,Sep 2023,Mathura
+3403,Agoto,0.674986,691.0,Sep 2023,Bulandshahar
+3413,Sikandarpur Karan,0.795674,113.0,Sep 2023,Unnav
+3416,Nawabganj,0.74026,436.0,Sep 2023,Unnav
+3430,Mirzapur (Urban),0.49108,875.0,Sep 2023,Mirzapur
+3474,Firozabad,0.740413,434.0,Sep 2023,Firozabad
+3476,Madanpur,0.669897,707.0,Sep 2023,Firozabad
+3494,Chitaura,0.614875,805.0,Sep 2023,Bahraich
+3506,Kaudhiyara,0.756729,341.0,Sep 2023,Prayagraj
+3530,Badagaon,0.770025,255.0,Sep 2023,Jhansi
+3537,Bah,0.807034,68.0,Sep 2023,Agra
+3554,Muratganj,0.78125,186.0,Sep 2023,Kaushambi
+3563,Sonbhadra (Urban),0.584579,833.0,Sep 2023,Sonbhadra
+3569,Malwan,0.759004,334.0,Sep 2023,Fatehpur
+3608,Gondlamau,0.682445,672.0,Sep 2023,Sitapur
+3609,Pahala,0.549079,853.0,Sep 2023,Sitapur
+3619,Basrehar,0.772209,242.0,Sep 2023,Etawah
+3628,Sandi,0.762949,309.0,Sep 2023,Hardoi
+3636,Bharkhani,0.743039,422.0,Sep 2023,Hardoi
+3642,Kachhauna,0.808081,65.0,Sep 2023,Hardoi
+3644,Kothwan,0.787639,146.0,Sep 2023,Hardoi
+3657,Mahuva,0.724659,521.0,Sep 2023,Banda
+3659,Panwari,0.802855,85.0,Sep 2023,Mahoba
+3663,Chaubepur,0.780732,194.0,Sep 2023,Kanpur Nagar
+3682,Gaura,0.696909,624.0,Sep 2023,Pratapgarh
+3686,Aspur Deosara,0.723176,525.0,Sep 2023,Pratapgarh
+3710,Gohand,0.706466,589.0,Sep 2023,Hamirpur
+3712,Muskara,0.780122,199.0,Sep 2023,Hamirpur
+3732,Gautam Buddha Nagar (Urban),0.621737,800.0,Sep 2023,Gautam Buddha Nagar
+3740,Rajpura,0.792277,120.0,Sep 2023,Meerut
+3744,Meerut (Urban),0.563347,845.0,Sep 2023,Meerut
+3745,Baraut,0.722634,528.0,Sep 2023,Bagpat
+3765,Konch,0.737929,449.0,Sep 2023,Jalaun
+3781,Etah (Urban),0.502204,867.0,Sep 2023,Etah
+3793,Fatehpur,0.597684,821.0,Sep 2023,Barabanki
+3800,Ghaziabad (Urban),0.661249,734.0,Sep 2023,Ghaziabad
+3802,Shukul Bazar,0.8189,34.0,Sep 2023,Amethi
+3805,Jagdishpur,0.828153,13.0,Sep 2023,Amethi
+3807,Amethi,0.830215,10.0,Sep 2023,Amethi
+3828,Muzaffarnagar,0.771106,250.0,Sep 2023,Muzaffarnagar
+3837,Ajit Mal,0.767026,283.0,Sep 2023,Auraiya
+3852,Behjam,0.683963,666.0,Sep 2023,Lakhimpur Kheri
+3860,Jangal Kodia,0.685649,661.0,Sep 2023,Gorakhpur
+3862,Belghat,0.655674,746.0,Sep 2023,Gorakhpur
+3890,Mohammadabad,0.741335,430.0,Sep 2023,Farrukhabad
+3918,Bachhrawan,0.777514,213.0,Sep 2023,Rae Bareli
+3931,Bharthana,0.696309,627.0,Sep 2023,Etawah
+3965,Salempur,0.664365,727.0,Sep 2023,Deoria
+3999,Kasganj (Urban),0.412897,884.0,Sep 2023,Kasganj
+4022,Balrampur (Urban),0.69153,636.0,Sep 2023,Balrampur
+4025,Kadaura,0.748722,391.0,Sep 2023,Jalaun
+4130,Deoria Sadar,0.651235,751.0,Sep 2023,Deoria
+4133,Bhatpar Rani,0.579835,835.0,Sep 2023,Deoria
+4142,Barhni Bazar,0.583954,834.0,Sep 2023,Siddharth Nagar
+4154,Tamkuhi Raj,0.660058,738.0,Sep 2023,Kushinagar
+4225,Muzaffarabad,0.747222,401.0,Sep 2023,Saharanpur
+4226,Saharanpur (Urban),0.675489,689.0,Sep 2023,Saharanpur
+4233,Sikhar,0.744704,414.0,Sep 2023,Mirzapur
+4267,Rasulabad,0.765484,295.0,Sep 2023,Kanpur Dehat
+4304,Bhagwatpur,0.556103,849.0,Sep 2023,Prayagraj
+4338,Chatra,0.758657,335.0,Sep 2023,Sonbhadra
+4377,Misrikh,0.755729,349.0,Sep 2023,Sitapur
+4385,Reusa,0.704901,596.0,Sep 2023,Sitapur
+4430,Badraon,0.683327,669.0,Sep 2023,Maunathbhanjan
+4467,Mohammedpur Deomal,0.7271,508.0,Sep 2023,Bijnor
+4468,Sangipur,0.66419,728.0,Sep 2023,Pratapgarh
+4473,Kunda,0.626135,797.0,Sep 2023,Pratapgarh
+4489,Ramnagar,0.736529,455.0,Sep 2023,Basti
+4493,Vikram Jot,0.703722,601.0,Sep 2023,Basti
+4504,Nagra,0.68767,650.0,Sep 2023,Ballia
+4508,Hanumanganj,0.692047,634.0,Sep 2023,Ballia
+4540,Jamunaha,0.711933,566.0,Sep 2023,Shrawasti
+4598,Bhagyanagar,0.769175,268.0,Sep 2023,Auraiya
+4607,Phoolbehar,0.668424,712.0,Sep 2023,Lakhimpur Kheri
+4623,Jalalabad,0.711493,569.0,Sep 2023,Kannauj
+4643,Ramnagar,0.823332,20.0,Sep 2023,Chitrakoot
+4751,Fatehpur (Urban),0.446714,881.0,Sep 2023,Fatehpur
+4900,Bhagalpur,0.665312,722.0,Sep 2023,Deoria
+4905,Naugarh,0.592219,827.0,Sep 2023,Siddharth Nagar
+5664,Sadat,0.531115,856.0,Sep 2023,Ghazipur
+7669,Nidhauli Kalan,0.749091,390.0,Sep 2023,Etah

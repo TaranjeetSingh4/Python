@@ -1,0 +1,29 @@
+<script src="node_modules/@sentry/browser/build/bundle.min.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/jquery-ui-dist/jquery-ui.js"></script>
+<script src="node_modules/jquery-ui-slider-pips-npm/dist/jquery-ui-slider-pips.min.js"></script>
+<script src="ui/popper.js/dist/umd/popper.min.js"></script>
+<script src="ui/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="ui/moment/min/moment-with-locales.min.js"></script>
+<script src="ui/lodash/lodash.min.js"></script>
+<script src="ui/leaflet/dist/leaflet.js"></script>
+<script src="ui/topojson/dist/topojson.min.js"></script>
+<script src="ui/numeral/min/numeral.min.js"></script>
+<script src="ui/g1/dist/g1.min.js"></script>
+<script src="ui/d3/build/d3.min.js"></script>
+<script src="node_modules/moment-fquarter/moment-fquarter.min.js"></script>
+<script type="text/javascript" src="node_modules/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
+
+{%if 'vega' in scripts %}
+<script src="ui/vega/build/vega.min.js"></script>
+<script src="node_modules/vega-tooltip/build/vega-tooltip.min.js"></script>
+{% end if %}
+
+{%if 'noty' in scripts %}
+<script src="ui/noty/lib/noty.min.js"></script>
+{% end if %}
+
+{%if 'num' in scripts %}
+<script src="ui/numeral/min/numeral.min.js"></script>
+{% end if %}

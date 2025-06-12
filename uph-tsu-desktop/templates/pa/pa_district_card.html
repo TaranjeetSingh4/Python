@@ -1,0 +1,78 @@
+<div class="d-flex py-3 px-4">
+  <div class="w-75">
+    <h1 class="mb-2 text-color5 opacity-50 text-uppercase"><span class="sm5 d-block"><%- area %></span></h1>
+    <h4 class="mb-0">
+      <p class="sm2 mb-0"><%- ind_name %> - Profile</p>
+    </h4>
+  </div>
+  <div class="w-25 text-right">
+      <script class="district_sort_<%- (block_break)? 'block' : 'home'%>" type="text/html" src="templates/pa/pa-sort.html"></script>
+  </div>
+</div>
+<!---health themes data-->
+<div class="pt-3">
+  <!--end-->
+  <div class="overflow-y scroll-content h-full-80 pr-2 mr-1">
+    <div class="px-2 indicator-container">
+      <div class="row h5 mx-0 mb-0 px-2 pb-1 mb-2 text-center text-uppercase">
+        <div class="col-1 sm3 px-0 text-color1 opacity-50 text-uppercase sm2 border-0 ">RANK</div>
+        <div class="col-5 sm3 px-2 text-color1 opacity-50 text-uppercase sm2 border-0 ">INDICATOR</div>
+        <div class="col-2 sm3 px-0 text-color1 opacity-50 text-uppercase sm2 border-0 ">CURR. SCORE</div>
+        <div class="col-4 sm3 px-2 text-color1 opacity-50 text-uppercase sm2 border-0 ">% CHANGE</div>
+      </div>
+      <!--cards-->
+      <% _.each(temp_data, function(row){ %>
+      <div class="card dist-indicator-card border-radius-sm pl-2 mb-2 cursor-pointer" data-val="<%-row.indicator_id%>">
+        <div class="row h4 mx-0 mb-0 pb-0 font-weight-bold justify-content-between">
+          <div class="col-1 px-1 py-3">
+            <div class="bg-color4 p-0 h3 mb-0 round text-center"><span class="sm3 d-block"><%- row.rank || 'NA' %></span></div>
+          </div>
+          <div class="col-5 px-2 text-dark py-3">
+            <h4 class="mb-0">
+              <p class="sm3 mb-0"><%- row.indicator_name %> </p>
+              <p class="sm3 mb-0">
+                <span class="bg-primary text-white ml-0 px-1 sm2 font-weight-bold mb-0 round text-center"><%- row.class %></span>
+                <span class="text-primary sm1 ml-0">( UP VALUE : <%- _.round(row.avg, 2) %> )</span></p>
+            </h4>
+          </div>
+          <div class="col-5 py-1">
+            <div class="row py-2">
+              <div class="col-7  px-2">
+                <h4 class="mb-0 font-weight-bold">
+                  <span class="sm3 d-block"><%- row.value ? _.round(row.value, 2) : row.value %></span>
+                </h4>
+              </div>
+              <div class="col-5  px-0">
+                <div class="d-flex align-items-center">
+                  <h5 class="mb-0 <%- (row.change < 0) ? 'text-warning' : ((!isFinite(row.change) || (row.change == 0)) ? 'text-color3' : 'text-success') %> lh-1 font-weight-bold align-self-end">
+                    <span class="d-block sm2"><i class="pr-1 fa <%- (row.change < 0) ? 'fa-caret-down' : ((!isFinite(row.change) || (row.change == 0)) ? '' : 'fa-caret-up') %>"
+                        aria-hidden="true"></i><%- isFinite(row.change) ? _.round(row.change, 1)+'%' : '-' %></span></h5>
+
+                  <% var period_type = url.searchKey.type %>
+                  <% var period_dict = {'year': 'PY', 'month': 'PM', 'quarter': 'PQ' } %>
+
+                  <h6 class="mb-0 text-color1 opacity-50 font-weight-normal ml-1">
+                    <span class="sm2 d-block">vs <%=period_dict[period_type]%></span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="row px-0 py-1">
+              <div class="col-12 px-0 pa-area-chart <%- slug_(row.district+' '+row.indicator_id) %>">
+                <% setTimeout(function() { %>
+                <% var _data = chart_data[row.indicator_id]; render_area_chart(_data, slug_(row.district+' '+row.indicator_id)); %>
+                <% },250) %>
+              </div>
+            </div>
+          </div>
+          <div class="h3 mb-0 selector invisible">
+            <span class=" text-white bg-info nav-link px-1  py-4 rounded-right h-100" href="">
+              <i class="fa fa-angle-right sm2" aria-hidden="true"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+</div>

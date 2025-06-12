@@ -1,0 +1,70 @@
+<div id="aside-nav" class="sidenav z-9 w-100 position-fixed">
+  <div class="container-fluid w-25 position-absolute bg-white vh-100">
+    <div class="row bg-gradient py-3">
+      <div class="col-10 pr-0">
+        <div class="admin-image mb-2"><img src="img/man.png" alt="admin-image" width="50px" height="50px" class="round bg-dark"></div>
+        <p class="text-white mb-0 p-12 user_name">Virendra Pankaj Prithu</p>
+      </div>
+      <div class="col-2 pl-0 text-right">
+        <div class="close-icon"> <a href="javascript:void(0)" class="closebtn h3 mb-0 text-white nav-link p-0" id="closeNav">&times;</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-area pt-2">
+      <ul class="nav d-flex flex-column">
+        <% if(user === 'cm') { %>
+        <li class="nav-item"><a class="nav-link px-0 py-1 text-dark font-weight-bold" href="landing"><img src="img/home.png" alt="home" class="pr-3"><span class="home_tab">Dashboard</span></a></li>
+        <% } else { %>
+        <li class="nav-item"><a class="nav-link px-0 py-1 text-dark font-weight-bold" href="./"><img src="img/home.png" alt="home" class="pr-3"><span class="home_tab">Dashboard</span></a></li>
+        <% } %>
+        <li class="nav-item"><a class="nav-link px-0 py-1 text-dark font-weight-bold" href="./pa-landing"><i class="fa fa-heartbeat pr-3"></i>Program Area</a></li>
+        <li class="nav-item cursor-pointer user-profile"><a class="nav-link px-0 py-1 text-dark font-weight-bold"><img src="img/information.png" alt="home" class="pr-3">Profile</a></li>
+        <% if(user === 'Admin') { %>
+          <li class="nav-item"><a class="nav-link px-0 py-1 text-dark font-weight-bold" href="admin"><img src="img/information.png" alt="information" class="pr-3">Admin</a></li>
+        <% } %>
+        <li class="nav-item"><a class="versions nav-link px-0 py-1 text-dark font-weight-bold" href="#"><img src="img/folder.png" alt="folder" class="pr-3">Versions</a></li>
+        <li class="nav-item"><a class="user_manual nav-link px-0 py-1 text-dark font-weight-bold" href="files/user_manual.pdf" download><img src="img/folder.png" alt="manual" class="pr-3">User Manual</a></li>
+        <!-- <li class="nav-item"><a class="nav-link px-0 py-1 text-dark font-weight-bold" href="files/UPTSU-Desktop_short.mp4" download><img src="img/video-player.png" alt="video_short" class="pr-3">Tutorial (short)</a></li> -->
+        <li class="nav-item"><a class="nav-link px-0 py-1 text-dark font-weight-bold short-video" href="#" data-toggle="modal" data-target="#forVideo"><img src="img/video-player.png" alt="video_short" class="pr-3">Tutorial (short) </a></li>
+        <li class="nav-item"><a class="nav-link px-0 py-1 text-dark font-weight-bold long-video" href="#" data-toggle="modal" data-target="#forVideoLong"><img src="img/video-player.png" alt="video_long" class="pr-3">Tutorial (long)</a></li>
+        <li class="nav-item"><a class="analytics nav-link px-0 py-1 text-dark font-weight-bold" href="#"><img src="img/analysis.png" alt="analysis" class="pr-3">Advanced Analytics</a></li>
+        <% if(user === 'Admin') { %>
+          <li class="nav-item">
+            <a class="analytics nav-link px-0 py-1 text-dark font-weight-bold" data-toggle="modal" data-target="#availFilesListModal" href="#">
+              Delete files
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="analytics nav-link px-0 py-1 text-dark font-weight-bold" data-toggle="modal" data-target="#insertMsgModal" href="#">
+              Ticker Message
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="analytics nav-link px-0 py-1 text-dark font-weight-bold" data-toggle="modal" data-target="#insertAmethiMsgModal" href="#">
+              Amethi Ticker Message
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="analytics nav-link px-0 py-1 text-dark font-weight-bold" data-toggle="modal" data-target="#exampleModal" href="#">
+              Upload File
+            </a>
+          </li>
+        <% } %>
+        <li class="nav-item">
+          <a class="analytics nav-link px-0 py-1 text-dark font-weight-bold cursor-pointer" data-toggle="modal" data-target="#fileListModal" id="spec_pdf_download">
+            Download File
+          </a>
+        </li>
+        <% if(user != 'cm') { %>
+        <li class="nav-item">
+          <a class="nav-link px-0 py-1 text-dark font-weight-bold" href="logout">
+            <!-- <img src="img/home.png" alt="analysis" class="pr-3"> -->
+            <i id="logout" class="fa fa-sign-out fa-sign-out-alt"></i>
+            <span class="pl-3">Logout</span></a></li>
+        <% } %>
+      </ul>
+    </div>
+    <div class="pb-5"></div>
+    <span class="pt-2 text-dark p-9 update_text"><em>Rank updated as per data on 20th </em><span class="font-weight-bold last_date"></span></span>
+  </div>
+</div>

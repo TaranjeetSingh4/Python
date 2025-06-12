@@ -1,0 +1,37 @@
+variables: # Define variables for re-use in the app
+  BASE: https://bmgf.gramener.com/up-tsu-desktop/amethi_map #   Define the base URL
+
+urltest: # Run tests on URLs without a browser               # Fetch this URL
+  - fetch: $BASE # Fetch this URL                          # Check the response as HTML
+    code: 200
+
+# Open browsers to run tests. Download drivers from https://www.seleniumhq.org/download/
+browsers: # Open multiple browsers to run UI tests
+  Chrome: true # Run tests on Chrome
+  # Firefox: true
+  # Edge: true
+uitest:
+  - name: idp-login-url
+  - fetch: $BASE
+  - wait: 3
+  - name: login_type_username
+    script:
+      - $$('#loginform > div.card-login.pt-1 > div:nth-child(1) > input').val('alpha')
+  - wait: 3
+  - name: login_type_password
+    script:
+      - $$('#inputPassword').val("alpha")
+  - wait: 3
+  - click: xpath //*[@id="signin"]
+  - name: check_page
+    script:
+      - return  $('body > nav > div.d-flex.ml-auto.custom-menu > ul:nth-child(4) > li:nth-child(2) > a').text(): Amethi Map view
+  - wait: 3
+  - click: xpath //*[@id="indicator_15"]/div/div[1]
+  - name: check_page_interactions
+    script:
+      - return $("#indicator_nav").text(): ANC Registration within first trimester (against estimated PW)
+  - click: xpath //*[@id="type"]/a
+  - name: click_type_count
+    script:
+      - return $('#accordion').children().length: 4

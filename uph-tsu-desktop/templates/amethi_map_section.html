@@ -1,0 +1,170 @@
+<div class="h-100">
+    <% if(url.file == 'amethi_map'){%>
+      <div class="d-flex align-items-end pos-tr sm1 px-0 p-10 download-map pr-3 cursor-pointer"><a>Download Map</a></div>
+      <div class="text-center mb-0 card-title bg-color8 position-relativess">
+        <div class="align-items-start pos-tl sm1 px-0 back_nav pl-3 z-neg"><a>Back to District View</a></div>
+      <% } else {%>
+      <div class="d-flex align-items-end pos-tr sm1 px-0 p-10 download-map pr-3 cursor-pointer"><a>Download Chart</a></div>
+        <div class="text-center mb-0 card-title bg-color8 position-relativess">
+        <div class="align-items-start pos-tl sm1 px-0 back_nav pl-3"><a>Back</a></div>
+      <% } %>
+      <div class="d-flex align-items-start pos-t top-1 sm1 px-0 pl-3">
+        <div class="d-flex h6 map_trend_flex mb-0 mr-3">
+          <span for="map_trend" class="text-info mb-0 sm2 font-weight-300">Map</span>
+          <div class="switch-primary custom-switch1 round mx-2">
+            <input type="checkbox" id="map_trend" name="sw1">
+            <label for="map_trend"></label>
+          </div>
+          <span for="map_trend" class="text-info mb-0 sm2 font-weight-300">Trend</span>
+        </div>
+      </div>
+      <div class="rank_details pt-2 pr-3 position-absolute w-100">
+        <div class="d-flex justify-content-end">
+        <div class="d-flex align-items-start bg-white mr-2 sm2">
+          <a class="nav-link p-0  text-center">
+            <div class="bg-white px-2 py-1" id="rank_div">
+              <div id="rank_svg">
+            </div>
+            <svg width="22px" height="29px" viewBox="0 0 22 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <desc>Created with sketchtool.</desc>
+            <defs>
+                <rect id="path-1" x="0" y="0" width="22" height="30"></rect>
+                <path d="M9.95613694,39.0990446 C5.27480638,39.0990446 1.47976015,35.3039984 1.47976015,30.6226678 C1.47976015,25.9412448 5.27480638,22.146291 9.95613694,22.146291 C14.6374675,22.146291 18.4325137,25.9413373 18.4325137,30.6226678 C18.4284457,35.3023342 14.6358033,39.0949766 9.95613694,39.0990446 Z M4.85255929,18.1373938 L14.5937358,18.1373938 L14.5937358,16.9687485 L4.85255929,16.9687485 L4.85255929,18.1373938 Z M2.00491089,15.4894506 L5.4738644,15.4894506 L5.4738644,1.52487874 L2.00491089,1.52487874 L2.00491089,15.4894506 Z M6.95316227,15.4894506 L12.5005293,15.4894506 L12.5005293,1.52487874 L6.95316227,1.52487874 L6.95316227,15.4894506 Z M13.9798271,15.4894506 L17.4487807,15.4894506 L17.4487807,1.52487874 L13.9798271,1.52487874 L13.9798271,15.4894506 Z M10.6957859,20.7039756 L10.6957859,19.6166917 L14.5937358,19.6166917 C15.410678,19.6166917 16.0730336,18.9544285 16.0730336,18.1373938 L16.0730336,16.9687485 L17.4487807,16.9687485 C18.2657229,16.9687485 18.9280785,16.3064853 18.9280785,15.4894506 L18.9280785,1.52487874 C18.9280785,0.707844031 18.2657229,0.0455808656 17.4487807,0.0455808656 L2.00491089,0.0455808656 C1.18787619,0.0455808656 0.525613024,0.707844031 0.525613024,1.52487874 L0.525613024,15.4894506 C0.525613024,16.3064853 1.18787619,16.9687485 2.00491089,16.9687485 L3.37326142,16.9687485 L3.37326142,18.1373938 C3.37326142,18.9544285 4.03552459,19.6166917 4.85255929,19.6166917 L9.21648801,19.6166917 L9.21648801,20.7039756 C3.73328554,21.1124467 -0.380549377,25.8886373 0.0280142034,31.3717473 C0.436485328,36.8549498 5.21258341,40.9687847 10.6957859,40.5603135 C16.1789883,40.1518424 20.2928233,35.3756519 19.8842597,29.8924494 C19.5181335,24.9774822 15.6108455,21.0701018 10.6957859,20.7039756 Z" id="path-3"></path>
+            </defs>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Rev1.4-Summary-1" transform="translate(-143.000000, -563.000000)">
+                    <g id="Group-9" transform="translate(143.000000, 548.000000)">
+                        <g id="Group-17" transform="translate(0.000000, 15.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Mask"></g>
+                            <g mask="url(#mask-2)">
+                                <g transform="translate(1.000000, -12.000000)">
+                                    <mask id="mask-4" fill="white">
+                                        <use xlink:href="#path-3"></use>
+                                    </mask>
+                                    <use id="Rank" stroke="#000" stroke-width="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                    <text id="21" stroke="none" fill="none" font-family="OpenSans-Bold, Open Sans" font-size="10" font-weight="bold" line-spacing="12">
+                                        <tspan x="4.14705882" class="rank_value" y="35" fill="#000">21</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            </svg>
+            <p class="p-8 mb-0 font-weight-light text-dark text-uppercase wrap_text">rank</p>
+          </div>
+          </a>
+        </div>
+        <div class="d-flex align-items-start bg-white sm2">
+          <a class="nav-link p-0 float-left view_prof text-center cursor-pointer">
+              <div class="bg-white px-1 py-1" id="profile_div">
+                <img src="img/Profile.png" alt="icon" class="mb-1" height="29" width="20">
+                <p class="p-8 mb-0 font-weight-light text-dark text-uppercase wrap_text">
+                  Profile</p>
+              </div>
+            </a>
+        </div>
+      </div>
+        <div class="district_level d-flex align-items-start text-right py-2">
+          <a class="bla p-8 text-right w-100   font-weight-bold text-uppercase"> View District Details</a>
+        </div>
+      </div>
+
+      <form class="jak sm1">
+        <div class="d-flex">
+          <div class="">
+            <label class="font-weight-bold text-dark mb-0 font-italic">View Map</label>
+          </div>
+          <div class="mx-2">
+            <label class="custom-control custom-radio">
+              <input id="radio1" name="radio" type="radio" class="custom-control-input bg-dark">
+              <span class="custom-control-label cursor-pointer"></span>
+              <span class="custom-control-description"> By Division</span>
+            </label>
+          </div>
+          <div class="">
+            <label class="custom-control custom-radio">
+              <input id="radio2" name="radio" type="radio" class="custom-control-input">
+              <span class="custom-control-label cursor-pointer"></span>
+              <span class="custom-control-description">By District</span>
+            </label>
+          </div>
+        </div>
+        <div id="double-label-slider"></div>
+      </form>
+    </div>
+    <!-- <ul class="breadcrumb bg-color8">
+        <li><span class="cursor-pointer">UP</span></li>
+        <li><span class="cursor-pointer">bla</span></li>
+        <li>Blocks</li>
+      </ul> -->
+    <div class="position-relative">
+      <div id="mapid"></div>
+      <div class="align-self-center z-9 pos-tl mt-5 pt-5 filter_trend filter_t pr-5">
+          <img src="img/filter.svg" class="filter_show" alt="icon">
+          <div class="filter_val_trend bg-white text-left flex-column align-content-start shadow border">
+              <% _.forEach(trend_vals, function(d){ %>
+                <span data-attr="country_<%= d['map_id']%>" class="w-100 1rem text-left pl-2 dropdoown-item legend_country click_legend"><%= d['name']%></span>
+                <% })%>
+          </div>
+        </div>
+      <div class="pt-5" id="trend"></div>
+      <div class="pos-bl cursor-pointer sm2 show_text"><a class="nav-link text-primary">Hide <span class="type_text">District</span>  Names</a></div>
+      <div class="pos-br sm2 font-weight-bold text-dark font-italic negative_indication">This is Negative Indicator</div>
+    </div>
+    <div class="row view_facility ml-0 mr-0">
+      <div class="p-9 view_fec font-italic text-dark py-0 col-md-12 btn text-left position-relative">
+        <img src="img/Facility.png" alt="download" width="24" height="24" class="mx-1 my-0 cursor-pointer">
+        <span>Note: click the icon to view facilities</span>
+      </div>
+      <!-- <div class="p-9 view_prof font-italic text-dark py-0 mb-1 mt-2 col-md-6 btn">
+          <span>District profile</span>
+          <img src="img/District Profile.png" alt="download" width="24" height="24" class="mx-1 my-0 cursor-pointer">
+        </div> -->
+    </div>
+  </div>
+  <div class="position-absolute pos-b pt-3 w-100">
+    <div class="card-title mb-0">
+      <div class="justify-content-center d-flex">
+        <div class="col-1 h1-100 px-0 text-right">
+          <img src="img/arrow-left.png" alt="icon" class="mr-low-1 h1-100 indicator-change-button align-self-center cursor-pointer" id="prev-indicator">
+          </div>
+          <div class="col-10 h1-100 bg-text-color px-0 position-relativess">
+            <div class="pos-c">
+              <% get_text = (url.file == 'amethi_map')?(_.includes(["", undefined], url.searchKey.indicator_id)?"Aggregate Score":_.filter(indicator_mapping, {'indicator_id':url.searchKey['indicator_id']})[0].indicator_name) : "Overall Composite Score"%>
+              <% get_text = (get_text == '1st trim ANC reg. (HMIS)' || get_text == '1st trim ANC reg. (RCH portal)') ? ('ANC Registration within first trimester (against estimated PW)') : ((get_text == 'Visit on RMNCH+A portal' || get_text == 'Visit on Darpan & RMNCH+A') ? '% officer-visits conducted (RMNCH+A portal, Darpan App)': get_text) %>
+              <h6 class="text-white py-1   bg-text-color w-100 text-center text-uppercase small mb-0 px-2 align-self-center" id="indicator_nav"><%= get_text%></h6>
+            </div>
+          </div>
+          <div class="col-1 h1-100 px-0">
+            <img src="img/arrow-right.png" alt="icon" class="ml-low-1 h1-100 indicator-change-button align-self-center  cursor-pointer" id="next-indicator">
+        </div>
+          </div>
+        </div>
+        <div class="card-title mb-2">
+          <div class="justify-content-center d-flex">
+            <div class="px-0 col-lg-1 col-xl-2 text-lg-right">
+              <img src="img/btn-next.png" id="prev-indicator" alt="icon" class="indicator-change-button cursor-pointer rotate-indicator">
+          </div>
+              <!-- <div class="px-4 text-center legend_pos1 col-lg-7 col-xl-7">
+            <img src="img/legend2.png" alt="icon" class="mt-1 img-fluid legend_prop">
+          </div> -->
+              <div class="px-0 col-lg-3 col-xl-3">
+                <div class="d-flex justify-content-xl-start justify-content-lg-end">
+                  <div class="px-0 sm3 pl-2 pt-1 align-self-top">
+                    <img src="img/btn-next.png" alt="icon" class="indicator-change-button cursor-pointer" id="next-indicator">
+            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="play pos-br">
+              <%var ids= (url.file == 'amethi_map')?'play_inds':'play_indicator'%>
+              <img src="img/play-button.png" alt="icon" class="cursor-pointer pr-1" id="<%= ids%>"><span class="p-10 play_text">Play</span>
+            </div>
+          </div>
+        </div>

@@ -1,0 +1,179 @@
+<div class="h-100">
+    <div class="d-flex justify-content-center text-uppercase pb-0">
+      <p class="p-13 font-weight-bold mb-0 text_name"><%- view %> Ranking</p>
+      <div class="pl-3 pr-1 pt-1">
+        <div class="d-flex flex-column mb-0 pl-0 sort-districts" title="sort by rank">
+          <i class="fa fa-sort text-dark cursor-pointer"></i>
+        </div>
+      </div>
+      <div class="pl-1 pt-1">
+        <div class="d-flex flex-column mb-0 pl-0 sort-districts-names">
+          <i class="fa fa-sort-alpha-asc text-dark cursor-pointer" title="sort by <%- view %> name"></i>
+        </div>
+      </div>
+    </div>
+    <div class="table-responsive barchart_table">
+      <table class="table border-0 p-10 mb-2 mt-2">
+        <tbody>
+          <% if(data.length === 0) { %>
+            <% $('#mapid').css('pointer-events', 'none') %>
+            <tr>
+              <div class="justify-content-between">
+                <h6 class="alert alert-info p-14 font-weight-bold m-4 text-center text-uppercase">No data available</h6>
+              </div>
+            </tr>
+          <% } else { %>
+            <% $('#mapid').css('pointer-events', 'auto') %>
+            <% var curr_col = indicator ? 'perc_point' : 'cm_index' %>
+            <% var prev_col = indicator ? 'perc_point_pm' : 'pm_index' %>
+            <% if(url.file != 'amethi_map') {%>
+              <% _.each(data, function(row) { %>
+                <% if(row.rank !== 0) { %>
+                  <tr id = "<%- row.id %>" class="bar_click cursor-pointer <%- row.id %>">
+                    <th rowspan="1" class="border-0 text-dark font-weight-normal text-right pr-1 p-11"><%- _.includes(Object.keys(district_name_change), row.district.trim()) ? district_name_change[row.district.trim()] : row.district %></th>
+                    <td class="rank_<%= row.id %> border-0 font-weight-bold text-dark font-italic text-center px-0" rowspan="1"><%- row.rank %></td>
+                    <td colspan="3" class="border-0 w-50 pl-1">
+                      <div class="d-flex position-relative">
+                        <div class="custom-round position-absolute bg-color2 text-white text-truncate text-left cm_bar pl-1 pr-0" width="<%- row[curr_col] %>" title="<%- _.round(row[curr_col], 2) %>"><%- _.round(row[curr_col], 2) %></div>
+                        <div class="progress bg-transparent w-100 pb-1">
+                          <div class="progress-bar border border-dark border-top-0 border-bottom-0 border-left-0 border-right bg-transparent pm_bar" width="<%- row[prev_col] %>" data-toggle="title" title="<%- _.round(row[curr_col], 2) %>">
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                <% } %>
+              <% }) %>
+            <%} else {%>
+            <tr>
+              <% if(_.includes(["", undefined], url.searchKey.indicator_id)) {%>
+              <% var metric_text = "Aggregate Score "%>
+              <% } else {%>
+              <% metric_text = _.filter(indicator_mapping,{indicator_id: url.searchKey.indicator_id})[0].short_name%>
+              <% }%>
+              <td class="border-0 font-weight-bold text-dark font-bold text-center px-0 invisible" rowspan="1">
+              </td>
+              <th rowspan="1" class="border-0 text-dark font-weight-bold text-left pr-1"><%= metric_text %></th>
+              <td colspan="3" class="border-0 w-50 pl-1 invisible">
+                <div class="d-flex position-relative">
+                  <div class="custom-round position-absolute bg-color2 text-white text-truncate text-left cm_bar pl-1 pr-0"></div>
+                  <div class="progress bg-transparent w-100 pb-1">
+                    <div class="custom-round rankingbar progress-bar border border-top-0 border-bottom-0 border-left-0 border-right pm_bar">
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="border-0 font-weight-bold text-dark font-italic text-center" rowspan="1">Current Value</td>
+              <td class="border-0 font-weight-bold text-dark font-italic text-center" rowspan="1">Previous Value</td>
+            </tr>
+            <% _.each(data, function(row) { %>
+              <% if(row.rank !== 0) { %>
+                <tr id = "<%- row.id %>" class="bar_click cursor-pointer <%- row.id %>">
+                  <td class="border-0 lh-1 font-weight-bold text-dark font-bold text-center px-0" rowspan="1"><%- '#'+row.rank %></td>
+                  <th rowspan="1" class="lh-1 border-0 text-dark font-weight-normal text-left pr-1 p-11"><%- _.includes(Object.keys(district_name_change), row.district.trim()) ? district_name_change[row.district.trim()] : row.district %></th>
+                  <td colspan="3" class="lh-1 border-0 w-50 pl-1 addnoids">
+                    <div class="d-flex position-relative">
+                      <div class="custom-round position-absolute bg-color_new text-white text-truncate text-left cm_bar_new pl-1 pr-0" width="<%- row[curr_col] %>"></div>
+                      <div class="progress bg-transparent w-100 pb-1">
+                        <div class="custom-round rankingbar progress-bar border border-top-0 border-bottom-0 border-left-0 border-right pm_bar_new mt-1" width="<%- row[prev_col] %>">
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="border-0 lh-1 font-weight-bold text-dark currnet_score text-bold text-center" rowspan="1">
+                    <% if(!_.includes(["", undefined],url.searchKey.indicator_id)){ %>
+                    <% var unit = _.filter(indicator_mapping,{indicator_id: url.searchKey.indicator_id})[0].unit %>
+                    <% var decimal = _.filter(indicator_mapping,{indicator_id: url.searchKey.indicator_id})[0].decimal%>
+                    <% } else { %>
+                    <% unit = "%" %>
+                    <% decimal = '0,0.0'%>
+                    <% } %>
+                    <% if(url.searchKey.indicator_id !== undefined){ %>
+                      <% row[curr_col] = (unit === "" )?row[curr_col]:row[curr_col] * 100 %>
+                    <% } %>
+                    <%- (!isNaN(row[curr_col])?numeral(_.round(row[curr_col], 2)).format(decimal)+ unit: "NA") %>
+                  </td>
+                  <td class="border-0 lh-1 font-weight-bold text-dark previous_score text-bold text-center" rowspan="1">
+                    <% if(!_.includes(["", undefined],url.searchKey.indicator_id)){ %>
+                    <% var unit = _.filter(indicator_mapping,{indicator_id: url.searchKey.indicator_id})[0].unit %>
+                    <% var decimal = _.filter(indicator_mapping,{indicator_id: url.searchKey.indicator_id})[0].decimal%>
+                    <% } else { %>
+                    <% unit = "%" %>
+                    <% decimal = '0,0.0'%>
+                    <% } %>
+                    <% if(url.searchKey.indicator_id !== undefined){ %>
+                    <% row[prev_col] = (unit === "")?row[prev_col]:row[prev_col] * 100 %>
+                    <% } %>
+                    <%- (!isNaN(row[prev_col])?numeral(_.round(row[prev_col], 2)).format(decimal)+ unit: "NA") %>
+                  </td>
+                </tr>
+              <% } %>
+            <% }) %>
+            <% } %>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
+    <div class="position-absolute pos-b legend_table">
+      <div class="card-title mb-2">
+        <ul class="nav justify-content-center d-flex font-weight-bold barchart-legend">
+          <li class="nav-item ml-1 d-inline-block align-self-center">
+            <a class="nav-link">
+              <div class="d-flex sm1">
+                <% if(url.file == 'amethi_map'){ %>
+                <div class="bg-blue line-9 sm1 mr-2 align-self-center"></div>
+                <div class="curr text-uppercase">no</div>
+                <% } else {%>
+                <div class="bg-color2 line-9 sm1 mr-2 align-self-center"></div>
+                <div class="curr text-uppercase">no</div>
+                <% } %>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item ml-1  align-self-center">
+            <a class="nav-link">
+              <div class="d-flex sm1">
+                <% if(url.file == 'amethi_map'){ %>
+                <div class="bg-orange line-9 mr-2 sm1 align-self-center"></div>
+                <div class="prev text-uppercase">no</div>
+                <% } else {%>
+                <div class="bg-dark line-9 mr-2 sm1 align-self-center"></div>
+                <div class="prev text-uppercase">no</div>
+                <% } %>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-title mb-1 pagination">
+        <ul class="nav justify-content-center d-flex font-weight-bold">
+          <% if(size > 20)  { %>
+          <% if ($('._buckets').eq(0).text()[0] === "1" || $('._buckets').eq(0).text()[0] === undefined) {%>
+          <% var i %>
+            <li class="nav-item mr-1">
+            <a class="nav-link py-2 px-1 p-9 text-dark font-italic">Rank Buckets</a>
+            </li>
+            <% for(i = 0; i <= size - 20; i = i + 20) { %>
+              <li class="nav-item ml-0 rank-bucket text-dark cursor-pointer <% if(Number(rank_bucket[0])===i){%>active<%}%>" data-min="<%- i %>" data-max="<%- i + 20 %>">
+                <a class="nav-link py-2 px-1 p-9 font-weight-bold btn _buckets"><%- i + 1 %>-<%- i + 20 %></a>
+              </li>
+            <% } %>
+            <% if(i !== size) %>
+              <li class="nav-item ml-0 rank-bucket text-dark cursor-pointer <% if(Number(rank_bucket[0])===i){%>active<%}%>" data-min="<%- i %>" data-max="<%- size %>">
+                <a class="nav-link py-2 px-1 p-9 font-weight-bold btn _buckets"><%- i %>-<%- size %></a>
+              </li>
+          <% }else{%>
+            <li class="nav-item mr-1">
+              <a class="nav-link py-2 px-1 p-9 text-dark font-italic">Rank Buckets</a>
+              </li>
+              <% var li = [0, 20, 40, 60, 80]%>
+              <% for (var i=0; i< $('._buckets').length ; i++){ %>
+                <li class="nav-item ml-0 rank-bucket text-dark cursor-pointer <% if(Number(rank_bucket[0])===li[i]){%>active<%}%>" data-min="<%- li[i] %>" data-max="<%- li[i+1] %>">
+                  <a class="nav-link py-2 px-1 p-9 font-weight-bold btn _buckets"><%- $('._buckets').eq(i).text() %></a>
+                </li>
+              <% } %>
+          <%}} %>
+        </ul>
+      </div>
+    </div>
+  </div>

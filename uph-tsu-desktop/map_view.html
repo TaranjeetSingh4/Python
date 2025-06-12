@@ -1,0 +1,310 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>UP-TSU | Map View</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/mapview_bootstrap.css">
+  <link rel="stylesheet" href="ui/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="ui/bootstrap-select/dist/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="ui/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="node_modules/jquery-ui-dist/jquery-ui.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-sweetalert/dist/sweetalert.css">
+  <link rel="stylesheet" href="node_modules/jquery-ui-slider-pips-npm/dist/jquery-ui-slider-pips.min.css">
+  <link rel="stylesheet" href="node_modules/pretty-checkbox/dist/pretty-checkbox.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/by_domain.css">
+</head>
+
+<body class="h-100 map-view">
+  {% set import json %}
+  {% set import up_tsu_desktop_app %}
+  {% set from gramex.config import variables %}
+  {% set user_session_id = handler.get_session().get("id", {}) %}
+  {% set user_info = handler.get_session().get("user", {}) %}
+  {% set username = user_info.get("user","") %}
+  {% if 'temp_password' in user_info.keys() and user_info['temp_password'] == '1' %}
+  <script type="text/javascript">
+    var user_obj = {{ json.dumps(user_info) }}
+    sessionStorage['phonenumber'] = user_obj['phonenumber']
+    sessionStorage['user'] = user_obj['user']
+    window.location.href = 'password'
+  </script>
+  {% end %}
+  {% if username == 'CM_Office1' %}
+  {% set handler.redirect('landing') %}
+  {% end %}
+
+  <script type="text/javascript">
+    /* exported default_params, indicator_mapping, js_user, user_data, prof_dist,session_id, defaults, FULL_LATEST_DATE */
+    var default_params = {% raw up_tsu_desktop_app.get_config(handler) %}
+    var defaults = {% raw up_tsu_desktop_app.get_config(handler) %}
+    var session_id = {{ json.dumps(user_session_id) }}
+    var indicator_mapping = {{ json.dumps(variables['indicator-mapping']) }}
+    var prof_dist = {{ json.dumps(variables['data_prof_dist']) }}
+    var user_data = {{ json.dumps(user_info) }}
+    var FULL_LATEST_DATE = new Date();
+    // update defaults date related values
+      fetch("./get_maximum_date_district").then(function (response) {
+        return response.json();
+      }).then(function (resp) {
+        let timestmp = resp ? resp[0].date : null
+        if (timestmp) {
+          FULL_LATEST_DATE = timestmp;
+          let from_date = new Date(timestmp);
+          let from_month = (parseInt(from_date.getMonth()) + 1);
+          let prev_month = new Date(timestmp).setMonth(-1);
+          let to_date = new Date(prev_month);
+          let to_month = (parseInt(to_date.getMonth()) + 1);
+          if (from_month < 10) {
+            from_month = '0' + from_month;
+          }
+          if (to_month < 10) {
+            to_month = '0' + to_month;
+          }
+          let from_ = (from_date.getFullYear() + '-' + (from_month) + '-' + "01");
+          let to_ = (to_date.getFullYear() + '-' + (to_month) + '-' + "01");
+          let month_name = from_date.toLocaleString('en-us', { month: 'short', year: 'numeric' })
+          defaults["from_"] = from_;
+          defaults["to_"] = to_;
+          defaults["month"] = month_name;
+          default_params["from_"] = from_;
+          default_params["to_"] = to_;
+          default_params["month"] = month_name;
+        }
+      }).catch(function (err) {
+        console.log("latest latest_date error", err)
+      });
+
+
+
+  </script>
+
+  <i class="user_name" id="{{username}}"></i>
+
+  <!-- loader  -->
+  <div class="loading-icon">
+    <i class="fa fa-circle-o-notch fa-spin pos-cc"></i>
+  </div>
+
+  <!-- nav bar starts -->
+  <nav class="navbar navbar-expand-md bg-gradient-nav py-0 position-fixed pos-t">
+    <a class="mr-3" aria-hidden="true" href="./">
+      <i class="fa fa-home fa-2x text-white"></i>
+    </a>
+    <span class="h5 mb-0 text-light">Health Ranking Dashboard</span>
+
+    <!-- Navbar links -->
+    <div class="d-flex ml-auto custom-menu">
+      <div class="search-input">
+        <div class="text-right pt-1 px-3">
+          <span class="input-group-text custom-class bg-transparent no-border-radius rounded-0 border-0 cursor-pointer"
+            id="icon"><i class="fa fa-search cursor-pointer text-white"></i></span>
+        </div>
+        <div id="myInput1">
+          <div class="input-group custom-class pos-t w-100 bg-white">
+            <div class="input-group-append">
+              <span class="input-group-text bg-white no-border-radius rounded-0 border-0 "><i
+                  class="fa fa-search cursor-pointer text-dark "></i></span>
+            </div>
+            <input type="text" id="myInput" class="form-control border-0 px-0" placeholder="Search District">
+            <p id="empty-message" class="w-50 mx-auto alert alert-warning alert-dismissible fade"></p>
+            <div class="input-group-append ">
+              <span class="input-group-text bg-white no-border-radius rounded-0 border-0"><i id="close_nav"
+                  class="fa fa-remove cursor-pointer text-dark "></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script class="search-bar" type="text/html" src="templates/search_bar.html"></script>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white active-tab text-uppercase cursor-pointer" href="map_view">Map view</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" href="table">table view</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" href="compare">Analytics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-13 py-3 text-white text-uppercase cursor-pointer" href="executive-summary"
+            id="executive_nav">Executive Summary</a>
+        </li>
+      </ul>
+    </div>
+    <script class="mapview-sidenav" type="text/html" src="templates/side_nav.html"></script>
+  </nav> <!-- nav bar ends -->
+
+  <!--space needed-->
+  <div class="pt-4 mt-1"></div>
+
+  <!--Calender-->
+  <script class="mapview-header" type="text/html" src="templates/page_header.html"></script>
+  <script class="user-type" type="text/html" src="templates/user_type.html"></script>
+
+  <!--main content-->
+  <div class="container-fluid h-100">
+    <div class="d-flex overflow-hidden pt-1">
+      <div class="col-3 px-0 position-relative">
+        <div class="d-flex justify-content-start">
+          <h5 class="font-weight-bold mb-0 p-18 text-uppercase text-dark">SUMMARY - </h5>
+          <h5 class="mb-0 p-18 text-uppercase text-dark px-1" id="header-text"></h5>
+        </div>
+
+        <script src="templates/left_section_header.html" type="text/html" class="left-section-header"></script>
+        <script src="templates/accordion.html" type="text/html" class="accordion-section"></script>
+      </div>
+      <div class="col-6 position-relative my-0 mx-auto">
+        <div class="col-12 position-absolute my-0 mx-auto">
+          <marquee class="w-75 text-danger hr_ticker"></marquee>
+        </div>
+        <script type="text/html" src="templates/map_section.html" class="map-section"></script>
+      </div>
+      <div class="col-3 pr-0 d-flex flex-column justify-content-start">
+        <div class="d-flex flex-column">
+          <div class="d-flex justify-content-end w-100 mb-3">
+            <ul class="nav d-flex">
+              <li class="nav-item p-9 text-right align-self-center text-uppercase">
+                <p class="mb-0 font-weight-bold" id="date-label"></p>
+              </li>
+              <li class="nav-item align-self-center pl-2 pr-4 cursor-pointer">
+                <img src="img/calendar-face-2.svg" alt="icon" id="for-date">
+              </li>
+            </ul>
+            <ul class="nav d-flex">
+              <li class="nav-item align-self-center cursor-pointer" title="info">
+                <img src="img/info_icon.png" alt="icon" class="cursor-pointer mr-3 small " data-toggle="modal"
+                  data-target="#info-modal">
+              </li>
+              <li class="nav-item align-self-center cursor-pointer png-download" title="screenshot">
+                <img src="img/screen-capture.png" alt="icon">
+              </li>
+            </ul>
+          </div>
+          <!-- Ranking header -->
+        </div>
+        <script type="text/html" src="templates/overall_district_ranking.html" class="overall-district-ranking-section"></script>
+      </div>
+    </div>
+  </div>
+  {% include templates/video-modals.html %}
+  <!--note-->
+  <!--footer-->
+
+  {% set scripts = [''] %}
+  {% include 'templates/scripts.html' %}
+  <script src="ui/noty/lib/noty.min.js"></script>
+  <script src="components/area_chart.js "></script>
+  <script src="components/new_gauge.js"></script>
+  <script src="components/trend_chart.js"></script>
+  <script src="js/common_calendar.js"></script>
+  <script src="js/common_new.js"></script>
+  <script src="components/new_map.js"></script>
+  <script src="js/summary_new.js"></script>
+  <!-- <script src="ui/moment/min/moment-with-locales.min.js"></script> -->
+  <script src="js/log_capture.js"></script>
+  <!-- Matomo -->
+
+  <script>
+
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "https://uphealthdashboard.in/matomo/";
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      _paq.push(['setUserId', user_data.user]);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+    })();
+
+  </script>
+
+  <!-- End Matomo Code -->
+  <script>
+    /* globals update_url, parse_url, redraw*/
+    var url = parse_url(), page = url.file
+    $(document)
+    .on('click', '#power-gauge path, .gauge_click', function() {
+      $('.map-back-btn').removeClass('d-none').addClass('d-block')
+    })
+    .on('keydown', "#myInput", function(e) {
+      var key = e.which;
+      var search_fil = "",
+        search_fil1 = "",
+        search_fil2 = ""
+      if (key == 13) {
+        _.each($('#myUL li'), function(d) {
+          if (($(d).text().trim()) === $("#myInput")[0].value) {
+            search_fil = $(d).find('span').attr('id')
+            search_fil1 = $(d).find('span').attr('data-attr')
+            search_fil2 = $(d).find('span').attr('data-attr2')
+            if (parse_url().searchKey.check === "yes") {
+              var search_filter = {
+                "district_level": search_fil,
+                "division_level": search_fil1,
+                "division": search_fil2,
+                "district": "",
+                "block": "",
+                "block_level": ""
+              }
+            } else {
+              search_filter = {
+                "district_level": search_fil,
+              }
+            }
+            // url_update(search_filter)
+            update_url(search_filter)
+            url = parse_url()
+            $('#close_nav').click()
+            redraw(url, page)
+            //redraw()
+          }
+        })
+      }
+    })
+    .on("click", ".ui-autocomplete li", function() {
+      var search_fil = "",
+        search_fil1 = "",
+        search_fil2 = "",
+        check = $(this).text()
+      _.each($('#myUL li'), function(d) {
+        if (($(d).text().trim()) === check) {
+          search_fil = $(d).find('span').attr('id')
+          search_fil1 = $(d).find('span').attr('data-attr')
+          search_fil2 = $(d).find('span').attr('data-attr2')
+        }
+      })
+      if (parse_url().searchKey.check == "yes") {
+        var search_filter = {
+          // "district_level": search_fil,
+          "division_level": search_fil1,
+          // "division": search_fil2,
+          // "district": "",
+          // "block": "",
+          // "block_level": ""
+        }
+      } else {
+        search_filter = {
+          "district_level": search_fil,
+        }
+      }
+      //url_update(search_filter)
+      update_url(search_filter)
+      url = parse_url()
+      $('#close_nav').click()
+      //render()
+      redraw(url, page)
+    })
+  </script>
+  {% include 'templates/google-analytics-script.html' %}
+</body>
+
+</html>
