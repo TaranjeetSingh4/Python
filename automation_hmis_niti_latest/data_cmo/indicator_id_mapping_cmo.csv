@@ -1,0 +1,8 @@
+type,domain,indicator_ids,indicator,indicator_id,calc_type
+ante_natal,ante_natal,indicator_1,ANC registered within first trimester,indicator_1,p
+ante_natal,ante_natal,indicator_2,PW received 4 or more ANC,indicator_2,p
+ante_natal,ante_natal,indicator_3,PW treated with severe anemia,indicator_3,p
+new_born_care,new_born_care,indicator_5,HBNC visits,indicator_5,p
+Immunization,Immunization,indicator_6,Full immunization,indicator_6,p
+communicable_diseases,communicable_diseases,indicator_7,Communicable disease,indicator_7,p
+communicable_diseases,communicable_diseases,indicator_8,Success rate of positive tuberculosis cases,indicator_8,p

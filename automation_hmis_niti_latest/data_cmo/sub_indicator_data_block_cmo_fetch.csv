@@ -1,0 +1,11 @@
+subindicator_id,type,period,indicator_type,indicator_name
+JY4UIeCYK00,Numerator,monthly,indicator,ANC registered within first trimester
+qYpFbVo8WsL,Denominator,monthly,indicator,ANC registered within first trimester
+ZpgnTGpSkeg.Ti9FJqkSK6J,Numerator,monthly,indicator,PW received 4 or more ANC
+TmeumlBaObG,Denominator,yearly,indicator,PW received 4 or more ANC
+n5bZeD7f63Q,Numerator,monthly,indicator,PW treated with severe anemia
+VGmj8dWOIBw,Denominator,monthly,indicator,PW treated with severe anemia
+kuz5MYYLyi2,Numerator,monthly,indicator,HBNC visits
+aknlXIekL1Z,Denominator,monthly,indicator,HBNC visits
+GJKYhq2wR9L,Numerator,monthly,indicator,Full immunization
+t03VPkJ5UXd,Denominator,yearly,indicator,Full immunization

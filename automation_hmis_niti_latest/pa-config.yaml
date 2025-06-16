@@ -1,0 +1,128 @@
+indicator_mappings:
+  ind_1:
+    a: K2tTwUh9NJy.svtwwOpurbg
+    b: sNqvJFIliYY.Ti9FJqkSK6J
+  1_method: (data_all['a'] / data_all['b'])*100
+  ind_2:
+    a: KFyojgVb8Go.hbUkGAlIwu8
+    b: KFyojgVb8Go.PWn0jSvveTs
+    c: KFyojgVb8Go.bg50uiDLvlP
+    d: KFyojgVb8Go.mrHdT99cCnv
+    e: KFyojgVb8Go.v3ourGcXDlN
+    f: KFyojgVb8Go.zJCowC71NtF
+    g: WuvZWqTxZPX.Ti9FJqkSK6J
+  2_method: (data_all['a'] + data_all['b'] + data_all['c'] + data_all['d']
+               + data_all['e'] + data_all['f']) / (data_all['g'])
+  ind_5:
+    a: hhsaXegbkhg.Ti9FJqkSK6J
+    b: KFyojgVb8Go.hbUkGAlIwu8
+    c: KFyojgVb8Go.PWn0jSvveTs
+    d: KFyojgVb8Go.bg50uiDLvlP
+    e: KFyojgVb8Go.mrHdT99cCnv
+    f: KFyojgVb8Go.v3ourGcXDlN
+    g: KFyojgVb8Go.zJCowC71NtF
+  5_method: (data_all['a']) / (data_all['b'] + data_all['c'] + data_all['d']
+                + data_all['e']+ data_all['f'] + data_all['g'])
+  ind_6:
+    a: byP0VKnxVhr.Ti9FJqkSK6J
+    b: KFyojgVb8Go.hbUkGAlIwu8
+    c: KFyojgVb8Go.PWn0jSvveTs
+    d: KFyojgVb8Go.bg50uiDLvlP
+    e: KFyojgVb8Go.mrHdT99cCnv
+    f: KFyojgVb8Go.v3ourGcXDlN
+    g: KFyojgVb8Go.zJCowC71NtF
+  6_method: (data_all['a']) / (data_all['b'] + data_all['c'] + data_all['d']
+                + data_all['e']+ data_all['f'] + data_all['g'])
+  ind_9:
+    a: OHdD3HES2X5.gBzmANHnG0n
+    b: aRueVYr35yM.Ti9FJqkSK6J
+  9_method: (data_all['a']) / (data_all['b'])
+  ind_10:
+    a: xFbpDV663ak.svtwwOpurbg
+    b: aRueVYr35yM.Ti9FJqkSK6J
+  10_method: (data_all['a']) / (data_all['b'])
+  ind_11:
+    a: iOt7o3TvNG4.Ti9FJqkSK6J
+    b: aRueVYr35yM.Ti9FJqkSK6J
+  11_method: (data_all['a']) / (data_all['b'])
+  ind_14:
+    a: qflIECaldR1.Ti9FJqkSK6J
+    b: VGmj8dWOIBw.Ti9FJqkSK6J
+  14_method: (data_all['a']) / (data_all['b'])
+  ind_16:
+    a: ExMplulIRYb.Ti9FJqkSK6J
+    b: aRueVYr35yM.Ti9FJqkSK6J
+  16_method: (data_all['a']) / (data_all['b'])
+  ind_17:
+    a: uULzcMXOegs.Ti9FJqkSK6J
+    b: vuzSex7ZCxC.Ti9FJqkSK6J
+  17_method: (data_all['a']) / (data_all['b'])
+  ind_18:
+    a: xFbpDV663ak.QLxp2ax8CRL
+    b: aknlXIekL1Z.iRNhRMvoSCx
+    c: aknlXIekL1Z.wb51FJHqHxp
+  18_method: (data_all['a']) / (data_all['b'] + data_all['c'])
+  ind_19:
+    a: aSvhWxQO8Ck.Ti9FJqkSK6J
+    b: HOrR1amEU6x
+  19_method: (data_all['a']) / (data_all['b'])
+  ind_20:
+    a: IEPIolCiRdh
+    b: aRueVYr35yM
+  20_method: (data_all['a']) / (data_all['b'])
+  ind_21:
+    a: vWSHWWYkYvt
+    b: aRueVYr35yM
+  21_method: (data_all['a']) / (data_all['b'])
+  ind_22:
+    a: cyLwa0q6QNd
+    b: aRueVYr35yM
+  22_method: (data_all['a']) / (data_all['b'])
+  ind_28:
+    a: Jzcnqae4P4R
+    b: qYpFbVo8WsL
+  28_method: (data_all['a']) / (data_all['b'])
+  ind_30:
+    a: BjjEXjaZezs
+    b: qYpFbVo8WsL
+  30_method: (data_all['a']) / (data_all['b'])
+  ind_32:
+    a: PZLXbWgoqhN.Ti9FJqkSK6J
+    b: qYpFbVo8WsL
+  32_method: (data_all['a']) / (data_all['b'])
+  ind_35:
+    a: ozzIeiddUyN.Ti9FJqkSK6J
+    b: SBtoYIVEDFS.Ti9FJqkSK6J
+  35_method: (data_all['a']) / (data_all['b'])
+  ind_48:
+    a: BpKWMLTSnyC
+    b: uYJ0kOlfdTG.Ti9FJqkSK6J
+    c: A89WukjS845.Ti9FJqkSK6J
+    d: SCutWcJX88a.Ti9FJqkSK6J
+    e: jhdL4rNP5pA.Ti9FJqkSK6J
+    f: bOFAAIzcaGZ.Ti9FJqkSK6J
+    g: Xg1j0efNUrP.Ti9FJqkSK6J
+    h: n3L9KZq55UM.Ti9FJqkSK6J
+    i: NeNWp698eve.e4vOZhidnTl
+    j: DFDP0iJG63H.Ti9FJqkSK6J
+    k: OVLPx9JL7u7.Ti9FJqkSK6J
+  48_method: ( (data_all['a']/15) + (data_all['b']/120) + data_all['c'] + data_all['d']
+               + data_all['e'] + data_all['f'] + data_all['g'] + data_all['h'] + data_all['i'] + data_all['j']) / (data_all['k'])
+
+  ind_49:
+    a: NeNWp698eve.e4vOZhidnTl
+    b: OVLPx9JL7u7.Ti9FJqkSK6J
+  49_method: (data_all['a']) / (data_all['b'])
+  ind_50:
+    a: NeNWp698eve.JD3TbSsgoKa
+    b: NeNWp698eve.e4vOZhidnTl
+  50_method: (data_all['a']) / (data_all['b'])
+  ind_51:
+    a: NeNWp698eve.gZiING8oxqo
+    b: NeNWp698eve.JD3TbSsgoKa
+  51_method: (data_all['a']) / (data_all['b'])
+  ind_52:
+    a: NeNWp698eve.uBLH63dNSeY
+    b: NeNWp698eve.gZiING8oxqo
+  52_method: (data_all['a']) / (data_all['b'])
+

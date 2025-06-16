@@ -1,0 +1,1678 @@
+block,block_id,calc_type,date,district,district_id,indicator_id,map_id,quarter,sub_id,subindicator_id,value,year
+Asafpur,A8jhC64rvlS,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,173.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,195.0,2023
+Asafpur,A8jhC64rvlS,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,173.0,4,36a,ixBYYYjxXPP,215.0,2023
+Islam Nagar,BU3H8j3vtpl,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,174.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,274.0,2023
+Islam Nagar,BU3H8j3vtpl,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,174.0,4,36a,ixBYYYjxXPP,233.0,2023
+Ujhani,EjPcZNiYzP2,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,182.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,254.0,2023
+Ujhani,EjPcZNiYzP2,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,182.0,4,36a,ixBYYYjxXPP,0.0,2023
+Bilsi,FBjTmOT2uLU,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,178.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,330.0,2023
+Bilsi,FBjTmOT2uLU,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,178.0,4,36a,ixBYYYjxXPP,330.0,2023
+Usawan,HJ6IPhQigva,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,187.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,386.0,2023
+Usawan,HJ6IPhQigva,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,187.0,4,36a,ixBYYYjxXPP,156.0,2023
+Bisauli,MWJyDwqvBqS,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,175.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,207.0,2023
+Bisauli,MWJyDwqvBqS,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,175.0,4,36a,ixBYYYjxXPP,199.0,2023
+Binawar,QdKW8E0HxRg,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,322.0,2023
+Binawar,QdKW8E0HxRg,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,,4,36a,ixBYYYjxXPP,56.0,2023
+Sahaswan,QsfJqnMcwds,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,177.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,496.0,2023
+Sahaswan,QsfJqnMcwds,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,177.0,4,36a,ixBYYYjxXPP,281.0,2023
+Samrer,Wa8qn4d8H22,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,184.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,153.0,2023
+Samrer,Wa8qn4d8H22,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,184.0,4,36a,ixBYYYjxXPP,102.0,2023
+Dataganj,YbOAqVBdm86,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,185.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,333.0,2023
+Dataganj,YbOAqVBdm86,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,185.0,4,36a,ixBYYYjxXPP,178.0,2023
+Qaderchowk,aDSCuqsggsN,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,183.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,194.0,2023
+Qaderchowk,aDSCuqsggsN,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,183.0,4,36a,ixBYYYjxXPP,120.0,2023
+Budaun DHQ,i8KzqsutvXl,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,3304.0,2023
+Budaun DHQ,i8KzqsutvXl,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,,4,36a,ixBYYYjxXPP,538.0,2023
+Miaoon,n0U0QMMNJZe,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,186.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,243.0,2023
+Miaoon,n0U0QMMNJZe,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,186.0,4,36a,ixBYYYjxXPP,119.0,2023
+Jagat,wQ2zvEh08Xs,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,181.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,62.0,2023
+Jagat,wQ2zvEh08Xs,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,181.0,4,36a,ixBYYYjxXPP,0.0,2023
+Wazirganj,xct9yyij86y,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,176.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,237.0,2023
+Wazirganj,xct9yyij86y,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,176.0,4,36a,ixBYYYjxXPP,30.0,2023
+Dahagawan,yxi8x9cQDKH,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,179.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,412.0,2023
+Dahagawan,yxi8x9cQDKH,p,2023-01-01,Budaun,eA37kyBRRuZ,indicator_36,179.0,4,36a,ixBYYYjxXPP,201.0,2023
+Rudauli,AAOPzLEjW4T,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,494.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,346.0,2023
+Rudauli,AAOPzLEjW4T,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,494.0,4,36a,ixBYYYjxXPP,0.0,2023
+Sohawal,CUsMlPeoyMI,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,495.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,273.0,2023
+Sohawal,CUsMlPeoyMI,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,495.0,4,36a,ixBYYYjxXPP,263.0,2023
+Poora Bazar,JOYvKXzcb8E,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,502.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,161.0,2023
+Poora Bazar,JOYvKXzcb8E,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,502.0,4,36a,ixBYYYjxXPP,48.0,2023
+Mawai,QSXk2hR3eYG,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,493.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,213.0,2023
+Mawai,QSXk2hR3eYG,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,493.0,4,36a,ixBYYYjxXPP,50.0,2023
+Harington Ganj,XEfvLa6Zzxn,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,499.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,127.0,2023
+Harington Ganj,XEfvLa6Zzxn,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,499.0,4,36a,ixBYYYjxXPP,72.0,2023
+Maya Bazar,a2rjHSkns9X,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,503.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,163.0,2023
+Maya Bazar,a2rjHSkns9X,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,503.0,4,36a,ixBYYYjxXPP,0.0,2023
+Masaudha,aAl7bU1AYg2,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,496.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,489.0,2023
+Masaudha,aAl7bU1AYg2,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,496.0,4,36a,ixBYYYjxXPP,458.0,2023
+Ayodhya DHQ,bMK9VNDswXt,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,491.0,2023
+Amaniganj,pYWjwOoijbJ,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,497.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,199.0,2023
+Amaniganj,pYWjwOoijbJ,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,497.0,4,36a,ixBYYYjxXPP,180.0,2023
+Bikapur,pw5oJhc8fpc,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,500.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,205.0,2023
+Bikapur,pw5oJhc8fpc,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,500.0,4,36a,ixBYYYjxXPP,35.0,2023
+Milkipur,qQSBi5m4QpM,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,498.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,184.0,2023
+Milkipur,qQSBi5m4QpM,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,498.0,4,36a,ixBYYYjxXPP,0.0,2023
+Tarun,t25KkXmkJth,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,501.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,178.0,2023
+Tarun,t25KkXmkJth,p,2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_36,501.0,4,36a,ixBYYYjxXPP,45.0,2023
+Baskhari,ABuWCL4zW6t,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,505.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,283.0,2023
+Baskhari,ABuWCL4zW6t,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,505.0,4,36a,ixBYYYjxXPP,95.0,2023
+Akaberpur,HHlxYUknESU,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,512.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,668.0,2023
+Akaberpur,HHlxYUknESU,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,512.0,4,36a,ixBYYYjxXPP,343.0,2023
+Bhiyaon,KZ9A7NuGOta,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,509.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,148.0,2023
+Bhiyaon,KZ9A7NuGOta,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,509.0,4,36a,ixBYYYjxXPP,34.0,2023
+Ramnagar,M1F33pLSfxi,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,506.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,272.0,2023
+Ramnagar,M1F33pLSfxi,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,506.0,4,36a,ixBYYYjxXPP,133.0,2023
+Bhiti,RiDtZZsck6S,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,510.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,84.0,2023
+Bhiti,RiDtZZsck6S,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,510.0,4,36a,ixBYYYjxXPP,74.0,2023
+Katehari,UKkd5HV5vPT,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,511.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,129.0,2023
+Katehari,UKkd5HV5vPT,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,511.0,4,36a,ixBYYYjxXPP,85.0,2023
+Tanda,c228prMIirC,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,504.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,496.0,2023
+Tanda,c228prMIirC,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,504.0,4,36a,ixBYYYjxXPP,163.0,2023
+Ambedkar Nagar  DHQ,dgOT0Nq7Zja,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,135.0,2023
+Ambedkar Nagar  DHQ,dgOT0Nq7Zja,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,,4,36a,ixBYYYjxXPP,0.0,2023
+Jahangir Ganj,oB6hTaKvzgv,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,507.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,227.0,2023
+Jahangir Ganj,oB6hTaKvzgv,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,507.0,4,36a,ixBYYYjxXPP,365.0,2023
+Jalapur,zvRpdDBNAj1,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,508.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,405.0,2023
+Jalapur,zvRpdDBNAj1,p,2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_36,508.0,4,36a,ixBYYYjxXPP,331.0,2023
+Dostpur,AGFzimgfzIo,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,533.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,172.0,2023
+Dostpur,AGFzimgfzIo,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,533.0,4,36a,ixBYYYjxXPP,175.0,2023
+Jaisinghpur,BKeRkKcuOgW,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,528.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,207.0,2023
+Jaisinghpur,BKeRkKcuOgW,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,528.0,4,36a,ixBYYYjxXPP,0.0,2023
+Dubeypur,C2FFe2TBScZ,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,527.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,796.0,2023
+Dubeypur,C2FFe2TBScZ,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,527.0,4,36a,ixBYYYjxXPP,71.0,2023
+Dhanpatganj,LNiRZH5vfaY,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,524.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,101.0,2023
+Dhanpatganj,LNiRZH5vfaY,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,524.0,4,36a,ixBYYYjxXPP,0.0,2023
+Lambhua,O0G9BMkbU7f,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,531.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,178.0,2023
+Kurwar,Sz7oQppp6s9,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,526.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,162.0,2023
+Karaudikala,Tt3G0qCamwa,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,53.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,69.0,2023
+Karaudikala,Tt3G0qCamwa,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,53.0,4,36a,ixBYYYjxXPP,0.0,2023
+Baldirai,VPN370bubCz,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,516.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,193.0,2023
+Baldirai,VPN370bubCz,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,516.0,4,36a,ixBYYYjxXPP,193.0,2023
+Akhandnagar,bUb6dbgNp7o,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,535.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,114.0,2023
+Akhandnagar,bUb6dbgNp7o,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,535.0,4,36a,ixBYYYjxXPP,115.0,2023
+Kadipur,f8FnEAgiGOz,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,110.0,2023
+Kadipur,f8FnEAgiGOz,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,,4,36a,ixBYYYjxXPP,177.0,2023
+Motigarpur,hcBv6xoPmri,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,529.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,99.0,2023
+Bhadaiyan,vXwJYqDZIzf,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,530.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,90.0,2023
+Bhadaiyan,vXwJYqDZIzf,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,530.0,4,36a,ixBYYYjxXPP,81.0,2023
+PP Kamaicha,wDcv6om3WT1,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,95.0,2023
+PP Kamaicha,wDcv6om3WT1,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,,4,36a,ixBYYYjxXPP,51.0,2023
+Kurebhar,wzWcav8jSNr,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,525.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,177.0,2023
+Kurebhar,wzWcav8jSNr,p,2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_36,525.0,4,36a,ixBYYYjxXPP,0.0,2023
+Khair,AN2dWDiHkBb,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,109.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,219.0,2023
+Khair,AN2dWDiHkBb,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,109.0,4,36a,ixBYYYjxXPP,334.0,2023
+Tappal,ARlYpTrc811,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,108.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,208.0,2023
+Tappal,ARlYpTrc811,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,108.0,4,36a,ixBYYYjxXPP,156.0,2023
+Aligarh DHQ,Ae6KfBl84FW,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,3083.0,2023
+Aligarh DHQ,Ae6KfBl84FW,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,,4,36a,ixBYYYjxXPP,1474.0,2023
+Dhnipur,DeIlv8osqJa,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,113.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,160.0,2023
+Dhnipur,DeIlv8osqJa,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,113.0,4,36a,ixBYYYjxXPP,0.0,2023
+Atrauli,O5BIieG3GQR,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,115.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,388.0,2023
+Atrauli,O5BIieG3GQR,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,115.0,4,36a,ixBYYYjxXPP,319.0,2023
+Bijoli,Pf9sH55x9lG,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,116.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,182.0,2023
+Bijoli,Pf9sH55x9lG,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,116.0,4,36a,ixBYYYjxXPP,235.0,2023
+Gagiri,S842tHqLUI1,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,117.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,407.0,2023
+Gagiri,S842tHqLUI1,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,117.0,4,36a,ixBYYYjxXPP,150.0,2023
+Akrabad,WFVLpMb2xKo,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,114.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,251.0,2023
+Akrabad,WFVLpMb2xKo,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,114.0,4,36a,ixBYYYjxXPP,0.0,2023
+Iglas,XYBTVZE0LeN,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,119.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,234.0,2023
+Iglas,XYBTVZE0LeN,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,119.0,4,36a,ixBYYYjxXPP,160.0,2023
+Lodha,fDgjRPtNpqt,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,112.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,150.0,2023
+Lodha,fDgjRPtNpqt,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,112.0,4,36a,ixBYYYjxXPP,136.0,2023
+Gonda,jkV9lhxAuuK,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,118.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,113.0,2023
+Gonda,jkV9lhxAuuK,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,118.0,4,36a,ixBYYYjxXPP,0.0,2023
+Jawan,nYlhMfttxtb,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,111.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,221.0,2023
+Jawan,nYlhMfttxtb,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,111.0,4,36a,ixBYYYjxXPP,175.0,2023
+Chandaus,oV5iZQFUzGo,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,110.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,274.0,2023
+Chandaus,oV5iZQFUzGo,p,2023-01-01,Aligarh,frD2HOp3wAs,indicator_36,110.0,4,36a,ixBYYYjxXPP,191.0,2023
+Ghazipur Manihari,APE5J6eTM3s,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,749.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,199.0,2023
+Ghazipur Manihari,APE5J6eTM3s,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,749.0,4,36a,ixBYYYjxXPP,84.0,2023
+Ghazipur Mahmudabad,ISeQXIbXref,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,759.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,439.0,2023
+Ghazipur Karanda,J01CgvckM2C,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,756.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,143.0,2023
+Ghazipur Badhora,KkUxdrYeeXC,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,763.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,252.0,2023
+Ghazipur Badhora,KkUxdrYeeXC,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,763.0,4,36a,ixBYYYjxXPP,0.0,2023
+Ghazipur Jakahania,NbXqavwiDug,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,748.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,258.0,2023
+Ghazipur Jakahania,NbXqavwiDug,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,748.0,4,36a,ixBYYYjxXPP,163.0,2023
+Ghazipur Saidpur,OFvD8TPE8bU,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,751.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,350.0,2023
+Ghazipur Saidpur,OFvD8TPE8bU,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,751.0,4,36a,ixBYYYjxXPP,307.0,2023
+Ghazipur DHQ,PEDIETmpZdA,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1181.0,2023
+Ghazipur DHQ,PEDIETmpZdA,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,,4,36a,ixBYYYjxXPP,223.0,2023
+Ghazipur Barachwar,SQuL6ZdC6LY,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,758.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,195.0,2023
+Ghazipur Barachwar,SQuL6ZdC6LY,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,758.0,4,36a,ixBYYYjxXPP,0.0,2023
+Ghazipur Sadar,VivEa0lrJEt,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,755.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,166.0,2023
+Ghazipur Sadar,VivEa0lrJEt,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,755.0,4,36a,ixBYYYjxXPP,23.0,2023
+Ghazipur Jamania,hepZfdzFqgL,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,761.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,245.0,2023
+Ghazipur Jamania,hepZfdzFqgL,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,761.0,4,36a,ixBYYYjxXPP,0.0,2023
+Ghazipur Mardeh,iMSgdsfQfK3,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,754.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,157.0,2023
+Ghazipur Mardeh,iMSgdsfQfK3,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,754.0,4,36a,ixBYYYjxXPP,15.0,2023
+Ghazipur Davkali,kcQKXLIXWNj,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,752.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,270.0,2023
+Ghazipur Davkali,kcQKXLIXWNj,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,752.0,4,36a,ixBYYYjxXPP,79.0,2023
+Ghazipur Gondaur,mhI69xut9he,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,94.0,2023
+Ghazipur Gondaur,mhI69xut9he,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,,4,36a,ixBYYYjxXPP,27.0,2023
+Ghazipur Kasimabad,oJK3Sqdic6n,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,757.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,252.0,2023
+Ghazipur Kasimabad,oJK3Sqdic6n,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,757.0,4,36a,ixBYYYjxXPP,70.0,2023
+Ghazipur Sadat,w2mC1IzGqJO,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,750.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,172.0,2023
+Ghazipur Rawatipur,y8eD89Cg95c,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,762.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,137.0,2023
+Ghazipur Rawatipur,y8eD89Cg95c,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,762.0,4,36a,ixBYYYjxXPP,73.0,2023
+Ghazipur Birona,zv6Gc6aGnXd,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,753.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,115.0,2023
+Ghazipur Birona,zv6Gc6aGnXd,p,2023-01-01,Ghazipur,dScWdMRN8PL,indicator_36,753.0,4,36a,ixBYYYjxXPP,22.0,2023
+Hathras Sahpau,AcznJJtvLKq,p,2023-01-01,Hathras,m1IAjmqkoFC,indicator_36,126.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,239.0,2023
+Hathras Sahpau,AcznJJtvLKq,p,2023-01-01,Hathras,m1IAjmqkoFC,indicator_36,126.0,4,36a,ixBYYYjxXPP,118.0,2023
+Hathras Mursan,NHwhqnwjZ0d,p,2023-01-01,Hathras,m1IAjmqkoFC,indicator_36,124.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,242.0,2023
+Hathras Mursan,NHwhqnwjZ0d,p,2023-01-01,Hathras,m1IAjmqkoFC,indicator_36,124.0,4,36a,ixBYYYjxXPP,76.0,2023
+Hathras DHQ,NZZfSO3tDC5,p,2023-01-01,Hathras,m1IAjmqkoFC,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,674.0,2023
+Hathras DHQ,NZZfSO3tDC5,p,2023-01-01,Hathras,m1IAjmqkoFC,indicator_36,,4,36a,ixBYYYjxXPP,321.0,2023
+Hathras Sasni,Sy6tfTi18KA,p,2023-01-01,Hathras,m1IAjmqkoFC,indicator_36,120.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,461.0,2023
+Hathras Sasni,Sy6tfTi18KA,p,2023-01-01,Hathras,m1IAjmqkoFC,indicator_36,120.0,4,36a,ixBYYYjxXPP,240.0,2023
+Hathras Hasayan,TY8SzPsUCPQ,p,2023-01-01,Hathras,m1IAjmqkoFC,indicator_36,122.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,315.0,2023
+Hathras Sadabad,nGMlBiXPa8W,p,2023-01-01,Hathras,m1IAjmqkoFC,indicator_36,125.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,389.0,2023
+Hathras Sadabad,nGMlBiXPa8W,p,2023-01-01,Hathras,m1IAjmqkoFC,indicator_36,125.0,4,36a,ixBYYYjxXPP,321.0,2023
+Hathras Maho,tisCSlmEcvz,p,2023-01-01,Hathras,m1IAjmqkoFC,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,130.0,2023
+Hathras Maho,tisCSlmEcvz,p,2023-01-01,Hathras,m1IAjmqkoFC,indicator_36,,4,36a,ixBYYYjxXPP,133.0,2023
+Hathras Sikandra Rao,ws066anR0wR,p,2023-01-01,Hathras,m1IAjmqkoFC,indicator_36,121.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,338.0,2023
+Hathras Sikandra Rao,ws066anR0wR,p,2023-01-01,Hathras,m1IAjmqkoFC,indicator_36,121.0,4,36a,ixBYYYjxXPP,191.0,2023
+Parsupur,Ae5sVkqEY53,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,573.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,211.0,2023
+Parsupur,Ae5sVkqEY53,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,573.0,4,36a,ixBYYYjxXPP,265.0,2023
+Nawabganj Gonda,FMAaW4X6ueM,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,577.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,195.0,2023
+Nawabganj Gonda,FMAaW4X6ueM,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,577.0,4,36a,ixBYYYjxXPP,0.0,2023
+Pandari Kripal,GtDp6Qz9pSx,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,567.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,95.0,2023
+Maskanwa,JLjbfCaudqg,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,580.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,186.0,2023
+Maskanwa,JLjbfCaudqg,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,580.0,4,36a,ixBYYYjxXPP,0.0,2023
+Belsar,KTP3RqHdGlM,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,574.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,243.0,2023
+Belsar,KTP3RqHdGlM,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,574.0,4,36a,ixBYYYjxXPP,102.0,2023
+Tarabganj,QW8N7nXhELz,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,575.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,130.0,2023
+Tarabganj,QW8N7nXhELz,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,575.0,4,36a,ixBYYYjxXPP,106.0,2023
+Katrabazar,SiNGqVJoMtb,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,570.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,27.0,2023
+Colonalganj,SxFTKbP1SXZ,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,572.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,365.0,2023
+Colonalganj,SxFTKbP1SXZ,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,572.0,4,36a,ixBYYYjxXPP,110.0,2023
+Wajeerganj,Yzv8XKcvFMn,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,576.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,230.0,2023
+Wajeerganj,Yzv8XKcvFMn,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,576.0,4,36a,ixBYYYjxXPP,0.0,2023
+Itiathok,Zkst7ZD9ogq,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,566.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,225.0,2023
+Itiathok,Zkst7ZD9ogq,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,566.0,4,36a,ixBYYYjxXPP,176.0,2023
+Gonda DHQ,dbHdyWgjMbk,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1590.0,2023
+Gonda DHQ,dbHdyWgjMbk,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,,4,36a,ixBYYYjxXPP,1033.0,2023
+Bamanjeet,eeLkdiQv8Ex,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,579.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,175.0,2023
+Quazeedevar,i9BEhkE3w1b,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,568.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,130.0,2023
+Quazeedevar,i9BEhkE3w1b,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,568.0,4,36a,ixBYYYjxXPP,104.0,2023
+Rupaideeh,l9TKc1gE8KO,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,565.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,321.0,2023
+Rupaideeh,l9TKc1gE8KO,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,565.0,4,36a,ixBYYYjxXPP,107.0,2023
+Mujhana,pgmL8MQQwKP,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,569.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,263.0,2023
+Mujhana,pgmL8MQQwKP,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,569.0,4,36a,ixBYYYjxXPP,310.0,2023
+Hadhermau,tob7bPRXBV3,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,571.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,127.0,2023
+Hadhermau,tob7bPRXBV3,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,571.0,4,36a,ixBYYYjxXPP,0.0,2023
+Mankapur,yRVebIQF3pX,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,578.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,157.0,2023
+Mankapur,yRVebIQF3pX,p,2023-01-01,Gonda,y8WarEkWCul,indicator_36,578.0,4,36a,ixBYYYjxXPP,289.0,2023
+Saidnagar,Afucmep9Fdq,p,2023-01-01,Rampur,IU006h5U7jj,indicator_36,52.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,401.0,2023
+Saidnagar,Afucmep9Fdq,p,2023-01-01,Rampur,IU006h5U7jj,indicator_36,52.0,4,36a,ixBYYYjxXPP,21.0,2023
+Shahbad,Bgu9MPGC8NW,p,2023-01-01,Rampur,IU006h5U7jj,indicator_36,55.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,753.0,2023
+Shahbad,Bgu9MPGC8NW,p,2023-01-01,Rampur,IU006h5U7jj,indicator_36,55.0,4,36a,ixBYYYjxXPP,314.0,2023
+Bilaspur,DNtrijn28qb,p,2023-01-01,Rampur,IU006h5U7jj,indicator_36,51.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,431.0,2023
+Bilaspur,DNtrijn28qb,p,2023-01-01,Rampur,IU006h5U7jj,indicator_36,51.0,4,36a,ixBYYYjxXPP,191.0,2023
+Milak,TLMPAZhmOLv,p,2023-01-01,Rampur,IU006h5U7jj,indicator_36,54.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,513.0,2023
+Milak,TLMPAZhmOLv,p,2023-01-01,Rampur,IU006h5U7jj,indicator_36,54.0,4,36a,ixBYYYjxXPP,217.0,2023
+Rampur DHQ,TfKrN4hWv8C,p,2023-01-01,Rampur,IU006h5U7jj,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,444.0,2023
+Rampur DHQ,TfKrN4hWv8C,p,2023-01-01,Rampur,IU006h5U7jj,indicator_36,,4,36a,ixBYYYjxXPP,191.0,2023
+Swar,nwSfqFHkPxa,p,2023-01-01,Rampur,IU006h5U7jj,indicator_36,50.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,663.0,2023
+Swar,nwSfqFHkPxa,p,2023-01-01,Rampur,IU006h5U7jj,indicator_36,50.0,4,36a,ixBYYYjxXPP,0.0,2023
+Chamraua,zph89qUJBah,p,2023-01-01,Rampur,IU006h5U7jj,indicator_36,53.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,194.0,2023
+Chamraua,zph89qUJBah,p,2023-01-01,Rampur,IU006h5U7jj,indicator_36,53.0,4,36a,ixBYYYjxXPP,51.0,2023
+BKTalabe,ApSm0CuGVfL,p,2023-01-01,Lucknow,MfHac5N78aK,indicator_36,296.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,376.0,2023
+Lucknow DHQ,NyYp5W4XZfR,p,2023-01-01,Lucknow,MfHac5N78aK,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,5373.0,2023
+Lucknow DHQ,NyYp5W4XZfR,p,2023-01-01,Lucknow,MfHac5N78aK,indicator_36,,4,36a,ixBYYYjxXPP,816.0,2023
+Mohanlalganj,VKvevXLweem,p,2023-01-01,Lucknow,MfHac5N78aK,indicator_36,301.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,205.0,2023
+Mohanlalganj,VKvevXLweem,p,2023-01-01,Lucknow,MfHac5N78aK,indicator_36,301.0,4,36a,ixBYYYjxXPP,120.0,2023
+Chinhat,aKYlZcPC3HU,p,2023-01-01,Lucknow,MfHac5N78aK,indicator_36,297.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,72.0,2023
+Chinhat,aKYlZcPC3HU,p,2023-01-01,Lucknow,MfHac5N78aK,indicator_36,297.0,4,36a,ixBYYYjxXPP,63.0,2023
+Malihabad,c8dGu0p6B0M,p,2023-01-01,Lucknow,MfHac5N78aK,indicator_36,295.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,187.0,2023
+Sarojninagar,ciUK1Y4Eaxf,p,2023-01-01,Lucknow,MfHac5N78aK,indicator_36,299.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,143.0,2023
+Kakori,iK1PfQ9wLbz,p,2023-01-01,Lucknow,MfHac5N78aK,indicator_36,298.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,173.0,2023
+Kakori,iK1PfQ9wLbz,p,2023-01-01,Lucknow,MfHac5N78aK,indicator_36,298.0,4,36a,ixBYYYjxXPP,147.0,2023
+Mall,ksTeBOfYw9L,p,2023-01-01,Lucknow,MfHac5N78aK,indicator_36,294.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,238.0,2023
+Mall,ksTeBOfYw9L,p,2023-01-01,Lucknow,MfHac5N78aK,indicator_36,294.0,4,36a,ixBYYYjxXPP,0.0,2023
+Gosaiganj,qnglbY5alFS,p,2023-01-01,Lucknow,MfHac5N78aK,indicator_36,300.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,260.0,2023
+Gosaiganj,qnglbY5alFS,p,2023-01-01,Lucknow,MfHac5N78aK,indicator_36,300.0,4,36a,ixBYYYjxXPP,0.0,2023
+Sahabganj,Aq89pvDpWBA,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,771.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,203.0,2023
+Sahabganj,Aq89pvDpWBA,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,771.0,4,36a,ixBYYYjxXPP,0.0,2023
+Dhanapur,F1Ddi7jawvX,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,765.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,222.0,2023
+Dhanapur,F1Ddi7jawvX,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,765.0,4,36a,ixBYYYjxXPP,55.0,2023
+Niyamtabad,FyHWyWYiq51,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,767.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,159.0,2023
+Niyamtabad,FyHWyWYiq51,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,767.0,4,36a,ixBYYYjxXPP,81.0,2023
+Sakaldeeha,J2ufTjaikuE,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,766.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,291.0,2023
+Sakaldeeha,J2ufTjaikuE,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,766.0,4,36a,ixBYYYjxXPP,252.0,2023
+Chaniya,P0KHYXl7qFF,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,764.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,246.0,2023
+Chaniya,P0KHYXl7qFF,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,764.0,4,36a,ixBYYYjxXPP,240.0,2023
+Chandauli,QglkJx8TDdn,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,768.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,180.0,2023
+Chandauli,QglkJx8TDdn,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,768.0,4,36a,ixBYYYjxXPP,131.0,2023
+Naugarh,UuA1Z7kFP5w,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,772.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,102.0,2023
+Naugarh,UuA1Z7kFP5w,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,772.0,4,36a,ixBYYYjxXPP,102.0,2023
+Chakiya,VpPC8KPVwrC,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,770.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,206.0,2023
+Chakiya,VpPC8KPVwrC,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,770.0,4,36a,ixBYYYjxXPP,154.0,2023
+Barhani,kneJKc3fNtp,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,769.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,265.0,2023
+Barhani,kneJKc3fNtp,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,769.0,4,36a,ixBYYYjxXPP,250.0,2023
+Chandauli DHQ,kqqVceYxMn2,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,86.0,2023
+Chandauli DHQ,kqqVceYxMn2,p,2023-01-01,Chandauli,ClbehnmwSec,indicator_36,,4,36a,ixBYYYjxXPP,127.0,2023
+Deoria Bhttni,AzV6zQXaRba,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,674.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,208.0,2023
+Deoria Bhttni,AzV6zQXaRba,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,674.0,4,36a,ixBYYYjxXPP,188.0,2023
+Deoria Barhaz,E5A2kSTc3PM,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,672.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,176.0,2023
+Deoria Barhaz,E5A2kSTc3PM,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,672.0,4,36a,ixBYYYjxXPP,0.0,2023
+Deoria Bankata,EmKRIMSIXim,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,677.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,195.0,2023
+Deoria Bankata,EmKRIMSIXim,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,677.0,4,36a,ixBYYYjxXPP,182.0,2023
+Deoria DHQ,Kr0p5SNoG3J,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,450.0,2023
+Deoria DHQ,Kr0p5SNoG3J,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,,4,36a,ixBYYYjxXPP,800.0,2023
+Deoria Desai Deoria,KsXL0whELQG,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,665.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,111.0,2023
+Deoria Desai Deoria,KsXL0whELQG,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,665.0,4,36a,ixBYYYjxXPP,241.0,2023
+Deoria Bethalpur,LPTjBQ9rRWx,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,664.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,138.0,2023
+Deoria Bethalpur,LPTjBQ9rRWx,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,664.0,4,36a,ixBYYYjxXPP,81.0,2023
+Deoria Larr,NVFxlXHdSmv,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,676.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,188.0,2023
+Deoria Larr,NVFxlXHdSmv,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,676.0,4,36a,ixBYYYjxXPP,129.0,2023
+Deoria Rampur Karkhna,S0dqgoK82zn,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,668.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,98.0,2023
+Deoria Rampur Karkhna,S0dqgoK82zn,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,668.0,4,36a,ixBYYYjxXPP,207.0,2023
+Deoria Bhagelpur,ULhLz5tR5rr,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,673.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,88.0,2023
+Deoria Bhagelpur,ULhLz5tR5rr,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,673.0,4,36a,ixBYYYjxXPP,106.0,2023
+Deoria Majhgawon,UlR3pGm65VX,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,2230.0,2023
+Deoria Selampur,YRYbXgGEgwG,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,675.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,203.0,2023
+Deoria Selampur,YRYbXgGEgwG,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,675.0,4,36a,ixBYYYjxXPP,236.0,2023
+Deoria Bhaluni,rMbW2gza9HD,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,671.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,288.0,2023
+Deoria Bhaluni,rMbW2gza9HD,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,671.0,4,36a,ixBYYYjxXPP,0.0,2023
+Deoria Bhatperrani,rY5nGyzGedU,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,678.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,248.0,2023
+Deoria Bhatperrani,rY5nGyzGedU,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,678.0,4,36a,ixBYYYjxXPP,224.0,2023
+Deoria Tarkulwa ,rz3th45E7Sa,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,666.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,91.0,2023
+Deoria Tarkulwa ,rz3th45E7Sa,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,666.0,4,36a,ixBYYYjxXPP,48.0,2023
+Deoria Ruderpur,tbaPfFzYkRT,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,670.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,200.0,2023
+Deoria Patherdewa,uwDViZiXmha,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,667.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,425.0,2023
+Deoria Patherdewa,uwDViZiXmha,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,667.0,4,36a,ixBYYYjxXPP,0.0,2023
+Deoria Goribazar,x6V2gbPDLjh,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,663.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,286.0,2023
+Deoria Goribazar,x6V2gbPDLjh,p,2023-01-01,Deoria,Tf9b9qcbghH,indicator_36,663.0,4,36a,ixBYYYjxXPP,237.0,2023
+Itawa,B0QTEnRTAZg,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,592.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,479.0,2023
+Siddharth Nagar DHQ,EE0yO6YSNwL,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,188.0,2023
+Siddharth Nagar DHQ,EE0yO6YSNwL,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,,4,36a,ixBYYYjxXPP,0.0,2023
+Birdpur,N5oPV77d3Vf,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,584.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,213.0,2023
+Mithwal,OHdFJxcZU3t,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,589.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,260.0,2023
+Mithwal,OHdFJxcZU3t,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,589.0,4,36a,ixBYYYjxXPP,55.0,2023
+Khsrha,RtFh5dTx40I,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,590.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,267.0,2023
+Khsrha,RtFh5dTx40I,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,590.0,4,36a,ixBYYYjxXPP,140.0,2023
+Jogia,SCLwreLwByy,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,583.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,125.0,2023
+Jogia,SCLwreLwByy,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,583.0,4,36a,ixBYYYjxXPP,93.0,2023
+Nougarh,VQaZwzfLvV1,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,585.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,148.0,2023
+Nougarh,VQaZwzfLvV1,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,585.0,4,36a,ixBYYYjxXPP,0.0,2023
+Khuniywa,WhN8Tp15uxY,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,593.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,242.0,2023
+Uska Bazar,WvXTe5mm0Jg,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,586.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,134.0,2023
+Uska Bazar,WvXTe5mm0Jg,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,586.0,4,36a,ixBYYYjxXPP,40.0,2023
+Bansi,dMZKc4fIqCl,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,588.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,504.0,2023
+Bansi,dMZKc4fIqCl,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,588.0,4,36a,ixBYYYjxXPP,0.0,2023
+Sohartgarh,fhrJdvxaNc3,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,582.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,170.0,2023
+Sohartgarh,fhrJdvxaNc3,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,582.0,4,36a,ixBYYYjxXPP,133.0,2023
+Badani,fvt1qfVGM3G,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,581.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,123.0,2023
+Badani,fvt1qfVGM3G,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,581.0,4,36a,ixBYYYjxXPP,0.0,2023
+Dumaria,nH12F0E43cT,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,594.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1868.0,2023
+Dumaria,nH12F0E43cT,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,594.0,4,36a,ixBYYYjxXPP,0.0,2023
+Bhanwapur,pWd385fXS6s,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,591.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,241.0,2023
+Bhanwapur,pWd385fXS6s,p,2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_36,591.0,4,36a,ixBYYYjxXPP,80.0,2023
+Bilhari,B1rNgGH3FaM,p,2023-01-01,Moradabad,YQNQoPjAIpV,indicator_36,44.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,184.0,2023
+Bilhari,B1rNgGH3FaM,p,2023-01-01,Moradabad,YQNQoPjAIpV,indicator_36,44.0,4,36a,ixBYYYjxXPP,239.0,2023
+Tajpur,ETOgxiqqzTT,p,2023-01-01,Moradabad,YQNQoPjAIpV,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,85.0,2023
+Mundapanday,FPqrFlrWiLm,p,2023-01-01,Moradabad,YQNQoPjAIpV,indicator_36,42.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,206.0,2023
+Mundapanday,FPqrFlrWiLm,p,2023-01-01,Moradabad,YQNQoPjAIpV,indicator_36,42.0,4,36a,ixBYYYjxXPP,159.0,2023
+Chjlate,MIhBWjsHb4j,p,2023-01-01,Moradabad,YQNQoPjAIpV,indicator_36,39.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,73.0,2023
+Chjlate,MIhBWjsHb4j,p,2023-01-01,Moradabad,YQNQoPjAIpV,indicator_36,39.0,4,36a,ixBYYYjxXPP,71.0,2023
+Moradabad DHQ,WHjh3bRw6D7,p,2023-01-01,Moradabad,YQNQoPjAIpV,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,2956.0,2023
+Moradabad DHQ,WHjh3bRw6D7,p,2023-01-01,Moradabad,YQNQoPjAIpV,indicator_36,,4,36a,ixBYYYjxXPP,208.0,2023
+Thakurdwara,aO4ZhXYOBeK,p,2023-01-01,Moradabad,YQNQoPjAIpV,indicator_36,37.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,138.0,2023
+Thakurdwara,aO4ZhXYOBeK,p,2023-01-01,Moradabad,YQNQoPjAIpV,indicator_36,37.0,4,36a,ixBYYYjxXPP,100.0,2023
+Bhagtepurtanda,f4VnN0yydmT,p,2023-01-01,Moradabad,YQNQoPjAIpV,indicator_36,40.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,181.0,2023
+Bhagtepurtanda,f4VnN0yydmT,p,2023-01-01,Moradabad,YQNQoPjAIpV,indicator_36,40.0,4,36a,ixBYYYjxXPP,94.0,2023
+Kunderki,gmAXrJ45VMf,p,2023-01-01,Moradabad,YQNQoPjAIpV,indicator_36,43.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,159.0,2023
+Kunderki,gmAXrJ45VMf,p,2023-01-01,Moradabad,YQNQoPjAIpV,indicator_36,43.0,4,36a,ixBYYYjxXPP,0.0,2023
+Dilhari,yslHqhvvXn0,p,2023-01-01,Moradabad,YQNQoPjAIpV,indicator_36,38.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,98.0,2023
+Dilhari,yslHqhvvXn0,p,2023-01-01,Moradabad,YQNQoPjAIpV,indicator_36,38.0,4,36a,ixBYYYjxXPP,98.0,2023
+Kushinagar Fajilnagar,B3CnhXWWije,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,659.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,595.0,2023
+Kushinagar Fajilnagar,B3CnhXWWije,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,659.0,4,36a,ixBYYYjxXPP,515.0,2023
+Kushinagar Hata,BYiQDRJhWWk,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,657.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,198.0,2023
+Kushinagar Hata,BYiQDRJhWWk,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,657.0,4,36a,ixBYYYjxXPP,0.0,2023
+Kushinagar Motichak,BhMAwU8XZey,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,655.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,203.0,2023
+Kushinagar Motichak,BhMAwU8XZey,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,655.0,4,36a,ixBYYYjxXPP,0.0,2023
+Kushinagar Tamkuhi,CApqqM6FvRV,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,660.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,579.0,2023
+Kushinagar Tamkuhi,CApqqM6FvRV,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,660.0,4,36a,ixBYYYjxXPP,89.0,2023
+Kushinagar DHQ,IiY5fP1UuFV,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,401.0,2023
+Kushinagar DHQ,IiY5fP1UuFV,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,,4,36a,ixBYYYjxXPP,250.0,2023
+Kushinagar Kesya,JTRnaTY9yhN,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,658.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,264.0,2023
+Kushinagar Kesya,JTRnaTY9yhN,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,658.0,4,36a,ixBYYYjxXPP,0.0,2023
+Kushinagar Khadda,OHnlTAIgKxY,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,649.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,413.0,2023
+Kushinagar Khadda,OHnlTAIgKxY,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,649.0,4,36a,ixBYYYjxXPP,0.0,2023
+Kushinagar Sukhroli,SgYEydzGGbJ,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,656.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,251.0,2023
+Kushinagar Sukhroli,SgYEydzGGbJ,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,656.0,4,36a,ixBYYYjxXPP,0.0,2023
+Kushinagar Ramkola,XZ4UCP8boX8,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,654.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,353.0,2023
+Kushinagar Ramkola,XZ4UCP8boX8,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,654.0,4,36a,ixBYYYjxXPP,227.0,2023
+Kushinagar Kaptanganj,YIfO8FmqA6j,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,653.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,397.0,2023
+Kushinagar Kaptanganj,YIfO8FmqA6j,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,653.0,4,36a,ixBYYYjxXPP,55.0,2023
+Kushinagar Visunpura,lgWV1VzPmhE,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,651.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,288.0,2023
+Kushinagar Visunpura,lgWV1VzPmhE,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,651.0,4,36a,ixBYYYjxXPP,159.0,2023
+Kushinagar Seavrahi,p7wG9B3Zqol,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,662.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,689.0,2023
+Kushinagar Seavrahi,p7wG9B3Zqol,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,662.0,4,36a,ixBYYYjxXPP,0.0,2023
+Kushinagar Nabu Naurangia,vgRr0JIJR7M,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,650.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,300.0,2023
+Kushinagar Nabu Naurangia,vgRr0JIJR7M,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,650.0,4,36a,ixBYYYjxXPP,0.0,2023
+Kushinagar Padrouna,vvIR3mOcYGz,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,652.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,331.0,2023
+Kushinagar Dudhai,xm14yPwUttg,p,2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_36,661.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,387.0,2023
+Marouri,B6BzDe4ryaa,p,2023-01-01,Pilibhit,c96jwckSd6j,indicator_36,204.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,187.0,2023
+Marouri,B6BzDe4ryaa,p,2023-01-01,Pilibhit,c96jwckSd6j,indicator_36,204.0,4,36a,ixBYYYjxXPP,0.0,2023
+Lalaurikhera,BwBmhT0ClWR,p,2023-01-01,Pilibhit,c96jwckSd6j,indicator_36,205.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,120.0,2023
+Lalaurikhera,BwBmhT0ClWR,p,2023-01-01,Pilibhit,c96jwckSd6j,indicator_36,205.0,4,36a,ixBYYYjxXPP,50.0,2023
+Pilibhit DHQ,Ez4mS8TGHyp,p,2023-01-01,Pilibhit,c96jwckSd6j,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1074.0,2023
+Pilibhit DHQ,Ez4mS8TGHyp,p,2023-01-01,Pilibhit,c96jwckSd6j,indicator_36,,4,36a,ixBYYYjxXPP,274.0,2023
+Bilsanda,GHjV9QTEXyn,p,2023-01-01,Pilibhit,c96jwckSd6j,indicator_36,207.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,265.0,2023
+Bilsanda,GHjV9QTEXyn,p,2023-01-01,Pilibhit,c96jwckSd6j,indicator_36,207.0,4,36a,ixBYYYjxXPP,112.0,2023
+Puranpur,WQzG2MmpgAg,p,2023-01-01,Pilibhit,c96jwckSd6j,indicator_36,209.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,2321.0,2023
+Puranpur,WQzG2MmpgAg,p,2023-01-01,Pilibhit,c96jwckSd6j,indicator_36,209.0,4,36a,ixBYYYjxXPP,291.0,2023
+Barkhera,aP18Pdo2sLv,p,2023-01-01,Pilibhit,c96jwckSd6j,indicator_36,206.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,155.0,2023
+Barkhera,aP18Pdo2sLv,p,2023-01-01,Pilibhit,c96jwckSd6j,indicator_36,206.0,4,36a,ixBYYYjxXPP,119.0,2023
+Bisalpur,cCWLrzUi4yN,p,2023-01-01,Pilibhit,c96jwckSd6j,indicator_36,208.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,430.0,2023
+Bisalpur,cCWLrzUi4yN,p,2023-01-01,Pilibhit,c96jwckSd6j,indicator_36,208.0,4,36a,ixBYYYjxXPP,0.0,2023
+Amaria,uIkxxtBPd1K,p,2023-01-01,Pilibhit,c96jwckSd6j,indicator_36,203.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,353.0,2023
+Amaria,uIkxxtBPd1K,p,2023-01-01,Pilibhit,c96jwckSd6j,indicator_36,203.0,4,36a,ixBYYYjxXPP,218.0,2023
+Madhiyahoo,B9itA8m0ytx,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,736.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,109.0,2023
+Madhiyahoo,B9itA8m0ytx,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,736.0,4,36a,ixBYYYjxXPP,78.0,2023
+Barsathi,CqlV6Koe6vJ,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,738.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,95.0,2023
+Barsathi,CqlV6Koe6vJ,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,738.0,4,36a,ixBYYYjxXPP,94.0,2023
+Sondhi,EcaeGqA47MY,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,252.0,2023
+Sondhi,EcaeGqA47MY,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,,4,36a,ixBYYYjxXPP,487.0,2023
+Mahrajganj,FBVobg8QhyC,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,731.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,39.0,2023
+Mahrajganj,FBVobg8QhyC,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,731.0,4,36a,ixBYYYjxXPP,39.0,2023
+Badlapur,HU9Fxw66kJA,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,730.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,194.0,2023
+Badlapur,HU9Fxw66kJA,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,730.0,4,36a,ixBYYYjxXPP,175.0,2023
+Dharmapur,K2hjVgS0LFm,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,742.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,63.0,2023
+Dharmapur,K2hjVgS0LFm,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,742.0,4,36a,ixBYYYjxXPP,83.0,2023
+Rampur,MENKSvmhb6i,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,739.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,152.0,2023
+Rampur,MENKSvmhb6i,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,739.0,4,36a,ixBYYYjxXPP,146.0,2023
+Dobhi,OTeT1SgY1F7,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,747.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,125.0,2023
+Dobhi,OTeT1SgY1F7,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,747.0,4,36a,ixBYYYjxXPP,118.0,2023
+Jalalpur,OmRJBPDSih0,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,745.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,232.0,2023
+Jalalpur,OmRJBPDSih0,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,745.0,4,36a,ixBYYYjxXPP,300.0,2023
+Ramnagar Jaunpur,SiApLfkyuVz,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,737.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,108.0,2023
+Ramnagar Jaunpur,SiApLfkyuVz,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,737.0,4,36a,ixBYYYjxXPP,182.0,2023
+Baksha,UUtQaeoOtV1,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,732.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,204.0,2023
+Baksha,UUtQaeoOtV1,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,732.0,4,36a,ixBYYYjxXPP,122.0,2023
+MoBadshahpur,Y1OSp1Ck66B,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,734.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,209.0,2023
+MoBadshahpur,Y1OSp1Ck66B,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,734.0,4,36a,ixBYYYjxXPP,206.0,2023
+Karnjakala,bU9RuaPWXkH,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,741.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,113.0,2023
+Karnjakala,bU9RuaPWXkH,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,741.0,4,36a,ixBYYYjxXPP,95.0,2023
+Sujanganj,dQvMLUi5rMw,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,733.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,130.0,2023
+Sujanganj,dQvMLUi5rMw,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,733.0,4,36a,ixBYYYjxXPP,120.0,2023
+Jaunpur DHQ,i81wO4m0rn2,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,891.0,2023
+Jaunpur DHQ,i81wO4m0rn2,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,,4,36a,ixBYYYjxXPP,603.0,2023
+Kerakat,joT95cJHrTQ,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,746.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,137.0,2023
+Kerakat,joT95cJHrTQ,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,746.0,4,36a,ixBYYYjxXPP,105.0,2023
+Sirkoni,nftiI8Ch1nw,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,33.0,2023
+Sirkoni,nftiI8Ch1nw,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,,4,36a,ixBYYYjxXPP,58.0,2023
+Machhalishahar,p6cTEKZv0Bb,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,735.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,270.0,2023
+Machhalishahar,p6cTEKZv0Bb,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,735.0,4,36a,ixBYYYjxXPP,352.0,2023
+Sikrara,pb5hWAn45Rk,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,740.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,113.0,2023
+Sikrara,pb5hWAn45Rk,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,740.0,4,36a,ixBYYYjxXPP,103.0,2023
+Suithakala,qyXPcuW4JMr,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,727.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,175.0,2023
+Suithakala,qyXPcuW4JMr,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,727.0,4,36a,ixBYYYjxXPP,156.0,2023
+Muftiganj,sfvcD32u4kK,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,744.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,120.0,2023
+Muftiganj,sfvcD32u4kK,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,744.0,4,36a,ixBYYYjxXPP,0.0,2023
+Khuthan,yQrRCA2ngHE,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,729.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,77.0,2023
+Khuthan,yQrRCA2ngHE,p,2023-01-01,Jaunpur,gmw76vAUMqz,indicator_36,729.0,4,36a,ixBYYYjxXPP,101.0,2023
+Mathura Chatta,BEiGzI07UOM,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,128.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,82.0,2023
+Mathura Chatta,BEiGzI07UOM,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,128.0,4,36a,ixBYYYjxXPP,70.0,2023
+Mathura Raya,CGmxoB5JV9G,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,132.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,181.0,2023
+Mathura Raya,CGmxoB5JV9G,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,132.0,4,36a,ixBYYYjxXPP,0.0,2023
+Mathura Mant,EWInJymroFJ,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,131.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,66.0,2023
+Mathura Mant,EWInJymroFJ,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,131.0,4,36a,ixBYYYjxXPP,6.0,2023
+Mathura DHQ,K2r1bjs4mb5,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1339.0,2023
+Mathura DHQ,K2r1bjs4mb5,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,,4,36a,ixBYYYjxXPP,423.0,2023
+Mathura Nandganv,RiVugbfNzS2,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,127.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,296.0,2023
+Mathura Nandganv,RiVugbfNzS2,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,127.0,4,36a,ixBYYYjxXPP,135.0,2023
+Mathura Goverdhan,bztOHPUBTjU,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,134.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,250.0,2023
+Mathura Goverdhan,bztOHPUBTjU,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,134.0,4,36a,ixBYYYjxXPP,0.0,2023
+Mathura Mathura,gucZ0cBoa0r,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,135.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,197.0,2023
+Mathura Mathura,gucZ0cBoa0r,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,135.0,4,36a,ixBYYYjxXPP,102.0,2023
+Mathura Baldav,j3WnhnsAIht,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,133.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,176.0,2023
+Mathura Baldav,j3WnhnsAIht,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,133.0,4,36a,ixBYYYjxXPP,150.0,2023
+Mathura Nauhjheel,r2eMDAoHzuI,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,130.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,289.0,2023
+Mathura Nauhjheel,r2eMDAoHzuI,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,130.0,4,36a,ixBYYYjxXPP,162.0,2023
+Mathura Chaumuha,sbVBq9HPEgp,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,129.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,115.0,2023
+Mathura Chaumuha,sbVBq9HPEgp,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,129.0,4,36a,ixBYYYjxXPP,0.0,2023
+Mathura Faraha,txI2jZXppyQ,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,136.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,141.0,2023
+Mathura Faraha,txI2jZXppyQ,p,2023-01-01,Mathura,KP2BUB1npih,indicator_36,136.0,4,36a,ixBYYYjxXPP,121.0,2023
+Bulandshahar Pahasu,BFS0IOjIJM6,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,105.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,258.0,2023
+Bulandshahar Pahasu,BFS0IOjIJM6,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,105.0,4,36a,ixBYYYjxXPP,698.0,2023
+Bulandshahar Arniya,BWEaFP6tBWO,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,107.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,77.0,2023
+Bulandshahar Arniya,BWEaFP6tBWO,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,107.0,4,36a,ixBYYYjxXPP,0.0,2023
+Bulandshahar Gulaothi,FXjd8I3tis1,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,93.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,638.0,2023
+Bulandshahar Gulaothi,FXjd8I3tis1,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,93.0,4,36a,ixBYYYjxXPP,97.0,2023
+Bulandshahar Sikandrabad,IjocfjQxUOy,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,92.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,151.0,2023
+Bulandshahar Sikandrabad,IjocfjQxUOy,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,92.0,4,36a,ixBYYYjxXPP,145.0,2023
+Bulandshahar DHQ,JZJD7vQ6YIE,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,0.0,2023
+Bulandshahar Danpur,RyFHMa78ezE,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,102.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,175.0,2023
+Bulandshahar Danpur,RyFHMa78ezE,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,102.0,4,36a,ixBYYYjxXPP,175.0,2023
+Bulandshahar Janhgirabad,VhF9wHMOsI2,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,100.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,223.0,2023
+Bulandshahar Janhgirabad,VhF9wHMOsI2,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,100.0,4,36a,ixBYYYjxXPP,100.0,2023
+Bulandshahar Dibai,YDOGtOLeFg1,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,103.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,367.0,2023
+Bulandshahar Dibai,YDOGtOLeFg1,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,103.0,4,36a,ixBYYYjxXPP,450.0,2023
+Bulandshahar Shikarpur,a3X4KgFjlsz,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,104.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,127.0,2023
+Bulandshahar Shikarpur,a3X4KgFjlsz,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,104.0,4,36a,ixBYYYjxXPP,122.0,2023
+Bulandshahar Khurja,a5WBFfhetVT,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,106.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,347.0,2023
+Bulandshahar Khurja,a5WBFfhetVT,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,106.0,4,36a,ixBYYYjxXPP,0.0,2023
+Bulandshahar Bulandshahr,bMszXRRjCCv,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,96.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,3924.0,2023
+Bulandshahar Bulandshahr,bMszXRRjCCv,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,96.0,4,36a,ixBYYYjxXPP,222.0,2023
+Bulandshahar B.B.Nagar,cp2Je1Z1Zo6,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,97.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,111.0,2023
+Bulandshahar B.B.Nagar,cp2Je1Z1Zo6,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,97.0,4,36a,ixBYYYjxXPP,98.0,2023
+Bulandshahar Siyana,jJP9OWvYMuH,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,98.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,710.0,2023
+Bulandshahar Siyana,jJP9OWvYMuH,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,98.0,4,36a,ixBYYYjxXPP,135.0,2023
+Bulandshahar Agota,mQeabczYlwZ,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,94.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,50.0,2023
+Bulandshahar Anoopshahr,rBDpTYpQ340,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,101.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,183.0,2023
+Bulandshahar Anoopshahr,rBDpTYpQ340,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,101.0,4,36a,ixBYYYjxXPP,183.0,2023
+Bulandshahar Lakhaothi,u7AfLScMrQL,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,95.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,176.0,2023
+Bulandshahar Lakhaothi,u7AfLScMrQL,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,95.0,4,36a,ixBYYYjxXPP,171.0,2023
+Bulandshahar Uncha gaon,vlW7Ky7ubGA,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,99.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,245.0,2023
+Bulandshahar Uncha gaon,vlW7Ky7ubGA,p,2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_36,99.0,4,36a,ixBYYYjxXPP,0.0,2023
+Unnav Bangarmau,BGRBILNZiPW,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,279.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,268.0,2023
+Unnav Bangarmau,BGRBILNZiPW,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,279.0,4,36a,ixBYYYjxXPP,241.0,2023
+Unnav DHQ,CYb7f3DOpb0,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1759.0,2023
+Unnav DHQ,CYb7f3DOpb0,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,,4,36a,ixBYYYjxXPP,408.0,2023
+Unnav Asoha,CpShKssApxk,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,289.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,79.0,2023
+Unnav Asoha,CpShKssApxk,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,289.0,4,36a,ixBYYYjxXPP,72.0,2023
+Unnav Bichhiya,EVsunDfk1Xx,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,287.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,56.0,2023
+Unnav Bichhiya,EVsunDfk1Xx,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,287.0,4,36a,ixBYYYjxXPP,55.0,2023
+Unnav Sumerpur,Fy5oqtT0JAR,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,293.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,164.0,2023
+Unnav Sumerpur,Fy5oqtT0JAR,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,293.0,4,36a,ixBYYYjxXPP,101.0,2023
+Unnav Sikanderpur Sirausi,OC6qHC6pCm8,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,286.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,64.0,2023
+Unnav Sikanderpur Sirausi,OC6qHC6pCm8,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,286.0,4,36a,ixBYYYjxXPP,64.0,2023
+Unnav Purwa,RLKVIOQ3q6x,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,290.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,150.0,2023
+Unnav Purwa,RLKVIOQ3q6x,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,290.0,4,36a,ixBYYYjxXPP,147.0,2023
+Unnav Ganj Moardabad,RzW4W8GzuhH,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,278.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,154.0,2023
+Unnav Ganj Moardabad,RzW4W8GzuhH,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,278.0,4,36a,ixBYYYjxXPP,129.0,2023
+Unnav Bighapur,SvNkFaLvfio,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,292.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,90.0,2023
+Unnav Bighapur,SvNkFaLvfio,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,292.0,4,36a,ixBYYYjxXPP,72.0,2023
+Unnav Hasanganj,g9AzjVVJKJh,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,284.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,170.0,2023
+Unnav Hasanganj,g9AzjVVJKJh,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,284.0,4,36a,ixBYYYjxXPP,145.0,2023
+Unnav Safipur,iudStsVG8zs,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,281.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,292.0,2023
+Unnav Safipur,iudStsVG8zs,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,281.0,4,36a,ixBYYYjxXPP,184.0,2023
+Unnav C.Karen,miCbY8KENnd,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,288.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,147.0,2023
+Unnav C.Karen,miCbY8KENnd,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,288.0,4,36a,ixBYYYjxXPP,111.0,2023
+Unnav Miyaganj,odvvm2fnyz9,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,283.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,180.0,2023
+Unnav Miyaganj,odvvm2fnyz9,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,283.0,4,36a,ixBYYYjxXPP,168.0,2023
+Unnav Hilauli,oeicJPH2lIq,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,291.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,97.0,2023
+Unnav Hilauli,oeicJPH2lIq,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,291.0,4,36a,ixBYYYjxXPP,85.0,2023
+Unnav Fatehpur -84,uhbQ7To0pN9,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,280.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,91.0,2023
+Unnav Fatehpur -84,uhbQ7To0pN9,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,280.0,4,36a,ixBYYYjxXPP,82.0,2023
+Unnav Auras,wk2JVEOAFPl,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,282.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,142.0,2023
+Unnav Auras,wk2JVEOAFPl,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,282.0,4,36a,ixBYYYjxXPP,0.0,2023
+Unnav Nawabganj,ziD9Ib1XELX,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,285.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,183.0,2023
+Unnav Nawabganj,ziD9Ib1XELX,p,2023-01-01,Unnav,aT03mfdlNiF,indicator_36,285.0,4,36a,ixBYYYjxXPP,162.0,2023
+Saharanpur Gangoha,BHNN3R3Nfyk,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,7.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,354.0,2023
+Saharanpur Gangoha,BHNN3R3Nfyk,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,7.0,4,36a,ixBYYYjxXPP,220.0,2023
+Saharanpur Nukkur,Il5dY2TsnrT,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,6.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,167.0,2023
+Saharanpur Nukkur,Il5dY2TsnrT,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,6.0,4,36a,ixBYYYjxXPP,135.0,2023
+Saharanpur Sarsawa,J4lOM1HGEln,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,5.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,231.0,2023
+Saharanpur Sarsawa,J4lOM1HGEln,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,5.0,4,36a,ixBYYYjxXPP,0.0,2023
+Saharanpur Punwarka,PqdYyxvXbjJ,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,3.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,216.0,2023
+Saharanpur Punwarka,PqdYyxvXbjJ,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,3.0,4,36a,ixBYYYjxXPP,159.0,2023
+Saharanpur Nangal,TkRtB84gkNd,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,10.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,204.0,2023
+Saharanpur Nangal,TkRtB84gkNd,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,10.0,4,36a,ixBYYYjxXPP,78.0,2023
+Saharanpur Nanota,ZUTLEFlviBI,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,9.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,136.0,2023
+Saharanpur Nanota,ZUTLEFlviBI,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,9.0,4,36a,ixBYYYjxXPP,0.0,2023
+Saharanpur Muzzafrabad,dTPUQF80iDV,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,2.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,290.0,2023
+Saharanpur Muzzafrabad,dTPUQF80iDV,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,2.0,4,36a,ixBYYYjxXPP,175.0,2023
+Saharanpur DHQ,oJLTrPrhs93,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,6318.0,2023
+Saharanpur DHQ,oJLTrPrhs93,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,,4,36a,ixBYYYjxXPP,21.0,2023
+Saharanpur Daoband,oNfXWvtDaWv,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,11.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,257.0,2023
+Saharanpur Daoband,oNfXWvtDaWv,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,11.0,4,36a,ixBYYYjxXPP,135.0,2023
+Saharanpur Rampur Maniharan,obGw4WWLMlw,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,8.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,77.0,2023
+Saharanpur Rampur Maniharan,obGw4WWLMlw,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,8.0,4,36a,ixBYYYjxXPP,82.0,2023
+Saharanpur Balliyakhare,qxErDQBKuLE,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,4.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,108.0,2023
+Saharanpur Balliyakhare,qxErDQBKuLE,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,4.0,4,36a,ixBYYYjxXPP,32.0,2023
+Saharanpur Sadholi Kadeem,y5bGR23eUwH,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,1.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,217.0,2023
+Saharanpur Sadholi Kadeem,y5bGR23eUwH,p,2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_36,1.0,4,36a,ixBYYYjxXPP,155.0,2023
+Manjhwan,BLgq44ZJkKh,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,789.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,203.0,2023
+Jamalpur,Dga9ieikVr5,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,798.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,245.0,2023
+Jamalpur,Dga9ieikVr5,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,798.0,4,36a,ixBYYYjxXPP,0.0,2023
+Chhanve,T5YmZQx2cme,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,787.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,350.0,2023
+Chhanve,T5YmZQx2cme,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,787.0,4,36a,ixBYYYjxXPP,302.0,2023
+Mirzapur DHQ,WxMksp7j6w7,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,691.0,2023
+Naraynpur,cGCEhMelufW,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,797.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,245.0,2023
+Naraynpur,cGCEhMelufW,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,797.0,4,36a,ixBYYYjxXPP,38.0,2023
+Hallia,dzvrdlSVdNw,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,793.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,377.0,2023
+Hallia,dzvrdlSVdNw,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,793.0,4,36a,ixBYYYjxXPP,0.0,2023
+Rajgarh,fi3XI1IhyQO,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,795.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,251.0,2023
+Rajgarh,fi3XI1IhyQO,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,795.0,4,36a,ixBYYYjxXPP,233.0,2023
+Sikhar,moqnzHZCfQg,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,796.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,97.0,2023
+Sikhar,moqnzHZCfQg,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,796.0,4,36a,ixBYYYjxXPP,0.0,2023
+City,qFq9YH9cPE2,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,790.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,319.0,2023
+City,qFq9YH9cPE2,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,790.0,4,36a,ixBYYYjxXPP,248.0,2023
+Marihan Patehara,sh5GrKleZLD,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,794.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,218.0,2023
+Marihan Patehara,sh5GrKleZLD,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,794.0,4,36a,ixBYYYjxXPP,123.0,2023
+Lalganj Mirzapur,udEnBPS78Sf,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,792.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,225.0,2023
+Lalganj Mirzapur,udEnBPS78Sf,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,792.0,4,36a,ixBYYYjxXPP,221.0,2023
+Pahadi,y74T9TfUPuz,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,791.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,280.0,2023
+Pahadi,y74T9TfUPuz,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,791.0,4,36a,ixBYYYjxXPP,0.0,2023
+Kone,zBM33fSxbqN,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,788.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,120.0,2023
+Kone,zBM33fSxbqN,p,2023-01-01,Mirzapur,UAicdMLyuk4,indicator_36,788.0,4,36a,ixBYYYjxXPP,109.0,2023
+Nawabganj,BWxu1bDp2ht,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,199.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,179.0,2023
+Nawabganj,BWxu1bDp2ht,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,199.0,4,36a,ixBYYYjxXPP,179.0,2023
+Shargarh,FjccMEGL0Hr,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,189.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,239.0,2023
+Shargarh,FjccMEGL0Hr,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,189.0,4,36a,ixBYYYjxXPP,110.0,2023
+Dalelnagar,G7D5lGOMxxz,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,200.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,126.0,2023
+Dalelnagar,G7D5lGOMxxz,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,200.0,4,36a,ixBYYYjxXPP,60.0,2023
+Bhamora,HZQTgHfOykd,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,198.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,187.0,2023
+Bhamora,HZQTgHfOykd,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,198.0,4,36a,ixBYYYjxXPP,0.0,2023
+Faridpur,Hi4F69xrBS5,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,202.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,205.0,2023
+Faridpur,Hi4F69xrBS5,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,202.0,4,36a,ixBYYYjxXPP,384.0,2023
+Fatehganj(West),KRQvi7JBiuf,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,195.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,199.0,2023
+Fatehganj(West),KRQvi7JBiuf,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,195.0,4,36a,ixBYYYjxXPP,92.0,2023
+Majhganwa,XmU9noLyhIA,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,197.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,17.0,2023
+Majhganwa,XmU9noLyhIA,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,197.0,4,36a,ixBYYYjxXPP,141.0,2023
+Behedi,fO0hzktt79F,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,188.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,221.0,2023
+Behedi,fO0hzktt79F,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,188.0,4,36a,ixBYYYjxXPP,129.0,2023
+Bareily DHQ,fRl1gRWCXvz,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1334.0,2023
+Bareily DHQ,fRl1gRWCXvz,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,,4,36a,ixBYYYjxXPP,354.0,2023
+Kuadanda,fpNl2OeBSp3,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,201.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,136.0,2023
+Kuadanda,fpNl2OeBSp3,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,201.0,4,36a,ixBYYYjxXPP,0.0,2023
+Mirganj,gfXniA8E2yB,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,194.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,190.0,2023
+Mirganj,gfXniA8E2yB,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,194.0,4,36a,ixBYYYjxXPP,190.0,2023
+Bhojipura,m5Tn9LTc2Dy,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,191.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,10.0,2023
+Bhojipura,m5Tn9LTc2Dy,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,191.0,4,36a,ixBYYYjxXPP,88.0,2023
+Mudia Nawi Bux,pzDsoCMcPwD,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,190.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,102.0,2023
+Mudia Nawi Bux,pzDsoCMcPwD,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,190.0,4,36a,ixBYYYjxXPP,197.0,2023
+Ramnagar,svsS1G8o1pm,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,196.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,194.0,2023
+Ramnagar,svsS1G8o1pm,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,196.0,4,36a,ixBYYYjxXPP,132.0,2023
+Kyara,ukz0TmnwKtW,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,193.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,110.0,2023
+Kyara,ukz0TmnwKtW,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,193.0,4,36a,ixBYYYjxXPP,58.0,2023
+Bithrichainpur,xIm2KLhn48h,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,192.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,141.0,2023
+Bithrichainpur,xIm2KLhn48h,p,2023-01-01,Bareilly,vVqY3DPcpHf,indicator_36,192.0,4,36a,ixBYYYjxXPP,127.0,2023
+Rae Bareli Shivgarh,BYGgaeM7fof,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,303.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,148.0,2023
+Rae Bareli Shivgarh,BYGgaeM7fof,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,303.0,4,36a,ixBYYYjxXPP,168.0,2023
+Rae Bareli Setawan,E6hdzl0I5tt,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,102.0,2023
+Rae Bareli Setawan,E6hdzl0I5tt,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,,4,36a,ixBYYYjxXPP,104.0,2023
+Rae Bareli Salon,Gr3MErPlauk,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,322.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,351.0,2023
+Rae Bareli Salon,Gr3MErPlauk,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,322.0,4,36a,ixBYYYjxXPP,236.0,2023
+Rae Bareli Sarani,H1W08wOkXWC,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,313.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,110.0,2023
+Rae Bareli Sarani,H1W08wOkXWC,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,313.0,4,36a,ixBYYYjxXPP,0.0,2023
+Rae Bareli Dalamau,KtYM7svxHgY,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,315.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,168.0,2023
+Rae Bareli Dalamau,KtYM7svxHgY,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,315.0,4,36a,ixBYYYjxXPP,421.0,2023
+Rae Bareli Maharajganj,NbdKCUBY7yL,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,160.0,2023
+Rae Bareli Maharajganj,NbdKCUBY7yL,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,,4,36a,ixBYYYjxXPP,151.0,2023
+Rae Bareli Khiaro,Q889SJwv9Ok,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,312.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,117.0,2023
+Rae Bareli Khiaro,Q889SJwv9Ok,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,312.0,4,36a,ixBYYYjxXPP,46.0,2023
+Rae Bareli Deenshah Gaura,Sk3orHKxNQG,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,316.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,90.0,2023
+Rae Bareli Deenshah Gaura,Sk3orHKxNQG,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,316.0,4,36a,ixBYYYjxXPP,5.0,2023
+Rae Bareli Bachrawa,Y3jGyfeDYe1,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,302.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,216.0,2023
+Rae Bareli Bachrawa,Y3jGyfeDYe1,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,302.0,4,36a,ixBYYYjxXPP,197.0,2023
+Rae Bareli Rohania,c89kPtwHW5H,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,380.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,85.0,2023
+Rae Bareli Rohania,c89kPtwHW5H,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,380.0,4,36a,ixBYYYjxXPP,61.0,2023
+Rae Bareli Herchandrapur,jQRhw2yoQk2,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,308.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,106.0,2023
+Rae Bareli Herchandrapur,jQRhw2yoQk2,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,308.0,4,36a,ixBYYYjxXPP,92.0,2023
+Rae Bareli Deeh,lruABl36XZQ,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,320.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,155.0,2023
+Rae Bareli Deeh,lruABl36XZQ,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,320.0,4,36a,ixBYYYjxXPP,155.0,2023
+Rae Bareli Chtoh,mbfOsRukNYs,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,321.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,160.0,2023
+Rae Bareli Chtoh,mbfOsRukNYs,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,321.0,4,36a,ixBYYYjxXPP,208.0,2023
+Rae Bareli Amawa,pvZgEadkY59,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,309.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,79.0,2023
+Rae Bareli Amawa,pvZgEadkY59,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,309.0,4,36a,ixBYYYjxXPP,79.0,2023
+Rae Bareli DHQ,qXzAAhlpnux,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,893.0,2023
+Rae Bareli DHQ,qXzAAhlpnux,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,,4,36a,ixBYYYjxXPP,721.0,2023
+Rae Bareli Lalganj,sd2I8M3xhLQ,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,314.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,174.0,2023
+Rae Bareli Lalganj,sd2I8M3xhLQ,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,314.0,4,36a,ixBYYYjxXPP,200.0,2023
+Rae Bareli Rahi,smTNQ0RRpOL,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,311.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,374.0,2023
+Rae Bareli Rahi,smTNQ0RRpOL,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,311.0,4,36a,ixBYYYjxXPP,144.0,2023
+Rae Bareli Uchahar,tv4Qque6scf,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,319.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,211.0,2023
+Rae Bareli Uchahar,tv4Qque6scf,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,319.0,4,36a,ixBYYYjxXPP,201.0,2023
+Rae Bareli Jagatpur,yFYFE5vVAAA,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,317.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,96.0,2023
+Rae Bareli Jagatpur,yFYFE5vVAAA,p,2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_36,317.0,4,36a,ixBYYYjxXPP,96.0,2023
+Kanpur Dehat Sandalpur,Bc5VrfyFJO4,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,361.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,109.0,2023
+Kanpur Dehat Sandalpur,Bc5VrfyFJO4,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,361.0,4,36a,ixBYYYjxXPP,85.0,2023
+Kanpur Dehat Derapur,Dt0dgcTvEpm,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,356.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,135.0,2023
+Kanpur Dehat Derapur,Dt0dgcTvEpm,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,356.0,4,36a,ixBYYYjxXPP,117.0,2023
+Kanpur Dehat Ghinjhak,HddGvNsPs8y,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,355.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,130.0,2023
+Kanpur Dehat Ghinjhak,HddGvNsPs8y,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,355.0,4,36a,ixBYYYjxXPP,127.0,2023
+Kanpur Dehat Serwenkheda,OnFJhLr5Af4,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,358.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,180.0,2023
+Kanpur Dehat Serwenkheda,OnFJhLr5Af4,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,358.0,4,36a,ixBYYYjxXPP,108.0,2023
+Kanpur Dehat Melasa,QavHaYYE31I,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,359.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,109.0,2023
+Kanpur Dehat Melasa,QavHaYYE31I,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,359.0,4,36a,ixBYYYjxXPP,0.0,2023
+Kanpur Dehat Rajpur,RCZZTOaqXrm,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,362.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,208.0,2023
+Kanpur Dehat Rajpur,RCZZTOaqXrm,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,362.0,4,36a,ixBYYYjxXPP,141.0,2023
+Kanpur Dehat Akberpur,XyAwdfjaKov,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,357.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,634.0,2023
+Kanpur Dehat Akberpur,XyAwdfjaKov,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,357.0,4,36a,ixBYYYjxXPP,337.0,2023
+Kanpur Dehat Amrodha,cIW3SsdBXzj,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,360.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,240.0,2023
+Kanpur Dehat Amrodha,cIW3SsdBXzj,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,360.0,4,36a,ixBYYYjxXPP,259.0,2023
+Kanpur Dehat Rasulabad,jc9CoHdLFLu,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,353.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,241.0,2023
+Kanpur Dehat Rasulabad,jc9CoHdLFLu,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,353.0,4,36a,ixBYYYjxXPP,225.0,2023
+Kanpur Dehat Miatha,qt0Ra0vMorS,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,354.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,124.0,2023
+Kanpur Dehat Miatha,qt0Ra0vMorS,p,2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_36,354.0,4,36a,ixBYYYjxXPP,100.0,2023
+Mainpuri Jagir,BkcbTCyupP9,p,2023-01-01,Mainpuri,XBLhrSWGytu,indicator_36,168.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,115.0,2023
+Mainpuri Jagir,BkcbTCyupP9,p,2023-01-01,Mainpuri,XBLhrSWGytu,indicator_36,168.0,4,36a,ixBYYYjxXPP,115.0,2023
+Mainpuri Bewar,Dn4n2S6qEWw,p,2023-01-01,Mainpuri,XBLhrSWGytu,indicator_36,167.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,197.0,2023
+Mainpuri Bewar,Dn4n2S6qEWw,p,2023-01-01,Mainpuri,XBLhrSWGytu,indicator_36,167.0,4,36a,ixBYYYjxXPP,137.0,2023
+Mainpuri Barnahal,EeFlmvJs36p,p,2023-01-01,Mainpuri,XBLhrSWGytu,indicator_36,164.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,150.0,2023
+Mainpuri Barnahal,EeFlmvJs36p,p,2023-01-01,Mainpuri,XBLhrSWGytu,indicator_36,164.0,4,36a,ixBYYYjxXPP,147.0,2023
+Mainpuri Ghiror,GdimZzDSdCV,p,2023-01-01,Mainpuri,XBLhrSWGytu,indicator_36,161.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,155.0,2023
+Mainpuri Ghiror,GdimZzDSdCV,p,2023-01-01,Mainpuri,XBLhrSWGytu,indicator_36,161.0,4,36a,ixBYYYjxXPP,132.0,2023
+Mainpuri Kerhal,HNZwOODMyul,p,2023-01-01,Mainpuri,XBLhrSWGytu,indicator_36,165.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,149.0,2023
+Mainpuri Kerhal,HNZwOODMyul,p,2023-01-01,Mainpuri,XBLhrSWGytu,indicator_36,165.0,4,36a,ixBYYYjxXPP,149.0,2023
+Mainpuri DHQ,O8puBy9wDpN,p,2023-01-01,Mainpuri,XBLhrSWGytu,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,252.0,2023
+Mainpuri Kurawali,PZAj1qhZHhE,p,2023-01-01,Mainpuri,XBLhrSWGytu,indicator_36,162.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,227.0,2023
+Mainpuri Kurawali,PZAj1qhZHhE,p,2023-01-01,Mainpuri,XBLhrSWGytu,indicator_36,162.0,4,36a,ixBYYYjxXPP,210.0,2023
+Mainpuri Sultanganj,Ri9nZlNp7vJ,p,2023-01-01,Mainpuri,XBLhrSWGytu,indicator_36,166.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,218.0,2023
+Mainpuri Sultanganj,Ri9nZlNp7vJ,p,2023-01-01,Mainpuri,XBLhrSWGytu,indicator_36,166.0,4,36a,ixBYYYjxXPP,167.0,2023
+Mainpuri Mainpuri,covI1BtEX12,p,2023-01-01,Mainpuri,XBLhrSWGytu,indicator_36,163.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,461.0,2023
+Mainpuri Mainpuri,covI1BtEX12,p,2023-01-01,Mainpuri,XBLhrSWGytu,indicator_36,163.0,4,36a,ixBYYYjxXPP,461.0,2023
+Mainpuri Kishni,yWnYeaWXCE1,p,2023-01-01,Mainpuri,XBLhrSWGytu,indicator_36,169.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,224.0,2023
+Mainpuri Kishni,yWnYeaWXCE1,p,2023-01-01,Mainpuri,XBLhrSWGytu,indicator_36,169.0,4,36a,ixBYYYjxXPP,224.0,2023
+Firozabad Jasrana,C4DRedrM3Pb,p,2023-01-01,Firozabad,eJTsuE56XDF,indicator_36,157.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,160.0,2023
+Firozabad Jasrana,C4DRedrM3Pb,p,2023-01-01,Firozabad,eJTsuE56XDF,indicator_36,157.0,4,36a,ixBYYYjxXPP,211.0,2023
+Firozabad Narkhi,GcLGdTGiU8M,p,2023-01-01,Firozabad,eJTsuE56XDF,indicator_36,153.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,250.0,2023
+Firozabad Narkhi,GcLGdTGiU8M,p,2023-01-01,Firozabad,eJTsuE56XDF,indicator_36,153.0,4,36a,ixBYYYjxXPP,159.0,2023
+Firozabad Firozabad,R0tPbvDqGLH,p,2023-01-01,Firozabad,eJTsuE56XDF,indicator_36,154.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1231.0,2023
+Firozabad Firozabad,R0tPbvDqGLH,p,2023-01-01,Firozabad,eJTsuE56XDF,indicator_36,154.0,4,36a,ixBYYYjxXPP,1296.0,2023
+Firozabad Madanpur,TEd7x916bEz,p,2023-01-01,Firozabad,eJTsuE56XDF,indicator_36,160.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,135.0,2023
+Firozabad Madanpur,TEd7x916bEz,p,2023-01-01,Firozabad,eJTsuE56XDF,indicator_36,160.0,4,36a,ixBYYYjxXPP,130.0,2023
+Firozabad Tundla,TJrLeyFzLWY,p,2023-01-01,Firozabad,eJTsuE56XDF,indicator_36,152.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,312.0,2023
+Firozabad Tundla,TJrLeyFzLWY,p,2023-01-01,Firozabad,eJTsuE56XDF,indicator_36,152.0,4,36a,ixBYYYjxXPP,240.0,2023
+Firozabad DHQ,fAXjUK5F5Xr,p,2023-01-01,Firozabad,eJTsuE56XDF,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,837.0,2023
+Firozabad Hathwant,ipancoUtUKq,p,2023-01-01,Firozabad,eJTsuE56XDF,indicator_36,156.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,154.0,2023
+Firozabad Hathwant,ipancoUtUKq,p,2023-01-01,Firozabad,eJTsuE56XDF,indicator_36,156.0,4,36a,ixBYYYjxXPP,135.0,2023
+Firozabad Araon,njhb7CY73zh,p,2023-01-01,Firozabad,eJTsuE56XDF,indicator_36,159.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,89.0,2023
+Firozabad Shikohabad,rgR8kKaylIH,p,2023-01-01,Firozabad,eJTsuE56XDF,indicator_36,158.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,74.0,2023
+Firozabad Shikohabad,rgR8kKaylIH,p,2023-01-01,Firozabad,eJTsuE56XDF,indicator_36,158.0,4,36a,ixBYYYjxXPP,0.0,2023
+Firozabad Aeka,v4LM2W1q50L,p,2023-01-01,Firozabad,eJTsuE56XDF,indicator_36,155.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,162.0,2023
+Firozabad Aeka,v4LM2W1q50L,p,2023-01-01,Firozabad,eJTsuE56XDF,indicator_36,155.0,4,36a,ixBYYYjxXPP,79.0,2023
+Fakharpur,C9qOAPWGoUS,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,545.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,517.0,2023
+Fakharpur,C9qOAPWGoUS,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,545.0,4,36a,ixBYYYjxXPP,0.0,2023
+Huzoorpur,CjshmDK5t8E,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,546.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,459.0,2023
+Huzoorpur,CjshmDK5t8E,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,546.0,4,36a,ixBYYYjxXPP,116.0,2023
+Mahsi,EdjW9d0OX1h,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,543.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,314.0,2023
+Mahsi,EdjW9d0OX1h,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,543.0,4,36a,ixBYYYjxXPP,0.0,2023
+Nawabganj Bahraich,F2HjseXcv3G,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,538.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,447.0,2023
+Nawabganj Bahraich,F2HjseXcv3G,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,538.0,4,36a,ixBYYYjxXPP,0.0,2023
+Visheshwerganj,NGqtRmZHnOm,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,550.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,296.0,2023
+Visheshwerganj,NGqtRmZHnOm,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,550.0,4,36a,ixBYYYjxXPP,215.0,2023
+Jarwal,PK0wuMfp3LE,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,548.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,492.0,2023
+Jarwal,PK0wuMfp3LE,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,548.0,4,36a,ixBYYYjxXPP,0.0,2023
+Tejwapur,QTCGfCQMXd3,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,544.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,464.0,2023
+Keaserganj,RXv1GaQ6IyV,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,547.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,656.0,2023
+Keaserganj,RXv1GaQ6IyV,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,547.0,4,36a,ixBYYYjxXPP,378.0,2023
+Shivpur,axbfDth7CE1,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,540.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,464.0,2023
+Shivpur,axbfDth7CE1,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,540.0,4,36a,ixBYYYjxXPP,0.0,2023
+Chittaura,jNYEM4EP98K,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,542.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,256.0,2023
+Mihipurwa,jo7VYHdzhDi,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,537.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,515.0,2023
+Mihipurwa,jo7VYHdzhDi,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,537.0,4,36a,ixBYYYjxXPP,0.0,2023
+Payagpur,m1nYwKqPcyp,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,549.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,361.0,2023
+Payagpur,m1nYwKqPcyp,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,549.0,4,36a,ixBYYYjxXPP,200.0,2023
+Bahraich DHQ,sGS6zRDhdsB,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,242.0,2023
+Bahraich DHQ,sGS6zRDhdsB,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,,4,36a,ixBYYYjxXPP,776.0,2023
+Risia,wgoGe5KFMCX,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,541.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,555.0,2023
+Risia,wgoGe5KFMCX,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,541.0,4,36a,ixBYYYjxXPP,0.0,2023
+Balha,ww1Qb6eAFFD,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,539.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,517.0,2023
+Balha,ww1Qb6eAFFD,p,2023-01-01,Bahraich,iE0E3nLioFr,indicator_36,539.0,4,36a,ixBYYYjxXPP,0.0,2023
+Manda,CGzm91g5LUD,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,476.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,392.0,2023
+Manda,CGzm91g5LUD,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,476.0,4,36a,ixBYYYjxXPP,192.0,2023
+Meja,En85jBKx0aq,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,474.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,300.0,2023
+Meja,En85jBKx0aq,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,474.0,4,36a,ixBYYYjxXPP,185.0,2023
+Soraon,Gs9FnVq3FME,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,461.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,494.0,2023
+Soraon,Gs9FnVq3FME,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,461.0,4,36a,ixBYYYjxXPP,47.0,2023
+Karchhana,INQHpWL0ZBk,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,469.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,297.0,2023
+Karchhana,INQHpWL0ZBk,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,469.0,4,36a,ixBYYYjxXPP,200.0,2023
+Handia,Qk15i4lxQ0C,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,473.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,298.0,2023
+Handia,Qk15i4lxQ0C,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,473.0,4,36a,ixBYYYjxXPP,262.0,2023
+Holagarh,SkcYjFliQxI,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,459.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,238.0,2023
+Holagarh,SkcYjFliQxI,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,459.0,4,36a,ixBYYYjxXPP,185.0,2023
+Baharia,TcWp3YBgjTX,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,462.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,352.0,2023
+Baharia,TcWp3YBgjTX,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,462.0,4,36a,ixBYYYjxXPP,0.0,2023
+Kaundhiyara,UBw5aJTPmZ3,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,468.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,237.0,2023
+Kaundhiyara,UBw5aJTPmZ3,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,468.0,4,36a,ixBYYYjxXPP,85.0,2023
+Saidabad,UtcpvEmyolV,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,472.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,343.0,2023
+Saidabad,UtcpvEmyolV,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,472.0,4,36a,ixBYYYjxXPP,112.0,2023
+Kaurihar,V9DOCawlsCk,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,458.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,228.0,2023
+Kaurihar,V9DOCawlsCk,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,458.0,4,36a,ixBYYYjxXPP,137.0,2023
+Uruwa,ZYDAjKxE7WN,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,475.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,303.0,2023
+Uruwa,ZYDAjKxE7WN,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,475.0,4,36a,ixBYYYjxXPP,236.0,2023
+Mauaima,dawiYinsnkV,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,460.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,329.0,2023
+Mauaima,dawiYinsnkV,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,460.0,4,36a,ixBYYYjxXPP,185.0,2023
+Prayagraj DHQ,engUwg3VX3b,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1628.0,2023
+Prayagraj DHQ,engUwg3VX3b,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,,4,36a,ixBYYYjxXPP,203.0,2023
+Chaka,hty8pfH1ySe,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,467.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,349.0,2023
+Chaka,hty8pfH1ySe,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,467.0,4,36a,ixBYYYjxXPP,0.0,2023
+Shankargarh,omKjHTDECWY,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,466.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,276.0,2023
+Shankargarh,omKjHTDECWY,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,466.0,4,36a,ixBYYYjxXPP,0.0,2023
+Dhanupur,ooMZMhdhlnd,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,471.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,259.0,2023
+Dhanupur,ooMZMhdhlnd,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,471.0,4,36a,ixBYYYjxXPP,0.0,2023
+Pratappur,rnqodqKeG71,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,470.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,344.0,2023
+Pratappur,rnqodqKeG71,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,470.0,4,36a,ixBYYYjxXPP,650.0,2023
+Koraon,snr8f1gc8vd,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,477.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,531.0,2023
+Koraon,snr8f1gc8vd,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,477.0,4,36a,ixBYYYjxXPP,263.0,2023
+Bahadurpur,tqyaSDfRN87,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,464.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,392.0,2023
+Bahadurpur,tqyaSDfRN87,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,464.0,4,36a,ixBYYYjxXPP,176.0,2023
+Phulpur,uiUVlKvhhxF,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,463.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,383.0,2023
+Phulpur,uiUVlKvhhxF,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,463.0,4,36a,ixBYYYjxXPP,273.0,2023
+Jasra,vAlop9evcWY,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,465.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,30.0,2023
+Jasra,vAlop9evcWY,p,2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_36,465.0,4,36a,ixBYYYjxXPP,0.0,2023
+Jalalabad,CJnQGhWTHo0,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,224.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,329.0,2023
+Jalalabad,CJnQGhWTHo0,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,224.0,4,36a,ixBYYYjxXPP,0.0,2023
+Dadroul,CzrcP2SLElb,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,220.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,131.0,2023
+Dadroul,CzrcP2SLElb,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,220.0,4,36a,ixBYYYjxXPP,120.0,2023
+Bhawalkheda,FHp906GIA29,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,221.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,184.0,2023
+Bhawalkheda,FHp906GIA29,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,221.0,4,36a,ixBYYYjxXPP,86.0,2023
+Puwaya,FJZd1VoPnSp,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,212.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,110.0,2023
+Puwaya,FJZd1VoPnSp,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,212.0,4,36a,ixBYYYjxXPP,0.0,2023
+Mirzapur Shahjahanpur,Gj3mY1laAQs,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,223.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,213.0,2023
+Mirzapur Shahjahanpur,Gj3mY1laAQs,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,223.0,4,36a,ixBYYYjxXPP,0.0,2023
+Khutar,ROeKhlePe7w,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,211.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,125.0,2023
+Khutar,ROeKhlePe7w,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,211.0,4,36a,ixBYYYjxXPP,125.0,2023
+Sidhouli,RWbJEn9kMN0,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,213.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,127.0,2023
+Sidhouli,RWbJEn9kMN0,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,213.0,4,36a,ixBYYYjxXPP,0.0,2023
+Madnapur,Siyf9v1S9St,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,216.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,101.0,2023
+Madnapur,Siyf9v1S9St,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,216.0,4,36a,ixBYYYjxXPP,82.0,2023
+Khudaganj,Y5b8fuW0nqo,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,214.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,151.0,2023
+Khudaganj,Y5b8fuW0nqo,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,214.0,4,36a,ixBYYYjxXPP,149.0,2023
+Kanth,eRgWsRn98MG,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,219.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,171.0,2023
+Kanth,eRgWsRn98MG,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,219.0,4,36a,ixBYYYjxXPP,135.0,2023
+Kalan,gGoFUoVcUmI,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,222.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,190.0,2023
+Kalan,gGoFUoVcUmI,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,222.0,4,36a,ixBYYYjxXPP,188.0,2023
+Shahjahanpur DHQ,jc5MqfKVzRH,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,0.0,2023
+Shahjahanpur DHQ,jc5MqfKVzRH,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,,4,36a,ixBYYYjxXPP,483.0,2023
+Jaitipur,l14UZLO07Q9,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,215.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,90.0,2023
+Jaitipur,l14UZLO07Q9,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,215.0,4,36a,ixBYYYjxXPP,75.0,2023
+Tilhar,o9TtE34iDMB,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,217.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,207.0,2023
+Tilhar,o9TtE34iDMB,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,217.0,4,36a,ixBYYYjxXPP,203.0,2023
+Nigohi,oSPqI1SUnmV,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,218.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,224.0,2023
+Nigohi,oSPqI1SUnmV,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,218.0,4,36a,ixBYYYjxXPP,224.0,2023
+Banda,tjhsboDAHva,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,210.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,179.0,2023
+Banda,tjhsboDAHva,p,2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_36,210.0,4,36a,ixBYYYjxXPP,169.0,2023
+Chirgaon,CNdl7yi4n8S,p,2023-01-01,Jhansi,Mq751wBMqGF,indicator_36,383.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,248.0,2023
+Chirgaon,CNdl7yi4n8S,p,2023-01-01,Jhansi,Mq751wBMqGF,indicator_36,383.0,4,36a,ixBYYYjxXPP,240.0,2023
+Bangra,W9mkfkYcPh8,p,2023-01-01,Jhansi,Mq751wBMqGF,indicator_36,386.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,173.0,2023
+Bangra,W9mkfkYcPh8,p,2023-01-01,Jhansi,Mq751wBMqGF,indicator_36,386.0,4,36a,ixBYYYjxXPP,166.0,2023
+Mauranipur,cmHMhMayFWq,p,2023-01-01,Jhansi,Mq751wBMqGF,indicator_36,387.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,263.0,2023
+Mauranipur,cmHMhMayFWq,p,2023-01-01,Jhansi,Mq751wBMqGF,indicator_36,387.0,4,36a,ixBYYYjxXPP,258.0,2023
+Moth,cvjZcBpUtSR,p,2023-01-01,Jhansi,Mq751wBMqGF,indicator_36,382.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,135.0,2023
+Moth,cvjZcBpUtSR,p,2023-01-01,Jhansi,Mq751wBMqGF,indicator_36,382.0,4,36a,ixBYYYjxXPP,133.0,2023
+Gursaria,h9b0ymhftGb,p,2023-01-01,Jhansi,Mq751wBMqGF,indicator_36,385.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,179.0,2023
+Gursaria,h9b0ymhftGb,p,2023-01-01,Jhansi,Mq751wBMqGF,indicator_36,385.0,4,36a,ixBYYYjxXPP,162.0,2023
+Babina,jtzi71zh7X8,p,2023-01-01,Jhansi,Mq751wBMqGF,indicator_36,389.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,158.0,2023
+Babina,jtzi71zh7X8,p,2023-01-01,Jhansi,Mq751wBMqGF,indicator_36,389.0,4,36a,ixBYYYjxXPP,147.0,2023
+Bada Gaon,l7op2G8Asvm,p,2023-01-01,Jhansi,Mq751wBMqGF,indicator_36,388.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,115.0,2023
+Bada Gaon,l7op2G8Asvm,p,2023-01-01,Jhansi,Mq751wBMqGF,indicator_36,388.0,4,36a,ixBYYYjxXPP,115.0,2023
+Jhansi DHQ,o2TR0og834Q,p,2023-01-01,Jhansi,Mq751wBMqGF,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1648.0,2023
+Jhansi DHQ,o2TR0og834Q,p,2023-01-01,Jhansi,Mq751wBMqGF,indicator_36,,4,36a,ixBYYYjxXPP,489.0,2023
+Bamaur,yfN8RlEk6Eo,p,2023-01-01,Jhansi,Mq751wBMqGF,indicator_36,384.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,117.0,2023
+Bamaur,yfN8RlEk6Eo,p,2023-01-01,Jhansi,Mq751wBMqGF,indicator_36,384.0,4,36a,ixBYYYjxXPP,123.0,2023
+Agra Shashambad,CSr734nIeVU,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,147.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,271.0,2023
+Agra Shashambad,CSr734nIeVU,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,147.0,4,36a,ixBYYYjxXPP,265.0,2023
+Agra DHQ,CUTzCqh1nRn,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,4999.0,2023
+Agra DHQ,CUTzCqh1nRn,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,,4,36a,ixBYYYjxXPP,712.0,2023
+Agra Jagner,JGBdoOZp18V,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,144.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,194.0,2023
+Agra Jagner,JGBdoOZp18V,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,144.0,4,36a,ixBYYYjxXPP,169.0,2023
+Agra Khaundali,NWLheaE7Ac4,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,137.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,208.0,2023
+Agra Khaundali,NWLheaE7Ac4,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,137.0,4,36a,ixBYYYjxXPP,172.0,2023
+Agra Jaitpur Kala,PlRYdgqkTLD,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,151.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,137.0,2023
+Agra Jaitpur Kala,PlRYdgqkTLD,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,151.0,4,36a,ixBYYYjxXPP,137.0,2023
+Agra Barauli Ahir,PskcWzXXxHt,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,141.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,268.0,2023
+Agra Barauli Ahir,PskcWzXXxHt,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,141.0,4,36a,ixBYYYjxXPP,0.0,2023
+Agra Bichpuri,RjTiJ3wL4Ir,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,139.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,247.0,2023
+Agra Bichpuri,RjTiJ3wL4Ir,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,139.0,4,36a,ixBYYYjxXPP,0.0,2023
+Agra Bah,TNFp3ouQZzy,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,150.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,188.0,2023
+Agra Bah,TNFp3ouQZzy,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,150.0,4,36a,ixBYYYjxXPP,180.0,2023
+Agra Achnera,eV15qufBx79,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,143.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,327.0,2023
+Agra Achnera,eV15qufBx79,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,143.0,4,36a,ixBYYYjxXPP,320.0,2023
+Agra Kahiragarh,hO5EeDRnO8S,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,145.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,154.0,2023
+Agra Kahiragarh,hO5EeDRnO8S,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,145.0,4,36a,ixBYYYjxXPP,134.0,2023
+Agra Akola,iqYgALY5y5A,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,140.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,222.0,2023
+Agra Akola,iqYgALY5y5A,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,140.0,4,36a,ixBYYYjxXPP,141.0,2023
+Agra Sainya,mqJOhnNW2ce,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,146.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,247.0,2023
+Agra Sainya,mqJOhnNW2ce,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,146.0,4,36a,ixBYYYjxXPP,252.0,2023
+Agra Pinhat,sGuuKBoA9Rh,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,149.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,206.0,2023
+Agra Pinhat,sGuuKBoA9Rh,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,149.0,4,36a,ixBYYYjxXPP,0.0,2023
+Agra Fatehpur Sikhri,tZd8rrGLhlU,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,142.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,197.0,2023
+Agra Fatehpur Sikhri,tZd8rrGLhlU,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,142.0,4,36a,ixBYYYjxXPP,206.0,2023
+Agra Fathehabad,vKblzOJTuGM,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,148.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,283.0,2023
+Agra Etmadpur,xiUPA06ix22,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,138.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,197.0,2023
+Agra Etmadpur,xiUPA06ix22,p,2023-01-01,Agra,N5WWbRtsjWp,indicator_36,138.0,4,36a,ixBYYYjxXPP,337.0,2023
+Nawada,CUfl7clOb3K,p,2023-01-01,Kaushambi,PAj0oVY0Dxu,indicator_36,457.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,317.0,2023
+Nawada,CUfl7clOb3K,p,2023-01-01,Kaushambi,PAj0oVY0Dxu,indicator_36,457.0,4,36a,ixBYYYjxXPP,0.0,2023
+Sarswan,EXoRpuAixOF,p,2023-01-01,Kaushambi,PAj0oVY0Dxu,indicator_36,452.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,282.0,2023
+Sarswan,EXoRpuAixOF,p,2023-01-01,Kaushambi,PAj0oVY0Dxu,indicator_36,452.0,4,36a,ixBYYYjxXPP,0.0,2023
+Sirthu,HtBQrKnRi8A,p,2023-01-01,Kaushambi,PAj0oVY0Dxu,indicator_36,451.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,12.0,2023
+Sirthu,HtBQrKnRi8A,p,2023-01-01,Kaushambi,PAj0oVY0Dxu,indicator_36,451.0,4,36a,ixBYYYjxXPP,8.0,2023
+Kaneli,JyfWW9uiTL5,p,2023-01-01,Kaushambi,PAj0oVY0Dxu,indicator_36,454.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,197.0,2023
+Kaneli,JyfWW9uiTL5,p,2023-01-01,Kaushambi,PAj0oVY0Dxu,indicator_36,454.0,4,36a,ixBYYYjxXPP,170.0,2023
+Chayal,QGh6NT0LgVl,p,2023-01-01,Kaushambi,PAj0oVY0Dxu,indicator_36,456.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,181.0,2023
+Chayal,QGh6NT0LgVl,p,2023-01-01,Kaushambi,PAj0oVY0Dxu,indicator_36,456.0,4,36a,ixBYYYjxXPP,162.0,2023
+Kara,UBoDZuuvpRs,p,2023-01-01,Kaushambi,PAj0oVY0Dxu,indicator_36,450.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,313.0,2023
+Kara,UBoDZuuvpRs,p,2023-01-01,Kaushambi,PAj0oVY0Dxu,indicator_36,450.0,4,36a,ixBYYYjxXPP,309.0,2023
+Muratganj,gO0bpL7Tygs,p,2023-01-01,Kaushambi,PAj0oVY0Dxu,indicator_36,455.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,227.0,2023
+Muratganj,gO0bpL7Tygs,p,2023-01-01,Kaushambi,PAj0oVY0Dxu,indicator_36,455.0,4,36a,ixBYYYjxXPP,286.0,2023
+Manjhanpur,ppVmu0WT8Jb,p,2023-01-01,Kaushambi,PAj0oVY0Dxu,indicator_36,453.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,470.0,2023
+Manjhanpur,ppVmu0WT8Jb,p,2023-01-01,Kaushambi,PAj0oVY0Dxu,indicator_36,453.0,4,36a,ixBYYYjxXPP,149.0,2023
+Kaushambi DHQ,qaNCPibFPR2,p,2023-01-01,Kaushambi,PAj0oVY0Dxu,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,419.0,2023
+Kaushambi DHQ,qaNCPibFPR2,p,2023-01-01,Kaushambi,PAj0oVY0Dxu,indicator_36,,4,36a,ixBYYYjxXPP,0.0,2023
+Ghorahawal,Cea63kQpiOw,p,2023-01-01,Sonbhadra,NNk3JP90QZ5,indicator_36,799.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,436.0,2023
+Ghorahawal,Cea63kQpiOw,p,2023-01-01,Sonbhadra,NNk3JP90QZ5,indicator_36,799.0,4,36a,ixBYYYjxXPP,486.0,2023
+Myoerpur,Gbo5ncDmsIv,p,2023-01-01,Sonbhadra,NNk3JP90QZ5,indicator_36,804.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,501.0,2023
+Myoerpur,Gbo5ncDmsIv,p,2023-01-01,Sonbhadra,NNk3JP90QZ5,indicator_36,804.0,4,36a,ixBYYYjxXPP,44.0,2023
+Ravertganj,Hz4rBdA4kWR,p,2023-01-01,Sonbhadra,NNk3JP90QZ5,indicator_36,801.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,574.0,2023
+Ravertganj,Hz4rBdA4kWR,p,2023-01-01,Sonbhadra,NNk3JP90QZ5,indicator_36,801.0,4,36a,ixBYYYjxXPP,0.0,2023
+Chatra,I0SrxhvmkHK,p,2023-01-01,Sonbhadra,NNk3JP90QZ5,indicator_36,802.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,188.0,2023
+Chatra,I0SrxhvmkHK,p,2023-01-01,Sonbhadra,NNk3JP90QZ5,indicator_36,802.0,4,36a,ixBYYYjxXPP,0.0,2023
+Sonbhadra DHQ,NBKbLavdozm,p,2023-01-01,Sonbhadra,NNk3JP90QZ5,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,207.0,2023
+Sonbhadra DHQ,NBKbLavdozm,p,2023-01-01,Sonbhadra,NNk3JP90QZ5,indicator_36,,4,36a,ixBYYYjxXPP,0.0,2023
+Nagawa,YPsEnS75cQ8,p,2023-01-01,Sonbhadra,NNk3JP90QZ5,indicator_36,803.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,96.0,2023
+Nagawa,YPsEnS75cQ8,p,2023-01-01,Sonbhadra,NNk3JP90QZ5,indicator_36,803.0,4,36a,ixBYYYjxXPP,50.0,2023
+Bhabni,dOCMMkuHb5N,p,2023-01-01,Sonbhadra,NNk3JP90QZ5,indicator_36,806.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,179.0,2023
+Bhabni,dOCMMkuHb5N,p,2023-01-01,Sonbhadra,NNk3JP90QZ5,indicator_36,806.0,4,36a,ixBYYYjxXPP,88.0,2023
+Chopen,rqYozNDUgyg,p,2023-01-01,Sonbhadra,NNk3JP90QZ5,indicator_36,800.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,551.0,2023
+Chopen,rqYozNDUgyg,p,2023-01-01,Sonbhadra,NNk3JP90QZ5,indicator_36,800.0,4,36a,ixBYYYjxXPP,493.0,2023
+Dudhi,vqGMYi6W3ep,p,2023-01-01,Sonbhadra,NNk3JP90QZ5,indicator_36,805.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,382.0,2023
+Dudhi,vqGMYi6W3ep,p,2023-01-01,Sonbhadra,NNk3JP90QZ5,indicator_36,805.0,4,36a,ixBYYYjxXPP,112.0,2023
+Fatehpur Deomai,Cge552Satby,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,420.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,205.0,2023
+Fatehpur Deomai,Cge552Satby,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,420.0,4,36a,ixBYYYjxXPP,109.0,2023
+Fatehpur DHQ,HHTQ2caXrBL,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1813.0,2023
+Fatehpur DHQ,HHTQ2caXrBL,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,,4,36a,ixBYYYjxXPP,800.0,2023
+Fatehpur Haswa,LWEb9Onpgzi,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,426.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,160.0,2023
+Fatehpur Haswa,LWEb9Onpgzi,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,426.0,4,36a,ixBYYYjxXPP,155.0,2023
+Fatehpur Khjuha,O3U9QEmpjTV,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,423.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,183.0,2023
+Fatehpur Hathgam,OA8wf7skznm,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,429.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,398.0,2023
+Fatehpur Hathgam,OA8wf7skznm,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,429.0,4,36a,ixBYYYjxXPP,339.0,2023
+Fatehpur Gpalganj,QiCjYBLbYGE,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,108.0,2023
+Fatehpur Gpalganj,QiCjYBLbYGE,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,,4,36a,ixBYYYjxXPP,0.0,2023
+Fatehpur  Vijaipur,X3gyut5H2FR,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,431.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,160.0,2023
+Fatehpur  Bahua,gAuwshptXMU,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,427.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,253.0,2023
+Fatehpur  Bahua,gAuwshptXMU,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,427.0,4,36a,ixBYYYjxXPP,0.0,2023
+Fatehpur Amuali,janjc2a7UuX,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,422.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,111.0,2023
+Fatehpur Amuali,janjc2a7UuX,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,422.0,4,36a,ixBYYYjxXPP,78.0,2023
+Fatehpur Asthar,niYGeZzm6Zu,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,428.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,179.0,2023
+Fatehpur Asthar,niYGeZzm6Zu,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,428.0,4,36a,ixBYYYjxXPP,138.0,2023
+Fatehpur Teliyani,sGcpaNGqN8u,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,424.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,126.0,2023
+Fatehpur Teliyani,sGcpaNGqN8u,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,424.0,4,36a,ixBYYYjxXPP,134.0,2023
+Fatehpur Khaga,uEEKeL3UnB2,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,244.0,2023
+Fatehpur Khaga,uEEKeL3UnB2,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,,4,36a,ixBYYYjxXPP,0.0,2023
+Fatehpur Dhata,w0PTR0Qc2H7,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,432.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,146.0,2023
+Fatehpur Dhata,w0PTR0Qc2H7,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,432.0,4,36a,ixBYYYjxXPP,0.0,2023
+Fatehpur Bhittora,w25YwsZC9ZT,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,425.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,208.0,2023
+Fatehpur Bhittora,w25YwsZC9ZT,p,2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_36,425.0,4,36a,ixBYYYjxXPP,201.0,2023
+Azamgarh Lalganj,CqNwKYL7iqH,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,697.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,127.0,2023
+Azamgarh Lalganj,CqNwKYL7iqH,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,697.0,4,36a,ixBYYYjxXPP,180.0,2023
+Azamgarh Rani Ki Sarai,DYvPZYv80ET,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,687.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,196.0,2023
+Azamgarh Rani Ki Sarai,DYvPZYv80ET,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,687.0,4,36a,ixBYYYjxXPP,0.0,2023
+Azamgarh Mehnagar,KjTOOkkFXwn,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,699.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,84.0,2023
+Azamgarh Mehnagar,KjTOOkkFXwn,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,699.0,4,36a,ixBYYYjxXPP,0.0,2023
+Azamgarh DHQ,MVd5w4juglR,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,414.0,2023
+Azamgarh DHQ,MVd5w4juglR,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,,4,36a,ixBYYYjxXPP,594.0,2023
+Azamgarh Jahanaganj,O2VQy7yy72b,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,689.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,71.0,2023
+Azamgarh Jahanaganj,O2VQy7yy72b,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,689.0,4,36a,ixBYYYjxXPP,88.0,2023
+Azamgarh Thekma,QeJhMnDGzrC,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,696.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,78.0,2023
+Azamgarh Thekma,QeJhMnDGzrC,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,696.0,4,36a,ixBYYYjxXPP,57.0,2023
+Azamgarh Azmatgarh,QlDZDhfK4iZ,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,685.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,105.0,2023
+Azamgarh Azmatgarh,QlDZDhfK4iZ,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,685.0,4,36a,ixBYYYjxXPP,107.0,2023
+Azamgarh Koilsa,S32hqFqb1zY,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,680.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,125.0,2023
+Azamgarh Tarwa,UqPfQ9syNvH,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,698.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,216.0,2023
+Azamgarh Tarwa,UqPfQ9syNvH,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,698.0,4,36a,ixBYYYjxXPP,170.0,2023
+Azamgarh Maharajganj,Wyo5sWkkK3V,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,682.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,125.0,2023
+Azamgarh Maharajganj,Wyo5sWkkK3V,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,682.0,4,36a,ixBYYYjxXPP,150.0,2023
+Azamgarh Momadpur,Yj3IUe7pBJn,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,692.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,102.0,2023
+Azamgarh Momadpur,Yj3IUe7pBJn,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,692.0,4,36a,ixBYYYjxXPP,0.0,2023
+Azamgarh Biliria Ganj,YpJFFqOo3Eh,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,684.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,171.0,2023
+Azamgarh Biliria Ganj,YpJFFqOo3Eh,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,684.0,4,36a,ixBYYYjxXPP,124.0,2023
+Azamgarh Mirzapur,bYn0jt3AvMQ,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,691.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,119.0,2023
+Azamgarh Mirzapur,bYn0jt3AvMQ,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,691.0,4,36a,ixBYYYjxXPP,46.0,2023
+Azamgarh Ahiraulla,bqyQpybBJt7,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,152.0,2023
+Azamgarh Ahiraulla,bqyQpybBJt7,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,,4,36a,ixBYYYjxXPP,173.0,2023
+Azamgarh Tahebpur,cbIIWsiZRDy,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,690.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,90.0,2023
+Azamgarh Tahebpur,cbIIWsiZRDy,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,690.0,4,36a,ixBYYYjxXPP,0.0,2023
+Azamgarh Palhani,dIVl43wpljo,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,686.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,32.0,2023
+Azamgarh Palhani,dIVl43wpljo,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,686.0,4,36a,ixBYYYjxXPP,32.0,2023
+Azamgarh Sathiyaon,hjSHCmJGFAP,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,688.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,165.0,2023
+Azamgarh Sathiyaon,hjSHCmJGFAP,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,688.0,4,36a,ixBYYYjxXPP,113.0,2023
+Azamgarh Pawai,lcnwkO2gp49,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,693.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,112.0,2023
+Azamgarh Pawai,lcnwkO2gp49,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,693.0,4,36a,ixBYYYjxXPP,65.0,2023
+Azamgarh Martinganj,q7hwjHjsWmD,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,695.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,222.0,2023
+Azamgarh Fhoolpur,qzyZ63I1bIh,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,694.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,81.0,2023
+Azamgarh Fhoolpur,qzyZ63I1bIh,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,694.0,4,36a,ixBYYYjxXPP,80.0,2023
+Azamgarh Harriya,sODyhiqy8iZ,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,683.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,102.0,2023
+Azamgarh Harriya,sODyhiqy8iZ,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,683.0,4,36a,ixBYYYjxXPP,0.0,2023
+Azamgarh Atraullia,wCrGRYFB5Qo,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,679.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,118.0,2023
+Azamgarh Atraullia,wCrGRYFB5Qo,p,2023-01-01,Azamgarh,NjckKfm3g0k,indicator_36,679.0,4,36a,ixBYYYjxXPP,227.0,2023
+Varanasi Pindara,Cr1PwYBuSs1,p,2023-01-01,Varanasi,LeuBT7KfuuA,indicator_36,774.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,284.0,2023
+Varanasi Pindara,Cr1PwYBuSs1,p,2023-01-01,Varanasi,LeuBT7KfuuA,indicator_36,774.0,4,36a,ixBYYYjxXPP,0.0,2023
+Varanasi Cholapur,HonPmXiTJw7,p,2023-01-01,Varanasi,LeuBT7KfuuA,indicator_36,775.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,379.0,2023
+Varanasi Cholapur,HonPmXiTJw7,p,2023-01-01,Varanasi,LeuBT7KfuuA,indicator_36,775.0,4,36a,ixBYYYjxXPP,103.0,2023
+Varanasi Araji Lines,IyYYBHo9msY,p,2023-01-01,Varanasi,LeuBT7KfuuA,indicator_36,778.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,292.0,2023
+Varanasi Araji Lines,IyYYBHo9msY,p,2023-01-01,Varanasi,LeuBT7KfuuA,indicator_36,778.0,4,36a,ixBYYYjxXPP,36.0,2023
+Varanasi Badagoan,J2vP2MAp32p,p,2023-01-01,Varanasi,LeuBT7KfuuA,indicator_36,773.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,250.0,2023
+Varanasi Badagoan,J2vP2MAp32p,p,2023-01-01,Varanasi,LeuBT7KfuuA,indicator_36,773.0,4,36a,ixBYYYjxXPP,94.0,2023
+Varanasi Sewapuri,NJxCMa3k532,p,2023-01-01,Varanasi,LeuBT7KfuuA,indicator_36,777.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,177.0,2023
+Varanasi Sewapuri,NJxCMa3k532,p,2023-01-01,Varanasi,LeuBT7KfuuA,indicator_36,777.0,4,36a,ixBYYYjxXPP,124.0,2023
+Varanasi Harraua,YAHDIDrUMwP,p,2023-01-01,Varanasi,LeuBT7KfuuA,indicator_36,776.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,216.0,2023
+Varanasi Harraua,YAHDIDrUMwP,p,2023-01-01,Varanasi,LeuBT7KfuuA,indicator_36,776.0,4,36a,ixBYYYjxXPP,0.0,2023
+Varanasi DHQ,cFRa7gJ9JI1,p,2023-01-01,Varanasi,LeuBT7KfuuA,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1055.0,2023
+Varanasi DHQ,cFRa7gJ9JI1,p,2023-01-01,Varanasi,LeuBT7KfuuA,indicator_36,,4,36a,ixBYYYjxXPP,64.0,2023
+Varanasi Chiraigoan,pzUMM4ITvbI,p,2023-01-01,Varanasi,LeuBT7KfuuA,indicator_36,780.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,226.0,2023
+Varanasi Chiraigoan,pzUMM4ITvbI,p,2023-01-01,Varanasi,LeuBT7KfuuA,indicator_36,780.0,4,36a,ixBYYYjxXPP,0.0,2023
+Varanasi Kashi Vidhyapith,tJRXhxV3GJh,p,2023-01-01,Varanasi,LeuBT7KfuuA,indicator_36,779.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,93.0,2023
+Varanasi Kashi Vidhyapith,tJRXhxV3GJh,p,2023-01-01,Varanasi,LeuBT7KfuuA,indicator_36,779.0,4,36a,ixBYYYjxXPP,55.0,2023
+Sant Kabir Nagar DHQ,Cv8WrBixKYV,p,2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,31.0,2023
+Khlilabad,Go3zUv1lOWw,p,2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,indicator_36,614.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,329.0,2023
+Khlilabad,Go3zUv1lOWw,p,2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,indicator_36,614.0,4,36a,ixBYYYjxXPP,312.0,2023
+Pouli,IFHbGZd8LVv,p,2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,indicator_36,616.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,126.0,2023
+Pouli,IFHbGZd8LVv,p,2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,indicator_36,616.0,4,36a,ixBYYYjxXPP,0.0,2023
+Haisar Bazar,K98xeQTVavi,p,2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,indicator_36,617.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,153.0,2023
+Haisar Bazar,K98xeQTVavi,p,2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,indicator_36,617.0,4,36a,ixBYYYjxXPP,0.0,2023
+Belahar Kala,Orx7pmg4L68,p,2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,indicator_36,611.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,94.0,2023
+Semariyawa,T2yKNxqQdgI,p,2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,indicator_36,613.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,459.0,2023
+Bghouli,kvn8lGZHRgM,p,2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,indicator_36,612.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,129.0,2023
+Bghouli,kvn8lGZHRgM,p,2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,indicator_36,612.0,4,36a,ixBYYYjxXPP,184.0,2023
+Santha,nS9UOwtscu1,p,2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,indicator_36,609.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,71.0,2023
+Santha,nS9UOwtscu1,p,2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,indicator_36,609.0,4,36a,ixBYYYjxXPP,0.0,2023
+Mehadawal,qEXJSGxJGJX,p,2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,indicator_36,610.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,335.0,2023
+Mehadawal,qEXJSGxJGJX,p,2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,indicator_36,610.0,4,36a,ixBYYYjxXPP,335.0,2023
+Nathnagar,rOs2X9fLu4i,p,2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,indicator_36,615.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,225.0,2023
+Nathnagar,rOs2X9fLu4i,p,2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,indicator_36,615.0,4,36a,ixBYYYjxXPP,91.0,2023
+Sidhpura,DCamfBCJMSi,p,2023-01-01,Kasganj,hITp09XOBLZ,indicator_36,821.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,193.0,2023
+Sidhpura,DCamfBCJMSi,p,2023-01-01,Kasganj,hITp09XOBLZ,indicator_36,821.0,4,36a,ixBYYYjxXPP,148.0,2023
+Sahawar,KjLfuqjRVec,p,2023-01-01,Kasganj,hITp09XOBLZ,indicator_36,818.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,237.0,2023
+Sahawar,KjLfuqjRVec,p,2023-01-01,Kasganj,hITp09XOBLZ,indicator_36,818.0,4,36a,ixBYYYjxXPP,237.0,2023
+Kasganj DHQ,UuNK1H4MurF,p,2023-01-01,Kasganj,hITp09XOBLZ,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,0.0,2023
+Kasganj DHQ,UuNK1H4MurF,p,2023-01-01,Kasganj,hITp09XOBLZ,indicator_36,,4,36a,ixBYYYjxXPP,72.0,2023
+Patiyali,at47ZXktqxv,p,2023-01-01,Kasganj,hITp09XOBLZ,indicator_36,820.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,212.0,2023
+Patiyali,at47ZXktqxv,p,2023-01-01,Kasganj,hITp09XOBLZ,indicator_36,820.0,4,36a,ixBYYYjxXPP,212.0,2023
+Amapur,ayWFJQ6ulBH,p,2023-01-01,Kasganj,hITp09XOBLZ,indicator_36,817.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,189.0,2023
+Amapur,ayWFJQ6ulBH,p,2023-01-01,Kasganj,hITp09XOBLZ,indicator_36,817.0,4,36a,ixBYYYjxXPP,0.0,2023
+kasganj,jvUzHuel9I6,p,2023-01-01,Kasganj,hITp09XOBLZ,indicator_36,816.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,722.0,2023
+kasganj,jvUzHuel9I6,p,2023-01-01,Kasganj,hITp09XOBLZ,indicator_36,816.0,4,36a,ixBYYYjxXPP,323.0,2023
+Soron,lBW2OFwomV0,p,2023-01-01,Kasganj,hITp09XOBLZ,indicator_36,815.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,223.0,2023
+Soron,lBW2OFwomV0,p,2023-01-01,Kasganj,hITp09XOBLZ,indicator_36,815.0,4,36a,ixBYYYjxXPP,268.0,2023
+Ganjdunwara,rhv6cneiTR1,p,2023-01-01,Kasganj,hITp09XOBLZ,indicator_36,819.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,222.0,2023
+Ganjdunwara,rhv6cneiTR1,p,2023-01-01,Kasganj,hITp09XOBLZ,indicator_36,819.0,4,36a,ixBYYYjxXPP,0.0,2023
+Aeliya,DPIQ2VWtvGl,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,245.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,163.0,2023
+Aeliya,DPIQ2VWtvGl,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,245.0,4,36a,ixBYYYjxXPP,163.0,2023
+Kasmanda,E8Ds6nIiHXM,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,257.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,308.0,2023
+Mishirikh,Gfmfuy8CQrI,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,242.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,415.0,2023
+Mishirikh,Gfmfuy8CQrI,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,242.0,4,36a,ixBYYYjxXPP,226.0,2023
+Gondlamau,HWAP9AgN3Ym,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,244.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,147.0,2023
+Gondlamau,HWAP9AgN3Ym,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,244.0,4,36a,ixBYYYjxXPP,85.0,2023
+Pahla,I2ZGoBUtTtO,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,254.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,136.0,2023
+Pahla,I2ZGoBUtTtO,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,254.0,4,36a,ixBYYYjxXPP,142.0,2023
+Maholi,KEc8Ha9MyTJ,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,241.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,275.0,2023
+Maholi,KEc8Ha9MyTJ,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,241.0,4,36a,ixBYYYjxXPP,163.0,2023
+Sidhauli,NAhNn2JVtnF,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,258.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,279.0,2023
+Sidhauli,NAhNn2JVtnF,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,258.0,4,36a,ixBYYYjxXPP,276.0,2023
+Reusa,W91p7yS5r9P,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,251.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,0.0,2023
+Reusa,W91p7yS5r9P,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,251.0,4,36a,ixBYYYjxXPP,220.0,2023
+Khiarabad,ch0hBYu0VuS,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,248.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,184.0,2023
+Khiarabad,ch0hBYu0VuS,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,248.0,4,36a,ixBYYYjxXPP,0.0,2023
+Machrehta,eiVpF4VfZGS,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,243.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,249.0,2023
+Machrehta,eiVpF4VfZGS,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,243.0,4,36a,ixBYYYjxXPP,221.0,2023
+Mahmudabad Sitapur,gCv411YjGXv,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,255.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,413.0,2023
+Mahmudabad Sitapur,gCv411YjGXv,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,255.0,4,36a,ixBYYYjxXPP,240.0,2023
+Biswan,gSwqRR5qMEE,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,253.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,470.0,2023
+Biswan,gSwqRR5qMEE,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,253.0,4,36a,ixBYYYjxXPP,964.0,2023
+Behta,nKJmMxPaEZ9,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,250.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,284.0,2023
+Behta,nKJmMxPaEZ9,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,250.0,4,36a,ixBYYYjxXPP,272.0,2023
+Hergaon,nwuxQQpdi7D,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,246.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,248.0,2023
+Hergaon,nwuxQQpdi7D,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,246.0,4,36a,ixBYYYjxXPP,333.0,2023
+Sitapur DHQ,ql65TcOIaDt,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1114.0,2023
+Sitapur DHQ,ql65TcOIaDt,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,,4,36a,ixBYYYjxXPP,391.0,2023
+Persendi,qyrJ0VLceRJ,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,247.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,250.0,2023
+Persendi,qyrJ0VLceRJ,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,247.0,4,36a,ixBYYYjxXPP,250.0,2023
+Laharpur,tIk5hphkbm1,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,249.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,294.0,2023
+Laharpur,tIk5hphkbm1,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,249.0,4,36a,ixBYYYjxXPP,248.0,2023
+Rampur Mathura,tvZfs4DYlev,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,256.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,395.0,2023
+Rampur Mathura,tvZfs4DYlev,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,256.0,4,36a,ixBYYYjxXPP,298.0,2023
+Pisawan,yubhT8MSy2O,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,240.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,140.0,2023
+Pisawan,yubhT8MSy2O,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,240.0,4,36a,ixBYYYjxXPP,140.0,2023
+Sakran,zghTOXwIiKT,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,252.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,352.0,2023
+Sakran,zghTOXwIiKT,p,2023-01-01,Sitapur,XxaOowFtkiJ,indicator_36,252.0,4,36a,ixBYYYjxXPP,0.0,2023
+Etawah Badpura,DQKs9hxWhSr,p,2023-01-01,Etawah,Pm0jLk6EAiE,indicator_36,340.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,119.0,2023
+Etawah Badpura,DQKs9hxWhSr,p,2023-01-01,Etawah,Pm0jLk6EAiE,indicator_36,340.0,4,36a,ixBYYYjxXPP,74.0,2023
+Etawah DHQ,H82DYZCKRwR,p,2023-01-01,Etawah,Pm0jLk6EAiE,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1071.0,2023
+Etawah DHQ,H82DYZCKRwR,p,2023-01-01,Etawah,Pm0jLk6EAiE,indicator_36,,4,36a,ixBYYYjxXPP,474.0,2023
+Etawah Basrehar,JBG7yZn3ZhD,p,2023-01-01,Etawah,Pm0jLk6EAiE,indicator_36,341.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,348.0,2023
+Etawah Basrehar,JBG7yZn3ZhD,p,2023-01-01,Etawah,Pm0jLk6EAiE,indicator_36,341.0,4,36a,ixBYYYjxXPP,336.0,2023
+Etawah Jasventnagar,L3tm8ZCQ4VU,p,2023-01-01,Etawah,Pm0jLk6EAiE,indicator_36,338.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,195.0,2023
+Etawah Jasventnagar,L3tm8ZCQ4VU,p,2023-01-01,Etawah,Pm0jLk6EAiE,indicator_36,338.0,4,36a,ixBYYYjxXPP,0.0,2023
+Etawah Chkernagar,eLIy5rJdmIo,p,2023-01-01,Etawah,Pm0jLk6EAiE,indicator_36,345.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,72.0,2023
+Etawah Chkernagar,eLIy5rJdmIo,p,2023-01-01,Etawah,Pm0jLk6EAiE,indicator_36,345.0,4,36a,ixBYYYjxXPP,98.0,2023
+Etawah Mahewa,g6QRDUGvU6j,p,2023-01-01,Etawah,Pm0jLk6EAiE,indicator_36,344.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,325.0,2023
+Etawah Mahewa,g6QRDUGvU6j,p,2023-01-01,Etawah,Pm0jLk6EAiE,indicator_36,344.0,4,36a,ixBYYYjxXPP,318.0,2023
+Etawah Saifai,kxTyOTd53rb,p,2023-01-01,Etawah,Pm0jLk6EAiE,indicator_36,339.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,12.0,2023
+Etawah Saifai,kxTyOTd53rb,p,2023-01-01,Etawah,Pm0jLk6EAiE,indicator_36,339.0,4,36a,ixBYYYjxXPP,0.0,2023
+Etawah Thakha,vVEYFNLCthf,p,2023-01-01,Etawah,Pm0jLk6EAiE,indicator_36,342.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,143.0,2023
+Etawah Thakha,vVEYFNLCthf,p,2023-01-01,Etawah,Pm0jLk6EAiE,indicator_36,342.0,4,36a,ixBYYYjxXPP,98.0,2023
+Etawah Bherthna,xraYmPK0pc5,p,2023-01-01,Etawah,Pm0jLk6EAiE,indicator_36,343.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,194.0,2023
+Etawah Bherthna,xraYmPK0pc5,p,2023-01-01,Etawah,Pm0jLk6EAiE,indicator_36,343.0,4,36a,ixBYYYjxXPP,253.0,2023
+Lalitpur Madawara,DQg8KWOYf9m,p,2023-01-01,Lalitpur,fagfcadhxej,indicator_36,395.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,252.0,2023
+Lalitpur Madawara,DQg8KWOYf9m,p,2023-01-01,Lalitpur,fagfcadhxej,indicator_36,395.0,4,36a,ixBYYYjxXPP,227.0,2023
+Lalitpur  DHQ,OlW82qQAtpe,p,2023-01-01,Lalitpur,fagfcadhxej,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,669.0,2023
+Lalitpur  DHQ,OlW82qQAtpe,p,2023-01-01,Lalitpur,fagfcadhxej,indicator_36,,4,36a,ixBYYYjxXPP,487.0,2023
+Lalitpur Jakhaura,cBlMjL2O6oW,p,2023-01-01,Lalitpur,fagfcadhxej,indicator_36,391.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,169.0,2023
+Lalitpur Jakhaura,cBlMjL2O6oW,p,2023-01-01,Lalitpur,fagfcadhxej,indicator_36,391.0,4,36a,ixBYYYjxXPP,188.0,2023
+Lalitpur Talbehat,hByPwhy4hFw,p,2023-01-01,Lalitpur,fagfcadhxej,indicator_36,390.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,294.0,2023
+Lalitpur Talbehat,hByPwhy4hFw,p,2023-01-01,Lalitpur,fagfcadhxej,indicator_36,390.0,4,36a,ixBYYYjxXPP,0.0,2023
+Lalitpur Mahroni,hSxXTcaWSE8,p,2023-01-01,Lalitpur,fagfcadhxej,indicator_36,394.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,222.0,2023
+Lalitpur Mahroni,hSxXTcaWSE8,p,2023-01-01,Lalitpur,fagfcadhxej,indicator_36,394.0,4,36a,ixBYYYjxXPP,178.0,2023
+Lalitpur Birdha,ilEX3iUSCkP,p,2023-01-01,Lalitpur,fagfcadhxej,indicator_36,393.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,263.0,2023
+Lalitpur Birdha,ilEX3iUSCkP,p,2023-01-01,Lalitpur,fagfcadhxej,indicator_36,393.0,4,36a,ixBYYYjxXPP,300.0,2023
+Lalitpur Bar,qMddUgnDzYX,p,2023-01-01,Lalitpur,fagfcadhxej,indicator_36,392.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,308.0,2023
+Lalitpur Bar,qMddUgnDzYX,p,2023-01-01,Lalitpur,fagfcadhxej,indicator_36,392.0,4,36a,ixBYYYjxXPP,402.0,2023
+Tandiyanwa,DSmdrNpxWTp,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,270.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,191.0,2023
+Tandiyanwa,DSmdrNpxWTp,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,270.0,4,36a,ixBYYYjxXPP,0.0,2023
+Ahirori,JNhW47eyrRv,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,272.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,285.0,2023
+Ahirori,JNhW47eyrRv,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,272.0,4,36a,ixBYYYjxXPP,302.0,2023
+Malanwan,L7LEJCs3NnM,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,268.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,180.0,2023
+Malanwan,L7LEJCs3NnM,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,268.0,4,36a,ixBYYYjxXPP,180.0,2023
+Sahabad,NvR1ROHQCYV,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,259.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,261.0,2023
+Sahabad,NvR1ROHQCYV,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,259.0,4,36a,ixBYYYjxXPP,0.0,2023
+Sandi,OG07uORb7i2,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,265.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,169.0,2023
+Sandi,OG07uORb7i2,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,265.0,4,36a,ixBYYYjxXPP,0.0,2023
+Harpalpur,TY7glMGf9aG,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,264.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,318.0,2023
+Harpalpur,TY7glMGf9aG,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,264.0,4,36a,ixBYYYjxXPP,297.0,2023
+Bilgram,TqhQTNCu0rW,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,266.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,296.0,2023
+Bilgram,TqhQTNCu0rW,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,266.0,4,36a,ixBYYYjxXPP,0.0,2023
+Behander,VoR9CT9z1Rx,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,275.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,196.0,2023
+Behander,VoR9CT9z1Rx,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,275.0,4,36a,ixBYYYjxXPP,121.0,2023
+Sursa,dBCX7zX8Feb,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,271.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,122.0,2023
+Sursa,dBCX7zX8Feb,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,271.0,4,36a,ixBYYYjxXPP,82.0,2023
+Madhouganj,iBHysCEYPjb,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,267.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,199.0,2023
+Madhouganj,iBHysCEYPjb,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,267.0,4,36a,ixBYYYjxXPP,191.0,2023
+Tondarpur,jvwEe3kpMPg,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,260.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,78.0,2023
+Tondarpur,jvwEe3kpMPg,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,260.0,4,36a,ixBYYYjxXPP,0.0,2023
+Hardoi DHQ,kBVkJI1qaWb,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1116.0,2023
+Hardoi DHQ,kBVkJI1qaWb,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,,4,36a,ixBYYYjxXPP,0.0,2023
+Pihani,lr3CfswaZMq,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,261.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,422.0,2023
+Pihani,lr3CfswaZMq,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,261.0,4,36a,ixBYYYjxXPP,0.0,2023
+Barkhani,pkRX2naWpN3,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,262.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,261.0,2023
+Barkhani,pkRX2naWpN3,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,262.0,4,36a,ixBYYYjxXPP,0.0,2023
+Hariyanwa,ruw57rtPpxr,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,269.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,164.0,2023
+Hariyanwa,ruw57rtPpxr,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,269.0,4,36a,ixBYYYjxXPP,164.0,2023
+Sandila,tZXCzgn6lut,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,276.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,273.0,2023
+Sandila,tZXCzgn6lut,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,276.0,4,36a,ixBYYYjxXPP,204.0,2023
+Bawan,tbi6Bsb6jlU,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,263.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,189.0,2023
+Bawan,tbi6Bsb6jlU,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,263.0,4,36a,ixBYYYjxXPP,105.0,2023
+Bharawan,wPymOYKUUFI,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,277.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,185.0,2023
+Bharawan,wPymOYKUUFI,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,277.0,4,36a,ixBYYYjxXPP,364.0,2023
+Kachhuna,zOlFDV0qaZN,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,274.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,157.0,2023
+Kachhuna,zOlFDV0qaZN,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,274.0,4,36a,ixBYYYjxXPP,0.0,2023
+Kothanwa,zR4FjrKQweN,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,273.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,303.0,2023
+Kothanwa,zR4FjrKQweN,p,2023-01-01,Hardoi,MTIkUw5q5pX,indicator_36,273.0,4,36a,ixBYYYjxXPP,302.0,2023
+Maunathbhanjan Badraon,DlJoJFtt9AE,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,703.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,158.0,2023
+Maunathbhanjan Badraon,DlJoJFtt9AE,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,703.0,4,36a,ixBYYYjxXPP,0.0,2023
+Maunathbhanjan DHQ,Obe6UPmf0LR,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,2263.0,2023
+Maunathbhanjan DHQ,Obe6UPmf0LR,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,,4,36a,ixBYYYjxXPP,137.0,2023
+Maunathbhanjan F.Mandaon,YXOk9K2OqNI,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,704.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,173.0,2023
+Maunathbhanjan F.Mandaon,YXOk9K2OqNI,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,704.0,4,36a,ixBYYYjxXPP,0.0,2023
+Maunathbhanjan Ghosi,d3k76C0y5y9,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,702.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,167.0,2023
+Maunathbhanjan Ghosi,d3k76C0y5y9,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,702.0,4,36a,ixBYYYjxXPP,0.0,2023
+Maunathbhanjan Pardha,la9bHITzK55,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,706.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,147.0,2023
+Maunathbhanjan Pardha,la9bHITzK55,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,706.0,4,36a,ixBYYYjxXPP,0.0,2023
+Maunathbhanjan Mohmmada Bad,rLdutISw29n,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,708.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,189.0,2023
+Maunathbhanjan Mohmmada Bad,rLdutISw29n,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,708.0,4,36a,ixBYYYjxXPP,0.0,2023
+Maunathbhanjan Ranipur,s9bnhPCNlnj,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,709.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,168.0,2023
+Maunathbhanjan Ranipur,s9bnhPCNlnj,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,709.0,4,36a,ixBYYYjxXPP,153.0,2023
+Maunathbhanjan Kopaganj,tGyBIzhjmij,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,705.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,250.0,2023
+Maunathbhanjan Kopaganj,tGyBIzhjmij,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,705.0,4,36a,ixBYYYjxXPP,0.0,2023
+Maunathbhanjan Ratanpura,u9ZAWcpGHu9,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,707.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,108.0,2023
+Maunathbhanjan Ratanpura,u9ZAWcpGHu9,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,707.0,4,36a,ixBYYYjxXPP,190.0,2023
+Maunathbhanjan Doharighat,y2tYqTLUS24,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,701.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,166.0,2023
+Maunathbhanjan Doharighat,y2tYqTLUS24,p,2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_36,701.0,4,36a,ixBYYYjxXPP,0.0,2023
+Sambhal DHQ,E3NqDNq6JJg,p,2023-01-01,Sambhal,YzHpzrN0eLv,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,333.0,2023
+Naroli,SedCcdeSesp,p,2023-01-01,Sambhal,YzHpzrN0eLv,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,572.0,2023
+Naroli,SedCcdeSesp,p,2023-01-01,Sambhal,YzHpzrN0eLv,indicator_36,,4,36a,ixBYYYjxXPP,337.0,2023
+Gunnour,WtDIWivefft,p,2023-01-01,Sambhal,YzHpzrN0eLv,indicator_36,171.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,337.0,2023
+Gunnour,WtDIWivefft,p,2023-01-01,Sambhal,YzHpzrN0eLv,indicator_36,171.0,4,36a,ixBYYYjxXPP,270.0,2023
+Sambhal,XW2FOqHQemu,p,2023-01-01,Sambhal,YzHpzrN0eLv,indicator_36,47.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,582.0,2023
+Sambhal,XW2FOqHQemu,p,2023-01-01,Sambhal,YzHpzrN0eLv,indicator_36,47.0,4,36a,ixBYYYjxXPP,175.0,2023
+Asmoli,Xkw9hBGJS6I,p,2023-01-01,Sambhal,YzHpzrN0eLv,indicator_36,46.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,75.0,2023
+Asmoli,Xkw9hBGJS6I,p,2023-01-01,Sambhal,YzHpzrN0eLv,indicator_36,46.0,4,36a,ixBYYYjxXPP,0.0,2023
+Rajpura,YxWlmBfIHmq,p,2023-01-01,Sambhal,YzHpzrN0eLv,indicator_36,170.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,293.0,2023
+Rajpura,YxWlmBfIHmq,p,2023-01-01,Sambhal,YzHpzrN0eLv,indicator_36,170.0,4,36a,ixBYYYjxXPP,175.0,2023
+Pawansa,f6vmbanfxRo,p,2023-01-01,Sambhal,YzHpzrN0eLv,indicator_36,48.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,136.0,2023
+Junawai,gspBjXC9nc5,p,2023-01-01,Sambhal,YzHpzrN0eLv,indicator_36,172.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,252.0,2023
+Junawai,gspBjXC9nc5,p,2023-01-01,Sambhal,YzHpzrN0eLv,indicator_36,172.0,4,36a,ixBYYYjxXPP,245.0,2023
+Bahjoi,uqiwsVkCjJB,p,2023-01-01,Sambhal,YzHpzrN0eLv,indicator_36,49.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,299.0,2023
+Bahjoi,uqiwsVkCjJB,p,2023-01-01,Sambhal,YzHpzrN0eLv,indicator_36,49.0,4,36a,ixBYYYjxXPP,269.0,2023
+Badoukher Khurd,EFUeXhmIy8J,p,2023-01-01,Banda,DggJGxqbWHn,indicator_36,409.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,591.0,2023
+Badoukher Khurd,EFUeXhmIy8J,p,2023-01-01,Banda,DggJGxqbWHn,indicator_36,409.0,4,36a,ixBYYYjxXPP,776.0,2023
+Kemasin,FhvPjqLG12y,p,2023-01-01,Banda,DggJGxqbWHn,indicator_36,411.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,333.0,2023
+Kemasin,FhvPjqLG12y,p,2023-01-01,Banda,DggJGxqbWHn,indicator_36,411.0,4,36a,ixBYYYjxXPP,300.0,2023
+Nereani,PPxFR8laHqe,p,2023-01-01,Banda,DggJGxqbWHn,indicator_36,414.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,635.0,2023
+Nereani,PPxFR8laHqe,p,2023-01-01,Banda,DggJGxqbWHn,indicator_36,414.0,4,36a,ixBYYYjxXPP,365.0,2023
+Baberu,QAfsawYvIW0,p,2023-01-01,Banda,DggJGxqbWHn,indicator_36,410.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,363.0,2023
+Baberu,QAfsawYvIW0,p,2023-01-01,Banda,DggJGxqbWHn,indicator_36,410.0,4,36a,ixBYYYjxXPP,363.0,2023
+Banda DHQ ,QIufPcB6Kr6,p,2023-01-01,Banda,DggJGxqbWHn,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,129.0,2023
+Tindwari,UVNiCb7ffry,p,2023-01-01,Banda,DggJGxqbWHn,indicator_36,408.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,256.0,2023
+Tindwari,UVNiCb7ffry,p,2023-01-01,Banda,DggJGxqbWHn,indicator_36,408.0,4,36a,ixBYYYjxXPP,0.0,2023
+Bisanda,emjMgvubuGe,p,2023-01-01,Banda,DggJGxqbWHn,indicator_36,412.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,277.0,2023
+Bisanda,emjMgvubuGe,p,2023-01-01,Banda,DggJGxqbWHn,indicator_36,412.0,4,36a,ixBYYYjxXPP,257.0,2023
+Jaspura,iD2sVe31G90,p,2023-01-01,Banda,DggJGxqbWHn,indicator_36,407.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,176.0,2023
+Jaspura,iD2sVe31G90,p,2023-01-01,Banda,DggJGxqbWHn,indicator_36,407.0,4,36a,ixBYYYjxXPP,0.0,2023
+Mahuwa,kKjIKi66mY2,p,2023-01-01,Banda,DggJGxqbWHn,indicator_36,413.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,321.0,2023
+Mahuwa,kKjIKi66mY2,p,2023-01-01,Banda,DggJGxqbWHn,indicator_36,413.0,4,36a,ixBYYYjxXPP,0.0,2023
+Panwari,ESC202G5t07,p,2023-01-01,Mahoba,sUQMxIc3yXj,indicator_36,403.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,151.0,2023
+Panwari,ESC202G5t07,p,2023-01-01,Mahoba,sUQMxIc3yXj,indicator_36,403.0,4,36a,ixBYYYjxXPP,67.0,2023
+Kabari,GfFQEUX1ZYy,p,2023-01-01,Mahoba,sUQMxIc3yXj,indicator_36,406.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,652.0,2023
+Kabari,GfFQEUX1ZYy,p,2023-01-01,Mahoba,sUQMxIc3yXj,indicator_36,406.0,4,36a,ixBYYYjxXPP,268.0,2023
+Jaitpur,HuW3JM0nGTz,p,2023-01-01,Mahoba,sUQMxIc3yXj,indicator_36,404.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,133.0,2023
+Jaitpur,HuW3JM0nGTz,p,2023-01-01,Mahoba,sUQMxIc3yXj,indicator_36,404.0,4,36a,ixBYYYjxXPP,0.0,2023
+Mahoba DHQ,k7nZry9XTd5,p,2023-01-01,Mahoba,sUQMxIc3yXj,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,0.0,2023
+Charkhari,voVPLJSfahW,p,2023-01-01,Mahoba,sUQMxIc3yXj,indicator_36,405.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,149.0,2023
+Charkhari,voVPLJSfahW,p,2023-01-01,Mahoba,sUQMxIc3yXj,indicator_36,405.0,4,36a,ixBYYYjxXPP,164.0,2023
+Bijnor Jalilpur,EdO6OYkMy4n,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,35.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,912.0,2023
+Bijnor Jalilpur,EdO6OYkMy4n,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,35.0,4,36a,ixBYYYjxXPP,112.0,2023
+Bijnor Haldaur,R2Jott0TJjX,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,29.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,268.0,2023
+Bijnor Haldaur,R2Jott0TJjX,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,29.0,4,36a,ixBYYYjxXPP,123.0,2023
+Bijnor Seohara,X5WeRBwPtNl,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,34.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,374.0,2023
+Bijnor Seohara,X5WeRBwPtNl,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,34.0,4,36a,ixBYYYjxXPP,80.0,2023
+Bijnor Noorpur,aHuzZgGIslk,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,36.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,787.0,2023
+Bijnor Noorpur,aHuzZgGIslk,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,36.0,4,36a,ixBYYYjxXPP,80.0,2023
+Bijnor Najibabad,c6v4wYwFFOK,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,26.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1298.0,2023
+Bijnor Najibabad,c6v4wYwFFOK,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,26.0,4,36a,ixBYYYjxXPP,0.0,2023
+Bijnor Dhampur,hFYPDvQ1x7I,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,732.0,2023
+Bijnor Dhampur,hFYPDvQ1x7I,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,,4,36a,ixBYYYjxXPP,35.0,2023
+Bijnor Kotwali,j5nQ6oNNVnX,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,30.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,249.0,2023
+Bijnor Kotwali,j5nQ6oNNVnX,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,30.0,4,36a,ixBYYYjxXPP,249.0,2023
+Bijnor  DHQ  ,pE27TXbzXZ5,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1388.0,2023
+Bijnor  DHQ  ,pE27TXbzXZ5,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,,4,36a,ixBYYYjxXPP,163.0,2023
+Bijnor Nehtaur,rAeHXnn5JSw,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,32.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,114.0,2023
+Bijnor Nehtaur,rAeHXnn5JSw,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,32.0,4,36a,ixBYYYjxXPP,126.0,2023
+Bijnor Kiratpur,rzAzyO3UWpL,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,27.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,570.0,2023
+Bijnor Kiratpur,rzAzyO3UWpL,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,27.0,4,36a,ixBYYYjxXPP,138.0,2023
+Bijnor Chandok,shhTmT0DeTX,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1509.0,2023
+Bijnor Chandok,shhTmT0DeTX,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,,4,36a,ixBYYYjxXPP,95.0,2023
+Bijnor Afjialgarh,wwaYoRwSd1k,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,31.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,213.0,2023
+Bijnor Afjialgarh,wwaYoRwSd1k,p,2023-01-01,Bijnor,uCYjHW7FuGG,indicator_36,31.0,4,36a,ixBYYYjxXPP,215.0,2023
+Sangipur,EgafD8LSM5T,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,433.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,206.0,2023
+Sangipur,EgafD8LSM5T,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,433.0,4,36a,ixBYYYjxXPP,40.0,2023
+Shivgarh Pratapgarh,GMBAMYjK1nv,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,447.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,114.0,2023
+Shivgarh Pratapgarh,GMBAMYjK1nv,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,447.0,4,36a,ixBYYYjxXPP,49.0,2023
+Patti,QGFqwtIZDnf,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,445.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,173.0,2023
+Patti,QGFqwtIZDnf,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,445.0,4,36a,ixBYYYjxXPP,159.0,2023
+Belkharnath,VmevjLb8Eme,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,449.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,141.0,2023
+Belkharnath,VmevjLb8Eme,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,449.0,4,36a,ixBYYYjxXPP,88.0,2023
+Kunda,XnEGHve0wKr,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,439.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,465.0,2023
+Kunda,XnEGHve0wKr,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,439.0,4,36a,ixBYYYjxXPP,202.0,2023
+SChandrika,ZFpgvZ5wO0j,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,441.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,72.0,2023
+SChandrika,ZFpgvZ5wO0j,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,441.0,4,36a,ixBYYYjxXPP,0.0,2023
+Mandhata,ZjQLMtbMM7E,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,443.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,106.0,2023
+Mandhata,ZjQLMtbMM7E,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,443.0,4,36a,ixBYYYjxXPP,71.0,2023
+Gaura,b29DRuniQju,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,448.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,133.0,2023
+Gaura,b29DRuniQju,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,448.0,4,36a,ixBYYYjxXPP,0.0,2023
+RSangramgarh,dRG9GGcp4gQ,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,436.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,138.0,2023
+RSangramgarh,dRG9GGcp4gQ,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,436.0,4,36a,ixBYYYjxXPP,127.0,2023
+Sadar,dlErcN5wTNz,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,442.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,148.0,2023
+Sadar,dlErcN5wTNz,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,442.0,4,36a,ixBYYYjxXPP,31.0,2023
+Kohandaur,es3YNWUdqOh,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,116.0,2023
+Kohandaur,es3YNWUdqOh,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,,4,36a,ixBYYYjxXPP,92.0,2023
+Aaspurdavsra,iobObmzVNqo,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,446.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,69.0,2023
+Aaspurdavsra,iobObmzVNqo,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,446.0,4,36a,ixBYYYjxXPP,15.0,2023
+Vihar,klR8OoJpYaw,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,440.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,116.0,2023
+Vihar,klR8OoJpYaw,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,440.0,4,36a,ixBYYYjxXPP,0.0,2023
+Pratapgarh DHQ,l7DJJezKzTw,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1232.0,2023
+Pratapgarh DHQ,l7DJJezKzTw,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,,4,36a,ixBYYYjxXPP,743.0,2023
+Lalganj Pratapgarh,lZg8HzmVg9D,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,434.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,118.0,2023
+Lalganj Pratapgarh,lZg8HzmVg9D,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,434.0,4,36a,ixBYYYjxXPP,84.0,2023
+Laxmanpur,loZ8Meaktfa,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,435.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,47.0,2023
+Laxmanpur,loZ8Meaktfa,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,435.0,4,36a,ixBYYYjxXPP,64.0,2023
+Kalakaker,qmMPEkTsow1,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,437.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,171.0,2023
+Kalakaker,qmMPEkTsow1,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,437.0,4,36a,ixBYYYjxXPP,185.0,2023
+Babaganj,yepP1LEwWeE,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,438.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,97.0,2023
+Babaganj,yepP1LEwWeE,p,2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_36,438.0,4,36a,ixBYYYjxXPP,75.0,2023
+Bankuti,Ek8aj4Sjo0n,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,606.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,122.0,2023
+Dubealiya,I6SfaoTpBWQ,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,602.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,69.0,2023
+Dubealiya,I6SfaoTpBWQ,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,602.0,4,36a,ixBYYYjxXPP,63.0,2023
+Hreaiya,QB1bWVUZvNY,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,599.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,132.0,2023
+Hreaiya,QB1bWVUZvNY,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,599.0,4,36a,ixBYYYjxXPP,100.0,2023
+Bhadurpur,Rhej6WFZaSI,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,607.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,137.0,2023
+Bhadurpur,Rhej6WFZaSI,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,607.0,4,36a,ixBYYYjxXPP,101.0,2023
+Rudhouli,X4NDrvDmL4p,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,603.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,195.0,2023
+Rudhouli,X4NDrvDmL4p,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,603.0,4,36a,ixBYYYjxXPP,292.0,2023
+Kaptanganj Basti,XyOAuYi23Qw,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,601.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,105.0,2023
+Kaptanganj Basti,XyOAuYi23Qw,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,601.0,4,36a,ixBYYYjxXPP,186.0,2023
+Kudreha,gwFahuoicRH,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,608.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,63.0,2023
+Kudreha,gwFahuoicRH,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,608.0,4,36a,ixBYYYjxXPP,38.0,2023
+Basti DHQ,hIlEZsYKlhK,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,300.0,2023
+Ramnagar Basti,jiDSxIFBh1G,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,595.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,192.0,2023
+Ramnagar Basti,jiDSxIFBh1G,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,595.0,4,36a,ixBYYYjxXPP,286.0,2023
+Sahughat,knCO4emeZY1,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,604.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,202.0,2023
+Sahughat,knCO4emeZY1,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,604.0,4,36a,ixBYYYjxXPP,177.0,2023
+Parasrampur,nE41ZrKaU9G,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,597.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,260.0,2023
+Parasrampur,nE41ZrKaU9G,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,597.0,4,36a,ixBYYYjxXPP,567.0,2023
+Goura,omXlDQQZhm0,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,598.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,218.0,2023
+Goura,omXlDQQZhm0,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,598.0,4,36a,ixBYYYjxXPP,150.0,2023
+Vikramjot,r1D91q65KwQ,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,600.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,117.0,2023
+Vikramjot,r1D91q65KwQ,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,600.0,4,36a,ixBYYYjxXPP,110.0,2023
+Saltova,tLE0KpRqOMk,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,596.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,208.0,2023
+Saltova,tLE0KpRqOMk,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,596.0,4,36a,ixBYYYjxXPP,77.0,2023
+Basti Sader,zshpWWwvLd3,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,605.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,857.0,2023
+Basti Sader,zshpWWwvLd3,p,2023-01-01,Basti,J1P16zQEOUT,indicator_36,605.0,4,36a,ixBYYYjxXPP,365.0,2023
+Gajraula,F4PpXNqeUpP,p,2023-01-01,Amroha,hgquAmZaNBu,indicator_36,59.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,688.0,2023
+Gajraula,F4PpXNqeUpP,p,2023-01-01,Amroha,hgquAmZaNBu,indicator_36,59.0,4,36a,ixBYYYjxXPP,163.0,2023
+Dhanaura,KocU1z4MS42,p,2023-01-01,Amroha,hgquAmZaNBu,indicator_36,56.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,726.0,2023
+Dhanaura,KocU1z4MS42,p,2023-01-01,Amroha,hgquAmZaNBu,indicator_36,56.0,4,36a,ixBYYYjxXPP,164.0,2023
+Amroha DHQ,Ygt5E2MGGWd,p,2023-01-01,Amroha,hgquAmZaNBu,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,179.0,2023
+Amroha DHQ,Ygt5E2MGGWd,p,2023-01-01,Amroha,hgquAmZaNBu,indicator_36,,4,36a,ixBYYYjxXPP,0.0,2023
+Gangeshwari,bkkdTIrC9mc,p,2023-01-01,Amroha,hgquAmZaNBu,indicator_36,61.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,217.0,2023
+Gangeshwari,bkkdTIrC9mc,p,2023-01-01,Amroha,hgquAmZaNBu,indicator_36,61.0,4,36a,ixBYYYjxXPP,2.0,2023
+Block Amroha,o9uEgq78lMK,p,2023-01-01,Amroha,hgquAmZaNBu,indicator_36,57.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,502.0,2023
+Block Amroha,o9uEgq78lMK,p,2023-01-01,Amroha,hgquAmZaNBu,indicator_36,57.0,4,36a,ixBYYYjxXPP,139.0,2023
+Joya,ouPBHlLzBAu,p,2023-01-01,Amroha,hgquAmZaNBu,indicator_36,58.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,508.0,2023
+Joya,ouPBHlLzBAu,p,2023-01-01,Amroha,hgquAmZaNBu,indicator_36,58.0,4,36a,ixBYYYjxXPP,118.0,2023
+Hasanpur,rWNzTUgiIT6,p,2023-01-01,Amroha,hgquAmZaNBu,indicator_36,60.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,435.0,2023
+Hasanpur,rWNzTUgiIT6,p,2023-01-01,Amroha,hgquAmZaNBu,indicator_36,60.0,4,36a,ixBYYYjxXPP,95.0,2023
+Hamirpur Nauranga,F4fL0v4ObFM,p,2023-01-01,Hamirpur,VSI7HobT5qL,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,251.0,2023
+Hamirpur Nauranga,F4fL0v4ObFM,p,2023-01-01,Hamirpur,VSI7HobT5qL,indicator_36,,4,36a,ixBYYYjxXPP,0.0,2023
+Hamirpur Kurara,JcfBKD9Fdaw,p,2023-01-01,Hamirpur,VSI7HobT5qL,indicator_36,396.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,98.0,2023
+Hamirpur Kurara,JcfBKD9Fdaw,p,2023-01-01,Hamirpur,VSI7HobT5qL,indicator_36,396.0,4,36a,ixBYYYjxXPP,0.0,2023
+Hamirpur DHQ,KZozTRTvHgU,p,2023-01-01,Hamirpur,VSI7HobT5qL,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,241.0,2023
+Hamirpur DHQ,KZozTRTvHgU,p,2023-01-01,Hamirpur,VSI7HobT5qL,indicator_36,,4,36a,ixBYYYjxXPP,235.0,2023
+Hamirpur Gohand,SEb6dTDNGdm,p,2023-01-01,Hamirpur,VSI7HobT5qL,indicator_36,399.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,77.0,2023
+Hamirpur Gohand,SEb6dTDNGdm,p,2023-01-01,Hamirpur,VSI7HobT5qL,indicator_36,399.0,4,36a,ixBYYYjxXPP,53.0,2023
+Hamirpur Dhagwa,X8nyWuBobaz,p,2023-01-01,Hamirpur,VSI7HobT5qL,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,72.0,2023
+Hamirpur Dhagwa,X8nyWuBobaz,p,2023-01-01,Hamirpur,VSI7HobT5qL,indicator_36,,4,36a,ixBYYYjxXPP,58.0,2023
+Hamirpur Muskura,Ye7mS631ryY,p,2023-01-01,Hamirpur,VSI7HobT5qL,indicator_36,401.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,179.0,2023
+Hamirpur Muskura,Ye7mS631ryY,p,2023-01-01,Hamirpur,VSI7HobT5qL,indicator_36,401.0,4,36a,ixBYYYjxXPP,0.0,2023
+Hamirpur Moudha,dDqSL7Hp2TV,p,2023-01-01,Hamirpur,VSI7HobT5qL,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,260.0,2023
+Hamirpur Moudha,dDqSL7Hp2TV,p,2023-01-01,Hamirpur,VSI7HobT5qL,indicator_36,,4,36a,ixBYYYjxXPP,260.0,2023
+Hamirpur Sumerpur,q73Py9jt80A,p,2023-01-01,Hamirpur,VSI7HobT5qL,indicator_36,397.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,312.0,2023
+Hamirpur Sumerpur,q73Py9jt80A,p,2023-01-01,Hamirpur,VSI7HobT5qL,indicator_36,397.0,4,36a,ixBYYYjxXPP,0.0,2023
+Ballia Pandah,F6ojCWU9pCH,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,713.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,125.0,2023
+Ballia Pandah,F6ojCWU9pCH,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,713.0,4,36a,ixBYYYjxXPP,24.0,2023
+Ballia Bansdih,G4HRu37srJN,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,723.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,122.0,2023
+Ballia Bansdih,G4HRu37srJN,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,723.0,4,36a,ixBYYYjxXPP,0.0,2023
+Ballia Nagra,L91X7r5wkfW,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,711.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,34.0,2023
+Ballia Beruarbari,MTIyIVsTiFD,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,722.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,168.0,2023
+Ballia Beruarbari,MTIyIVsTiFD,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,722.0,4,36a,ixBYYYjxXPP,0.0,2023
+Ballia Bairiya,WZYAC5DYYJk,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,725.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,170.0,2023
+Ballia Bairiya,WZYAC5DYYJk,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,725.0,4,36a,ixBYYYjxXPP,0.0,2023
+Ballia Reoti,ZEh2syBgHks,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,724.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,142.0,2023
+Ballia Reoti,ZEh2syBgHks,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,724.0,4,36a,ixBYYYjxXPP,110.0,2023
+Ballia Sohaw,aNOBGjwlNho,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,718.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,113.0,2023
+Ballia Dubhar,bmh3vNuN7xM,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,720.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,112.0,2023
+Ballia Dubhar,bmh3vNuN7xM,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,720.0,4,36a,ixBYYYjxXPP,0.0,2023
+Ballia Hanumanganj,cu4HLxXXRm1,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,719.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,496.0,2023
+Ballia Hanumanganj,cu4HLxXXRm1,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,719.0,4,36a,ixBYYYjxXPP,462.0,2023
+Ballia Maniyar,eFwNuT9zZod,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,714.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,110.0,2023
+Ballia Garwar,jh6PK3SOcHL,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,717.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,164.0,2023
+Ballia Garwar,jh6PK3SOcHL,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,717.0,4,36a,ixBYYYjxXPP,112.0,2023
+Ballia Navanagar,kepTOn7He9W,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,712.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,190.0,2023
+Ballia Navanagar,kepTOn7He9W,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,712.0,4,36a,ixBYYYjxXPP,0.0,2023
+Ballia Chilkahar,lLzGu8T43H8,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,716.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,89.0,2023
+Ballia Siar,mH7MZIxUv1s,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,710.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,187.0,2023
+Ballia Siar,mH7MZIxUv1s,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,710.0,4,36a,ixBYYYjxXPP,87.0,2023
+Ballia Bellhri,s2dEYvDCkAZ,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,721.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,123.0,2023
+Ballia Rasra,tws6xITzNhV,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,715.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,223.0,2023
+Ballia Rasra,tws6xITzNhV,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,715.0,4,36a,ixBYYYjxXPP,0.0,2023
+Ballia Murli Chhapra,wn2e7ufbuPd,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,726.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,130.0,2023
+Ballia Murli Chhapra,wn2e7ufbuPd,p,2023-01-01,Ballia,oNDvGBE5fLq,indicator_36,726.0,4,36a,ixBYYYjxXPP,0.0,2023
+Gautam Buddha Nagar Dankaur,FGqvmr1orP5,p,2023-01-01,Gautam Buddha Nagar,bNmwkrQeP3e,indicator_36,90.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,100.0,2023
+Gautam Buddha Nagar Dankaur,FGqvmr1orP5,p,2023-01-01,Gautam Buddha Nagar,bNmwkrQeP3e,indicator_36,90.0,4,36a,ixBYYYjxXPP,58.0,2023
+Gautam Buddha Nagar DHQ,H3RUhD0AAjW,p,2023-01-01,Gautam Buddha Nagar,bNmwkrQeP3e,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,2334.0,2023
+Gautam Buddha Nagar DHQ,H3RUhD0AAjW,p,2023-01-01,Gautam Buddha Nagar,bNmwkrQeP3e,indicator_36,,4,36a,ixBYYYjxXPP,485.0,2023
+Gautam Buddha Nagar Jever,dnrD7zqEOQ2,p,2023-01-01,Gautam Buddha Nagar,bNmwkrQeP3e,indicator_36,91.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,196.0,2023
+Gautam Buddha Nagar Jever,dnrD7zqEOQ2,p,2023-01-01,Gautam Buddha Nagar,bNmwkrQeP3e,indicator_36,91.0,4,36a,ixBYYYjxXPP,158.0,2023
+Gautam Buddha Nagar Dadri,kRWfFb08HmE,p,2023-01-01,Gautam Buddha Nagar,bNmwkrQeP3e,indicator_36,89.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,82.0,2023
+Gautam Buddha Nagar Dadri,kRWfFb08HmE,p,2023-01-01,Gautam Buddha Nagar,bNmwkrQeP3e,indicator_36,89.0,4,36a,ixBYYYjxXPP,76.0,2023
+Gautam Buddha Nagar Bisrakh,y9wSctfMKAu,p,2023-01-01,Gautam Buddha Nagar,bNmwkrQeP3e,indicator_36,88.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,395.0,2023
+Gautam Buddha Nagar Bisrakh,y9wSctfMKAu,p,2023-01-01,Gautam Buddha Nagar,bNmwkrQeP3e,indicator_36,88.0,4,36a,ixBYYYjxXPP,195.0,2023
+Meerut MEERUT,FX5OPO64IaR,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,71.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,69.0,2023
+Meerut MEERUT,FX5OPO64IaR,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,71.0,4,36a,ixBYYYjxXPP,81.0,2023
+Meerut Kharkhoda,KHpYLDYW8Pp,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,73.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,78.0,2023
+Meerut Kharkhoda,KHpYLDYW8Pp,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,73.0,4,36a,ixBYYYjxXPP,104.0,2023
+Meerut Hastinapur,MK6uVgXBbvK,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,66.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,56.0,2023
+Meerut Hastinapur,MK6uVgXBbvK,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,66.0,4,36a,ixBYYYjxXPP,35.0,2023
+Meerut Jani Khurd,Sl9Xsytpbd8,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,70.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,108.0,2023
+Meerut Jani Khurd,Sl9Xsytpbd8,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,70.0,4,36a,ixBYYYjxXPP,92.0,2023
+Meerut Rajpura,Vqeqm6XaBle,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,72.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,71.0,2023
+Meerut Rajpura,Vqeqm6XaBle,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,72.0,4,36a,ixBYYYjxXPP,50.0,2023
+Meerut Daurala,adk9clLdGC3,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,64.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,126.0,2023
+Meerut Daurala,adk9clLdGC3,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,64.0,4,36a,ixBYYYjxXPP,105.0,2023
+Meerut Saroorpur,cRH5g6dZ1xf,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,62.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,147.0,2023
+Meerut Saroorpur,cRH5g6dZ1xf,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,62.0,4,36a,ixBYYYjxXPP,144.0,2023
+Meerut Rohta,nSWcYd5JkhS,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,69.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,90.0,2023
+Meerut Rohta,nSWcYd5JkhS,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,69.0,4,36a,ixBYYYjxXPP,52.0,2023
+Meerut Parikshatgarh,oNOcph5dm8a,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,67.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,91.0,2023
+Meerut Parikshatgarh,oNOcph5dm8a,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,67.0,4,36a,ixBYYYjxXPP,58.0,2023
+Meerut Machra,qeUdKRqslg0,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,68.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,81.0,2023
+Meerut Machra,qeUdKRqslg0,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,68.0,4,36a,ixBYYYjxXPP,105.0,2023
+Meerut DHQ,yzzRWFcfXzt,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,768.0,2023
+Meerut DHQ,yzzRWFcfXzt,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,,4,36a,ixBYYYjxXPP,336.0,2023
+Meerut MAWANA,zoMU7oDZFvZ,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,65.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,238.0,2023
+Meerut MAWANA,zoMU7oDZFvZ,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,65.0,4,36a,ixBYYYjxXPP,205.0,2023
+Meerut Sardhana,zpWs8PEVrYv,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,63.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,195.0,2023
+Meerut Sardhana,zpWs8PEVrYv,p,2023-01-01,Meerut,v8YGmR7nOdj,indicator_36,63.0,4,36a,ixBYYYjxXPP,178.0,2023
+Pilana,FXgVpTS1KKY,p,2023-01-01,Bagpat,HJIS3IrQ0Nj,indicator_36,78.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,310.0,2023
+Pilana,FXgVpTS1KKY,p,2023-01-01,Bagpat,HJIS3IrQ0Nj,indicator_36,78.0,4,36a,ixBYYYjxXPP,188.0,2023
+Khekra,Ga0Whh9BsGr,p,2023-01-01,Bagpat,HJIS3IrQ0Nj,indicator_36,79.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,268.0,2023
+Khekra,Ga0Whh9BsGr,p,2023-01-01,Bagpat,HJIS3IrQ0Nj,indicator_36,79.0,4,36a,ixBYYYjxXPP,54.0,2023
+Baraut,JIEAUI17z3o,p,2023-01-01,Bagpat,HJIS3IrQ0Nj,indicator_36,75.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,758.0,2023
+Baraut,JIEAUI17z3o,p,2023-01-01,Bagpat,HJIS3IrQ0Nj,indicator_36,75.0,4,36a,ixBYYYjxXPP,197.0,2023
+Binauli,h3yrIIH1cGT,p,2023-01-01,Bagpat,HJIS3IrQ0Nj,indicator_36,76.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,118.0,2023
+Binauli,h3yrIIH1cGT,p,2023-01-01,Bagpat,HJIS3IrQ0Nj,indicator_36,76.0,4,36a,ixBYYYjxXPP,119.0,2023
+Bagpat DHQ,kaWQCx3sgxl,p,2023-01-01,Bagpat,HJIS3IrQ0Nj,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,252.0,2023
+Bagpat DHQ,kaWQCx3sgxl,p,2023-01-01,Bagpat,HJIS3IrQ0Nj,indicator_36,,4,36a,ixBYYYjxXPP,210.0,2023
+Chaprauli,koZRGrwQvrl,p,2023-01-01,Bagpat,HJIS3IrQ0Nj,indicator_36,74.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,237.0,2023
+Chaprauli,koZRGrwQvrl,p,2023-01-01,Bagpat,HJIS3IrQ0Nj,indicator_36,74.0,4,36a,ixBYYYjxXPP,75.0,2023
+Baghpat,q2bkBgTq2b1,p,2023-01-01,Bagpat,HJIS3IrQ0Nj,indicator_36,77.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,617.0,2023
+Baghpat,q2bkBgTq2b1,p,2023-01-01,Bagpat,HJIS3IrQ0Nj,indicator_36,77.0,4,36a,ixBYYYjxXPP,112.0,2023
+Jalaun Madhougarh,GGmtoqpI9Je,p,2023-01-01,Jalaun,NL5xiiHZQSC,indicator_36,375.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,122.0,2023
+Jalaun Madhougarh,GGmtoqpI9Je,p,2023-01-01,Jalaun,NL5xiiHZQSC,indicator_36,375.0,4,36a,ixBYYYjxXPP,256.0,2023
+Jalaun Mahewa,IG6BUMkoNfw,p,2023-01-01,Jalaun,NL5xiiHZQSC,indicator_36,378.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,46.0,2023
+Jalaun Mahewa,IG6BUMkoNfw,p,2023-01-01,Jalaun,NL5xiiHZQSC,indicator_36,378.0,4,36a,ixBYYYjxXPP,0.0,2023
+Jalaun  DHQ,L75X9VvSfGc,p,2023-01-01,Jalaun,NL5xiiHZQSC,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,474.0,2023
+Jalaun  DHQ,L75X9VvSfGc,p,2023-01-01,Jalaun,NL5xiiHZQSC,indicator_36,,4,36a,ixBYYYjxXPP,440.0,2023
+Jalaun Nadigaun,S5qj59ohege,p,2023-01-01,Jalaun,NL5xiiHZQSC,indicator_36,376.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,49.0,2023
+Jalaun JALAUN,SmB8HLGFIyw,p,2023-01-01,Jalaun,NL5xiiHZQSC,indicator_36,377.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,169.0,2023
+Jalaun JALAUN,SmB8HLGFIyw,p,2023-01-01,Jalaun,NL5xiiHZQSC,indicator_36,377.0,4,36a,ixBYYYjxXPP,116.0,2023
+Jalaun Kuthound,V1ktVWnBTTW,p,2023-01-01,Jalaun,NL5xiiHZQSC,indicator_36,374.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,172.0,2023
+Jalaun Kuthound,V1ktVWnBTTW,p,2023-01-01,Jalaun,NL5xiiHZQSC,indicator_36,374.0,4,36a,ixBYYYjxXPP,182.0,2023
+Jalaun Dakor,V41lCBcSsRJ,p,2023-01-01,Jalaun,NL5xiiHZQSC,indicator_36,380.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,53.0,2023
+Jalaun Dakor,V41lCBcSsRJ,p,2023-01-01,Jalaun,NL5xiiHZQSC,indicator_36,380.0,4,36a,ixBYYYjxXPP,43.0,2023
+Jalaun Kadaura,aoQgD2b6JtI,p,2023-01-01,Jalaun,NL5xiiHZQSC,indicator_36,379.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,118.0,2023
+Jalaun Kadaura,aoQgD2b6JtI,p,2023-01-01,Jalaun,NL5xiiHZQSC,indicator_36,379.0,4,36a,ixBYYYjxXPP,166.0,2023
+Jalaun Rampura,iQBAMBoxYul,p,2023-01-01,Jalaun,NL5xiiHZQSC,indicator_36,373.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,148.0,2023
+Jalaun Rampura,iQBAMBoxYul,p,2023-01-01,Jalaun,NL5xiiHZQSC,indicator_36,373.0,4,36a,ixBYYYjxXPP,185.0,2023
+Jalaun Konch,vMmgCa5r21L,p,2023-01-01,Jalaun,NL5xiiHZQSC,indicator_36,381.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,187.0,2023
+Jalaun Konch,vMmgCa5r21L,p,2023-01-01,Jalaun,NL5xiiHZQSC,indicator_36,381.0,4,36a,ixBYYYjxXPP,97.0,2023
+Shrawasti DHQ,GK26msJSJoZ,p,2023-01-01,Shrawasti,oyTwneTbWDx,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,579.0,2023
+Gilaula,LNX0N5jnA5h,p,2023-01-01,Shrawasti,oyTwneTbWDx,indicator_36,554.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,383.0,2023
+Gilaula,LNX0N5jnA5h,p,2023-01-01,Shrawasti,oyTwneTbWDx,indicator_36,554.0,4,36a,ixBYYYjxXPP,0.0,2023
+Ikauna,a5QF4ok7kUq,p,2023-01-01,Shrawasti,oyTwneTbWDx,indicator_36,555.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,262.0,2023
+Ikauna,a5QF4ok7kUq,p,2023-01-01,Shrawasti,oyTwneTbWDx,indicator_36,555.0,4,36a,ixBYYYjxXPP,180.0,2023
+Jmunaha,lbYsetq7442,p,2023-01-01,Shrawasti,oyTwneTbWDx,indicator_36,551.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,394.0,2023
+Jmunaha,lbYsetq7442,p,2023-01-01,Shrawasti,oyTwneTbWDx,indicator_36,551.0,4,36a,ixBYYYjxXPP,0.0,2023
+Hariharpur Rani,miFaxMESSJ2,p,2023-01-01,Shrawasti,oyTwneTbWDx,indicator_36,552.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,406.0,2023
+Hariharpur Rani,miFaxMESSJ2,p,2023-01-01,Shrawasti,oyTwneTbWDx,indicator_36,552.0,4,36a,ixBYYYjxXPP,214.0,2023
+Sirsiya,rUTBm0fGdMX,p,2023-01-01,Shrawasti,oyTwneTbWDx,indicator_36,553.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,541.0,2023
+Sirsiya,rUTBm0fGdMX,p,2023-01-01,Shrawasti,oyTwneTbWDx,indicator_36,553.0,4,36a,ixBYYYjxXPP,165.0,2023
+Skiit,H5UJopTvZPy,p,2023-01-01,Etah,ZLcx4iOVyN5,indicator_36,812.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,203.0,2023
+Skiit,H5UJopTvZPy,p,2023-01-01,Etah,ZLcx4iOVyN5,indicator_36,812.0,4,36a,ixBYYYjxXPP,161.0,2023
+Jalsar,MGuYssW76Oy,p,2023-01-01,Etah,ZLcx4iOVyN5,indicator_36,813.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,314.0,2023
+Jalsar,MGuYssW76Oy,p,2023-01-01,Etah,ZLcx4iOVyN5,indicator_36,813.0,4,36a,ixBYYYjxXPP,240.0,2023
+Etah DHQ,MoUVR7OhsJp,p,2023-01-01,Etah,ZLcx4iOVyN5,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,215.0,2023
+Etah DHQ,MoUVR7OhsJp,p,2023-01-01,Etah,ZLcx4iOVyN5,indicator_36,,4,36a,ixBYYYjxXPP,190.0,2023
+Marhera,PS1fneX0UVV,p,2023-01-01,Etah,ZLcx4iOVyN5,indicator_36,809.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,138.0,2023
+Marhera,PS1fneX0UVV,p,2023-01-01,Etah,ZLcx4iOVyN5,indicator_36,809.0,4,36a,ixBYYYjxXPP,0.0,2023
+Sitalpur,PUVxtkWZlNI,p,2023-01-01,Etah,ZLcx4iOVyN5,indicator_36,811.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,287.0,2023
+Sitalpur,PUVxtkWZlNI,p,2023-01-01,Etah,ZLcx4iOVyN5,indicator_36,811.0,4,36a,ixBYYYjxXPP,0.0,2023
+Jaithra,mK3aOsGURLr,p,2023-01-01,Etah,ZLcx4iOVyN5,indicator_36,807.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,247.0,2023
+Jaithra,mK3aOsGURLr,p,2023-01-01,Etah,ZLcx4iOVyN5,indicator_36,807.0,4,36a,ixBYYYjxXPP,0.0,2023
+Aliganj,uHgTlwfqKI8,p,2023-01-01,Etah,ZLcx4iOVyN5,indicator_36,808.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,203.0,2023
+Aliganj,uHgTlwfqKI8,p,2023-01-01,Etah,ZLcx4iOVyN5,indicator_36,808.0,4,36a,ixBYYYjxXPP,120.0,2023
+Awagarh,vXfCZfdMkdf,p,2023-01-01,Etah,ZLcx4iOVyN5,indicator_36,814.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,176.0,2023
+Awagarh,vXfCZfdMkdf,p,2023-01-01,Etah,ZLcx4iOVyN5,indicator_36,814.0,4,36a,ixBYYYjxXPP,45.0,2023
+Nidholikala,w3fNposwL8t,p,2023-01-01,Etah,ZLcx4iOVyN5,indicator_36,810.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,178.0,2023
+Nidholikala,w3fNposwL8t,p,2023-01-01,Etah,ZLcx4iOVyN5,indicator_36,810.0,4,36a,ixBYYYjxXPP,0.0,2023
+Suratganj,HLaiapcp8KF,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,480.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,339.0,2023
+Suratganj,HLaiapcp8KF,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,480.0,4,36a,ixBYYYjxXPP,142.0,2023
+Siddhaur,IdkC83lgdBj,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,490.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,297.0,2023
+Siddhaur,IdkC83lgdBj,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,490.0,4,36a,ixBYYYjxXPP,239.0,2023
+Ramnagar Barabanki,KNS89BltpLw,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,481.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,134.0,2023
+Ramnagar Barabanki,KNS89BltpLw,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,481.0,4,36a,ixBYYYjxXPP,109.0,2023
+Dewa,LsCBHm1wj5S,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,482.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,215.0,2023
+Dewa,LsCBHm1wj5S,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,482.0,4,36a,ixBYYYjxXPP,212.0,2023
+Nindura,QvnprpIbIJp,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,478.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,333.0,2023
+Nindura,QvnprpIbIJp,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,478.0,4,36a,ixBYYYjxXPP,300.0,2023
+Dariyabad,Rf7c1xtIt4m,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,487.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,169.0,2023
+Dariyabad,Rf7c1xtIt4m,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,487.0,4,36a,ixBYYYjxXPP,160.0,2023
+Masouli,YsCQwRlNGrw,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,485.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,266.0,2023
+Masouli,YsCQwRlNGrw,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,485.0,4,36a,ixBYYYjxXPP,0.0,2023
+Sirauli Gaus Pur,ZfE3mnPPu5Y,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,486.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,409.0,2023
+Sirauli Gaus Pur,ZfE3mnPPu5Y,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,486.0,4,36a,ixBYYYjxXPP,380.0,2023
+Puradali,ctD8xxTsymJ,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,488.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,227.0,2023
+Puradali,ctD8xxTsymJ,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,488.0,4,36a,ixBYYYjxXPP,155.0,2023
+Trivadi Ganj,gDpxx6NrC99,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,491.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,183.0,2023
+Trivadi Ganj,gDpxx6NrC99,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,491.0,4,36a,ixBYYYjxXPP,173.0,2023
+Fatehpur,iRCOLiyhze6,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,479.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,213.0,2023
+Fatehpur,iRCOLiyhze6,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,479.0,4,36a,ixBYYYjxXPP,175.0,2023
+Barabanki DHQ,jqG1GfySEy7,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,452.0,2023
+Barabanki DHQ,jqG1GfySEy7,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,,4,36a,ixBYYYjxXPP,470.0,2023
+Haidergarh,rFyFe7T2XXz,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,492.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,209.0,2023
+Haidergarh,rFyFe7T2XXz,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,492.0,4,36a,ixBYYYjxXPP,0.0,2023
+Banikoder,sCFJS0l4C5z,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,489.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,255.0,2023
+Banikoder,sCFJS0l4C5z,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,489.0,4,36a,ixBYYYjxXPP,200.0,2023
+Harakh,zM7L5Up3Rp4,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,484.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,175.0,2023
+Harakh,zM7L5Up3Rp4,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,484.0,4,36a,ixBYYYjxXPP,189.0,2023
+Banki,zrtAHVhGVAe,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,483.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,457.0,2023
+Banki,zrtAHVhGVAe,p,2023-01-01,Barabanki,tzH6nJu9SwS,indicator_36,483.0,4,36a,ixBYYYjxXPP,18.0,2023
+Ghaziabad DHQ,HYVom1xMtdc,p,2023-01-01,Ghaziabad,M5NHlfAaKYI,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,5774.0,2023
+Ghaziabad DHQ,HYVom1xMtdc,p,2023-01-01,Ghaziabad,M5NHlfAaKYI,indicator_36,,4,36a,ixBYYYjxXPP,412.0,2023
+Ghaziabad Rjapur,Ne0VFmnLotb,p,2023-01-01,Ghaziabad,M5NHlfAaKYI,indicator_36,82.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,183.0,2023
+Ghaziabad Rjapur,Ne0VFmnLotb,p,2023-01-01,Ghaziabad,M5NHlfAaKYI,indicator_36,82.0,4,36a,ixBYYYjxXPP,169.0,2023
+Ghaziabad Loni,isevBbVYacc,p,2023-01-01,Ghaziabad,M5NHlfAaKYI,indicator_36,83.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,436.0,2023
+Ghaziabad Loni,isevBbVYacc,p,2023-01-01,Ghaziabad,M5NHlfAaKYI,indicator_36,83.0,4,36a,ixBYYYjxXPP,506.0,2023
+Ghaziabad Muradnagar,qpjXx2KEA28,p,2023-01-01,Ghaziabad,M5NHlfAaKYI,indicator_36,80.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,112.0,2023
+Ghaziabad Muradnagar,qpjXx2KEA28,p,2023-01-01,Ghaziabad,M5NHlfAaKYI,indicator_36,80.0,4,36a,ixBYYYjxXPP,97.0,2023
+Ghaziabad Bhojpur,r0L9AlrGA7C,p,2023-01-01,Ghaziabad,M5NHlfAaKYI,indicator_36,81.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,140.0,2023
+Ghaziabad Bhojpur,r0L9AlrGA7C,p,2023-01-01,Ghaziabad,M5NHlfAaKYI,indicator_36,81.0,4,36a,ixBYYYjxXPP,136.0,2023
+C S M Nagar Bazar Shukul,HZYH9FeKSbz,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,513.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,214.0,2023
+C S M Nagar Bazar Shukul,HZYH9FeKSbz,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,513.0,4,36a,ixBYYYjxXPP,0.0,2023
+C S M Nagar Bhetua,J7htJUPglZb,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,522.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,89.0,2023
+C S M Nagar Bhetua,J7htJUPglZb,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,522.0,4,36a,ixBYYYjxXPP,89.0,2023
+C S M Nagar DHQ,KgdLnhdQNJs,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,30.0,2023
+C S M Nagar Sangrampur,KwM7Z0rplba,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,521.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,38.0,2023
+C S M Nagar Sangrampur,KwM7Z0rplba,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,521.0,4,36a,ixBYYYjxXPP,38.0,2023
+C S M Nagar Jamon,R35oHPkysFc,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,517.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,173.0,2023
+C S M Nagar Jamon,R35oHPkysFc,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,517.0,4,36a,ixBYYYjxXPP,102.0,2023
+C S M Nagar Gauriganj,WM5EPg47DVT,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,519.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,170.0,2023
+C S M Nagar Gauriganj,WM5EPg47DVT,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,519.0,4,36a,ixBYYYjxXPP,168.0,2023
+C S M Nagar Jagdishpur,btuo0MWP5ET,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,514.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,291.0,2023
+C S M Nagar Jagdishpur,btuo0MWP5ET,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,514.0,4,36a,ixBYYYjxXPP,0.0,2023
+C S M Nagar Fursatganj,j4mknIwFS2j,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,240.0,2023
+C S M Nagar Bhadar,l02BWTHnGkg,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,523.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,126.0,2023
+C S M Nagar Bhadar,l02BWTHnGkg,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,523.0,4,36a,ixBYYYjxXPP,122.0,2023
+C S M Nagar Amethi,myKgoGwviVc,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,520.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,150.0,2023
+C S M Nagar Amethi,myKgoGwviVc,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,520.0,4,36a,ixBYYYjxXPP,167.0,2023
+C S M Nagar Musafirkhana,rpRvuw2Iiug,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,515.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,184.0,2023
+C S M Nagar Musafirkhana,rpRvuw2Iiug,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,515.0,4,36a,ixBYYYjxXPP,239.0,2023
+C S M Nagar Shahgarh,scpjZUfh7zI,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,518.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,75.0,2023
+C S M Nagar Shahgarh,scpjZUfh7zI,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,518.0,4,36a,ixBYYYjxXPP,30.0,2023
+C S M Nagar Tiloi,vRgViyJ0IS6,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,306.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,151.0,2023
+C S M Nagar Tiloi,vRgViyJ0IS6,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,306.0,4,36a,ixBYYYjxXPP,149.0,2023
+C S M Nagar Singhpur,vlnVnG5JxVJ,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,305.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,212.0,2023
+C S M Nagar Singhpur,vlnVnG5JxVJ,p,2023-01-01,Amethi,StsLkYw1G0m,indicator_36,305.0,4,36a,ixBYYYjxXPP,250.0,2023
+Sant Ravidas Nagar Gyanpur,I13T5ZdIFEi,p,2023-01-01,Bhadohi,PeUY1vj02UQ,indicator_36,785.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,351.0,2023
+Sant Ravidas Nagar Gyanpur,I13T5ZdIFEi,p,2023-01-01,Bhadohi,PeUY1vj02UQ,indicator_36,785.0,4,36a,ixBYYYjxXPP,69.0,2023
+Sant Ravidas Nagar Bhadohi,LA0OjaZZFYz,p,2023-01-01,Bhadohi,PeUY1vj02UQ,indicator_36,783.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,311.0,2023
+Sant Ravidas Nagar Bhadohi,LA0OjaZZFYz,p,2023-01-01,Bhadohi,PeUY1vj02UQ,indicator_36,783.0,4,36a,ixBYYYjxXPP,0.0,2023
+Sant Ravidas Nagar Deegh,RT2WzsnRZJi,p,2023-01-01,Bhadohi,PeUY1vj02UQ,indicator_36,786.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,301.0,2023
+Sant Ravidas Nagar Deegh,RT2WzsnRZJi,p,2023-01-01,Bhadohi,PeUY1vj02UQ,indicator_36,786.0,4,36a,ixBYYYjxXPP,300.0,2023
+Sant Ravidas Nagar DHQ,Yn3eQ5gagvS,p,2023-01-01,Bhadohi,PeUY1vj02UQ,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,151.0,2023
+Sant Ravidas Nagar DHQ,Yn3eQ5gagvS,p,2023-01-01,Bhadohi,PeUY1vj02UQ,indicator_36,,4,36a,ixBYYYjxXPP,0.0,2023
+Sant Ravidas Nagar Aurai,h1MfXB88qMN,p,2023-01-01,Bhadohi,PeUY1vj02UQ,indicator_36,784.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,545.0,2023
+Sant Ravidas Nagar Aurai,h1MfXB88qMN,p,2023-01-01,Bhadohi,PeUY1vj02UQ,indicator_36,784.0,4,36a,ixBYYYjxXPP,139.0,2023
+Sant Ravidas Nagar Abholi,iFwP6fSzMVI,p,2023-01-01,Bhadohi,PeUY1vj02UQ,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,127.0,2023
+Sant Ravidas Nagar Abholi,iFwP6fSzMVI,p,2023-01-01,Bhadohi,PeUY1vj02UQ,indicator_36,,4,36a,ixBYYYjxXPP,0.0,2023
+Sant Ravidas Nagar Suriyawa,oZ8M2HNNfYK,p,2023-01-01,Bhadohi,PeUY1vj02UQ,indicator_36,782.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,244.0,2023
+Sant Ravidas Nagar Suriyawa,oZ8M2HNNfYK,p,2023-01-01,Bhadohi,PeUY1vj02UQ,indicator_36,782.0,4,36a,ixBYYYjxXPP,113.0,2023
+Muzaffarnagar Jansath,IClJwvvGCfX,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,24.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,268.0,2023
+Muzaffarnagar Jansath,IClJwvvGCfX,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,24.0,4,36a,ixBYYYjxXPP,0.0,2023
+Muzaffarnagar DHQ,LwbNBvrbL9f,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,3594.0,2023
+Muzaffarnagar DHQ,LwbNBvrbL9f,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,,4,36a,ixBYYYjxXPP,695.0,2023
+Muzaffarnagar Morna,RAawnADvz9B,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,23.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,195.0,2023
+Muzaffarnagar Morna,RAawnADvz9B,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,23.0,4,36a,ixBYYYjxXPP,142.0,2023
+Muzaffarnagar Shahpur,XuOunfUuyUX,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,22.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,147.0,2023
+Muzaffarnagar Shahpur,XuOunfUuyUX,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,22.0,4,36a,ixBYYYjxXPP,133.0,2023
+Muzaffarnagar Casthawal,c0nWxLrugon,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,17.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,200.0,2023
+Muzaffarnagar Casthawal,c0nWxLrugon,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,17.0,4,36a,ixBYYYjxXPP,0.0,2023
+Muzaffarnagar Khthauli,e6v2BeJjdF0,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,25.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,161.0,2023
+Muzaffarnagar Khthauli,e6v2BeJjdF0,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,25.0,4,36a,ixBYYYjxXPP,234.0,2023
+Muzaffarnagar Budana,gh2z6ozRHvl,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,21.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,161.0,2023
+Muzaffarnagar Budana,gh2z6ozRHvl,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,21.0,4,36a,ixBYYYjxXPP,161.0,2023
+Muzaffarnagar Badhara,hiCT4rPYCVr,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,20.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,135.0,2023
+Muzaffarnagar Badhara,hiCT4rPYCVr,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,20.0,4,36a,ixBYYYjxXPP,70.0,2023
+Muzaffarnagar Purkaji,kE3pd8aET6C,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,18.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,180.0,2023
+Muzaffarnagar Purkaji,kE3pd8aET6C,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,18.0,4,36a,ixBYYYjxXPP,120.0,2023
+Muzaffarnagar Sadar,xInsVC065RU,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,19.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,106.0,2023
+Muzaffarnagar Sadar,xInsVC065RU,p,2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_36,19.0,4,36a,ixBYYYjxXPP,137.0,2023
+Dhaulana,IywKKXqWKqi,p,2023-01-01,Hapur,CZ8kLjgqvSH,indicator_36,84.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,191.0,2023
+Dhaulana,IywKKXqWKqi,p,2023-01-01,Hapur,CZ8kLjgqvSH,indicator_36,84.0,4,36a,ixBYYYjxXPP,201.0,2023
+Hapur,MoftawJk2Oh,p,2023-01-01,Hapur,CZ8kLjgqvSH,indicator_36,85.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,131.0,2023
+Hapur,MoftawJk2Oh,p,2023-01-01,Hapur,CZ8kLjgqvSH,indicator_36,85.0,4,36a,ixBYYYjxXPP,131.0,2023
+Hapur DHQ,Mt3m2kDHXcq,p,2023-01-01,Hapur,CZ8kLjgqvSH,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,1873.0,2023
+Hapur DHQ,Mt3m2kDHXcq,p,2023-01-01,Hapur,CZ8kLjgqvSH,indicator_36,,4,36a,ixBYYYjxXPP,161.0,2023
+Garhmukteshwar,lY8m4U7kmq2,p,2023-01-01,Hapur,CZ8kLjgqvSH,indicator_36,87.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,142.0,2023
+Garhmukteshwar,lY8m4U7kmq2,p,2023-01-01,Hapur,CZ8kLjgqvSH,indicator_36,87.0,4,36a,ixBYYYjxXPP,129.0,2023
+Simbhaoli,mSef7qX2gGM,p,2023-01-01,Hapur,CZ8kLjgqvSH,indicator_36,86.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,221.0,2023
+Simbhaoli,mSef7qX2gGM,p,2023-01-01,Hapur,CZ8kLjgqvSH,indicator_36,86.0,4,36a,ixBYYYjxXPP,135.0,2023
+Auraiya Airwa Katra,JUDfktiXVjn,p,2023-01-01,Auraiya,Bd6E8zkVvVt,indicator_36,346.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,100.0,2023
+Auraiya Airwa Katra,JUDfktiXVjn,p,2023-01-01,Auraiya,Bd6E8zkVvVt,indicator_36,346.0,4,36a,ixBYYYjxXPP,100.0,2023
+Auraiya Bhagyanagar,UqkEQavyage,p,2023-01-01,Auraiya,Bd6E8zkVvVt,indicator_36,351.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,221.0,2023
+Auraiya Bhagyanagar,UqkEQavyage,p,2023-01-01,Auraiya,Bd6E8zkVvVt,indicator_36,351.0,4,36a,ixBYYYjxXPP,241.0,2023
+Auraiya Bidhuna,Uqr9pGSBzRf,p,2023-01-01,Auraiya,Bd6E8zkVvVt,indicator_36,347.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,238.0,2023
+Auraiya Bidhuna,Uqr9pGSBzRf,p,2023-01-01,Auraiya,Bd6E8zkVvVt,indicator_36,347.0,4,36a,ixBYYYjxXPP,0.0,2023
+Auraiya Auriya,baHOn9wfzJ1,p,2023-01-01,Auraiya,Bd6E8zkVvVt,indicator_36,352.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,86.0,2023
+Auraiya Auriya,baHOn9wfzJ1,p,2023-01-01,Auraiya,Bd6E8zkVvVt,indicator_36,352.0,4,36a,ixBYYYjxXPP,0.0,2023
+Auraiya Ajitmal,guhyL5WpMTF,p,2023-01-01,Auraiya,Bd6E8zkVvVt,indicator_36,350.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,188.0,2023
+Auraiya Ajitmal,guhyL5WpMTF,p,2023-01-01,Auraiya,Bd6E8zkVvVt,indicator_36,350.0,4,36a,ixBYYYjxXPP,162.0,2023
+Auraiya Achhalda,iT6mwbFSnli,p,2023-01-01,Auraiya,Bd6E8zkVvVt,indicator_36,348.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,152.0,2023
+Auraiya Achhalda,iT6mwbFSnli,p,2023-01-01,Auraiya,Bd6E8zkVvVt,indicator_36,348.0,4,36a,ixBYYYjxXPP,0.0,2023
+Auraiya DHQ,lMDCwvmApOX,p,2023-01-01,Auraiya,Bd6E8zkVvVt,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,228.0,2023
+Auraiya DHQ,lMDCwvmApOX,p,2023-01-01,Auraiya,Bd6E8zkVvVt,indicator_36,,4,36a,ixBYYYjxXPP,249.0,2023
+Auraiya Sahar,ogSTp4HnpXK,p,2023-01-01,Auraiya,Bd6E8zkVvVt,indicator_36,349.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,193.0,2023
+Auraiya Sahar,ogSTp4HnpXK,p,2023-01-01,Auraiya,Bd6E8zkVvVt,indicator_36,349.0,4,36a,ixBYYYjxXPP,210.0,2023
+Bijua,Jmwf6ICjPJQ,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,230.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,345.0,2023
+Bijua,Jmwf6ICjPJQ,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,230.0,4,36a,ixBYYYjxXPP,487.0,2023
+Nighasan,K3Wk4SSTOVC,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,226.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,378.0,2023
+Nighasan,K3Wk4SSTOVC,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,226.0,4,36a,ixBYYYjxXPP,0.0,2023
+Mitoli,Owih8es2MY7,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,232.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,303.0,2023
+Mitoli,Owih8es2MY7,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,232.0,4,36a,ixBYYYjxXPP,406.0,2023
+Lakhimpur DHQ,PDw9OZ2oKqK,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,561.0,2023
+Lakhimpur DHQ,PDw9OZ2oKqK,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,,4,36a,ixBYYYjxXPP,489.0,2023
+Mohamdi Kheri,SiLZVlguB9v,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,231.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,312.0,2023
+Mohamdi Kheri,SiLZVlguB9v,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,231.0,4,36a,ixBYYYjxXPP,375.0,2023
+Nakha,UbmM3fTe8D0,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,237.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,365.0,2023
+Nakha,UbmM3fTe8D0,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,237.0,4,36a,ixBYYYjxXPP,243.0,2023
+Bakeganj,dCxTVCyf17s,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,229.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,194.0,2023
+Bakeganj,dCxTVCyf17s,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,229.0,4,36a,ixBYYYjxXPP,0.0,2023
+Pallia,dQnnkXYAcff,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,225.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,369.0,2023
+Pallia,dQnnkXYAcff,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,225.0,4,36a,ixBYYYjxXPP,368.0,2023
+Phardhan,deLO0JKgzP6,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,235.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,166.0,2023
+Phardhan,deLO0JKgzP6,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,235.0,4,36a,ixBYYYjxXPP,0.0,2023
+Pasgawa,el8CoMxhsji,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,233.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,229.0,2023
+Pasgawa,el8CoMxhsji,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,233.0,4,36a,ixBYYYjxXPP,103.0,2023
+Dharora,gEphd9O9pPr,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,238.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,325.0,2023
+Dharora,gEphd9O9pPr,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,238.0,4,36a,ixBYYYjxXPP,240.0,2023
+Phoolbhar,kKTBu6UpSYl,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,236.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,200.0,2023
+Phoolbhar,kKTBu6UpSYl,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,236.0,4,36a,ixBYYYjxXPP,0.0,2023
+Kumbhi,lbRa62r2r1d,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,228.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,399.0,2023
+Kumbhi,lbRa62r2r1d,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,228.0,4,36a,ixBYYYjxXPP,275.0,2023
+Isanagar,qbwnjNH34Cw,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,239.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,454.0,2023
+Isanagar,qbwnjNH34Cw,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,239.0,4,36a,ixBYYYjxXPP,140.0,2023
+Behjam,qoqWCWNVx1j,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,234.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,274.0,2023
+Behjam,qoqWCWNVx1j,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,234.0,4,36a,ixBYYYjxXPP,244.0,2023
+Ramia Behar,yl4FsPXJXvw,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,227.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,361.0,2023
+Ramia Behar,yl4FsPXJXvw,p,2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_36,227.0,4,36a,ixBYYYjxXPP,193.0,2023
+Gola,KV5wZ2pPQe1,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,647.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,236.0,2023
+Gola,KV5wZ2pPQe1,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,647.0,4,36a,ixBYYYjxXPP,123.0,2023
+Uruwa Gorakhpur,Mohx3LmGLM5,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,642.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,172.0,2023
+Sahjanwa,NEdgkoHIHTS,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,633.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,184.0,2023
+Brahmpur,P39P0iQKIWH,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,640.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,177.0,2023
+Brahmpur,P39P0iQKIWH,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,640.0,4,36a,ixBYYYjxXPP,0.0,2023
+Kauriram,W4M075uGpIs,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,645.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,146.0,2023
+Chargawan,X2K6bByVLd2,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,635.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,193.0,2023
+Chargawan,X2K6bByVLd2,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,635.0,4,36a,ixBYYYjxXPP,0.0,2023
+Pipraich,X9URGLOiulW,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,638.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,198.0,2023
+Pipraich,X9URGLOiulW,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,638.0,4,36a,ixBYYYjxXPP,130.0,2023
+Khorabar,Yz8M2ESnoFT,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,637.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,195.0,2023
+Khorabar,Yz8M2ESnoFT,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,637.0,4,36a,ixBYYYjxXPP,0.0,2023
+Gagaha,aJ8DEEvimsM,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,646.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,109.0,2023
+Gagaha,aJ8DEEvimsM,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,646.0,4,36a,ixBYYYjxXPP,96.0,2023
+Piprauli,cDxHC5dDWRe,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,634.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,202.0,2023
+Piprauli,cDxHC5dDWRe,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,634.0,4,36a,ixBYYYjxXPP,76.0,2023
+Jungle Kauriya,ewq9OZKKqta,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,631.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,202.0,2023
+Jungle Kauriya,ewq9OZKKqta,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,631.0,4,36a,ixBYYYjxXPP,172.0,2023
+Barhalganj,h0bQr9x9gzJ,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,648.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,242.0,2023
+Barhalganj,h0bQr9x9gzJ,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,648.0,4,36a,ixBYYYjxXPP,81.0,2023
+Khajni,i8SnEC5fIxD,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,641.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,178.0,2023
+Khajni,i8SnEC5fIxD,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,641.0,4,36a,ixBYYYjxXPP,145.0,2023
+Bhathat,kzpItiarBRF,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,636.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,182.0,2023
+Bhathat,kzpItiarBRF,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,636.0,4,36a,ixBYYYjxXPP,755.0,2023
+Belghat,l4r3ouFQPZS,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,643.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,154.0,2023
+Belghat,l4r3ouFQPZS,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,643.0,4,36a,ixBYYYjxXPP,120.0,2023
+Campierganj,noXyISQsTiJ,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,630.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,258.0,2023
+Campierganj,noXyISQsTiJ,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,630.0,4,36a,ixBYYYjxXPP,278.0,2023
+Pali,nxstNxWEDHb,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,632.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,91.0,2023
+Pali,nxstNxWEDHb,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,632.0,4,36a,ixBYYYjxXPP,91.0,2023
+Gorakhpur DHQ,oER6x75izaS,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,963.0,2023
+Bansgaon,oqobaBlkco3,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,644.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,114.0,2023
+Bansgaon,oqobaBlkco3,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,644.0,4,36a,ixBYYYjxXPP,110.0,2023
+Sardar Nagar,plaloKJOZO2,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,639.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,167.0,2023
+Sardar Nagar,plaloKJOZO2,p,2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_36,639.0,4,36a,ixBYYYjxXPP,0.0,2023
+Jalalabad Kannauj,OWrTCTjWjzI,p,2023-01-01,Kannauj,IhQbDYRiF8w,indicator_36,334.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,76.0,2023
+Jalalabad Kannauj,OWrTCTjWjzI,p,2023-01-01,Kannauj,IhQbDYRiF8w,indicator_36,334.0,4,36a,ixBYYYjxXPP,64.0,2023
+Umarda,QlnYDSaHYHx,p,2023-01-01,Kannauj,IhQbDYRiF8w,indicator_36,337.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,394.0,2023
+Umarda,QlnYDSaHYHx,p,2023-01-01,Kannauj,IhQbDYRiF8w,indicator_36,337.0,4,36a,ixBYYYjxXPP,349.0,2023
+Gugrapur,ZawkcSeJU8n,p,2023-01-01,Kannauj,IhQbDYRiF8w,indicator_36,333.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,116.0,2023
+Gugrapur,ZawkcSeJU8n,p,2023-01-01,Kannauj,IhQbDYRiF8w,indicator_36,333.0,4,36a,ixBYYYjxXPP,75.0,2023
+Chibramau,lqFb50V1HFl,p,2023-01-01,Kannauj,IhQbDYRiF8w,indicator_36,330.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,591.0,2023
+Chibramau,lqFb50V1HFl,p,2023-01-01,Kannauj,IhQbDYRiF8w,indicator_36,330.0,4,36a,ixBYYYjxXPP,236.0,2023
+Kannauj DHQ,pxVGfZhiG9T,p,2023-01-01,Kannauj,IhQbDYRiF8w,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,61.0,2023
+Kannauj,w5PW1t5ovb8,p,2023-01-01,Kannauj,IhQbDYRiF8w,indicator_36,335.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,760.0,2023
+Kannauj,w5PW1t5ovb8,p,2023-01-01,Kannauj,IhQbDYRiF8w,indicator_36,335.0,4,36a,ixBYYYjxXPP,314.0,2023
+Saurikh,wOa6hyubQ9S,p,2023-01-01,Kannauj,IhQbDYRiF8w,indicator_36,332.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,225.0,2023
+Saurikh,wOa6hyubQ9S,p,2023-01-01,Kannauj,IhQbDYRiF8w,indicator_36,332.0,4,36a,ixBYYYjxXPP,134.0,2023
+Haseran,wjAvKvlMzv0,p,2023-01-01,Kannauj,IhQbDYRiF8w,indicator_36,336.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,163.0,2023
+Haseran,wjAvKvlMzv0,p,2023-01-01,Kannauj,IhQbDYRiF8w,indicator_36,336.0,4,36a,ixBYYYjxXPP,108.0,2023
+Talgram,zFNrX1gsn6L,p,2023-01-01,Kannauj,IhQbDYRiF8w,indicator_36,331.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,431.0,2023
+Talgram,zFNrX1gsn6L,p,2023-01-01,Kannauj,IhQbDYRiF8w,indicator_36,331.0,4,36a,ixBYYYjxXPP,40.0,2023
+Feranda,PgG4CRGzrlZ,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,625.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,243.0,2023
+Feranda,PgG4CRGzrlZ,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,625.0,4,36a,ixBYYYjxXPP,191.0,2023
+Nichlol,WFDYOeK31Ef,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,620.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,391.0,2023
+Nichlol,WFDYOeK31Ef,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,620.0,4,36a,ixBYYYjxXPP,361.0,2023
+Mithora,YhzzNFiy1cg,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,621.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,415.0,2023
+Mithora,YhzzNFiy1cg,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,621.0,4,36a,ixBYYYjxXPP,281.0,2023
+Barzmanganj,arETnjnVPdJ,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,623.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,250.0,2023
+Barzmanganj,arETnjnVPdJ,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,623.0,4,36a,ixBYYYjxXPP,73.0,2023
+Maharajganj,d5GGshi37vh,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,626.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,628.0,2023
+Maharajganj,d5GGshi37vh,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,626.0,4,36a,ixBYYYjxXPP,382.0,2023
+Maharajganj DHQ,entrhoaBv1i,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,14.0,2023
+Lachmipur,fnVx6XeAGvW,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,619.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,290.0,2023
+Lachmipur,fnVx6XeAGvW,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,619.0,4,36a,ixBYYYjxXPP,141.0,2023
+Siswa,hm9hIxLNVN8,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,622.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,366.0,2023
+Siswa,hm9hIxLNVN8,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,622.0,4,36a,ixBYYYjxXPP,805.0,2023
+Paniyara,k0SXa6DYHlU,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,628.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,400.0,2023
+Paniyara,k0SXa6DYHlU,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,628.0,4,36a,ixBYYYjxXPP,152.0,2023
+Dhani,m89LQqFOgTd,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,624.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,127.0,2023
+Dhani,m89LQqFOgTd,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,624.0,4,36a,ixBYYYjxXPP,68.0,2023
+Naothnawan,pK8QXOdmwvY,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,618.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,503.0,2023
+Naothnawan,pK8QXOdmwvY,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,618.0,4,36a,ixBYYYjxXPP,213.0,2023
+Ghughali,pNfKKA9YCVD,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,627.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,275.0,2023
+Ghughali,pNfKKA9YCVD,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,627.0,4,36a,ixBYYYjxXPP,276.0,2023
+Partawal,rslNb3Z3IB9,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,629.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,261.0,2023
+Partawal,rslNb3Z3IB9,p,2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_36,629.0,4,36a,ixBYYYjxXPP,202.0,2023
+Shamli Thana Bhawan,PrrfSkPnkmn,p,2023-01-01,Shamli,AdiUcz9BXhx,indicator_36,14.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,220.0,2023
+Shamli Thana Bhawan,PrrfSkPnkmn,p,2023-01-01,Shamli,AdiUcz9BXhx,indicator_36,14.0,4,36a,ixBYYYjxXPP,121.0,2023
+Shamli Shamli,QgLrwudkb0M,p,2023-01-01,Shamli,AdiUcz9BXhx,indicator_36,15.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,52.0,2023
+Shamli Shamli,QgLrwudkb0M,p,2023-01-01,Shamli,AdiUcz9BXhx,indicator_36,15.0,4,36a,ixBYYYjxXPP,162.0,2023
+Shamli Kandhla,bJF2UI9uVXK,p,2023-01-01,Shamli,AdiUcz9BXhx,indicator_36,16.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,205.0,2023
+Shamli Kandhla,bJF2UI9uVXK,p,2023-01-01,Shamli,AdiUcz9BXhx,indicator_36,16.0,4,36a,ixBYYYjxXPP,155.0,2023
+Shamli Unn,hYGI5A3Mq94,p,2023-01-01,Shamli,AdiUcz9BXhx,indicator_36,12.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,331.0,2023
+Shamli Unn,hYGI5A3Mq94,p,2023-01-01,Shamli,AdiUcz9BXhx,indicator_36,12.0,4,36a,ixBYYYjxXPP,0.0,2023
+Shamli DHQ,qVXCL4F9Nfc,p,2023-01-01,Shamli,AdiUcz9BXhx,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,11.0,2023
+Shamli Kairana,y1VjuyuoJ29,p,2023-01-01,Shamli,AdiUcz9BXhx,indicator_36,13.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,341.0,2023
+Shamli Kairana,y1VjuyuoJ29,p,2023-01-01,Shamli,AdiUcz9BXhx,indicator_36,13.0,4,36a,ixBYYYjxXPP,336.0,2023
+Ramnagar Chitrakoot,QRMxe3qUWkI,p,2023-01-01,Chitrakoot,i2fSZZ3QAJJ,indicator_36,418.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,289.0,2023
+Ramnagar Chitrakoot,QRMxe3qUWkI,p,2023-01-01,Chitrakoot,i2fSZZ3QAJJ,indicator_36,418.0,4,36a,ixBYYYjxXPP,210.0,2023
+Mau,RMNCveuyYds,p,2023-01-01,Chitrakoot,i2fSZZ3QAJJ,indicator_36,419.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,244.0,2023
+Mau,RMNCveuyYds,p,2023-01-01,Chitrakoot,i2fSZZ3QAJJ,indicator_36,419.0,4,36a,ixBYYYjxXPP,165.0,2023
+Pahari,Xj8oMwQWDUl,p,2023-01-01,Chitrakoot,i2fSZZ3QAJJ,indicator_36,415.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,235.0,2023
+Pahari,Xj8oMwQWDUl,p,2023-01-01,Chitrakoot,i2fSZZ3QAJJ,indicator_36,415.0,4,36a,ixBYYYjxXPP,215.0,2023
+Chitrakootdham Karwi,csfXDnN3Xo3,p,2023-01-01,Chitrakoot,i2fSZZ3QAJJ,indicator_36,416.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,317.0,2023
+Chitrakootdham Karwi,csfXDnN3Xo3,p,2023-01-01,Chitrakoot,i2fSZZ3QAJJ,indicator_36,416.0,4,36a,ixBYYYjxXPP,295.0,2023
+Chitrakoot DHQ,kuE3K1lT4Ik,p,2023-01-01,Chitrakoot,i2fSZZ3QAJJ,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,193.0,2023
+Chitrakoot DHQ,kuE3K1lT4Ik,p,2023-01-01,Chitrakoot,i2fSZZ3QAJJ,indicator_36,,4,36a,ixBYYYjxXPP,216.0,2023
+Manikpur,lNpqSHtjFu3,p,2023-01-01,Chitrakoot,i2fSZZ3QAJJ,indicator_36,417.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,243.0,2023
+Manikpur,lNpqSHtjFu3,p,2023-01-01,Chitrakoot,i2fSZZ3QAJJ,indicator_36,417.0,4,36a,ixBYYYjxXPP,0.0,2023
+Baraun,XIqs5K6oAlM,p,2023-01-01,Farrukhabad,uEEwlAGZXWW,indicator_36,327.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,127.0,2023
+Baraun,XIqs5K6oAlM,p,2023-01-01,Farrukhabad,uEEwlAGZXWW,indicator_36,327.0,4,36a,ixBYYYjxXPP,108.0,2023
+Mohamudabad,grxxI8LtNsw,p,2023-01-01,Farrukhabad,uEEwlAGZXWW,indicator_36,328.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,219.0,2023
+Mohamudabad,grxxI8LtNsw,p,2023-01-01,Farrukhabad,uEEwlAGZXWW,indicator_36,328.0,4,36a,ixBYYYjxXPP,0.0,2023
+Samsabad,istRPh0AKbM,p,2023-01-01,Farrukhabad,uEEwlAGZXWW,indicator_36,325.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,105.0,2023
+Samsabad,istRPh0AKbM,p,2023-01-01,Farrukhabad,uEEwlAGZXWW,indicator_36,325.0,4,36a,ixBYYYjxXPP,101.0,2023
+Rajapur ,nU3oS2SGD3b,p,2023-01-01,Farrukhabad,uEEwlAGZXWW,indicator_36,326.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,210.0,2023
+Farrukhabad  DHQ,pAJMw6V9F29,p,2023-01-01,Farrukhabad,uEEwlAGZXWW,indicator_36,,4,36b,aRueVYr35yM.Ti9FJqkSK6J,820.0,2023
+Farrukhabad  DHQ,pAJMw6V9F29,p,2023-01-01,Farrukhabad,uEEwlAGZXWW,indicator_36,,4,36a,ixBYYYjxXPP,612.0,2023
+Nawabganj ,s5vWj2I9NyF,p,2023-01-01,Farrukhabad,uEEwlAGZXWW,indicator_36,324.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,165.0,2023
+Nawabganj ,s5vWj2I9NyF,p,2023-01-01,Farrukhabad,uEEwlAGZXWW,indicator_36,324.0,4,36a,ixBYYYjxXPP,165.0,2023
+Kayamganj,vJadmkIZlfo,p,2023-01-01,Farrukhabad,uEEwlAGZXWW,indicator_36,323.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,406.0,2023
+Kayamganj,vJadmkIZlfo,p,2023-01-01,Farrukhabad,uEEwlAGZXWW,indicator_36,323.0,4,36a,ixBYYYjxXPP,0.0,2023
+Kamalganj,xmoNxfjNe2l,p,2023-01-01,Farrukhabad,uEEwlAGZXWW,indicator_36,329.0,4,36b,aRueVYr35yM.Ti9FJqkSK6J,288.0,2023
+Kamalganj,xmoNxfjNe2l,p,2023-01-01,Farrukhabad,uEEwlAGZXWW,indicator_36,329.0,4,36a,ixBYYYjxXPP,0.0,2023

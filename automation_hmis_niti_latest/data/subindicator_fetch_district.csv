@@ -1,0 +1,43 @@
+﻿indicator_name,subindicator_id,period,type,indicator_type
+% of pregnant women received 4 or more ANC against estimated PW,ZpgnTGpSkeg.Ti9FJqkSK6J,Monthly,Numerator,indicator
+Permanent Method accepted per 1000 EC,Z0rXYfMQZST,Yearly,Denominator,indicator
+Reversible Method accepted per 1000 EC,Z0rXYfMQZST,Yearly,Denominator,indicator
+Reversible Method accepted per 1000 EC,YyUc4SanMDt.Ti9FJqkSK6J,Monthly,Numerator,indicator
+Permanent Method accepted per 1000 EC,yBfIJ7wBbcF,Yearly,Denominator,indicator
+Reversible Method accepted per 1000 EC,yBfIJ7wBbcF,Yearly,Denominator,indicator
+Permanent Method accepted per 1000 EC,Xg1j0efNUrP.Ti9FJqkSK6J,Monthly,Numerator,indicator
+Permanent Method accepted per 1000 EC,VJ2ccLnKQPv,Yearly,Denominator,indicator
+Reversible Method accepted per 1000 EC,VJ2ccLnKQPv,Yearly,Denominator,indicator
+% of pregnant women delivered in institution against estimated delivery,ux6uaflq7xZ,Yearly,Numerator,indicator
+Reversible Method accepted per 1000 EC,uTUcZv1fJfk.Ti9FJqkSK6J,Monthly,Numerator,indicator
+% of pregnant women tested for Hb for 4 or more times against estimated PW,ui45G8KwpzU.Ti9FJqkSK6J,Monthly,Numerator,indicator
+Ratio of Pentavalent 3 to BCG,tN6dkfe6JLE.aRNxGm8EkXJ,Monthly,Denominator,indicator
+% of pregnant women received 4 or more ANC against estimated PW,TmeumlBaObG,Yearly,Denominator,indicator
+% of pregnant women tested for Hb for 4 or more times against estimated PW,TmeumlBaObG,Yearly,Denominator,indicator
+% of PW screened for HIV against estimated pregnancy,TmeumlBaObG,Yearly,Denominator,indicator
+"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",t03VPkJ5UXd,Yearly,Denominator,indicator
+Permanent Method accepted per 1000 EC,SCutWcJX88a.Ti9FJqkSK6J,Monthly,Numerator,indicator
+Permanent Method accepted per 1000 EC,OVLPx9JL7u7.Ti9FJqkSK6J,Yearly,Denominator,indicator
+Reversible Method accepted per 1000 EC,OVLPx9JL7u7.Ti9FJqkSK6J,Yearly,Denominator,indicator
+Ratio of Pentavalent 3 to BCG,OP5Q3Ga5V3T.aRNxGm8EkXJ,Monthly,Numerator,indicator
+% of PW screened for HIV against estimated pregnancy,NI0EC5no6PO,Monthly,Numerator,indicator
+Reversible Method accepted per 1000 EC,NeNWp698eve.uBLH63dNSeY,Monthly,Numerator,indicator
+Permanent Method accepted per 1000 EC,n3L9KZq55UM.Ti9FJqkSK6J,Monthly,Numerator,indicator
+Still birth ratio,mexWK5BLs5H.Ti9FJqkSK6J,Monthly,Numerator,indicator
+h,LQRtOv7IQrQ.Ti9FJqkSK6J,Yearly,Denominator,indicator
+% of newborns received HBNC visits (Institutional Delivery & Home Delivery),kuz5MYYLyi2,Monthly,Numerator,indicator
+Per ASHA expenditure of ASHA incentive fund,jHHZKr89vwY,Monthly,Denominator,indicator
+Permanent Method accepted per 1000 EC,jhdL4rNP5pA.Ti9FJqkSK6J,Monthly,Numerator,indicator
+Total case notification rate of TB against expected TB cases,GXgfTS67qxe.Ti9FJqkSK6J,Monthly,Denominator,indicator
+"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",GJKYhq2wR9L,Monthly,Numerator,indicator
+% of pregnant women delivered in institution against estimated delivery,g69FuEghiM5,Yearly,Denominator,indicator
+Per ASHA expenditure of ASHA incentive fund,fyuGMPRH02k,Monthly,Numerator,indicator
+% of pregnant women delivered in institution against estimated delivery,FRafAE8qFP6,Yearly,Numerator,indicator
+h,cB6y5lovUZX.Ti9FJqkSK6J,Yearly,Denominator,indicator
+Permanent Method accepted per 1000 EC,bOFAAIzcaGZ.Ti9FJqkSK6J,Monthly,Numerator,indicator
+Total case notification rate of TB against expected TB cases,B2A7x36qEry.Ti9FJqkSK6J,Monthly,Numerator,indicator
+% of pregnant women delivered in institution against estimated delivery,aRueVYr35yM.Ti9FJqkSK6J,Monthly,Numerator,indicator
+Still birth ratio,aknlXIekL1Z.wb51FJHqHxp,Monthly,Denominator,indicator
+Still birth ratio,aknlXIekL1Z.iRNhRMvoSCx,Monthly,Denominator,indicator
+% of newborns received HBNC visits (Institutional Delivery & Home Delivery),aknlXIekL1Z,Monthly,Denominator,indicator
+Reversible Method accepted per 1000 EC,A89WukjS845,Monthly,Numerator,indicator

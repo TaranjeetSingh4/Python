@@ -1,0 +1,39 @@
+<table class="table table-bordered table-definition mb-4 <%- indicators_for %>_indicatorsTable" data-indicators_for="<%- indicators_for %>">
+    <thead class="table-secondary ">
+        <tr>
+            <th>
+                <div class="text-center">
+                    <input type="checkbox" class="selectall_indicator_checkbox cursor-pointer">
+                </div>
+            </th>
+            <th>Indicators</th>
+            <!-- <th>Actions</th> -->
+        </tr>
+    </thead>
+    <tbody>
+        <% _.forEach(data, function(d) { %>
+        <tr data-indicator_id ="<%- d.indicator_name %>" >
+            <td>
+                <div class="text-center">
+                    <input type="checkbox" class="cursor-pointer indicator_checkbox">
+                </div>
+            </td>
+            <td><%- d.indicator_name %></td>
+            <!-- <td>
+                <button class="btn btn-secondary btn-sm fetch_indicator">Fetch</button>
+            </td> -->
+        </tr>
+        <% }) %>
+    </tbody>
+    <!-- <tfoot>
+        <tr>
+            <th></th>
+            <th colspan="4">
+                <button class="btn btn-success float-right btn-sm" data-toggle="modal"
+                    data-target="#proceedtoModal">Proceed</button>
+                <button class="btn btn-info btn-sm mr-2 fetch_all_indicator">Fetch All</button>
+                <button class="btn btn-primary btn-sm">Download</button>
+            </th>
+        </tr>
+    </tfoot> -->
+</table>

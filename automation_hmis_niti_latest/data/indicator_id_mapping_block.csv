@@ -1,0 +1,17 @@
+type,domain,indicator_ids,indicator,indicator_id,calc_type
+coverage,ante_natal,indicator_1,% of pregnant women received 4 or more ANC against estimated PW,indicator_1,p
+quality,ante_natal,indicator_2,% of pregnant women tested for Hb for 4 or more times against estimated PW,indicator_2,p
+coverage,delivery_care,indicator_3,% of pregnant women delivered in institution against estimated delivery,indicator_3,p
+quality,delivery_care,indicator_4,Still birth ratio,indicator_4,n
+coverage,post_natal_care,indicator_5,% of newborns received HBNC visits (Institutional Delivery and Home Delivery),indicator_5,p
+quality,immunization,indicator_6,Ratio of Pentavalent 3 to BCG,indicator_6,p
+coverage,immunization,indicator_7,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",indicator_7,p
+coverage,family_planning,indicator_8,Permanent Method accepted per 1000 EC,indicator_8,p
+coverage,family_planning,indicator_9,Reversible Method accepted per 1000 EC,indicator_9,p
+coverage,communicable_diseases,indicator_10,% of PW screened for HIV against estimated pregnancy,indicator_10,p
+coverage,finance,indicator_11,Per ASHA expenditure of ASHA incentive fund,indicator_11,p
+availability,input,indicator_12,Availability of ASHA to total rural population,indicator_12,n
+availability,delivery_care,indicator_13,Est Delivery load as per available Delivery Point,indicator_13,n
+availability,delivery_care,indicator_14,Est Delivery load as per available SBA trained staff Nurse / ANM,indicator_14,n
+data_quality,data_quality,indicator_15,% of facilities reported non blank value (including zero) for the identified indicators of ranking,indicator_15,p
+data_quality,data_quality,indicator_16,% of facilities reported outlier for the identified indicators of ranking,indicator_16,n

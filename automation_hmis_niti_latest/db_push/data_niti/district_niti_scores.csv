@@ -1,0 +1,376 @@
+calc_type,date,district_name,district_id,div_map_id,division,domain_name,indicator_name,indicator_id,map_id,perc_point,quarter,type_name,year,district_id_num
+p,2025-03-01,Maharajganj,AcnMkNGgc3S,188,Gorakhpur Division,ANC,% ANC registered in First trimester,1,187,92.88120368291041,4,ANC,2025,10
+p,2025-03-01,Maharajganj,AcnMkNGgc3S,188,Gorakhpur Division,communicable_diseases,Success rate of positive tuberculosis cases,2,187,95.8,4,communicable_diseases,2025,10
+p,2025-03-01,Maharajganj,AcnMkNGgc3S,188,Gorakhpur Division,ANC,% of severe anaemic PW treated,4,187,84.81012658227847,4,ANC,2025,10
+p,2025-03-01,Maharajganj,AcnMkNGgc3S,188,Gorakhpur Division,PNC,% of new born breastfed within one hour of birth,5,187,95.8514870240576,4,PNC,2025,10
+p,2025-03-01,Maharajganj,AcnMkNGgc3S,188,Gorakhpur Division,delivery_care,% of live babies weighted at birth,6,187,97.89732903959083,4,delivery_care,2025,10
+p,2025-03-01,Shamli,AdiUcz9BXhx,132,Saharanpur Division,ANC,% ANC registered in First trimester,1,203,84.70909472799832,4,ANC,2025,32
+p,2025-03-01,Shamli,AdiUcz9BXhx,132,Saharanpur Division,communicable_diseases,Success rate of positive tuberculosis cases,2,203,92.4,4,communicable_diseases,2025,32
+p,2025-03-01,Shamli,AdiUcz9BXhx,132,Saharanpur Division,ANC,% of severe anaemic PW treated,4,203,99.43820224719101,4,ANC,2025,32
+p,2025-03-01,Shamli,AdiUcz9BXhx,132,Saharanpur Division,PNC,% of new born breastfed within one hour of birth,5,203,99.87354577642893,4,PNC,2025,32
+p,2025-03-01,Shamli,AdiUcz9BXhx,132,Saharanpur Division,delivery_care,% of live babies weighted at birth,6,203,99.87354577642893,4,delivery_care,2025,32
+p,2025-03-01,Auraiya,Bd6E8zkVvVt,161,Kanpur Nagar Division,ANC,% ANC registered in First trimester,1,162,90.53648068669528,4,ANC,2025,37
+p,2025-03-01,Auraiya,Bd6E8zkVvVt,161,Kanpur Nagar Division,communicable_diseases,Success rate of positive tuberculosis cases,2,162,93.2,4,communicable_diseases,2025,37
+p,2025-03-01,Auraiya,Bd6E8zkVvVt,161,Kanpur Nagar Division,ANC,% of severe anaemic PW treated,4,162,48.03921568627451,4,ANC,2025,37
+p,2025-03-01,Auraiya,Bd6E8zkVvVt,161,Kanpur Nagar Division,PNC,% of new born breastfed within one hour of birth,5,162,95.47888161808449,4,PNC,2025,37
+p,2025-03-01,Auraiya,Bd6E8zkVvVt,161,Kanpur Nagar Division,delivery_care,% of live babies weighted at birth,6,162,96.07376561570494,4,delivery_care,2025,37
+p,2025-03-01,Maunathbhanjan,CBSB9v92AwT,193,Azamgarh Division,ANC,% ANC registered in First trimester,1,192,90.48450458315145,4,ANC,2025,6
+p,2025-03-01,Maunathbhanjan,CBSB9v92AwT,193,Azamgarh Division,communicable_diseases,Success rate of positive tuberculosis cases,2,192,91.4,4,communicable_diseases,2025,6
+p,2025-03-01,Maunathbhanjan,CBSB9v92AwT,193,Azamgarh Division,ANC,% of severe anaemic PW treated,4,192,71.96261682242991,4,ANC,2025,6
+p,2025-03-01,Maunathbhanjan,CBSB9v92AwT,193,Azamgarh Division,PNC,% of new born breastfed within one hour of birth,5,192,100.0,4,PNC,2025,6
+p,2025-03-01,Maunathbhanjan,CBSB9v92AwT,193,Azamgarh Division,delivery_care,% of live babies weighted at birth,6,192,98.75710227272728,4,delivery_care,2025,6
+p,2025-03-01,Hapur,CZ8kLjgqvSH,140,Meerut Division,ANC,% ANC registered in First trimester,1,204,88.15633636004738,4,ANC,2025,46
+p,2025-03-01,Hapur,CZ8kLjgqvSH,140,Meerut Division,communicable_diseases,Success rate of positive tuberculosis cases,2,204,89.0,4,communicable_diseases,2025,46
+p,2025-03-01,Hapur,CZ8kLjgqvSH,140,Meerut Division,ANC,% of severe anaemic PW treated,4,204,47.66081871345029,4,ANC,2025,46
+p,2025-03-01,Hapur,CZ8kLjgqvSH,140,Meerut Division,PNC,% of new born breastfed within one hour of birth,5,204,90.9551656920078,4,PNC,2025,46
+p,2025-03-01,Hapur,CZ8kLjgqvSH,140,Meerut Division,delivery_care,% of live babies weighted at birth,6,204,94.8927875243665,4,delivery_care,2025,46
+p,2025-03-01,Chandauli,ClbehnmwSec,195,Varanasi Division,ANC,% ANC registered in First trimester,1,196,91.54929577464789,4,ANC,2025,61
+p,2025-03-01,Chandauli,ClbehnmwSec,195,Varanasi Division,communicable_diseases,Success rate of positive tuberculosis cases,2,196,96.9,4,communicable_diseases,2025,61
+p,2025-03-01,Chandauli,ClbehnmwSec,195,Varanasi Division,ANC,% of severe anaemic PW treated,4,196,69.92481203007519,4,ANC,2025,61
+p,2025-03-01,Chandauli,ClbehnmwSec,195,Varanasi Division,PNC,% of new born breastfed within one hour of birth,5,196,99.20716994139951,4,PNC,2025,61
+p,2025-03-01,Chandauli,ClbehnmwSec,195,Varanasi Division,delivery_care,% of live babies weighted at birth,6,196,99.55187866253016,4,delivery_care,2025,61
+p,2025-03-01,Banda,DggJGxqbWHn,170,Chitrakoot Division,ANC,% ANC registered in First trimester,1,170,93.90201528839472,4,ANC,2025,47
+p,2025-03-01,Banda,DggJGxqbWHn,170,Chitrakoot Division,communicable_diseases,Success rate of positive tuberculosis cases,2,170,90.3,4,communicable_diseases,2025,47
+p,2025-03-01,Banda,DggJGxqbWHn,170,Chitrakoot Division,ANC,% of severe anaemic PW treated,4,170,100.0,4,ANC,2025,47
+p,2025-03-01,Banda,DggJGxqbWHn,170,Chitrakoot Division,PNC,% of new born breastfed within one hour of birth,5,170,99.17974322396576,4,PNC,2025,47
+p,2025-03-01,Banda,DggJGxqbWHn,170,Chitrakoot Division,delivery_care,% of live babies weighted at birth,6,170,99.75035663338087,4,delivery_care,2025,47
+p,2025-03-01,Saharanpur,FKYZ3JbWq84,132,Saharanpur Division,ANC,% ANC registered in First trimester,1,132,74.52377381130944,4,ANC,2025,31
+p,2025-03-01,Saharanpur,FKYZ3JbWq84,132,Saharanpur Division,communicable_diseases,Success rate of positive tuberculosis cases,2,132,88.8,4,communicable_diseases,2025,31
+p,2025-03-01,Saharanpur,FKYZ3JbWq84,132,Saharanpur Division,ANC,% of severe anaemic PW treated,4,132,59.82905982905983,4,ANC,2025,31
+p,2025-03-01,Saharanpur,FKYZ3JbWq84,132,Saharanpur Division,PNC,% of new born breastfed within one hour of birth,5,132,93.49509063444108,4,PNC,2025,31
+p,2025-03-01,Saharanpur,FKYZ3JbWq84,132,Saharanpur Division,delivery_care,% of live babies weighted at birth,6,132,99.78285498489427,4,delivery_care,2025,31
+p,2025-03-01,Shahjahanpur,GaiLSoQq1ue,150,Bareilly Division,ANC,% ANC registered in First trimester,1,152,88.32578478838045,4,ANC,2025,28
+p,2025-03-01,Shahjahanpur,GaiLSoQq1ue,150,Bareilly Division,communicable_diseases,Success rate of positive tuberculosis cases,2,152,81.8,4,communicable_diseases,2025,28
+p,2025-03-01,Shahjahanpur,GaiLSoQq1ue,150,Bareilly Division,ANC,% of severe anaemic PW treated,4,152,44.62474645030426,4,ANC,2025,28
+p,2025-03-01,Shahjahanpur,GaiLSoQq1ue,150,Bareilly Division,PNC,% of new born breastfed within one hour of birth,5,152,84.61187214611871,4,PNC,2025,28
+p,2025-03-01,Shahjahanpur,GaiLSoQq1ue,150,Bareilly Division,delivery_care,% of live babies weighted at birth,6,152,92.8538812785388,4,delivery_care,2025,28
+p,2025-03-01,Bagpat,HJIS3IrQ0Nj,140,Meerut Division,ANC,% ANC registered in First trimester,1,139,93.33169894582005,4,ANC,2025,66
+p,2025-03-01,Bagpat,HJIS3IrQ0Nj,140,Meerut Division,communicable_diseases,Success rate of positive tuberculosis cases,2,139,89.2,4,communicable_diseases,2025,66
+p,2025-03-01,Bagpat,HJIS3IrQ0Nj,140,Meerut Division,ANC,% of severe anaemic PW treated,4,139,61.05263157894736,4,ANC,2025,66
+p,2025-03-01,Bagpat,HJIS3IrQ0Nj,140,Meerut Division,PNC,% of new born breastfed within one hour of birth,5,139,93.70885149963422,4,PNC,2025,66
+p,2025-03-01,Bagpat,HJIS3IrQ0Nj,140,Meerut Division,delivery_care,% of live babies weighted at birth,6,139,96.4155084125823,4,delivery_care,2025,66
+p,2025-03-01,Rampur,IU006h5U7jj,134,Moradabad Division,ANC,% ANC registered in First trimester,1,136,94.34589800443459,4,ANC,2025,26
+p,2025-03-01,Rampur,IU006h5U7jj,134,Moradabad Division,communicable_diseases,Success rate of positive tuberculosis cases,2,136,95.8,4,communicable_diseases,2025,26
+p,2025-03-01,Rampur,IU006h5U7jj,134,Moradabad Division,ANC,% of severe anaemic PW treated,4,136,66.66666666666666,4,ANC,2025,26
+p,2025-03-01,Rampur,IU006h5U7jj,134,Moradabad Division,PNC,% of new born breastfed within one hour of birth,5,136,96.56371446103499,4,PNC,2025,26
+p,2025-03-01,Rampur,IU006h5U7jj,134,Moradabad Division,delivery_care,% of live babies weighted at birth,6,136,98.97729597054614,4,delivery_care,2025,26
+p,2025-03-01,Kannauj,IhQbDYRiF8w,161,Kanpur Nagar Division,ANC,% ANC registered in First trimester,1,160,77.53019220955944,4,ANC,2025,73
+p,2025-03-01,Kannauj,IhQbDYRiF8w,161,Kanpur Nagar Division,communicable_diseases,Success rate of positive tuberculosis cases,2,160,88.4,4,communicable_diseases,2025,73
+p,2025-03-01,Kannauj,IhQbDYRiF8w,161,Kanpur Nagar Division,ANC,% of severe anaemic PW treated,4,160,89.69072164948454,4,ANC,2025,73
+p,2025-03-01,Kannauj,IhQbDYRiF8w,161,Kanpur Nagar Division,PNC,% of new born breastfed within one hour of birth,5,160,92.52582985271488,4,PNC,2025,73
+p,2025-03-01,Kannauj,IhQbDYRiF8w,161,Kanpur Nagar Division,delivery_care,% of live babies weighted at birth,6,160,95.77929215212136,4,delivery_care,2025,73
+p,2025-03-01,Basti,J1P16zQEOUT,185,Basti Division,ANC,% ANC registered in First trimester,1,185,89.48075748320097,4,ANC,2025,71
+p,2025-03-01,Basti,J1P16zQEOUT,185,Basti Division,communicable_diseases,Success rate of positive tuberculosis cases,2,185,83.3,4,communicable_diseases,2025,71
+p,2025-03-01,Basti,J1P16zQEOUT,185,Basti Division,ANC,% of severe anaemic PW treated,4,185,88.46153846153845,4,ANC,2025,71
+p,2025-03-01,Basti,J1P16zQEOUT,185,Basti Division,PNC,% of new born breastfed within one hour of birth,5,185,87.41845293569432,4,PNC,2025,71
+p,2025-03-01,Basti,J1P16zQEOUT,185,Basti Division,delivery_care,% of live babies weighted at birth,6,185,92.54426840633735,4,delivery_care,2025,71
+p,2025-03-01,Mathura,KP2BUB1npih,146,Agra Division,ANC,% ANC registered in First trimester,1,145,55.459973686873795,4,ANC,2025,24
+p,2025-03-01,Mathura,KP2BUB1npih,146,Agra Division,communicable_diseases,Success rate of positive tuberculosis cases,2,145,90.7,4,communicable_diseases,2025,24
+p,2025-03-01,Mathura,KP2BUB1npih,146,Agra Division,ANC,% of severe anaemic PW treated,4,145,59.8705501618123,4,ANC,2025,24
+p,2025-03-01,Mathura,KP2BUB1npih,146,Agra Division,PNC,% of new born breastfed within one hour of birth,5,145,67.90914385556202,4,PNC,2025,24
+p,2025-03-01,Mathura,KP2BUB1npih,146,Agra Division,delivery_care,% of live babies weighted at birth,6,145,69.01572510192196,4,delivery_care,2025,24
+p,2025-03-01,Varanasi,LeuBT7KfuuA,195,Varanasi Division,ANC,% ANC registered in First trimester,1,197,85.01452081316555,4,ANC,2025,55
+p,2025-03-01,Varanasi,LeuBT7KfuuA,195,Varanasi Division,communicable_diseases,Success rate of positive tuberculosis cases,2,197,95.0,4,communicable_diseases,2025,55
+p,2025-03-01,Varanasi,LeuBT7KfuuA,195,Varanasi Division,ANC,% of severe anaemic PW treated,4,197,100.0,4,ANC,2025,55
+p,2025-03-01,Varanasi,LeuBT7KfuuA,195,Varanasi Division,PNC,% of new born breastfed within one hour of birth,5,197,95.6064588809613,4,PNC,2025,55
+p,2025-03-01,Varanasi,LeuBT7KfuuA,195,Varanasi Division,delivery_care,% of live babies weighted at birth,6,197,96.60783577418951,4,delivery_care,2025,55
+p,2025-03-01,Ghaziabad,M5NHlfAaKYI,140,Meerut Division,ANC,% ANC registered in First trimester,1,140,89.30625762593691,4,ANC,2025,39
+p,2025-03-01,Ghaziabad,M5NHlfAaKYI,140,Meerut Division,communicable_diseases,Success rate of positive tuberculosis cases,2,140,96.4,4,communicable_diseases,2025,39
+p,2025-03-01,Ghaziabad,M5NHlfAaKYI,140,Meerut Division,ANC,% of severe anaemic PW treated,4,140,69.43942133815551,4,ANC,2025,39
+p,2025-03-01,Ghaziabad,M5NHlfAaKYI,140,Meerut Division,PNC,% of new born breastfed within one hour of birth,5,140,96.0383295194508,4,PNC,2025,39
+p,2025-03-01,Ghaziabad,M5NHlfAaKYI,140,Meerut Division,delivery_care,% of live babies weighted at birth,6,140,97.35411899313499,4,delivery_care,2025,39
+p,2025-03-01,Hardoi,MTIkUw5q5pX,155,Lucknow Division,ANC,% ANC registered in First trimester,1,155,77.71712158808933,4,ANC,2025,64
+p,2025-03-01,Hardoi,MTIkUw5q5pX,155,Lucknow Division,communicable_diseases,Success rate of positive tuberculosis cases,2,155,89.0,4,communicable_diseases,2025,64
+p,2025-03-01,Hardoi,MTIkUw5q5pX,155,Lucknow Division,ANC,% of severe anaemic PW treated,4,155,32.571428571428584,4,ANC,2025,64
+p,2025-03-01,Hardoi,MTIkUw5q5pX,155,Lucknow Division,PNC,% of new born breastfed within one hour of birth,5,155,91.90959291126237,4,PNC,2025,64
+p,2025-03-01,Hardoi,MTIkUw5q5pX,155,Lucknow Division,delivery_care,% of live babies weighted at birth,6,155,95.18428149479902,4,delivery_care,2025,64
+p,2025-03-01,Muzaffarnagar,MVQs2RrS1Nw,132,Saharanpur Division,ANC,% ANC registered in First trimester,1,133,80.90435553585283,4,ANC,2025,17
+p,2025-03-01,Muzaffarnagar,MVQs2RrS1Nw,132,Saharanpur Division,communicable_diseases,Success rate of positive tuberculosis cases,2,133,88.9,4,communicable_diseases,2025,17
+p,2025-03-01,Muzaffarnagar,MVQs2RrS1Nw,132,Saharanpur Division,ANC,% of severe anaemic PW treated,4,133,100.0,4,ANC,2025,17
+p,2025-03-01,Muzaffarnagar,MVQs2RrS1Nw,132,Saharanpur Division,PNC,% of new born breastfed within one hour of birth,5,133,99.86208798786377,4,PNC,2025,17
+p,2025-03-01,Muzaffarnagar,MVQs2RrS1Nw,132,Saharanpur Division,delivery_care,% of live babies weighted at birth,6,133,99.80692318300925,4,delivery_care,2025,17
+p,2025-03-01,Lucknow,MfHac5N78aK,155,Lucknow Division,ANC,% ANC registered in First trimester,1,157,52.70730591285779,4,ANC,2025,53
+p,2025-03-01,Lucknow,MfHac5N78aK,155,Lucknow Division,communicable_diseases,Success rate of positive tuberculosis cases,2,157,94.1,4,communicable_diseases,2025,53
+p,2025-03-01,Lucknow,MfHac5N78aK,155,Lucknow Division,ANC,% of severe anaemic PW treated,4,157,100.0,4,ANC,2025,53
+p,2025-03-01,Lucknow,MfHac5N78aK,155,Lucknow Division,PNC,% of new born breastfed within one hour of birth,5,157,88.63532633500685,4,PNC,2025,53
+p,2025-03-01,Lucknow,MfHac5N78aK,155,Lucknow Division,delivery_care,% of live babies weighted at birth,6,157,98.37973528069377,4,delivery_care,2025,53
+p,2025-03-01,Jhansi,Mq751wBMqGF,165,Jhansi Division,ANC,% ANC registered in First trimester,1,166,72.77757943591574,4,ANC,2025,25
+p,2025-03-01,Jhansi,Mq751wBMqGF,165,Jhansi Division,communicable_diseases,Success rate of positive tuberculosis cases,2,166,92.1,4,communicable_diseases,2025,25
+p,2025-03-01,Jhansi,Mq751wBMqGF,165,Jhansi Division,ANC,% of severe anaemic PW treated,4,166,85.41666666666666,4,ANC,2025,25
+p,2025-03-01,Jhansi,Mq751wBMqGF,165,Jhansi Division,PNC,% of new born breastfed within one hour of birth,5,166,95.76053442959919,4,PNC,2025,25
+p,2025-03-01,Jhansi,Mq751wBMqGF,165,Jhansi Division,delivery_care,% of live babies weighted at birth,6,166,98.84378211716341,4,delivery_care,2025,25
+p,2025-03-01,Agra,N5WWbRtsjWp,146,Agra Division,ANC,% ANC registered in First trimester,1,146,60.09375697596548,4,ANC,2025,12
+p,2025-03-01,Agra,N5WWbRtsjWp,146,Agra Division,communicable_diseases,Success rate of positive tuberculosis cases,2,146,94.4,4,communicable_diseases,2025,12
+p,2025-03-01,Agra,N5WWbRtsjWp,146,Agra Division,ANC,% of severe anaemic PW treated,4,146,74.27385892116183,4,ANC,2025,12
+p,2025-03-01,Agra,N5WWbRtsjWp,146,Agra Division,PNC,% of new born breastfed within one hour of birth,5,146,98.2999622213827,4,PNC,2025,12
+p,2025-03-01,Agra,N5WWbRtsjWp,146,Agra Division,delivery_care,% of live babies weighted at birth,6,146,99.76073542375015,4,delivery_care,2025,12
+p,2025-03-01,Jalaun,NL5xiiHZQSC,165,Jhansi Division,ANC,% ANC registered in First trimester,1,165,77.49105292898851,4,ANC,2025,4
+p,2025-03-01,Jalaun,NL5xiiHZQSC,165,Jhansi Division,communicable_diseases,Success rate of positive tuberculosis cases,2,165,90.0,4,communicable_diseases,2025,4
+p,2025-03-01,Jalaun,NL5xiiHZQSC,165,Jhansi Division,ANC,% of severe anaemic PW treated,4,165,55.02008032128514,4,ANC,2025,4
+p,2025-03-01,Jalaun,NL5xiiHZQSC,165,Jhansi Division,PNC,% of new born breastfed within one hour of birth,5,165,93.29039184111649,4,PNC,2025,4
+p,2025-03-01,Jalaun,NL5xiiHZQSC,165,Jhansi Division,delivery_care,% of live babies weighted at birth,6,165,89.8550724637681,4,delivery_care,2025,4
+p,2025-03-01,Sonbhadra,NNk3JP90QZ5,200,Mirzapur Division,ANC,% ANC registered in First trimester,1,200,89.4340283861924,4,ANC,2025,74
+p,2025-03-01,Sonbhadra,NNk3JP90QZ5,200,Mirzapur Division,communicable_diseases,Success rate of positive tuberculosis cases,2,200,94.5,4,communicable_diseases,2025,74
+p,2025-03-01,Sonbhadra,NNk3JP90QZ5,200,Mirzapur Division,ANC,% of severe anaemic PW treated,4,200,95.98997493734336,4,ANC,2025,74
+p,2025-03-01,Sonbhadra,NNk3JP90QZ5,200,Mirzapur Division,PNC,% of new born breastfed within one hour of birth,5,200,95.50922213311951,4,PNC,2025,74
+p,2025-03-01,Sonbhadra,NNk3JP90QZ5,200,Mirzapur Division,delivery_care,% of live babies weighted at birth,6,200,99.67923015236569,4,delivery_care,2025,74
+p,2025-03-01,Azamgarh,NjckKfm3g0k,193,Azamgarh Division,ANC,% ANC registered in First trimester,1,191,70.74368568755847,4,ANC,2025,14
+p,2025-03-01,Azamgarh,NjckKfm3g0k,193,Azamgarh Division,communicable_diseases,Success rate of positive tuberculosis cases,2,191,84.9,4,communicable_diseases,2025,14
+p,2025-03-01,Azamgarh,NjckKfm3g0k,193,Azamgarh Division,ANC,% of severe anaemic PW treated,4,191,84.64491362763916,4,ANC,2025,14
+p,2025-03-01,Azamgarh,NjckKfm3g0k,193,Azamgarh Division,PNC,% of new born breastfed within one hour of birth,5,191,92.54396829328708,4,PNC,2025,14
+p,2025-03-01,Azamgarh,NjckKfm3g0k,193,Azamgarh Division,delivery_care,% of live babies weighted at birth,6,191,96.35868218974484,4,delivery_care,2025,14
+p,2025-03-01,Kaushambi,PAj0oVY0Dxu,172,Prayagraj Division,ANC,% ANC registered in First trimester,1,174,99.05263157894736,4,ANC,2025,63
+p,2025-03-01,Kaushambi,PAj0oVY0Dxu,172,Prayagraj Division,communicable_diseases,Success rate of positive tuberculosis cases,2,174,97.2,4,communicable_diseases,2025,63
+p,2025-03-01,Kaushambi,PAj0oVY0Dxu,172,Prayagraj Division,ANC,% of severe anaemic PW treated,4,174,99.5049504950495,4,ANC,2025,63
+p,2025-03-01,Kaushambi,PAj0oVY0Dxu,172,Prayagraj Division,PNC,% of new born breastfed within one hour of birth,5,174,92.62446220036877,4,PNC,2025,63
+p,2025-03-01,Kaushambi,PAj0oVY0Dxu,172,Prayagraj Division,delivery_care,% of live babies weighted at birth,6,174,93.63859864781807,4,delivery_care,2025,63
+p,2025-03-01,Bhadohi,PeUY1vj02UQ,200,Mirzapur Division,ANC,% ANC registered in First trimester,1,198,94.41987786902506,4,ANC,2025,50
+p,2025-03-01,Bhadohi,PeUY1vj02UQ,200,Mirzapur Division,communicable_diseases,Success rate of positive tuberculosis cases,2,198,94.5,4,communicable_diseases,2025,50
+p,2025-03-01,Bhadohi,PeUY1vj02UQ,200,Mirzapur Division,ANC,% of severe anaemic PW treated,4,198,76.3888888888889,4,ANC,2025,50
+p,2025-03-01,Bhadohi,PeUY1vj02UQ,200,Mirzapur Division,PNC,% of new born breastfed within one hour of birth,5,198,99.45612762871644,4,PNC,2025,50
+p,2025-03-01,Bhadohi,PeUY1vj02UQ,200,Mirzapur Division,delivery_care,% of live babies weighted at birth,6,198,99.67367657722988,4,delivery_care,2025,50
+p,2025-03-01,Etawah,Pm0jLk6EAiE,161,Kanpur Nagar Division,ANC,% ANC registered in First trimester,1,161,72.19622118218062,4,ANC,2025,62
+p,2025-03-01,Etawah,Pm0jLk6EAiE,161,Kanpur Nagar Division,communicable_diseases,Success rate of positive tuberculosis cases,2,161,89.5,4,communicable_diseases,2025,62
+p,2025-03-01,Etawah,Pm0jLk6EAiE,161,Kanpur Nagar Division,ANC,% of severe anaemic PW treated,4,161,26.66666666666667,4,ANC,2025,62
+p,2025-03-01,Etawah,Pm0jLk6EAiE,161,Kanpur Nagar Division,PNC,% of new born breastfed within one hour of birth,5,161,96.34664401019543,4,PNC,2025,62
+p,2025-03-01,Etawah,Pm0jLk6EAiE,161,Kanpur Nagar Division,delivery_care,% of live babies weighted at birth,6,161,94.30756159728122,4,delivery_care,2025,62
+p,2025-03-01,Kanpur Nagar,QVMRMhzVrrS,161,Kanpur Nagar Division,ANC,% ANC registered in First trimester,1,164,49.55553709396028,4,ANC,2025,65
+p,2025-03-01,Kanpur Nagar,QVMRMhzVrrS,161,Kanpur Nagar Division,communicable_diseases,Success rate of positive tuberculosis cases,2,164,76.7,4,communicable_diseases,2025,65
+p,2025-03-01,Kanpur Nagar,QVMRMhzVrrS,161,Kanpur Nagar Division,ANC,% of severe anaemic PW treated,4,164,51.50078988941547,4,ANC,2025,65
+p,2025-03-01,Kanpur Nagar,QVMRMhzVrrS,161,Kanpur Nagar Division,PNC,% of new born breastfed within one hour of birth,5,164,70.173326913818,4,PNC,2025,65
+p,2025-03-01,Kanpur Nagar,QVMRMhzVrrS,161,Kanpur Nagar Division,delivery_care,% of live babies weighted at birth,6,164,78.64708714492056,4,delivery_care,2025,65
+p,2025-03-01,Amethi,StsLkYw1G0m,176,Ayodhya Division,ANC,% ANC registered in First trimester,1,206,98.46547314578005,4,ANC,2025,75
+p,2025-03-01,Amethi,StsLkYw1G0m,176,Ayodhya Division,communicable_diseases,Success rate of positive tuberculosis cases,2,206,90.1,4,communicable_diseases,2025,75
+p,2025-03-01,Amethi,StsLkYw1G0m,176,Ayodhya Division,ANC,% of severe anaemic PW treated,4,206,58.73015873015874,4,ANC,2025,75
+p,2025-03-01,Amethi,StsLkYw1G0m,176,Ayodhya Division,PNC,% of new born breastfed within one hour of birth,5,206,99.3744787322769,4,PNC,2025,75
+p,2025-03-01,Amethi,StsLkYw1G0m,176,Ayodhya Division,delivery_care,% of live babies weighted at birth,6,206,99.83319432860719,4,delivery_care,2025,75
+p,2025-03-01,Deoria,Tf9b9qcbghH,188,Gorakhpur Division,ANC,% ANC registered in First trimester,1,190,88.24767920375155,4,ANC,2025,19
+p,2025-03-01,Deoria,Tf9b9qcbghH,188,Gorakhpur Division,communicable_diseases,Success rate of positive tuberculosis cases,2,190,85.7,4,communicable_diseases,2025,19
+p,2025-03-01,Deoria,Tf9b9qcbghH,188,Gorakhpur Division,ANC,% of severe anaemic PW treated,4,190,52.83018867924528,4,ANC,2025,19
+p,2025-03-01,Deoria,Tf9b9qcbghH,188,Gorakhpur Division,PNC,% of new born breastfed within one hour of birth,5,190,97.76992113135708,4,PNC,2025,19
+p,2025-03-01,Deoria,Tf9b9qcbghH,188,Gorakhpur Division,delivery_care,% of live babies weighted at birth,6,190,99.04813706826216,4,delivery_care,2025,19
+p,2025-03-01,Mirzapur,UAicdMLyuk4,200,Mirzapur Division,ANC,% ANC registered in First trimester,1,199,95.62157003101885,4,ANC,2025,20
+p,2025-03-01,Mirzapur,UAicdMLyuk4,200,Mirzapur Division,communicable_diseases,Success rate of positive tuberculosis cases,2,199,94.8,4,communicable_diseases,2025,20
+p,2025-03-01,Mirzapur,UAicdMLyuk4,200,Mirzapur Division,ANC,% of severe anaemic PW treated,4,199,95.55555555555556,4,ANC,2025,20
+p,2025-03-01,Mirzapur,UAicdMLyuk4,200,Mirzapur Division,PNC,% of new born breastfed within one hour of birth,5,199,99.431964885102,4,PNC,2025,20
+p,2025-03-01,Mirzapur,UAicdMLyuk4,200,Mirzapur Division,delivery_care,% of live babies weighted at birth,6,199,99.79344177640071,4,delivery_care,2025,20
+p,2025-03-01,Hamirpur,VSI7HobT5qL,170,Chitrakoot Division,ANC,% ANC registered in First trimester,1,168,86.2162162162162,4,ANC,2025,36
+p,2025-03-01,Hamirpur,VSI7HobT5qL,170,Chitrakoot Division,communicable_diseases,Success rate of positive tuberculosis cases,2,168,92.9,4,communicable_diseases,2025,36
+p,2025-03-01,Hamirpur,VSI7HobT5qL,170,Chitrakoot Division,ANC,% of severe anaemic PW treated,4,168,32.59911894273127,4,ANC,2025,36
+p,2025-03-01,Hamirpur,VSI7HobT5qL,170,Chitrakoot Division,PNC,% of new born breastfed within one hour of birth,5,168,91.54929577464789,4,PNC,2025,36
+p,2025-03-01,Hamirpur,VSI7HobT5qL,170,Chitrakoot Division,delivery_care,% of live babies weighted at birth,6,168,92.17527386541471,4,delivery_care,2025,36
+p,2025-03-01,Mainpuri,XBLhrSWGytu,146,Agra Division,ANC,% ANC registered in First trimester,1,148,75.48707049238399,4,ANC,2025,43
+p,2025-03-01,Mainpuri,XBLhrSWGytu,146,Agra Division,communicable_diseases,Success rate of positive tuberculosis cases,2,148,91.7,4,communicable_diseases,2025,43
+p,2025-03-01,Mainpuri,XBLhrSWGytu,146,Agra Division,ANC,% of severe anaemic PW treated,4,148,89.83050847457628,4,ANC,2025,43
+p,2025-03-01,Mainpuri,XBLhrSWGytu,146,Agra Division,PNC,% of new born breastfed within one hour of birth,5,148,93.42161469457494,4,PNC,2025,43
+p,2025-03-01,Mainpuri,XBLhrSWGytu,146,Agra Division,delivery_care,% of live babies weighted at birth,6,148,99.87184963690729,4,delivery_care,2025,43
+p,2025-03-01,Sitapur,XxaOowFtkiJ,155,Lucknow Division,ANC,% ANC registered in First trimester,1,154,79.4088152428251,4,ANC,2025,60
+p,2025-03-01,Sitapur,XxaOowFtkiJ,155,Lucknow Division,communicable_diseases,Success rate of positive tuberculosis cases,2,154,92.2,4,communicable_diseases,2025,60
+p,2025-03-01,Sitapur,XxaOowFtkiJ,155,Lucknow Division,ANC,% of severe anaemic PW treated,4,154,23.47723240685985,4,ANC,2025,60
+p,2025-03-01,Sitapur,XxaOowFtkiJ,155,Lucknow Division,PNC,% of new born breastfed within one hour of birth,5,154,98.27163247100805,4,PNC,2025,60
+p,2025-03-01,Sitapur,XxaOowFtkiJ,155,Lucknow Division,delivery_care,% of live babies weighted at birth,6,154,99.0521855486173,4,delivery_care,2025,60
+p,2025-03-01,Moradabad,YQNQoPjAIpV,134,Moradabad Division,ANC,% ANC registered in First trimester,1,135,85.88123515439429,4,ANC,2025,51
+p,2025-03-01,Moradabad,YQNQoPjAIpV,134,Moradabad Division,communicable_diseases,Success rate of positive tuberculosis cases,2,135,89.9,4,communicable_diseases,2025,51
+p,2025-03-01,Moradabad,YQNQoPjAIpV,134,Moradabad Division,ANC,% of severe anaemic PW treated,4,135,39.09465020576132,4,ANC,2025,51
+p,2025-03-01,Moradabad,YQNQoPjAIpV,134,Moradabad Division,PNC,% of new born breastfed within one hour of birth,5,135,97.98722663053995,4,PNC,2025,51
+p,2025-03-01,Moradabad,YQNQoPjAIpV,134,Moradabad Division,delivery_care,% of live babies weighted at birth,6,135,97.7162763692665,4,delivery_care,2025,51
+p,2025-03-01,Sambhal,YzHpzrN0eLv,134,Moradabad Division,ANC,% ANC registered in First trimester,1,205,97.51431153962037,4,ANC,2025,13
+p,2025-03-01,Sambhal,YzHpzrN0eLv,134,Moradabad Division,communicable_diseases,Success rate of positive tuberculosis cases,2,205,94.2,4,communicable_diseases,2025,13
+p,2025-03-01,Sambhal,YzHpzrN0eLv,134,Moradabad Division,ANC,% of severe anaemic PW treated,4,205,93.55932203389831,4,ANC,2025,13
+p,2025-03-01,Sambhal,YzHpzrN0eLv,134,Moradabad Division,PNC,% of new born breastfed within one hour of birth,5,205,97.94416792901968,4,PNC,2025,13
+p,2025-03-01,Sambhal,YzHpzrN0eLv,134,Moradabad Division,delivery_care,% of live babies weighted at birth,6,205,99.50227223544687,4,delivery_care,2025,13
+p,2025-03-01,Etah,ZLcx4iOVyN5,201,Alligarh Division,ANC,% ANC registered in First trimester,1,201,80.53211009174312,4,ANC,2025,21
+p,2025-03-01,Etah,ZLcx4iOVyN5,201,Alligarh Division,communicable_diseases,Success rate of positive tuberculosis cases,2,201,93.4,4,communicable_diseases,2025,21
+p,2025-03-01,Etah,ZLcx4iOVyN5,201,Alligarh Division,ANC,% of severe anaemic PW treated,4,201,52.313167259786475,4,ANC,2025,21
+p,2025-03-01,Etah,ZLcx4iOVyN5,201,Alligarh Division,PNC,% of new born breastfed within one hour of birth,5,201,90.51165025222194,4,PNC,2025,21
+p,2025-03-01,Etah,ZLcx4iOVyN5,201,Alligarh Division,delivery_care,% of live babies weighted at birth,6,201,90.60773480662985,4,delivery_care,2025,21
+p,2025-03-01,Unnav,aT03mfdlNiF,155,Lucknow Division,ANC,% ANC registered in First trimester,1,156,85.4556366910073,4,ANC,2025,7
+p,2025-03-01,Unnav,aT03mfdlNiF,155,Lucknow Division,communicable_diseases,Success rate of positive tuberculosis cases,2,156,90.0,4,communicable_diseases,2025,7
+p,2025-03-01,Unnav,aT03mfdlNiF,155,Lucknow Division,ANC,% of severe anaemic PW treated,4,156,49.357798165137616,4,ANC,2025,7
+p,2025-03-01,Unnav,aT03mfdlNiF,155,Lucknow Division,PNC,% of new born breastfed within one hour of birth,5,156,69.82830820770518,4,PNC,2025,7
+p,2025-03-01,Unnav,aT03mfdlNiF,155,Lucknow Division,delivery_care,% of live babies weighted at birth,6,156,71.29396984924621,4,delivery_care,2025,7
+p,2025-03-01,Ayodhya,b4XkXzoGqFY,176,Ayodhya Division,ANC,% ANC registered in First trimester,1,177,69.59160450120115,4,ANC,2025,69
+p,2025-03-01,Ayodhya,b4XkXzoGqFY,176,Ayodhya Division,communicable_diseases,Success rate of positive tuberculosis cases,2,177,93.9,4,communicable_diseases,2025,69
+p,2025-03-01,Ayodhya,b4XkXzoGqFY,176,Ayodhya Division,ANC,% of severe anaemic PW treated,4,177,45.45454545454545,4,ANC,2025,69
+p,2025-03-01,Ayodhya,b4XkXzoGqFY,176,Ayodhya Division,PNC,% of new born breastfed within one hour of birth,5,177,98.4761904761905,4,PNC,2025,69
+p,2025-03-01,Ayodhya,b4XkXzoGqFY,176,Ayodhya Division,delivery_care,% of live babies weighted at birth,6,177,99.3968253968254,4,delivery_care,2025,69
+p,2025-03-01,Gautam Buddha Nagar,bNmwkrQeP3e,140,Meerut Division,ANC,% ANC registered in First trimester,1,141,75.66626980492718,4,ANC,2025,35
+p,2025-03-01,Gautam Buddha Nagar,bNmwkrQeP3e,140,Meerut Division,communicable_diseases,Success rate of positive tuberculosis cases,2,141,85.0,4,communicable_diseases,2025,35
+p,2025-03-01,Gautam Buddha Nagar,bNmwkrQeP3e,140,Meerut Division,ANC,% of severe anaemic PW treated,4,141,97.47899159663864,4,ANC,2025,35
+p,2025-03-01,Gautam Buddha Nagar,bNmwkrQeP3e,140,Meerut Division,PNC,% of new born breastfed within one hour of birth,5,141,82.75785252840276,4,PNC,2025,35
+p,2025-03-01,Gautam Buddha Nagar,bNmwkrQeP3e,140,Meerut Division,delivery_care,% of live babies weighted at birth,6,141,98.41835598128759,4,delivery_care,2025,35
+p,2025-03-01,Pilibhit,c96jwckSd6j,150,Bareilly Division,ANC,% ANC registered in First trimester,1,151,98.33166499833168,4,ANC,2025,29
+p,2025-03-01,Pilibhit,c96jwckSd6j,150,Bareilly Division,communicable_diseases,Success rate of positive tuberculosis cases,2,151,91.7,4,communicable_diseases,2025,29
+p,2025-03-01,Pilibhit,c96jwckSd6j,150,Bareilly Division,ANC,% of severe anaemic PW treated,4,151,78.80794701986757,4,ANC,2025,29
+p,2025-03-01,Pilibhit,c96jwckSd6j,150,Bareilly Division,PNC,% of new born breastfed within one hour of birth,5,151,97.12615684364346,4,PNC,2025,29
+p,2025-03-01,Pilibhit,c96jwckSd6j,150,Bareilly Division,delivery_care,% of live babies weighted at birth,6,151,97.54018509498295,4,delivery_care,2025,29
+p,2025-03-01,Siddharth Nagar,cP0p8qfm3il,185,Basti Division,ANC,% ANC registered in First trimester,1,184,90.17476741152944,4,ANC,2025,1
+p,2025-03-01,Siddharth Nagar,cP0p8qfm3il,185,Basti Division,communicable_diseases,Success rate of positive tuberculosis cases,2,184,94.0,4,communicable_diseases,2025,1
+p,2025-03-01,Siddharth Nagar,cP0p8qfm3il,185,Basti Division,ANC,% of severe anaemic PW treated,4,184,82.73809523809524,4,ANC,2025,1
+p,2025-03-01,Siddharth Nagar,cP0p8qfm3il,185,Basti Division,PNC,% of new born breastfed within one hour of birth,5,184,92.02502731155029,4,PNC,2025,1
+p,2025-03-01,Siddharth Nagar,cP0p8qfm3il,185,Basti Division,delivery_care,% of live babies weighted at birth,6,184,92.14420498559936,4,delivery_care,2025,1
+p,2025-03-01,Lakhimpur Kheri,d9ZuMopgX29,155,Lucknow Division,ANC,% ANC registered in First trimester,1,153,93.52020964027632,4,ANC,2025,22
+p,2025-03-01,Lakhimpur Kheri,d9ZuMopgX29,155,Lucknow Division,communicable_diseases,Success rate of positive tuberculosis cases,2,153,88.4,4,communicable_diseases,2025,22
+p,2025-03-01,Lakhimpur Kheri,d9ZuMopgX29,155,Lucknow Division,ANC,% of severe anaemic PW treated,4,153,66.05839416058393,4,ANC,2025,22
+p,2025-03-01,Lakhimpur Kheri,d9ZuMopgX29,155,Lucknow Division,PNC,% of new born breastfed within one hour of birth,5,153,98.42904290429043,4,PNC,2025,22
+p,2025-03-01,Lakhimpur Kheri,d9ZuMopgX29,155,Lucknow Division,delivery_care,% of live babies weighted at birth,6,153,99.6039603960396,4,delivery_care,2025,22
+p,2025-03-01,Ghazipur,dScWdMRN8PL,195,Varanasi Division,ANC,% ANC registered in First trimester,1,195,89.5430821353356,4,ANC,2025,67
+p,2025-03-01,Ghazipur,dScWdMRN8PL,195,Varanasi Division,communicable_diseases,Success rate of positive tuberculosis cases,2,195,94.1,4,communicable_diseases,2025,67
+p,2025-03-01,Ghazipur,dScWdMRN8PL,195,Varanasi Division,ANC,% of severe anaemic PW treated,4,195,70.33898305084746,4,ANC,2025,67
+p,2025-03-01,Ghazipur,dScWdMRN8PL,195,Varanasi Division,PNC,% of new born breastfed within one hour of birth,5,195,97.9573030256489,4,PNC,2025,67
+p,2025-03-01,Ghazipur,dScWdMRN8PL,195,Varanasi Division,delivery_care,% of live babies weighted at birth,6,195,98.32590999846414,4,delivery_care,2025,67
+p,2025-03-01,Budaun,eA37kyBRRuZ,150,Bareilly Division,ANC,% ANC registered in First trimester,1,149,98.09657218193804,4,ANC,2025,58
+p,2025-03-01,Budaun,eA37kyBRRuZ,150,Bareilly Division,communicable_diseases,Success rate of positive tuberculosis cases,2,149,88.7,4,communicable_diseases,2025,58
+p,2025-03-01,Budaun,eA37kyBRRuZ,150,Bareilly Division,ANC,% of severe anaemic PW treated,4,149,61.904761904761905,4,ANC,2025,58
+p,2025-03-01,Budaun,eA37kyBRRuZ,150,Bareilly Division,PNC,% of new born breastfed within one hour of birth,5,149,98.22998872604285,4,PNC,2025,58
+p,2025-03-01,Budaun,eA37kyBRRuZ,150,Bareilly Division,delivery_care,% of live babies weighted at birth,6,149,99.66178128523113,4,delivery_care,2025,58
+p,2025-03-01,Firozabad,eJTsuE56XDF,146,Agra Division,ANC,% ANC registered in First trimester,1,147,67.21937587331159,4,ANC,2025,27
+p,2025-03-01,Firozabad,eJTsuE56XDF,146,Agra Division,communicable_diseases,Success rate of positive tuberculosis cases,2,147,92.5,4,communicable_diseases,2025,27
+p,2025-03-01,Firozabad,eJTsuE56XDF,146,Agra Division,ANC,% of severe anaemic PW treated,4,147,71.2962962962963,4,ANC,2025,27
+p,2025-03-01,Firozabad,eJTsuE56XDF,146,Agra Division,PNC,% of new born breastfed within one hour of birth,5,147,93.36349924585218,4,PNC,2025,27
+p,2025-03-01,Firozabad,eJTsuE56XDF,146,Agra Division,delivery_care,% of live babies weighted at birth,6,147,98.34087481146305,4,delivery_care,2025,27
+p,2025-03-01,Lalitpur,fagfcadhxej,165,Jhansi Division,ANC,% ANC registered in First trimester,1,167,82.0475638051044,4,ANC,2025,68
+p,2025-03-01,Lalitpur,fagfcadhxej,165,Jhansi Division,communicable_diseases,Success rate of positive tuberculosis cases,2,167,87.2,4,communicable_diseases,2025,68
+p,2025-03-01,Lalitpur,fagfcadhxej,165,Jhansi Division,ANC,% of severe anaemic PW treated,4,167,36.95652173913043,4,ANC,2025,68
+p,2025-03-01,Lalitpur,fagfcadhxej,165,Jhansi Division,PNC,% of new born breastfed within one hour of birth,5,167,98.87914230019493,4,PNC,2025,68
+p,2025-03-01,Lalitpur,fagfcadhxej,165,Jhansi Division,delivery_care,% of live babies weighted at birth,6,167,99.26900584795322,4,delivery_care,2025,68
+p,2025-03-01,Sant Kabir Nagar,fe1yBApr2sl,185,Basti Division,ANC,% ANC registered in First trimester,1,186,87.7079002079002,4,ANC,2025,11
+p,2025-03-01,Sant Kabir Nagar,fe1yBApr2sl,185,Basti Division,communicable_diseases,Success rate of positive tuberculosis cases,2,186,90.4,4,communicable_diseases,2025,11
+p,2025-03-01,Sant Kabir Nagar,fe1yBApr2sl,185,Basti Division,ANC,% of severe anaemic PW treated,4,186,93.51851851851852,4,ANC,2025,11
+p,2025-03-01,Sant Kabir Nagar,fe1yBApr2sl,185,Basti Division,PNC,% of new born breastfed within one hour of birth,5,186,93.7570303712036,4,PNC,2025,11
+p,2025-03-01,Sant Kabir Nagar,fe1yBApr2sl,185,Basti Division,delivery_care,% of live babies weighted at birth,6,186,95.2193475815523,4,delivery_care,2025,11
+p,2025-03-01,Aligarh,frD2HOp3wAs,201,Alligarh Division,ANC,% ANC registered in First trimester,1,143,82.32628398791542,4,ANC,2025,44
+p,2025-03-01,Aligarh,frD2HOp3wAs,201,Alligarh Division,communicable_diseases,Success rate of positive tuberculosis cases,2,143,96.6,4,communicable_diseases,2025,44
+p,2025-03-01,Aligarh,frD2HOp3wAs,201,Alligarh Division,ANC,% of severe anaemic PW treated,4,143,90.13840830449827,4,ANC,2025,44
+p,2025-03-01,Aligarh,frD2HOp3wAs,201,Alligarh Division,PNC,% of new born breastfed within one hour of birth,5,143,78.17466102930456,4,PNC,2025,44
+p,2025-03-01,Aligarh,frD2HOp3wAs,201,Alligarh Division,delivery_care,% of live babies weighted at birth,6,143,99.11065753025223,4,delivery_care,2025,44
+p,2025-03-01,Pratapgarh,fz7bJo3egPX,172,Prayagraj Division,ANC,% ANC registered in First trimester,1,173,94.65555555555555,4,ANC,2025,3
+p,2025-03-01,Pratapgarh,fz7bJo3egPX,172,Prayagraj Division,communicable_diseases,Success rate of positive tuberculosis cases,2,173,96.6,4,communicable_diseases,2025,3
+p,2025-03-01,Pratapgarh,fz7bJo3egPX,172,Prayagraj Division,ANC,% of severe anaemic PW treated,4,173,52.71111111111111,4,ANC,2025,3
+p,2025-03-01,Pratapgarh,fz7bJo3egPX,172,Prayagraj Division,PNC,% of new born breastfed within one hour of birth,5,173,99.43971778377256,4,PNC,2025,3
+p,2025-03-01,Pratapgarh,fz7bJo3egPX,172,Prayagraj Division,delivery_care,% of live babies weighted at birth,6,173,99.83399045445113,4,delivery_care,2025,3
+p,2025-03-01,Jaunpur,gmw76vAUMqz,195,Varanasi Division,ANC,% ANC registered in First trimester,1,194,89.57878315132606,4,ANC,2025,54
+p,2025-03-01,Jaunpur,gmw76vAUMqz,195,Varanasi Division,communicable_diseases,Success rate of positive tuberculosis cases,2,194,94.1,4,communicable_diseases,2025,54
+p,2025-03-01,Jaunpur,gmw76vAUMqz,195,Varanasi Division,ANC,% of severe anaemic PW treated,4,194,71.47239263803681,4,ANC,2025,54
+p,2025-03-01,Jaunpur,gmw76vAUMqz,195,Varanasi Division,PNC,% of new born breastfed within one hour of birth,5,194,98.08612440191388,4,PNC,2025,54
+p,2025-03-01,Jaunpur,gmw76vAUMqz,195,Varanasi Division,delivery_care,% of live babies weighted at birth,6,194,99.57469431153643,4,delivery_care,2025,54
+p,2025-03-01,Kasganj,hITp09XOBLZ,201,Alligarh Division,ANC,% ANC registered in First trimester,1,202,81.39730639730641,4,ANC,2025,70
+p,2025-03-01,Kasganj,hITp09XOBLZ,201,Alligarh Division,communicable_diseases,Success rate of positive tuberculosis cases,2,202,94.4,4,communicable_diseases,2025,70
+p,2025-03-01,Kasganj,hITp09XOBLZ,201,Alligarh Division,ANC,% of severe anaemic PW treated,4,202,19.558359621451107,4,ANC,2025,70
+p,2025-03-01,Kasganj,hITp09XOBLZ,201,Alligarh Division,PNC,% of new born breastfed within one hour of birth,5,202,98.096062310688,4,PNC,2025,70
+p,2025-03-01,Kasganj,hITp09XOBLZ,201,Alligarh Division,delivery_care,% of live babies weighted at birth,6,202,99.48074426655128,4,delivery_care,2025,70
+p,2025-03-01,Amroha,hgquAmZaNBu,134,Moradabad Division,ANC,% ANC registered in First trimester,1,137,85.19420954565,4,ANC,2025,33
+p,2025-03-01,Amroha,hgquAmZaNBu,134,Moradabad Division,communicable_diseases,Success rate of positive tuberculosis cases,2,137,92.9,4,communicable_diseases,2025,33
+p,2025-03-01,Amroha,hgquAmZaNBu,134,Moradabad Division,ANC,% of severe anaemic PW treated,4,137,100.0,4,ANC,2025,33
+p,2025-03-01,Amroha,hgquAmZaNBu,134,Moradabad Division,PNC,% of new born breastfed within one hour of birth,5,137,97.10966279399264,4,PNC,2025,33
+p,2025-03-01,Amroha,hgquAmZaNBu,134,Moradabad Division,delivery_care,% of live babies weighted at birth,6,137,97.61972230093511,4,delivery_care,2025,33
+p,2025-03-01,Chitrakoot,i2fSZZ3QAJJ,170,Chitrakoot Division,ANC,% ANC registered in First trimester,1,171,99.02370990237101,4,ANC,2025,38
+p,2025-03-01,Chitrakoot,i2fSZZ3QAJJ,170,Chitrakoot Division,communicable_diseases,Success rate of positive tuberculosis cases,2,171,95.2,4,communicable_diseases,2025,38
+p,2025-03-01,Chitrakoot,i2fSZZ3QAJJ,170,Chitrakoot Division,ANC,% of severe anaemic PW treated,4,171,100.0,4,ANC,2025,38
+p,2025-03-01,Chitrakoot,i2fSZZ3QAJJ,170,Chitrakoot Division,PNC,% of new born breastfed within one hour of birth,5,171,98.28834759710337,4,PNC,2025,38
+p,2025-03-01,Chitrakoot,i2fSZZ3QAJJ,170,Chitrakoot Division,delivery_care,% of live babies weighted at birth,6,171,97.10335747202109,4,delivery_care,2025,38
+p,2025-03-01,Bahraich,iE0E3nLioFr,182,Gonda Division,ANC,% ANC registered in First trimester,1,180,96.8713259307642,4,ANC,2025,23
+p,2025-03-01,Bahraich,iE0E3nLioFr,182,Gonda Division,communicable_diseases,Success rate of positive tuberculosis cases,2,180,93.1,4,communicable_diseases,2025,23
+p,2025-03-01,Bahraich,iE0E3nLioFr,182,Gonda Division,ANC,% of severe anaemic PW treated,4,180,99.79057591623035,4,ANC,2025,23
+p,2025-03-01,Bahraich,iE0E3nLioFr,182,Gonda Division,PNC,% of new born breastfed within one hour of birth,5,180,100.0,4,PNC,2025,23
+p,2025-03-01,Bahraich,iE0E3nLioFr,182,Gonda Division,delivery_care,% of live babies weighted at birth,6,180,100.0,4,delivery_care,2025,23
+p,2025-03-01,Fatehpur,ibLiLcaKzw2,172,Prayagraj Division,ANC,% ANC registered in First trimester,1,172,97.26081778483524,4,ANC,2025,16
+p,2025-03-01,Fatehpur,ibLiLcaKzw2,172,Prayagraj Division,communicable_diseases,Success rate of positive tuberculosis cases,2,172,97.6,4,communicable_diseases,2025,16
+p,2025-03-01,Fatehpur,ibLiLcaKzw2,172,Prayagraj Division,ANC,% of severe anaemic PW treated,4,172,100.0,4,ANC,2025,16
+p,2025-03-01,Fatehpur,ibLiLcaKzw2,172,Prayagraj Division,PNC,% of new born breastfed within one hour of birth,5,172,100.0,4,PNC,2025,16
+p,2025-03-01,Fatehpur,ibLiLcaKzw2,172,Prayagraj Division,delivery_care,% of live babies weighted at birth,6,172,100.0,4,delivery_care,2025,16
+p,2025-03-01,Ambedkar Nagar,jM27ji8tyrM,176,Ayodhya Division,ANC,% ANC registered in First trimester,1,178,95.46420978029768,4,ANC,2025,8
+p,2025-03-01,Ambedkar Nagar,jM27ji8tyrM,176,Ayodhya Division,communicable_diseases,Success rate of positive tuberculosis cases,2,178,81.9,4,communicable_diseases,2025,8
+p,2025-03-01,Ambedkar Nagar,jM27ji8tyrM,176,Ayodhya Division,ANC,% of severe anaemic PW treated,4,178,98.82352941176471,4,ANC,2025,8
+p,2025-03-01,Ambedkar Nagar,jM27ji8tyrM,176,Ayodhya Division,PNC,% of new born breastfed within one hour of birth,5,178,90.15041242115478,4,PNC,2025,8
+p,2025-03-01,Ambedkar Nagar,jM27ji8tyrM,176,Ayodhya Division,delivery_care,% of live babies weighted at birth,6,178,92.96458030082485,4,delivery_care,2025,8
+p,2025-03-01,Kanpur Dehat,k3D0AumUCiC,161,Kanpur Nagar Division,ANC,% ANC registered in First trimester,1,163,87.25611262040009,4,ANC,2025,57
+p,2025-03-01,Kanpur Dehat,k3D0AumUCiC,161,Kanpur Nagar Division,communicable_diseases,Success rate of positive tuberculosis cases,2,163,94.6,4,communicable_diseases,2025,57
+p,2025-03-01,Kanpur Dehat,k3D0AumUCiC,161,Kanpur Nagar Division,ANC,% of severe anaemic PW treated,4,163,54.779411764705884,4,ANC,2025,57
+p,2025-03-01,Kanpur Dehat,k3D0AumUCiC,161,Kanpur Nagar Division,PNC,% of new born breastfed within one hour of birth,5,163,97.63056092843328,4,PNC,2025,57
+p,2025-03-01,Kanpur Dehat,k3D0AumUCiC,161,Kanpur Nagar Division,delivery_care,% of live babies weighted at birth,6,163,99.70986460348162,4,delivery_care,2025,57
+p,2025-03-01,Rae Bareli,lLvTDpBDY8u,155,Lucknow Division,ANC,% ANC registered in First trimester,1,158,88.54166666666666,4,ANC,2025,59
+p,2025-03-01,Rae Bareli,lLvTDpBDY8u,155,Lucknow Division,communicable_diseases,Success rate of positive tuberculosis cases,2,158,91.5,4,communicable_diseases,2025,59
+p,2025-03-01,Rae Bareli,lLvTDpBDY8u,155,Lucknow Division,ANC,% of severe anaemic PW treated,4,158,49.03474903474904,4,ANC,2025,59
+p,2025-03-01,Rae Bareli,lLvTDpBDY8u,155,Lucknow Division,PNC,% of new born breastfed within one hour of birth,5,158,97.39059527045393,4,PNC,2025,59
+p,2025-03-01,Rae Bareli,lLvTDpBDY8u,155,Lucknow Division,delivery_care,% of live babies weighted at birth,6,158,99.34764881761349,4,delivery_care,2025,59
+p,2025-03-01,Hathras,m1IAjmqkoFC,201,Alligarh Division,ANC,% ANC registered in First trimester,1,144,91.10415735359855,4,ANC,2025,48
+p,2025-03-01,Hathras,m1IAjmqkoFC,201,Alligarh Division,communicable_diseases,Success rate of positive tuberculosis cases,2,144,90.9,4,communicable_diseases,2025,48
+p,2025-03-01,Hathras,m1IAjmqkoFC,201,Alligarh Division,ANC,% of severe anaemic PW treated,4,144,80.06042296072508,4,ANC,2025,48
+p,2025-03-01,Hathras,m1IAjmqkoFC,201,Alligarh Division,PNC,% of new born breastfed within one hour of birth,5,144,99.163179916318,4,PNC,2025,48
+p,2025-03-01,Hathras,m1IAjmqkoFC,201,Alligarh Division,delivery_care,% of live babies weighted at birth,6,144,99.96513249651323,4,delivery_care,2025,48
+p,2025-03-01,Sultanpur,o4ZQTVcMI7U,176,Ayodhya Division,ANC,% ANC registered in First trimester,1,179,85.34727601342628,4,ANC,2025,40
+p,2025-03-01,Sultanpur,o4ZQTVcMI7U,176,Ayodhya Division,communicable_diseases,Success rate of positive tuberculosis cases,2,179,88.7,4,communicable_diseases,2025,40
+p,2025-03-01,Sultanpur,o4ZQTVcMI7U,176,Ayodhya Division,ANC,% of severe anaemic PW treated,4,179,92.1875,4,ANC,2025,40
+p,2025-03-01,Sultanpur,o4ZQTVcMI7U,176,Ayodhya Division,PNC,% of new born breastfed within one hour of birth,5,179,93.7724160417346,4,PNC,2025,40
+p,2025-03-01,Sultanpur,o4ZQTVcMI7U,176,Ayodhya Division,delivery_care,% of live babies weighted at birth,6,179,99.31529181610695,4,delivery_care,2025,40
+p,2025-03-01,Ballia,oNDvGBE5fLq,193,Azamgarh Division,ANC,% ANC registered in First trimester,1,193,96.39122411318434,4,ANC,2025,5
+p,2025-03-01,Ballia,oNDvGBE5fLq,193,Azamgarh Division,communicable_diseases,Success rate of positive tuberculosis cases,2,193,92.8,4,communicable_diseases,2025,5
+p,2025-03-01,Ballia,oNDvGBE5fLq,193,Azamgarh Division,ANC,% of severe anaemic PW treated,4,193,85.9375,4,ANC,2025,5
+p,2025-03-01,Ballia,oNDvGBE5fLq,193,Azamgarh Division,PNC,% of new born breastfed within one hour of birth,5,193,99.53717095747757,4,PNC,2025,5
+p,2025-03-01,Ballia,oNDvGBE5fLq,193,Azamgarh Division,delivery_care,% of live babies weighted at birth,6,193,100.0,4,delivery_care,2025,5
+p,2025-03-01,Bulandshahar,ogBt4gWCiem,140,Meerut Division,ANC,% ANC registered in First trimester,1,142,76.4955673098413,4,ANC,2025,52
+p,2025-03-01,Bulandshahar,ogBt4gWCiem,140,Meerut Division,communicable_diseases,Success rate of positive tuberculosis cases,2,142,92.7,4,communicable_diseases,2025,52
+p,2025-03-01,Bulandshahar,ogBt4gWCiem,140,Meerut Division,ANC,% of severe anaemic PW treated,4,142,40.65510597302504,4,ANC,2025,52
+p,2025-03-01,Bulandshahar,ogBt4gWCiem,140,Meerut Division,PNC,% of new born breastfed within one hour of birth,5,142,94.37255134750087,4,PNC,2025,52
+p,2025-03-01,Bulandshahar,ogBt4gWCiem,140,Meerut Division,delivery_care,% of live babies weighted at birth,6,142,95.89219992876647,4,delivery_care,2025,52
+p,2025-03-01,Shrawasti,oyTwneTbWDx,182,Gonda Division,ANC,% ANC registered in First trimester,1,181,96.67582020523196,4,ANC,2025,18
+p,2025-03-01,Shrawasti,oyTwneTbWDx,182,Gonda Division,communicable_diseases,Success rate of positive tuberculosis cases,2,181,96.9,4,communicable_diseases,2025,18
+p,2025-03-01,Shrawasti,oyTwneTbWDx,182,Gonda Division,ANC,% of severe anaemic PW treated,4,181,96.24060150375941,4,ANC,2025,18
+p,2025-03-01,Shrawasti,oyTwneTbWDx,182,Gonda Division,PNC,% of new born breastfed within one hour of birth,5,181,96.47287764534175,4,PNC,2025,18
+p,2025-03-01,Shrawasti,oyTwneTbWDx,182,Gonda Division,delivery_care,% of live babies weighted at birth,6,181,98.56482607638044,4,delivery_care,2025,18
+p,2025-03-01,Mahoba,sUQMxIc3yXj,170,Chitrakoot Division,ANC,% ANC registered in First trimester,1,169,88.70326173428799,4,ANC,2025,42
+p,2025-03-01,Mahoba,sUQMxIc3yXj,170,Chitrakoot Division,communicable_diseases,Success rate of positive tuberculosis cases,2,169,93.6,4,communicable_diseases,2025,42
+p,2025-03-01,Mahoba,sUQMxIc3yXj,170,Chitrakoot Division,ANC,% of severe anaemic PW treated,4,169,95.71428571428572,4,ANC,2025,42
+p,2025-03-01,Mahoba,sUQMxIc3yXj,170,Chitrakoot Division,PNC,% of new born breastfed within one hour of birth,5,169,99.6116504854369,4,PNC,2025,42
+p,2025-03-01,Mahoba,sUQMxIc3yXj,170,Chitrakoot Division,delivery_care,% of live babies weighted at birth,6,169,99.70873786407766,4,delivery_care,2025,42
+p,2025-03-01,Prayagraj,tXgaew1Pd2Y,172,Prayagraj Division,ANC,% ANC registered in First trimester,1,175,97.4145074857743,4,ANC,2025,34
+p,2025-03-01,Prayagraj,tXgaew1Pd2Y,172,Prayagraj Division,communicable_diseases,Success rate of positive tuberculosis cases,2,175,95.0,4,communicable_diseases,2025,34
+p,2025-03-01,Prayagraj,tXgaew1Pd2Y,172,Prayagraj Division,ANC,% of severe anaemic PW treated,4,175,100.0,4,ANC,2025,34
+p,2025-03-01,Prayagraj,tXgaew1Pd2Y,172,Prayagraj Division,PNC,% of new born breastfed within one hour of birth,5,175,99.13670918696043,4,PNC,2025,34
+p,2025-03-01,Prayagraj,tXgaew1Pd2Y,172,Prayagraj Division,delivery_care,% of live babies weighted at birth,6,175,99.60700940600437,4,delivery_care,2025,34
+p,2025-03-01,Barabanki,tzH6nJu9SwS,176,Ayodhya Division,ANC,% ANC registered in First trimester,1,176,77.87955564217499,4,ANC,2025,41
+p,2025-03-01,Barabanki,tzH6nJu9SwS,176,Ayodhya Division,communicable_diseases,Success rate of positive tuberculosis cases,2,176,91.6,4,communicable_diseases,2025,41
+p,2025-03-01,Barabanki,tzH6nJu9SwS,176,Ayodhya Division,ANC,% of severe anaemic PW treated,4,176,77.51937984496125,4,ANC,2025,41
+p,2025-03-01,Barabanki,tzH6nJu9SwS,176,Ayodhya Division,PNC,% of new born breastfed within one hour of birth,5,176,93.90010626992563,4,PNC,2025,41
+p,2025-03-01,Barabanki,tzH6nJu9SwS,176,Ayodhya Division,delivery_care,% of live babies weighted at birth,6,176,92.96493092454836,4,delivery_care,2025,41
+p,2025-03-01,Bijnor,uCYjHW7FuGG,134,Moradabad Division,ANC,% ANC registered in First trimester,1,134,95.38016454208478,4,ANC,2025,15
+p,2025-03-01,Bijnor,uCYjHW7FuGG,134,Moradabad Division,communicable_diseases,Success rate of positive tuberculosis cases,2,134,94.5,4,communicable_diseases,2025,15
+p,2025-03-01,Bijnor,uCYjHW7FuGG,134,Moradabad Division,ANC,% of severe anaemic PW treated,4,134,96.56488549618321,4,ANC,2025,15
+p,2025-03-01,Bijnor,uCYjHW7FuGG,134,Moradabad Division,PNC,% of new born breastfed within one hour of birth,5,134,99.02924704418172,4,PNC,2025,15
+p,2025-03-01,Bijnor,uCYjHW7FuGG,134,Moradabad Division,delivery_care,% of live babies weighted at birth,6,134,99.15370255133791,4,delivery_care,2025,15
+p,2025-03-01,Farrukhabad,uEEwlAGZXWW,161,Kanpur Nagar Division,ANC,% ANC registered in First trimester,1,159,94.34528273586321,4,ANC,2025,49
+p,2025-03-01,Farrukhabad,uEEwlAGZXWW,161,Kanpur Nagar Division,communicable_diseases,Success rate of positive tuberculosis cases,2,159,94.7,4,communicable_diseases,2025,49
+p,2025-03-01,Farrukhabad,uEEwlAGZXWW,161,Kanpur Nagar Division,ANC,% of severe anaemic PW treated,4,159,19.51219512195122,4,ANC,2025,49
+p,2025-03-01,Farrukhabad,uEEwlAGZXWW,161,Kanpur Nagar Division,PNC,% of new born breastfed within one hour of birth,5,159,82.17609162491051,4,PNC,2025,49
+p,2025-03-01,Farrukhabad,uEEwlAGZXWW,161,Kanpur Nagar Division,delivery_care,% of live babies weighted at birth,6,159,86.0773085182534,4,delivery_care,2025,49
+p,2025-03-01,Balrampur,uS0pNSxN3sS,182,Gonda Division,ANC,% ANC registered in First trimester,1,182,96.540652511652,4,ANC,2025,72
+p,2025-03-01,Balrampur,uS0pNSxN3sS,182,Gonda Division,communicable_diseases,Success rate of positive tuberculosis cases,2,182,94.3,4,communicable_diseases,2025,72
+p,2025-03-01,Balrampur,uS0pNSxN3sS,182,Gonda Division,ANC,% of severe anaemic PW treated,4,182,99.59785522788204,4,ANC,2025,72
+p,2025-03-01,Balrampur,uS0pNSxN3sS,182,Gonda Division,PNC,% of new born breastfed within one hour of birth,5,182,98.94417124674574,4,PNC,2025,72
+p,2025-03-01,Balrampur,uS0pNSxN3sS,182,Gonda Division,delivery_care,% of live babies weighted at birth,6,182,99.50824414231995,4,delivery_care,2025,72
+p,2025-03-01,Meerut,v8YGmR7nOdj,140,Meerut Division,ANC,% ANC registered in First trimester,1,138,64.7248427672956,4,ANC,2025,30
+p,2025-03-01,Meerut,v8YGmR7nOdj,140,Meerut Division,communicable_diseases,Success rate of positive tuberculosis cases,2,138,87.1,4,communicable_diseases,2025,30
+p,2025-03-01,Meerut,v8YGmR7nOdj,140,Meerut Division,ANC,% of severe anaemic PW treated,4,138,40.38876889848812,4,ANC,2025,30
+p,2025-03-01,Meerut,v8YGmR7nOdj,140,Meerut Division,PNC,% of new born breastfed within one hour of birth,5,138,78.79325643300798,4,PNC,2025,30
+p,2025-03-01,Meerut,v8YGmR7nOdj,140,Meerut Division,delivery_care,% of live babies weighted at birth,6,138,95.7187222715173,4,delivery_care,2025,30
+p,2025-03-01,Gorakhpur,vR85cHdsw1w,188,Gorakhpur Division,ANC,% ANC registered in First trimester,1,188,80.05635566687539,4,ANC,2025,45
+p,2025-03-01,Gorakhpur,vR85cHdsw1w,188,Gorakhpur Division,communicable_diseases,Success rate of positive tuberculosis cases,2,188,94.2,4,communicable_diseases,2025,45
+p,2025-03-01,Gorakhpur,vR85cHdsw1w,188,Gorakhpur Division,ANC,% of severe anaemic PW treated,4,188,100.0,4,ANC,2025,45
+p,2025-03-01,Gorakhpur,vR85cHdsw1w,188,Gorakhpur Division,PNC,% of new born breastfed within one hour of birth,5,188,86.06592465753424,4,PNC,2025,45
+p,2025-03-01,Gorakhpur,vR85cHdsw1w,188,Gorakhpur Division,delivery_care,% of live babies weighted at birth,6,188,90.0042808219178,4,delivery_care,2025,45
+p,2025-03-01,Bareilly,vVqY3DPcpHf,150,Bareilly Division,ANC,% ANC registered in First trimester,1,150,65.23448818245788,4,ANC,2025,56
+p,2025-03-01,Bareilly,vVqY3DPcpHf,150,Bareilly Division,communicable_diseases,Success rate of positive tuberculosis cases,2,150,91.6,4,communicable_diseases,2025,56
+p,2025-03-01,Bareilly,vVqY3DPcpHf,150,Bareilly Division,ANC,% of severe anaemic PW treated,4,150,47.099767981438525,4,ANC,2025,56
+p,2025-03-01,Bareilly,vVqY3DPcpHf,150,Bareilly Division,PNC,% of new born breastfed within one hour of birth,5,150,81.58945686900958,4,PNC,2025,56
+p,2025-03-01,Bareilly,vVqY3DPcpHf,150,Bareilly Division,delivery_care,% of live babies weighted at birth,6,150,94.59864217252395,4,delivery_care,2025,56
+p,2025-03-01,Kushinagar,xUeHwd9FQkg,188,Gorakhpur Division,ANC,% ANC registered in First trimester,1,189,94.57666473173565,4,ANC,2025,9
+p,2025-03-01,Kushinagar,xUeHwd9FQkg,188,Gorakhpur Division,communicable_diseases,Success rate of positive tuberculosis cases,2,189,94.7,4,communicable_diseases,2025,9
+p,2025-03-01,Kushinagar,xUeHwd9FQkg,188,Gorakhpur Division,ANC,% of severe anaemic PW treated,4,189,12.213740458015266,4,ANC,2025,9
+p,2025-03-01,Kushinagar,xUeHwd9FQkg,188,Gorakhpur Division,PNC,% of new born breastfed within one hour of birth,5,189,96.5659123279,4,PNC,2025,9
+p,2025-03-01,Kushinagar,xUeHwd9FQkg,188,Gorakhpur Division,delivery_care,% of live babies weighted at birth,6,189,98.41747111884793,4,delivery_care,2025,9
+p,2025-03-01,Gonda,y8WarEkWCul,182,Gonda Division,ANC,% ANC registered in First trimester,1,183,92.74776324845148,4,ANC,2025,2
+p,2025-03-01,Gonda,y8WarEkWCul,182,Gonda Division,communicable_diseases,Success rate of positive tuberculosis cases,2,183,94.1,4,communicable_diseases,2025,2
+p,2025-03-01,Gonda,y8WarEkWCul,182,Gonda Division,ANC,% of severe anaemic PW treated,4,183,86.80947012401354,4,ANC,2025,2
+p,2025-03-01,Gonda,y8WarEkWCul,182,Gonda Division,PNC,% of new born breastfed within one hour of birth,5,183,95.3175807500542,4,PNC,2025,2
+p,2025-03-01,Gonda,y8WarEkWCul,182,Gonda Division,delivery_care,% of live babies weighted at birth,6,183,98.85107305441143,4,delivery_care,2025,2

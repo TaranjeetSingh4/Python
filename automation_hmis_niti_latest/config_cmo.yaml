@@ -1,0 +1,351 @@
+start_date: "2022-11-01"
+# start_date: "2019-12-01"
+# start_date: "2017-10-01"
+# fetching_start_date: "2017-10-01"
+fetching_start_date: "2022-11-01"
+end_date: "2022-11-01"
+# end_date: "2019-12-01"
+# quarter: [['201910','201911','201912'], ['202001', '202002','202003'], ['202004','202005']]
+
+# fin year Jan-Dec
+# for fetching quarterly data
+# quarter_ind: ['2019Q4', '2020Q1', '2020Q2','2020Q3']
+# quarter_ind: ['2020Q4', '2021Q1', '2021Q2', '2021Q3']
+quarter_ind: ['2021Q4','2022Q1','2022Q2','2022Q3']
+
+# change calender year dates to financial year (Apr-Mar)
+# map_quarters: {'2019Q4': '2019Q3', '2020Q1' : '2019Q4' , '2020Q2' : '2020Q1', '2020Q3' : '2020Q2'}
+# map_quarters: {'2020Q4' : '2020Q3', '2021Q1' : '2020Q4', '2021Q2' : '2021Q1', '2021Q3' : '2021Q2'}
+# map_quarters: {'2021Q4' : '2021Q3', '2022Q1' : '2021Q4', '2022Q2': '2022Q1', '2022Q3' : '2022Q2'}
+map_quarters: {'2022Q4' : '2022Q3'}
+
+# year_ind_15: [['2017Q3', '2017Q4'], ['2018Q1', '2018Q2','2018Q3', '2018Q4'],['2019Q1', '2019Q2','2019Q3', '2019Q4'], ['2020Q1']]
+# year_ind_15: [['2020Q1',"2020Q2", "2020Q3", "2020Q4"]]
+# year_ind_15: [['2021Q1', '2021Q2', '2021Q3','2021Q4']]
+year_ind_15: [['2022Q1','2022Q2','2022Q3']]
+
+
+
+# quarter: [['202004','202005', '202006'], ['202007','202008','202009']]
+# quarter: [['202007','202008','202009']]
+# quarter: [['202010', '202011', '202012']]
+# quarter: [['202101', '202102', '202103']]
+# quarter: [['202104', '202105', '202106']]
+# quarter: [['202107', '202108', '202109']]
+# quarter: [['202110', '202111', '202112']]
+# quarter: [['202201', '202202','202203']]
+# quarter: [['202204','202205','202206']]
+# quarter: [['202207','202208','202209']]
+quarter: [['202210','202211']]
+# year: [["202004","202005","202006", "202007", "202008", "202009", "202010", "202011", "202012", "202101", "202102", "202103"]]
+# year: [["202104", "202105", "202106", "202107", "202108", "202109", "202110", "202111", "202112","202201","202202","202203"]]
+year: [['202204','202205','202206','202207','202208','202209','202210','202211']]
+# year: [["201912", "202001", "202002", "202003"],["202004", "202005"]]
+# year: [["201904", "201905", "201906", "201907", "201908", "201909", "201910", "201911", "201912", "202001", "202002", "202003"]]
+# quarter: [['201710', '201711', '201712'], ['201801', '201802', '201803'],
+# ['201804', '201805', '201806'], ['201807', '201808', '201809'],
+# ['201810', '201811', '201812'], ['201901','201902', '201903'],
+# ['201904','201905', '201906'], ['201907', '201908', '201909'],
+# ['201910', '201911', '201912'], ['202001', '202002','202003'],
+# ['202004','202005','202006']]
+# year: [['201710', '201711', '201712', '201801', '201802', '201803'],
+# ['201804', '201805', '201806', '201807', '201808', '201809', '201810', '201811', '201812', '201901', '201902', '201903'],
+# ['201904','201905', '201906', '201907', '201908', '201909', '201910', '201911', '201912', '202001', '202002','202003'],
+# ["202004","202005","202006"]]
+def_year: "2017"
+
+one_month: False
+
+api:
+    base_url: https://uphmis.in/portalAPI/analytics.json
+
+district:
+    columns: ["indicator_id", "district_id", "perc"]
+    usecols: ["district", "uid_district"]
+    left_on: district_id
+    right_on: uid_district
+block:
+    columns: ["indicator_id", "block_id", "perc"]
+    usecols: ["block", "uid_block"]
+    left_on: block_id
+    right_on: uid_block
+
+indicator_mappings:
+    indicator_1:
+        a: "JY4UIeCYK00"
+        b: "qYpFbVo8WsL"
+    indicator_1_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    # indicator_1_method_qa: ( (data_total['a0'] + data_total['a1'] + data_total['a2']) / (data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    indicator_1_method_qa: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_1_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    # indicator_1_method_yr: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_2:
+        a: "ZpgnTGpSkeg.Ti9FJqkSK6J"
+        b: "TmeumlBaObG"
+    indicator_2_method: (data[indicators['a']]/((data[indicators['b']]/12) * {}))*100
+    # indicator_2_method_qa: ((data_total['a0'] + data_total['a1'] + data_total['a2'])/((data_total['b']/12*{})))*100
+    indicator_2_method_qa: (data_total['a']/((data_total['b']/12)*{}))*100
+    # indicator_2_method_yr: (data_total['a']/(data_total['b']/12))*100
+    # indicator_2_method_yr: (data[indicators['a']]/(data[indicators['b']]/12))*100
+    indicator_2_method_yr: (data_total['a']/((data_total['b']/12)*{}))*100
+    indicator_3:
+        a: "n5bZeD7f63Q"
+        b: "VGmj8dWOIBw"
+    indicator_3_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    # indicator_3_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2']) / (data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    indicator_3_method_qa: ( (data_total['a']) / (data_total['b']) ) * 100
+    indicator_3_method_yr: ( (data_total['a']) / (data_total['b']) ) * 100
+    # indicator_3_method_yr: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    # indicator_3_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_5:
+        a: "kuz5MYYLyi2"
+        b: "aknlXIekL1Z"
+    indicator_5_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    # indicator_5_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/(data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    indicator_5_method_qa: ( (data_total['a'])/(data_total['b']) ) * 100
+    # indicator_5_method_yr: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_5_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_6:
+        a: "GJKYhq2wR9L"
+        b: "t03VPkJ5UXd"
+    indicator_6_method: (data[indicators['a']]/((data[indicators['b']]/12)*{}))*100
+    indicator_6_method_qa: ((data_total['a'])/((data_total['b']/12)*{}))*100
+    # indicator_6_method_qa: ((data_total['a0'] + data_total['a1'] + data_total['a2'])/((data_total['b']/12*{})))*100
+    # indicator_6_method_yr: (data[indicators['a']]/(data[indicators['b']]/12)*{})*100
+    indicator_6_method_yr: (data_total['a']/((data_total['b']/12)*{}))*100
+    indicator_7:
+        a: "B2A7x36qEry.Ti9FJqkSK6J"
+        b: "GXgfTS67qxe.Ti9FJqkSK6J"
+    # indicator_7_method: (data[indicators['a']]/(data[indicators['b']])) * 100
+    indicator_7_method: (data[indicators['a']]/((data[indicators['b']]/12)*{}))*100
+    # indicator_7_method_qa: ((data_total['a0'] + data_total['a1'] +
+    #     data_total['a2'])/(data_total['b0'] + data_total['b1'] + data_total['b2'])) * 100
+    indicator_7_method_qa: ((data_total['a'])/((data_total['b']/12)*{}))*100
+    # indicator_7_method_qa: ((data_total['a0'] + data_total['a1'] + data_total['a2'])/((data_total['b']/12*{})))*100
+    # indicator_7_method_yr: (data_total['a']/(data_total['b'])) * 100
+    # indicator_7_method_yr: (data[indicators['a']]/(data[indicators['b']]/12))*100
+    indicator_7_method_yr: (data_total['a']/((data_total['b']/12)*{}))*100
+    indicator_8:
+        a: "m7ggqyMXhyL"
+    indicator_8_method: data[indicators['a']]
+    indicator_8_method_qa: (data_total['a'])
+    # indicator_8_method_qa: (data_total['a0']+data_total['a1']+data_total['a2'])
+    indicator_8_method_yr: data_total['a']
+    indicator_9:
+        a: "RUlj9ZTZtwt"
+        b: "W8umWqoVKIg"
+    indicator_9_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_9_method_qa: ( (data_total['a'])/(data_total['b']) ) * 100
+    indicator_9_method_yr: ( (data_total['a'])/(data_total['b']) ) * 100
+    # indicator_9_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/(data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    # indicator_9_method_yr: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    # indicator_9_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+
+    # newly added indicators:
+    indicator_4:
+        a: "aRueVYr35yM"
+        b: "SwyOYejItro"
+    indicator_4_method: ( (data[indicators['a']])/((data[indicators['b']]/12)*{}) )*100
+    indicator_4_method_qa: ( (data_total['a'])/((data_total['b']/12)*{}) )*100
+    # indicator_4_method_qa: ((data_total['a0'] + data_total['a1'] + data_total['a2'])/((data_total['b']/12*{})))*100
+    # indicator_4_method_yr: (data[indicators['a']]/(data[indicators['b']]/12))*100
+    indicator_4_method_yr: ( (data_total['a'])/((data_total['b']/12)*{}) )*100
+    indicator_10:
+        a: "qPCgDZKWRA7"
+        b: "t03VPkJ5UXd"
+        c: "IDNHJYN6E5Y"
+    indicator_10_method: ( data[indicators['a']]/((data[indicators['b']]/12)*{}) )*100
+    indicator_10_method_qa: ( (data_total['a'])/((data_total['b']/12)*{}) )*100
+    indicator_10_method_yr: ( (data_total['a'])/((data_total['b']/12)*{}) )*100
+    # indicator_10_method_qa: ((data_total['a0'] + data_total['a1'] + data_total['a2'])/((data_total['b']/12*{})))*100
+    # indicator_10_method_yr: (data[indicators['a']]/(data[indicators['b']]/12)*{})*100
+    indicator_11:
+        a: "aRueVYr35yM.Ti9FJqkSK6J"
+        b: "FRafAE8qFP6"
+        c: "ux6uaflq7xZ"
+        d: "g69FuEghiM5" # new sub indicator
+        # d: "cB6y5lovUZX.Ti9FJqkSK6J"
+    indicator_11_method: (data[indicators['a']] / ((data[indicators['d']]/12)*{})*100 ) + (data[indicators['b']]-data[indicators['c']])
+    # indicator_11_method: ( data[indicators['a']]/(data[indicators['d']])/12 ) * 100
+    indicator_11_method_qa: ( (data_total['a']) / ((data_total['d'] /12) *(3)) ) *100 + (data_total['b'] - data_total['c'])
+    indicator_11_method_yr: ( (data_total['a']) / ((data_total['d'] /12) * {}) ) *100 + (data_total['b'] - data_total['c'])
+    # indicator_11_method_qa: ( (data_total['a0'] + data_total['a1'] + data_total['a2']) / (data_total['d'] /12) *(3) ) *100 + (data_total['b'] - data_total['c'])
+    # indicator_11_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/(data_total['b'])/12*{} ) * 100
+    # indicator_11_method_yr: (data[indicators['a']] / (data[indicators['d']]/12)*{}*100 ) + (data[indicators['b']]-data[indicators['c']])
+    # indicator_11_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    # indicator_12:
+    #     a: "qPCgDZKWRA7"
+    #     b: "t03VPkJ5UXd"
+    # indicator_12_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    # indicator_12_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/
+    #     (data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    # indicator_12_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_13:
+        a: "Gj9oZKbPSFW"
+        b: "LSbY5u051cG"
+    indicator_13_method: (data[indicators['a']]/((data[indicators['b']]/12)*{}) )*100
+    indicator_13_method_qa: ( (data_total['a'])/( (data_total['b']/12) * {} ) )*100
+    indicator_13_method_yr: ( (data_total['a'])/( (data_total['b']/12) * {} ) )*100
+    # indicator_13_method_qa: ((data_total['a0'] + data_total['a1'] + data_total['a2'])/((data_total['b']/12*{})))*100
+    # indicator_13_method_yr: (data[indicators['a']]/(data[indicators['b']]/12))*100
+    # indicator_13_method_yr: (data[indicators['a']]/(data[indicators['b']]/12* {}))*100
+    indicator_14:
+        a: "fyuGMPRH02k"
+        b: "jHHZKr89vwY"
+    indicator_14_method: (data[indicators['a']] * 100000) / (data[indicators['b']]* {})
+    indicator_14_method_qa: ( ((data_total['a1'] - data_total['a0']) * 100000) / (data_total['b1'] - data_total['b0']) * {} ) * 100
+    # indicator_14_method_qa: ((data_all['a0'] + data_all['a1'] + data_all['a2'])* 100000)/ (data_all['b0']+data_all['b1']+data_all['b2'])
+    indicator_14_method_yr: (data_total['a'] * 100000) / (data_total['b']* {}) * 100
+    indicator_15:
+        a: "TLN0lTAz8pN"
+        b: "R5Xs0daLD8B"
+    indicator_15_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_15_method_qa: ( (data_total['a1'] - data_total['a0'])/ (data_total['b1'] - data_total['b0']) ) * 100
+    # indicator_15_method_yr: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_15_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    # indicator_16:
+    #     a: "dummy_5"
+    #     b: "dummy_6"
+    # indicator_16_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    # indicator_16_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/
+    #     (data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    # indicator_16_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_17:
+        a: "Nkk4laRIihw"
+        b: "TmeumlBaObG"
+    indicator_17_method: ( data[indicators['a']]/( (data[indicators['b']]/12)*{} ) )*100
+    indicator_17_method_qa: ( (data_total['a1'] - data_total['a0']) / ( (data_total['b']/12)* 3 ) ) * 100
+    # indicator_17_method_qa: ((data_total['a0'] + data_total['a1'] + data_total['a2'])/((data_total['b']/12*{})))*100
+    # indicator_17_method_yr: (data[indicators['a']]/(data[indicators['b']]/12)*{})*100
+    indicator_17_method_yr: ( data_total['a']/( (data_total['b']/12)*{} ) )*100
+    indicator_18:
+        a: "ed73Rp6knzD"
+        b: "xm2HG3ytwRd"
+    indicator_18_method: ( data[indicators['a']]/( (data[indicators['b']]/12)*{} ) )*100
+    indicator_18_method_qa: ( (data_total['a'])/( (data_total['b']/12)*{} ) )*100
+    # indicator_18_method_qa: ((data_total['a0'] + data_total['a1'] + data_total['a2'])/((data_total['b']/12*{})))*100
+    # indicator_18_method_yr: (data[indicators['a']]/(data[indicators['b']]/12)*{})*100
+    indicator_18_method_yr: ( data_total['a']/( (data_total['b']/12)*{}) )*100
+    indicator_19:
+        a: "DtwEf8pGyBN"
+        b: "aknlXIekL1Z"
+    indicator_19_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_19_method_qa: ( (data_total['a']) / (data_total['b']) ) * 100
+    # indicator_19_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2']) / (data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    # indicator_19_method_yr: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_19_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_20:
+        a: "gam41B0zoHy"
+        b: "A5OhgcYE7gV"
+    indicator_20_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_20_method_qa: ( (data_total['a1'] - data_total['a0']) / (data_total['b1'] - data_total['b0'] ) ) * 100
+    # indicator_20_method_yr: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_20_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_21:
+        a: "pFs6270HlT5"
+        b: "VTkU0Lmb5qL"
+    indicator_21_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_21_method_qa: ( (data_total['a1'] - data_total['a0'])/(data_total['b']) ) * 100
+    # indicator_21_method_yr: ( data['a']/(data['b']) ) * 100
+    indicator_21_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    # indicator_22:
+    #     a: "dummy_12"
+    #     b: "dummy_13"
+    # indicator_22_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    # indicator_22_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/
+    #     (data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    # indicator_22_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_23:
+        a: "c3WaIW0ETmo"
+        b: "JSd2zYYtiwU"
+    indicator_23_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_23_method_qa: ((data_total['a1'] - data_total['a0']) / (data_total['b1'] - data_total['b0'])) * 100
+    # indicator_23_method_yr:  ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_23_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_24:
+        a: "yHUXCcJHccA"
+    indicator_24_method: ( data[indicators['a']]/(data[indicators['a']].max()) ) * 100
+    indicator_24_method_qa: ( (data_total['a'])/(data_total['a'].max()) ) * 100
+    # indicator_24_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/(data_total['a0'].max() + data_total['a1'].max() + data_total['a2'].max()) ) * 100
+    # indicator_24_method_yr: ( data[indicators['a']]/(data[indicators['a']].max()) ) * 100
+    indicator_24_method_yr: ( data_total['a']/(data_total['a'].max()) ) * 100
+    indicator_25:
+        a: "mQ2Ri2lEPsH"
+        b: "Pk1DOE3HGly"
+    indicator_25_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_25_method_qa: ( (data_total['a'])/(data_total['b'])) * 100
+    # indicator_25_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/(data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    # indicator_25_method_yr: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_25_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_26:
+        a: "ewTOwzwOdvW"
+        b: "VTkU0Lmb5qL"
+    indicator_26_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_26_method_qa: ( (data_total['a'])/(data_total['b']) ) * 100
+    # indicator_26_method_qa: ( (data_total['a0'] + data_total['a1'] + data_total['a2'])/(data_total['b0'] + data_total['b1'] + data_total['b2']) ) * 100
+    # indicator_26_method_yr: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_26_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_27:
+        a: "KXkDMUaCa1b"
+        b: "TzzsXTlaZkf"
+    indicator_27_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_27_method_qa: ( (data_total['a'])/(data_total['b']) ) * 100
+    # indicator_27_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/(data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    # indicator_27_method_yr: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_27_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+
+
+indicator_mappings_block:
+    indicator_1:
+        a: "JY4UIeCYK00"
+        b: "qYpFbVo8WsL"
+    indicator_1_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_1_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/
+        (data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    indicator_1_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_2:
+        a: "ZpgnTGpSkeg.Ti9FJqkSK6J"
+        b: "TmeumlBaObG"
+    indicator_2_method: (data[indicators['a']]/(data[indicators['b']]/12))*100
+    indicator_2_method_qa: ((data_total['a0'] + data_total['a1'] +
+        data_total['a2'])/((data_total['b']/12*{})))*100
+    indicator_2_method_yr: (data_total['a']/(data_total['b']/12*{}))*100
+    indicator_3:
+        a: "n5bZeD7f63Q"
+        b: "VGmj8dWOIBw"
+    indicator_3_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_3_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/
+        (data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    indicator_3_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_5:
+        a: "kuz5MYYLyi2"
+        b: "aknlXIekL1Z"
+    indicator_5_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_5_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/
+        (data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    indicator_5_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_6:
+        a: "GJKYhq2wR9L"
+        b: "t03VPkJ5UXd"
+    indicator_6_method: (data[indicators['a']]/(data[indicators['b']]/12))*100
+    indicator_6_method_qa: ((data_total['a0'] + data_total['a1'] +
+        data_total['a2'])/((data_total['b']/12*{})))*100
+    indicator_6_method_yr: (data_total['a']/(data_total['b']/12*{}))*100
+
+indicator_district_id: ["1", "2", "3", "5", "4", "6", "7", "8", "9","10", "11", "13", "14", "15", "17", "18", "19", "20", "21", "23", "24", "25", "26", "27"]
+# indicator_district_id: ["15","21"]
+# indicator_district_id: ["11"]
+# indicator_district_id: ["14", "17", "20","23"]
+indicator_block_id: ["1", "2", "3", "5", "6"]
+# add {} inplace of start date(sd) and end date(ed)------------------
+url: "https://uphmis.in/uphmis/api/sqlViews/{}/data.json?var=sd:{}01&var=ed:{}28&paging=false"
+auth_details:
+    user_name: Gramener
+    user_pass: Gramener@123
+    # user_pass: uptsu_pass  #can pass password or env-var
+exception_filename: exception_1.csv
+data_filename: indicator_15_data.csv
+columns_rename:
+    name: block
+    block: block_id
+    completeness_percentage: perc_point

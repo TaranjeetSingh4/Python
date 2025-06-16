@@ -1,0 +1,24 @@
+{
+  "name": "uphealth_automation",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Author <manojkumar.muddaluru@gramener.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.1",
+    "bootstrap-datepicker": "^1.9.0",
+    "datatables": "^1.10.18",
+    "dropzone": "^5.9.3",
+    "g1": "^0.18.1",
+    "lodash": "4",
+    "uifactory": "0.0.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-plugin-html": "^7.1.0",
+    "eslint-plugin-template": "^0.7.0"
+  }
+}

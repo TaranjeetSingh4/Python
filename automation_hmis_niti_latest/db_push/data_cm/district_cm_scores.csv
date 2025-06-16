@@ -1,0 +1,451 @@
+calc_type,date,district_name,district_id,div_map_id,division,domain_name,indicator_name,indicator_id,map_id,perc_point,quarter,type_name,year,district_id_num
+p,2023-09-01,Maharajganj,AcnMkNGgc3S,188,Gorakhpur Division,JSY,% JSY Incentive,36,187,62.3933542882802,2,JSY,2024,10
+p,2023-09-01,Maharajganj,AcnMkNGgc3S,188,Gorakhpur Division,Fund,% of fund utilized against approved budget,35,187,21.6,2,Fund,2024,10
+p,2023-09-01,Maharajganj,AcnMkNGgc3S,188,Gorakhpur Division,TB,Treatment Success Rate  as per total cases notified,37,187,92.1,2,TB,2024,10
+p,2023-09-01,Shamli,AdiUcz9BXhx,132,Saharanpur Division,JSY,% JSY Incentive,36,203,80.3045685279188,2,JSY,2024,32
+p,2023-09-01,Shamli,AdiUcz9BXhx,132,Saharanpur Division,Fund,% of fund utilized against approved budget,35,203,25.2,2,Fund,2024,32
+p,2023-09-01,Shamli,AdiUcz9BXhx,132,Saharanpur Division,TB,Treatment Success Rate  as per total cases notified,37,203,85.6,2,TB,2024,32
+p,2023-09-01,Auraiya,Bd6E8zkVvVt,161,Kanpur Nagar Division,JSY,% JSY Incentive,36,162,70.12493210211841,2,JSY,2024,37
+p,2023-09-01,Auraiya,Bd6E8zkVvVt,161,Kanpur Nagar Division,Fund,% of fund utilized against approved budget,35,162,18.6,2,Fund,2024,37
+p,2023-09-01,Auraiya,Bd6E8zkVvVt,161,Kanpur Nagar Division,TB,Treatment Success Rate  as per total cases notified,37,162,87.9,2,TB,2024,37
+p,2023-09-01,Maunathbhanjan,CBSB9v92AwT,193,Azamgarh Division,JSY,% JSY Incentive,36,192,25.699168556311413,2,JSY,2024,6
+p,2023-09-01,Maunathbhanjan,CBSB9v92AwT,193,Azamgarh Division,Fund,% of fund utilized against approved budget,35,192,23.2,2,Fund,2024,6
+p,2023-09-01,Maunathbhanjan,CBSB9v92AwT,193,Azamgarh Division,TB,Treatment Success Rate  as per total cases notified,37,192,87.8,2,TB,2024,6
+p,2023-09-01,Hapur,CZ8kLjgqvSH,140,Meerut Division,JSY,% JSY Incentive,36,204,23.778871639530482,2,JSY,2024,46
+p,2023-09-01,Hapur,CZ8kLjgqvSH,140,Meerut Division,Fund,% of fund utilized against approved budget,35,204,24.8,2,Fund,2024,46
+p,2023-09-01,Hapur,CZ8kLjgqvSH,140,Meerut Division,TB,Treatment Success Rate  as per total cases notified,37,204,91.0,2,TB,2024,46
+p,2023-09-01,Chandauli,ClbehnmwSec,195,Varanasi Division,JSY,% JSY Incentive,36,196,61.4484503478811,2,JSY,2024,61
+p,2023-09-01,Chandauli,ClbehnmwSec,195,Varanasi Division,Fund,% of fund utilized against approved budget,35,196,24.6,2,Fund,2024,61
+p,2023-09-01,Chandauli,ClbehnmwSec,195,Varanasi Division,TB,Treatment Success Rate  as per total cases notified,37,196,92.5,2,TB,2024,61
+p,2023-09-01,Banda,DggJGxqbWHn,170,Chitrakoot Division,JSY,% JSY Incentive,36,170,82.04951856946356,2,JSY,2024,47
+p,2023-09-01,Banda,DggJGxqbWHn,170,Chitrakoot Division,Fund,% of fund utilized against approved budget,35,170,25.9,2,Fund,2024,47
+p,2023-09-01,Banda,DggJGxqbWHn,170,Chitrakoot Division,TB,Treatment Success Rate  as per total cases notified,37,170,88.9,2,TB,2024,47
+p,2023-09-01,Saharanpur,FKYZ3JbWq84,132,Saharanpur Division,JSY,% JSY Incentive,36,132,18.270306556276573,2,JSY,2024,31
+p,2023-09-01,Saharanpur,FKYZ3JbWq84,132,Saharanpur Division,Fund,% of fund utilized against approved budget,35,132,23.3,2,Fund,2024,31
+p,2023-09-01,Saharanpur,FKYZ3JbWq84,132,Saharanpur Division,TB,Treatment Success Rate  as per total cases notified,37,132,89.5,2,TB,2024,31
+p,2023-09-01,Shahjahanpur,GaiLSoQq1ue,150,Bareilly Division,JSY,% JSY Incentive,36,152,36.34546181527389,2,JSY,2024,28
+p,2023-09-01,Shahjahanpur,GaiLSoQq1ue,150,Bareilly Division,Fund,% of fund utilized against approved budget,35,152,24.4,2,Fund,2024,28
+p,2023-09-01,Shahjahanpur,GaiLSoQq1ue,150,Bareilly Division,TB,Treatment Success Rate  as per total cases notified,37,152,91.1,2,TB,2024,28
+p,2023-09-01,Bagpat,HJIS3IrQ0Nj,140,Meerut Division,JSY,% JSY Incentive,36,139,29.208155523945,2,JSY,2024,66
+p,2023-09-01,Bagpat,HJIS3IrQ0Nj,140,Meerut Division,Fund,% of fund utilized against approved budget,35,139,22.0,2,Fund,2024,66
+p,2023-09-01,Bagpat,HJIS3IrQ0Nj,140,Meerut Division,TB,Treatment Success Rate  as per total cases notified,37,139,88.6,2,TB,2024,66
+p,2023-09-01,Rampur,IU006h5U7jj,134,Moradabad Division,JSY,% JSY Incentive,36,136,34.07317073170732,2,JSY,2024,26
+p,2023-09-01,Rampur,IU006h5U7jj,134,Moradabad Division,Fund,% of fund utilized against approved budget,35,136,24.8,2,Fund,2024,26
+p,2023-09-01,Rampur,IU006h5U7jj,134,Moradabad Division,TB,Treatment Success Rate  as per total cases notified,37,136,92.7,2,TB,2024,26
+p,2023-09-01,Kannauj,IhQbDYRiF8w,161,Kanpur Nagar Division,JSY,% JSY Incentive,36,160,47.1932299012694,2,JSY,2024,73
+p,2023-09-01,Kannauj,IhQbDYRiF8w,161,Kanpur Nagar Division,Fund,% of fund utilized against approved budget,35,160,19.9,2,Fund,2024,73
+p,2023-09-01,Kannauj,IhQbDYRiF8w,161,Kanpur Nagar Division,TB,Treatment Success Rate  as per total cases notified,37,160,87.0,2,TB,2024,73
+p,2023-09-01,Basti,J1P16zQEOUT,185,Basti Division,JSY,% JSY Incentive,36,185,58.744959677419345,2,JSY,2024,71
+p,2023-09-01,Basti,J1P16zQEOUT,185,Basti Division,Fund,% of fund utilized against approved budget,35,185,24.8,2,Fund,2024,71
+p,2023-09-01,Basti,J1P16zQEOUT,185,Basti Division,TB,Treatment Success Rate  as per total cases notified,37,185,89.1,2,TB,2024,71
+p,2023-09-01,Mathura,KP2BUB1npih,146,Agra Division,JSY,% JSY Incentive,36,145,26.994949494949488,2,JSY,2024,24
+p,2023-09-01,Mathura,KP2BUB1npih,146,Agra Division,Fund,% of fund utilized against approved budget,35,145,25.0,2,Fund,2024,24
+p,2023-09-01,Mathura,KP2BUB1npih,146,Agra Division,TB,Treatment Success Rate  as per total cases notified,37,145,88.3,2,TB,2024,24
+p,2023-09-01,Varanasi,LeuBT7KfuuA,195,Varanasi Division,JSY,% JSY Incentive,36,197,18.106908937249106,2,JSY,2024,55
+p,2023-09-01,Varanasi,LeuBT7KfuuA,195,Varanasi Division,Fund,% of fund utilized against approved budget,35,197,20.5,2,Fund,2024,55
+p,2023-09-01,Varanasi,LeuBT7KfuuA,195,Varanasi Division,TB,Treatment Success Rate  as per total cases notified,37,197,91.1,2,TB,2024,55
+p,2023-09-01,Ghaziabad,M5NHlfAaKYI,140,Meerut Division,JSY,% JSY Incentive,36,140,23.669508967950602,2,JSY,2024,39
+p,2023-09-01,Ghaziabad,M5NHlfAaKYI,140,Meerut Division,Fund,% of fund utilized against approved budget,35,140,20.8,2,Fund,2024,39
+p,2023-09-01,Ghaziabad,M5NHlfAaKYI,140,Meerut Division,TB,Treatment Success Rate  as per total cases notified,37,140,92.0,2,TB,2024,39
+p,2023-09-01,Hardoi,MTIkUw5q5pX,155,Lucknow Division,JSY,% JSY Incentive,36,155,51.258358662613965,2,JSY,2024,64
+p,2023-09-01,Hardoi,MTIkUw5q5pX,155,Lucknow Division,Fund,% of fund utilized against approved budget,35,155,29.3,2,Fund,2024,64
+p,2023-09-01,Hardoi,MTIkUw5q5pX,155,Lucknow Division,TB,Treatment Success Rate  as per total cases notified,37,155,87.9,2,TB,2024,64
+p,2023-09-01,Muzaffarnagar,MVQs2RrS1Nw,132,Saharanpur Division,JSY,% JSY Incentive,36,133,28.432980468167585,2,JSY,2024,17
+p,2023-09-01,Muzaffarnagar,MVQs2RrS1Nw,132,Saharanpur Division,Fund,% of fund utilized against approved budget,35,133,31.8,2,Fund,2024,17
+p,2023-09-01,Muzaffarnagar,MVQs2RrS1Nw,132,Saharanpur Division,TB,Treatment Success Rate  as per total cases notified,37,133,86.1,2,TB,2024,17
+p,2023-09-01,Lucknow,MfHac5N78aK,155,Lucknow Division,JSY,% JSY Incentive,36,157,48.20753017474329,2,JSY,2024,53
+p,2023-09-01,Lucknow,MfHac5N78aK,155,Lucknow Division,Fund,% of fund utilized against approved budget,35,157,19.7,2,Fund,2024,53
+p,2023-09-01,Lucknow,MfHac5N78aK,155,Lucknow Division,TB,Treatment Success Rate  as per total cases notified,37,157,91.0,2,TB,2024,53
+p,2023-09-01,Jhansi,Mq751wBMqGF,165,Jhansi Division,JSY,% JSY Incentive,36,166,56.87324662076002,2,JSY,2024,25
+p,2023-09-01,Jhansi,Mq751wBMqGF,165,Jhansi Division,Fund,% of fund utilized against approved budget,35,166,25.7,2,Fund,2024,25
+p,2023-09-01,Jhansi,Mq751wBMqGF,165,Jhansi Division,TB,Treatment Success Rate  as per total cases notified,37,166,88.4,2,TB,2024,25
+p,2023-09-01,Agra,N5WWbRtsjWp,146,Agra Division,JSY,% JSY Incentive,36,146,32.710458575650684,2,JSY,2024,12
+p,2023-09-01,Agra,N5WWbRtsjWp,146,Agra Division,Fund,% of fund utilized against approved budget,35,146,19.7,2,Fund,2024,12
+p,2023-09-01,Agra,N5WWbRtsjWp,146,Agra Division,TB,Treatment Success Rate  as per total cases notified,37,146,88.2,2,TB,2024,12
+p,2023-09-01,Jalaun,NL5xiiHZQSC,165,Jhansi Division,JSY,% JSY Incentive,36,165,56.70709298052186,2,JSY,2024,4
+p,2023-09-01,Jalaun,NL5xiiHZQSC,165,Jhansi Division,Fund,% of fund utilized against approved budget,35,165,21.4,2,Fund,2024,4
+p,2023-09-01,Jalaun,NL5xiiHZQSC,165,Jhansi Division,TB,Treatment Success Rate  as per total cases notified,37,165,88.5,2,TB,2024,4
+p,2023-09-01,Sonbhadra,NNk3JP90QZ5,200,Mirzapur Division,JSY,% JSY Incentive,36,200,49.75662520281233,2,JSY,2024,74
+p,2023-09-01,Sonbhadra,NNk3JP90QZ5,200,Mirzapur Division,Fund,% of fund utilized against approved budget,35,200,20.1,2,Fund,2024,74
+p,2023-09-01,Sonbhadra,NNk3JP90QZ5,200,Mirzapur Division,TB,Treatment Success Rate  as per total cases notified,37,200,92.2,2,TB,2024,74
+p,2023-09-01,Azamgarh,NjckKfm3g0k,193,Azamgarh Division,JSY,% JSY Incentive,36,191,31.43869377695625,2,JSY,2024,14
+p,2023-09-01,Azamgarh,NjckKfm3g0k,193,Azamgarh Division,Fund,% of fund utilized against approved budget,35,191,20.3,2,Fund,2024,14
+p,2023-09-01,Azamgarh,NjckKfm3g0k,193,Azamgarh Division,TB,Treatment Success Rate  as per total cases notified,37,191,84.4,2,TB,2024,14
+p,2023-09-01,Kaushambi,PAj0oVY0Dxu,172,Prayagraj Division,JSY,% JSY Incentive,36,174,31.34590092064884,2,JSY,2024,63
+p,2023-09-01,Kaushambi,PAj0oVY0Dxu,172,Prayagraj Division,Fund,% of fund utilized against approved budget,35,174,25.8,2,Fund,2024,63
+p,2023-09-01,Kaushambi,PAj0oVY0Dxu,172,Prayagraj Division,TB,Treatment Success Rate  as per total cases notified,37,174,90.2,2,TB,2024,63
+p,2023-09-01,Bhadohi,PeUY1vj02UQ,200,Mirzapur Division,JSY,% JSY Incentive,36,198,31.16279069767442,2,JSY,2024,50
+p,2023-09-01,Bhadohi,PeUY1vj02UQ,200,Mirzapur Division,Fund,% of fund utilized against approved budget,35,198,19.2,2,Fund,2024,50
+p,2023-09-01,Bhadohi,PeUY1vj02UQ,200,Mirzapur Division,TB,Treatment Success Rate  as per total cases notified,37,198,91.7,2,TB,2024,50
+p,2023-09-01,Etawah,Pm0jLk6EAiE,161,Kanpur Nagar Division,JSY,% JSY Incentive,36,161,51.72750977835724,2,JSY,2024,62
+p,2023-09-01,Etawah,Pm0jLk6EAiE,161,Kanpur Nagar Division,Fund,% of fund utilized against approved budget,35,161,23.3,2,Fund,2024,62
+p,2023-09-01,Etawah,Pm0jLk6EAiE,161,Kanpur Nagar Division,TB,Treatment Success Rate  as per total cases notified,37,161,86.9,2,TB,2024,62
+p,2023-09-01,Kanpur Nagar,QVMRMhzVrrS,161,Kanpur Nagar Division,JSY,% JSY Incentive,36,164,33.817878028404344,2,JSY,2024,65
+p,2023-09-01,Kanpur Nagar,QVMRMhzVrrS,161,Kanpur Nagar Division,Fund,% of fund utilized against approved budget,35,164,19.3,2,Fund,2024,65
+p,2023-09-01,Kanpur Nagar,QVMRMhzVrrS,161,Kanpur Nagar Division,TB,Treatment Success Rate  as per total cases notified,37,164,85.9,2,TB,2024,65
+p,2023-09-01,Amethi,StsLkYw1G0m,176,Ayodhya Division,JSY,% JSY Incentive,36,206,96.24034911043975,2,JSY,2024,75
+p,2023-09-01,Amethi,StsLkYw1G0m,176,Ayodhya Division,Fund,% of fund utilized against approved budget,35,206,20.5,2,Fund,2024,75
+p,2023-09-01,Amethi,StsLkYw1G0m,176,Ayodhya Division,TB,Treatment Success Rate  as per total cases notified,37,206,87.2,2,TB,2024,75
+p,2023-09-01,Deoria,Tf9b9qcbghH,188,Gorakhpur Division,JSY,% JSY Incentive,36,190,39.60085766122381,2,JSY,2024,19
+p,2023-09-01,Deoria,Tf9b9qcbghH,188,Gorakhpur Division,Fund,% of fund utilized against approved budget,35,190,21.0,2,Fund,2024,19
+p,2023-09-01,Deoria,Tf9b9qcbghH,188,Gorakhpur Division,TB,Treatment Success Rate  as per total cases notified,37,190,87.2,2,TB,2024,19
+p,2023-09-01,Mirzapur,UAicdMLyuk4,200,Mirzapur Division,JSY,% JSY Incentive,36,199,23.44329896907217,2,JSY,2024,20
+p,2023-09-01,Mirzapur,UAicdMLyuk4,200,Mirzapur Division,Fund,% of fund utilized against approved budget,35,199,22.2,2,Fund,2024,20
+p,2023-09-01,Mirzapur,UAicdMLyuk4,200,Mirzapur Division,TB,Treatment Success Rate  as per total cases notified,37,199,90.1,2,TB,2024,20
+p,2023-09-01,Hamirpur,VSI7HobT5qL,170,Chitrakoot Division,JSY,% JSY Incentive,36,168,50.319634703196364,2,JSY,2024,36
+p,2023-09-01,Hamirpur,VSI7HobT5qL,170,Chitrakoot Division,Fund,% of fund utilized against approved budget,35,168,25.7,2,Fund,2024,36
+p,2023-09-01,Hamirpur,VSI7HobT5qL,170,Chitrakoot Division,TB,Treatment Success Rate  as per total cases notified,37,168,92.1,2,TB,2024,36
+p,2023-09-01,Mainpuri,XBLhrSWGytu,146,Agra Division,JSY,% JSY Incentive,36,148,64.8999648999649,2,JSY,2024,43
+p,2023-09-01,Mainpuri,XBLhrSWGytu,146,Agra Division,Fund,% of fund utilized against approved budget,35,148,22.3,2,Fund,2024,43
+p,2023-09-01,Mainpuri,XBLhrSWGytu,146,Agra Division,TB,Treatment Success Rate  as per total cases notified,37,148,85.6,2,TB,2024,43
+p,2023-09-01,Sitapur,XxaOowFtkiJ,155,Lucknow Division,JSY,% JSY Incentive,36,154,53.47415826720995,2,JSY,2024,60
+p,2023-09-01,Sitapur,XxaOowFtkiJ,155,Lucknow Division,Fund,% of fund utilized against approved budget,35,154,18.3,2,Fund,2024,60
+p,2023-09-01,Sitapur,XxaOowFtkiJ,155,Lucknow Division,TB,Treatment Success Rate  as per total cases notified,37,154,89.1,2,TB,2024,60
+p,2023-09-01,Moradabad,YQNQoPjAIpV,134,Moradabad Division,JSY,% JSY Incentive,36,135,27.14515757994019,2,JSY,2024,51
+p,2023-09-01,Moradabad,YQNQoPjAIpV,134,Moradabad Division,Fund,% of fund utilized against approved budget,35,135,24.2,2,Fund,2024,51
+p,2023-09-01,Moradabad,YQNQoPjAIpV,134,Moradabad Division,TB,Treatment Success Rate  as per total cases notified,37,135,89.6,2,TB,2024,51
+p,2023-09-01,Sambhal,YzHpzrN0eLv,134,Moradabad Division,JSY,% JSY Incentive,36,205,56.06583488186886,2,JSY,2024,13
+p,2023-09-01,Sambhal,YzHpzrN0eLv,134,Moradabad Division,Fund,% of fund utilized against approved budget,35,205,26.5,2,Fund,2024,13
+p,2023-09-01,Sambhal,YzHpzrN0eLv,134,Moradabad Division,TB,Treatment Success Rate  as per total cases notified,37,205,89.3,2,TB,2024,13
+p,2023-09-01,Etah,ZLcx4iOVyN5,201,Alligarh Division,JSY,% JSY Incentive,36,201,47.86299765807964,2,JSY,2024,21
+p,2023-09-01,Etah,ZLcx4iOVyN5,201,Alligarh Division,Fund,% of fund utilized against approved budget,35,201,28.7,2,Fund,2024,21
+p,2023-09-01,Etah,ZLcx4iOVyN5,201,Alligarh Division,TB,Treatment Success Rate  as per total cases notified,37,201,92.4,2,TB,2024,21
+p,2023-09-01,Unnav,aT03mfdlNiF,155,Lucknow Division,JSY,% JSY Incentive,36,156,52.83877349159248,2,JSY,2024,7
+p,2023-09-01,Unnav,aT03mfdlNiF,155,Lucknow Division,Fund,% of fund utilized against approved budget,35,156,20.1,2,Fund,2024,7
+p,2023-09-01,Unnav,aT03mfdlNiF,155,Lucknow Division,TB,Treatment Success Rate  as per total cases notified,37,156,88.7,2,TB,2024,7
+p,2023-09-01,Ayodhya,b4XkXzoGqFY,176,Ayodhya Division,JSY,% JSY Incentive,36,177,58.61043525277103,2,JSY,2024,69
+p,2023-09-01,Ayodhya,b4XkXzoGqFY,176,Ayodhya Division,Fund,% of fund utilized against approved budget,35,177,21.2,2,Fund,2024,69
+p,2023-09-01,Ayodhya,b4XkXzoGqFY,176,Ayodhya Division,TB,Treatment Success Rate  as per total cases notified,37,177,91.0,2,TB,2024,69
+p,2023-09-01,Gautam Buddha Nagar,bNmwkrQeP3e,140,Meerut Division,JSY,% JSY Incentive,36,141,18.041051494418443,2,JSY,2024,35
+p,2023-09-01,Gautam Buddha Nagar,bNmwkrQeP3e,140,Meerut Division,Fund,% of fund utilized against approved budget,35,141,18.7,2,Fund,2024,35
+p,2023-09-01,Gautam Buddha Nagar,bNmwkrQeP3e,140,Meerut Division,TB,Treatment Success Rate  as per total cases notified,37,141,88.4,2,TB,2024,35
+p,2023-09-01,Pilibhit,c96jwckSd6j,150,Bareilly Division,JSY,% JSY Incentive,36,151,30.55498246337941,2,JSY,2024,29
+p,2023-09-01,Pilibhit,c96jwckSd6j,150,Bareilly Division,Fund,% of fund utilized against approved budget,35,151,23.3,2,Fund,2024,29
+p,2023-09-01,Pilibhit,c96jwckSd6j,150,Bareilly Division,TB,Treatment Success Rate  as per total cases notified,37,151,87.3,2,TB,2024,29
+p,2023-09-01,Siddharth Nagar,cP0p8qfm3il,185,Basti Division,JSY,% JSY Incentive,36,184,29.40031152647975,2,JSY,2024,1
+p,2023-09-01,Siddharth Nagar,cP0p8qfm3il,185,Basti Division,Fund,% of fund utilized against approved budget,35,184,20.9,2,Fund,2024,1
+p,2023-09-01,Siddharth Nagar,cP0p8qfm3il,185,Basti Division,TB,Treatment Success Rate  as per total cases notified,37,184,85.6,2,TB,2024,1
+p,2023-09-01,Lakhimpur Kheri,d9ZuMopgX29,155,Lucknow Division,JSY,% JSY Incentive,36,153,42.06867196367764,2,JSY,2024,22
+p,2023-09-01,Lakhimpur Kheri,d9ZuMopgX29,155,Lucknow Division,Fund,% of fund utilized against approved budget,35,153,23.8,2,Fund,2024,22
+p,2023-09-01,Lakhimpur Kheri,d9ZuMopgX29,155,Lucknow Division,TB,Treatment Success Rate  as per total cases notified,37,153,90.8,2,TB,2024,22
+p,2023-09-01,Ghazipur,dScWdMRN8PL,195,Varanasi Division,JSY,% JSY Incentive,36,195,29.54767965537497,2,JSY,2024,67
+p,2023-09-01,Ghazipur,dScWdMRN8PL,195,Varanasi Division,Fund,% of fund utilized against approved budget,35,195,25.1,2,Fund,2024,67
+p,2023-09-01,Ghazipur,dScWdMRN8PL,195,Varanasi Division,TB,Treatment Success Rate  as per total cases notified,37,195,88.0,2,TB,2024,67
+p,2023-09-01,Budaun,eA37kyBRRuZ,150,Bareilly Division,JSY,% JSY Incentive,36,149,38.61959359745715,2,JSY,2024,58
+p,2023-09-01,Budaun,eA37kyBRRuZ,150,Bareilly Division,Fund,% of fund utilized against approved budget,35,149,25.2,2,Fund,2024,58
+p,2023-09-01,Budaun,eA37kyBRRuZ,150,Bareilly Division,TB,Treatment Success Rate  as per total cases notified,37,149,90.0,2,TB,2024,58
+p,2023-09-01,Firozabad,eJTsuE56XDF,146,Agra Division,JSY,% JSY Incentive,36,147,45.07893198206977,2,JSY,2024,27
+p,2023-09-01,Firozabad,eJTsuE56XDF,146,Agra Division,Fund,% of fund utilized against approved budget,35,147,23.0,2,Fund,2024,27
+p,2023-09-01,Firozabad,eJTsuE56XDF,146,Agra Division,TB,Treatment Success Rate  as per total cases notified,37,147,88.1,2,TB,2024,27
+p,2023-09-01,Lalitpur,fagfcadhxej,165,Jhansi Division,JSY,% JSY Incentive,36,167,73.29354718388659,2,JSY,2024,68
+p,2023-09-01,Lalitpur,fagfcadhxej,165,Jhansi Division,Fund,% of fund utilized against approved budget,35,167,21.6,2,Fund,2024,68
+p,2023-09-01,Lalitpur,fagfcadhxej,165,Jhansi Division,TB,Treatment Success Rate  as per total cases notified,37,167,89.0,2,TB,2024,68
+p,2023-09-01,Sant Kabir Nagar,fe1yBApr2sl,185,Basti Division,JSY,% JSY Incentive,36,186,18.524930747922443,2,JSY,2024,11
+p,2023-09-01,Sant Kabir Nagar,fe1yBApr2sl,185,Basti Division,Fund,% of fund utilized against approved budget,35,186,19.5,2,Fund,2024,11
+p,2023-09-01,Sant Kabir Nagar,fe1yBApr2sl,185,Basti Division,TB,Treatment Success Rate  as per total cases notified,37,186,86.0,2,TB,2024,11
+p,2023-09-01,Aligarh,frD2HOp3wAs,201,Alligarh Division,JSY,% JSY Incentive,36,143,51.682516459400155,2,JSY,2024,44
+p,2023-09-01,Aligarh,frD2HOp3wAs,201,Alligarh Division,Fund,% of fund utilized against approved budget,35,143,19.6,2,Fund,2024,44
+p,2023-09-01,Aligarh,frD2HOp3wAs,201,Alligarh Division,TB,Treatment Success Rate  as per total cases notified,37,143,91.5,2,TB,2024,44
+p,2023-09-01,Pratapgarh,fz7bJo3egPX,172,Prayagraj Division,JSY,% JSY Incentive,36,173,50.107898144151925,2,JSY,2024,3
+p,2023-09-01,Pratapgarh,fz7bJo3egPX,172,Prayagraj Division,Fund,% of fund utilized against approved budget,35,173,20.4,2,Fund,2024,3
+p,2023-09-01,Pratapgarh,fz7bJo3egPX,172,Prayagraj Division,TB,Treatment Success Rate  as per total cases notified,37,173,86.0,2,TB,2024,3
+p,2023-09-01,Jaunpur,gmw76vAUMqz,195,Varanasi Division,JSY,% JSY Incentive,36,194,64.10180962189202,2,JSY,2024,54
+p,2023-09-01,Jaunpur,gmw76vAUMqz,195,Varanasi Division,Fund,% of fund utilized against approved budget,35,194,23.4,2,Fund,2024,54
+p,2023-09-01,Jaunpur,gmw76vAUMqz,195,Varanasi Division,TB,Treatment Success Rate  as per total cases notified,37,194,85.5,2,TB,2024,54
+p,2023-09-01,Kasganj,hITp09XOBLZ,201,Alligarh Division,JSY,% JSY Incentive,36,202,54.77272727272727,2,JSY,2024,70
+p,2023-09-01,Kasganj,hITp09XOBLZ,201,Alligarh Division,Fund,% of fund utilized against approved budget,35,202,22.7,2,Fund,2024,70
+p,2023-09-01,Kasganj,hITp09XOBLZ,201,Alligarh Division,TB,Treatment Success Rate  as per total cases notified,37,202,90.2,2,TB,2024,70
+p,2023-09-01,Amroha,hgquAmZaNBu,134,Moradabad Division,JSY,% JSY Incentive,36,137,17.524251370729647,2,JSY,2024,33
+p,2023-09-01,Amroha,hgquAmZaNBu,134,Moradabad Division,Fund,% of fund utilized against approved budget,35,137,23.8,2,Fund,2024,33
+p,2023-09-01,Amroha,hgquAmZaNBu,134,Moradabad Division,TB,Treatment Success Rate  as per total cases notified,37,137,87.9,2,TB,2024,33
+p,2023-09-01,Chitrakoot,i2fSZZ3QAJJ,170,Chitrakoot Division,JSY,% JSY Incentive,36,171,51.42980935875217,2,JSY,2024,38
+p,2023-09-01,Chitrakoot,i2fSZZ3QAJJ,170,Chitrakoot Division,Fund,% of fund utilized against approved budget,35,171,24.8,2,Fund,2024,38
+p,2023-09-01,Chitrakoot,i2fSZZ3QAJJ,170,Chitrakoot Division,TB,Treatment Success Rate  as per total cases notified,37,171,91.3,2,TB,2024,38
+p,2023-09-01,Bahraich,iE0E3nLioFr,182,Gonda Division,JSY,% JSY Incentive,36,180,27.04304429195259,2,JSY,2024,23
+p,2023-09-01,Bahraich,iE0E3nLioFr,182,Gonda Division,Fund,% of fund utilized against approved budget,35,180,26.2,2,Fund,2024,23
+p,2023-09-01,Bahraich,iE0E3nLioFr,182,Gonda Division,TB,Treatment Success Rate  as per total cases notified,37,180,88.8,2,TB,2024,23
+p,2023-09-01,Fatehpur,ibLiLcaKzw2,172,Prayagraj Division,JSY,% JSY Incentive,36,172,50.6993006993007,2,JSY,2024,16
+p,2023-09-01,Fatehpur,ibLiLcaKzw2,172,Prayagraj Division,Fund,% of fund utilized against approved budget,35,172,22.8,2,Fund,2024,16
+p,2023-09-01,Fatehpur,ibLiLcaKzw2,172,Prayagraj Division,TB,Treatment Success Rate  as per total cases notified,37,172,91.7,2,TB,2024,16
+p,2023-09-01,Ambedkar Nagar,jM27ji8tyrM,176,Ayodhya Division,JSY,% JSY Incentive,36,178,40.97892888498683,2,JSY,2024,8
+p,2023-09-01,Ambedkar Nagar,jM27ji8tyrM,176,Ayodhya Division,Fund,% of fund utilized against approved budget,35,178,23.3,2,Fund,2024,8
+p,2023-09-01,Ambedkar Nagar,jM27ji8tyrM,176,Ayodhya Division,TB,Treatment Success Rate  as per total cases notified,37,178,87.9,2,TB,2024,8
+p,2023-09-01,Kanpur Dehat,k3D0AumUCiC,161,Kanpur Nagar Division,JSY,% JSY Incentive,36,163,64.45868945868945,2,JSY,2024,57
+p,2023-09-01,Kanpur Dehat,k3D0AumUCiC,161,Kanpur Nagar Division,Fund,% of fund utilized against approved budget,35,163,22.1,2,Fund,2024,57
+p,2023-09-01,Kanpur Dehat,k3D0AumUCiC,161,Kanpur Nagar Division,TB,Treatment Success Rate  as per total cases notified,37,163,90.6,2,TB,2024,57
+p,2023-09-01,Rae Bareli,lLvTDpBDY8u,155,Lucknow Division,JSY,% JSY Incentive,36,158,67.66647802301452,2,JSY,2024,59
+p,2023-09-01,Rae Bareli,lLvTDpBDY8u,155,Lucknow Division,Fund,% of fund utilized against approved budget,35,158,22.2,2,Fund,2024,59
+p,2023-09-01,Rae Bareli,lLvTDpBDY8u,155,Lucknow Division,TB,Treatment Success Rate  as per total cases notified,37,158,88.8,2,TB,2024,59
+p,2023-09-01,Hathras,m1IAjmqkoFC,201,Alligarh Division,JSY,% JSY Incentive,36,144,44.31220592305563,2,JSY,2024,48
+p,2023-09-01,Hathras,m1IAjmqkoFC,201,Alligarh Division,Fund,% of fund utilized against approved budget,35,144,28.7,2,Fund,2024,48
+p,2023-09-01,Hathras,m1IAjmqkoFC,201,Alligarh Division,TB,Treatment Success Rate  as per total cases notified,37,144,90.7,2,TB,2024,48
+p,2023-09-01,Sultanpur,o4ZQTVcMI7U,176,Ayodhya Division,JSY,% JSY Incentive,36,179,36.06648199445984,2,JSY,2024,40
+p,2023-09-01,Sultanpur,o4ZQTVcMI7U,176,Ayodhya Division,Fund,% of fund utilized against approved budget,35,179,23.2,2,Fund,2024,40
+p,2023-09-01,Sultanpur,o4ZQTVcMI7U,176,Ayodhya Division,TB,Treatment Success Rate  as per total cases notified,37,179,88.7,2,TB,2024,40
+p,2023-09-01,Ballia,oNDvGBE5fLq,193,Azamgarh Division,JSY,% JSY Incentive,36,193,18.49201981287837,2,JSY,2024,5
+p,2023-09-01,Ballia,oNDvGBE5fLq,193,Azamgarh Division,Fund,% of fund utilized against approved budget,35,193,20.4,2,Fund,2024,5
+p,2023-09-01,Ballia,oNDvGBE5fLq,193,Azamgarh Division,TB,Treatment Success Rate  as per total cases notified,37,193,89.8,2,TB,2024,5
+p,2023-09-01,Bulandshahar,ogBt4gWCiem,140,Meerut Division,JSY,% JSY Incentive,36,142,28.525876870247732,2,JSY,2024,52
+p,2023-09-01,Bulandshahar,ogBt4gWCiem,140,Meerut Division,Fund,% of fund utilized against approved budget,35,142,21.2,2,Fund,2024,52
+p,2023-09-01,Bulandshahar,ogBt4gWCiem,140,Meerut Division,TB,Treatment Success Rate  as per total cases notified,37,142,88.1,2,TB,2024,52
+p,2023-09-01,Shrawasti,oyTwneTbWDx,182,Gonda Division,JSY,% JSY Incentive,36,181,39.04884318766067,2,JSY,2024,18
+p,2023-09-01,Shrawasti,oyTwneTbWDx,182,Gonda Division,Fund,% of fund utilized against approved budget,35,181,27.6,2,Fund,2024,18
+p,2023-09-01,Shrawasti,oyTwneTbWDx,182,Gonda Division,TB,Treatment Success Rate  as per total cases notified,37,181,91.7,2,TB,2024,18
+p,2023-09-01,Mahoba,sUQMxIc3yXj,170,Chitrakoot Division,JSY,% JSY Incentive,36,169,56.254180602006684,2,JSY,2024,42
+p,2023-09-01,Mahoba,sUQMxIc3yXj,170,Chitrakoot Division,Fund,% of fund utilized against approved budget,35,169,23.1,2,Fund,2024,42
+p,2023-09-01,Mahoba,sUQMxIc3yXj,170,Chitrakoot Division,TB,Treatment Success Rate  as per total cases notified,37,169,89.8,2,TB,2024,42
+p,2023-09-01,Prayagraj,tXgaew1Pd2Y,172,Prayagraj Division,JSY,% JSY Incentive,36,175,30.112822349570198,2,JSY,2024,34
+p,2023-09-01,Prayagraj,tXgaew1Pd2Y,172,Prayagraj Division,Fund,% of fund utilized against approved budget,35,175,21.8,2,Fund,2024,34
+p,2023-09-01,Prayagraj,tXgaew1Pd2Y,172,Prayagraj Division,TB,Treatment Success Rate  as per total cases notified,37,175,88.8,2,TB,2024,34
+p,2023-09-01,Barabanki,tzH6nJu9SwS,176,Ayodhya Division,JSY,% JSY Incentive,36,176,66.1036036036036,2,JSY,2024,41
+p,2023-09-01,Barabanki,tzH6nJu9SwS,176,Ayodhya Division,Fund,% of fund utilized against approved budget,35,176,19.6,2,Fund,2024,41
+p,2023-09-01,Barabanki,tzH6nJu9SwS,176,Ayodhya Division,TB,Treatment Success Rate  as per total cases notified,37,176,88.6,2,TB,2024,41
+p,2023-09-01,Bijnor,uCYjHW7FuGG,134,Moradabad Division,JSY,% JSY Incentive,36,134,13.094727818259752,2,JSY,2024,15
+p,2023-09-01,Bijnor,uCYjHW7FuGG,134,Moradabad Division,Fund,% of fund utilized against approved budget,35,134,23.6,2,Fund,2024,15
+p,2023-09-01,Bijnor,uCYjHW7FuGG,134,Moradabad Division,TB,Treatment Success Rate  as per total cases notified,37,134,92.3,2,TB,2024,15
+p,2023-09-01,Farrukhabad,uEEwlAGZXWW,161,Kanpur Nagar Division,JSY,% JSY Incentive,36,159,22.8200371057514,2,JSY,2024,49
+p,2023-09-01,Farrukhabad,uEEwlAGZXWW,161,Kanpur Nagar Division,Fund,% of fund utilized against approved budget,35,159,20.7,2,Fund,2024,49
+p,2023-09-01,Farrukhabad,uEEwlAGZXWW,161,Kanpur Nagar Division,TB,Treatment Success Rate  as per total cases notified,37,159,87.0,2,TB,2024,49
+p,2023-09-01,Balrampur,uS0pNSxN3sS,182,Gonda Division,JSY,% JSY Incentive,36,182,27.58337440446855,2,JSY,2024,72
+p,2023-09-01,Balrampur,uS0pNSxN3sS,182,Gonda Division,Fund,% of fund utilized against approved budget,35,182,24.0,2,Fund,2024,72
+p,2023-09-01,Balrampur,uS0pNSxN3sS,182,Gonda Division,TB,Treatment Success Rate  as per total cases notified,37,182,89.7,2,TB,2024,72
+p,2023-09-01,Meerut,v8YGmR7nOdj,140,Meerut Division,JSY,% JSY Incentive,36,138,62.495259764884345,2,JSY,2024,30
+p,2023-09-01,Meerut,v8YGmR7nOdj,140,Meerut Division,Fund,% of fund utilized against approved budget,35,138,25.4,2,Fund,2024,30
+p,2023-09-01,Meerut,v8YGmR7nOdj,140,Meerut Division,TB,Treatment Success Rate  as per total cases notified,37,138,84.1,2,TB,2024,30
+p,2023-09-01,Gorakhpur,vR85cHdsw1w,188,Gorakhpur Division,JSY,% JSY Incentive,36,188,52.7481280866656,2,JSY,2024,45
+p,2023-09-01,Gorakhpur,vR85cHdsw1w,188,Gorakhpur Division,Fund,% of fund utilized against approved budget,35,188,23.3,2,Fund,2024,45
+p,2023-09-01,Gorakhpur,vR85cHdsw1w,188,Gorakhpur Division,TB,Treatment Success Rate  as per total cases notified,37,188,90.7,2,TB,2024,45
+p,2023-09-01,Bareilly,vVqY3DPcpHf,150,Bareilly Division,JSY,% JSY Incentive,36,150,26.02798400913764,2,JSY,2024,56
+p,2023-09-01,Bareilly,vVqY3DPcpHf,150,Bareilly Division,Fund,% of fund utilized against approved budget,35,150,24.5,2,Fund,2024,56
+p,2023-09-01,Bareilly,vVqY3DPcpHf,150,Bareilly Division,TB,Treatment Success Rate  as per total cases notified,37,150,88.1,2,TB,2024,56
+p,2023-09-01,Kushinagar,xUeHwd9FQkg,188,Gorakhpur Division,JSY,% JSY Incentive,36,189,15.73748535074502,2,JSY,2024,9
+p,2023-09-01,Kushinagar,xUeHwd9FQkg,188,Gorakhpur Division,Fund,% of fund utilized against approved budget,35,189,20.9,2,Fund,2024,9
+p,2023-09-01,Kushinagar,xUeHwd9FQkg,188,Gorakhpur Division,TB,Treatment Success Rate  as per total cases notified,37,189,89.0,2,TB,2024,9
+p,2023-09-01,Gonda,y8WarEkWCul,182,Gonda Division,JSY,% JSY Incentive,36,183,29.689047336106164,2,JSY,2024,2
+p,2023-09-01,Gonda,y8WarEkWCul,182,Gonda Division,Fund,% of fund utilized against approved budget,35,183,20.6,2,Fund,2024,2
+p,2023-09-01,Gonda,y8WarEkWCul,182,Gonda Division,TB,Treatment Success Rate  as per total cases notified,37,183,88.5,2,TB,2024,2
+p,2023-09-01,Maharajganj,AcnMkNGgc3S,188,Gorakhpur Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,187,65.40119528526368,2,coverage,2024,10
+p,2023-09-01,Maharajganj,AcnMkNGgc3S,188,Gorakhpur Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,187,97.93208289553104,2,coverage,2024,10
+p,2023-09-01,Maharajganj,AcnMkNGgc3S,188,Gorakhpur Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,187,100.0,2,quality,2024,10
+p,2023-09-01,Shamli,AdiUcz9BXhx,132,Saharanpur Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,203,84.94511330531851,2,coverage,2024,32
+p,2023-09-01,Shamli,AdiUcz9BXhx,132,Saharanpur Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,203,100.0,2,coverage,2024,32
+p,2023-09-01,Shamli,AdiUcz9BXhx,132,Saharanpur Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,203,100.0,2,quality,2024,32
+p,2023-09-01,Auraiya,Bd6E8zkVvVt,161,Kanpur Nagar Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,162,72.54382259767688,2,coverage,2024,37
+p,2023-09-01,Auraiya,Bd6E8zkVvVt,161,Kanpur Nagar Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,162,100.0,2,coverage,2024,37
+p,2023-09-01,Auraiya,Bd6E8zkVvVt,161,Kanpur Nagar Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,162,100.0,2,quality,2024,37
+p,2023-09-01,Maunathbhanjan,CBSB9v92AwT,193,Azamgarh Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,192,90.99754161691368,2,coverage,2024,6
+p,2023-09-01,Maunathbhanjan,CBSB9v92AwT,193,Azamgarh Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,192,100.0,2,coverage,2024,6
+p,2023-09-01,Maunathbhanjan,CBSB9v92AwT,193,Azamgarh Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,192,99.72752043596728,2,quality,2024,6
+p,2023-09-01,Hapur,CZ8kLjgqvSH,140,Meerut Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,204,74.82948411644986,2,coverage,2024,46
+p,2023-09-01,Hapur,CZ8kLjgqvSH,140,Meerut Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,204,92.09044597372421,2,coverage,2024,46
+p,2023-09-01,Hapur,CZ8kLjgqvSH,140,Meerut Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,204,93.23076923076924,2,quality,2024,46
+p,2023-09-01,Chandauli,ClbehnmwSec,195,Varanasi Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,196,94.71662790130286,2,coverage,2024,61
+p,2023-09-01,Chandauli,ClbehnmwSec,195,Varanasi Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,196,100.0,2,coverage,2024,61
+p,2023-09-01,Chandauli,ClbehnmwSec,195,Varanasi Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,196,100.0,2,quality,2024,61
+p,2023-09-01,Banda,DggJGxqbWHn,170,Chitrakoot Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,170,88.80201765447669,2,coverage,2024,47
+p,2023-09-01,Banda,DggJGxqbWHn,170,Chitrakoot Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,170,98.1795951637006,2,coverage,2024,47
+p,2023-09-01,Banda,DggJGxqbWHn,170,Chitrakoot Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,170,100.0,2,quality,2024,47
+p,2023-09-01,Saharanpur,FKYZ3JbWq84,132,Saharanpur Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,132,65.35042032914373,2,coverage,2024,31
+p,2023-09-01,Saharanpur,FKYZ3JbWq84,132,Saharanpur Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,132,100.0,2,coverage,2024,31
+p,2023-09-01,Saharanpur,FKYZ3JbWq84,132,Saharanpur Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,132,100.0,2,quality,2024,31
+p,2023-09-01,Shahjahanpur,GaiLSoQq1ue,150,Bareilly Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,152,68.83081074738942,2,coverage,2024,28
+p,2023-09-01,Shahjahanpur,GaiLSoQq1ue,150,Bareilly Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,152,91.16369094643706,2,coverage,2024,28
+p,2023-09-01,Shahjahanpur,GaiLSoQq1ue,150,Bareilly Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,152,100.0,2,quality,2024,28
+p,2023-09-01,Bagpat,HJIS3IrQ0Nj,140,Meerut Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,139,83.59892340021301,2,coverage,2024,66
+p,2023-09-01,Bagpat,HJIS3IrQ0Nj,140,Meerut Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,139,100.0,2,coverage,2024,66
+p,2023-09-01,Bagpat,HJIS3IrQ0Nj,140,Meerut Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,139,94.0,2,quality,2024,66
+p,2023-09-01,Rampur,IU006h5U7jj,134,Moradabad Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,136,72.44707961574642,2,coverage,2024,26
+p,2023-09-01,Rampur,IU006h5U7jj,134,Moradabad Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,136,100.0,2,coverage,2024,26
+p,2023-09-01,Rampur,IU006h5U7jj,134,Moradabad Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,136,100.0,2,quality,2024,26
+p,2023-09-01,Kannauj,IhQbDYRiF8w,161,Kanpur Nagar Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,160,82.11584553928097,2,coverage,2024,73
+p,2023-09-01,Kannauj,IhQbDYRiF8w,161,Kanpur Nagar Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,160,100.0,2,coverage,2024,73
+p,2023-09-01,Kannauj,IhQbDYRiF8w,161,Kanpur Nagar Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,160,100.0,2,quality,2024,73
+p,2023-09-01,Basti,J1P16zQEOUT,185,Basti Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,185,58.266155053632154,2,coverage,2024,71
+p,2023-09-01,Basti,J1P16zQEOUT,185,Basti Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,185,94.08596738473929,2,coverage,2024,71
+p,2023-09-01,Basti,J1P16zQEOUT,185,Basti Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,185,100.0,2,quality,2024,71
+p,2023-09-01,Mathura,KP2BUB1npih,146,Agra Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,145,93.33270376289408,2,coverage,2024,24
+p,2023-09-01,Mathura,KP2BUB1npih,146,Agra Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,145,100.0,2,coverage,2024,24
+p,2023-09-01,Mathura,KP2BUB1npih,146,Agra Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,145,100.0,2,quality,2024,24
+p,2023-09-01,Varanasi,LeuBT7KfuuA,195,Varanasi Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,197,99.6432315029038,2,coverage,2024,55
+p,2023-09-01,Varanasi,LeuBT7KfuuA,195,Varanasi Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,197,100.0,2,coverage,2024,55
+p,2023-09-01,Varanasi,LeuBT7KfuuA,195,Varanasi Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,197,100.0,2,quality,2024,55
+p,2023-09-01,Ghaziabad,M5NHlfAaKYI,140,Meerut Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,140,70.77217342023236,2,coverage,2024,39
+p,2023-09-01,Ghaziabad,M5NHlfAaKYI,140,Meerut Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,140,100.0,2,coverage,2024,39
+p,2023-09-01,Ghaziabad,M5NHlfAaKYI,140,Meerut Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,140,100.0,2,quality,2024,39
+p,2023-09-01,Hardoi,MTIkUw5q5pX,155,Lucknow Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,155,74.91551676405018,2,coverage,2024,64
+p,2023-09-01,Hardoi,MTIkUw5q5pX,155,Lucknow Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,155,100.0,2,coverage,2024,64
+p,2023-09-01,Hardoi,MTIkUw5q5pX,155,Lucknow Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,155,98.27027027027029,2,quality,2024,64
+p,2023-09-01,Muzaffarnagar,MVQs2RrS1Nw,132,Saharanpur Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,133,87.31784266120934,2,coverage,2024,17
+p,2023-09-01,Muzaffarnagar,MVQs2RrS1Nw,132,Saharanpur Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,133,100.0,2,coverage,2024,17
+p,2023-09-01,Muzaffarnagar,MVQs2RrS1Nw,132,Saharanpur Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,133,100.0,2,quality,2024,17
+p,2023-09-01,Lucknow,MfHac5N78aK,155,Lucknow Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,157,100.0,2,coverage,2024,53
+p,2023-09-01,Lucknow,MfHac5N78aK,155,Lucknow Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,157,100.0,2,coverage,2024,53
+p,2023-09-01,Lucknow,MfHac5N78aK,155,Lucknow Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,157,100.0,2,quality,2024,53
+p,2023-09-01,Jhansi,Mq751wBMqGF,165,Jhansi Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,166,79.54526301929026,2,coverage,2024,25
+p,2023-09-01,Jhansi,Mq751wBMqGF,165,Jhansi Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,166,100.0,2,coverage,2024,25
+p,2023-09-01,Jhansi,Mq751wBMqGF,165,Jhansi Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,166,100.0,2,quality,2024,25
+p,2023-09-01,Agra,N5WWbRtsjWp,146,Agra Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,146,100.0,2,coverage,2024,12
+p,2023-09-01,Agra,N5WWbRtsjWp,146,Agra Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,146,83.90419278044988,2,coverage,2024,12
+p,2023-09-01,Agra,N5WWbRtsjWp,146,Agra Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,146,100.0,2,quality,2024,12
+p,2023-09-01,Jalaun,NL5xiiHZQSC,165,Jhansi Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,165,73.73375773960059,2,coverage,2024,4
+p,2023-09-01,Jalaun,NL5xiiHZQSC,165,Jhansi Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,165,96.6045712775796,2,coverage,2024,4
+p,2023-09-01,Jalaun,NL5xiiHZQSC,165,Jhansi Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,165,100.0,2,quality,2024,4
+p,2023-09-01,Sonbhadra,NNk3JP90QZ5,200,Mirzapur Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,200,80.15151515151516,2,coverage,2024,74
+p,2023-09-01,Sonbhadra,NNk3JP90QZ5,200,Mirzapur Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,200,87.3047248613148,2,coverage,2024,74
+p,2023-09-01,Sonbhadra,NNk3JP90QZ5,200,Mirzapur Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,200,100.0,2,quality,2024,74
+p,2023-09-01,Azamgarh,NjckKfm3g0k,193,Azamgarh Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,191,84.35546971500438,2,coverage,2024,14
+p,2023-09-01,Azamgarh,NjckKfm3g0k,193,Azamgarh Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,191,95.13439945559713,2,coverage,2024,14
+p,2023-09-01,Azamgarh,NjckKfm3g0k,193,Azamgarh Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,191,100.0,2,quality,2024,14
+p,2023-09-01,Kaushambi,PAj0oVY0Dxu,172,Prayagraj Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,174,90.90185464548763,2,coverage,2024,63
+p,2023-09-01,Kaushambi,PAj0oVY0Dxu,172,Prayagraj Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,174,93.59337468181982,2,coverage,2024,63
+p,2023-09-01,Kaushambi,PAj0oVY0Dxu,172,Prayagraj Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,174,100.0,2,quality,2024,63
+p,2023-09-01,Bhadohi,PeUY1vj02UQ,200,Mirzapur Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,198,91.08081112498388,2,coverage,2024,50
+p,2023-09-01,Bhadohi,PeUY1vj02UQ,200,Mirzapur Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,198,81.53237378788538,2,coverage,2024,50
+p,2023-09-01,Bhadohi,PeUY1vj02UQ,200,Mirzapur Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,198,100.0,2,quality,2024,50
+p,2023-09-01,Etawah,Pm0jLk6EAiE,161,Kanpur Nagar Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,161,92.41576420935465,2,coverage,2024,62
+p,2023-09-01,Etawah,Pm0jLk6EAiE,161,Kanpur Nagar Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,161,100.0,2,coverage,2024,62
+p,2023-09-01,Etawah,Pm0jLk6EAiE,161,Kanpur Nagar Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,161,98.35294117647058,2,quality,2024,62
+p,2023-09-01,Kanpur Nagar,QVMRMhzVrrS,161,Kanpur Nagar Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,164,71.48839606960254,2,coverage,2024,65
+p,2023-09-01,Kanpur Nagar,QVMRMhzVrrS,161,Kanpur Nagar Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,164,99.42835284867287,2,coverage,2024,65
+p,2023-09-01,Kanpur Nagar,QVMRMhzVrrS,161,Kanpur Nagar Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,164,100.0,2,quality,2024,65
+p,2023-09-01,Amethi,StsLkYw1G0m,176,Ayodhya Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,206,88.73531361089356,2,coverage,2024,75
+p,2023-09-01,Amethi,StsLkYw1G0m,176,Ayodhya Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,206,100.0,2,coverage,2024,75
+p,2023-09-01,Amethi,StsLkYw1G0m,176,Ayodhya Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,206,100.0,2,quality,2024,75
+p,2023-09-01,Deoria,Tf9b9qcbghH,188,Gorakhpur Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,190,69.88812607271025,2,coverage,2024,19
+p,2023-09-01,Deoria,Tf9b9qcbghH,188,Gorakhpur Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,190,100.0,2,coverage,2024,19
+p,2023-09-01,Deoria,Tf9b9qcbghH,188,Gorakhpur Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,190,100.0,2,quality,2024,19
+p,2023-09-01,Mirzapur,UAicdMLyuk4,200,Mirzapur Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,199,100.0,2,coverage,2024,20
+p,2023-09-01,Mirzapur,UAicdMLyuk4,200,Mirzapur Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,199,100.0,2,coverage,2024,20
+p,2023-09-01,Mirzapur,UAicdMLyuk4,200,Mirzapur Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,199,96.84210526315788,2,quality,2024,20
+p,2023-09-01,Hamirpur,VSI7HobT5qL,170,Chitrakoot Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,168,92.31183830606354,2,coverage,2024,36
+p,2023-09-01,Hamirpur,VSI7HobT5qL,170,Chitrakoot Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,168,90.52201808107321,2,coverage,2024,36
+p,2023-09-01,Hamirpur,VSI7HobT5qL,170,Chitrakoot Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,168,100.0,2,quality,2024,36
+p,2023-09-01,Mainpuri,XBLhrSWGytu,146,Agra Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,148,79.86344843210179,2,coverage,2024,43
+p,2023-09-01,Mainpuri,XBLhrSWGytu,146,Agra Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,148,100.0,2,coverage,2024,43
+p,2023-09-01,Mainpuri,XBLhrSWGytu,146,Agra Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,148,100.0,2,quality,2024,43
+p,2023-09-01,Sitapur,XxaOowFtkiJ,155,Lucknow Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,154,86.25284738041002,2,coverage,2024,60
+p,2023-09-01,Sitapur,XxaOowFtkiJ,155,Lucknow Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,154,93.5794499719918,2,coverage,2024,60
+p,2023-09-01,Sitapur,XxaOowFtkiJ,155,Lucknow Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,154,100.0,2,quality,2024,60
+p,2023-09-01,Moradabad,YQNQoPjAIpV,134,Moradabad Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,135,62.17909972960077,2,coverage,2024,51
+p,2023-09-01,Moradabad,YQNQoPjAIpV,134,Moradabad Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,135,100.0,2,coverage,2024,51
+p,2023-09-01,Moradabad,YQNQoPjAIpV,134,Moradabad Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,135,100.0,2,quality,2024,51
+p,2023-09-01,Sambhal,YzHpzrN0eLv,134,Moradabad Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,205,69.33505671115387,2,coverage,2024,13
+p,2023-09-01,Sambhal,YzHpzrN0eLv,134,Moradabad Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,205,100.0,2,coverage,2024,13
+p,2023-09-01,Sambhal,YzHpzrN0eLv,134,Moradabad Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,205,100.0,2,quality,2024,13
+p,2023-09-01,Etah,ZLcx4iOVyN5,201,Alligarh Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,201,74.4834123222749,2,coverage,2024,21
+p,2023-09-01,Etah,ZLcx4iOVyN5,201,Alligarh Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,201,96.74838444968715,2,coverage,2024,21
+p,2023-09-01,Etah,ZLcx4iOVyN5,201,Alligarh Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,201,100.0,2,quality,2024,21
+p,2023-09-01,Unnav,aT03mfdlNiF,155,Lucknow Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,156,74.20380483096694,2,coverage,2024,7
+p,2023-09-01,Unnav,aT03mfdlNiF,155,Lucknow Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,156,100.0,2,coverage,2024,7
+p,2023-09-01,Unnav,aT03mfdlNiF,155,Lucknow Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,156,100.0,2,quality,2024,7
+p,2023-09-01,Ayodhya,b4XkXzoGqFY,176,Ayodhya Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,177,80.80450629555995,2,coverage,2024,69
+p,2023-09-01,Ayodhya,b4XkXzoGqFY,176,Ayodhya Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,177,100.0,2,coverage,2024,69
+p,2023-09-01,Ayodhya,b4XkXzoGqFY,176,Ayodhya Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,177,100.0,2,quality,2024,69
+p,2023-09-01,Gautam Buddha Nagar,bNmwkrQeP3e,140,Meerut Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,141,100.0,2,coverage,2024,35
+p,2023-09-01,Gautam Buddha Nagar,bNmwkrQeP3e,140,Meerut Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,141,100.0,2,coverage,2024,35
+p,2023-09-01,Gautam Buddha Nagar,bNmwkrQeP3e,140,Meerut Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,141,100.0,2,quality,2024,35
+p,2023-09-01,Pilibhit,c96jwckSd6j,150,Bareilly Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,151,75.45899225302516,2,coverage,2024,29
+p,2023-09-01,Pilibhit,c96jwckSd6j,150,Bareilly Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,151,94.64903488635264,2,coverage,2024,29
+p,2023-09-01,Pilibhit,c96jwckSd6j,150,Bareilly Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,151,93.62244897959185,2,quality,2024,29
+p,2023-09-01,Siddharth Nagar,cP0p8qfm3il,185,Basti Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,184,45.16433883547978,2,coverage,2024,1
+p,2023-09-01,Siddharth Nagar,cP0p8qfm3il,185,Basti Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,184,76.77638293974475,2,coverage,2024,1
+p,2023-09-01,Siddharth Nagar,cP0p8qfm3il,185,Basti Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,184,100.0,2,quality,2024,1
+p,2023-09-01,Lakhimpur Kheri,d9ZuMopgX29,155,Lucknow Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,153,77.83605367593694,2,coverage,2024,22
+p,2023-09-01,Lakhimpur Kheri,d9ZuMopgX29,155,Lucknow Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,153,90.64707808917794,2,coverage,2024,22
+p,2023-09-01,Lakhimpur Kheri,d9ZuMopgX29,155,Lucknow Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,153,100.0,2,quality,2024,22
+p,2023-09-01,Ghazipur,dScWdMRN8PL,195,Varanasi Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,195,74.02426191172171,2,coverage,2024,67
+p,2023-09-01,Ghazipur,dScWdMRN8PL,195,Varanasi Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,195,100.0,2,coverage,2024,67
+p,2023-09-01,Ghazipur,dScWdMRN8PL,195,Varanasi Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,195,100.0,2,quality,2024,67
+p,2023-09-01,Budaun,eA37kyBRRuZ,150,Bareilly Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,149,78.32968350800355,2,coverage,2024,58
+p,2023-09-01,Budaun,eA37kyBRRuZ,150,Bareilly Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,149,100.0,2,coverage,2024,58
+p,2023-09-01,Budaun,eA37kyBRRuZ,150,Bareilly Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,149,100.0,2,quality,2024,58
+p,2023-09-01,Firozabad,eJTsuE56XDF,146,Agra Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,147,53.55421135832147,2,coverage,2024,27
+p,2023-09-01,Firozabad,eJTsuE56XDF,146,Agra Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,147,100.0,2,coverage,2024,27
+p,2023-09-01,Firozabad,eJTsuE56XDF,146,Agra Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,147,100.0,2,quality,2024,27
+p,2023-09-01,Lalitpur,fagfcadhxej,165,Jhansi Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,167,80.01220958098939,2,coverage,2024,68
+p,2023-09-01,Lalitpur,fagfcadhxej,165,Jhansi Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,167,94.72316355390221,2,coverage,2024,68
+p,2023-09-01,Lalitpur,fagfcadhxej,165,Jhansi Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,167,100.0,2,quality,2024,68
+p,2023-09-01,Sant Kabir Nagar,fe1yBApr2sl,185,Basti Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,186,65.35207707349646,2,coverage,2024,11
+p,2023-09-01,Sant Kabir Nagar,fe1yBApr2sl,185,Basti Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,186,89.25285418372755,2,coverage,2024,11
+p,2023-09-01,Sant Kabir Nagar,fe1yBApr2sl,185,Basti Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,186,100.0,2,quality,2024,11
+p,2023-09-01,Aligarh,frD2HOp3wAs,201,Alligarh Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,143,94.93310653660568,2,coverage,2024,44
+p,2023-09-01,Aligarh,frD2HOp3wAs,201,Alligarh Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,143,100.0,2,coverage,2024,44
+p,2023-09-01,Aligarh,frD2HOp3wAs,201,Alligarh Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,143,100.0,2,quality,2024,44
+p,2023-09-01,Pratapgarh,fz7bJo3egPX,172,Prayagraj Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,173,74.84482999860082,2,coverage,2024,3
+p,2023-09-01,Pratapgarh,fz7bJo3egPX,172,Prayagraj Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,173,90.20643772624986,2,coverage,2024,3
+p,2023-09-01,Pratapgarh,fz7bJo3egPX,172,Prayagraj Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,173,100.0,2,quality,2024,3
+p,2023-09-01,Jaunpur,gmw76vAUMqz,195,Varanasi Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,194,65.23028247652923,2,coverage,2024,54
+p,2023-09-01,Jaunpur,gmw76vAUMqz,195,Varanasi Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,194,100.0,2,coverage,2024,54
+p,2023-09-01,Jaunpur,gmw76vAUMqz,195,Varanasi Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,194,100.0,2,quality,2024,54
+p,2023-09-01,Kasganj,hITp09XOBLZ,201,Alligarh Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,202,82.78948028598904,2,coverage,2024,70
+p,2023-09-01,Kasganj,hITp09XOBLZ,201,Alligarh Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,202,100.0,2,coverage,2024,70
+p,2023-09-01,Kasganj,hITp09XOBLZ,201,Alligarh Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,202,100.0,2,quality,2024,70
+p,2023-09-01,Amroha,hgquAmZaNBu,134,Moradabad Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,137,85.80227662560425,2,coverage,2024,33
+p,2023-09-01,Amroha,hgquAmZaNBu,134,Moradabad Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,137,100.0,2,coverage,2024,33
+p,2023-09-01,Amroha,hgquAmZaNBu,134,Moradabad Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,137,100.0,2,quality,2024,33
+p,2023-09-01,Chitrakoot,i2fSZZ3QAJJ,170,Chitrakoot Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,171,100.0,2,coverage,2024,38
+p,2023-09-01,Chitrakoot,i2fSZZ3QAJJ,170,Chitrakoot Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,171,97.3985860388496,2,coverage,2024,38
+p,2023-09-01,Chitrakoot,i2fSZZ3QAJJ,170,Chitrakoot Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,171,100.0,2,quality,2024,38
+p,2023-09-01,Bahraich,iE0E3nLioFr,182,Gonda Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,180,82.93432516544978,2,coverage,2024,23
+p,2023-09-01,Bahraich,iE0E3nLioFr,182,Gonda Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,180,100.0,2,coverage,2024,23
+p,2023-09-01,Bahraich,iE0E3nLioFr,182,Gonda Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,180,100.0,2,quality,2024,23
+p,2023-09-01,Fatehpur,ibLiLcaKzw2,172,Prayagraj Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,172,86.78623875917829,2,coverage,2024,16
+p,2023-09-01,Fatehpur,ibLiLcaKzw2,172,Prayagraj Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,172,95.84201316556955,2,coverage,2024,16
+p,2023-09-01,Fatehpur,ibLiLcaKzw2,172,Prayagraj Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,172,100.0,2,quality,2024,16
+p,2023-09-01,Ambedkar Nagar,jM27ji8tyrM,176,Ayodhya Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,178,88.4111317574867,2,coverage,2024,8
+p,2023-09-01,Ambedkar Nagar,jM27ji8tyrM,176,Ayodhya Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,178,100.0,2,coverage,2024,8
+p,2023-09-01,Ambedkar Nagar,jM27ji8tyrM,176,Ayodhya Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,178,100.0,2,quality,2024,8
+p,2023-09-01,Kanpur Dehat,k3D0AumUCiC,161,Kanpur Nagar Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,163,80.61709305594603,2,coverage,2024,57
+p,2023-09-01,Kanpur Dehat,k3D0AumUCiC,161,Kanpur Nagar Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,163,100.0,2,coverage,2024,57
+p,2023-09-01,Kanpur Dehat,k3D0AumUCiC,161,Kanpur Nagar Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,163,100.0,2,quality,2024,57
+p,2023-09-01,Rae Bareli,lLvTDpBDY8u,155,Lucknow Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,158,83.39663044177223,2,coverage,2024,59
+p,2023-09-01,Rae Bareli,lLvTDpBDY8u,155,Lucknow Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,158,100.0,2,coverage,2024,59
+p,2023-09-01,Rae Bareli,lLvTDpBDY8u,155,Lucknow Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,158,100.0,2,quality,2024,59
+p,2023-09-01,Hathras,m1IAjmqkoFC,201,Alligarh Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,144,92.01136261159706,2,coverage,2024,48
+p,2023-09-01,Hathras,m1IAjmqkoFC,201,Alligarh Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,144,100.0,2,coverage,2024,48
+p,2023-09-01,Hathras,m1IAjmqkoFC,201,Alligarh Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,144,100.0,2,quality,2024,48
+p,2023-09-01,Sultanpur,o4ZQTVcMI7U,176,Ayodhya Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,179,85.86074569938506,2,coverage,2024,40
+p,2023-09-01,Sultanpur,o4ZQTVcMI7U,176,Ayodhya Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,179,92.79099385229792,2,coverage,2024,40
+p,2023-09-01,Sultanpur,o4ZQTVcMI7U,176,Ayodhya Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,179,100.0,2,quality,2024,40
+p,2023-09-01,Ballia,oNDvGBE5fLq,193,Azamgarh Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,193,66.64442759666413,2,coverage,2024,5
+p,2023-09-01,Ballia,oNDvGBE5fLq,193,Azamgarh Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,193,100.0,2,coverage,2024,5
+p,2023-09-01,Ballia,oNDvGBE5fLq,193,Azamgarh Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,193,100.0,2,quality,2024,5
+p,2023-09-01,Bulandshahar,ogBt4gWCiem,140,Meerut Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,142,79.76396140283737,2,coverage,2024,52
+p,2023-09-01,Bulandshahar,ogBt4gWCiem,140,Meerut Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,142,99.34659770665002,2,coverage,2024,52
+p,2023-09-01,Bulandshahar,ogBt4gWCiem,140,Meerut Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,142,100.0,2,quality,2024,52
+p,2023-09-01,Shrawasti,oyTwneTbWDx,182,Gonda Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,181,80.8618125023242,2,coverage,2024,18
+p,2023-09-01,Shrawasti,oyTwneTbWDx,182,Gonda Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,181,100.0,2,coverage,2024,18
+p,2023-09-01,Shrawasti,oyTwneTbWDx,182,Gonda Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,181,94.61077844311376,2,quality,2024,18
+p,2023-09-01,Mahoba,sUQMxIc3yXj,170,Chitrakoot Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,169,77.29851668726823,2,coverage,2024,42
+p,2023-09-01,Mahoba,sUQMxIc3yXj,170,Chitrakoot Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,169,97.23403425272107,2,coverage,2024,42
+p,2023-09-01,Mahoba,sUQMxIc3yXj,170,Chitrakoot Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,169,100.0,2,quality,2024,42
+p,2023-09-01,Prayagraj,tXgaew1Pd2Y,172,Prayagraj Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,175,81.39167766770575,2,coverage,2024,34
+p,2023-09-01,Prayagraj,tXgaew1Pd2Y,172,Prayagraj Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,175,100.0,2,coverage,2024,34
+p,2023-09-01,Prayagraj,tXgaew1Pd2Y,172,Prayagraj Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,175,100.0,2,quality,2024,34
+p,2023-09-01,Barabanki,tzH6nJu9SwS,176,Ayodhya Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,176,77.39018554152003,2,coverage,2024,41
+p,2023-09-01,Barabanki,tzH6nJu9SwS,176,Ayodhya Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,176,96.08700030208435,2,coverage,2024,41
+p,2023-09-01,Barabanki,tzH6nJu9SwS,176,Ayodhya Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,176,100.0,2,quality,2024,41
+p,2023-09-01,Bijnor,uCYjHW7FuGG,134,Moradabad Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,134,77.9572035220792,2,coverage,2024,15
+p,2023-09-01,Bijnor,uCYjHW7FuGG,134,Moradabad Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,134,100.0,2,coverage,2024,15
+p,2023-09-01,Bijnor,uCYjHW7FuGG,134,Moradabad Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,134,100.0,2,quality,2024,15
+p,2023-09-01,Farrukhabad,uEEwlAGZXWW,161,Kanpur Nagar Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,159,68.87190068666914,2,coverage,2024,49
+p,2023-09-01,Farrukhabad,uEEwlAGZXWW,161,Kanpur Nagar Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,159,99.29111934817145,2,coverage,2024,49
+p,2023-09-01,Farrukhabad,uEEwlAGZXWW,161,Kanpur Nagar Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,159,100.0,2,quality,2024,49
+p,2023-09-01,Balrampur,uS0pNSxN3sS,182,Gonda Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,182,67.83128984796471,2,coverage,2024,72
+p,2023-09-01,Balrampur,uS0pNSxN3sS,182,Gonda Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,182,99.51567453328636,2,coverage,2024,72
+p,2023-09-01,Balrampur,uS0pNSxN3sS,182,Gonda Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,182,100.0,2,quality,2024,72
+p,2023-09-01,Meerut,v8YGmR7nOdj,140,Meerut Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,138,86.87188397038824,2,coverage,2024,30
+p,2023-09-01,Meerut,v8YGmR7nOdj,140,Meerut Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,138,100.0,2,coverage,2024,30
+p,2023-09-01,Meerut,v8YGmR7nOdj,140,Meerut Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,138,100.0,2,quality,2024,30
+p,2023-09-01,Gorakhpur,vR85cHdsw1w,188,Gorakhpur Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,188,76.17530119076322,2,coverage,2024,45
+p,2023-09-01,Gorakhpur,vR85cHdsw1w,188,Gorakhpur Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,188,97.06748784338987,2,coverage,2024,45
+p,2023-09-01,Gorakhpur,vR85cHdsw1w,188,Gorakhpur Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,188,100.0,2,quality,2024,45
+p,2023-09-01,Bareilly,vVqY3DPcpHf,150,Bareilly Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,150,74.46726530964662,2,coverage,2024,56
+p,2023-09-01,Bareilly,vVqY3DPcpHf,150,Bareilly Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,150,100.0,2,coverage,2024,56
+p,2023-09-01,Bareilly,vVqY3DPcpHf,150,Bareilly Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,150,100.0,2,quality,2024,56
+p,2023-09-01,Kushinagar,xUeHwd9FQkg,188,Gorakhpur Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,189,63.11822460691013,2,coverage,2024,9
+p,2023-09-01,Kushinagar,xUeHwd9FQkg,188,Gorakhpur Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,189,89.19672919672921,2,coverage,2024,9
+p,2023-09-01,Kushinagar,xUeHwd9FQkg,188,Gorakhpur Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,189,100.0,2,quality,2024,9
+p,2023-09-01,Gonda,y8WarEkWCul,182,Gonda Division,delivery_care,% of pregnant women delivered in institution against estimated delivery,2,183,67.58761960141672,2,coverage,2024,2
+p,2023-09-01,Gonda,y8WarEkWCul,182,Gonda Division,immunization,"% of children received full immunization (BCG, Penta 1, 2, 3, Measles)",7,183,100.0,2,coverage,2024,2
+p,2023-09-01,Gonda,y8WarEkWCul,182,Gonda Division,communicable_diseases,Total case notification rate of TB against expected TB cases,10,183,100.0,2,quality,2024,2

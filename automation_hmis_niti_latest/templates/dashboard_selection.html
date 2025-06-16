@@ -1,0 +1,11 @@
+<div class="col-xs-4 mr-1">
+    <div class="form-group">
+        <label class="control-label font-weight-bold">Dashboard</label>
+        <select class="form-control" id="filter_dashboard">
+            <% _.forEach(data['all_dashboards'], function(d) { %>
+                <option <%= (d.dashboard_id == data.dashboard_id) ? "selected": ""  %> value="<%- d.dashboard_id %>" data-dashboard_name = "<%- d.dashboard_name %>"><%- d.dashboard_name %>
+                </option>
+            <% }) %>
+        </select>
+    </div>
+</div>

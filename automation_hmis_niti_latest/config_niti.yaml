@@ -1,0 +1,123 @@
+start_date: "2022-11-01"
+fetching_start_date: "2022-11-01"
+end_date: "2022-11-01"
+# quarter: [['202001', '202002', '202003']]
+
+# quarter: [['202010','202011', '202012']]
+# quarter: [['202101', '202102', '202103']]
+# quarter: [['202104', '202105', '202106']]
+# quarter: [['202107', '202108', '202109']]
+# quarter: [['202110', '202111', '202112']]
+# quarter: [['202201', '202202','202203']]
+# quarter: [['202204','202205','202206']]
+# quarter: [['202207','202208','202209']]
+quarter: [['202210','202211']]
+# quarter: [['202007','202008', '202009']]
+# quarter: [['202004','202005', '202006']]
+# year: [["202004", "202005", "202006", "202007", "202008", "202009", "202010", "202011", "202012", "202101", "202102", "202103"]]
+# year: [["202104", "202105", "202106", "202107", "202108", "202109", "202110", "202111", "202112","202201","202202","202203"]]
+year: [['202204','202205','202206','202207','202208','202209','202210','202211']]
+# year: [["201904", "201905", "201906", "201907", "201908", "201909", "201910", "201911", "201912", "202001", "202002", "202003"]]
+# quarter: [['201710', '201711', '201712'], ['201801', '201802', '201803'],
+# ['201804', '201805', '201806'], ['201807', '201808', '201809'], ['201810', '201811', '201812'], ['201901','201902', '201903'],['201904','201905', '201906'], ['201907', '201908', '201909'], ['201910', '201911', '201912']]
+# year: [['201710', '201711', '201712', '201801', '201802', '201803'],
+# ['201804', '201805', '201806', '201807', '201808', '201809', '201810', '201811', '201812', '201901', '201902', '201903'], ['201904','201905', '201906', '201907', '201908', '201909', '201910', '201911', '201912']]
+def_year: "2017"
+
+one_month: False
+
+api:
+    base_url: https://uphmis.in/portalAPI/analytics.json
+
+district:
+    columns: ["indicator_id", "district_id", "perc"]
+    usecols: ["district", "uid_district"]
+    left_on: district_id
+    right_on: uid_district
+block:
+    columns: ["indicator_id", "block_id", "perc"]
+    usecols: ["block", "uid_block"]
+    left_on: block_id
+    right_on: uid_block
+
+
+indicator_mappings:
+    indicator_1:
+        a: "JY4UIeCYK00"
+        b: "qYpFbVo8WsL"
+    indicator_1_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_1_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/
+        (data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    indicator_1_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_2:
+        a: "m7ggqyMXhyL"
+    indicator_2_method: data[indicators['a']]
+    indicator_2_method_qa: (data_total['a0']+data_total['a1']+data_total['a2'])
+    indicator_2_method_yr: data_total['a']
+    indicator_4:
+        a: "n5bZeD7f63Q"
+        b: "VGmj8dWOIBw"
+    indicator_4_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_4_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/
+        (data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    indicator_4_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_5:
+        a: "VBqOqVKNQCr"
+        b: "aknlXIekL1Z"
+    indicator_5_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_5_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/
+        (data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    indicator_5_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_6:
+        a: "qyhm2Egx86Z"
+        b: "aknlXIekL1Z"
+    indicator_6_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_6_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/
+        (data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    indicator_6_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+
+
+indicator_mappings_block:
+    indicator_1:
+        a: "JY4UIeCYK00"
+        b: "qYpFbVo8WsL"
+    indicator_1_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_1_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/
+        (data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    indicator_1_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_4:
+        a: "n5bZeD7f63Q"
+        b: "VGmj8dWOIBw"
+    indicator_4_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_4_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/
+        (data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    indicator_4_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_5:
+        a: "VBqOqVKNQCr"
+        b: "aknlXIekL1Z"
+    indicator_5_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_5_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/
+        (data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    indicator_5_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+    indicator_6:
+        a: "qyhm2Egx86Z"
+        b: "aknlXIekL1Z"
+    indicator_6_method: ( data[indicators['a']]/(data[indicators['b']]) ) * 100
+    indicator_6_method_qa: ( (data_total['a0']+data_total['a1']+data_total['a2'])/
+        (data_total['b0']+data_total['b1']+data_total['b2']) ) * 100
+    indicator_6_method_yr: ( data_total['a']/(data_total['b']) ) * 100
+
+indicator_district_id: ["1", "2", "4", "5", "6"]
+indicator_block_id: ["1", "4", "5", "6"]
+# add {} inplace of start date(sd) and end date(ed)------------------
+url: "https://uphmis.in/uphmis/api/sqlViews/{}/data.json?var=sd:{}01&var=ed:{}28&paging=false"
+auth_details:
+    user_name: Gramener
+    user_pass: Gramener@123
+    # user_pass: uptsu_pass  #can pass password or env-var
+exception_filename: exception_1.csv
+data_filename: indicator_15_data.csv
+columns_rename:
+    name: block
+    block: block_id
+    completeness_percentage: perc_point

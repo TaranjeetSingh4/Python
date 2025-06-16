@@ -1,0 +1,91 @@
+<div class="modal fade" id="FileUploadModal" tabindex="-1" role="dialog" aria-labelledby="FileUploadModalTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="FileUploadModalTitle">Upload Files</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- <form action="upload" id="fileupload_dropzone" class="dropzone" method="POST" enctype="multipart/form-data">
+            <input name="file" type="file">
+            <button type="submit">Submit</button>
+            <input type="hidden" name="save" value="folder/data.csv">
+            <input type="hidden" name="_xsrf" value="{{ handler.xsrf_token }}">
+          </form> -->
+                <!--begin::Form-->
+                <form class="form" action="#" method="post">
+                    <!--begin::Input group-->
+                    <div class="form-group row">
+                        <!--begin::Label-->
+                        <label class="col-lg-2 col-form-label text-lg-right">Upload Files:</label>
+                        <!--end::Label-->
+
+                        <!--begin::Col-->
+                        <div class="col-lg-10" id="fileupload_dropzone">
+                            <!--begin::Dropzone-->
+                            <div class="dropzone dropzone-queue mb-2">
+                                <!--begin::Controls-->
+                                <div class="dropzone-panel mb-lg-0 mb-2">
+                                    <a class="dropzone-select btn btn-sm btn-primary me-2">Attach files</a>
+                                    <a class="dropzone-remove-all btn btn-sm btn-light-primary">Remove All</a>
+                                </div>
+                                <!--end::Controls-->
+
+                                <!--begin::Items-->
+                                <div class="dropzone-items wm-200px">
+                                    <div class="dropzone-item" style="display:none">
+                                        <!--begin::File-->
+                                        <div class="dropzone-file">
+                                            <div class="dropzone-filename">
+                                                <span data-dz-name></span>
+                                                <strong>(<span data-dz-size></span>)</strong>
+                                            </div>
+
+                                            <div class="dropzone-error" data-dz-errormessage></div>
+                                        </div>
+                                        <!--end::File-->
+
+                                        <!--begin::Progress-->
+                                        <div class="dropzone-progress">
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" role="progressbar"
+                                                    aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
+                                                    data-dz-uploadprogress>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end::Progress-->
+
+                                        <!--begin::Toolbar-->
+                                        <div class="dropzone-toolbar">
+                                            <span class="dropzone-start"><i class="bi bi-play-fill fs-3"></i></span>
+                                            <span class="dropzone-cancel" data-dz-remove style="display: none;"><i
+                                                    class="bi bi-x fs-3"></i></span>
+                                            <span class="dropzone-delete" data-dz-remove><i
+                                                    class="bi bi-x fs-1"></i></span>
+                                        </div>
+                                        <!--end::Toolbar-->
+                                    </div>
+                                </div>
+                                <!--end::Items-->
+                            </div>
+                            <!--end::Dropzone-->
+
+                            <!--begin::Hint-->
+                            <span class="form-text text-muted">* CSV files are allowed. </span>
+                            <button type="button"
+                                class="dropzone-upload btn btn-sm btn-primary me-2 float-right">Upload</button>
+                            <!--end::Hint-->
+                        </div>
+                        <!--end::Col-->
+                    </div>
+                    <!--end::Input group-->
+                </form>
+                <!--end::Form-->
+            </div>
+        </div>
+    </div>
+</div>

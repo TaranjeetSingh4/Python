@@ -1,0 +1,1051 @@
+date,district,district_id,subindicator_id,value,quarter,year,sub_id,calc_type,division,div_map_id,map_id,indicator_id
+2023-01-01,Bijnor,uCYjHW7FuGG,ixBYYYjxXPP,1416.0,4,2023,36a,p,Moradabad Division,134,134,indicator_36
+2023-01-01,Bijnor,uCYjHW7FuGG,aRueVYr35yM.Ti9FJqkSK6J,8414.0,4,2023,36b,p,Moradabad Division,134,134,indicator_36
+2023-01-01,Bijnor,uCYjHW7FuGG,dwGorjVGkD9,35.9,4,2023,35a,p,Moradabad Division,134,134,indicator_35
+2023-01-01,Bijnor,uCYjHW7FuGG,m7ggqyMXhyL,88.3,4,2023,37a,p,Moradabad Division,134,134,indicator_37
+2023-01-01,Bijnor,uCYjHW7FuGG,indicator_2a,2832.0,4,2023,2a,p,Moradabad Division,134,134,indicator_2
+2023-01-01,Bijnor,uCYjHW7FuGG,GJKYhq2wR9L,11093.0,4,2023,7a,p,Moradabad Division,134,134,indicator_7
+2023-01-01,Bijnor,uCYjHW7FuGG,B2A7x36qEry.Ti9FJqkSK6J,9633.0,4,2023,10a,p,Moradabad Division,134,134,indicator_10
+2023-01-01,Bijnor,uCYjHW7FuGG,GXgfTS67qxe.Ti9FJqkSK6J,725.0,4,2023,10b,p,Moradabad Division,134,134,indicator_10
+2023-01-01,Kasganj,hITp09XOBLZ,ixBYYYjxXPP,1260.0,4,2023,36a,p,Alligarh Division,201,202,indicator_36
+2023-01-01,Kasganj,hITp09XOBLZ,aRueVYr35yM.Ti9FJqkSK6J,1998.0,4,2023,36b,p,Alligarh Division,201,202,indicator_36
+2023-01-01,Kasganj,hITp09XOBLZ,dwGorjVGkD9,28.9,4,2023,35a,p,Alligarh Division,201,202,indicator_35
+2023-01-01,Kasganj,hITp09XOBLZ,m7ggqyMXhyL,85.0,4,2023,37a,p,Alligarh Division,201,202,indicator_37
+2023-01-01,Kasganj,hITp09XOBLZ,indicator_2a,1659.0,4,2023,2a,p,Alligarh Division,201,202,indicator_2
+2023-01-01,Kasganj,hITp09XOBLZ,GJKYhq2wR9L,5190.0,4,2023,7a,p,Alligarh Division,201,202,indicator_7
+2023-01-01,Kasganj,hITp09XOBLZ,B2A7x36qEry.Ti9FJqkSK6J,3670.0,4,2023,10a,p,Alligarh Division,201,202,indicator_10
+2023-01-01,Kasganj,hITp09XOBLZ,GXgfTS67qxe.Ti9FJqkSK6J,350.0,4,2023,10b,p,Alligarh Division,201,202,indicator_10
+2023-01-01,Ayodhya,b4XkXzoGqFY,ixBYYYjxXPP,1151.0,4,2023,36a,p,Ayodhya Division,176,177,indicator_36
+2023-01-01,Ayodhya,b4XkXzoGqFY,aRueVYr35yM.Ti9FJqkSK6J,3029.0,4,2023,36b,p,Ayodhya Division,176,177,indicator_36
+2023-01-01,Ayodhya,b4XkXzoGqFY,dwGorjVGkD9,31.8,4,2023,35a,p,Ayodhya Division,176,177,indicator_35
+2023-01-01,Ayodhya,b4XkXzoGqFY,m7ggqyMXhyL,87.9,4,2023,37a,p,Ayodhya Division,176,177,indicator_37
+2023-01-01,Ayodhya,b4XkXzoGqFY,indicator_2a,2555.0,4,2023,2a,p,Ayodhya Division,176,177,indicator_2
+2023-01-01,Ayodhya,b4XkXzoGqFY,GJKYhq2wR9L,6071.0,4,2023,7a,p,Ayodhya Division,176,177,indicator_7
+2023-01-01,Ayodhya,b4XkXzoGqFY,B2A7x36qEry.Ti9FJqkSK6J,6330.0,4,2023,10a,p,Ayodhya Division,176,177,indicator_10
+2023-01-01,Ayodhya,b4XkXzoGqFY,GXgfTS67qxe.Ti9FJqkSK6J,533.0,4,2023,10b,p,Ayodhya Division,176,177,indicator_10
+2023-01-01,Aligarh,frD2HOp3wAs,ixBYYYjxXPP,3330.0,4,2023,36a,p,Alligarh Division,201,143,indicator_36
+2023-01-01,Aligarh,frD2HOp3wAs,aRueVYr35yM.Ti9FJqkSK6J,5890.0,4,2023,36b,p,Alligarh Division,201,143,indicator_36
+2023-01-01,Aligarh,frD2HOp3wAs,dwGorjVGkD9,29.3,4,2023,35a,p,Alligarh Division,201,143,indicator_35
+2023-01-01,Aligarh,frD2HOp3wAs,m7ggqyMXhyL,86.1,4,2023,37a,p,Alligarh Division,201,143,indicator_37
+2023-01-01,Aligarh,frD2HOp3wAs,indicator_2a,4597.0,4,2023,2a,p,Alligarh Division,201,143,indicator_2
+2023-01-01,Aligarh,frD2HOp3wAs,GJKYhq2wR9L,9111.0,4,2023,7a,p,Alligarh Division,201,143,indicator_7
+2023-01-01,Aligarh,frD2HOp3wAs,B2A7x36qEry.Ti9FJqkSK6J,15683.0,4,2023,10a,p,Alligarh Division,201,143,indicator_10
+2023-01-01,Aligarh,frD2HOp3wAs,GXgfTS67qxe.Ti9FJqkSK6J,1250.0,4,2023,10b,p,Alligarh Division,201,143,indicator_10
+2023-01-01,Sonbhadra,NNk3JP90QZ5,ixBYYYjxXPP,1273.0,4,2023,36a,p,Mirzapur Division,200,200,indicator_36
+2023-01-01,Sonbhadra,NNk3JP90QZ5,aRueVYr35yM.Ti9FJqkSK6J,3114.0,4,2023,36b,p,Mirzapur Division,200,200,indicator_36
+2023-01-01,Sonbhadra,NNk3JP90QZ5,dwGorjVGkD9,32.0,4,2023,35a,p,Mirzapur Division,200,200,indicator_35
+2023-01-01,Sonbhadra,NNk3JP90QZ5,m7ggqyMXhyL,91.8,4,2023,37a,p,Mirzapur Division,200,200,indicator_37
+2023-01-01,Sonbhadra,NNk3JP90QZ5,indicator_2a,2544.0,4,2023,2a,p,Mirzapur Division,200,200,indicator_2
+2023-01-01,Sonbhadra,NNk3JP90QZ5,GJKYhq2wR9L,5732.0,4,2023,7a,p,Mirzapur Division,200,200,indicator_7
+2023-01-01,Sonbhadra,NNk3JP90QZ5,B2A7x36qEry.Ti9FJqkSK6J,3337.0,4,2023,10a,p,Mirzapur Division,200,200,indicator_10
+2023-01-01,Sonbhadra,NNk3JP90QZ5,GXgfTS67qxe.Ti9FJqkSK6J,308.0,4,2023,10b,p,Mirzapur Division,200,200,indicator_10
+2023-01-01,Auraiya,Bd6E8zkVvVt,ixBYYYjxXPP,962.0,4,2023,36a,p,Kanpur Nagar Division,161,162,indicator_36
+2023-01-01,Auraiya,Bd6E8zkVvVt,aRueVYr35yM.Ti9FJqkSK6J,1406.0,4,2023,36b,p,Kanpur Nagar Division,161,162,indicator_36
+2023-01-01,Auraiya,Bd6E8zkVvVt,dwGorjVGkD9,28.3,4,2023,35a,p,Kanpur Nagar Division,161,162,indicator_35
+2023-01-01,Auraiya,Bd6E8zkVvVt,m7ggqyMXhyL,86.2,4,2023,37a,p,Kanpur Nagar Division,161,162,indicator_37
+2023-01-01,Auraiya,Bd6E8zkVvVt,indicator_2a,1371.0,4,2023,2a,p,Kanpur Nagar Division,161,162,indicator_2
+2023-01-01,Auraiya,Bd6E8zkVvVt,GJKYhq2wR9L,3712.0,4,2023,7a,p,Kanpur Nagar Division,161,162,indicator_7
+2023-01-01,Auraiya,Bd6E8zkVvVt,B2A7x36qEry.Ti9FJqkSK6J,2484.0,4,2023,10a,p,Kanpur Nagar Division,161,162,indicator_10
+2023-01-01,Auraiya,Bd6E8zkVvVt,GXgfTS67qxe.Ti9FJqkSK6J,225.0,4,2023,10b,p,Kanpur Nagar Division,161,162,indicator_10
+2023-01-01,Gautam Buddha Nagar,bNmwkrQeP3e,ixBYYYjxXPP,972.0,4,2023,36a,p,Meerut Division,140,141,indicator_36
+2023-01-01,Gautam Buddha Nagar,bNmwkrQeP3e,aRueVYr35yM.Ti9FJqkSK6J,3107.0,4,2023,36b,p,Meerut Division,140,141,indicator_36
+2023-01-01,Gautam Buddha Nagar,bNmwkrQeP3e,dwGorjVGkD9,29.0,4,2023,35a,p,Meerut Division,140,141,indicator_35
+2023-01-01,Gautam Buddha Nagar,bNmwkrQeP3e,m7ggqyMXhyL,85.7,4,2023,37a,p,Meerut Division,140,141,indicator_37
+2023-01-01,Gautam Buddha Nagar,bNmwkrQeP3e,indicator_2a,1683.0,4,2023,2a,p,Meerut Division,140,141,indicator_2
+2023-01-01,Gautam Buddha Nagar,bNmwkrQeP3e,GJKYhq2wR9L,5561.0,4,2023,7a,p,Meerut Division,140,141,indicator_7
+2023-01-01,Gautam Buddha Nagar,bNmwkrQeP3e,B2A7x36qEry.Ti9FJqkSK6J,8881.0,4,2023,10a,p,Meerut Division,140,141,indicator_10
+2023-01-01,Gautam Buddha Nagar,bNmwkrQeP3e,GXgfTS67qxe.Ti9FJqkSK6J,750.0,4,2023,10b,p,Meerut Division,140,141,indicator_10
+2023-01-01,Kanpur Nagar,QVMRMhzVrrS,ixBYYYjxXPP,1203.0,4,2023,36a,p,Kanpur Nagar Division,161,164,indicator_36
+2023-01-01,Kanpur Nagar,QVMRMhzVrrS,aRueVYr35yM.Ti9FJqkSK6J,4841.0,4,2023,36b,p,Kanpur Nagar Division,161,164,indicator_36
+2023-01-01,Kanpur Nagar,QVMRMhzVrrS,dwGorjVGkD9,30.6,4,2023,35a,p,Kanpur Nagar Division,161,164,indicator_35
+2023-01-01,Kanpur Nagar,QVMRMhzVrrS,m7ggqyMXhyL,83.3,4,2023,37a,p,Kanpur Nagar Division,161,164,indicator_37
+2023-01-01,Kanpur Nagar,QVMRMhzVrrS,indicator_2a,2688.0,4,2023,2a,p,Kanpur Nagar Division,161,164,indicator_2
+2023-01-01,Kanpur Nagar,QVMRMhzVrrS,GJKYhq2wR9L,9069.0,4,2023,7a,p,Kanpur Nagar Division,161,164,indicator_7
+2023-01-01,Kanpur Nagar,QVMRMhzVrrS,B2A7x36qEry.Ti9FJqkSK6J,18743.0,4,2023,10a,p,Kanpur Nagar Division,161,164,indicator_10
+2023-01-01,Kanpur Nagar,QVMRMhzVrrS,GXgfTS67qxe.Ti9FJqkSK6J,1833.0,4,2023,10b,p,Kanpur Nagar Division,161,164,indicator_10
+2023-01-01,Jhansi,Mq751wBMqGF,ixBYYYjxXPP,1833.0,4,2023,36a,p,Jhansi Division,165,166,indicator_36
+2023-01-01,Jhansi,Mq751wBMqGF,aRueVYr35yM.Ti9FJqkSK6J,3036.0,4,2023,36b,p,Jhansi Division,165,166,indicator_36
+2023-01-01,Jhansi,Mq751wBMqGF,dwGorjVGkD9,33.3,4,2023,35a,p,Jhansi Division,165,166,indicator_35
+2023-01-01,Jhansi,Mq751wBMqGF,m7ggqyMXhyL,85.4,4,2023,37a,p,Jhansi Division,165,166,indicator_37
+2023-01-01,Jhansi,Mq751wBMqGF,indicator_2a,1903.0,4,2023,2a,p,Jhansi Division,165,166,indicator_2
+2023-01-01,Jhansi,Mq751wBMqGF,GJKYhq2wR9L,4033.0,4,2023,7a,p,Jhansi Division,165,166,indicator_7
+2023-01-01,Jhansi,Mq751wBMqGF,B2A7x36qEry.Ti9FJqkSK6J,7091.0,4,2023,10a,p,Jhansi Division,165,166,indicator_10
+2023-01-01,Jhansi,Mq751wBMqGF,GXgfTS67qxe.Ti9FJqkSK6J,625.0,4,2023,10b,p,Jhansi Division,165,166,indicator_10
+2023-01-01,Kushinagar,xUeHwd9FQkg,ixBYYYjxXPP,1295.0,4,2023,36a,p,Gorakhpur Division,188,189,indicator_36
+2023-01-01,Kushinagar,xUeHwd9FQkg,aRueVYr35yM.Ti9FJqkSK6J,5649.0,4,2023,36b,p,Gorakhpur Division,188,189,indicator_36
+2023-01-01,Kushinagar,xUeHwd9FQkg,dwGorjVGkD9,37.7,4,2023,35a,p,Gorakhpur Division,188,189,indicator_35
+2023-01-01,Kushinagar,xUeHwd9FQkg,m7ggqyMXhyL,88.5,4,2023,37a,p,Gorakhpur Division,188,189,indicator_37
+2023-01-01,Kushinagar,xUeHwd9FQkg,indicator_2a,4380.0,4,2023,2a,p,Gorakhpur Division,188,189,indicator_2
+2023-01-01,Kushinagar,xUeHwd9FQkg,GJKYhq2wR9L,10400.0,4,2023,7a,p,Gorakhpur Division,188,189,indicator_7
+2023-01-01,Kushinagar,xUeHwd9FQkg,B2A7x36qEry.Ti9FJqkSK6J,4881.0,4,2023,10a,p,Gorakhpur Division,188,189,indicator_10
+2023-01-01,Kushinagar,xUeHwd9FQkg,GXgfTS67qxe.Ti9FJqkSK6J,500.0,4,2023,10b,p,Gorakhpur Division,188,189,indicator_10
+2023-01-01,Unnav,aT03mfdlNiF,ixBYYYjxXPP,2226.0,4,2023,36a,p,Lucknow Division,155,156,indicator_36
+2023-01-01,Unnav,aT03mfdlNiF,aRueVYr35yM.Ti9FJqkSK6J,4086.0,4,2023,36b,p,Lucknow Division,155,156,indicator_36
+2023-01-01,Unnav,aT03mfdlNiF,dwGorjVGkD9,28.6,4,2023,35a,p,Lucknow Division,155,156,indicator_35
+2023-01-01,Unnav,aT03mfdlNiF,m7ggqyMXhyL,85.7,4,2023,37a,p,Lucknow Division,155,156,indicator_37
+2023-01-01,Unnav,aT03mfdlNiF,indicator_2a,2837.0,4,2023,2a,p,Lucknow Division,155,156,indicator_2
+2023-01-01,Unnav,aT03mfdlNiF,GJKYhq2wR9L,6835.0,4,2023,7a,p,Lucknow Division,155,156,indicator_7
+2023-01-01,Unnav,aT03mfdlNiF,B2A7x36qEry.Ti9FJqkSK6J,5902.0,4,2023,10a,p,Lucknow Division,155,156,indicator_10
+2023-01-01,Unnav,aT03mfdlNiF,GXgfTS67qxe.Ti9FJqkSK6J,517.0,4,2023,10b,p,Lucknow Division,155,156,indicator_10
+2023-01-01,Gonda,y8WarEkWCul,ixBYYYjxXPP,2602.0,4,2023,36a,p,Gonda Division,182,183,indicator_36
+2023-01-01,Gonda,y8WarEkWCul,aRueVYr35yM.Ti9FJqkSK6J,4670.0,4,2023,36b,p,Gonda Division,182,183,indicator_36
+2023-01-01,Gonda,y8WarEkWCul,dwGorjVGkD9,27.2,4,2023,35a,p,Gonda Division,182,183,indicator_35
+2023-01-01,Gonda,y8WarEkWCul,m7ggqyMXhyL,88.1,4,2023,37a,p,Gonda Division,182,183,indicator_37
+2023-01-01,Gonda,y8WarEkWCul,indicator_2a,4170.0,4,2023,2a,p,Gonda Division,182,183,indicator_2
+2023-01-01,Gonda,y8WarEkWCul,GJKYhq2wR9L,11545.0,4,2023,7a,p,Gonda Division,182,183,indicator_7
+2023-01-01,Gonda,y8WarEkWCul,B2A7x36qEry.Ti9FJqkSK6J,6727.0,4,2023,10a,p,Gonda Division,182,183,indicator_10
+2023-01-01,Gonda,y8WarEkWCul,GXgfTS67qxe.Ti9FJqkSK6J,642.0,4,2023,10b,p,Gonda Division,182,183,indicator_10
+2023-01-01,Fatehpur,ibLiLcaKzw2,ixBYYYjxXPP,1954.0,4,2023,36a,p,Prayagraj Division,172,172,indicator_36
+2023-01-01,Fatehpur,ibLiLcaKzw2,aRueVYr35yM.Ti9FJqkSK6J,4294.0,4,2023,36b,p,Prayagraj Division,172,172,indicator_36
+2023-01-01,Fatehpur,ibLiLcaKzw2,dwGorjVGkD9,30.9,4,2023,35a,p,Prayagraj Division,172,172,indicator_35
+2023-01-01,Fatehpur,ibLiLcaKzw2,m7ggqyMXhyL,89.4,4,2023,37a,p,Prayagraj Division,172,172,indicator_37
+2023-01-01,Fatehpur,ibLiLcaKzw2,indicator_2a,2481.0,4,2023,2a,p,Prayagraj Division,172,172,indicator_2
+2023-01-01,Fatehpur,ibLiLcaKzw2,GJKYhq2wR9L,6358.0,4,2023,7a,p,Prayagraj Division,172,172,indicator_7
+2023-01-01,Fatehpur,ibLiLcaKzw2,B2A7x36qEry.Ti9FJqkSK6J,5836.0,4,2023,10a,p,Prayagraj Division,172,172,indicator_10
+2023-01-01,Fatehpur,ibLiLcaKzw2,GXgfTS67qxe.Ti9FJqkSK6J,483.0,4,2023,10b,p,Prayagraj Division,172,172,indicator_10
+2023-01-01,Bahraich,iE0E3nLioFr,ixBYYYjxXPP,1685.0,4,2023,36a,p,Gonda Division,182,180,indicator_36
+2023-01-01,Bahraich,iE0E3nLioFr,aRueVYr35yM.Ti9FJqkSK6J,6555.0,4,2023,36b,p,Gonda Division,182,180,indicator_36
+2023-01-01,Bahraich,iE0E3nLioFr,dwGorjVGkD9,34.5,4,2023,35a,p,Gonda Division,182,180,indicator_35
+2023-01-01,Bahraich,iE0E3nLioFr,m7ggqyMXhyL,87.0,4,2023,37a,p,Gonda Division,182,180,indicator_37
+2023-01-01,Bahraich,iE0E3nLioFr,indicator_2a,5169.0,4,2023,2a,p,Gonda Division,182,180,indicator_2
+2023-01-01,Bahraich,iE0E3nLioFr,GJKYhq2wR9L,11760.0,4,2023,7a,p,Gonda Division,182,180,indicator_7
+2023-01-01,Bahraich,iE0E3nLioFr,B2A7x36qEry.Ti9FJqkSK6J,7873.0,4,2023,10a,p,Gonda Division,182,180,indicator_10
+2023-01-01,Bahraich,iE0E3nLioFr,GXgfTS67qxe.Ti9FJqkSK6J,671.0,4,2023,10b,p,Gonda Division,182,180,indicator_10
+2023-01-01,Bhadohi,PeUY1vj02UQ,ixBYYYjxXPP,621.0,4,2023,36a,p,Mirzapur Division,200,198,indicator_36
+2023-01-01,Bhadohi,PeUY1vj02UQ,aRueVYr35yM.Ti9FJqkSK6J,2030.0,4,2023,36b,p,Mirzapur Division,200,198,indicator_36
+2023-01-01,Bhadohi,PeUY1vj02UQ,dwGorjVGkD9,32.4,4,2023,35a,p,Mirzapur Division,200,198,indicator_35
+2023-01-01,Bhadohi,PeUY1vj02UQ,m7ggqyMXhyL,91.2,4,2023,37a,p,Mirzapur Division,200,198,indicator_37
+2023-01-01,Bhadohi,PeUY1vj02UQ,indicator_2a,1482.0,4,2023,2a,p,Mirzapur Division,200,198,indicator_2
+2023-01-01,Bhadohi,PeUY1vj02UQ,GJKYhq2wR9L,3485.0,4,2023,7a,p,Mirzapur Division,200,198,indicator_7
+2023-01-01,Bhadohi,PeUY1vj02UQ,B2A7x36qEry.Ti9FJqkSK6J,2365.0,4,2023,10a,p,Mirzapur Division,200,198,indicator_10
+2023-01-01,Bhadohi,PeUY1vj02UQ,GXgfTS67qxe.Ti9FJqkSK6J,217.0,4,2023,10b,p,Mirzapur Division,200,198,indicator_10
+2023-01-01,Amroha,hgquAmZaNBu,ixBYYYjxXPP,681.0,4,2023,36a,p,Moradabad Division,134,137,indicator_36
+2023-01-01,Amroha,hgquAmZaNBu,aRueVYr35yM.Ti9FJqkSK6J,3255.0,4,2023,36b,p,Moradabad Division,134,137,indicator_36
+2023-01-01,Amroha,hgquAmZaNBu,dwGorjVGkD9,39.0,4,2023,35a,p,Moradabad Division,134,137,indicator_35
+2023-01-01,Amroha,hgquAmZaNBu,m7ggqyMXhyL,85.5,4,2023,37a,p,Moradabad Division,134,137,indicator_37
+2023-01-01,Amroha,hgquAmZaNBu,indicator_2a,1200.0,4,2023,2a,p,Moradabad Division,134,137,indicator_2
+2023-01-01,Amroha,hgquAmZaNBu,GJKYhq2wR9L,5388.0,4,2023,7a,p,Moradabad Division,134,137,indicator_7
+2023-01-01,Amroha,hgquAmZaNBu,B2A7x36qEry.Ti9FJqkSK6J,3370.0,4,2023,10a,p,Moradabad Division,134,137,indicator_10
+2023-01-01,Amroha,hgquAmZaNBu,GXgfTS67qxe.Ti9FJqkSK6J,275.0,4,2023,10b,p,Moradabad Division,134,137,indicator_10
+2023-01-01,Agra,N5WWbRtsjWp,ixBYYYjxXPP,3025.0,4,2023,36a,p,Agra Division,146,146,indicator_36
+2023-01-01,Agra,N5WWbRtsjWp,aRueVYr35yM.Ti9FJqkSK6J,8345.0,4,2023,36b,p,Agra Division,146,146,indicator_36
+2023-01-01,Agra,N5WWbRtsjWp,dwGorjVGkD9,30.0,4,2023,35a,p,Agra Division,146,146,indicator_35
+2023-01-01,Agra,N5WWbRtsjWp,m7ggqyMXhyL,86.4,4,2023,37a,p,Agra Division,146,146,indicator_37
+2023-01-01,Agra,N5WWbRtsjWp,indicator_2a,4439.0,4,2023,2a,p,Agra Division,146,146,indicator_2
+2023-01-01,Agra,N5WWbRtsjWp,GJKYhq2wR9L,8253.0,4,2023,7a,p,Agra Division,146,146,indicator_7
+2023-01-01,Agra,N5WWbRtsjWp,B2A7x36qEry.Ti9FJqkSK6J,21149.0,4,2023,10a,p,Agra Division,146,146,indicator_10
+2023-01-01,Agra,N5WWbRtsjWp,GXgfTS67qxe.Ti9FJqkSK6J,1917.0,4,2023,10b,p,Agra Division,146,146,indicator_10
+2023-01-01,Moradabad,YQNQoPjAIpV,ixBYYYjxXPP,969.0,4,2023,36a,p,Moradabad Division,134,135,indicator_36
+2023-01-01,Moradabad,YQNQoPjAIpV,aRueVYr35yM.Ti9FJqkSK6J,4080.0,4,2023,36b,p,Moradabad Division,134,135,indicator_36
+2023-01-01,Moradabad,YQNQoPjAIpV,dwGorjVGkD9,34.1,4,2023,35a,p,Moradabad Division,134,135,indicator_35
+2023-01-01,Moradabad,YQNQoPjAIpV,m7ggqyMXhyL,86.8,4,2023,37a,p,Moradabad Division,134,135,indicator_37
+2023-01-01,Moradabad,YQNQoPjAIpV,indicator_2a,1336.0,4,2023,2a,p,Moradabad Division,134,135,indicator_2
+2023-01-01,Moradabad,YQNQoPjAIpV,GJKYhq2wR9L,8509.0,4,2023,7a,p,Moradabad Division,134,135,indicator_7
+2023-01-01,Moradabad,YQNQoPjAIpV,B2A7x36qEry.Ti9FJqkSK6J,11616.0,4,2023,10a,p,Moradabad Division,134,135,indicator_10
+2023-01-01,Moradabad,YQNQoPjAIpV,GXgfTS67qxe.Ti9FJqkSK6J,1042.0,4,2023,10b,p,Moradabad Division,134,135,indicator_10
+2023-01-01,Ghaziabad,M5NHlfAaKYI,ixBYYYjxXPP,1320.0,4,2023,36a,p,Meerut Division,140,140,indicator_36
+2023-01-01,Ghaziabad,M5NHlfAaKYI,aRueVYr35yM.Ti9FJqkSK6J,6645.0,4,2023,36b,p,Meerut Division,140,140,indicator_36
+2023-01-01,Ghaziabad,M5NHlfAaKYI,dwGorjVGkD9,37.3,4,2023,35a,p,Meerut Division,140,140,indicator_35
+2023-01-01,Ghaziabad,M5NHlfAaKYI,m7ggqyMXhyL,86.9,4,2023,37a,p,Meerut Division,140,140,indicator_37
+2023-01-01,Ghaziabad,M5NHlfAaKYI,indicator_2a,1517.0,4,2023,2a,p,Meerut Division,140,140,indicator_2
+2023-01-01,Ghaziabad,M5NHlfAaKYI,GJKYhq2wR9L,10423.0,4,2023,7a,p,Meerut Division,140,140,indicator_7
+2023-01-01,Ghaziabad,M5NHlfAaKYI,B2A7x36qEry.Ti9FJqkSK6J,15192.0,4,2023,10a,p,Meerut Division,140,140,indicator_10
+2023-01-01,Ghaziabad,M5NHlfAaKYI,GXgfTS67qxe.Ti9FJqkSK6J,1308.0,4,2023,10b,p,Meerut Division,140,140,indicator_10
+2023-01-01,Varanasi,LeuBT7KfuuA,ixBYYYjxXPP,476.0,4,2023,36a,p,Varanasi Division,195,197,indicator_36
+2023-01-01,Varanasi,LeuBT7KfuuA,aRueVYr35yM.Ti9FJqkSK6J,2972.0,4,2023,36b,p,Varanasi Division,195,197,indicator_36
+2023-01-01,Varanasi,LeuBT7KfuuA,dwGorjVGkD9,26.9,4,2023,35a,p,Varanasi Division,195,197,indicator_35
+2023-01-01,Varanasi,LeuBT7KfuuA,m7ggqyMXhyL,88.8,4,2023,37a,p,Varanasi Division,195,197,indicator_37
+2023-01-01,Varanasi,LeuBT7KfuuA,indicator_2a,2872.0,4,2023,2a,p,Varanasi Division,195,197,indicator_2
+2023-01-01,Varanasi,LeuBT7KfuuA,GJKYhq2wR9L,9186.0,4,2023,7a,p,Varanasi Division,195,197,indicator_7
+2023-01-01,Varanasi,LeuBT7KfuuA,B2A7x36qEry.Ti9FJqkSK6J,15406.0,4,2023,10a,p,Varanasi Division,195,197,indicator_10
+2023-01-01,Varanasi,LeuBT7KfuuA,GXgfTS67qxe.Ti9FJqkSK6J,1333.0,4,2023,10b,p,Varanasi Division,195,197,indicator_10
+2023-01-01,Etah,ZLcx4iOVyN5,ixBYYYjxXPP,756.0,4,2023,36a,p,Alligarh Division,201,201,indicator_36
+2023-01-01,Etah,ZLcx4iOVyN5,aRueVYr35yM.Ti9FJqkSK6J,1961.0,4,2023,36b,p,Alligarh Division,201,201,indicator_36
+2023-01-01,Etah,ZLcx4iOVyN5,dwGorjVGkD9,32.4,4,2023,35a,p,Alligarh Division,201,201,indicator_35
+2023-01-01,Etah,ZLcx4iOVyN5,m7ggqyMXhyL,87.8,4,2023,37a,p,Alligarh Division,201,201,indicator_37
+2023-01-01,Etah,ZLcx4iOVyN5,indicator_2a,1811.0,4,2023,2a,p,Alligarh Division,201,201,indicator_2
+2023-01-01,Etah,ZLcx4iOVyN5,GJKYhq2wR9L,4598.0,4,2023,7a,p,Alligarh Division,201,201,indicator_7
+2023-01-01,Etah,ZLcx4iOVyN5,B2A7x36qEry.Ti9FJqkSK6J,5407.0,4,2023,10a,p,Alligarh Division,201,201,indicator_10
+2023-01-01,Etah,ZLcx4iOVyN5,GXgfTS67qxe.Ti9FJqkSK6J,483.0,4,2023,10b,p,Alligarh Division,201,201,indicator_10
+2023-01-01,Hathras,m1IAjmqkoFC,ixBYYYjxXPP,1400.0,4,2023,36a,p,Alligarh Division,201,144,indicator_36
+2023-01-01,Hathras,m1IAjmqkoFC,aRueVYr35yM.Ti9FJqkSK6J,2788.0,4,2023,36b,p,Alligarh Division,201,144,indicator_36
+2023-01-01,Hathras,m1IAjmqkoFC,dwGorjVGkD9,35.1,4,2023,35a,p,Alligarh Division,201,144,indicator_35
+2023-01-01,Hathras,m1IAjmqkoFC,m7ggqyMXhyL,81.7,4,2023,37a,p,Alligarh Division,201,144,indicator_37
+2023-01-01,Hathras,m1IAjmqkoFC,indicator_2a,1734.0,4,2023,2a,p,Alligarh Division,201,144,indicator_2
+2023-01-01,Hathras,m1IAjmqkoFC,GJKYhq2wR9L,3642.0,4,2023,7a,p,Alligarh Division,201,144,indicator_7
+2023-01-01,Hathras,m1IAjmqkoFC,B2A7x36qEry.Ti9FJqkSK6J,3046.0,4,2023,10a,p,Alligarh Division,201,144,indicator_10
+2023-01-01,Hathras,m1IAjmqkoFC,GXgfTS67qxe.Ti9FJqkSK6J,300.0,4,2023,10b,p,Alligarh Division,201,144,indicator_10
+2023-01-01,Azamgarh,NjckKfm3g0k,ixBYYYjxXPP,2206.0,4,2023,36a,p,Azamgarh Division,193,191,indicator_36
+2023-01-01,Azamgarh,NjckKfm3g0k,aRueVYr35yM.Ti9FJqkSK6J,3007.0,4,2023,36b,p,Azamgarh Division,193,191,indicator_36
+2023-01-01,Azamgarh,NjckKfm3g0k,dwGorjVGkD9,30.1,4,2023,35a,p,Azamgarh Division,193,191,indicator_35
+2023-01-01,Azamgarh,NjckKfm3g0k,m7ggqyMXhyL,82.3,4,2023,37a,p,Azamgarh Division,193,191,indicator_37
+2023-01-01,Azamgarh,NjckKfm3g0k,indicator_2a,2954.0,4,2023,2a,p,Azamgarh Division,193,191,indicator_2
+2023-01-01,Azamgarh,NjckKfm3g0k,GJKYhq2wR9L,10811.0,4,2023,7a,p,Azamgarh Division,193,191,indicator_7
+2023-01-01,Azamgarh,NjckKfm3g0k,B2A7x36qEry.Ti9FJqkSK6J,8111.0,4,2023,10a,p,Azamgarh Division,193,191,indicator_10
+2023-01-01,Azamgarh,NjckKfm3g0k,GXgfTS67qxe.Ti9FJqkSK6J,733.0,4,2023,10b,p,Azamgarh Division,193,191,indicator_10
+2023-01-01,Bareilly,vVqY3DPcpHf,ixBYYYjxXPP,2241.0,4,2023,36a,p,Bareilly Division,150,150,indicator_36
+2023-01-01,Bareilly,vVqY3DPcpHf,aRueVYr35yM.Ti9FJqkSK6J,3590.0,4,2023,36b,p,Bareilly Division,150,150,indicator_36
+2023-01-01,Bareilly,vVqY3DPcpHf,dwGorjVGkD9,30.1,4,2023,35a,p,Bareilly Division,150,150,indicator_35
+2023-01-01,Bareilly,vVqY3DPcpHf,m7ggqyMXhyL,83.8,4,2023,37a,p,Bareilly Division,150,150,indicator_37
+2023-01-01,Bareilly,vVqY3DPcpHf,indicator_2a,2628.0,4,2023,2a,p,Bareilly Division,150,150,indicator_2
+2023-01-01,Bareilly,vVqY3DPcpHf,GJKYhq2wR9L,12848.0,4,2023,7a,p,Bareilly Division,150,150,indicator_7
+2023-01-01,Bareilly,vVqY3DPcpHf,B2A7x36qEry.Ti9FJqkSK6J,16438.0,4,2023,10a,p,Bareilly Division,150,150,indicator_10
+2023-01-01,Bareilly,vVqY3DPcpHf,GXgfTS67qxe.Ti9FJqkSK6J,1333.0,4,2023,10b,p,Bareilly Division,150,150,indicator_10
+2023-01-01,Hamirpur,VSI7HobT5qL,ixBYYYjxXPP,606.0,4,2023,36a,p,Chitrakoot Division,170,168,indicator_36
+2023-01-01,Hamirpur,VSI7HobT5qL,aRueVYr35yM.Ti9FJqkSK6J,1490.0,4,2023,36b,p,Chitrakoot Division,170,168,indicator_36
+2023-01-01,Hamirpur,VSI7HobT5qL,dwGorjVGkD9,32.8,4,2023,35a,p,Chitrakoot Division,170,168,indicator_35
+2023-01-01,Hamirpur,VSI7HobT5qL,m7ggqyMXhyL,89.1,4,2023,37a,p,Chitrakoot Division,170,168,indicator_37
+2023-01-01,Hamirpur,VSI7HobT5qL,indicator_2a,1490.0,4,2023,2a,p,Chitrakoot Division,170,168,indicator_2
+2023-01-01,Hamirpur,VSI7HobT5qL,GJKYhq2wR9L,1878.0,4,2023,7a,p,Chitrakoot Division,170,168,indicator_7
+2023-01-01,Hamirpur,VSI7HobT5qL,B2A7x36qEry.Ti9FJqkSK6J,2192.0,4,2023,10a,p,Chitrakoot Division,170,168,indicator_10
+2023-01-01,Hamirpur,VSI7HobT5qL,GXgfTS67qxe.Ti9FJqkSK6J,217.0,4,2023,10b,p,Chitrakoot Division,170,168,indicator_10
+2023-01-01,Ballia,oNDvGBE5fLq,ixBYYYjxXPP,795.0,4,2023,36a,p,Azamgarh Division,193,193,indicator_36
+2023-01-01,Ballia,oNDvGBE5fLq,aRueVYr35yM.Ti9FJqkSK6J,2698.0,4,2023,36b,p,Azamgarh Division,193,193,indicator_36
+2023-01-01,Ballia,oNDvGBE5fLq,dwGorjVGkD9,30.3,4,2023,35a,p,Azamgarh Division,193,193,indicator_35
+2023-01-01,Ballia,oNDvGBE5fLq,m7ggqyMXhyL,85.9,4,2023,37a,p,Azamgarh Division,193,193,indicator_37
+2023-01-01,Ballia,oNDvGBE5fLq,indicator_2a,2698.0,4,2023,2a,p,Azamgarh Division,193,193,indicator_2
+2023-01-01,Ballia,oNDvGBE5fLq,GJKYhq2wR9L,8301.0,4,2023,7a,p,Azamgarh Division,193,193,indicator_7
+2023-01-01,Ballia,oNDvGBE5fLq,B2A7x36qEry.Ti9FJqkSK6J,5582.0,4,2023,10a,p,Azamgarh Division,193,193,indicator_10
+2023-01-01,Ballia,oNDvGBE5fLq,GXgfTS67qxe.Ti9FJqkSK6J,496.0,4,2023,10b,p,Azamgarh Division,193,193,indicator_10
+2023-01-01,Chitrakoot,i2fSZZ3QAJJ,ixBYYYjxXPP,1101.0,4,2023,36a,p,Chitrakoot Division,170,171,indicator_36
+2023-01-01,Chitrakoot,i2fSZZ3QAJJ,aRueVYr35yM.Ti9FJqkSK6J,1521.0,4,2023,36b,p,Chitrakoot Division,170,171,indicator_36
+2023-01-01,Chitrakoot,i2fSZZ3QAJJ,dwGorjVGkD9,32.7,4,2023,35a,p,Chitrakoot Division,170,171,indicator_35
+2023-01-01,Chitrakoot,i2fSZZ3QAJJ,m7ggqyMXhyL,90.6,4,2023,37a,p,Chitrakoot Division,170,171,indicator_37
+2023-01-01,Chitrakoot,i2fSZZ3QAJJ,indicator_2a,1521.0,4,2023,2a,p,Chitrakoot Division,170,171,indicator_2
+2023-01-01,Chitrakoot,i2fSZZ3QAJJ,GJKYhq2wR9L,2315.0,4,2023,7a,p,Chitrakoot Division,170,171,indicator_7
+2023-01-01,Chitrakoot,i2fSZZ3QAJJ,B2A7x36qEry.Ti9FJqkSK6J,2293.0,4,2023,10a,p,Chitrakoot Division,170,171,indicator_10
+2023-01-01,Chitrakoot,i2fSZZ3QAJJ,GXgfTS67qxe.Ti9FJqkSK6J,175.0,4,2023,10b,p,Chitrakoot Division,170,171,indicator_10
+2023-01-01,Shamli,AdiUcz9BXhx,ixBYYYjxXPP,774.0,4,2023,36a,p,Saharanpur Division,132,203,indicator_36
+2023-01-01,Shamli,AdiUcz9BXhx,aRueVYr35yM.Ti9FJqkSK6J,1160.0,4,2023,36b,p,Saharanpur Division,132,203,indicator_36
+2023-01-01,Shamli,AdiUcz9BXhx,dwGorjVGkD9,39.5,4,2023,35a,p,Saharanpur Division,132,203,indicator_35
+2023-01-01,Shamli,AdiUcz9BXhx,m7ggqyMXhyL,81.6,4,2023,37a,p,Saharanpur Division,132,203,indicator_37
+2023-01-01,Shamli,AdiUcz9BXhx,indicator_2a,1160.0,4,2023,2a,p,Saharanpur Division,132,203,indicator_2
+2023-01-01,Shamli,AdiUcz9BXhx,GJKYhq2wR9L,3189.0,4,2023,7a,p,Saharanpur Division,132,203,indicator_7
+2023-01-01,Shamli,AdiUcz9BXhx,B2A7x36qEry.Ti9FJqkSK6J,3260.0,4,2023,10a,p,Saharanpur Division,132,203,indicator_10
+2023-01-01,Shamli,AdiUcz9BXhx,GXgfTS67qxe.Ti9FJqkSK6J,258.0,4,2023,10b,p,Saharanpur Division,132,203,indicator_10
+2023-01-01,Shrawasti,oyTwneTbWDx,ixBYYYjxXPP,559.0,4,2023,36a,p,Gonda Division,182,181,indicator_36
+2023-01-01,Shrawasti,oyTwneTbWDx,aRueVYr35yM.Ti9FJqkSK6J,2565.0,4,2023,36b,p,Gonda Division,182,181,indicator_36
+2023-01-01,Shrawasti,oyTwneTbWDx,dwGorjVGkD9,29.3,4,2023,35a,p,Gonda Division,182,181,indicator_35
+2023-01-01,Shrawasti,oyTwneTbWDx,m7ggqyMXhyL,90.4,4,2023,37a,p,Gonda Division,182,181,indicator_37
+2023-01-01,Shrawasti,oyTwneTbWDx,indicator_2a,2323.0,4,2023,2a,p,Gonda Division,182,181,indicator_2
+2023-01-01,Shrawasti,oyTwneTbWDx,GJKYhq2wR9L,4340.0,4,2023,7a,p,Gonda Division,182,181,indicator_7
+2023-01-01,Shrawasti,oyTwneTbWDx,B2A7x36qEry.Ti9FJqkSK6J,1974.0,4,2023,10a,p,Gonda Division,182,181,indicator_10
+2023-01-01,Shrawasti,oyTwneTbWDx,GXgfTS67qxe.Ti9FJqkSK6J,167.0,4,2023,10b,p,Gonda Division,182,181,indicator_10
+2023-01-01,Banda,DggJGxqbWHn,ixBYYYjxXPP,2061.0,4,2023,36a,p,Chitrakoot Division,170,170,indicator_36
+2023-01-01,Banda,DggJGxqbWHn,aRueVYr35yM.Ti9FJqkSK6J,3081.0,4,2023,36b,p,Chitrakoot Division,170,170,indicator_36
+2023-01-01,Banda,DggJGxqbWHn,dwGorjVGkD9,34.7,4,2023,35a,p,Chitrakoot Division,170,170,indicator_35
+2023-01-01,Banda,DggJGxqbWHn,m7ggqyMXhyL,87.2,4,2023,37a,p,Chitrakoot Division,170,170,indicator_37
+2023-01-01,Banda,DggJGxqbWHn,indicator_2a,2952.0,4,2023,2a,p,Chitrakoot Division,170,170,indicator_2
+2023-01-01,Banda,DggJGxqbWHn,GJKYhq2wR9L,4330.0,4,2023,7a,p,Chitrakoot Division,170,170,indicator_7
+2023-01-01,Banda,DggJGxqbWHn,B2A7x36qEry.Ti9FJqkSK6J,4071.0,4,2023,10a,p,Chitrakoot Division,170,170,indicator_10
+2023-01-01,Banda,DggJGxqbWHn,GXgfTS67qxe.Ti9FJqkSK6J,354.0,4,2023,10b,p,Chitrakoot Division,170,170,indicator_10
+2023-01-01,Meerut,v8YGmR7nOdj,ixBYYYjxXPP,1545.0,4,2023,36a,p,Meerut Division,140,138,indicator_36
+2023-01-01,Meerut,v8YGmR7nOdj,aRueVYr35yM.Ti9FJqkSK6J,2118.0,4,2023,36b,p,Meerut Division,140,138,indicator_36
+2023-01-01,Meerut,v8YGmR7nOdj,dwGorjVGkD9,34.2,4,2023,35a,p,Meerut Division,140,138,indicator_35
+2023-01-01,Meerut,v8YGmR7nOdj,m7ggqyMXhyL,82.9,4,2023,37a,p,Meerut Division,140,138,indicator_37
+2023-01-01,Meerut,v8YGmR7nOdj,indicator_2a,2118.0,4,2023,2a,p,Meerut Division,140,138,indicator_2
+2023-01-01,Meerut,v8YGmR7nOdj,GJKYhq2wR9L,8159.0,4,2023,7a,p,Meerut Division,140,138,indicator_7
+2023-01-01,Meerut,v8YGmR7nOdj,B2A7x36qEry.Ti9FJqkSK6J,13009.0,4,2023,10a,p,Meerut Division,140,138,indicator_10
+2023-01-01,Meerut,v8YGmR7nOdj,GXgfTS67qxe.Ti9FJqkSK6J,1233.0,4,2023,10b,p,Meerut Division,140,138,indicator_10
+2023-01-01,Bagpat,HJIS3IrQ0Nj,ixBYYYjxXPP,955.0,4,2023,36a,p,Meerut Division,140,139,indicator_36
+2023-01-01,Bagpat,HJIS3IrQ0Nj,aRueVYr35yM.Ti9FJqkSK6J,2560.0,4,2023,36b,p,Meerut Division,140,139,indicator_36
+2023-01-01,Bagpat,HJIS3IrQ0Nj,dwGorjVGkD9,29.5,4,2023,35a,p,Meerut Division,140,139,indicator_35
+2023-01-01,Bagpat,HJIS3IrQ0Nj,m7ggqyMXhyL,86.6,4,2023,37a,p,Meerut Division,140,139,indicator_37
+2023-01-01,Bagpat,HJIS3IrQ0Nj,indicator_2a,1031.0,4,2023,2a,p,Meerut Division,140,139,indicator_2
+2023-01-01,Bagpat,HJIS3IrQ0Nj,GJKYhq2wR9L,2695.0,4,2023,7a,p,Meerut Division,140,139,indicator_7
+2023-01-01,Bagpat,HJIS3IrQ0Nj,B2A7x36qEry.Ti9FJqkSK6J,2892.0,4,2023,10a,p,Meerut Division,140,139,indicator_10
+2023-01-01,Bagpat,HJIS3IrQ0Nj,GXgfTS67qxe.Ti9FJqkSK6J,250.0,4,2023,10b,p,Meerut Division,140,139,indicator_10
+2023-01-01,Jalaun,NL5xiiHZQSC,ixBYYYjxXPP,1485.0,4,2023,36a,p,Jhansi Division,165,165,indicator_36
+2023-01-01,Jalaun,NL5xiiHZQSC,aRueVYr35yM.Ti9FJqkSK6J,1538.0,4,2023,36b,p,Jhansi Division,165,165,indicator_36
+2023-01-01,Jalaun,NL5xiiHZQSC,dwGorjVGkD9,29.1,4,2023,35a,p,Jhansi Division,165,165,indicator_35
+2023-01-01,Jalaun,NL5xiiHZQSC,m7ggqyMXhyL,88.4,4,2023,37a,p,Jhansi Division,165,165,indicator_37
+2023-01-01,Jalaun,NL5xiiHZQSC,indicator_2a,1538.0,4,2023,2a,p,Jhansi Division,165,165,indicator_2
+2023-01-01,Jalaun,NL5xiiHZQSC,GJKYhq2wR9L,2678.0,4,2023,7a,p,Jhansi Division,165,165,indicator_7
+2023-01-01,Jalaun,NL5xiiHZQSC,B2A7x36qEry.Ti9FJqkSK6J,3452.0,4,2023,10a,p,Jhansi Division,165,165,indicator_10
+2023-01-01,Jalaun,NL5xiiHZQSC,GXgfTS67qxe.Ti9FJqkSK6J,317.0,4,2023,10b,p,Jhansi Division,165,165,indicator_10
+2023-01-01,Firozabad,eJTsuE56XDF,ixBYYYjxXPP,2250.0,4,2023,36a,p,Agra Division,146,147,indicator_36
+2023-01-01,Firozabad,eJTsuE56XDF,aRueVYr35yM.Ti9FJqkSK6J,3404.0,4,2023,36b,p,Agra Division,146,147,indicator_36
+2023-01-01,Firozabad,eJTsuE56XDF,dwGorjVGkD9,31.4,4,2023,35a,p,Agra Division,146,147,indicator_35
+2023-01-01,Firozabad,eJTsuE56XDF,m7ggqyMXhyL,82.9,4,2023,37a,p,Agra Division,146,147,indicator_37
+2023-01-01,Firozabad,eJTsuE56XDF,indicator_2a,2585.0,4,2023,2a,p,Agra Division,146,147,indicator_2
+2023-01-01,Firozabad,eJTsuE56XDF,GJKYhq2wR9L,7082.0,4,2023,7a,p,Agra Division,146,147,indicator_7
+2023-01-01,Firozabad,eJTsuE56XDF,B2A7x36qEry.Ti9FJqkSK6J,6953.0,4,2023,10a,p,Agra Division,146,147,indicator_10
+2023-01-01,Firozabad,eJTsuE56XDF,GXgfTS67qxe.Ti9FJqkSK6J,642.0,4,2023,10b,p,Agra Division,146,147,indicator_10
+2023-01-01,Lucknow,MfHac5N78aK,ixBYYYjxXPP,1146.0,4,2023,36a,p,Lucknow Division,155,157,indicator_36
+2023-01-01,Lucknow,MfHac5N78aK,aRueVYr35yM.Ti9FJqkSK6J,7027.0,4,2023,36b,p,Lucknow Division,155,157,indicator_36
+2023-01-01,Lucknow,MfHac5N78aK,dwGorjVGkD9,27.3,4,2023,35a,p,Lucknow Division,155,157,indicator_35
+2023-01-01,Lucknow,MfHac5N78aK,m7ggqyMXhyL,87.7,4,2023,37a,p,Lucknow Division,155,157,indicator_37
+2023-01-01,Lucknow,MfHac5N78aK,indicator_2a,4458.0,4,2023,2a,p,Lucknow Division,155,157,indicator_2
+2023-01-01,Lucknow,MfHac5N78aK,GJKYhq2wR9L,11320.0,4,2023,7a,p,Lucknow Division,155,157,indicator_7
+2023-01-01,Lucknow,MfHac5N78aK,B2A7x36qEry.Ti9FJqkSK6J,21926.0,4,2023,10a,p,Lucknow Division,155,157,indicator_10
+2023-01-01,Lucknow,MfHac5N78aK,GXgfTS67qxe.Ti9FJqkSK6J,1917.0,4,2023,10b,p,Lucknow Division,155,157,indicator_10
+2023-01-01,Maharajganj,AcnMkNGgc3S,ixBYYYjxXPP,3145.0,4,2023,36a,p,Gorakhpur Division,188,187,indicator_36
+2023-01-01,Maharajganj,AcnMkNGgc3S,aRueVYr35yM.Ti9FJqkSK6J,4163.0,4,2023,36b,p,Gorakhpur Division,188,187,indicator_36
+2023-01-01,Maharajganj,AcnMkNGgc3S,dwGorjVGkD9,34.8,4,2023,35a,p,Gorakhpur Division,188,187,indicator_35
+2023-01-01,Maharajganj,AcnMkNGgc3S,m7ggqyMXhyL,89.7,4,2023,37a,p,Gorakhpur Division,188,187,indicator_37
+2023-01-01,Maharajganj,AcnMkNGgc3S,indicator_2a,3281.0,4,2023,2a,p,Gorakhpur Division,188,187,indicator_2
+2023-01-01,Maharajganj,AcnMkNGgc3S,GJKYhq2wR9L,7589.0,4,2023,7a,p,Gorakhpur Division,188,187,indicator_7
+2023-01-01,Maharajganj,AcnMkNGgc3S,B2A7x36qEry.Ti9FJqkSK6J,3232.0,4,2023,10a,p,Gorakhpur Division,188,187,indicator_10
+2023-01-01,Maharajganj,AcnMkNGgc3S,GXgfTS67qxe.Ti9FJqkSK6J,350.0,4,2023,10b,p,Gorakhpur Division,188,187,indicator_10
+2023-01-01,Mathura,KP2BUB1npih,ixBYYYjxXPP,1169.0,4,2023,36a,p,Agra Division,146,145,indicator_36
+2023-01-01,Mathura,KP2BUB1npih,aRueVYr35yM.Ti9FJqkSK6J,3132.0,4,2023,36b,p,Agra Division,146,145,indicator_36
+2023-01-01,Mathura,KP2BUB1npih,dwGorjVGkD9,34.3,4,2023,35a,p,Agra Division,146,145,indicator_35
+2023-01-01,Mathura,KP2BUB1npih,m7ggqyMXhyL,86.6,4,2023,37a,p,Agra Division,146,145,indicator_37
+2023-01-01,Mathura,KP2BUB1npih,indicator_2a,2201.0,4,2023,2a,p,Agra Division,146,145,indicator_2
+2023-01-01,Mathura,KP2BUB1npih,GJKYhq2wR9L,6560.0,4,2023,7a,p,Agra Division,146,145,indicator_7
+2023-01-01,Mathura,KP2BUB1npih,B2A7x36qEry.Ti9FJqkSK6J,13112.0,4,2023,10a,p,Agra Division,146,145,indicator_10
+2023-01-01,Mathura,KP2BUB1npih,GXgfTS67qxe.Ti9FJqkSK6J,1133.0,4,2023,10b,p,Agra Division,146,145,indicator_10
+2023-01-01,Gorakhpur,vR85cHdsw1w,ixBYYYjxXPP,2177.0,4,2023,36a,p,Gorakhpur Division,188,188,indicator_36
+2023-01-01,Gorakhpur,vR85cHdsw1w,aRueVYr35yM.Ti9FJqkSK6J,4363.0,4,2023,36b,p,Gorakhpur Division,188,188,indicator_36
+2023-01-01,Gorakhpur,vR85cHdsw1w,dwGorjVGkD9,32.2,4,2023,35a,p,Gorakhpur Division,188,188,indicator_35
+2023-01-01,Gorakhpur,vR85cHdsw1w,m7ggqyMXhyL,89.9,4,2023,37a,p,Gorakhpur Division,188,188,indicator_37
+2023-01-01,Gorakhpur,vR85cHdsw1w,indicator_2a,4202.0,4,2023,2a,p,Gorakhpur Division,188,188,indicator_2
+2023-01-01,Gorakhpur,vR85cHdsw1w,GJKYhq2wR9L,11079.0,4,2023,7a,p,Gorakhpur Division,188,188,indicator_7
+2023-01-01,Gorakhpur,vR85cHdsw1w,B2A7x36qEry.Ti9FJqkSK6J,13328.0,4,2023,10a,p,Gorakhpur Division,188,188,indicator_10
+2023-01-01,Gorakhpur,vR85cHdsw1w,GXgfTS67qxe.Ti9FJqkSK6J,1067.0,4,2023,10b,p,Gorakhpur Division,188,188,indicator_10
+2023-01-01,Siddharth Nagar,cP0p8qfm3il,ixBYYYjxXPP,541.0,4,2023,36a,p,Basti Division,185,184,indicator_36
+2023-01-01,Siddharth Nagar,cP0p8qfm3il,aRueVYr35yM.Ti9FJqkSK6J,5128.0,4,2023,36b,p,Basti Division,185,184,indicator_36
+2023-01-01,Siddharth Nagar,cP0p8qfm3il,dwGorjVGkD9,28.8,4,2023,35a,p,Basti Division,185,184,indicator_35
+2023-01-01,Siddharth Nagar,cP0p8qfm3il,m7ggqyMXhyL,83.9,4,2023,37a,p,Basti Division,185,184,indicator_37
+2023-01-01,Siddharth Nagar,cP0p8qfm3il,indicator_2a,3086.0,4,2023,2a,p,Basti Division,185,184,indicator_2
+2023-01-01,Siddharth Nagar,cP0p8qfm3il,GJKYhq2wR9L,9142.0,4,2023,7a,p,Basti Division,185,184,indicator_7
+2023-01-01,Siddharth Nagar,cP0p8qfm3il,B2A7x36qEry.Ti9FJqkSK6J,3729.0,4,2023,10a,p,Basti Division,185,184,indicator_10
+2023-01-01,Siddharth Nagar,cP0p8qfm3il,GXgfTS67qxe.Ti9FJqkSK6J,358.0,4,2023,10b,p,Basti Division,185,184,indicator_10
+2023-01-01,Ghazipur,dScWdMRN8PL,ixBYYYjxXPP,1086.0,4,2023,36a,p,Varanasi Division,195,195,indicator_36
+2023-01-01,Ghazipur,dScWdMRN8PL,aRueVYr35yM.Ti9FJqkSK6J,4625.0,4,2023,36b,p,Varanasi Division,195,195,indicator_36
+2023-01-01,Ghazipur,dScWdMRN8PL,dwGorjVGkD9,32.8,4,2023,35a,p,Varanasi Division,195,195,indicator_35
+2023-01-01,Ghazipur,dScWdMRN8PL,m7ggqyMXhyL,83.8,4,2023,37a,p,Varanasi Division,195,195,indicator_37
+2023-01-01,Ghazipur,dScWdMRN8PL,indicator_2a,3600.0,4,2023,2a,p,Varanasi Division,195,195,indicator_2
+2023-01-01,Ghazipur,dScWdMRN8PL,GJKYhq2wR9L,9221.0,4,2023,7a,p,Varanasi Division,195,195,indicator_7
+2023-01-01,Ghazipur,dScWdMRN8PL,B2A7x36qEry.Ti9FJqkSK6J,4128.0,4,2023,10a,p,Varanasi Division,195,195,indicator_10
+2023-01-01,Ghazipur,dScWdMRN8PL,GXgfTS67qxe.Ti9FJqkSK6J,417.0,4,2023,10b,p,Varanasi Division,195,195,indicator_10
+2023-01-01,Kanpur Dehat,k3D0AumUCiC,ixBYYYjxXPP,1499.0,4,2023,36a,p,Kanpur Nagar Division,161,163,indicator_36
+2023-01-01,Kanpur Dehat,k3D0AumUCiC,aRueVYr35yM.Ti9FJqkSK6J,2110.0,4,2023,36b,p,Kanpur Nagar Division,161,163,indicator_36
+2023-01-01,Kanpur Dehat,k3D0AumUCiC,dwGorjVGkD9,32.3,4,2023,35a,p,Kanpur Nagar Division,161,163,indicator_35
+2023-01-01,Kanpur Dehat,k3D0AumUCiC,m7ggqyMXhyL,86.9,4,2023,37a,p,Kanpur Nagar Division,161,163,indicator_37
+2023-01-01,Kanpur Dehat,k3D0AumUCiC,indicator_2a,1791.0,4,2023,2a,p,Kanpur Nagar Division,161,163,indicator_2
+2023-01-01,Kanpur Dehat,k3D0AumUCiC,GJKYhq2wR9L,3831.0,4,2023,7a,p,Kanpur Nagar Division,161,163,indicator_7
+2023-01-01,Kanpur Dehat,k3D0AumUCiC,B2A7x36qEry.Ti9FJqkSK6J,3222.0,4,2023,10a,p,Kanpur Nagar Division,161,163,indicator_10
+2023-01-01,Kanpur Dehat,k3D0AumUCiC,GXgfTS67qxe.Ti9FJqkSK6J,283.0,4,2023,10b,p,Kanpur Nagar Division,161,163,indicator_10
+2023-01-01,Rae Bareli,lLvTDpBDY8u,ixBYYYjxXPP,3285.0,4,2023,36a,p,Lucknow Division,155,158,indicator_36
+2023-01-01,Rae Bareli,lLvTDpBDY8u,aRueVYr35yM.Ti9FJqkSK6J,3795.0,4,2023,36b,p,Lucknow Division,155,158,indicator_36
+2023-01-01,Rae Bareli,lLvTDpBDY8u,dwGorjVGkD9,32.4,4,2023,35a,p,Lucknow Division,155,158,indicator_35
+2023-01-01,Rae Bareli,lLvTDpBDY8u,m7ggqyMXhyL,87.1,4,2023,37a,p,Lucknow Division,155,158,indicator_37
+2023-01-01,Rae Bareli,lLvTDpBDY8u,indicator_2a,3614.0,4,2023,2a,p,Lucknow Division,155,158,indicator_2
+2023-01-01,Rae Bareli,lLvTDpBDY8u,GJKYhq2wR9L,5540.0,4,2023,7a,p,Lucknow Division,155,158,indicator_7
+2023-01-01,Rae Bareli,lLvTDpBDY8u,B2A7x36qEry.Ti9FJqkSK6J,5857.0,4,2023,10a,p,Lucknow Division,155,158,indicator_10
+2023-01-01,Rae Bareli,lLvTDpBDY8u,GXgfTS67qxe.Ti9FJqkSK6J,542.0,4,2023,10b,p,Lucknow Division,155,158,indicator_10
+2023-01-01,Sitapur,XxaOowFtkiJ,ixBYYYjxXPP,4632.0,4,2023,36a,p,Lucknow Division,155,154,indicator_36
+2023-01-01,Sitapur,XxaOowFtkiJ,aRueVYr35yM.Ti9FJqkSK6J,6116.0,4,2023,36b,p,Lucknow Division,155,154,indicator_36
+2023-01-01,Sitapur,XxaOowFtkiJ,dwGorjVGkD9,24.9,4,2023,35a,p,Lucknow Division,155,154,indicator_35
+2023-01-01,Sitapur,XxaOowFtkiJ,m7ggqyMXhyL,84.9,4,2023,37a,p,Lucknow Division,155,154,indicator_37
+2023-01-01,Sitapur,XxaOowFtkiJ,indicator_2a,5908.0,4,2023,2a,p,Lucknow Division,155,154,indicator_2
+2023-01-01,Sitapur,XxaOowFtkiJ,GJKYhq2wR9L,11949.0,4,2023,7a,p,Lucknow Division,155,154,indicator_7
+2023-01-01,Sitapur,XxaOowFtkiJ,B2A7x36qEry.Ti9FJqkSK6J,13314.0,4,2023,10a,p,Lucknow Division,155,154,indicator_10
+2023-01-01,Sitapur,XxaOowFtkiJ,GXgfTS67qxe.Ti9FJqkSK6J,1083.0,4,2023,10b,p,Lucknow Division,155,154,indicator_10
+2023-01-01,Kaushambi,PAj0oVY0Dxu,ixBYYYjxXPP,1084.0,4,2023,36a,p,Prayagraj Division,172,174,indicator_36
+2023-01-01,Kaushambi,PAj0oVY0Dxu,aRueVYr35yM.Ti9FJqkSK6J,2418.0,4,2023,36b,p,Prayagraj Division,172,174,indicator_36
+2023-01-01,Kaushambi,PAj0oVY0Dxu,dwGorjVGkD9,30.6,4,2023,35a,p,Prayagraj Division,172,174,indicator_35
+2023-01-01,Kaushambi,PAj0oVY0Dxu,m7ggqyMXhyL,90.2,4,2023,37a,p,Prayagraj Division,172,174,indicator_37
+2023-01-01,Kaushambi,PAj0oVY0Dxu,indicator_2a,2244.0,4,2023,2a,p,Prayagraj Division,172,174,indicator_2
+2023-01-01,Kaushambi,PAj0oVY0Dxu,GJKYhq2wR9L,5310.0,4,2023,7a,p,Prayagraj Division,172,174,indicator_7
+2023-01-01,Kaushambi,PAj0oVY0Dxu,B2A7x36qEry.Ti9FJqkSK6J,2387.0,4,2023,10a,p,Prayagraj Division,172,174,indicator_10
+2023-01-01,Kaushambi,PAj0oVY0Dxu,GXgfTS67qxe.Ti9FJqkSK6J,242.0,4,2023,10b,p,Prayagraj Division,172,174,indicator_10
+2023-01-01,Etawah,Pm0jLk6EAiE,ixBYYYjxXPP,1651.0,4,2023,36a,p,Kanpur Nagar Division,161,161,indicator_36
+2023-01-01,Etawah,Pm0jLk6EAiE,aRueVYr35yM.Ti9FJqkSK6J,2479.0,4,2023,36b,p,Kanpur Nagar Division,161,161,indicator_36
+2023-01-01,Etawah,Pm0jLk6EAiE,dwGorjVGkD9,33.1,4,2023,35a,p,Kanpur Nagar Division,161,161,indicator_35
+2023-01-01,Etawah,Pm0jLk6EAiE,m7ggqyMXhyL,81.8,4,2023,37a,p,Kanpur Nagar Division,161,161,indicator_37
+2023-01-01,Etawah,Pm0jLk6EAiE,indicator_2a,2183.0,4,2023,2a,p,Kanpur Nagar Division,161,161,indicator_2
+2023-01-01,Etawah,Pm0jLk6EAiE,GJKYhq2wR9L,3035.0,4,2023,7a,p,Kanpur Nagar Division,161,161,indicator_7
+2023-01-01,Etawah,Pm0jLk6EAiE,B2A7x36qEry.Ti9FJqkSK6J,4693.0,4,2023,10a,p,Kanpur Nagar Division,161,161,indicator_10
+2023-01-01,Etawah,Pm0jLk6EAiE,GXgfTS67qxe.Ti9FJqkSK6J,425.0,4,2023,10b,p,Kanpur Nagar Division,161,161,indicator_10
+2023-01-01,Deoria,Tf9b9qcbghH,ixBYYYjxXPP,2679.0,4,2023,36a,p,Gorakhpur Division,188,190,indicator_36
+2023-01-01,Deoria,Tf9b9qcbghH,aRueVYr35yM.Ti9FJqkSK6J,5623.0,4,2023,36b,p,Gorakhpur Division,188,190,indicator_36
+2023-01-01,Deoria,Tf9b9qcbghH,dwGorjVGkD9,28.7,4,2023,35a,p,Gorakhpur Division,188,190,indicator_35
+2023-01-01,Deoria,Tf9b9qcbghH,m7ggqyMXhyL,82.3,4,2023,37a,p,Gorakhpur Division,188,190,indicator_37
+2023-01-01,Deoria,Tf9b9qcbghH,indicator_2a,3204.0,4,2023,2a,p,Gorakhpur Division,188,190,indicator_2
+2023-01-01,Deoria,Tf9b9qcbghH,GJKYhq2wR9L,10004.0,4,2023,7a,p,Gorakhpur Division,188,190,indicator_7
+2023-01-01,Deoria,Tf9b9qcbghH,B2A7x36qEry.Ti9FJqkSK6J,4538.0,4,2023,10a,p,Gorakhpur Division,188,190,indicator_10
+2023-01-01,Deoria,Tf9b9qcbghH,GXgfTS67qxe.Ti9FJqkSK6J,433.0,4,2023,10b,p,Gorakhpur Division,188,190,indicator_10
+2023-01-01,Mainpuri,XBLhrSWGytu,ixBYYYjxXPP,1742.0,4,2023,36a,p,Agra Division,146,148,indicator_36
+2023-01-01,Mainpuri,XBLhrSWGytu,aRueVYr35yM.Ti9FJqkSK6J,2148.0,4,2023,36b,p,Agra Division,146,148,indicator_36
+2023-01-01,Mainpuri,XBLhrSWGytu,dwGorjVGkD9,31.4,4,2023,35a,p,Agra Division,146,148,indicator_35
+2023-01-01,Mainpuri,XBLhrSWGytu,m7ggqyMXhyL,80.9,4,2023,37a,p,Agra Division,146,148,indicator_37
+2023-01-01,Mainpuri,XBLhrSWGytu,indicator_2a,1858.0,4,2023,2a,p,Agra Division,146,148,indicator_2
+2023-01-01,Mainpuri,XBLhrSWGytu,GJKYhq2wR9L,5550.0,4,2023,7a,p,Agra Division,146,148,indicator_7
+2023-01-01,Mainpuri,XBLhrSWGytu,B2A7x36qEry.Ti9FJqkSK6J,3171.0,4,2023,10a,p,Agra Division,146,148,indicator_10
+2023-01-01,Mainpuri,XBLhrSWGytu,GXgfTS67qxe.Ti9FJqkSK6J,283.0,4,2023,10b,p,Agra Division,146,148,indicator_10
+2023-01-01,Saharanpur,FKYZ3JbWq84,ixBYYYjxXPP,1192.0,4,2023,36a,p,Saharanpur Division,132,132,indicator_36
+2023-01-01,Saharanpur,FKYZ3JbWq84,aRueVYr35yM.Ti9FJqkSK6J,8575.0,4,2023,36b,p,Saharanpur Division,132,132,indicator_36
+2023-01-01,Saharanpur,FKYZ3JbWq84,dwGorjVGkD9,34.8,4,2023,35a,p,Saharanpur Division,132,132,indicator_35
+2023-01-01,Saharanpur,FKYZ3JbWq84,m7ggqyMXhyL,87.5,4,2023,37a,p,Saharanpur Division,132,132,indicator_37
+2023-01-01,Saharanpur,FKYZ3JbWq84,indicator_2a,2649.0,4,2023,2a,p,Saharanpur Division,132,132,indicator_2
+2023-01-01,Saharanpur,FKYZ3JbWq84,GJKYhq2wR9L,10726.0,4,2023,7a,p,Saharanpur Division,132,132,indicator_7
+2023-01-01,Saharanpur,FKYZ3JbWq84,B2A7x36qEry.Ti9FJqkSK6J,11093.0,4,2023,10a,p,Saharanpur Division,132,132,indicator_10
+2023-01-01,Saharanpur,FKYZ3JbWq84,GXgfTS67qxe.Ti9FJqkSK6J,1000.0,4,2023,10b,p,Saharanpur Division,132,132,indicator_10
+2023-01-01,Shahjahanpur,GaiLSoQq1ue,ixBYYYjxXPP,2039.0,4,2023,36a,p,Bareilly Division,150,152,indicator_36
+2023-01-01,Shahjahanpur,GaiLSoQq1ue,aRueVYr35yM.Ti9FJqkSK6J,2532.0,4,2023,36b,p,Bareilly Division,150,152,indicator_36
+2023-01-01,Shahjahanpur,GaiLSoQq1ue,dwGorjVGkD9,33.1,4,2023,35a,p,Bareilly Division,150,152,indicator_35
+2023-01-01,Shahjahanpur,GaiLSoQq1ue,m7ggqyMXhyL,82.4,4,2023,37a,p,Bareilly Division,150,152,indicator_37
+2023-01-01,Shahjahanpur,GaiLSoQq1ue,indicator_2a,2532.0,4,2023,2a,p,Bareilly Division,150,152,indicator_2
+2023-01-01,Shahjahanpur,GaiLSoQq1ue,GJKYhq2wR9L,9228.0,4,2023,7a,p,Bareilly Division,150,152,indicator_7
+2023-01-01,Shahjahanpur,GaiLSoQq1ue,B2A7x36qEry.Ti9FJqkSK6J,9158.0,4,2023,10a,p,Bareilly Division,150,152,indicator_10
+2023-01-01,Shahjahanpur,GaiLSoQq1ue,GXgfTS67qxe.Ti9FJqkSK6J,792.0,4,2023,10b,p,Bareilly Division,150,152,indicator_10
+2023-01-01,Balrampur,uS0pNSxN3sS,ixBYYYjxXPP,1198.0,4,2023,36a,p,Gonda Division,182,182,indicator_36
+2023-01-01,Balrampur,uS0pNSxN3sS,aRueVYr35yM.Ti9FJqkSK6J,5011.0,4,2023,36b,p,Gonda Division,182,182,indicator_36
+2023-01-01,Balrampur,uS0pNSxN3sS,dwGorjVGkD9,30.2,4,2023,35a,p,Gonda Division,182,182,indicator_35
+2023-01-01,Balrampur,uS0pNSxN3sS,m7ggqyMXhyL,89.8,4,2023,37a,p,Gonda Division,182,182,indicator_37
+2023-01-01,Balrampur,uS0pNSxN3sS,indicator_2a,3255.0,4,2023,2a,p,Gonda Division,182,182,indicator_2
+2023-01-01,Balrampur,uS0pNSxN3sS,GJKYhq2wR9L,7543.0,4,2023,7a,p,Gonda Division,182,182,indicator_7
+2023-01-01,Balrampur,uS0pNSxN3sS,B2A7x36qEry.Ti9FJqkSK6J,3878.0,4,2023,10a,p,Gonda Division,182,182,indicator_10
+2023-01-01,Balrampur,uS0pNSxN3sS,GXgfTS67qxe.Ti9FJqkSK6J,350.0,4,2023,10b,p,Gonda Division,182,182,indicator_10
+2023-01-01,Chandauli,ClbehnmwSec,ixBYYYjxXPP,1392.0,4,2023,36a,p,Varanasi Division,195,196,indicator_36
+2023-01-01,Chandauli,ClbehnmwSec,aRueVYr35yM.Ti9FJqkSK6J,1960.0,4,2023,36b,p,Varanasi Division,195,196,indicator_36
+2023-01-01,Chandauli,ClbehnmwSec,dwGorjVGkD9,35.9,4,2023,35a,p,Varanasi Division,195,196,indicator_35
+2023-01-01,Chandauli,ClbehnmwSec,m7ggqyMXhyL,92.4,4,2023,37a,p,Varanasi Division,195,196,indicator_37
+2023-01-01,Chandauli,ClbehnmwSec,indicator_2a,1960.0,4,2023,2a,p,Varanasi Division,195,196,indicator_2
+2023-01-01,Chandauli,ClbehnmwSec,GJKYhq2wR9L,4761.0,4,2023,7a,p,Varanasi Division,195,196,indicator_7
+2023-01-01,Chandauli,ClbehnmwSec,B2A7x36qEry.Ti9FJqkSK6J,2938.0,4,2023,10a,p,Varanasi Division,195,196,indicator_10
+2023-01-01,Chandauli,ClbehnmwSec,GXgfTS67qxe.Ti9FJqkSK6J,275.0,4,2023,10b,p,Varanasi Division,195,196,indicator_10
+2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,ixBYYYjxXPP,3563.0,4,2023,36a,p,Lucknow Division,155,153,indicator_36
+2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,aRueVYr35yM.Ti9FJqkSK6J,5235.0,4,2023,36b,p,Lucknow Division,155,153,indicator_36
+2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,dwGorjVGkD9,32.9,4,2023,35a,p,Lucknow Division,155,153,indicator_35
+2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,m7ggqyMXhyL,89.1,4,2023,37a,p,Lucknow Division,155,153,indicator_37
+2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,indicator_2a,5100.0,4,2023,2a,p,Lucknow Division,155,153,indicator_2
+2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,GJKYhq2wR9L,12497.0,4,2023,7a,p,Lucknow Division,155,153,indicator_7
+2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,B2A7x36qEry.Ti9FJqkSK6J,9735.0,4,2023,10a,p,Lucknow Division,155,153,indicator_10
+2023-01-01,Lakhimpur Kheri,d9ZuMopgX29,GXgfTS67qxe.Ti9FJqkSK6J,783.0,4,2023,10b,p,Lucknow Division,155,153,indicator_10
+2023-01-01,Prayagraj,tXgaew1Pd2Y,ixBYYYjxXPP,3391.0,4,2023,36a,p,Prayagraj Division,172,175,indicator_36
+2023-01-01,Prayagraj,tXgaew1Pd2Y,aRueVYr35yM.Ti9FJqkSK6J,8205.0,4,2023,36b,p,Prayagraj Division,172,175,indicator_36
+2023-01-01,Prayagraj,tXgaew1Pd2Y,dwGorjVGkD9,29.7,4,2023,35a,p,Prayagraj Division,172,175,indicator_35
+2023-01-01,Prayagraj,tXgaew1Pd2Y,m7ggqyMXhyL,88.3,4,2023,37a,p,Prayagraj Division,172,175,indicator_37
+2023-01-01,Prayagraj,tXgaew1Pd2Y,indicator_2a,5700.0,4,2023,2a,p,Prayagraj Division,172,175,indicator_2
+2023-01-01,Prayagraj,tXgaew1Pd2Y,GJKYhq2wR9L,14489.0,4,2023,7a,p,Prayagraj Division,172,175,indicator_7
+2023-01-01,Prayagraj,tXgaew1Pd2Y,B2A7x36qEry.Ti9FJqkSK6J,15408.0,4,2023,10a,p,Prayagraj Division,172,175,indicator_10
+2023-01-01,Prayagraj,tXgaew1Pd2Y,GXgfTS67qxe.Ti9FJqkSK6J,1433.0,4,2023,10b,p,Prayagraj Division,172,175,indicator_10
+2023-01-01,Barabanki,tzH6nJu9SwS,ixBYYYjxXPP,2922.0,4,2023,36a,p,Ayodhya Division,176,176,indicator_36
+2023-01-01,Barabanki,tzH6nJu9SwS,aRueVYr35yM.Ti9FJqkSK6J,4333.0,4,2023,36b,p,Ayodhya Division,176,176,indicator_36
+2023-01-01,Barabanki,tzH6nJu9SwS,dwGorjVGkD9,30.5,4,2023,35a,p,Ayodhya Division,176,176,indicator_35
+2023-01-01,Barabanki,tzH6nJu9SwS,m7ggqyMXhyL,84.8,4,2023,37a,p,Ayodhya Division,176,176,indicator_37
+2023-01-01,Barabanki,tzH6nJu9SwS,indicator_2a,3813.0,4,2023,2a,p,Ayodhya Division,176,176,indicator_2
+2023-01-01,Barabanki,tzH6nJu9SwS,GJKYhq2wR9L,7958.0,4,2023,7a,p,Ayodhya Division,176,176,indicator_7
+2023-01-01,Barabanki,tzH6nJu9SwS,B2A7x36qEry.Ti9FJqkSK6J,7033.0,4,2023,10a,p,Ayodhya Division,176,176,indicator_10
+2023-01-01,Barabanki,tzH6nJu9SwS,GXgfTS67qxe.Ti9FJqkSK6J,608.0,4,2023,10b,p,Ayodhya Division,176,176,indicator_10
+2023-01-01,Hapur,CZ8kLjgqvSH,ixBYYYjxXPP,757.0,4,2023,36a,p,Meerut Division,140,204,indicator_36
+2023-01-01,Hapur,CZ8kLjgqvSH,aRueVYr35yM.Ti9FJqkSK6J,2558.0,4,2023,36b,p,Meerut Division,140,204,indicator_36
+2023-01-01,Hapur,CZ8kLjgqvSH,dwGorjVGkD9,40.4,4,2023,35a,p,Meerut Division,140,204,indicator_35
+2023-01-01,Hapur,CZ8kLjgqvSH,m7ggqyMXhyL,86.1,4,2023,37a,p,Meerut Division,140,204,indicator_37
+2023-01-01,Hapur,CZ8kLjgqvSH,indicator_2a,733.0,4,2023,2a,p,Meerut Division,140,204,indicator_2
+2023-01-01,Hapur,CZ8kLjgqvSH,GJKYhq2wR9L,3045.0,4,2023,7a,p,Meerut Division,140,204,indicator_7
+2023-01-01,Hapur,CZ8kLjgqvSH,B2A7x36qEry.Ti9FJqkSK6J,3644.0,4,2023,10a,p,Meerut Division,140,204,indicator_10
+2023-01-01,Hapur,CZ8kLjgqvSH,GXgfTS67qxe.Ti9FJqkSK6J,325.0,4,2023,10b,p,Meerut Division,140,204,indicator_10
+2023-01-01,Farrukhabad,uEEwlAGZXWW,ixBYYYjxXPP,986.0,4,2023,36a,p,Kanpur Nagar Division,161,159,indicator_36
+2023-01-01,Farrukhabad,uEEwlAGZXWW,aRueVYr35yM.Ti9FJqkSK6J,2340.0,4,2023,36b,p,Kanpur Nagar Division,161,159,indicator_36
+2023-01-01,Farrukhabad,uEEwlAGZXWW,dwGorjVGkD9,35.0,4,2023,35a,p,Kanpur Nagar Division,161,159,indicator_35
+2023-01-01,Farrukhabad,uEEwlAGZXWW,m7ggqyMXhyL,84.3,4,2023,37a,p,Kanpur Nagar Division,161,159,indicator_37
+2023-01-01,Farrukhabad,uEEwlAGZXWW,indicator_2a,1867.0,4,2023,2a,p,Kanpur Nagar Division,161,159,indicator_2
+2023-01-01,Farrukhabad,uEEwlAGZXWW,GJKYhq2wR9L,5177.0,4,2023,7a,p,Kanpur Nagar Division,161,159,indicator_7
+2023-01-01,Farrukhabad,uEEwlAGZXWW,B2A7x36qEry.Ti9FJqkSK6J,3881.0,4,2023,10a,p,Kanpur Nagar Division,161,159,indicator_10
+2023-01-01,Farrukhabad,uEEwlAGZXWW,GXgfTS67qxe.Ti9FJqkSK6J,342.0,4,2023,10b,p,Kanpur Nagar Division,161,159,indicator_10
+2023-01-01,Maunathbhanjan,CBSB9v92AwT,ixBYYYjxXPP,480.0,4,2023,36a,p,Azamgarh Division,193,192,indicator_36
+2023-01-01,Maunathbhanjan,CBSB9v92AwT,aRueVYr35yM.Ti9FJqkSK6J,3789.0,4,2023,36b,p,Azamgarh Division,193,192,indicator_36
+2023-01-01,Maunathbhanjan,CBSB9v92AwT,dwGorjVGkD9,31.8,4,2023,35a,p,Azamgarh Division,193,192,indicator_35
+2023-01-01,Maunathbhanjan,CBSB9v92AwT,m7ggqyMXhyL,88.2,4,2023,37a,p,Azamgarh Division,193,192,indicator_37
+2023-01-01,Maunathbhanjan,CBSB9v92AwT,indicator_2a,1632.0,4,2023,2a,p,Azamgarh Division,193,192,indicator_2
+2023-01-01,Maunathbhanjan,CBSB9v92AwT,GJKYhq2wR9L,3777.0,4,2023,7a,p,Azamgarh Division,193,192,indicator_7
+2023-01-01,Maunathbhanjan,CBSB9v92AwT,B2A7x36qEry.Ti9FJqkSK6J,4470.0,4,2023,10a,p,Azamgarh Division,193,192,indicator_10
+2023-01-01,Maunathbhanjan,CBSB9v92AwT,GXgfTS67qxe.Ti9FJqkSK6J,367.0,4,2023,10b,p,Azamgarh Division,193,192,indicator_10
+2023-01-01,Bulandshahar,ogBt4gWCiem,ixBYYYjxXPP,2596.0,4,2023,36a,p,Meerut Division,140,142,indicator_36
+2023-01-01,Bulandshahar,ogBt4gWCiem,aRueVYr35yM.Ti9FJqkSK6J,7762.0,4,2023,36b,p,Meerut Division,140,142,indicator_36
+2023-01-01,Bulandshahar,ogBt4gWCiem,dwGorjVGkD9,36.2,4,2023,35a,p,Meerut Division,140,142,indicator_35
+2023-01-01,Bulandshahar,ogBt4gWCiem,m7ggqyMXhyL,86.4,4,2023,37a,p,Meerut Division,140,142,indicator_37
+2023-01-01,Bulandshahar,ogBt4gWCiem,indicator_2a,3100.0,4,2023,2a,p,Meerut Division,140,142,indicator_2
+2023-01-01,Bulandshahar,ogBt4gWCiem,GJKYhq2wR9L,7378.0,4,2023,7a,p,Meerut Division,140,142,indicator_7
+2023-01-01,Bulandshahar,ogBt4gWCiem,B2A7x36qEry.Ti9FJqkSK6J,10322.0,4,2023,10a,p,Meerut Division,140,142,indicator_10
+2023-01-01,Bulandshahar,ogBt4gWCiem,GXgfTS67qxe.Ti9FJqkSK6J,871.0,4,2023,10b,p,Meerut Division,140,142,indicator_10
+2023-01-01,Basti,J1P16zQEOUT,ixBYYYjxXPP,2512.0,4,2023,36a,p,Basti Division,185,185,indicator_36
+2023-01-01,Basti,J1P16zQEOUT,aRueVYr35yM.Ti9FJqkSK6J,3177.0,4,2023,36b,p,Basti Division,185,185,indicator_36
+2023-01-01,Basti,J1P16zQEOUT,dwGorjVGkD9,22.6,4,2023,35a,p,Basti Division,185,185,indicator_35
+2023-01-01,Basti,J1P16zQEOUT,m7ggqyMXhyL,89.6,4,2023,37a,p,Basti Division,185,185,indicator_37
+2023-01-01,Basti,J1P16zQEOUT,indicator_2a,2224.0,4,2023,2a,p,Basti Division,185,185,indicator_2
+2023-01-01,Basti,J1P16zQEOUT,GJKYhq2wR9L,5983.0,4,2023,7a,p,Basti Division,185,185,indicator_7
+2023-01-01,Basti,J1P16zQEOUT,B2A7x36qEry.Ti9FJqkSK6J,6348.0,4,2023,10a,p,Basti Division,185,185,indicator_10
+2023-01-01,Basti,J1P16zQEOUT,GXgfTS67qxe.Ti9FJqkSK6J,508.0,4,2023,10b,p,Basti Division,185,185,indicator_10
+2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,ixBYYYjxXPP,1692.0,4,2023,36a,p,Saharanpur Division,132,133,indicator_36
+2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,aRueVYr35yM.Ti9FJqkSK6J,5147.0,4,2023,36b,p,Saharanpur Division,132,133,indicator_36
+2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,dwGorjVGkD9,39.0,4,2023,35a,p,Saharanpur Division,132,133,indicator_35
+2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,m7ggqyMXhyL,83.8,4,2023,37a,p,Saharanpur Division,132,133,indicator_37
+2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,indicator_2a,2145.0,4,2023,2a,p,Saharanpur Division,132,133,indicator_2
+2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,GJKYhq2wR9L,7098.0,4,2023,7a,p,Saharanpur Division,132,133,indicator_7
+2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,B2A7x36qEry.Ti9FJqkSK6J,8040.0,4,2023,10a,p,Saharanpur Division,132,133,indicator_10
+2023-01-01,Muzaffarnagar,MVQs2RrS1Nw,GXgfTS67qxe.Ti9FJqkSK6J,700.0,4,2023,10b,p,Saharanpur Division,132,133,indicator_10
+2023-01-01,Sultanpur,o4ZQTVcMI7U,ixBYYYjxXPP,863.0,4,2023,36a,p,Ayodhya Division,176,179,indicator_36
+2023-01-01,Sultanpur,o4ZQTVcMI7U,aRueVYr35yM.Ti9FJqkSK6J,2563.0,4,2023,36b,p,Ayodhya Division,176,179,indicator_36
+2023-01-01,Sultanpur,o4ZQTVcMI7U,dwGorjVGkD9,33.7,4,2023,35a,p,Ayodhya Division,176,179,indicator_35
+2023-01-01,Sultanpur,o4ZQTVcMI7U,m7ggqyMXhyL,83.1,4,2023,37a,p,Ayodhya Division,176,179,indicator_37
+2023-01-01,Sultanpur,o4ZQTVcMI7U,indicator_2a,2538.0,4,2023,2a,p,Ayodhya Division,176,179,indicator_2
+2023-01-01,Sultanpur,o4ZQTVcMI7U,GJKYhq2wR9L,4685.0,4,2023,7a,p,Ayodhya Division,176,179,indicator_7
+2023-01-01,Sultanpur,o4ZQTVcMI7U,B2A7x36qEry.Ti9FJqkSK6J,3775.0,4,2023,10a,p,Ayodhya Division,176,179,indicator_10
+2023-01-01,Sultanpur,o4ZQTVcMI7U,GXgfTS67qxe.Ti9FJqkSK6J,325.0,4,2023,10b,p,Ayodhya Division,176,179,indicator_10
+2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,ixBYYYjxXPP,922.0,4,2023,36a,p,Basti Division,185,186,indicator_36
+2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,aRueVYr35yM.Ti9FJqkSK6J,1952.0,4,2023,36b,p,Basti Division,185,186,indicator_36
+2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,dwGorjVGkD9,33.4,4,2023,35a,p,Basti Division,185,186,indicator_35
+2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,m7ggqyMXhyL,81.8,4,2023,37a,p,Basti Division,185,186,indicator_37
+2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,indicator_2a,1949.0,4,2023,2a,p,Basti Division,185,186,indicator_2
+2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,GJKYhq2wR9L,4768.0,4,2023,7a,p,Basti Division,185,186,indicator_7
+2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,B2A7x36qEry.Ti9FJqkSK6J,2828.0,4,2023,10a,p,Basti Division,185,186,indicator_10
+2023-01-01,Sant Kabir Nagar,fe1yBApr2sl,GXgfTS67qxe.Ti9FJqkSK6J,242.0,4,2023,10b,p,Basti Division,185,186,indicator_10
+2023-01-01,Kannauj,IhQbDYRiF8w,ixBYYYjxXPP,1320.0,4,2023,36a,p,Kanpur Nagar Division,161,160,indicator_36
+2023-01-01,Kannauj,IhQbDYRiF8w,aRueVYr35yM.Ti9FJqkSK6J,2817.0,4,2023,36b,p,Kanpur Nagar Division,161,160,indicator_36
+2023-01-01,Kannauj,IhQbDYRiF8w,dwGorjVGkD9,30.5,4,2023,35a,p,Kanpur Nagar Division,161,160,indicator_35
+2023-01-01,Kannauj,IhQbDYRiF8w,m7ggqyMXhyL,88.9,4,2023,37a,p,Kanpur Nagar Division,161,160,indicator_37
+2023-01-01,Kannauj,IhQbDYRiF8w,indicator_2a,1814.0,4,2023,2a,p,Kanpur Nagar Division,161,160,indicator_2
+2023-01-01,Kannauj,IhQbDYRiF8w,GJKYhq2wR9L,5234.0,4,2023,7a,p,Kanpur Nagar Division,161,160,indicator_7
+2023-01-01,Kannauj,IhQbDYRiF8w,B2A7x36qEry.Ti9FJqkSK6J,2850.0,4,2023,10a,p,Kanpur Nagar Division,161,160,indicator_10
+2023-01-01,Kannauj,IhQbDYRiF8w,GXgfTS67qxe.Ti9FJqkSK6J,242.0,4,2023,10b,p,Kanpur Nagar Division,161,160,indicator_10
+2023-01-01,Sambhal,YzHpzrN0eLv,ixBYYYjxXPP,1471.0,4,2023,36a,p,Moradabad Division,134,205,indicator_36
+2023-01-01,Sambhal,YzHpzrN0eLv,aRueVYr35yM.Ti9FJqkSK6J,2879.0,4,2023,36b,p,Moradabad Division,134,205,indicator_36
+2023-01-01,Sambhal,YzHpzrN0eLv,dwGorjVGkD9,33.8,4,2023,35a,p,Moradabad Division,134,205,indicator_35
+2023-01-01,Sambhal,YzHpzrN0eLv,m7ggqyMXhyL,88.9,4,2023,37a,p,Moradabad Division,134,205,indicator_37
+2023-01-01,Sambhal,YzHpzrN0eLv,indicator_2a,2090.0,4,2023,2a,p,Moradabad Division,134,205,indicator_2
+2023-01-01,Sambhal,YzHpzrN0eLv,GJKYhq2wR9L,7495.0,4,2023,7a,p,Moradabad Division,134,205,indicator_7
+2023-01-01,Sambhal,YzHpzrN0eLv,B2A7x36qEry.Ti9FJqkSK6J,4686.0,4,2023,10a,p,Moradabad Division,134,205,indicator_10
+2023-01-01,Sambhal,YzHpzrN0eLv,GXgfTS67qxe.Ti9FJqkSK6J,400.0,4,2023,10b,p,Moradabad Division,134,205,indicator_10
+2023-01-01,Pilibhit,c96jwckSd6j,ixBYYYjxXPP,1064.0,4,2023,36a,p,Bareilly Division,150,151,indicator_36
+2023-01-01,Pilibhit,c96jwckSd6j,aRueVYr35yM.Ti9FJqkSK6J,4905.0,4,2023,36b,p,Bareilly Division,150,151,indicator_36
+2023-01-01,Pilibhit,c96jwckSd6j,dwGorjVGkD9,31.4,4,2023,35a,p,Bareilly Division,150,151,indicator_35
+2023-01-01,Pilibhit,c96jwckSd6j,m7ggqyMXhyL,82.2,4,2023,37a,p,Bareilly Division,150,151,indicator_37
+2023-01-01,Pilibhit,c96jwckSd6j,indicator_2a,2133.0,4,2023,2a,p,Bareilly Division,150,151,indicator_2
+2023-01-01,Pilibhit,c96jwckSd6j,GJKYhq2wR9L,7203.0,4,2023,7a,p,Bareilly Division,150,151,indicator_7
+2023-01-01,Pilibhit,c96jwckSd6j,B2A7x36qEry.Ti9FJqkSK6J,4614.0,4,2023,10a,p,Bareilly Division,150,151,indicator_10
+2023-01-01,Pilibhit,c96jwckSd6j,GXgfTS67qxe.Ti9FJqkSK6J,392.0,4,2023,10b,p,Bareilly Division,150,151,indicator_10
+2023-01-01,Pratapgarh,fz7bJo3egPX,ixBYYYjxXPP,2025.0,4,2023,36a,p,Prayagraj Division,172,173,indicator_36
+2023-01-01,Pratapgarh,fz7bJo3egPX,aRueVYr35yM.Ti9FJqkSK6J,3662.0,4,2023,36b,p,Prayagraj Division,172,173,indicator_36
+2023-01-01,Pratapgarh,fz7bJo3egPX,dwGorjVGkD9,29.7,4,2023,35a,p,Prayagraj Division,172,173,indicator_35
+2023-01-01,Pratapgarh,fz7bJo3egPX,m7ggqyMXhyL,84.6,4,2023,37a,p,Prayagraj Division,172,173,indicator_37
+2023-01-01,Pratapgarh,fz7bJo3egPX,indicator_2a,2776.0,4,2023,2a,p,Prayagraj Division,172,173,indicator_2
+2023-01-01,Pratapgarh,fz7bJo3egPX,GJKYhq2wR9L,7925.0,4,2023,7a,p,Prayagraj Division,172,173,indicator_7
+2023-01-01,Pratapgarh,fz7bJo3egPX,B2A7x36qEry.Ti9FJqkSK6J,6011.0,4,2023,10a,p,Prayagraj Division,172,173,indicator_10
+2023-01-01,Pratapgarh,fz7bJo3egPX,GXgfTS67qxe.Ti9FJqkSK6J,450.0,4,2023,10b,p,Prayagraj Division,172,173,indicator_10
+2023-01-01,Mahoba,sUQMxIc3yXj,ixBYYYjxXPP,499.0,4,2023,36a,p,Chitrakoot Division,170,169,indicator_36
+2023-01-01,Mahoba,sUQMxIc3yXj,aRueVYr35yM.Ti9FJqkSK6J,1085.0,4,2023,36b,p,Chitrakoot Division,170,169,indicator_36
+2023-01-01,Mahoba,sUQMxIc3yXj,dwGorjVGkD9,31.1,4,2023,35a,p,Chitrakoot Division,170,169,indicator_35
+2023-01-01,Mahoba,sUQMxIc3yXj,m7ggqyMXhyL,87.7,4,2023,37a,p,Chitrakoot Division,170,169,indicator_37
+2023-01-01,Mahoba,sUQMxIc3yXj,indicator_2a,1085.0,4,2023,2a,p,Chitrakoot Division,170,169,indicator_2
+2023-01-01,Mahoba,sUQMxIc3yXj,GJKYhq2wR9L,2336.0,4,2023,7a,p,Chitrakoot Division,170,169,indicator_7
+2023-01-01,Mahoba,sUQMxIc3yXj,B2A7x36qEry.Ti9FJqkSK6J,1588.0,4,2023,10a,p,Chitrakoot Division,170,169,indicator_10
+2023-01-01,Mahoba,sUQMxIc3yXj,GXgfTS67qxe.Ti9FJqkSK6J,142.0,4,2023,10b,p,Chitrakoot Division,170,169,indicator_10
+2023-01-01,Ambedkar Nagar,jM27ji8tyrM,ixBYYYjxXPP,1623.0,4,2023,36a,p,Ayodhya Division,176,178,indicator_36
+2023-01-01,Ambedkar Nagar,jM27ji8tyrM,aRueVYr35yM.Ti9FJqkSK6J,2847.0,4,2023,36b,p,Ayodhya Division,176,178,indicator_36
+2023-01-01,Ambedkar Nagar,jM27ji8tyrM,dwGorjVGkD9,33.8,4,2023,35a,p,Ayodhya Division,176,178,indicator_35
+2023-01-01,Ambedkar Nagar,jM27ji8tyrM,m7ggqyMXhyL,86.1,4,2023,37a,p,Ayodhya Division,176,178,indicator_37
+2023-01-01,Ambedkar Nagar,jM27ji8tyrM,indicator_2a,1677.0,4,2023,2a,p,Ayodhya Division,176,178,indicator_2
+2023-01-01,Ambedkar Nagar,jM27ji8tyrM,GJKYhq2wR9L,5702.0,4,2023,7a,p,Ayodhya Division,176,178,indicator_7
+2023-01-01,Ambedkar Nagar,jM27ji8tyrM,B2A7x36qEry.Ti9FJqkSK6J,4249.0,4,2023,10a,p,Ayodhya Division,176,178,indicator_10
+2023-01-01,Ambedkar Nagar,jM27ji8tyrM,GXgfTS67qxe.Ti9FJqkSK6J,350.0,4,2023,10b,p,Ayodhya Division,176,178,indicator_10
+2023-01-01,Amethi,StsLkYw1G0m,ixBYYYjxXPP,1354.0,4,2023,36a,p,Ayodhya Division,176,206,indicator_36
+2023-01-01,Amethi,StsLkYw1G0m,aRueVYr35yM.Ti9FJqkSK6J,2143.0,4,2023,36b,p,Ayodhya Division,176,206,indicator_36
+2023-01-01,Amethi,StsLkYw1G0m,dwGorjVGkD9,29.1,4,2023,35a,p,Ayodhya Division,176,206,indicator_35
+2023-01-01,Amethi,StsLkYw1G0m,m7ggqyMXhyL,83.3,4,2023,37a,p,Ayodhya Division,176,206,indicator_37
+2023-01-01,Amethi,StsLkYw1G0m,indicator_2a,2113.0,4,2023,2a,p,Ayodhya Division,176,206,indicator_2
+2023-01-01,Amethi,StsLkYw1G0m,GJKYhq2wR9L,4082.0,4,2023,7a,p,Ayodhya Division,176,206,indicator_7
+2023-01-01,Amethi,StsLkYw1G0m,B2A7x36qEry.Ti9FJqkSK6J,2686.0,4,2023,10a,p,Ayodhya Division,176,206,indicator_10
+2023-01-01,Amethi,StsLkYw1G0m,GXgfTS67qxe.Ti9FJqkSK6J,242.0,4,2023,10b,p,Ayodhya Division,176,206,indicator_10
+2023-01-01,Lalitpur,fagfcadhxej,ixBYYYjxXPP,1782.0,4,2023,36a,p,Jhansi Division,165,167,indicator_36
+2023-01-01,Lalitpur,fagfcadhxej,aRueVYr35yM.Ti9FJqkSK6J,2177.0,4,2023,36b,p,Jhansi Division,165,167,indicator_36
+2023-01-01,Lalitpur,fagfcadhxej,dwGorjVGkD9,37.3,4,2023,35a,p,Jhansi Division,165,167,indicator_35
+2023-01-01,Lalitpur,fagfcadhxej,m7ggqyMXhyL,85.5,4,2023,37a,p,Jhansi Division,165,167,indicator_37
+2023-01-01,Lalitpur,fagfcadhxej,indicator_2a,1992.0,4,2023,2a,p,Jhansi Division,165,167,indicator_2
+2023-01-01,Lalitpur,fagfcadhxej,GJKYhq2wR9L,1969.0,4,2023,7a,p,Jhansi Division,165,167,indicator_7
+2023-01-01,Lalitpur,fagfcadhxej,B2A7x36qEry.Ti9FJqkSK6J,3580.0,4,2023,10a,p,Jhansi Division,165,167,indicator_10
+2023-01-01,Lalitpur,fagfcadhxej,GXgfTS67qxe.Ti9FJqkSK6J,296.0,4,2023,10b,p,Jhansi Division,165,167,indicator_10
+2023-01-01,Mirzapur,UAicdMLyuk4,ixBYYYjxXPP,1274.0,4,2023,36a,p,Mirzapur Division,200,199,indicator_36
+2023-01-01,Mirzapur,UAicdMLyuk4,aRueVYr35yM.Ti9FJqkSK6J,3621.0,4,2023,36b,p,Mirzapur Division,200,199,indicator_36
+2023-01-01,Mirzapur,UAicdMLyuk4,dwGorjVGkD9,38.2,4,2023,35a,p,Mirzapur Division,200,199,indicator_35
+2023-01-01,Mirzapur,UAicdMLyuk4,m7ggqyMXhyL,87.6,4,2023,37a,p,Mirzapur Division,200,199,indicator_37
+2023-01-01,Mirzapur,UAicdMLyuk4,indicator_2a,3520.0,4,2023,2a,p,Mirzapur Division,200,199,indicator_2
+2023-01-01,Mirzapur,UAicdMLyuk4,GJKYhq2wR9L,5992.0,4,2023,7a,p,Mirzapur Division,200,199,indicator_7
+2023-01-01,Mirzapur,UAicdMLyuk4,B2A7x36qEry.Ti9FJqkSK6J,4500.0,4,2023,10a,p,Mirzapur Division,200,199,indicator_10
+2023-01-01,Mirzapur,UAicdMLyuk4,GXgfTS67qxe.Ti9FJqkSK6J,475.0,4,2023,10b,p,Mirzapur Division,200,199,indicator_10
+2023-01-01,Budaun,eA37kyBRRuZ,ixBYYYjxXPP,2758.0,4,2023,36a,p,Bareilly Division,150,149,indicator_36
+2023-01-01,Budaun,eA37kyBRRuZ,aRueVYr35yM.Ti9FJqkSK6J,7402.0,4,2023,36b,p,Bareilly Division,150,149,indicator_36
+2023-01-01,Budaun,eA37kyBRRuZ,dwGorjVGkD9,34.5,4,2023,35a,p,Bareilly Division,150,149,indicator_35
+2023-01-01,Budaun,eA37kyBRRuZ,m7ggqyMXhyL,87.6,4,2023,37a,p,Bareilly Division,150,149,indicator_37
+2023-01-01,Budaun,eA37kyBRRuZ,indicator_2a,4517.0,4,2023,2a,p,Bareilly Division,150,149,indicator_2
+2023-01-01,Budaun,eA37kyBRRuZ,GJKYhq2wR9L,9944.0,4,2023,7a,p,Bareilly Division,150,149,indicator_7
+2023-01-01,Budaun,eA37kyBRRuZ,B2A7x36qEry.Ti9FJqkSK6J,8256.0,4,2023,10a,p,Bareilly Division,150,149,indicator_10
+2023-01-01,Budaun,eA37kyBRRuZ,GXgfTS67qxe.Ti9FJqkSK6J,617.0,4,2023,10b,p,Bareilly Division,150,149,indicator_10
+2023-01-01,Hardoi,MTIkUw5q5pX,ixBYYYjxXPP,2312.0,4,2023,36a,p,Lucknow Division,155,155,indicator_36
+2023-01-01,Hardoi,MTIkUw5q5pX,aRueVYr35yM.Ti9FJqkSK6J,5365.0,4,2023,36b,p,Lucknow Division,155,155,indicator_36
+2023-01-01,Hardoi,MTIkUw5q5pX,dwGorjVGkD9,33.7,4,2023,35a,p,Lucknow Division,155,155,indicator_35
+2023-01-01,Hardoi,MTIkUw5q5pX,m7ggqyMXhyL,85.4,4,2023,37a,p,Lucknow Division,155,155,indicator_37
+2023-01-01,Hardoi,MTIkUw5q5pX,indicator_2a,4854.0,4,2023,2a,p,Lucknow Division,155,155,indicator_2
+2023-01-01,Hardoi,MTIkUw5q5pX,GJKYhq2wR9L,13437.0,4,2023,7a,p,Lucknow Division,155,155,indicator_7
+2023-01-01,Hardoi,MTIkUw5q5pX,B2A7x36qEry.Ti9FJqkSK6J,10412.0,4,2023,10a,p,Lucknow Division,155,155,indicator_10
+2023-01-01,Hardoi,MTIkUw5q5pX,GXgfTS67qxe.Ti9FJqkSK6J,925.0,4,2023,10b,p,Lucknow Division,155,155,indicator_10
+2023-01-01,Rampur,IU006h5U7jj,ixBYYYjxXPP,985.0,4,2023,36a,p,Moradabad Division,134,136,indicator_36
+2023-01-01,Rampur,IU006h5U7jj,aRueVYr35yM.Ti9FJqkSK6J,3399.0,4,2023,36b,p,Moradabad Division,134,136,indicator_36
+2023-01-01,Rampur,IU006h5U7jj,dwGorjVGkD9,33.5,4,2023,35a,p,Moradabad Division,134,136,indicator_35
+2023-01-01,Rampur,IU006h5U7jj,m7ggqyMXhyL,89.8,4,2023,37a,p,Moradabad Division,134,136,indicator_37
+2023-01-01,Rampur,IU006h5U7jj,indicator_2a,1529.0,4,2023,2a,p,Moradabad Division,134,136,indicator_2
+2023-01-01,Rampur,IU006h5U7jj,GJKYhq2wR9L,6966.0,4,2023,7a,p,Moradabad Division,134,136,indicator_7
+2023-01-01,Rampur,IU006h5U7jj,B2A7x36qEry.Ti9FJqkSK6J,7585.0,4,2023,10a,p,Moradabad Division,134,136,indicator_10
+2023-01-01,Rampur,IU006h5U7jj,GXgfTS67qxe.Ti9FJqkSK6J,679.0,4,2023,10b,p,Moradabad Division,134,136,indicator_10
+2023-01-01,Jaunpur,gmw76vAUMqz,ixBYYYjxXPP,3723.0,4,2023,36a,p,Varanasi Division,195,194,indicator_36
+2023-01-01,Jaunpur,gmw76vAUMqz,aRueVYr35yM.Ti9FJqkSK6J,3841.0,4,2023,36b,p,Varanasi Division,195,194,indicator_36
+2023-01-01,Jaunpur,gmw76vAUMqz,dwGorjVGkD9,38.5,4,2023,35a,p,Varanasi Division,195,194,indicator_35
+2023-01-01,Jaunpur,gmw76vAUMqz,m7ggqyMXhyL,82.1,4,2023,37a,p,Varanasi Division,195,194,indicator_37
+2023-01-01,Jaunpur,gmw76vAUMqz,indicator_2a,3336.0,4,2023,2a,p,Varanasi Division,195,194,indicator_2
+2023-01-01,Jaunpur,gmw76vAUMqz,GJKYhq2wR9L,15654.0,4,2023,7a,p,Varanasi Division,195,194,indicator_7
+2023-01-01,Jaunpur,gmw76vAUMqz,B2A7x36qEry.Ti9FJqkSK6J,7480.0,4,2023,10a,p,Varanasi Division,195,194,indicator_10
+2023-01-01,Jaunpur,gmw76vAUMqz,GXgfTS67qxe.Ti9FJqkSK6J,708.0,4,2023,10b,p,Varanasi Division,195,194,indicator_10
+2022,Basti,J1P16zQEOUT,FRafAE8qFP6,93.0,,2023,2b,p,Basti Division,185,185,indicator_2
+2022,Basti,J1P16zQEOUT,ux6uaflq7xZ,79.0,,2023,2c,p,Basti Division,185,185,indicator_2
+2022,Basti,J1P16zQEOUT,g69FuEghiM5,80409.0,,2023,2d,p,Basti Division,185,185,indicator_2
+2022,Basti,J1P16zQEOUT,cB6y5lovUZX.Ti9FJqkSK6J,74860.0,,2023,NA,p,Basti Division,185,185,indicator_NA
+2022,Basti,J1P16zQEOUT,t03VPkJ5UXd,79611.0,,2023,7b,p,Basti Division,185,185,indicator_7
+2022,Basti,J1P16zQEOUT,TmeumlBaObG,89565.0,,2023,NA,p,Basti Division,185,185,indicator_NA
+2022,Etah,ZLcx4iOVyN5,FRafAE8qFP6,77.0,,2023,2b,p,Alligarh Division,201,201,indicator_2
+2022,Etah,ZLcx4iOVyN5,ux6uaflq7xZ,51.0,,2023,2c,p,Alligarh Division,201,201,indicator_2
+2022,Etah,ZLcx4iOVyN5,g69FuEghiM5,59184.0,,2023,2d,p,Alligarh Division,201,201,indicator_2
+2022,Etah,ZLcx4iOVyN5,cB6y5lovUZX.Ti9FJqkSK6J,54761.0,,2023,NA,p,Alligarh Division,201,201,indicator_NA
+2022,Etah,ZLcx4iOVyN5,t03VPkJ5UXd,58598.0,,2023,7b,p,Alligarh Division,201,201,indicator_7
+2022,Etah,ZLcx4iOVyN5,TmeumlBaObG,65922.0,,2023,NA,p,Alligarh Division,201,201,indicator_NA
+2022,Ballia,oNDvGBE5fLq,FRafAE8qFP6,90.0,,2023,2b,p,Azamgarh Division,193,193,indicator_2
+2022,Ballia,oNDvGBE5fLq,ux6uaflq7xZ,74.0,,2023,2c,p,Azamgarh Division,193,193,indicator_2
+2022,Ballia,oNDvGBE5fLq,g69FuEghiM5,95134.0,,2023,2d,p,Azamgarh Division,193,193,indicator_2
+2022,Ballia,oNDvGBE5fLq,cB6y5lovUZX.Ti9FJqkSK6J,88251.0,,2023,NA,p,Azamgarh Division,193,193,indicator_NA
+2022,Ballia,oNDvGBE5fLq,t03VPkJ5UXd,94195.0,,2023,7b,p,Azamgarh Division,193,193,indicator_7
+2022,Ballia,oNDvGBE5fLq,TmeumlBaObG,105968.0,,2023,NA,p,Azamgarh Division,193,193,indicator_NA
+2022,Hathras,m1IAjmqkoFC,FRafAE8qFP6,80.0,,2023,2b,p,Alligarh Division,201,144,indicator_2
+2022,Hathras,m1IAjmqkoFC,ux6uaflq7xZ,54.0,,2023,2c,p,Alligarh Division,201,144,indicator_2
+2022,Hathras,m1IAjmqkoFC,g69FuEghiM5,44435.0,,2023,2d,p,Alligarh Division,201,144,indicator_2
+2022,Hathras,m1IAjmqkoFC,cB6y5lovUZX.Ti9FJqkSK6J,41451.0,,2023,NA,p,Alligarh Division,201,144,indicator_NA
+2022,Hathras,m1IAjmqkoFC,t03VPkJ5UXd,43995.0,,2023,7b,p,Alligarh Division,201,144,indicator_7
+2022,Hathras,m1IAjmqkoFC,TmeumlBaObG,49493.0,,2023,NA,p,Alligarh Division,201,144,indicator_NA
+2022,Varanasi,LeuBT7KfuuA,FRafAE8qFP6,95.0,,2023,2b,p,Varanasi Division,195,197,indicator_2
+2022,Varanasi,LeuBT7KfuuA,ux6uaflq7xZ,59.0,,2023,2c,p,Varanasi Division,195,197,indicator_2
+2022,Varanasi,LeuBT7KfuuA,g69FuEghiM5,84865.0,,2023,2d,p,Varanasi Division,195,197,indicator_2
+2022,Varanasi,LeuBT7KfuuA,cB6y5lovUZX.Ti9FJqkSK6J,79233.0,,2023,NA,p,Varanasi Division,195,197,indicator_NA
+2022,Varanasi,LeuBT7KfuuA,t03VPkJ5UXd,84024.0,,2023,7b,p,Varanasi Division,195,197,indicator_7
+2022,Varanasi,LeuBT7KfuuA,TmeumlBaObG,94527.0,,2023,NA,p,Varanasi Division,195,197,indicator_NA
+2022,Rampur,IU006h5U7jj,FRafAE8qFP6,81.0,,2023,2b,p,Moradabad Division,134,136,indicator_2
+2022,Rampur,IU006h5U7jj,ux6uaflq7xZ,45.0,,2023,2c,p,Moradabad Division,134,136,indicator_2
+2022,Rampur,IU006h5U7jj,g69FuEghiM5,70285.0,,2023,2d,p,Moradabad Division,134,136,indicator_2
+2022,Rampur,IU006h5U7jj,cB6y5lovUZX.Ti9FJqkSK6J,65513.0,,2023,NA,p,Moradabad Division,134,136,indicator_NA
+2022,Rampur,IU006h5U7jj,t03VPkJ5UXd,69587.0,,2023,7b,p,Moradabad Division,134,136,indicator_7
+2022,Rampur,IU006h5U7jj,TmeumlBaObG,78286.0,,2023,NA,p,Moradabad Division,134,136,indicator_NA
+2022,Agra,N5WWbRtsjWp,FRafAE8qFP6,89.0,,2023,2b,p,Agra Division,146,146,indicator_2
+2022,Agra,N5WWbRtsjWp,ux6uaflq7xZ,43.0,,2023,2c,p,Agra Division,146,146,indicator_2
+2022,Agra,N5WWbRtsjWp,g69FuEghiM5,124949.0,,2023,2d,p,Agra Division,146,146,indicator_2
+2022,Agra,N5WWbRtsjWp,cB6y5lovUZX.Ti9FJqkSK6J,115487.0,,2023,NA,p,Agra Division,146,146,indicator_NA
+2022,Agra,N5WWbRtsjWp,t03VPkJ5UXd,123715.0,,2023,7b,p,Agra Division,146,146,indicator_7
+2022,Agra,N5WWbRtsjWp,TmeumlBaObG,139180.0,,2023,NA,p,Agra Division,146,146,indicator_NA
+2022,Bulandshahar,ogBt4gWCiem,FRafAE8qFP6,84.0,,2023,2b,p,Meerut Division,140,142,indicator_2
+2022,Bulandshahar,ogBt4gWCiem,ux6uaflq7xZ,49.0,,2023,2c,p,Meerut Division,140,142,indicator_2
+2022,Bulandshahar,ogBt4gWCiem,g69FuEghiM5,109940.0,,2023,2d,p,Meerut Division,140,142,indicator_2
+2022,Bulandshahar,ogBt4gWCiem,cB6y5lovUZX.Ti9FJqkSK6J,102476.0,,2023,NA,p,Meerut Division,140,142,indicator_NA
+2022,Bulandshahar,ogBt4gWCiem,t03VPkJ5UXd,108854.0,,2023,7b,p,Meerut Division,140,142,indicator_7
+2022,Bulandshahar,ogBt4gWCiem,TmeumlBaObG,122460.0,,2023,NA,p,Meerut Division,140,142,indicator_NA
+2022,Amroha,hgquAmZaNBu,FRafAE8qFP6,81.0,,2023,2b,p,Moradabad Division,134,137,indicator_2
+2022,Amroha,hgquAmZaNBu,ux6uaflq7xZ,31.0,,2023,2c,p,Moradabad Division,134,137,indicator_2
+2022,Amroha,hgquAmZaNBu,g69FuEghiM5,57819.0,,2023,2d,p,Moradabad Division,134,137,indicator_2
+2022,Amroha,hgquAmZaNBu,cB6y5lovUZX.Ti9FJqkSK6J,53860.0,,2023,NA,p,Moradabad Division,134,137,indicator_NA
+2022,Amroha,hgquAmZaNBu,t03VPkJ5UXd,57246.0,,2023,7b,p,Moradabad Division,134,137,indicator_7
+2022,Amroha,hgquAmZaNBu,TmeumlBaObG,64401.0,,2023,NA,p,Moradabad Division,134,137,indicator_NA
+2022,Etawah,Pm0jLk6EAiE,FRafAE8qFP6,85.0,,2023,2b,p,Kanpur Nagar Division,161,161,indicator_2
+2022,Etawah,Pm0jLk6EAiE,ux6uaflq7xZ,70.0,,2023,2c,p,Kanpur Nagar Division,161,161,indicator_2
+2022,Etawah,Pm0jLk6EAiE,g69FuEghiM5,43200.0,,2023,2d,p,Kanpur Nagar Division,161,161,indicator_2
+2022,Etawah,Pm0jLk6EAiE,cB6y5lovUZX.Ti9FJqkSK6J,40207.0,,2023,NA,p,Kanpur Nagar Division,161,161,indicator_NA
+2022,Etawah,Pm0jLk6EAiE,t03VPkJ5UXd,42771.0,,2023,7b,p,Kanpur Nagar Division,161,161,indicator_7
+2022,Etawah,Pm0jLk6EAiE,TmeumlBaObG,48119.0,,2023,NA,p,Kanpur Nagar Division,161,161,indicator_NA
+2022,Deoria,Tf9b9qcbghH,FRafAE8qFP6,93.0,,2023,2b,p,Gorakhpur Division,188,190,indicator_2
+2022,Deoria,Tf9b9qcbghH,ux6uaflq7xZ,76.0,,2023,2c,p,Gorakhpur Division,188,190,indicator_2
+2022,Deoria,Tf9b9qcbghH,g69FuEghiM5,96305.0,,2023,2d,p,Gorakhpur Division,188,190,indicator_2
+2022,Deoria,Tf9b9qcbghH,cB6y5lovUZX.Ti9FJqkSK6J,89716.0,,2023,NA,p,Gorakhpur Division,188,190,indicator_NA
+2022,Deoria,Tf9b9qcbghH,t03VPkJ5UXd,95350.0,,2023,7b,p,Gorakhpur Division,188,190,indicator_7
+2022,Deoria,Tf9b9qcbghH,TmeumlBaObG,107272.0,,2023,NA,p,Gorakhpur Division,188,190,indicator_NA
+2022,Sant Kabir Nagar,fe1yBApr2sl,FRafAE8qFP6,91.0,,2023,2b,p,Basti Division,185,186,indicator_2
+2022,Sant Kabir Nagar,fe1yBApr2sl,ux6uaflq7xZ,80.0,,2023,2c,p,Basti Division,185,186,indicator_2
+2022,Sant Kabir Nagar,fe1yBApr2sl,g69FuEghiM5,63009.0,,2023,2d,p,Basti Division,185,186,indicator_2
+2022,Sant Kabir Nagar,fe1yBApr2sl,cB6y5lovUZX.Ti9FJqkSK6J,58712.0,,2023,NA,p,Basti Division,185,186,indicator_NA
+2022,Sant Kabir Nagar,fe1yBApr2sl,t03VPkJ5UXd,62386.0,,2023,7b,p,Basti Division,185,186,indicator_7
+2022,Sant Kabir Nagar,fe1yBApr2sl,TmeumlBaObG,70185.0,,2023,NA,p,Basti Division,185,186,indicator_NA
+2022,Ambedkar Nagar,jM27ji8tyrM,FRafAE8qFP6,92.0,,2023,2b,p,Ayodhya Division,176,178,indicator_2
+2022,Ambedkar Nagar,jM27ji8tyrM,ux6uaflq7xZ,50.0,,2023,2c,p,Ayodhya Division,176,178,indicator_2
+2022,Ambedkar Nagar,jM27ji8tyrM,g69FuEghiM5,69545.0,,2023,2d,p,Ayodhya Division,176,178,indicator_2
+2022,Ambedkar Nagar,jM27ji8tyrM,cB6y5lovUZX.Ti9FJqkSK6J,64857.0,,2023,NA,p,Ayodhya Division,176,178,indicator_NA
+2022,Ambedkar Nagar,jM27ji8tyrM,t03VPkJ5UXd,68854.0,,2023,7b,p,Ayodhya Division,176,178,indicator_7
+2022,Ambedkar Nagar,jM27ji8tyrM,TmeumlBaObG,77463.0,,2023,NA,p,Ayodhya Division,176,178,indicator_NA
+2022,Banda,DggJGxqbWHn,FRafAE8qFP6,90.0,,2023,2b,p,Chitrakoot Division,170,170,indicator_2
+2022,Banda,DggJGxqbWHn,ux6uaflq7xZ,86.0,,2023,2c,p,Chitrakoot Division,170,170,indicator_2
+2022,Banda,DggJGxqbWHn,g69FuEghiM5,59582.0,,2023,2d,p,Chitrakoot Division,170,170,indicator_2
+2022,Banda,DggJGxqbWHn,cB6y5lovUZX.Ti9FJqkSK6J,55549.0,,2023,NA,p,Chitrakoot Division,170,170,indicator_NA
+2022,Banda,DggJGxqbWHn,t03VPkJ5UXd,58990.0,,2023,7b,p,Chitrakoot Division,170,170,indicator_7
+2022,Banda,DggJGxqbWHn,TmeumlBaObG,66362.0,,2023,NA,p,Chitrakoot Division,170,170,indicator_NA
+2022,Bhadohi,PeUY1vj02UQ,FRafAE8qFP6,90.0,,2023,2b,p,Mirzapur Division,200,198,indicator_2
+2022,Bhadohi,PeUY1vj02UQ,ux6uaflq7xZ,48.0,,2023,2c,p,Mirzapur Division,200,198,indicator_2
+2022,Bhadohi,PeUY1vj02UQ,g69FuEghiM5,46534.0,,2023,2d,p,Mirzapur Division,200,198,indicator_2
+2022,Bhadohi,PeUY1vj02UQ,cB6y5lovUZX.Ti9FJqkSK6J,42723.0,,2023,NA,p,Mirzapur Division,200,198,indicator_NA
+2022,Bhadohi,PeUY1vj02UQ,t03VPkJ5UXd,46073.0,,2023,7b,p,Mirzapur Division,200,198,indicator_7
+2022,Bhadohi,PeUY1vj02UQ,TmeumlBaObG,51833.0,,2023,NA,p,Mirzapur Division,200,198,indicator_NA
+2022,Amethi,StsLkYw1G0m,FRafAE8qFP6,91.0,,2023,2b,p,Ayodhya Division,176,206,indicator_2
+2022,Amethi,StsLkYw1G0m,ux6uaflq7xZ,71.0,,2023,2c,p,Ayodhya Division,176,206,indicator_2
+2022,Amethi,StsLkYw1G0m,g69FuEghiM5,49879.0,,2023,2d,p,Ayodhya Division,176,206,indicator_2
+2022,Amethi,StsLkYw1G0m,cB6y5lovUZX.Ti9FJqkSK6J,53458.0,,2023,NA,p,Ayodhya Division,176,206,indicator_NA
+2022,Amethi,StsLkYw1G0m,t03VPkJ5UXd,49385.0,,2023,7b,p,Ayodhya Division,176,206,indicator_7
+2022,Amethi,StsLkYw1G0m,TmeumlBaObG,55558.0,,2023,NA,p,Ayodhya Division,176,206,indicator_NA
+2022,Prayagraj,tXgaew1Pd2Y,FRafAE8qFP6,83.0,,2023,2b,p,Prayagraj Division,172,175,indicator_2
+2022,Prayagraj,tXgaew1Pd2Y,ux6uaflq7xZ,53.0,,2023,2c,p,Prayagraj Division,172,175,indicator_2
+2022,Prayagraj,tXgaew1Pd2Y,g69FuEghiM5,180605.0,,2023,2d,p,Prayagraj Division,172,175,indicator_2
+2022,Prayagraj,tXgaew1Pd2Y,cB6y5lovUZX.Ti9FJqkSK6J,168527.0,,2023,NA,p,Prayagraj Division,172,175,indicator_NA
+2022,Prayagraj,tXgaew1Pd2Y,t03VPkJ5UXd,178817.0,,2023,7b,p,Prayagraj Division,172,175,indicator_7
+2022,Prayagraj,tXgaew1Pd2Y,TmeumlBaObG,201170.0,,2023,NA,p,Prayagraj Division,172,175,indicator_NA
+2022,Sultanpur,o4ZQTVcMI7U,FRafAE8qFP6,87.0,,2023,2b,p,Ayodhya Division,176,179,indicator_2
+2022,Sultanpur,o4ZQTVcMI7U,ux6uaflq7xZ,68.0,,2023,2c,p,Ayodhya Division,176,179,indicator_2
+2022,Sultanpur,o4ZQTVcMI7U,g69FuEghiM5,64349.0,,2023,2d,p,Ayodhya Division,176,179,indicator_2
+2022,Sultanpur,o4ZQTVcMI7U,cB6y5lovUZX.Ti9FJqkSK6J,54016.0,,2023,NA,p,Ayodhya Division,176,179,indicator_NA
+2022,Sultanpur,o4ZQTVcMI7U,t03VPkJ5UXd,63709.0,,2023,7b,p,Ayodhya Division,176,179,indicator_7
+2022,Sultanpur,o4ZQTVcMI7U,TmeumlBaObG,71674.0,,2023,NA,p,Ayodhya Division,176,179,indicator_NA
+2022,Lucknow,MfHac5N78aK,FRafAE8qFP6,91.0,,2023,2b,p,Lucknow Division,155,157,indicator_2
+2022,Lucknow,MfHac5N78aK,ux6uaflq7xZ,47.0,,2023,2c,p,Lucknow Division,155,157,indicator_2
+2022,Lucknow,MfHac5N78aK,g69FuEghiM5,100947.0,,2023,2d,p,Lucknow Division,155,157,indicator_2
+2022,Lucknow,MfHac5N78aK,cB6y5lovUZX.Ti9FJqkSK6J,94081.0,,2023,NA,p,Lucknow Division,155,157,indicator_NA
+2022,Lucknow,MfHac5N78aK,t03VPkJ5UXd,99946.0,,2023,7b,p,Lucknow Division,155,157,indicator_7
+2022,Lucknow,MfHac5N78aK,TmeumlBaObG,112440.0,,2023,NA,p,Lucknow Division,155,157,indicator_NA
+2022,Mathura,KP2BUB1npih,FRafAE8qFP6,80.0,,2023,2b,p,Agra Division,146,145,indicator_2
+2022,Mathura,KP2BUB1npih,ux6uaflq7xZ,37.0,,2023,2c,p,Agra Division,146,145,indicator_2
+2022,Mathura,KP2BUB1npih,g69FuEghiM5,68950.0,,2023,2d,p,Agra Division,146,145,indicator_2
+2022,Mathura,KP2BUB1npih,cB6y5lovUZX.Ti9FJqkSK6J,64146.0,,2023,NA,p,Agra Division,146,145,indicator_NA
+2022,Mathura,KP2BUB1npih,t03VPkJ5UXd,68264.0,,2023,7b,p,Agra Division,146,145,indicator_7
+2022,Mathura,KP2BUB1npih,TmeumlBaObG,76801.0,,2023,NA,p,Agra Division,146,145,indicator_NA
+2022,Balrampur,uS0pNSxN3sS,FRafAE8qFP6,70.0,,2023,2b,p,Gonda Division,182,182,indicator_2
+2022,Balrampur,uS0pNSxN3sS,ux6uaflq7xZ,58.0,,2023,2c,p,Gonda Division,182,182,indicator_2
+2022,Balrampur,uS0pNSxN3sS,g69FuEghiM5,91917.0,,2023,2d,p,Gonda Division,182,182,indicator_2
+2022,Balrampur,uS0pNSxN3sS,cB6y5lovUZX.Ti9FJqkSK6J,85707.0,,2023,NA,p,Gonda Division,182,182,indicator_NA
+2022,Balrampur,uS0pNSxN3sS,t03VPkJ5UXd,91007.0,,2023,7b,p,Gonda Division,182,182,indicator_7
+2022,Balrampur,uS0pNSxN3sS,TmeumlBaObG,102381.0,,2023,NA,p,Gonda Division,182,182,indicator_NA
+2022,Lalitpur,fagfcadhxej,FRafAE8qFP6,91.0,,2023,2b,p,Jhansi Division,165,167,indicator_2
+2022,Lalitpur,fagfcadhxej,ux6uaflq7xZ,87.0,,2023,2c,p,Jhansi Division,165,167,indicator_2
+2022,Lalitpur,fagfcadhxej,g69FuEghiM5,39709.0,,2023,2d,p,Jhansi Division,165,167,indicator_2
+2022,Lalitpur,fagfcadhxej,cB6y5lovUZX.Ti9FJqkSK6J,36912.0,,2023,NA,p,Jhansi Division,165,167,indicator_NA
+2022,Lalitpur,fagfcadhxej,t03VPkJ5UXd,39317.0,,2023,7b,p,Jhansi Division,165,167,indicator_7
+2022,Lalitpur,fagfcadhxej,TmeumlBaObG,44232.0,,2023,NA,p,Jhansi Division,165,167,indicator_NA
+2022,Auraiya,Bd6E8zkVvVt,FRafAE8qFP6,90.0,,2023,2b,p,Kanpur Nagar Division,161,162,indicator_2
+2022,Auraiya,Bd6E8zkVvVt,ux6uaflq7xZ,73.0,,2023,2c,p,Kanpur Nagar Division,161,162,indicator_2
+2022,Auraiya,Bd6E8zkVvVt,g69FuEghiM5,39844.0,,2023,2d,p,Kanpur Nagar Division,161,162,indicator_2
+2022,Auraiya,Bd6E8zkVvVt,cB6y5lovUZX.Ti9FJqkSK6J,36949.0,,2023,NA,p,Kanpur Nagar Division,161,162,indicator_NA
+2022,Auraiya,Bd6E8zkVvVt,t03VPkJ5UXd,39449.0,,2023,7b,p,Kanpur Nagar Division,161,162,indicator_7
+2022,Auraiya,Bd6E8zkVvVt,TmeumlBaObG,44380.0,,2023,NA,p,Kanpur Nagar Division,161,162,indicator_NA
+2022,Gautam Buddha Nagar,bNmwkrQeP3e,FRafAE8qFP6,87.0,,2023,2b,p,Meerut Division,140,141,indicator_2
+2022,Gautam Buddha Nagar,bNmwkrQeP3e,ux6uaflq7xZ,32.0,,2023,2c,p,Meerut Division,140,141,indicator_2
+2022,Gautam Buddha Nagar,bNmwkrQeP3e,g69FuEghiM5,46603.0,,2023,2d,p,Meerut Division,140,141,indicator_2
+2022,Gautam Buddha Nagar,bNmwkrQeP3e,cB6y5lovUZX.Ti9FJqkSK6J,44149.0,,2023,NA,p,Meerut Division,140,141,indicator_NA
+2022,Gautam Buddha Nagar,bNmwkrQeP3e,t03VPkJ5UXd,46143.0,,2023,7b,p,Meerut Division,140,141,indicator_7
+2022,Gautam Buddha Nagar,bNmwkrQeP3e,TmeumlBaObG,51910.0,,2023,NA,p,Meerut Division,140,141,indicator_NA
+2022,Moradabad,YQNQoPjAIpV,FRafAE8qFP6,80.0,,2023,2b,p,Moradabad Division,134,135,indicator_2
+2022,Moradabad,YQNQoPjAIpV,ux6uaflq7xZ,40.0,,2023,2c,p,Moradabad Division,134,135,indicator_2
+2022,Moradabad,YQNQoPjAIpV,g69FuEghiM5,94472.0,,2023,2d,p,Moradabad Division,134,135,indicator_2
+2022,Moradabad,YQNQoPjAIpV,cB6y5lovUZX.Ti9FJqkSK6J,89078.0,,2023,NA,p,Moradabad Division,134,135,indicator_NA
+2022,Moradabad,YQNQoPjAIpV,t03VPkJ5UXd,93535.0,,2023,7b,p,Moradabad Division,134,135,indicator_7
+2022,Moradabad,YQNQoPjAIpV,TmeumlBaObG,105227.0,,2023,NA,p,Moradabad Division,134,135,indicator_NA
+2022,Mirzapur,UAicdMLyuk4,FRafAE8qFP6,91.0,,2023,2b,p,Mirzapur Division,200,199,indicator_2
+2022,Mirzapur,UAicdMLyuk4,ux6uaflq7xZ,62.0,,2023,2c,p,Mirzapur Division,200,199,indicator_2
+2022,Mirzapur,UAicdMLyuk4,g69FuEghiM5,67290.0,,2023,2d,p,Mirzapur Division,200,199,indicator_2
+2022,Mirzapur,UAicdMLyuk4,cB6y5lovUZX.Ti9FJqkSK6J,62670.0,,2023,NA,p,Mirzapur Division,200,199,indicator_NA
+2022,Mirzapur,UAicdMLyuk4,t03VPkJ5UXd,66622.0,,2023,7b,p,Mirzapur Division,200,199,indicator_7
+2022,Mirzapur,UAicdMLyuk4,TmeumlBaObG,74950.0,,2023,NA,p,Mirzapur Division,200,199,indicator_NA
+2022,Bijnor,uCYjHW7FuGG,FRafAE8qFP6,84.0,,2023,2b,p,Moradabad Division,134,134,indicator_2
+2022,Bijnor,uCYjHW7FuGG,ux6uaflq7xZ,31.0,,2023,2c,p,Moradabad Division,134,134,indicator_2
+2022,Bijnor,uCYjHW7FuGG,g69FuEghiM5,105916.0,,2023,2d,p,Moradabad Division,134,134,indicator_2
+2022,Bijnor,uCYjHW7FuGG,cB6y5lovUZX.Ti9FJqkSK6J,98775.0,,2023,NA,p,Moradabad Division,134,134,indicator_NA
+2022,Bijnor,uCYjHW7FuGG,t03VPkJ5UXd,104869.0,,2023,7b,p,Moradabad Division,134,134,indicator_7
+2022,Bijnor,uCYjHW7FuGG,TmeumlBaObG,117977.0,,2023,NA,p,Moradabad Division,134,134,indicator_NA
+2022,Chandauli,ClbehnmwSec,FRafAE8qFP6,86.0,,2023,2b,p,Varanasi Division,195,196,indicator_2
+2022,Chandauli,ClbehnmwSec,ux6uaflq7xZ,53.0,,2023,2c,p,Varanasi Division,195,196,indicator_2
+2022,Chandauli,ClbehnmwSec,g69FuEghiM5,61590.0,,2023,2d,p,Varanasi Division,195,196,indicator_2
+2022,Chandauli,ClbehnmwSec,cB6y5lovUZX.Ti9FJqkSK6J,57417.0,,2023,NA,p,Varanasi Division,195,196,indicator_NA
+2022,Chandauli,ClbehnmwSec,t03VPkJ5UXd,60980.0,,2023,7b,p,Varanasi Division,195,196,indicator_7
+2022,Chandauli,ClbehnmwSec,TmeumlBaObG,68601.0,,2023,NA,p,Varanasi Division,195,196,indicator_NA
+2022,Mahoba,sUQMxIc3yXj,FRafAE8qFP6,96.0,,2023,2b,p,Chitrakoot Division,170,169,indicator_2
+2022,Mahoba,sUQMxIc3yXj,ux6uaflq7xZ,88.0,,2023,2c,p,Chitrakoot Division,170,169,indicator_2
+2022,Mahoba,sUQMxIc3yXj,g69FuEghiM5,25934.0,,2023,2d,p,Chitrakoot Division,170,169,indicator_2
+2022,Mahoba,sUQMxIc3yXj,cB6y5lovUZX.Ti9FJqkSK6J,24180.0,,2023,NA,p,Chitrakoot Division,170,169,indicator_NA
+2022,Mahoba,sUQMxIc3yXj,t03VPkJ5UXd,25677.0,,2023,7b,p,Chitrakoot Division,170,169,indicator_7
+2022,Mahoba,sUQMxIc3yXj,TmeumlBaObG,28887.0,,2023,NA,p,Chitrakoot Division,170,169,indicator_NA
+2022,Pilibhit,c96jwckSd6j,FRafAE8qFP6,76.0,,2023,2b,p,Bareilly Division,150,151,indicator_2
+2022,Pilibhit,c96jwckSd6j,ux6uaflq7xZ,50.0,,2023,2c,p,Bareilly Division,150,151,indicator_2
+2022,Pilibhit,c96jwckSd6j,g69FuEghiM5,62586.0,,2023,2d,p,Bareilly Division,150,151,indicator_2
+2022,Pilibhit,c96jwckSd6j,cB6y5lovUZX.Ti9FJqkSK6J,58525.0,,2023,NA,p,Bareilly Division,150,151,indicator_NA
+2022,Pilibhit,c96jwckSd6j,t03VPkJ5UXd,61965.0,,2023,7b,p,Bareilly Division,150,151,indicator_7
+2022,Pilibhit,c96jwckSd6j,TmeumlBaObG,69711.0,,2023,NA,p,Bareilly Division,150,151,indicator_NA
+2022,Sambhal,YzHpzrN0eLv,FRafAE8qFP6,74.0,,2023,2b,p,Moradabad Division,134,205,indicator_2
+2022,Sambhal,YzHpzrN0eLv,ux6uaflq7xZ,45.0,,2023,2c,p,Moradabad Division,134,205,indicator_2
+2022,Sambhal,YzHpzrN0eLv,g69FuEghiM5,74983.0,,2023,2d,p,Moradabad Division,134,205,indicator_2
+2022,Sambhal,YzHpzrN0eLv,cB6y5lovUZX.Ti9FJqkSK6J,61204.0,,2023,NA,p,Moradabad Division,134,205,indicator_NA
+2022,Sambhal,YzHpzrN0eLv,t03VPkJ5UXd,74241.0,,2023,7b,p,Moradabad Division,134,205,indicator_7
+2022,Sambhal,YzHpzrN0eLv,TmeumlBaObG,83520.0,,2023,NA,p,Moradabad Division,134,205,indicator_NA
+2022,Pratapgarh,fz7bJo3egPX,FRafAE8qFP6,91.0,,2023,2b,p,Prayagraj Division,172,173,indicator_2
+2022,Pratapgarh,fz7bJo3egPX,ux6uaflq7xZ,63.0,,2023,2c,p,Prayagraj Division,172,173,indicator_2
+2022,Pratapgarh,fz7bJo3egPX,g69FuEghiM5,93072.0,,2023,2d,p,Prayagraj Division,172,173,indicator_2
+2022,Pratapgarh,fz7bJo3egPX,cB6y5lovUZX.Ti9FJqkSK6J,85812.0,,2023,NA,p,Prayagraj Division,172,173,indicator_NA
+2022,Pratapgarh,fz7bJo3egPX,t03VPkJ5UXd,92151.0,,2023,7b,p,Prayagraj Division,172,173,indicator_7
+2022,Pratapgarh,fz7bJo3egPX,TmeumlBaObG,103671.0,,2023,NA,p,Prayagraj Division,172,173,indicator_NA
+2022,Ayodhya,b4XkXzoGqFY,FRafAE8qFP6,89.0,,2023,2b,p,Ayodhya Division,176,177,indicator_2
+2022,Ayodhya,b4XkXzoGqFY,ux6uaflq7xZ,63.0,,2023,2c,p,Ayodhya Division,176,177,indicator_2
+2022,Ayodhya,b4XkXzoGqFY,g69FuEghiM5,72561.0,,2023,2d,p,Ayodhya Division,176,177,indicator_2
+2022,Ayodhya,b4XkXzoGqFY,cB6y5lovUZX.Ti9FJqkSK6J,67574.0,,2023,NA,p,Ayodhya Division,176,177,indicator_NA
+2022,Ayodhya,b4XkXzoGqFY,t03VPkJ5UXd,71843.0,,2023,7b,p,Ayodhya Division,176,177,indicator_7
+2022,Ayodhya,b4XkXzoGqFY,TmeumlBaObG,80823.0,,2023,NA,p,Ayodhya Division,176,177,indicator_NA
+2022,Firozabad,eJTsuE56XDF,FRafAE8qFP6,80.0,,2023,2b,p,Agra Division,146,147,indicator_2
+2022,Firozabad,eJTsuE56XDF,ux6uaflq7xZ,56.0,,2023,2c,p,Agra Division,146,147,indicator_2
+2022,Firozabad,eJTsuE56XDF,g69FuEghiM5,76678.0,,2023,2d,p,Agra Division,146,147,indicator_2
+2022,Firozabad,eJTsuE56XDF,cB6y5lovUZX.Ti9FJqkSK6J,71446.0,,2023,NA,p,Agra Division,146,147,indicator_NA
+2022,Firozabad,eJTsuE56XDF,t03VPkJ5UXd,75920.0,,2023,7b,p,Agra Division,146,147,indicator_7
+2022,Firozabad,eJTsuE56XDF,TmeumlBaObG,85409.0,,2023,NA,p,Agra Division,146,147,indicator_NA
+2022,Maharajganj,AcnMkNGgc3S,FRafAE8qFP6,93.0,,2023,2b,p,Gorakhpur Division,188,187,indicator_2
+2022,Maharajganj,AcnMkNGgc3S,ux6uaflq7xZ,78.0,,2023,2c,p,Gorakhpur Division,188,187,indicator_2
+2022,Maharajganj,AcnMkNGgc3S,g69FuEghiM5,90515.0,,2023,2d,p,Gorakhpur Division,188,187,indicator_2
+2022,Maharajganj,AcnMkNGgc3S,cB6y5lovUZX.Ti9FJqkSK6J,83775.0,,2023,NA,p,Gorakhpur Division,188,187,indicator_NA
+2022,Maharajganj,AcnMkNGgc3S,t03VPkJ5UXd,89620.0,,2023,7b,p,Gorakhpur Division,188,187,indicator_7
+2022,Maharajganj,AcnMkNGgc3S,TmeumlBaObG,100821.0,,2023,NA,p,Gorakhpur Division,188,187,indicator_NA
+2022,Kannauj,IhQbDYRiF8w,FRafAE8qFP6,76.0,,2023,2b,p,Kanpur Nagar Division,161,160,indicator_2
+2022,Kannauj,IhQbDYRiF8w,ux6uaflq7xZ,57.0,,2023,2c,p,Kanpur Nagar Division,161,160,indicator_2
+2022,Kannauj,IhQbDYRiF8w,g69FuEghiM5,46643.0,,2023,2d,p,Kanpur Nagar Division,161,160,indicator_2
+2022,Kannauj,IhQbDYRiF8w,cB6y5lovUZX.Ti9FJqkSK6J,43522.0,,2023,NA,p,Kanpur Nagar Division,161,160,indicator_NA
+2022,Kannauj,IhQbDYRiF8w,t03VPkJ5UXd,46181.0,,2023,7b,p,Kanpur Nagar Division,161,160,indicator_7
+2022,Kannauj,IhQbDYRiF8w,TmeumlBaObG,51955.0,,2023,NA,p,Kanpur Nagar Division,161,160,indicator_NA
+2022,Jhansi,Mq751wBMqGF,FRafAE8qFP6,93.0,,2023,2b,p,Jhansi Division,165,166,indicator_2
+2022,Jhansi,Mq751wBMqGF,ux6uaflq7xZ,76.0,,2023,2c,p,Jhansi Division,165,166,indicator_2
+2022,Jhansi,Mq751wBMqGF,g69FuEghiM5,45647.0,,2023,2d,p,Jhansi Division,165,166,indicator_2
+2022,Jhansi,Mq751wBMqGF,cB6y5lovUZX.Ti9FJqkSK6J,42601.0,,2023,NA,p,Jhansi Division,165,166,indicator_NA
+2022,Jhansi,Mq751wBMqGF,t03VPkJ5UXd,45195.0,,2023,7b,p,Jhansi Division,165,166,indicator_7
+2022,Jhansi,Mq751wBMqGF,TmeumlBaObG,50843.0,,2023,NA,p,Jhansi Division,165,166,indicator_NA
+2022,Bareilly,vVqY3DPcpHf,FRafAE8qFP6,75.0,,2023,2b,p,Bareilly Division,150,150,indicator_2
+2022,Bareilly,vVqY3DPcpHf,ux6uaflq7xZ,40.0,,2023,2c,p,Bareilly Division,150,150,indicator_2
+2022,Bareilly,vVqY3DPcpHf,g69FuEghiM5,139226.0,,2023,2d,p,Bareilly Division,150,150,indicator_2
+2022,Bareilly,vVqY3DPcpHf,cB6y5lovUZX.Ti9FJqkSK6J,130293.0,,2023,NA,p,Bareilly Division,150,150,indicator_NA
+2022,Bareilly,vVqY3DPcpHf,t03VPkJ5UXd,137847.0,,2023,7b,p,Bareilly Division,150,150,indicator_7
+2022,Bareilly,vVqY3DPcpHf,TmeumlBaObG,155078.0,,2023,NA,p,Bareilly Division,150,150,indicator_NA
+2022,Hardoi,MTIkUw5q5pX,FRafAE8qFP6,74.0,,2023,2b,p,Lucknow Division,155,155,indicator_2
+2022,Hardoi,MTIkUw5q5pX,ux6uaflq7xZ,61.0,,2023,2c,p,Lucknow Division,155,155,indicator_2
+2022,Hardoi,MTIkUw5q5pX,g69FuEghiM5,137495.0,,2023,2d,p,Lucknow Division,155,155,indicator_2
+2022,Hardoi,MTIkUw5q5pX,cB6y5lovUZX.Ti9FJqkSK6J,128139.0,,2023,NA,p,Lucknow Division,155,155,indicator_NA
+2022,Hardoi,MTIkUw5q5pX,t03VPkJ5UXd,136134.0,,2023,7b,p,Lucknow Division,155,155,indicator_7
+2022,Hardoi,MTIkUw5q5pX,TmeumlBaObG,153154.0,,2023,NA,p,Lucknow Division,155,155,indicator_NA
+2022,Azamgarh,NjckKfm3g0k,FRafAE8qFP6,93.0,,2023,2b,p,Azamgarh Division,193,191,indicator_2
+2022,Azamgarh,NjckKfm3g0k,ux6uaflq7xZ,45.0,,2023,2c,p,Azamgarh Division,193,191,indicator_2
+2022,Azamgarh,NjckKfm3g0k,g69FuEghiM5,133816.0,,2023,2d,p,Azamgarh Division,193,191,indicator_2
+2022,Azamgarh,NjckKfm3g0k,cB6y5lovUZX.Ti9FJqkSK6J,124822.0,,2023,NA,p,Azamgarh Division,193,191,indicator_NA
+2022,Azamgarh,NjckKfm3g0k,t03VPkJ5UXd,132487.0,,2023,7b,p,Azamgarh Division,193,191,indicator_7
+2022,Azamgarh,NjckKfm3g0k,TmeumlBaObG,149050.0,,2023,NA,p,Azamgarh Division,193,191,indicator_NA
+2022,Budaun,eA37kyBRRuZ,FRafAE8qFP6,72.0,,2023,2b,p,Bareilly Division,150,149,indicator_2
+2022,Budaun,eA37kyBRRuZ,ux6uaflq7xZ,57.0,,2023,2c,p,Bareilly Division,150,149,indicator_2
+2022,Budaun,eA37kyBRRuZ,g69FuEghiM5,115274.0,,2023,2d,p,Bareilly Division,150,149,indicator_2
+2022,Budaun,eA37kyBRRuZ,cB6y5lovUZX.Ti9FJqkSK6J,109694.0,,2023,NA,p,Bareilly Division,150,149,indicator_NA
+2022,Budaun,eA37kyBRRuZ,t03VPkJ5UXd,114134.0,,2023,7b,p,Bareilly Division,150,149,indicator_7
+2022,Budaun,eA37kyBRRuZ,TmeumlBaObG,128403.0,,2023,NA,p,Bareilly Division,150,149,indicator_NA
+2022,Muzaffarnagar,MVQs2RrS1Nw,FRafAE8qFP6,87.0,,2023,2b,p,Saharanpur Division,132,133,indicator_2
+2022,Muzaffarnagar,MVQs2RrS1Nw,ux6uaflq7xZ,45.0,,2023,2c,p,Saharanpur Division,132,133,indicator_2
+2022,Muzaffarnagar,MVQs2RrS1Nw,g69FuEghiM5,78809.0,,2023,2d,p,Saharanpur Division,132,133,indicator_2
+2022,Muzaffarnagar,MVQs2RrS1Nw,cB6y5lovUZX.Ti9FJqkSK6J,70968.0,,2023,NA,p,Saharanpur Division,132,133,indicator_NA
+2022,Muzaffarnagar,MVQs2RrS1Nw,t03VPkJ5UXd,78029.0,,2023,7b,p,Saharanpur Division,132,133,indicator_7
+2022,Muzaffarnagar,MVQs2RrS1Nw,TmeumlBaObG,87783.0,,2023,NA,p,Saharanpur Division,132,133,indicator_NA
+2022,Jaunpur,gmw76vAUMqz,FRafAE8qFP6,89.0,,2023,2b,p,Varanasi Division,195,194,indicator_2
+2022,Jaunpur,gmw76vAUMqz,ux6uaflq7xZ,72.0,,2023,2c,p,Varanasi Division,195,194,indicator_2
+2022,Jaunpur,gmw76vAUMqz,g69FuEghiM5,121108.0,,2023,2d,p,Varanasi Division,195,194,indicator_2
+2022,Jaunpur,gmw76vAUMqz,cB6y5lovUZX.Ti9FJqkSK6J,112452.0,,2023,NA,p,Varanasi Division,195,194,indicator_NA
+2022,Jaunpur,gmw76vAUMqz,t03VPkJ5UXd,119906.0,,2023,7b,p,Varanasi Division,195,194,indicator_7
+2022,Jaunpur,gmw76vAUMqz,TmeumlBaObG,134900.0,,2023,NA,p,Varanasi Division,195,194,indicator_NA
+2022,Ghaziabad,M5NHlfAaKYI,FRafAE8qFP6,86.0,,2023,2b,p,Meerut Division,140,140,indicator_2
+2022,Ghaziabad,M5NHlfAaKYI,ux6uaflq7xZ,41.0,,2023,2c,p,Meerut Division,140,140,indicator_2
+2022,Ghaziabad,M5NHlfAaKYI,g69FuEghiM5,84844.0,,2023,2d,p,Meerut Division,140,140,indicator_2
+2022,Ghaziabad,M5NHlfAaKYI,cB6y5lovUZX.Ti9FJqkSK6J,79928.0,,2023,NA,p,Meerut Division,140,140,indicator_NA
+2022,Ghaziabad,M5NHlfAaKYI,t03VPkJ5UXd,84003.0,,2023,7b,p,Meerut Division,140,140,indicator_7
+2022,Ghaziabad,M5NHlfAaKYI,TmeumlBaObG,94504.0,,2023,NA,p,Meerut Division,140,140,indicator_NA
+2022,Farrukhabad,uEEwlAGZXWW,FRafAE8qFP6,69.0,,2023,2b,p,Kanpur Nagar Division,161,159,indicator_2
+2022,Farrukhabad,uEEwlAGZXWW,ux6uaflq7xZ,49.0,,2023,2c,p,Kanpur Nagar Division,161,159,indicator_2
+2022,Farrukhabad,uEEwlAGZXWW,g69FuEghiM5,59232.0,,2023,2d,p,Kanpur Nagar Division,161,159,indicator_2
+2022,Farrukhabad,uEEwlAGZXWW,cB6y5lovUZX.Ti9FJqkSK6J,55290.0,,2023,NA,p,Kanpur Nagar Division,161,159,indicator_NA
+2022,Farrukhabad,uEEwlAGZXWW,t03VPkJ5UXd,58645.0,,2023,7b,p,Kanpur Nagar Division,161,159,indicator_7
+2022,Farrukhabad,uEEwlAGZXWW,TmeumlBaObG,65977.0,,2023,NA,p,Kanpur Nagar Division,161,159,indicator_NA
+2022,Fatehpur,ibLiLcaKzw2,FRafAE8qFP6,81.0,,2023,2b,p,Prayagraj Division,172,172,indicator_2
+2022,Fatehpur,ibLiLcaKzw2,ux6uaflq7xZ,65.0,,2023,2c,p,Prayagraj Division,172,172,indicator_2
+2022,Fatehpur,ibLiLcaKzw2,g69FuEghiM5,72854.0,,2023,2d,p,Prayagraj Division,172,172,indicator_2
+2022,Fatehpur,ibLiLcaKzw2,cB6y5lovUZX.Ti9FJqkSK6J,67920.0,,2023,NA,p,Prayagraj Division,172,172,indicator_NA
+2022,Fatehpur,ibLiLcaKzw2,t03VPkJ5UXd,72136.0,,2023,7b,p,Prayagraj Division,172,172,indicator_7
+2022,Fatehpur,ibLiLcaKzw2,TmeumlBaObG,81152.0,,2023,NA,p,Prayagraj Division,172,172,indicator_NA
+2022,Shamli,AdiUcz9BXhx,FRafAE8qFP6,78.0,,2023,2b,p,Saharanpur Division,132,203,indicator_2
+2022,Shamli,AdiUcz9BXhx,ux6uaflq7xZ,54.0,,2023,2c,p,Saharanpur Division,132,203,indicator_2
+2022,Shamli,AdiUcz9BXhx,g69FuEghiM5,38858.0,,2023,2d,p,Saharanpur Division,132,203,indicator_2
+2022,Shamli,AdiUcz9BXhx,cB6y5lovUZX.Ti9FJqkSK6J,38600.0,,2023,NA,p,Saharanpur Division,132,203,indicator_NA
+2022,Shamli,AdiUcz9BXhx,t03VPkJ5UXd,38474.0,,2023,7b,p,Saharanpur Division,132,203,indicator_7
+2022,Shamli,AdiUcz9BXhx,TmeumlBaObG,43283.0,,2023,NA,p,Saharanpur Division,132,203,indicator_NA
+2022,Unnav,aT03mfdlNiF,FRafAE8qFP6,81.0,,2023,2b,p,Lucknow Division,155,156,indicator_2
+2022,Unnav,aT03mfdlNiF,ux6uaflq7xZ,63.0,,2023,2c,p,Lucknow Division,155,156,indicator_2
+2022,Unnav,aT03mfdlNiF,g69FuEghiM5,78881.0,,2023,2d,p,Lucknow Division,155,156,indicator_2
+2022,Unnav,aT03mfdlNiF,cB6y5lovUZX.Ti9FJqkSK6J,73592.0,,2023,NA,p,Lucknow Division,155,156,indicator_NA
+2022,Unnav,aT03mfdlNiF,t03VPkJ5UXd,78100.0,,2023,7b,p,Lucknow Division,155,156,indicator_7
+2022,Unnav,aT03mfdlNiF,TmeumlBaObG,87860.0,,2023,NA,p,Lucknow Division,155,156,indicator_NA
+2022,Rae Bareli,lLvTDpBDY8u,FRafAE8qFP6,90.0,,2023,2b,p,Lucknow Division,155,158,indicator_2
+2022,Rae Bareli,lLvTDpBDY8u,ux6uaflq7xZ,79.0,,2023,2c,p,Lucknow Division,155,158,indicator_2
+2022,Rae Bareli,lLvTDpBDY8u,g69FuEghiM5,77892.0,,2023,2d,p,Lucknow Division,155,158,indicator_2
+2022,Rae Bareli,lLvTDpBDY8u,cB6y5lovUZX.Ti9FJqkSK6J,75255.0,,2023,NA,p,Lucknow Division,155,158,indicator_NA
+2022,Rae Bareli,lLvTDpBDY8u,t03VPkJ5UXd,77121.0,,2023,7b,p,Lucknow Division,155,158,indicator_7
+2022,Rae Bareli,lLvTDpBDY8u,TmeumlBaObG,86761.0,,2023,NA,p,Lucknow Division,155,158,indicator_NA
+2022,Kanpur Nagar,QVMRMhzVrrS,FRafAE8qFP6,87.0,,2023,2b,p,Kanpur Nagar Division,161,164,indicator_2
+2022,Kanpur Nagar,QVMRMhzVrrS,ux6uaflq7xZ,60.0,,2023,2c,p,Kanpur Nagar Division,161,164,indicator_2
+2022,Kanpur Nagar,QVMRMhzVrrS,g69FuEghiM5,95220.0,,2023,2d,p,Kanpur Nagar Division,161,164,indicator_2
+2022,Kanpur Nagar,QVMRMhzVrrS,cB6y5lovUZX.Ti9FJqkSK6J,88611.0,,2023,NA,p,Kanpur Nagar Division,161,164,indicator_NA
+2022,Kanpur Nagar,QVMRMhzVrrS,t03VPkJ5UXd,94277.0,,2023,7b,p,Kanpur Nagar Division,161,164,indicator_7
+2022,Kanpur Nagar,QVMRMhzVrrS,TmeumlBaObG,106062.0,,2023,NA,p,Kanpur Nagar Division,161,164,indicator_NA
+2022,Ghazipur,dScWdMRN8PL,FRafAE8qFP6,88.0,,2023,2b,p,Varanasi Division,195,195,indicator_2
+2022,Ghazipur,dScWdMRN8PL,ux6uaflq7xZ,71.0,,2023,2c,p,Varanasi Division,195,195,indicator_2
+2022,Ghazipur,dScWdMRN8PL,g69FuEghiM5,102808.0,,2023,2d,p,Varanasi Division,195,195,indicator_2
+2022,Ghazipur,dScWdMRN8PL,cB6y5lovUZX.Ti9FJqkSK6J,95911.0,,2023,NA,p,Varanasi Division,195,195,indicator_NA
+2022,Ghazipur,dScWdMRN8PL,t03VPkJ5UXd,101792.0,,2023,7b,p,Varanasi Division,195,195,indicator_7
+2022,Ghazipur,dScWdMRN8PL,TmeumlBaObG,114514.0,,2023,NA,p,Varanasi Division,195,195,indicator_NA
+2022,Kanpur Dehat,k3D0AumUCiC,FRafAE8qFP6,84.0,,2023,2b,p,Kanpur Nagar Division,161,163,indicator_2
+2022,Kanpur Dehat,k3D0AumUCiC,ux6uaflq7xZ,69.0,,2023,2c,p,Kanpur Nagar Division,161,163,indicator_2
+2022,Kanpur Dehat,k3D0AumUCiC,g69FuEghiM5,42760.0,,2023,2d,p,Kanpur Nagar Division,161,163,indicator_2
+2022,Kanpur Dehat,k3D0AumUCiC,cB6y5lovUZX.Ti9FJqkSK6J,39840.0,,2023,NA,p,Kanpur Nagar Division,161,163,indicator_NA
+2022,Kanpur Dehat,k3D0AumUCiC,t03VPkJ5UXd,42335.0,,2023,7b,p,Kanpur Nagar Division,161,163,indicator_7
+2022,Kanpur Dehat,k3D0AumUCiC,TmeumlBaObG,47628.0,,2023,NA,p,Kanpur Nagar Division,161,163,indicator_NA
+2022,Kushinagar,xUeHwd9FQkg,FRafAE8qFP6,89.0,,2023,2b,p,Gorakhpur Division,188,189,indicator_2
+2022,Kushinagar,xUeHwd9FQkg,ux6uaflq7xZ,71.0,,2023,2c,p,Gorakhpur Division,188,189,indicator_2
+2022,Kushinagar,xUeHwd9FQkg,g69FuEghiM5,126209.0,,2023,2d,p,Gorakhpur Division,188,189,indicator_2
+2022,Kushinagar,xUeHwd9FQkg,cB6y5lovUZX.Ti9FJqkSK6J,117539.0,,2023,NA,p,Gorakhpur Division,188,189,indicator_NA
+2022,Kushinagar,xUeHwd9FQkg,t03VPkJ5UXd,124959.0,,2023,7b,p,Gorakhpur Division,188,189,indicator_7
+2022,Kushinagar,xUeHwd9FQkg,TmeumlBaObG,140578.0,,2023,NA,p,Gorakhpur Division,188,189,indicator_NA
+2022,Kaushambi,PAj0oVY0Dxu,FRafAE8qFP6,89.0,,2023,2b,p,Prayagraj Division,172,174,indicator_2
+2022,Kaushambi,PAj0oVY0Dxu,ux6uaflq7xZ,72.0,,2023,2c,p,Prayagraj Division,172,174,indicator_2
+2022,Kaushambi,PAj0oVY0Dxu,g69FuEghiM5,56444.0,,2023,2d,p,Prayagraj Division,172,174,indicator_2
+2022,Kaushambi,PAj0oVY0Dxu,cB6y5lovUZX.Ti9FJqkSK6J,52532.0,,2023,NA,p,Prayagraj Division,172,174,indicator_NA
+2022,Kaushambi,PAj0oVY0Dxu,t03VPkJ5UXd,55886.0,,2023,7b,p,Prayagraj Division,172,174,indicator_7
+2022,Kaushambi,PAj0oVY0Dxu,TmeumlBaObG,62872.0,,2023,NA,p,Prayagraj Division,172,174,indicator_NA
+2022,Kasganj,hITp09XOBLZ,FRafAE8qFP6,75.0,,2023,2b,p,Alligarh Division,201,202,indicator_2
+2022,Kasganj,hITp09XOBLZ,ux6uaflq7xZ,47.0,,2023,2c,p,Alligarh Division,201,202,indicator_2
+2022,Kasganj,hITp09XOBLZ,g69FuEghiM5,47917.0,,2023,2d,p,Alligarh Division,201,202,indicator_2
+2022,Kasganj,hITp09XOBLZ,cB6y5lovUZX.Ti9FJqkSK6J,36617.0,,2023,NA,p,Alligarh Division,201,202,indicator_NA
+2022,Kasganj,hITp09XOBLZ,t03VPkJ5UXd,47443.0,,2023,7b,p,Alligarh Division,201,202,indicator_7
+2022,Kasganj,hITp09XOBLZ,TmeumlBaObG,53373.0,,2023,NA,p,Alligarh Division,201,202,indicator_NA
+2022,Siddharth Nagar,cP0p8qfm3il,FRafAE8qFP6,70.0,,2023,2b,p,Basti Division,185,184,indicator_2
+2022,Siddharth Nagar,cP0p8qfm3il,ux6uaflq7xZ,63.0,,2023,2c,p,Basti Division,185,184,indicator_2
+2022,Siddharth Nagar,cP0p8qfm3il,g69FuEghiM5,115979.0,,2023,2d,p,Basti Division,185,184,indicator_2
+2022,Siddharth Nagar,cP0p8qfm3il,cB6y5lovUZX.Ti9FJqkSK6J,107879.0,,2023,NA,p,Basti Division,185,184,indicator_NA
+2022,Siddharth Nagar,cP0p8qfm3il,t03VPkJ5UXd,114828.0,,2023,7b,p,Basti Division,185,184,indicator_7
+2022,Siddharth Nagar,cP0p8qfm3il,TmeumlBaObG,129182.0,,2023,NA,p,Basti Division,185,184,indicator_NA
+2022,Aligarh,frD2HOp3wAs,FRafAE8qFP6,83.0,,2023,2b,p,Alligarh Division,201,143,indicator_2
+2022,Aligarh,frD2HOp3wAs,ux6uaflq7xZ,49.0,,2023,2c,p,Alligarh Division,201,143,indicator_2
+2022,Aligarh,frD2HOp3wAs,g69FuEghiM5,115431.0,,2023,2d,p,Alligarh Division,201,143,indicator_2
+2022,Aligarh,frD2HOp3wAs,cB6y5lovUZX.Ti9FJqkSK6J,107612.0,,2023,NA,p,Alligarh Division,201,143,indicator_NA
+2022,Aligarh,frD2HOp3wAs,t03VPkJ5UXd,114287.0,,2023,7b,p,Alligarh Division,201,143,indicator_7
+2022,Aligarh,frD2HOp3wAs,TmeumlBaObG,128576.0,,2023,NA,p,Alligarh Division,201,143,indicator_NA
+2022,Gorakhpur,vR85cHdsw1w,FRafAE8qFP6,92.0,,2023,2b,p,Gorakhpur Division,188,188,indicator_2
+2022,Gorakhpur,vR85cHdsw1w,ux6uaflq7xZ,73.0,,2023,2c,p,Gorakhpur Division,188,188,indicator_2
+2022,Gorakhpur,vR85cHdsw1w,g69FuEghiM5,128796.0,,2023,2d,p,Gorakhpur Division,188,188,indicator_2
+2022,Gorakhpur,vR85cHdsw1w,cB6y5lovUZX.Ti9FJqkSK6J,119948.0,,2023,NA,p,Gorakhpur Division,188,188,indicator_NA
+2022,Gorakhpur,vR85cHdsw1w,t03VPkJ5UXd,127519.0,,2023,7b,p,Gorakhpur Division,188,188,indicator_7
+2022,Gorakhpur,vR85cHdsw1w,TmeumlBaObG,143461.0,,2023,NA,p,Gorakhpur Division,188,188,indicator_NA
+2022,Maunathbhanjan,CBSB9v92AwT,FRafAE8qFP6,95.0,,2023,2b,p,Azamgarh Division,193,192,indicator_2
+2022,Maunathbhanjan,CBSB9v92AwT,ux6uaflq7xZ,59.0,,2023,2c,p,Azamgarh Division,193,192,indicator_2
+2022,Maunathbhanjan,CBSB9v92AwT,g69FuEghiM5,57047.0,,2023,2d,p,Azamgarh Division,193,192,indicator_2
+2022,Maunathbhanjan,CBSB9v92AwT,cB6y5lovUZX.Ti9FJqkSK6J,53164.0,,2023,NA,p,Azamgarh Division,193,192,indicator_NA
+2022,Maunathbhanjan,CBSB9v92AwT,t03VPkJ5UXd,56482.0,,2023,7b,p,Azamgarh Division,193,192,indicator_7
+2022,Maunathbhanjan,CBSB9v92AwT,TmeumlBaObG,63541.0,,2023,NA,p,Azamgarh Division,193,192,indicator_NA
+2022,Lakhimpur Kheri,d9ZuMopgX29,FRafAE8qFP6,83.0,,2023,2b,p,Lucknow Division,155,153,indicator_2
+2022,Lakhimpur Kheri,d9ZuMopgX29,ux6uaflq7xZ,68.0,,2023,2c,p,Lucknow Division,155,153,indicator_2
+2022,Lakhimpur Kheri,d9ZuMopgX29,g69FuEghiM5,129746.0,,2023,2d,p,Lucknow Division,155,153,indicator_2
+2022,Lakhimpur Kheri,d9ZuMopgX29,cB6y5lovUZX.Ti9FJqkSK6J,120730.0,,2023,NA,p,Lucknow Division,155,153,indicator_NA
+2022,Lakhimpur Kheri,d9ZuMopgX29,t03VPkJ5UXd,128462.0,,2023,7b,p,Lucknow Division,155,153,indicator_7
+2022,Lakhimpur Kheri,d9ZuMopgX29,TmeumlBaObG,144521.0,,2023,NA,p,Lucknow Division,155,153,indicator_NA
+2022,Hapur,CZ8kLjgqvSH,FRafAE8qFP6,83.0,,2023,2b,p,Meerut Division,140,204,indicator_2
+2022,Hapur,CZ8kLjgqvSH,ux6uaflq7xZ,35.0,,2023,2c,p,Meerut Division,140,204,indicator_2
+2022,Hapur,CZ8kLjgqvSH,g69FuEghiM5,33963.0,,2023,2d,p,Meerut Division,140,204,indicator_2
+2022,Hapur,CZ8kLjgqvSH,cB6y5lovUZX.Ti9FJqkSK6J,30355.0,,2023,NA,p,Meerut Division,140,204,indicator_NA
+2022,Hapur,CZ8kLjgqvSH,t03VPkJ5UXd,33626.0,,2023,7b,p,Meerut Division,140,204,indicator_7
+2022,Hapur,CZ8kLjgqvSH,TmeumlBaObG,37829.0,,2023,NA,p,Meerut Division,140,204,indicator_NA
+2022,Sonbhadra,NNk3JP90QZ5,FRafAE8qFP6,77.0,,2023,2b,p,Mirzapur Division,200,200,indicator_2
+2022,Sonbhadra,NNk3JP90QZ5,ux6uaflq7xZ,57.0,,2023,2c,p,Mirzapur Division,200,200,indicator_2
+2022,Sonbhadra,NNk3JP90QZ5,g69FuEghiM5,63471.0,,2023,2d,p,Mirzapur Division,200,200,indicator_2
+2022,Sonbhadra,NNk3JP90QZ5,cB6y5lovUZX.Ti9FJqkSK6J,59175.0,,2023,NA,p,Mirzapur Division,200,200,indicator_NA
+2022,Sonbhadra,NNk3JP90QZ5,t03VPkJ5UXd,62844.0,,2023,7b,p,Mirzapur Division,200,200,indicator_7
+2022,Sonbhadra,NNk3JP90QZ5,TmeumlBaObG,70698.0,,2023,NA,p,Mirzapur Division,200,200,indicator_NA
+2022,Barabanki,tzH6nJu9SwS,FRafAE8qFP6,76.0,,2023,2b,p,Ayodhya Division,176,176,indicator_2
+2022,Barabanki,tzH6nJu9SwS,ux6uaflq7xZ,63.0,,2023,2c,p,Ayodhya Division,176,176,indicator_2
+2022,Barabanki,tzH6nJu9SwS,g69FuEghiM5,100480.0,,2023,2d,p,Ayodhya Division,176,176,indicator_2
+2022,Barabanki,tzH6nJu9SwS,cB6y5lovUZX.Ti9FJqkSK6J,93595.0,,2023,NA,p,Ayodhya Division,176,176,indicator_NA
+2022,Barabanki,tzH6nJu9SwS,t03VPkJ5UXd,99484.0,,2023,7b,p,Ayodhya Division,176,176,indicator_7
+2022,Barabanki,tzH6nJu9SwS,TmeumlBaObG,111919.0,,2023,NA,p,Ayodhya Division,176,176,indicator_NA
+2022,Jalaun,NL5xiiHZQSC,FRafAE8qFP6,85.0,,2023,2b,p,Jhansi Division,165,165,indicator_2
+2022,Jalaun,NL5xiiHZQSC,ux6uaflq7xZ,70.0,,2023,2c,p,Jhansi Division,165,165,indicator_2
+2022,Jalaun,NL5xiiHZQSC,g69FuEghiM5,45952.0,,2023,2d,p,Jhansi Division,165,165,indicator_2
+2022,Jalaun,NL5xiiHZQSC,cB6y5lovUZX.Ti9FJqkSK6J,42350.0,,2023,NA,p,Jhansi Division,165,165,indicator_NA
+2022,Jalaun,NL5xiiHZQSC,t03VPkJ5UXd,45494.0,,2023,7b,p,Jhansi Division,165,165,indicator_7
+2022,Jalaun,NL5xiiHZQSC,TmeumlBaObG,51183.0,,2023,NA,p,Jhansi Division,165,165,indicator_NA
+2022,Bahraich,iE0E3nLioFr,FRafAE8qFP6,68.0,,2023,2b,p,Gonda Division,182,180,indicator_2
+2022,Bahraich,iE0E3nLioFr,ux6uaflq7xZ,59.0,,2023,2c,p,Gonda Division,182,180,indicator_2
+2022,Bahraich,iE0E3nLioFr,g69FuEghiM5,134869.0,,2023,2d,p,Gonda Division,182,180,indicator_2
+2022,Bahraich,iE0E3nLioFr,cB6y5lovUZX.Ti9FJqkSK6J,125394.0,,2023,NA,p,Gonda Division,182,180,indicator_NA
+2022,Bahraich,iE0E3nLioFr,t03VPkJ5UXd,133534.0,,2023,7b,p,Gonda Division,182,180,indicator_7
+2022,Bahraich,iE0E3nLioFr,TmeumlBaObG,150225.0,,2023,NA,p,Gonda Division,182,180,indicator_NA
+2022,Bagpat,HJIS3IrQ0Nj,FRafAE8qFP6,81.0,,2023,2b,p,Meerut Division,140,139,indicator_2
+2022,Bagpat,HJIS3IrQ0Nj,ux6uaflq7xZ,44.0,,2023,2c,p,Meerut Division,140,139,indicator_2
+2022,Bagpat,HJIS3IrQ0Nj,g69FuEghiM5,34798.0,,2023,2d,p,Meerut Division,140,139,indicator_2
+2022,Bagpat,HJIS3IrQ0Nj,cB6y5lovUZX.Ti9FJqkSK6J,32421.0,,2023,NA,p,Meerut Division,140,139,indicator_NA
+2022,Bagpat,HJIS3IrQ0Nj,t03VPkJ5UXd,34455.0,,2023,7b,p,Meerut Division,140,139,indicator_7
+2022,Bagpat,HJIS3IrQ0Nj,TmeumlBaObG,38762.0,,2023,NA,p,Meerut Division,140,139,indicator_NA
+2022,Gonda,y8WarEkWCul,FRafAE8qFP6,82.0,,2023,2b,p,Gonda Division,182,183,indicator_2
+2022,Gonda,y8WarEkWCul,ux6uaflq7xZ,67.0,,2023,2c,p,Gonda Division,182,183,indicator_2
+2022,Gonda,y8WarEkWCul,g69FuEghiM5,113699.0,,2023,2d,p,Gonda Division,182,183,indicator_2
+2022,Gonda,y8WarEkWCul,cB6y5lovUZX.Ti9FJqkSK6J,105922.0,,2023,NA,p,Gonda Division,182,183,indicator_NA
+2022,Gonda,y8WarEkWCul,t03VPkJ5UXd,112572.0,,2023,7b,p,Gonda Division,182,183,indicator_7
+2022,Gonda,y8WarEkWCul,TmeumlBaObG,126648.0,,2023,NA,p,Gonda Division,182,183,indicator_NA
+2022,Meerut,v8YGmR7nOdj,FRafAE8qFP6,81.0,,2023,2b,p,Meerut Division,140,138,indicator_2
+2022,Meerut,v8YGmR7nOdj,ux6uaflq7xZ,26.0,,2023,2c,p,Meerut Division,140,138,indicator_2
+2022,Meerut,v8YGmR7nOdj,g69FuEghiM5,99459.0,,2023,2d,p,Meerut Division,140,138,indicator_2
+2022,Meerut,v8YGmR7nOdj,cB6y5lovUZX.Ti9FJqkSK6J,92823.0,,2023,NA,p,Meerut Division,140,138,indicator_NA
+2022,Meerut,v8YGmR7nOdj,t03VPkJ5UXd,98473.0,,2023,7b,p,Meerut Division,140,138,indicator_7
+2022,Meerut,v8YGmR7nOdj,TmeumlBaObG,110785.0,,2023,NA,p,Meerut Division,140,138,indicator_NA
+2022,Sitapur,XxaOowFtkiJ,FRafAE8qFP6,85.0,,2023,2b,p,Lucknow Division,155,154,indicator_2
+2022,Sitapur,XxaOowFtkiJ,ux6uaflq7xZ,70.0,,2023,2c,p,Lucknow Division,155,154,indicator_2
+2022,Sitapur,XxaOowFtkiJ,g69FuEghiM5,151721.0,,2023,2d,p,Lucknow Division,155,154,indicator_2
+2022,Sitapur,XxaOowFtkiJ,cB6y5lovUZX.Ti9FJqkSK6J,141144.0,,2023,NA,p,Lucknow Division,155,154,indicator_NA
+2022,Sitapur,XxaOowFtkiJ,t03VPkJ5UXd,150217.0,,2023,7b,p,Lucknow Division,155,154,indicator_7
+2022,Sitapur,XxaOowFtkiJ,TmeumlBaObG,168994.0,,2023,NA,p,Lucknow Division,155,154,indicator_NA
+2022,Chitrakoot,i2fSZZ3QAJJ,FRafAE8qFP6,81.0,,2023,2b,p,Chitrakoot Division,170,171,indicator_2
+2022,Chitrakoot,i2fSZZ3QAJJ,ux6uaflq7xZ,75.0,,2023,2c,p,Chitrakoot Division,170,171,indicator_2
+2022,Chitrakoot,i2fSZZ3QAJJ,g69FuEghiM5,29482.0,,2023,2d,p,Chitrakoot Division,170,171,indicator_2
+2022,Chitrakoot,i2fSZZ3QAJJ,cB6y5lovUZX.Ti9FJqkSK6J,27454.0,,2023,NA,p,Chitrakoot Division,170,171,indicator_NA
+2022,Chitrakoot,i2fSZZ3QAJJ,t03VPkJ5UXd,29189.0,,2023,7b,p,Chitrakoot Division,170,171,indicator_7
+2022,Chitrakoot,i2fSZZ3QAJJ,TmeumlBaObG,32838.0,,2023,NA,p,Chitrakoot Division,170,171,indicator_NA
+2022,Saharanpur,FKYZ3JbWq84,FRafAE8qFP6,82.0,,2023,2b,p,Saharanpur Division,132,132,indicator_2
+2022,Saharanpur,FKYZ3JbWq84,ux6uaflq7xZ,54.0,,2023,2c,p,Saharanpur Division,132,132,indicator_2
+2022,Saharanpur,FKYZ3JbWq84,g69FuEghiM5,109749.0,,2023,2d,p,Saharanpur Division,132,132,indicator_2
+2022,Saharanpur,FKYZ3JbWq84,cB6y5lovUZX.Ti9FJqkSK6J,102252.0,,2023,NA,p,Saharanpur Division,132,132,indicator_NA
+2022,Saharanpur,FKYZ3JbWq84,t03VPkJ5UXd,108662.0,,2023,7b,p,Saharanpur Division,132,132,indicator_7
+2022,Saharanpur,FKYZ3JbWq84,TmeumlBaObG,122245.0,,2023,NA,p,Saharanpur Division,132,132,indicator_NA
+2022,Mainpuri,XBLhrSWGytu,FRafAE8qFP6,83.0,,2023,2b,p,Agra Division,146,148,indicator_2
+2022,Mainpuri,XBLhrSWGytu,ux6uaflq7xZ,60.0,,2023,2c,p,Agra Division,146,148,indicator_2
+2022,Mainpuri,XBLhrSWGytu,g69FuEghiM5,53062.0,,2023,2d,p,Agra Division,146,148,indicator_2
+2022,Mainpuri,XBLhrSWGytu,cB6y5lovUZX.Ti9FJqkSK6J,48904.0,,2023,NA,p,Agra Division,146,148,indicator_NA
+2022,Mainpuri,XBLhrSWGytu,t03VPkJ5UXd,52538.0,,2023,7b,p,Agra Division,146,148,indicator_7
+2022,Mainpuri,XBLhrSWGytu,TmeumlBaObG,59104.0,,2023,NA,p,Agra Division,146,148,indicator_NA
+2022,Shrawasti,oyTwneTbWDx,FRafAE8qFP6,80.0,,2023,2b,p,Gonda Division,182,181,indicator_2
+2022,Shrawasti,oyTwneTbWDx,ux6uaflq7xZ,75.0,,2023,2c,p,Gonda Division,182,181,indicator_2
+2022,Shrawasti,oyTwneTbWDx,g69FuEghiM5,53875.0,,2023,2d,p,Gonda Division,182,181,indicator_2
+2022,Shrawasti,oyTwneTbWDx,cB6y5lovUZX.Ti9FJqkSK6J,50103.0,,2023,NA,p,Gonda Division,182,181,indicator_NA
+2022,Shrawasti,oyTwneTbWDx,t03VPkJ5UXd,53342.0,,2023,7b,p,Gonda Division,182,181,indicator_7
+2022,Shrawasti,oyTwneTbWDx,TmeumlBaObG,60009.0,,2023,NA,p,Gonda Division,182,181,indicator_NA
+2022,Hamirpur,VSI7HobT5qL,FRafAE8qFP6,96.0,,2023,2b,p,Chitrakoot Division,170,168,indicator_2
+2022,Hamirpur,VSI7HobT5qL,ux6uaflq7xZ,88.0,,2023,2c,p,Chitrakoot Division,170,168,indicator_2
+2022,Hamirpur,VSI7HobT5qL,g69FuEghiM5,31226.0,,2023,2d,p,Chitrakoot Division,170,168,indicator_2
+2022,Hamirpur,VSI7HobT5qL,cB6y5lovUZX.Ti9FJqkSK6J,29104.0,,2023,NA,p,Chitrakoot Division,170,168,indicator_NA
+2022,Hamirpur,VSI7HobT5qL,t03VPkJ5UXd,30917.0,,2023,7b,p,Chitrakoot Division,170,168,indicator_7
+2022,Hamirpur,VSI7HobT5qL,TmeumlBaObG,34780.0,,2023,NA,p,Chitrakoot Division,170,168,indicator_NA
+2022,Shahjahanpur,GaiLSoQq1ue,FRafAE8qFP6,63.0,,2023,2b,p,Bareilly Division,150,152,indicator_2
+2022,Shahjahanpur,GaiLSoQq1ue,ux6uaflq7xZ,48.0,,2023,2c,p,Bareilly Division,150,152,indicator_2
+2022,Shahjahanpur,GaiLSoQq1ue,g69FuEghiM5,102453.0,,2023,2d,p,Bareilly Division,150,152,indicator_2
+2022,Shahjahanpur,GaiLSoQq1ue,cB6y5lovUZX.Ti9FJqkSK6J,95385.0,,2023,NA,p,Bareilly Division,150,152,indicator_NA
+2022,Shahjahanpur,GaiLSoQq1ue,t03VPkJ5UXd,101440.0,,2023,7b,p,Bareilly Division,150,152,indicator_7
+2022,Shahjahanpur,GaiLSoQq1ue,TmeumlBaObG,114122.0,,2023,NA,p,Bareilly Division,150,152,indicator_NA

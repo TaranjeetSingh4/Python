@@ -1,0 +1,53 @@
+<div class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-linear-1 py-0 h-70 px-md-5 px-3">
+    <div class="navbar-brand px-md-4 d-flex align-items-center">
+      <a class="navbar-brand d-flex align-items-center" href="{{ base }}">
+        <!-- Replace with your logo. Just specify height, not width. -->
+        <img height="56" width="56" src="{{ base }}/assets/images/up_logo.svg" alt="Logo">
+        <div class="ml-2">
+          <p class="mb-0 fs-12 lh-18">उत्तर प्रदेश सरकार</p>
+          <p class="mb-0 fs-11 lh-15">Government of</p>
+          <p class="mb-0 fs-15 lh-20">Uttar Pradesh</p>
+        </div>
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar right -->
+      <div class="navbar-nav mr-2 pull-right">
+
+      </div>
+    </div>
+  </nav>
+  <div class="bg-color1 py-2 px-md-5 px-3">
+    <div class="px-md-4 d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <h5 class="mb-0 text-uppercase text-white font-weight-bold">up health dashboard</h5>
+      </div>
+      {% if username %}
+      <div class="d-flex align-items-center">
+        <button class="btn ml-0 bg-transparent border-0 px-4 btn-secondary btn-sm sm1 mt-1" type="button" id="show_updated_history">
+          History
+        </button>
+        <div class="dropdown h4 mb-0">
+          <button class="btn ml-0 sm3 bg-transparent border-0 px-4 btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{username}}
+          </button>
+          <div class="dropdown-menu fs-14 py-0 text-color10 border-0 shadow tail-tc font-weight-normal" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item text-warning py-2 border-top border-cb" href="{{ base }}/logout/" title="Log out" data-placement="bottom">Log-out</a>
+          </div>
+        </div>
+      </div>
+      {% end %}
+    </div>
+  </div>
+  <div class="bg-color2 px-md-5 px-3">
+    <!-- <div class="px-md-4 d-flex align-items-center justify-content-between">
+      <div class="w-100 py-2 text-center">
+        <span class="landing_ticker text-white fs-16">Data updated for Oct-22, Source of Per ASHA Incentive is BCPM-MIS (as on 19-11)</span>
+      </div>
+    </div> -->
+  </div>
+</div>

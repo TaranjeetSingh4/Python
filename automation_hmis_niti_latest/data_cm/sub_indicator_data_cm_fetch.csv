@@ -1,0 +1,5 @@
+subindicator_id,type,period,indicator_type,indicator_name
+ixBYYYjxXPP,Numerator,monthly,indicator,% of beneficiaries received JSY incentive
+aRueVYr35yM.Ti9FJqkSK6J,Denominator,monthly,indicator,% of beneficiaries received JSY incentive
+dwGorjVGkD9,Numerator,monthly,indicator,OPD per thousand population
+m7ggqyMXhyL,Numerator,monthly,indicator,Treatment success rate of new smear positive tuberculosis (TB) cases

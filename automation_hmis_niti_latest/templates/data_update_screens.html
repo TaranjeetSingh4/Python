@@ -1,0 +1,317 @@
+
+<% let step_names=["", "Upload", "Save in Test DB", "Push to Prod"] %>
+<% let data_update_stepnumber = screen_data['data_update_stepnumber'] %>
+<% let stage = screen_data['stage'] %>
+<% let status = screen_data['status'] %>
+<% let tracker_id = screen_data['tracker_id'] %>
+<% let parent_id = screen_data['parent_id'] %>
+<% let is_drafted = screen_data['is_drafted'] %>
+<% let is_completed = screen_data['is_completed'] %>
+<% let request_data = screen_data['request_data'] || {} %>
+<% let dashboard_id = request_data ? request_data['dashboard_id'] : null %>
+
+<div class="d-flex flex-column px-3 overflow-auto main-content-section w-100 pt-3" id="dataScreen" data-tracker_id="<%- tracker_id %>" data-parent_id="<%- parent_id %>" data-dashboard_id="<%- dashboard_id %>">
+<% if (data_update_stepnumber == 0 ) { %>
+    <div class="row px-3">
+        <!-- dropdown -->
+        <script type="text/html" id="dashboard_selection_template" src="templates/dashboard_selection.html"></script>
+        <!-- calendar -->
+        <script type="text/html" id="calender_template" src="templates/calendar.html"></script>
+
+
+        <div class="col-xs-4 mr-1 pt-5 ml-2">
+            <div class="form-group">
+                <div class="text-center">
+                    <label class="control-label font-weight-bold cursor-pointer">
+                    <input type="checkbox" class="checkallIndicatorCheckboxes cursor-pointer">
+                   Select All District & Block Indicators</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="table-responsive pt-1 border customScroller">
+        <span class="font-weight-bold px-2">District Indicators</span>
+        <script type="text/html" id="district_indicators_table_template" src="templates/indicators_table.html"></script>
+        <!-- </div>
+        <div class="table-responsive"> -->
+        <span class="font-weight-bold px-2">Block Indicators</span>
+        <script type="text/html" id="block_indicators_table_template" src="templates/indicators_table.html"></script>
+    </div>
+
+<% } else if (data_update_stepnumber == 1) { %>
+
+    <div class="row">
+        <div class="col-6">
+            <button type="button" class="btn btn-sm btn-info"  onClick="window.location.reload();">
+                Refresh Page
+            </button>
+        </div>
+        <div class="col-6">
+            <button type="button" class="btn btn-sm float-right btn-danger cancelData">
+                Cancel
+            </button>
+        </div>
+    </div>
+    <!-- <div class="row pt-5 py-4">
+        <div class="col-3">
+            <span class="font-weight-bold">Stage: Fetch </span>
+        </div>
+        <div class="col-3">
+            <span class="font-weight-bold">Selected Dashboard: </span> <%- request_data ? request_data.dashboard_name : "" %>
+        </div>
+        <div class="col-3">
+            <span class="font-weight-bold">From Date: </span><%- request_data && request_data.fromdate ? moment(request_data.fromdate,'YYYY-MM-01').format('MMMM-YYYY') : "" %>
+        </div>
+        <div class="col-3">
+            <span class="font-weight-bold">To Date: </span><%- request_data && request_data.todate ? moment(request_data.todate,'YYYY-MM-01').format('MMMM-YYYY') : "" %>
+        </div>
+    </div> -->
+    <% if (stage == "fetch") { %>
+    <div class="d-flex flex-column align-items-center justify-content-center h-100">
+        <% if (stage == "fetch"){ %>
+            <!-- <div class="row">
+                <div class="col-12 mb-3">
+                    <img src="./assets/images/status-success.svg" alt="success" />
+                    <span class="fs-20 font-weight-bold  text-color-select ml-10">Data Fetched Successfully!</span>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="col-12">
+                    <!-- <button type="button" class="btn btn-success downloadData">
+                        Download
+                    </button> -->
+                    <% if (is_drafted == 0 ){ %>
+                    <button type="button" class="btn btn-secondary draftProcess">
+                        Draft the Process
+                    </button>
+                    <% } %>
+                    <button type="button" class="btn btn-info HomePage" onClick="window.location.reload();">
+                        Go to Home Page
+                    </button>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <a href="#" class="stretched-link" id="uploadfiles_btn">Upload Files</a>
+                </div>
+            </div>
+        <% } %>
+            
+        </div>
+    <% } %>
+<% } else if (data_update_stepnumber == 2) { %>
+
+    <div class="row">
+        <div class="col-6">
+            <button type="button" class="btn btn-sm btn-info"  onClick="window.location.reload();">
+                Refresh Page
+            </button>
+        </div>
+        <div class="col-6">
+            <button type="button" class="btn btn-sm float-right btn-danger cancelData">
+                Cancel
+            </button>
+        </div>
+    </div>
+    <div class="row pt-5 py-4">
+        <div class="col-3">
+            <span class="font-weight-bold">Stage: Save in Test DB </span>
+        </div>
+        <div class="col-3">
+            <span class="font-weight-bold">Selected Dashboard: </span> <%- request_data ? request_data.dashboard_name : ""  %>
+        </div>
+        <div class="col-3">
+            <span class="font-weight-bold">From Date: </span><%- request_data && request_data.fromdate ? moment(request_data.fromdate,'YYYY-MM-01').format('MMMM-YYYY') : "" %>
+        </div>
+        <div class="col-3">
+            <span class="font-weight-bold">To Date: </span><%- request_data && request_data.todate ? moment(request_data.todate,'YYYY-MM-01').format('MMMM-YYYY') : "" %>
+        </div>
+    </div>
+    <% if ( stage == "save" && ["success","failed"].includes(status)) { %>
+     <div class="d-flex flex-column align-items-center justify-content-center h-100">
+        <% if (stage == "save" && status == "success" ){ %>
+
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <img src="./assets/images/status-success.svg" alt="success" />
+                    <span class="fs-20 text-color-select ml-10"><span class="font-weight-bold">Data Saved Successfully in Test DB!</span><br/>
+                        The Data Upload Process is completed.
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <!-- <a href="./">Back to Home Page</a> -->
+                <% if (is_drafted==0 ){ %>
+                    <button type="button" class="btn btn-secondary draftProcess">
+                        Draft the Process
+                    </button>
+                <% } else {%>
+                    <button type="button" class="btn btn-sm btn-info mt-2 HomePage">
+                        Go to Home Page
+                    </button>
+                <% } %>
+            </div>
+        <% } else if (stage == "save" && status== "failed") { %>
+            <div class="row">
+                <img src="./assets/images/status-failed.svg" alt="failed" />
+                <span class="fs-20 font-weight-bold  text-color-select ml-10">Failed</span>
+            </div>
+            <div class="row">
+                <p>Tracker id: <%-screen_data['tracker_id']%></p>
+            </div>
+            <button type="button" class="btn btn-sm btn-warning mt-2 saveInDB">
+                Retry - Save in Test DB
+            </button>
+        <% } %>
+        </div>
+    <% } else { %>
+
+        <% if (status=="failed" ) { %>
+            <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                <div class="row">
+                    <img src="./assets/images/status-failed.svg" alt="failed" />
+                    <span class="fs-20 font-weight-bold  text-color-select ml-10">Failed</span>
+                </div>
+                <div class="row">
+                    <p>Tracker id: <%-screen_data['tracker_id']%></p>
+                </div>
+                <button type="button" class="btn btn-sm btn-warning mt-2 saveInDB">
+                    Retry - Save in Test DB
+                </button>
+            </div>
+         <% } else{ %>
+            <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                <div class="row">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>Saving data, Please wait your request is being processed<span>...</span></p>
+                </div>
+            </div>
+        <% } %>
+    <% } %>
+
+<% } else if (data_update_stepnumber == 3) { %>
+
+    <div class="row">
+        <div class="col-6">
+            <button type="button" class="btn btn-sm btn-info"  onClick="window.location.reload();">
+                Refresh Page
+            </button>
+        </div>
+        <div class="col-6">
+            <button type="button" class="btn btn-sm float-right btn-danger cancelData">
+                Cancel
+            </button>
+        </div>
+    </div>
+    <div class="row pt-5 py-4">
+        <div class="col-3">
+            <span class="font-weight-bold">Stage: Push to Prod </span>
+        </div>
+        <div class="col-3">
+            <span class="font-weight-bold">Selected Dashboard: </span> <%- request_data ? request_data.dashboard_name : ""  %>
+        </div>
+        <div class="col-3">
+            <span class="font-weight-bold">From Date: </span><%- request_data && request_data.fromdate ? moment(request_data.fromdate,'YYYY-MM-01').format('MMMM-YYYY') : "" %>
+        </div>
+        <div class="col-3">
+            <span class="font-weight-bold">To Date: </span><%- request_data && request_data.todate ? moment(request_data.todate,'YYYY-MM-01').format('MMMM-YYYY') : "" %>
+        </div>
+    </div>
+    <% if ( stage == "push" && ["success","failed"].includes(status)) { %>
+     <div class="d-flex flex-column align-items-center justify-content-center h-100">
+        <% if (stage == "push" && status == "success" ){ %>
+
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <img src="./assets/images/status-success.svg" alt="success" />
+                    <span class="fs-20 text-color-select ml-10"><span class="font-weight-bold">Data Saved Successfully in Prod DB!</span><br/>
+                        The Data Push to Prod DB is completed.
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <!-- <a href="./">Back to Home Page</a> -->
+                <button type="button" class="btn btn-sm btn-info mt-2 HomePage">
+                    Go to Home Page
+                </button>
+            </div>
+        <% } else if (stage == "push" && status== "failed") { %>
+            <div class="row">
+                <img src="./assets/images/status-failed.svg" alt="failed" />
+                <span class="fs-20 font-weight-bold  text-color-select ml-10">Failed</span>
+            </div>
+            <div class="row">
+                <p>Tracker id: <%-screen_data['tracker_id']%></p>
+            </div>
+            <button type="button" class="btn btn-sm btn-warning mt-2 pushtoProd">
+                Retry - Push to Prod
+            </button>
+        <% } %>
+        </div>
+    <% } else { %>
+
+        <% if (status=="failed" ) { %>
+            <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                <div class="row">
+                    <img src="./assets/images/status-failed.svg" alt="failed" />
+                    <span class="fs-20 font-weight-bold  text-color-select ml-10">Failed</span>
+                </div>
+                <div class="row">
+                    <p>Tracker id: <%-screen_data['tracker_id']%></p>
+                </div>
+                <button type="button" class="btn btn-sm btn-warning mt-2 pushtoProd">
+                    Retry - Push to Prod
+                </button>
+            </div>
+         <% } else{ %>
+            <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                <div class="row">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>Pushing data to Prod, Please wait your request is being processed<span>...</span></p>
+                </div>
+            </div>
+        <% } %>
+    <% } %>
+
+
+
+<% } %>
+
+
+
+<div class="fixed-bottom mt-auto card-footer d-flex align-items-center justify-content-between mx-12 border-0 bg-transparent py-4 text-center position-relative">
+
+    <div class="d-flex align-items-center mr-4">
+    <% if (data_update_stepnumber > 0 ){ %>
+        <!-- <button type="button" class="btn p-0 data-update-steps" value="back" id="steps-previous">
+            <img src="./assets/images/previous.svg" alt="Back" />
+        </button>
+        <div class="d-flex flex-column">
+            <span class="fs-20 font-weight-bold text-color-next">Back</span>
+        </div> -->
+    <% } %>
+    </div>
+
+    <!-- <span class="fs-12 opacity-50">Step <%- data_update_stepnumber %> of 4</span> -->
+    <div class="d-flex align-items-center">
+        <% if (data_update_stepnumber < 3 ){ %>
+
+        <div class="d-flex flex-column">
+            <span class="fs-20 font-weight-bold text-color-next"><%- step_names[data_update_stepnumber + 1]%></span>
+            <!-- <span class="fs-12 text-dark opacity-50 text-uppercase"></span> -->
+        </div>
+        <button type="button" class="btn p-0 data-update-steps nextBtn" value="next" id="steps-next" data-step-name="<%- step_names[data_update_stepnumber + 1]%>">
+            <img src="./assets/images/next.svg" alt="Next" />
+        </button>
+        <% } %>
+    </div>
+</div>
+</div>

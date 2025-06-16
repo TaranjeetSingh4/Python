@@ -1,0 +1,925 @@
+[32mINFO    [0m11-Sep 11:37:49 [1;33mgramex:__init__[0m [32mPORT[0m Gramex 1.86.0 | /home/uphealthadmin/gramener/automation/etl | Python 3.7.13 (default, Mar 29 2022, 02:18:16)  [GCC 7.5.0][0m
+[37mDEBUG   [0m11-Sep 11:37:50 [1;33mgramex:__init__[0m [32mPORT[0m Loading service: eventlog[0m
+[37mDEBUG   [0m11-Sep 11:37:50 [1;33mgramex:__init__[0m [32mPORT[0m Loading service: app[0m
+[37mDEBUG   [0m11-Sep 11:37:50 [1;33mgramex:__init__[0m [32mPORT[0m Loading service: storelocations[0m
+[37mDEBUG   [0m11-Sep 11:37:50 [1;33mgramex:__init__[0m [32mPORT[0m Loading service: schedule[0m
+[32mINFO    [0m11-Sep 11:37:50 [1;33mgramex:__init__[0m [32mPORT[0m Initialising schedule:gramex_update[0m
+[37mDEBUG   [0m11-Sep 11:37:50 [1;33mgramex:scheduler[0m [32mPORT[0m schedule:gramex_update: Next run in 44529.6s[0m
+[32mINFO    [0m11-Sep 11:37:50 [1;33mgramex:__init__[0m [32mPORT[0m Initialising schedule:gramex_purge_otp[0m
+[37mDEBUG   [0m11-Sep 11:37:50 [1;33mgramex:scheduler[0m [32mPORT[0m schedule:gramex_purge_otp: Next run in 44589.6s[0m
+[37mDEBUG   [0m11-Sep 11:37:50 [1;33mgramex:__init__[0m [32mPORT[0m Loading service: url[0m
+[37mDEBUG   [0m11-Sep 11:37:50 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/ui/theme-mYYCk (FileHandler) [0m
+[37mDEBUG   [0m11-Sep 11:37:50 [1;33mgramex:__init__[0m [32mPORT[0m Gramex update ran recently. Deferring check.[0m
+[37mDEBUG   [0m11-Sep 11:37:50 [1;33mgramex:config[0m [32mPORT[0m Loading config: /home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/apps.yaml[0m
+[37mDEBUG   [0m11-Sep 11:37:50 [1;33mgramex:config[0m [32mPORT[0m Loading config: /home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/handlers/openapiconfig.yaml[0m
+[37mDEBUG   [0m11-Sep 11:37:50 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/ui/bootstrap4-EYrik (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:37:51 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/ui/theme-H1l3j (FileHandler) [0m
+[37mDEBUG   [0m11-Sep 11:37:51 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/ui/static-pc62j (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:37:51 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-login (SimpleAuth) [0m
+[37mDEBUG   [0m11-Sep 11:37:51 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-logout (LogoutHandler) [0m
+[37mDEBUG   [0m11-Sep 11:37:51 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/ui/bootstrap4-uKUPs (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:37:51 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/users-WDlu3 (gramexadmin.AdminFormHandler) [0m
+[33mWARNING [0m11-Sep 11:37:51 [1;33mgramex:gramexadmin[0m [32mPORT[0m apps/admin2/users-WDlu3: Missing authhandler[0m
+[37mDEBUG   [0m11-Sep 11:37:51 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/auth-rules-CYnni (gramexadmin.AdminFormHandler) [0m
+[33mWARNING [0m11-Sep 11:37:51 [1;33mgramex:gramexadmin[0m [32mPORT[0m apps/admin2/auth-rules-CYnni: Missing authhandler[0m
+[37mDEBUG   [0m11-Sep 11:37:51 [1;33mgramex:__init__[0m [32mPORT[0m url:app/admin2/schedule-M99Du (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:37:51 [1;33mgramex:__init__[0m [32mPORT[0m url:app/admin2/alert-2TE42 (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:37:51 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/webshell-WqLmo (WebSocketHandler) [0m
+[37mDEBUG   [0m11-Sep 11:37:51 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/info-6Co8T (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:37:51 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/ui/static-qbTek (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:37:51 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/webshell-static-qqTom (FileHandler) [0m
+[37mDEBUG   [0m11-Sep 11:37:51 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/home-DWvcg (FileHandler) [0m
+[37mDEBUG   [0m11-Sep 11:37:51 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/home-static-4Y1Xn (FileHandler) [0m
+[37mDEBUG   [0m11-Sep 11:37:51 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-home (FileHandler) [0m
+[37mDEBUG   [0m11-Sep 11:37:51 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-dashboard_indicators (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:37:59 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on xlsx. Using fallback memory cache[0m
+/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/core/frame.py:4238: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().rename(**kwargs)
+[37mDEBUG   [0m11-Sep 11:37:59 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:37:59 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:37:59 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:37:59 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:37:59 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:37:59 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:37:59 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:37:59 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:37:59 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:37:59 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:37:59 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:37:59 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:37:59 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[32mINFO    [0m11-Sep 11:38:10 [1;33mcalculations:calculations[0m message[0m
+[37mDEBUG   [0m11-Sep 11:38:10 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:38:10 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:38:11 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[32mINFO    [0m11-Sep 11:38:11 [1;33mphase1_calc:phase1_calc[0m message[0m
+[37mDEBUG   [0m11-Sep 11:38:11 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:38:11 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:38:11 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:38:11 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:38:11 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[32mINFO    [0m11-Sep 11:38:11 [1;33mcalculations_niti:calculations_niti[0m message[0m
+[37mDEBUG   [0m11-Sep 11:38:11 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:38:11 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:38:11 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:38:11 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[32mINFO    [0m11-Sep 11:38:11 [1;33mniti_etl:niti_etl[0m message[0m
+[32mINFO    [0m11-Sep 11:38:11 [1;33mcalculations_cm:calculations_cm[0m message[0m
+[37mDEBUG   [0m11-Sep 11:38:12 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:38:12 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:38:12 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:38:12 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[32mINFO    [0m11-Sep 11:38:12 [1;33mcm_etl:cm_etl[0m message[0m
+[32mINFO    [0m11-Sep 11:38:12 [1;33mcalculations_cmo:calculations_cmo[0m message[0m
+[37mDEBUG   [0m11-Sep 11:38:12 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:38:12 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:38:12 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[37mDEBUG   [0m11-Sep 11:38:12 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[32mINFO    [0m11-Sep 11:38:12 [1;33mcmo_etl:cmo_etl[0m message[0m
+[37mDEBUG   [0m11-Sep 11:38:13 [1;33mgramex:cache[0m [32mPORT[0m gramex.cache.open: Cannot interpret '<attribute 'dtype' of 'numpy.generic' objects>' as a data type on csv. Using fallback memory cache[0m
+[32mINFO    [0m11-Sep 11:38:18 [1;33mnumexpr.utils:utils[0m NumExpr defaulting to 8 threads.[0m
+[37mDEBUG   [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32mPORT[0m url:up-tsu-desktop/tmp_test (FormHandler) [0m
+[37mDEBUG   [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-fetch_indicators_data (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-retryfetchIndicators (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-download_data (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-start_save_process (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-start_push_process (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-draft_fetch_process (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-latest_data_update_track_data (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-cancel_data_update (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-data_updated_history (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-get_track (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-uploadfile (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-client-style (FunctionHandler) [0m
+[37mDEBUG   [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32mPORT[0m url:favicon (FileHandler) -90[0m
+[37mDEBUG   [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32mPORT[0m url:default (FileHandler) -100[0m
+[37mDEBUG   [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32mPORT[0m Loading service: test[0m
+[37mDEBUG   [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32mPORT[0m Running callback: app[0m
+[32mINFO    [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32mPORT[0m Listening on port 7788[0m
+[33mWARNING [0m11-Sep 11:38:19 [1;33mtornado.general:web[0m 404 GET /etl/tmp_test (20.219.141.96): /home/uphealthadmin/gramener/automation/etl/etl/tmp_test missing[0m
+[33mWARNING [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32m7788[0m 404 GET /etl/tmp_test (20.219.141.96) 4.29ms default[0m
+[33mWARNING [0m11-Sep 11:38:19 [1;33mtornado.general:web[0m 404 GET /etl/ (49.36.170.10): /home/uphealthadmin/gramener/automation/etl/etl missing[0m
+[33mWARNING [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32m7788[0m 404 GET /etl/ (49.36.170.10) 5.01ms default[0m
+[33mWARNING [0m11-Sep 11:38:19 [1;33mtornado.general:web[0m 404 GET /etl/ (49.36.170.10): /home/uphealthadmin/gramener/automation/etl/etl missing[0m
+[33mWARNING [0m11-Sep 11:38:19 [1;33mgramex:__init__[0m [32m7788[0m 404 GET /etl/ (49.36.170.10) 1.65ms default[0m
+[37mDEBUG   [0m11-Sep 11:38:20 [1;33mgramex:cache[0m [32m7788[0m Flushing /home/uphealthadmin/.config/gramexdata/session.json[0m
+[33mWARNING [0m11-Sep 11:39:01 [1;33mtornado.general:web[0m 404 GET /etl/tmp_test (20.219.141.96): /home/uphealthadmin/gramener/automation/etl/etl/tmp_test missing[0m
+[33mWARNING [0m11-Sep 11:39:01 [1;33mgramex:__init__[0m [32m7788[0m 404 GET /etl/tmp_test (20.219.141.96) 2.06ms default[0m
+[32mINFO    [0m20-Sep 13:22:43 [1;33mgramex:__init__[0m [32mPORT[0m Gramex 1.86.0 | /home/uphealthadmin/gramener/automation/etl | Python 3.7.13 (default, Mar 29 2022, 02:18:16)  [GCC 7.5.0][0m
+[37mDEBUG   [0m20-Sep 13:22:43 [1;33mgramex:__init__[0m [32mPORT[0m Loading service: eventlog[0m
+[37mDEBUG   [0m20-Sep 13:22:43 [1;33mgramex:__init__[0m [32mPORT[0m Loading service: app[0m
+[37mDEBUG   [0m20-Sep 13:22:43 [1;33mgramex:__init__[0m [32mPORT[0m Loading service: storelocations[0m
+[37mDEBUG   [0m20-Sep 13:22:43 [1;33mgramex:__init__[0m [32mPORT[0m Loading service: schedule[0m
+[32mINFO    [0m20-Sep 13:22:43 [1;33mgramex:__init__[0m [32mPORT[0m Initialising schedule:gramex_update[0m
+[37mDEBUG   [0m20-Sep 13:22:43 [1;33mgramex:scheduler[0m [32mPORT[0m schedule:gramex_update: Next run in 38236.2s[0m
+[32mINFO    [0m20-Sep 13:22:43 [1;33mgramex:__init__[0m [32mPORT[0m Initialising schedule:gramex_purge_otp[0m
+[37mDEBUG   [0m20-Sep 13:22:43 [1;33mgramex:scheduler[0m [32mPORT[0m schedule:gramex_purge_otp: Next run in 38296.2s[0m
+[37mDEBUG   [0m20-Sep 13:22:43 [1;33mgramex:__init__[0m [32mPORT[0m Loading service: url[0m
+[37mDEBUG   [0m20-Sep 13:22:43 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/ui/theme-Kg0Je (FileHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:43 [1;33mgramex:__init__[0m [32mPORT[0m Gramex update ran recently. Deferring check.[0m
+/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/scipy/__init__.py:149: UserWarning: A NumPy version >=1.16.5 and <1.23.0 is required for this version of SciPy (detected version 1.16.4
+  UserWarning)
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:config[0m [32mPORT[0m Loading config: /home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/apps.yaml[0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:config[0m [32mPORT[0m Loading config: /home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/handlers/openapiconfig.yaml[0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/ui/bootstrap4-oVBI2 (FunctionHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/ui/theme-QhqEZ (FileHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/ui/static-txSjX (FunctionHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-login (SimpleAuth) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-logout (LogoutHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/ui/bootstrap4-Wccot (FunctionHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/users-6Fte7 (gramexadmin.AdminFormHandler) [0m
+[33mWARNING [0m20-Sep 13:22:44 [1;33mgramex:gramexadmin[0m [32mPORT[0m apps/admin2/users-6Fte7: Missing authhandler[0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/auth-rules-Xhb4B (gramexadmin.AdminFormHandler) [0m
+[33mWARNING [0m20-Sep 13:22:44 [1;33mgramex:gramexadmin[0m [32mPORT[0m apps/admin2/auth-rules-Xhb4B: Missing authhandler[0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:app/admin2/schedule-XqsKh (FunctionHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:app/admin2/alert-T453S (FunctionHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/webshell-nqR1D (WebSocketHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/info-Ichea (FunctionHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/ui/static-vZL45 (FunctionHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/webshell-static-Gzifk (FileHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/home-Ezuoe (FileHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/home-static-X1WDO (FileHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-home (FileHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-dashboard_indicators (FunctionHandler) [0m
+[31mERROR   [0m20-Sep 13:22:44 [1;33mgramex:config[0m [32mPORT[0m Exception when importing automation_trigger.dashboard_indicator_names[0m
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 347, in safeimport
+    module = __import__(path)
+  File "/home/uphealthadmin/gramener/automation/etl/automation_trigger.py", line 20, in <module>
+    from uphealth_automation import trigger_fetch_process as trigger_hrd
+  File "/home/uphealthadmin/gramener/automation/etl/uphealth_automation.py", line 20, in <module>
+    encoding='utf-8'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 172, in open
+    data = method(path, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 1175, in read_excel
+    io, sheet_name=sheet_name, header=0 if header is ... else header, **kwargs
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 646, in __init__
+    raise ValueError("Unknown engine: {engine}".format(engine=engine))
+ValueError: Unknown engine: openpyxl
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/config.py", line 665, in locate
+    return _locate(path, forceload)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 1607, in locate
+    nextmodule = safeimport('.'.join(parts[:n+1]), forceload)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 362, in safeimport
+    raise ErrorDuringImport(path, sys.exc_info())
+pydoc.ErrorDuringImport: problem in automation_trigger - ValueError: Unknown engine: openpyxl
+[31mERROR   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-dashboard_indicators (FunctionHandler) invalid configuration[0m
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/services/__init__.py", line 308, in url
+    handler.setup(**spec.kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/handlers/functionhandler.py", line 27, in setup
+    kwargs, vars={'handler': None}, filename=f'url:{cls.name}'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 283, in build_transform
+    modules = module_names(tree, vars)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 86, in module_names
+    visit(node)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 71, in visit
+    importlib.import_module(module_name)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/uphealthadmin/gramener/automation/etl/automation_trigger.py", line 20, in <module>
+    from uphealth_automation import trigger_fetch_process as trigger_hrd
+  File "/home/uphealthadmin/gramener/automation/etl/uphealth_automation.py", line 20, in <module>
+    encoding='utf-8'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 172, in open
+    data = method(path, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 1175, in read_excel
+    io, sheet_name=sheet_name, header=0 if header is ... else header, **kwargs
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 646, in __init__
+    raise ValueError("Unknown engine: {engine}".format(engine=engine))
+ValueError: Unknown engine: openpyxl
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:up-tsu-desktop/tmp_test (FormHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-fetch_indicators_data (FunctionHandler) [0m
+[31mERROR   [0m20-Sep 13:22:44 [1;33mgramex:config[0m [32mPORT[0m Exception when importing automation_trigger.fetch_indicators_data[0m
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 347, in safeimport
+    module = __import__(path)
+  File "/home/uphealthadmin/gramener/automation/etl/automation_trigger.py", line 20, in <module>
+    from uphealth_automation import trigger_fetch_process as trigger_hrd
+  File "/home/uphealthadmin/gramener/automation/etl/uphealth_automation.py", line 20, in <module>
+    encoding='utf-8'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 172, in open
+    data = method(path, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 1175, in read_excel
+    io, sheet_name=sheet_name, header=0 if header is ... else header, **kwargs
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 646, in __init__
+    raise ValueError("Unknown engine: {engine}".format(engine=engine))
+ValueError: Unknown engine: openpyxl
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/config.py", line 665, in locate
+    return _locate(path, forceload)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 1607, in locate
+    nextmodule = safeimport('.'.join(parts[:n+1]), forceload)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 362, in safeimport
+    raise ErrorDuringImport(path, sys.exc_info())
+pydoc.ErrorDuringImport: problem in automation_trigger - ValueError: Unknown engine: openpyxl
+[31mERROR   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-fetch_indicators_data (FunctionHandler) invalid configuration[0m
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/services/__init__.py", line 308, in url
+    handler.setup(**spec.kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/handlers/functionhandler.py", line 27, in setup
+    kwargs, vars={'handler': None}, filename=f'url:{cls.name}'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 283, in build_transform
+    modules = module_names(tree, vars)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 86, in module_names
+    visit(node)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 71, in visit
+    importlib.import_module(module_name)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/uphealthadmin/gramener/automation/etl/automation_trigger.py", line 20, in <module>
+    from uphealth_automation import trigger_fetch_process as trigger_hrd
+  File "/home/uphealthadmin/gramener/automation/etl/uphealth_automation.py", line 20, in <module>
+    encoding='utf-8'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 172, in open
+    data = method(path, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 1175, in read_excel
+    io, sheet_name=sheet_name, header=0 if header is ... else header, **kwargs
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 646, in __init__
+    raise ValueError("Unknown engine: {engine}".format(engine=engine))
+ValueError: Unknown engine: openpyxl
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-retryfetchIndicators (FunctionHandler) [0m
+[31mERROR   [0m20-Sep 13:22:44 [1;33mgramex:config[0m [32mPORT[0m Exception when importing automation_trigger.fetch_indicators_data[0m
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 347, in safeimport
+    module = __import__(path)
+  File "/home/uphealthadmin/gramener/automation/etl/automation_trigger.py", line 20, in <module>
+    from uphealth_automation import trigger_fetch_process as trigger_hrd
+  File "/home/uphealthadmin/gramener/automation/etl/uphealth_automation.py", line 20, in <module>
+    encoding='utf-8'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 172, in open
+    data = method(path, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 1175, in read_excel
+    io, sheet_name=sheet_name, header=0 if header is ... else header, **kwargs
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 646, in __init__
+    raise ValueError("Unknown engine: {engine}".format(engine=engine))
+ValueError: Unknown engine: openpyxl
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/config.py", line 665, in locate
+    return _locate(path, forceload)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 1607, in locate
+    nextmodule = safeimport('.'.join(parts[:n+1]), forceload)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 362, in safeimport
+    raise ErrorDuringImport(path, sys.exc_info())
+pydoc.ErrorDuringImport: problem in automation_trigger - ValueError: Unknown engine: openpyxl
+[31mERROR   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-retryfetchIndicators (FunctionHandler) invalid configuration[0m
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/services/__init__.py", line 308, in url
+    handler.setup(**spec.kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/handlers/functionhandler.py", line 27, in setup
+    kwargs, vars={'handler': None}, filename=f'url:{cls.name}'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 283, in build_transform
+    modules = module_names(tree, vars)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 86, in module_names
+    visit(node)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 71, in visit
+    importlib.import_module(module_name)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/uphealthadmin/gramener/automation/etl/automation_trigger.py", line 20, in <module>
+    from uphealth_automation import trigger_fetch_process as trigger_hrd
+  File "/home/uphealthadmin/gramener/automation/etl/uphealth_automation.py", line 20, in <module>
+    encoding='utf-8'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 172, in open
+    data = method(path, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 1175, in read_excel
+    io, sheet_name=sheet_name, header=0 if header is ... else header, **kwargs
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 646, in __init__
+    raise ValueError("Unknown engine: {engine}".format(engine=engine))
+ValueError: Unknown engine: openpyxl
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-download_data (FunctionHandler) [0m
+[31mERROR   [0m20-Sep 13:22:44 [1;33mgramex:config[0m [32mPORT[0m Exception when importing automation_trigger.download_data[0m
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 347, in safeimport
+    module = __import__(path)
+  File "/home/uphealthadmin/gramener/automation/etl/automation_trigger.py", line 20, in <module>
+    from uphealth_automation import trigger_fetch_process as trigger_hrd
+  File "/home/uphealthadmin/gramener/automation/etl/uphealth_automation.py", line 20, in <module>
+    encoding='utf-8'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 172, in open
+    data = method(path, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 1175, in read_excel
+    io, sheet_name=sheet_name, header=0 if header is ... else header, **kwargs
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 646, in __init__
+    raise ValueError("Unknown engine: {engine}".format(engine=engine))
+ValueError: Unknown engine: openpyxl
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/config.py", line 665, in locate
+    return _locate(path, forceload)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 1607, in locate
+    nextmodule = safeimport('.'.join(parts[:n+1]), forceload)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 362, in safeimport
+    raise ErrorDuringImport(path, sys.exc_info())
+pydoc.ErrorDuringImport: problem in automation_trigger - ValueError: Unknown engine: openpyxl
+[31mERROR   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-download_data (FunctionHandler) invalid configuration[0m
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/services/__init__.py", line 308, in url
+    handler.setup(**spec.kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/handlers/functionhandler.py", line 27, in setup
+    kwargs, vars={'handler': None}, filename=f'url:{cls.name}'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 283, in build_transform
+    modules = module_names(tree, vars)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 86, in module_names
+    visit(node)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 71, in visit
+    importlib.import_module(module_name)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/uphealthadmin/gramener/automation/etl/automation_trigger.py", line 20, in <module>
+    from uphealth_automation import trigger_fetch_process as trigger_hrd
+  File "/home/uphealthadmin/gramener/automation/etl/uphealth_automation.py", line 20, in <module>
+    encoding='utf-8'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 172, in open
+    data = method(path, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 1175, in read_excel
+    io, sheet_name=sheet_name, header=0 if header is ... else header, **kwargs
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 646, in __init__
+    raise ValueError("Unknown engine: {engine}".format(engine=engine))
+ValueError: Unknown engine: openpyxl
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-start_save_process (FunctionHandler) [0m
+[31mERROR   [0m20-Sep 13:22:44 [1;33mgramex:config[0m [32mPORT[0m Exception when importing automation_trigger.start_save_process[0m
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 347, in safeimport
+    module = __import__(path)
+  File "/home/uphealthadmin/gramener/automation/etl/automation_trigger.py", line 20, in <module>
+    from uphealth_automation import trigger_fetch_process as trigger_hrd
+  File "/home/uphealthadmin/gramener/automation/etl/uphealth_automation.py", line 20, in <module>
+    encoding='utf-8'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 172, in open
+    data = method(path, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 1175, in read_excel
+    io, sheet_name=sheet_name, header=0 if header is ... else header, **kwargs
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 646, in __init__
+    raise ValueError("Unknown engine: {engine}".format(engine=engine))
+ValueError: Unknown engine: openpyxl
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/config.py", line 665, in locate
+    return _locate(path, forceload)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 1607, in locate
+    nextmodule = safeimport('.'.join(parts[:n+1]), forceload)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 362, in safeimport
+    raise ErrorDuringImport(path, sys.exc_info())
+pydoc.ErrorDuringImport: problem in automation_trigger - ValueError: Unknown engine: openpyxl
+[31mERROR   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-start_save_process (FunctionHandler) invalid configuration[0m
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/services/__init__.py", line 308, in url
+    handler.setup(**spec.kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/handlers/functionhandler.py", line 27, in setup
+    kwargs, vars={'handler': None}, filename=f'url:{cls.name}'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 283, in build_transform
+    modules = module_names(tree, vars)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 86, in module_names
+    visit(node)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 71, in visit
+    importlib.import_module(module_name)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/uphealthadmin/gramener/automation/etl/automation_trigger.py", line 20, in <module>
+    from uphealth_automation import trigger_fetch_process as trigger_hrd
+  File "/home/uphealthadmin/gramener/automation/etl/uphealth_automation.py", line 20, in <module>
+    encoding='utf-8'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 172, in open
+    data = method(path, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 1175, in read_excel
+    io, sheet_name=sheet_name, header=0 if header is ... else header, **kwargs
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 646, in __init__
+    raise ValueError("Unknown engine: {engine}".format(engine=engine))
+ValueError: Unknown engine: openpyxl
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-start_push_process (FunctionHandler) [0m
+[31mERROR   [0m20-Sep 13:22:44 [1;33mgramex:config[0m [32mPORT[0m Exception when importing automation_trigger.start_push_process[0m
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 347, in safeimport
+    module = __import__(path)
+  File "/home/uphealthadmin/gramener/automation/etl/automation_trigger.py", line 20, in <module>
+    from uphealth_automation import trigger_fetch_process as trigger_hrd
+  File "/home/uphealthadmin/gramener/automation/etl/uphealth_automation.py", line 20, in <module>
+    encoding='utf-8'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 172, in open
+    data = method(path, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 1175, in read_excel
+    io, sheet_name=sheet_name, header=0 if header is ... else header, **kwargs
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 646, in __init__
+    raise ValueError("Unknown engine: {engine}".format(engine=engine))
+ValueError: Unknown engine: openpyxl
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/config.py", line 665, in locate
+    return _locate(path, forceload)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 1607, in locate
+    nextmodule = safeimport('.'.join(parts[:n+1]), forceload)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 362, in safeimport
+    raise ErrorDuringImport(path, sys.exc_info())
+pydoc.ErrorDuringImport: problem in automation_trigger - ValueError: Unknown engine: openpyxl
+[31mERROR   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-start_push_process (FunctionHandler) invalid configuration[0m
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/services/__init__.py", line 308, in url
+    handler.setup(**spec.kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/handlers/functionhandler.py", line 27, in setup
+    kwargs, vars={'handler': None}, filename=f'url:{cls.name}'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 283, in build_transform
+    modules = module_names(tree, vars)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 86, in module_names
+    visit(node)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 71, in visit
+    importlib.import_module(module_name)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/uphealthadmin/gramener/automation/etl/automation_trigger.py", line 20, in <module>
+    from uphealth_automation import trigger_fetch_process as trigger_hrd
+  File "/home/uphealthadmin/gramener/automation/etl/uphealth_automation.py", line 20, in <module>
+    encoding='utf-8'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 172, in open
+    data = method(path, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 1175, in read_excel
+    io, sheet_name=sheet_name, header=0 if header is ... else header, **kwargs
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 646, in __init__
+    raise ValueError("Unknown engine: {engine}".format(engine=engine))
+ValueError: Unknown engine: openpyxl
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-draft_fetch_process (FunctionHandler) [0m
+[31mERROR   [0m20-Sep 13:22:44 [1;33mgramex:config[0m [32mPORT[0m Exception when importing automation_trigger.draft_process[0m
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 347, in safeimport
+    module = __import__(path)
+  File "/home/uphealthadmin/gramener/automation/etl/automation_trigger.py", line 20, in <module>
+    from uphealth_automation import trigger_fetch_process as trigger_hrd
+  File "/home/uphealthadmin/gramener/automation/etl/uphealth_automation.py", line 20, in <module>
+    encoding='utf-8'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 172, in open
+    data = method(path, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 1175, in read_excel
+    io, sheet_name=sheet_name, header=0 if header is ... else header, **kwargs
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 646, in __init__
+    raise ValueError("Unknown engine: {engine}".format(engine=engine))
+ValueError: Unknown engine: openpyxl
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/config.py", line 665, in locate
+    return _locate(path, forceload)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 1607, in locate
+    nextmodule = safeimport('.'.join(parts[:n+1]), forceload)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 362, in safeimport
+    raise ErrorDuringImport(path, sys.exc_info())
+pydoc.ErrorDuringImport: problem in automation_trigger - ValueError: Unknown engine: openpyxl
+[31mERROR   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-draft_fetch_process (FunctionHandler) invalid configuration[0m
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/services/__init__.py", line 308, in url
+    handler.setup(**spec.kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/handlers/functionhandler.py", line 27, in setup
+    kwargs, vars={'handler': None}, filename=f'url:{cls.name}'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 283, in build_transform
+    modules = module_names(tree, vars)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 86, in module_names
+    visit(node)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 71, in visit
+    importlib.import_module(module_name)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/uphealthadmin/gramener/automation/etl/automation_trigger.py", line 20, in <module>
+    from uphealth_automation import trigger_fetch_process as trigger_hrd
+  File "/home/uphealthadmin/gramener/automation/etl/uphealth_automation.py", line 20, in <module>
+    encoding='utf-8'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 172, in open
+    data = method(path, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 1175, in read_excel
+    io, sheet_name=sheet_name, header=0 if header is ... else header, **kwargs
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 646, in __init__
+    raise ValueError("Unknown engine: {engine}".format(engine=engine))
+ValueError: Unknown engine: openpyxl
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-latest_data_update_track_data (FunctionHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-cancel_data_update (FunctionHandler) [0m
+[31mERROR   [0m20-Sep 13:22:44 [1;33mgramex:config[0m [32mPORT[0m Exception when importing automation_trigger.cancel_data_update[0m
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 347, in safeimport
+    module = __import__(path)
+  File "/home/uphealthadmin/gramener/automation/etl/automation_trigger.py", line 20, in <module>
+    from uphealth_automation import trigger_fetch_process as trigger_hrd
+  File "/home/uphealthadmin/gramener/automation/etl/uphealth_automation.py", line 20, in <module>
+    encoding='utf-8'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 172, in open
+    data = method(path, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 1175, in read_excel
+    io, sheet_name=sheet_name, header=0 if header is ... else header, **kwargs
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 646, in __init__
+    raise ValueError("Unknown engine: {engine}".format(engine=engine))
+ValueError: Unknown engine: openpyxl
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/config.py", line 665, in locate
+    return _locate(path, forceload)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 1607, in locate
+    nextmodule = safeimport('.'.join(parts[:n+1]), forceload)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 362, in safeimport
+    raise ErrorDuringImport(path, sys.exc_info())
+pydoc.ErrorDuringImport: problem in automation_trigger - ValueError: Unknown engine: openpyxl
+[31mERROR   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-cancel_data_update (FunctionHandler) invalid configuration[0m
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/services/__init__.py", line 308, in url
+    handler.setup(**spec.kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/handlers/functionhandler.py", line 27, in setup
+    kwargs, vars={'handler': None}, filename=f'url:{cls.name}'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 283, in build_transform
+    modules = module_names(tree, vars)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 86, in module_names
+    visit(node)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 71, in visit
+    importlib.import_module(module_name)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/uphealthadmin/gramener/automation/etl/automation_trigger.py", line 20, in <module>
+    from uphealth_automation import trigger_fetch_process as trigger_hrd
+  File "/home/uphealthadmin/gramener/automation/etl/uphealth_automation.py", line 20, in <module>
+    encoding='utf-8'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 172, in open
+    data = method(path, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 1175, in read_excel
+    io, sheet_name=sheet_name, header=0 if header is ... else header, **kwargs
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 646, in __init__
+    raise ValueError("Unknown engine: {engine}".format(engine=engine))
+ValueError: Unknown engine: openpyxl
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-data_updated_history (FunctionHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-get_track (FunctionHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-uploadfile (FunctionHandler) [0m
+[31mERROR   [0m20-Sep 13:22:44 [1;33mgramex:config[0m [32mPORT[0m Exception when importing automation_trigger.upload_file[0m
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 347, in safeimport
+    module = __import__(path)
+  File "/home/uphealthadmin/gramener/automation/etl/automation_trigger.py", line 20, in <module>
+    from uphealth_automation import trigger_fetch_process as trigger_hrd
+  File "/home/uphealthadmin/gramener/automation/etl/uphealth_automation.py", line 20, in <module>
+    encoding='utf-8'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 172, in open
+    data = method(path, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 1175, in read_excel
+    io, sheet_name=sheet_name, header=0 if header is ... else header, **kwargs
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 646, in __init__
+    raise ValueError("Unknown engine: {engine}".format(engine=engine))
+ValueError: Unknown engine: openpyxl
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/config.py", line 665, in locate
+    return _locate(path, forceload)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 1607, in locate
+    nextmodule = safeimport('.'.join(parts[:n+1]), forceload)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/pydoc.py", line 362, in safeimport
+    raise ErrorDuringImport(path, sys.exc_info())
+pydoc.ErrorDuringImport: problem in automation_trigger - ValueError: Unknown engine: openpyxl
+[31mERROR   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-uploadfile (FunctionHandler) invalid configuration[0m
+Traceback (most recent call last):
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/services/__init__.py", line 308, in url
+    handler.setup(**spec.kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/handlers/functionhandler.py", line 27, in setup
+    kwargs, vars={'handler': None}, filename=f'url:{cls.name}'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 283, in build_transform
+    modules = module_names(tree, vars)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 86, in module_names
+    visit(node)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 83, in visit
+    visit(child)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/transforms/transforms.py", line 71, in visit
+    importlib.import_module(module_name)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/uphealthadmin/gramener/automation/etl/automation_trigger.py", line 20, in <module>
+    from uphealth_automation import trigger_fetch_process as trigger_hrd
+  File "/home/uphealthadmin/gramener/automation/etl/uphealth_automation.py", line 20, in <module>
+    encoding='utf-8'
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 172, in open
+    data = method(path, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/cache.py", line 1175, in read_excel
+    io, sheet_name=sheet_name, header=0 if header is ... else header, **kwargs
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/io/excel.py", line 646, in __init__
+    raise ValueError("Unknown engine: {engine}".format(engine=engine))
+ValueError: Unknown engine: openpyxl
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-client-style (FunctionHandler) [0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:favicon (FileHandler) -90[0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m url:default (FileHandler) -100[0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m Loading service: test[0m
+[37mDEBUG   [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m Running callback: app[0m
+[32mINFO    [0m20-Sep 13:22:44 [1;33mgramex:__init__[0m [32mPORT[0m Listening on port 7788[0m
+[33mWARNING [0m20-Sep 13:22:46 [1;33mtornado.general:web[0m 404 GET /etl/ (49.249.112.98): /home/uphealthadmin/gramener/automation/etl/etl missing[0m
+[33mWARNING [0m20-Sep 13:22:46 [1;33mgramex:__init__[0m [32m7788[0m 404 GET /etl/ (49.249.112.98) 3.07ms default[0m
+[33mWARNING [0m20-Sep 13:22:52 [1;33mtornado.general:web[0m 404 GET /etl/ (49.249.112.98): /home/uphealthadmin/gramener/automation/etl/etl missing[0m
+[33mWARNING [0m20-Sep 13:22:52 [1;33mgramex:__init__[0m [32m7788[0m 404 GET /etl/ (49.249.112.98) 1.56ms default[0m
+[33mWARNING [0m20-Sep 13:23:01 [1;33mtornado.general:web[0m 404 GET /etl/tmp_test (20.219.141.96): /home/uphealthadmin/gramener/automation/etl/etl/tmp_test missing[0m
+[33mWARNING [0m20-Sep 13:23:01 [1;33mgramex:__init__[0m [32m7788[0m 404 GET /etl/tmp_test (20.219.141.96) 2.37ms default[0m
+[37mDEBUG   [0m20-Sep 13:23:04 [1;33mgramex:cache[0m [32m7788[0m Flushing /home/uphealthadmin/.config/gramexdata/session.json[0m
+[33mWARNING [0m20-Sep 13:23:12 [1;33mtornado.general:web[0m 404 GET /etl/ (49.249.112.98): /home/uphealthadmin/gramener/automation/etl/etl missing[0m
+[33mWARNING [0m20-Sep 13:23:12 [1;33mgramex:__init__[0m [32m7788[0m 404 GET /etl/ (49.249.112.98) 1.65ms default[0m
+[32mINFO    [0m26-Oct 05:20:26 [1;33mgramex:__init__[0m [32mPORT[0m Gramex 1.86.0 | /home/uphealthadmin/gramener/automation/etl | Python 3.7.13 (default, Mar 29 2022, 02:18:16)  [GCC 7.5.0][0m
+[37mDEBUG   [0m26-Oct 05:20:27 [1;33mgramex:__init__[0m [32mPORT[0m Loading service: eventlog[0m
+[37mDEBUG   [0m26-Oct 05:20:27 [1;33mgramex:__init__[0m [32mPORT[0m Loading service: app[0m
+[37mDEBUG   [0m26-Oct 05:20:27 [1;33mgramex:__init__[0m [32mPORT[0m Loading service: storelocations[0m
+[37mDEBUG   [0m26-Oct 05:20:27 [1;33mgramex:__init__[0m [32mPORT[0m Loading service: schedule[0m
+[32mINFO    [0m26-Oct 05:20:27 [1;33mgramex:__init__[0m [32mPORT[0m Initialising schedule:gramex_update[0m
+[37mDEBUG   [0m26-Oct 05:20:27 [1;33mgramex:scheduler[0m [32mPORT[0m schedule:gramex_update: Next run in 67172.5s[0m
+[32mINFO    [0m26-Oct 05:20:27 [1;33mgramex:__init__[0m [32mPORT[0m Initialising schedule:gramex_purge_otp[0m
+[37mDEBUG   [0m26-Oct 05:20:27 [1;33mgramex:scheduler[0m [32mPORT[0m schedule:gramex_purge_otp: Next run in 67232.5s[0m
+[37mDEBUG   [0m26-Oct 05:20:27 [1;33mgramex:__init__[0m [32mPORT[0m Loading service: url[0m
+[37mDEBUG   [0m26-Oct 05:20:27 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/ui/theme-Xhifl (FileHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:27 [1;33mgramex:__init__[0m [32mPORT[0m Gramex update ran recently. Deferring check.[0m
+/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/scipy/__init__.py:149: UserWarning: A NumPy version >=1.16.5 and <1.23.0 is required for this version of SciPy (detected version 1.16.4
+  UserWarning)
+[37mDEBUG   [0m26-Oct 05:20:27 [1;33mgramex:config[0m [32mPORT[0m Loading config: /home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/apps.yaml[0m
+[37mDEBUG   [0m26-Oct 05:20:27 [1;33mgramex:config[0m [32mPORT[0m Loading config: /home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/gramex/handlers/openapiconfig.yaml[0m
+[37mDEBUG   [0m26-Oct 05:20:28 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/ui/bootstrap4-0RdRG (FunctionHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:28 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/ui/theme-sgbHk (FileHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:28 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/ui/static-fK1Jt (FunctionHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:28 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-login (SimpleAuth) [0m
+[37mDEBUG   [0m26-Oct 05:20:28 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-logout (LogoutHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:28 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/ui/bootstrap4-oJoUf (FunctionHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:28 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/users-ljoAk (gramexadmin.AdminFormHandler) [0m
+[33mWARNING [0m26-Oct 05:20:28 [1;33mgramex:gramexadmin[0m [32mPORT[0m apps/admin2/users-ljoAk: Missing authhandler[0m
+[37mDEBUG   [0m26-Oct 05:20:28 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/auth-rules-fs6MB (gramexadmin.AdminFormHandler) [0m
+[33mWARNING [0m26-Oct 05:20:28 [1;33mgramex:gramexadmin[0m [32mPORT[0m apps/admin2/auth-rules-fs6MB: Missing authhandler[0m
+[37mDEBUG   [0m26-Oct 05:20:28 [1;33mgramex:__init__[0m [32mPORT[0m url:app/admin2/schedule-1dlfB (FunctionHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:28 [1;33mgramex:__init__[0m [32mPORT[0m url:app/admin2/alert-9qH1u (FunctionHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:28 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/webshell-97LRt (WebSocketHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:28 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/info-9WqPl (FunctionHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:28 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/ui/static-eTnqo (FunctionHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:28 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/webshell-static-f6LYB (FileHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:28 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/home-iNWCm (FileHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:28 [1;33mgramex:__init__[0m [32mPORT[0m url:apps/admin2/home-static-ZNYjb (FileHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:28 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-home (FileHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:28 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-dashboard_indicators (FunctionHandler) [0m
+/home/uphealthadmin/anaconda3/envs/gramex1.86/lib/python3.7/site-packages/pandas/core/frame.py:4238: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().rename(**kwargs)
+[32mINFO    [0m26-Oct 05:20:48 [1;33mcalculations:calculations[0m message[0m
+[32mINFO    [0m26-Oct 05:20:48 [1;33mphase1_calc:phase1_calc[0m message[0m
+[32mINFO    [0m26-Oct 05:20:49 [1;33mcalculations_niti:calculations_niti[0m message[0m
+[32mINFO    [0m26-Oct 05:20:49 [1;33mniti_etl:niti_etl[0m message[0m
+[32mINFO    [0m26-Oct 05:20:49 [1;33mcalculations_cm:calculations_cm[0m message[0m
+[32mINFO    [0m26-Oct 05:20:50 [1;33mcm_etl:cm_etl[0m message[0m
+[32mINFO    [0m26-Oct 05:20:50 [1;33mcalculations_cmo:calculations_cmo[0m message[0m
+[32mINFO    [0m26-Oct 05:20:50 [1;33mcmo_etl:cmo_etl[0m message[0m
+[32mINFO    [0m26-Oct 05:20:57 [1;33mnumexpr.utils:utils[0m NumExpr defaulting to 8 threads.[0m
+[37mDEBUG   [0m26-Oct 05:20:58 [1;33mgramex:__init__[0m [32mPORT[0m url:up-tsu-desktop/tmp_test (FormHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:58 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-fetch_indicators_data (FunctionHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:59 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-retryfetchIndicators (FunctionHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:59 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-download_data (FunctionHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:59 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-start_save_process (FunctionHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:59 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-start_push_process (FunctionHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:59 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-draft_fetch_process (FunctionHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:59 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-latest_data_update_track_data (FunctionHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:59 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-cancel_data_update (FunctionHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:59 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-data_updated_history (FunctionHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:59 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-get_track (FunctionHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:59 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-uploadfile (FunctionHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:59 [1;33mgramex:__init__[0m [32mPORT[0m url:uphealth_automation-client-style (FunctionHandler) [0m
+[37mDEBUG   [0m26-Oct 05:20:59 [1;33mgramex:__init__[0m [32mPORT[0m url:favicon (FileHandler) -90[0m
+[37mDEBUG   [0m26-Oct 05:20:59 [1;33mgramex:__init__[0m [32mPORT[0m url:default (FileHandler) -100[0m
+[37mDEBUG   [0m26-Oct 05:20:59 [1;33mgramex:__init__[0m [32mPORT[0m Loading service: test[0m
+[37mDEBUG   [0m26-Oct 05:20:59 [1;33mgramex:__init__[0m [32mPORT[0m Running callback: app[0m
+[32mINFO    [0m26-Oct 05:20:59 [1;33mgramex:__init__[0m [32mPORT[0m Listening on port 7788[0m
+[33mWARNING [0m26-Oct 05:21:01 [1;33mtornado.general:web[0m 404 GET /etl/tmp_test (20.219.141.96): /home/uphealthadmin/gramener/automation/etl/etl/tmp_test missing[0m
+[33mWARNING [0m26-Oct 05:21:01 [1;33mgramex:__init__[0m [32m7788[0m 404 GET /etl/tmp_test (20.219.141.96) 7.31ms default[0m
+[37mDEBUG   [0m26-Oct 05:21:02 [1;33mgramex:cache[0m [32m7788[0m Flushing /home/uphealthadmin/.config/gramexdata/session.json[0m
+[33mWARNING [0m26-Oct 05:22:01 [1;33mtornado.general:web[0m 404 GET /etl/tmp_test (20.219.141.96): /home/uphealthadmin/gramener/automation/etl/etl/tmp_test missing[0m
+[33mWARNING [0m26-Oct 05:22:01 [1;33mgramex:__init__[0m [32m7788[0m 404 GET /etl/tmp_test (20.219.141.96) 3.14ms default[0m
+[37mDEBUG   [0m26-Oct 05:22:02 [1;33mgramex:cache[0m [32m7788[0m Flushing /home/uphealthadmin/.config/gramexdata/session.json[0m
+[33mWARNING [0m26-Oct 05:22:20 [1;33mtornado.general:web[0m 404 GET /etl/ (49.36.171.203): /home/uphealthadmin/gramener/automation/etl/etl missing[0m
+[33mWARNING [0m26-Oct 05:22:20 [1;33mgramex:__init__[0m [32m7788[0m 404 GET /etl/ (49.36.171.203) 1.69ms default[0m
+[37mDEBUG   [0m26-Oct 05:22:22 [1;33mgramex:cache[0m [32m7788[0m Flushing /home/uphealthadmin/.config/gramexdata/session.json[0m

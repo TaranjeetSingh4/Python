@@ -1,0 +1,65 @@
+variables:
+  dashboards:
+    {
+      "health_ranking_dashboard":
+        {
+          "dashboard_name": "Health Ranking Dashboard",
+          "indicators_district_file": "data/subindicator_fetch_district.csv",
+          "indicators_block_file": "data/subindicator_fetch_blocks.csv",
+          "file_path": "data",
+          "download_files":
+            [
+              "indicator_13_data.csv",
+              "indicator_14_data.csv",
+              "indicator_15_data.csv",
+              "indicator_16_data.csv",
+              "subindicator_scores_blocks.csv",
+              "subindicator_scores_districts.csv",
+            ],
+        },
+      "niti_dashboard":
+        {
+          "dashboard_name": "NITI Dashboard",
+          "indicators_district_file": "data_niti/sub_indicator_data_niti_fetch.csv",
+          "indicators_block_file": "data_niti/sub_indicator_data_block_niti_fetch.csv",
+          "file_path": "data_niti",
+          "download_files":
+            [
+              "subindicator_scores_blocks_niti.csv",
+              "subindicator_scores_districts_niti.csv",
+            ],
+        },
+      "cm_dashboard":
+        {
+          "dashboard_name": "CM Dashboard",
+          "indicators_district_file": "data_cm/sub_indicator_data_cm_fetch.csv",
+          "indicators_block_file": "data_cm/sub_indicator_data_block_cm_fetch.csv",
+          "file_path": "data_cm",
+          "download_files":
+            [
+              "subindicator_scores_blocks_cm.csv",
+              "subindicator_scores_districts_cm.csv",
+            ],
+        },
+      "cmo_dashboard":
+        {
+          "dashboard_name": "CMO Dashboard",
+          "indicators_district_file": "data_cmo/sub_indicator_data_cmo_fetch.csv",
+          "indicators_block_file": "data_cmo/sub_indicator_data_block_cmo_fetch.csv",
+          "file_path": "data_cmo",
+          "download_files":
+            [
+              "subindicator_scores_blocks_cmo.csv",
+              "subindicator_scores_districts_cmo.csv",
+            ],
+        },
+      "phase2_dashboard":
+        {
+          "dashboard_name": "Program area Dashboard",
+          "indicators_district_file": "data/pa/pa_sub_indicator_data.csv",
+          "indicators_block_file": null,
+          "file_path" : "data/pa",
+          "download_files": ["pa_subindicator_scores_district.csv", "pa_subindicator_scores_division.csv","pa_subindicator_scores_state.csv"],
+        },
+
+    }

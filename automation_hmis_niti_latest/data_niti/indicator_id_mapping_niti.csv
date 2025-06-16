@@ -1,0 +1,6 @@
+type,domain,indicator_ids,indicator,indicator_id,calc_type
+ANC,ANC,indicator_1,% ANC registered in First trimester,indicator_1,p
+ANC,ANC,indicator_4,% of severe anaemic PW treated,indicator_4,p
+PNC,PNC,indicator_5,% of new born breastfed within one hour of birth,indicator_5,p
+delivery_care,delivery_care,indicator_6,% of live babies weighted at birth,indicator_6,p
+communicable_diseases,communicable_diseases,indicator_2,Success rate of positive tuberculosis cases,indicator_2,p
