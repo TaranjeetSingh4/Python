@@ -1,4 +1,0 @@
-type,domain,indicator_ids,indicator,indicator_id,calc_type
-JSY,JSY,indicator_36,% JSY Incentive,indicator_36,p
-TB,TB,indicator_37,Treatment Success Rate  as per total cases notified,indicator_37,p
-Fund,Fund,indicator_35,% of fund utilized against approved budget,indicator_35,p
