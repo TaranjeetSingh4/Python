@@ -1,0 +1,550 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>UP-TSU | Summary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="ui/bootstraptheme.css?primary=%230776FF&secondary=%23EAEEF2&success=%23F5F5F5&info=%238EF0FF&warning=%23EC6D43&danger=%234D4742&light=%23ffffff&dark=%23000000&body-bg=%23ffffff&font-family-base=open-sans&color4=%23528a2e&color5=%23b53735">
+  <link rel="stylesheet" href="ui/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/summary.css">
+  <link rel="stylesheet" href="css/by_domain.css">
+  <link rel="stylesheet" href="ui/leaflet/dist/leaflet.css">
+</head>
+
+<body>
+  {% set import json %}
+  {% set import gramex %}
+  {% set import up_tsu_app %}
+  {% set user_info = handler.get_session().get("user", {}) %}
+  {% set username = user_info.get("user","") %}
+  {% set from gramex.config import variables %}
+  {% if username == 'CM_Office1' %}
+    {% set handler.redirect('landing') %}
+  {% end %}
+  <i class="user_name" id="{{username}}"></i>
+  <div class="loading-icon loading">
+    <i class="fa fa-circle-o-notch fa-spin pos-cc"></i>
+  </div>
+  <script class="nav_bar" type="text/html" src="templates/nav_bar.html"></script>
+  <div class="w-100 position-fixed">
+    <script class="dropdown" type="text/html" src="templates/dropdown.html"></script>
+    <!--   <script class="container" type="text/html" src="templates/container2.html"></script> -->
+    <!--calander-->
+    <div class="card no-border-radius border-0 bg-white py-2">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between">
+          <div class="">
+            <ul class="nav d-flex">
+              <li class="nav-item align-self-center pr-2" id="for-date">
+                <img src="./img/calendar-face-2.svg" alt="icon" class="cursor-pointer">
+
+              </li>
+              <li class="nav-item p-9">
+                <p class="mb-0 text-uppercase">selected Time period</p>
+                <p class="mb-0 font-weight-bold selected_cal">-</p>
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <ul class="nav d-flex">
+              <li class="nav-item align-self-center">
+                <img src="./img/info_icon.png" alt="icon" class="info-btn cursor-pointer mr-3" data-toggle="modal" data-target="#info-modal">
+              </li>
+                <!-- <li class="nav-item align-self-center px-3">
+                <img src="./img/insight-face-2.svg" alt="icon" class="cursor-pointer mr-3" data-toggle="modal" data-target="#insights-modal">
+              </li> -->
+              <li class="nav-item align-self-center screenshot">
+                <img src="./img/screen-capture.png" alt="icon" class="cursor-pointer">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- sidenav -->
+      <script class="insights" type="text/html" src="templates/insights.html"></script>
+      <script class="info" type="text/html" src="templates/info.html"></script>
+    </div>
+  </div>
+  <div class="mt-5 pt-5"></div>
+  <div class="" id="cal">
+    <script class="calendar" type="text/html" src="templates/calendar.html"></script>
+  </div>
+  <div class="text-right" ><span class = "mr-2 landing_ticker sm3 data_last_updated mr-2"></span></div>
+  <!--main-box-->
+  <div class="main-box">
+    <div class="no_data text-center">No Data Available</div>
+    <div class="pb-3 pt-3 bg-image header_row">
+      <div class="card-title  px-3 ">
+        <p class="p-15 mb-0 text-uppercase" id="dis_div_name">
+        </p>
+        <script type="text/html" id="dis_div_template">
+          <span class="font-weight-bold">Summary</span> -
+          <%- _.includes(Object.keys(district_name_change), name.trim()) ? district_name_change[name] : name%>
+        </script>
+      </div>
+      <div class="d-flex justify-content-between">
+        <div class="col-2 px-0" id="first_card">
+          <div class="d-flex align-items-start pos-tr">
+            <a class="nav-link p-0  text-center">
+              <div class="bg-white px-2 py-1" id="rank_div">
+                <div id="rank_svg">
+                </div>
+                <script type="text/html" id="rank_svg_template">
+                  <svg width="22px" height="29px" viewBox="0 0 22 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>34806DD5-97D0-4666-BA0D-B98AA0885EEC@1.5x</title>
+                            <desc>Created with sketchtool.</desc>
+                            <defs>
+                                <rect id="path-1" x="0" y="0" width="22" height="30"></rect>
+                                <path d="M9.95613694,39.0990446 C5.27480638,39.0990446 1.47976015,35.3039984 1.47976015,30.6226678 C1.47976015,25.9412448 5.27480638,22.146291 9.95613694,22.146291 C14.6374675,22.146291 18.4325137,25.9413373 18.4325137,30.6226678 C18.4284457,35.3023342 14.6358033,39.0949766 9.95613694,39.0990446 Z M4.85255929,18.1373938 L14.5937358,18.1373938 L14.5937358,16.9687485 L4.85255929,16.9687485 L4.85255929,18.1373938 Z M2.00491089,15.4894506 L5.4738644,15.4894506 L5.4738644,1.52487874 L2.00491089,1.52487874 L2.00491089,15.4894506 Z M6.95316227,15.4894506 L12.5005293,15.4894506 L12.5005293,1.52487874 L6.95316227,1.52487874 L6.95316227,15.4894506 Z M13.9798271,15.4894506 L17.4487807,15.4894506 L17.4487807,1.52487874 L13.9798271,1.52487874 L13.9798271,15.4894506 Z M10.6957859,20.7039756 L10.6957859,19.6166917 L14.5937358,19.6166917 C15.410678,19.6166917 16.0730336,18.9544285 16.0730336,18.1373938 L16.0730336,16.9687485 L17.4487807,16.9687485 C18.2657229,16.9687485 18.9280785,16.3064853 18.9280785,15.4894506 L18.9280785,1.52487874 C18.9280785,0.707844031 18.2657229,0.0455808656 17.4487807,0.0455808656 L2.00491089,0.0455808656 C1.18787619,0.0455808656 0.525613024,0.707844031 0.525613024,1.52487874 L0.525613024,15.4894506 C0.525613024,16.3064853 1.18787619,16.9687485 2.00491089,16.9687485 L3.37326142,16.9687485 L3.37326142,18.1373938 C3.37326142,18.9544285 4.03552459,19.6166917 4.85255929,19.6166917 L9.21648801,19.6166917 L9.21648801,20.7039756 C3.73328554,21.1124467 -0.380549377,25.8886373 0.0280142034,31.3717473 C0.436485328,36.8549498 5.21258341,40.9687847 10.6957859,40.5603135 C16.1789883,40.1518424 20.2928233,35.3756519 19.8842597,29.8924494 C19.5181335,24.9774822 15.6108455,21.0701018 10.6957859,20.7039756 Z" id="path-3"></path>
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Rev1.4-Summary-1" transform="translate(-143.000000, -563.000000)">
+                                    <g id="Group-9" transform="translate(143.000000, 548.000000)">
+                                        <g id="Group-17" transform="translate(0.000000, 15.000000)">
+                                            <mask id="mask-2" fill="white">
+                                                <use xlink:href="#path-1"></use>
+                                            </mask>
+                                            <g id="Mask"></g>
+                                            <g mask="url(#mask-2)">
+                                                <g transform="translate(1.000000, -12.000000)">
+                                                    <mask id="mask-4" fill="white">
+                                                        <use xlink:href="#path-3"></use>
+                                                    </mask>
+                                                    <use id="Rank" stroke="#000" stroke-width="0.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                                    <text id="21" stroke="none" fill="none" font-family="OpenSans-Bold, Open Sans" font-size="10" font-weight="bold" line-spacing="12">
+                                                      <% var val_ = _.round(rank) >= 10 ? "4.14705882" : 7.14705882%>
+                                                        <tspan x="<%- val_ %>" y="35" fill="#000"><%- Math.round(rank) %></tspan>
+                                                    </text>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                </script>
+                <p class="p-8 mb-0 mt-1 font-weight-light text-dark text-uppercase wrap_text">
+                  rank</p>
+              </div>
+            </a>
+          </div>
+          <script class="legend_gauage_chart_script" type="text/html">
+          <div class="d-flex align-items-end pos-b pl-1 cursor-pointer" id="legend_gauage_chart">
+            <!-- <a class="nav-link p-0  text-center"> -->
+            <!-- <img src="./img/left-lables.png" alt="icon"> -->
+            <div class="legend_value">
+              <% if((!url.searchKey.district) && (url.searchKey.division)) { %>
+              <div>
+                <span class="dot_red"></span>
+                <span class="legend_data"> 13 - 18</span>
+              </div>
+              <div>
+                <span class="dot_yellow"></span>
+                <span class="legend_data"> 7 - 12</span>
+              </div>
+              <div>
+                <span class="dot_green"></span>
+                <span class="legend_data"> 1 - 6</span>
+              </div>
+              <% } else { %>
+              <div>
+                <span class="dot_red"></span>
+                <span class="legend_data"> 51 - 75</span>
+              </div>
+              <div>
+                <span class="dot_yellow"></span>
+                <span class="legend_data"> 26 - 50</span>
+              </div>
+              <div>
+                <span class="dot_green"></span>
+                <span class="legend_data"> 1 - 25</span>
+              </div>
+              <% } %>
+            </div>
+            <!-- </a> -->
+          </div>
+          </script>
+        </div>
+        <div class="col-8" id="second_card">
+          <div id="power-gauge">
+          </div>
+          <div id="perf-count" class="d-flex">
+            <script class="count" type="text/html">
+              <% _.each(data, function(item) { %>
+                <div class="mr-1 col-4 px-0">
+                <div class="col <%-item.class%> cursor-pointer py-3 my-1 text-white text-center ranking_click" data-toggle="modal" data-target=".bd-example-modal-lg">
+                  <p class="text-white m-0 p-9 filter_type"><%- item.filter_ty%> </p>
+                    <p class="pr-2 m-0 p-19"> <%- item.count %> </p> <p class="m-0 p-9 text-capitalize"><%- type %>s</p>
+                </div>
+                </div>
+              <% })%>
+            </script>
+          </div>
+          <div id="insight_div_container">
+          </div>
+        </div>
+        <script type="text/html" id="insight_div_template">
+          <span id="insights_div"><%- insights %></span>
+        </script>
+        <script class="profile_" type="text/html" src="templates/district_profile.html"></script>
+        <div class="col-2 px-0">
+          <div class="align-self-start justify-content-center d-flex pos-tl">
+            <a class="nav-link p-0 float-left text-center">
+              <div class="bg-white px-1 py-1 cursor-pointer" id="profile_div">
+                <img src="./img/Profile.png" alt="icon" class="mt-1 mb-2">
+                <p class="p-8 mb-0 mt-1 font-weight-light text-dark text-uppercase wrap_text">
+                  Profile</p>
+              </div>
+            </a>
+          </div>
+          <div class="align-self-center d-flex  pos-cr" id="map_img_pos">
+            <a class="nav-link bg-custom2 p-1  text-center" href="map">
+              <img src="./img/map-face2.png" alt="icon">
+            </a>
+          </div>
+          <div class="align-self-center d-flex  pos-br" id="trend_img_pos">
+            <a class="nav-link bg-custom2 p-1  text-white" href="trend">
+              <i class="fa fa-line-chart" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--switch section-->
+    <div class="px-2 py-3 card-title mb-0">
+      <p class="font-weight-bold text-uppercase text-dark mb-2">Composite Score Factor</p>
+      <label for="sw1" class="sm1 mb-0 domain_">By DOMAIN</label>
+      <div class="switch-primary round">
+        <input type="checkbox" id="switch-domain" class="bydomain">
+        <label for="switch-domain">
+          <div class="invisible">jk</div>
+        </label>
+      </div>
+      <label for="sw1" class="sm1 mb-0 type_">By TYPE</label>
+    </div>
+    <div class="px-3" id="cards_div"></div>
+    <div class="px-3" id="cards_div2"></div>
+    <script type="text/html" id="cards_template">
+      <div class="row">
+        <% _.forEach(data, function(d, i) { %>
+          <div class="col-6 d-flex pr-2 pl-2 mb-2">
+            <div class="<%- d.class %> w-100 p-3 cursor-pointer urlfilter card_data Ante Natal cards_block" data-attr="<%- d.type %>">
+              <div class="row mx-0 pb-2 ">
+                <div class="col-12 px-0">
+                  <img src="./img/<%- d.type %>.png" alt="<%- d.type %>">
+                </div>
+              </div>
+              <div class="row mx-0">
+                <div class="col-9 px-0 rank_type_block">
+                  <span class="p-12 mb-0 font-weight-light text-light text-uppercase wrap_text">
+                    <%- d.type %>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <% }); %>
+      </div>
+    </script>
+    <script type="text/html" id="cards_template2">
+      <div class="row">
+        <% _.forEach(data, function(d, i) { %>
+          <div class="col-6 d-flex pr-2 pl-2 mb-2">
+            <div class="<%- d.class %> w-100 p-3 cursor-pointer urlfilter card_data Ante Natal cards_block" data-attr="<%- d.type %>">
+              <div class="row mx-0 pb-2 ">
+                <div class="col-12 px-0">
+                  <img src="./img/<%- d.type %>.png" alt="<%- d.type %>">
+                </div>
+              </div>
+              <div class="row mx-0">
+                <div class="col-9 px-0 rank_type_block">
+                  <span class="p-12 mb-0 font-weight-light text-light text-uppercase wrap_text">
+                    <%- d.type %>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <% }); %>
+      </div>
+    </script>
+    <!-- </div> -->
+    <div class="px-3 py-3 card-title mb-0">
+      <p class="font-weight-bold text-uppercase text-dark mb-2"><span class="color-green ">Top 5 </span>and <span class="color-red">Bottom 5</span> performers</p>
+      <div id="switch2">
+        <label for="sw2" class="sm1 mb-0 text-uppercase division__">Division</label>
+        <div class="switch-primary round">
+          <input type="checkbox" id="switch-district" class="division_switch">
+          <label for="switch-district">
+            <div class="invisible">jk</div>
+          </label>
+        </div>
+        <label for="sw2" class="sm1 mb-0 text-uppercase district__">Districts</label>
+      </div>
+    </div>
+    <!--bars-->
+    <script class="bars_data" type="text/html" src="templates/performing_district.html"></script>
+    <script class="bars_data2" type="text/html" src="templates/performing_district.html"></script>
+    <!--space needed-->
+    <div class="pb-5 mb-2 with_out_map"></div>
+    <!--footer-->
+    {% if username != 'CM_Office1' %}
+    <div class="footer d-none position-fixed pos-b">
+      <nav class="nav nav-pills no-border-radius justify-content-between w-100 text-center">
+        <a class="d-flex justify-content-between flex-column nav_4 nav-link col no-border-radius px-1 py-2 text-center font-weight-light active text-uppercase p-11" href="./summary"><img src="./img/fill-white.png" alt="icon" class="d-block mx-auto">Summary</a>
+        <a class="d-flex justify-content-between flex-column nav_4 nav-link col no-border-radius px-1 py-2 font-weight-light text-uppercase p-11" href="./deepdive"><img src="./img/deepdrive-light.png" alt="icon" class="d-block mx-auto">Deep Dive</a>
+        <a class="d-flex justify-content-between flex-column nav_4 nav-link col no-border-radius px-1 py-2 font-weight-light text-uppercase p-11" href="./analytics"><img src="./img/analytics.png" alt="icon" class="d-block mx-auto">Analytics</a>
+        <a id="executive_nav" class=" d-flex justify-content-between flex-column nav_4 nav-link col no-border-radius px-1 py-2 text-center font-weight-light text-uppercase p-11 executive-sum-nav" href="./executive-summary"><img src="./img/executive_grey.svg" alt="icon" class="d-block mx-auto">Executive</a>
+      </nav>
+    </div>
+    {% end %}
+  </div>
+  <!--modal for popup-text-->
+  <div class="modal fade bg-rgba-4 bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title district__ranking px-5 text-center">District Ranking</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <script type="text/html" id="ranking">
+            <table class="table border-0 p-10 mb-2">
+            <tbody>
+              <% if(data === undefined || data.length === 0) { %>
+              <tr>
+                <div class="justify-content-between">
+                  <h6 class="alert alert-info p-14 font-weight-bold m-4 text-center text-uppercase">No data available</h6>
+                </div>
+              </tr>
+              <% } else { %>
+                <% _.each(data, function(row) { %>
+                  <% if(row.rank !== 0) { %>
+                    <tr class="bar_click cursor-pointer">
+                      <th rowspan="1" class="border-0 text-dark font-weight-normal text-right pr-1 p-11"><%- _.includes(Object.keys(district_name_mapping), row.district) ? district_name_mapping[row.district] : row.district %></th>
+                      <td class="border-0 font-weight-bold text-dark font-italic text-center px-0" rowspan="1"><%- row.rank %></td>
+                      <td colspan="3" class="border-0 w-50 pl-1">
+                        <div class="d-flex">
+                          <div class="custom-round bg-color-i2 text-white text-left cm_bar pl-1 pr-0" width="<%- (row.cm_index * 100) > 100 ? 100 : (row.cm_index * 100) %>"><%- row.cm_index? _.round(row.cm_index,2) : _.round(row.cm_index,2) %> </div>
+                          <span class="border border-dark border-top-0 border-bottom-0 border-left-0 pm_bar" width="<%- ((row.pm_index-row.cm_index) * 100) > 100 ? 100 : ((row.pm_index-row.cm_index) * 100) %>" data-toggle="tooltip" title="<%- row.pm_index %>"></span>
+                        </div>
+                      </td>
+                    </tr>
+                  <% } %>
+                <% }) %>
+              <% } %>
+            </tbody>
+          </table>
+        </script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    /* exported indicator_mapping, user_data, js_user, prof_dist,defaults */
+    var defaults = {% raw up_tsu_app.get_config(handler) %}
+    var indicator_mapping = {{ json.dumps(variables['indicator-mapping']) }}
+    var prof_dist = {{ json.dumps(variables['data_prof_dist']) }}
+    var user_data = {{ json.dumps(user_info) }}
+    var js_user = {{ json.dumps(username) }}
+
+    // update defaults date related values
+    fetch("./get_maximum_date").then(function (response) {
+      return response.json();
+    }).then(function (resp) {
+      let timestmp = resp ? resp[0][0] : null
+      if (timestmp) {
+        let date = new Date(timestmp);
+        let month = (parseInt(date.getMonth()) + 1)
+        if (month < 10) {
+          month = '0' + month;
+        }
+        let date_format = (date.getFullYear() + '-' + (month) + '-' + "01");
+        // let financial_yr_start = (date.getMonth() + 1) >= 4 ? parseInt(date.getFullYear()) : parseInt(date.getFullYear()) - 1;
+        let yr = parseInt(date.getFullYear());
+        let month_name = date.toLocaleString('en-us', { month: "short" })
+        let month_year_name = date.toLocaleString('en-us', { month: "short", year: "numeric" })
+        defaults["date"] = date_format;
+        defaults["year"] = yr;
+        defaults["month"] = month_name;
+        $(".selected_cal").text(month_year_name)
+      }
+    }).catch(function (err) {
+      console.log("latest date error", err)
+    });
+
+
+  </script>
+  <script src="ui/jquery/dist/jquery.min.js"></script>
+  <script src="ui/lodash/lodash.min.js"></script>
+  <script src="ui/moment/min/moment-with-locales.min.js"></script>
+  <script src="ui/popper.js/dist/umd/popper.min.js"></script>
+  <script src="ui/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="ui/topojson/dist/topojson.min.js"></script>
+  <script type="text/javascript" src="ui/leaflet/dist/leaflet.js"></script>
+  <script src="ui/g1/dist/g1.min.js"></script>
+  <script src="ui/d3/build/d3.min.js"></script>
+  <script type="text/javascript" src="components/gauge.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/summary.js"></script>
+  <script src="js/log_capture.js"></script>
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "//uphealthdashboard.in/matomo/";
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '3']);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+
+  <!-- <script type="text/javascript" src="js/deepdive.js"></script> -->
+  <!--
+D3: ui/d3/build/d3.min.js
+Lodash: ui/lodash/lodash.min.js
+Moment: ui/moment/min/moment-with-locales.min.js
+Noty: ui/noty/lib/noty.min.js
+Daterangepicker: ui/daterangepicker/daterangepicker.js
+Leaflet: ui/leaflet/dist/leaflet.js
+TopoJSON: ui/topojson/dist/topojson.min.js
+g1: ui/g1/dist/g1.min.js
+-->
+  <script>
+  /* global master, dict_, url, url_update*/
+  // var url = g1.url.parse(location.href)
+  // var dict_ = {}
+  // $('body')
+  //   .urlfilter({
+  //     selector: '.urlfilter',
+  //     target: 'pushState'
+  //   })
+  //   .on('urlfilter', master)
+
+  $(document).on("click", "#closeNav", function() {
+      $("#aside-nav").hide();
+    })
+    .on("click", "body", function(event) {
+      if (['aside-nav'].indexOf($(event.target).attr('id')) < 0) {
+        if ($(event.target).attr('id') === 'openNav' && $("#aside-nav").css("display") === 'none')
+          $("#aside-nav").show();
+        else
+          $("#aside-nav").hide();
+      }
+    })
+    .on("click", "#c", function() {
+      $("#right-aside-nav").hide();
+    })
+    .on("click", "body", function(event) {
+      if (['right-aside-nav'].indexOf($(event.target).attr('id')) < 0) {
+        if ($(event.target).attr('id') === 'p' && $("#right-aside-nav").css("display") === 'none')
+          $("#right-aside-nav").show();
+        else
+          $("#right-aside-nav").hide();
+      }
+    })
+    .on("click", "#cc", function() {
+      $("#right-aside-nav1").hide();
+    })
+    .on("click", "body", function(event) {
+      if (['right-aside-nav1'].indexOf($(event.target).attr('id')) < 0) {
+        if ($(event.target).attr('id') === 'pp' && $("#right-aside-nav1").css("display") === 'none')
+          $("#right-aside-nav1").show();
+        else
+          $("#right-aside-nav1").hide();
+      }
+    })
+    // .on('click', '.calendar', function() {
+    //     dict_['cal'] = $(this).children().eq(0).text() === "Performance for" ? "for" : "to"
+    //     console.log(dict_)
+    //     url.update(dict_)
+    //     var new_url_ = url.join('calendar')
+    //     window.location.href = new_url_
+    // })
+    .on('change', '#sel1', function() {
+      dict_['district'] = this.value
+      url_update(dict_)
+      master()
+    })
+    .on('click', '.prev_view', function() {
+      var referrer = document.referrer;
+      window.location.href = referrer
+    })
+    .on('click', '.card_data', function() {
+      dict_['card'] = $(this).attr('data-attr')
+      url.update(dict_, 'add')
+      var new_url = url.join('deepdive')
+      window.location.href = new_url
+    })
+    .on('click', '#close-profile', function() {
+      $('#district-stats').hide()
+      $('body').css('overflow', 'auto')
+    })
+    .on('click', '#profile_div', function() {
+      $('#district-stats').show()
+      $('body').css('overflow', 'hidden')
+    })
+
+  window.addEventListener('load', function() {
+    // Test the createGauge function
+    // var gauge_data = {
+    //   data: [{
+    //     name: 'low',
+    //     value: 18
+    //   }, {
+    //     name: 'med',
+    //     value: 32
+    //   }, {
+    //     name: 'high',
+    //     value: 50
+    //   }],
+    //   circle_value: 60,
+    //   composite_score: 0.69,
+    //   insights: "-4% vs Previous Month"
+    // }
+
+    // Gauge("#power-gauge", gauge_data)
+  });
+
+  </script>
+  <!-- <script>
+    var temp_data_model = $('#cards_template').html()
+    var userlist = _.template(temp_data_model);
+    // render the template using hte data
+    var data_value = [{
+      type: "coverage",
+      rank: 21,
+      value: 0.65,
+      insight: "+6% v/s Previous Month",
+      class: "bg-custom3"
+    }, {
+      type: "Quality",
+      rank: 22,
+      value: 0.72,
+      insight: "+5% v/s Previous Month",
+      class: "bg-custom4"
+    }]
+
+
+    var tem_html = userlist({
+      data: data_value,
+      type: "type"
+    })
+    $('#cards_div').html(tem_html);
+  </script> -->
+  {% include 'templates/google-analytics-script.html' %}
+</body>
+
+</html>

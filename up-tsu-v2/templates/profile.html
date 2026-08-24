@@ -1,0 +1,82 @@
+<div class="card no-border-radius border-0 bg-transparent pb-2 with_out_map">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4 col-sm-2 col-md-2 pb-2 col-lg-1 pr-0 align-self-end">
+          <p class="text-primary p-11 mb-0 font-weight-bold rank_value">Rank 0</p>
+          <p class="h2 mb-0 text-dark"><span class="rank_per">0</span><img src="img/arrow1.png" alt="arrow-up" class="mb-2"></p>
+        </div>
+        <div class="col-6 col-sm-8 col-md-8 col-lg-10 pl-0 align-self-end mb-2 text-center"
+        id="area_chart_div">
+        <div id="area_chart"></div>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 pb-2 col-lg-1 pl-1 align-self-end profile">
+          <div class="text-center bg-light-1 rounded  w-100 w-sm-50 ml-auto">
+            <img src="img/Profile.png" alt="Profile" id="pp">
+            <p class="p-9 mb-2">Profile</p>
+          </div>
+          <div class="sidenav" id="right-aside-nav1">
+            <div class="container-fluid position-absolute pos-l px-0 bg-light vh-100">
+              <div class="bg-gradient py-3">
+                <div class="row mx-0">
+                  <div class="col-10 pr-0 align-self-center">
+                    <p class="text-light mb-0 p-12">
+                      <%= data.district %>
+                    </p>
+                  </div>
+                  <div class="col-2 pl-0 align-self-center text-right">
+                    <div class="close-icon">
+                      <a href="javascript:void(0)" class="closebtn h3 mb-0 text-light" id="cc">&times;</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="data-panel pt-2">
+                  <div class="row mx-0">
+                    <% _.each(data.profile_all, function(d){ %>
+                      <div class="col-4 pr-0">
+                        <div class="row mx-0">
+                          <div class="col-3 col-sm-1 px-0">
+                            <img src="img/<%-d.name%>.png" alt="population" class="img-fluid">
+                          </div>
+                          <div class="col-9 col-sm-11 pr-0 pl-1 text-left">
+                            <p class="nav-link p-8 p-0 text-light mb-0">
+                              <%- d.name %>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="mb-0 mt-2 p-19 text-light">
+                          <%- d.value %>
+                        </p>
+                      </div>
+                      <% }) %>
+                  </div>
+                </div>
+              </div>
+              <div class="nav-area pt-2">
+                <ul class="nav nav_ d-flex flex-column">
+                  <% _.each(data.profiles_inner_data, function(d){ %>
+                    <li class="nav-item">
+                      <a class="nav-link px-3 text-dark p-11 border border-secondary border-left-0 border-right-0 border-top-0" href="#">
+                        <div class="row mx-0">
+                          <div class="col-10 px-0">
+                            <p class="mb-0 p-13 font-weight-light color-purple">
+                              <%- d.name %>
+                            </p>
+                          </div>
+                          <div class="col-2 px-0 text-right">
+                            <p class="mb-0 font-weight-bold p-13 text-dark">
+                              <%- d.value %>
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <% }) %>
+                </ul>
+                <p class="font-italic p-10 mb-0 mt-2 px-3 color-light-dark">Note: If required we can provide links specific to pages</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

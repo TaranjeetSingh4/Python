@@ -1,0 +1,324 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>UP-TSU | Analytics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="ui/bootstraptheme.css?primary=%230776FF&secondary=%234F4644&success=%23F5F5F5&info=%238EF0FF&warning=%23E09C24&danger=%23DB5F3B&light=%23ffffff&dark=%23000000&body-bg=%23ffffff&font-family-base=open-sans&">
+  <link rel="stylesheet" href="node_modules/bootstrap-select/dist/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="ui/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/summary.css">
+  <link rel="stylesheet" href="css/analytics.css">
+  <link rel="stylesheet" type="text/css" href="ui/noty/lib/noty.css">
+</head>
+
+<body>
+  {% set import json %}
+  {% set import gramex %}
+  {% set import up_tsu_app %}
+  {% set import numpy as np %}
+  {% set from gramex.config import variables %}
+  {% set user_info = handler.get_session().get("user", {}) %}
+  {% set username = user_info.get("user","") %}
+  {% if username == 'CM_Office1' %}
+    {% set handler.redirect('landing') %}
+  {% end %}
+  <i class="user_name" id="{{username}}"></i>
+  <div class="loading-icon loading">
+    <i class="fa fa-circle-o-notch fa-spin pos-cc"></i>
+  </div>
+  <script class="nav_bar" type="text/html" src="templates/nav_bar.html"></script>
+  <div class="w-100 position-fixed">
+    <div class="w-100 rounded-0 border-0 bg-white custom-drop">
+      <div class="w-100 d-flex dropdown compare-dropdown position-relative">
+        <button class="btn w-100 dropdown-toggle text-uppercase no-border-radius border-0 bg-dark text-white p-2 pl-3 filter-dropdown text-left" data-toggle="dropdown">By Timeperiod</button>
+        <div class="dropdown-menu mx-auto pos-c w-10">
+          <a id="filter_type" class="urlfilter text-uppercase filter-dropdown-item dropdown-item hover-bg-primary px-2 hover-fg-light" href="?view=time">By Timeperiod</a>
+          <a id="filter_domain" class="urlfilter text-uppercase filter-dropdown-item dropdown-item hover-bg-primary px-2 hover-fg-light" href="?view=geo">By Geography</a>
+        </div>
+      </div>
+    </div>
+    <div class="card no-border-radius border-0 py-1">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between">
+          <div class="time-view">
+            <ul class="nav d-flex text-uppercase">
+              <li class="nav-item align-self-center pr-2">
+                <img src="./img/calendar-face-2.svg" alt="icon" id="date-for" class="cursor-pointer">
+              </li>
+              <li class="nav-item p-9">
+                <p class="mb-0">From</p>
+                <p class="mb-0 font-weight-bold" id="cal-from-label">Apr 2017</p>
+              </li>
+              <li class="nav-item align-self-center pr-2 ml-4">
+                <img src="./img/calendar-face-2.svg" alt="icon" id="date-to" class="cursor-pointer">
+              </li>
+              <li class="nav-item p-9">
+                <p class="mb-0">To</p>
+                <p class="mb-0 font-weight-bold" id="cal-to-label">Apr 2018</p>
+              </li>
+            </ul>
+          </div>
+          <div class="geo-view">
+            <ul class="nav d-flex text-uppercase">
+              <li class="nav-item align-self-center pr-2">
+                <img src="./img/calendar-face-2.svg" alt="icon" id="for-date" class="cursor-pointer">
+              </li>
+              <li class="nav-item p-9">
+                <p class="mb-0 text-uppercase">Selected Time Period</p>
+                <p class="mb-0 font-weight-bold" id="date-label">Apr 2017</p>
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <ul class="nav d-flex">
+              <li class="nav-item align-self-center screenshot">
+                <img src="./img/screen-capture.png" alt="icon" class="cursor-pointer">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script class="insights" type="text/html" src="templates/insights.html"></script>
+  </div>
+  <!-- main box -->
+  <div class="pt-5 mt-4"></div>
+  <div class="cal" id="cal">
+    <script class="calendar" type="text/html" src="templates/calendar.html"></script>
+  </div>
+  <div id="analytics-container">
+    <div class="time-view">
+      <div class=" px-3 py-3 bg-image">
+        <div class="d-flex justify-content-between mb-2 phase2">
+          <p class="mb-0 p-15 align-self-center font-weight-bold text-uppercase">Overall Composite Score</p>
+          <div class="d-flex">
+            <div class="d-flex">
+              <div class="custom_lable1 align-self-center">
+              </div>
+              <div class="p-11 align-self-center pl-2 pr-3" id="curr-label">
+                Apr 17
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="custom_lable2 align-self-center">
+              </div>
+              <div class="p-11 align-self-center pl-2" id="prev-label">
+                Mar 17
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-title sm1 mb-2 row justify-content-between">
+          <div class="form-check-inline col-2 px-0 ml-1 mr-0">
+            <label class="custom-control custom-radio d-flex mb-0">
+              <input id="radio-select1-division" value="division" name="radio" type="radio" class="custom-control-input align-self-center radio-select1">
+              <span class="custom-control-label align-self-top radioselect1"></span>
+              <span class="custom-control-description align-self-center mt-9p">Division</span>
+            </label>
+          </div>
+          <div class="form-check-inline col-2 px-0 mr-0">
+            <label class="custom-control custom-radio d-flex mb-0">
+              <input id="radio-select1-district" value="district" name="radio" type="radio" class="custom-control-input align-self-center radio-select1">
+              <span class="custom-control-label align-self-top radioselect1"></span>
+              <span class="custom-control-description align-self-center mt-9p">District</span>
+            </label>
+          </div>
+          <div class="form-check-inline col-2 px-0 mr-0">
+            <label class="custom-control custom-radio d-flex mb-0">
+              <input id="radio-select1-block" value="block" name="radio" type="radio" class="custom-control-input align-self-center radio-select1">
+              <span class="custom-control-label align-self-top radioselect1"></span>
+              <span class="custom-control-description align-self-center mt-9p">Block</span>
+            </label>
+          </div>
+          <div class="for-blocks d-none col-3 px-0 mr-0">
+            <script class="time-district-dropdown" type="text/html" src="templates/analytics_dropdown.html"></script>
+          </div>
+        </div>
+        <div class="card-title position-relative">
+          <script class="analytics-dropdown" type="text/html" src="templates/analytics_dropdown.html">
+          </script>
+        </div>
+        <div class="card-title mb-0">
+          <div class="d-flex">
+            <div class="col-3 px-0 align-self-center">
+              <h2 class="mb-0 font-weight-bold" id="comp_score">0.88</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="geo-view">
+      <div class=" px-3 py-3 bg-image">
+        <div class="d-flex justify-content-between mb-2 phase2">
+          <p class="mb-0 p-15 align-self-center font-weight-bold text-uppercase">Overall Composite Score</p>
+        </div>
+        <div class="card-title sm1 mb-2 d-flex justify-content-between">
+          <div class="form-check-inline">
+            <label class="custom-control custom-radio d-flex mb-0">
+              <input id="radio-select-division" name="select" type="radio" class="custom-control-input align-self-center radio-select" value="division">
+              <span class="custom-control-label align-self-center mb-4"></span>
+              <span class="custom-control-description align-self-center">Division</span>
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="custom-control custom-radio d-flex mb-0">
+              <input id="radio-select-district" name="select" type="radio" class="custom-control-input align-self-center radio-select" value="district">
+              <span class="custom-control-label align-self-center mb-4"></span>
+              <span class="custom-control-description align-self-center">Districts</span>
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="custom-control custom-radio d-flex mb-0">
+              <input id="radio-select-block" name="select" type="radio" class="custom-control-input align-self-center radio-select" value="block">
+              <span class="custom-control-label align-self-center mb-4"></span>
+              <span class="custom-control-description align-self-center">Blocks</span>
+            </label>
+          </div>
+          <div class="for-blocks d-none col-3 px-0 mr-0">
+            <script class="geo-district-dropdown" type="text/html" src="templates/analytics_dropdown.html"></script>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="card-title position-relative col-6 px-0 mr-1">
+            <script class="left-dropdown" type="text/html" src="templates/analytics_dropdown.html"></script>
+          </div>
+          <div class="card-title position-relative col-6 px-0 ml-1">
+            <script class="right-dropdown" type="text/html" src="templates/analytics_dropdown.html"></script>
+          </div>
+        </div>
+        <div class="card-title mb-0">
+          <div class="d-flex">
+            <div class="col-6 px-0 align-self-center">
+              <h2 id="left-value" class="mb-0 font-weight-bold">0.88</h2>
+            </div>
+            <div class="col-6 px-0 align-self-center text-right">
+              <h2 id="right-value" class="mb-0 font-weight-bold">0.88</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="px-0 py-3">
+      <ul class="nav nav-pills mb-3 nav-fill px-3" role="tablist">
+        <li class="nav-item analytics-pill cursor-pointer" data-attr="indicator">
+          <a class="nav-link active p-1 rounded-0 custom-bg-clr3 text-dark sm1 text-uppercase" data-toggle="pill" role="tab" aria-controls="pills-contact" aria-selected="false">All Indicators</a>
+        </li>
+        <li class="nav-item analytics-pill cursor-pointer" data-attr="domain">
+          <a class="nav-link p-1 rounded-0 custom-bg-clr3 text-dark sm1 text-uppercase" data-toggle="pill" role="tab" aria-controls="pills-home" aria-selected="true">By Domain</a>
+        </li>
+        <li class="nav-item analytics-pill cursor-pointer" data-attr="type">
+          <a class="nav-link p-1 rounded-0 custom-bg-clr3 text-dark sm1 border text-uppercase border-white border-top-0 border-bottom-0" data-toggle="pill" role="tab" aria-controls="pills-profile" aria-selected="false">By Type</a>
+        </li>
+      </ul>
+      <script class="analytics-accordion" type="text/html" src="templates/analytics_accordion.html"></script>
+    </div>
+    <div class="card-title px-3 trend-analysis">
+      <div class="d-flex">
+        <div class="w-25"><p class="sm1 text-uppercase font-weight-bold mb-2">Trend Analysis</p></div>
+        <div class="d-flex w-75">
+          <div class="mx-auto p-11 color-blue"><input type="checkbox" id="up-avg" checked="checked" class="anltics_input_text"> UP Average</div>
+          <div class="mx-auto p-11 color-gray"><input type="checkbox" id="best-dist" checked="checked" class="anltics_input_text">Best Performing district</div>
+        </div>
+      </div>
+      <div class="card-title position-relative">
+        <div class="dropdown bootstrap-select w-100 bg-white text-dark p-14 custom-border">
+          <script class="trendline-dropdown" type="text/html" src="templates/analytics_dropdown.html">
+          </script>
+        </div>
+      </div>
+      <div class="d-block">
+        <div class="trendline" id="trendline"></div>
+      </div>
+    </div>
+  </div>
+  <div class="pt-5"></div>
+  <!--footer-->
+  {% if username != 'CM_Office1' %}
+  <div class="footer position-fixed pos-b d-none">
+    <nav class="nav nav-pills no-border-radius justify-content-between w-100 text-center">
+      <a class="d-flex justify-content-between flex-column  nav_4 nav-link col no-border-radius px-1 py-2 text-center font-weight-light text-uppercase p-11" href="./summary"><img src="./img/fill-white.png" alt="icon" class="d-block mx-auto">Summary</a>
+      <a class="d-flex justify-content-between flex-column  nav_4 nav-link col no-border-radius px-1 py-2 font-weight-light text-uppercase p-11" href="./deepdive"><img src="./img/deepdrive-light.png" alt="icon" class="d-block mx-auto">Deep Dive</a>
+      <!-- <a class="d-flex justify-content-between flex-column  nav_4 nav-link col no-border-radius px-1 py-2 font-weight-light text-uppercase p-11" href="./niti_deepdive"><img src="./img/deepdrive-light.png" alt="icon" class="d-block mx-auto">Niti Deepdive</a> -->
+      <a class="d-flex justify-content-between flex-column  nav_4 nav-link col no-border-radius px-1 py-2 font-weight-light text-uppercase p-11 active" href="./analytics"><img src="./img/analytics.png" alt="icon" class="d-block mx-auto">Analytics</a>
+      <a id="executive_nav" class=" d-flex justify-content-between flex-column nav_4 nav-link col no-border-radius px-1 py-2 text-center font-weight-light text-uppercase p-11 executive-sum-nav" href="./executive-summary"><img src="./img/executive_grey.svg" alt="icon" class="d-block mx-auto">Executive</a>
+    </nav>
+  </div>
+  {% end %}
+  <script type="text/javascript">
+    /* exported user_data, defaults, data_map, accordion_data_map, indicator_mapping */
+    var user_data = {{ json.dumps(user_info) }}
+    var defaults = {% raw up_tsu_app.get_config(handler) %}
+    var data_map = {{ json.dumps(variables['data-map']) }}
+    var accordion_data_map = {{ json.dumps(variables['accordion-data-map']) }}
+    var indicator_mapping = {{ json.dumps(variables['indicator-mapping']) }}
+
+      // update defaults date related values
+      fetch("./get_maximum_date").then(function (response) {
+        return response.json();
+      }).then(function (resp) {
+        let timestmp = resp ? resp[0][0] : null
+        if (timestmp) {
+          let date = new Date(timestmp);
+          let month = (parseInt(date.getMonth()) + 1)
+          if (month < 10) {
+            month = '0' + month;
+          }
+          let date_format = (date.getFullYear() + '-' + (month) + '-' + "01");
+          // let financial_yr_start = (date.getMonth() + 1) >= 4 ? parseInt(date.getFullYear()) : parseInt(date.getFullYear()) - 1;
+          let yr = parseInt(date.getFullYear());
+          let month_name = date.toLocaleString('en-us', { month: 'short' })
+          // let month_num = (date.getMonth() + 1)
+          let m = Math.floor(date.getMonth() / 3) + 4;
+          let qtr = m > 4 ? m - 4 : m;
+          defaults["date"] = date_format;
+          defaults["month"] = month_name;
+          defaults["quarter"] = `Q${qtr}`;
+          defaults["year"] = yr;
+        }
+      }).catch(function (err) {
+        console.log("latest date error", err)
+      });
+
+
+  </script>
+  <script src="ui/jquery/dist/jquery.min.js"></script>
+  <script src="ui/lodash/lodash.min.js"></script>
+  <script src="ui/moment/min/moment-with-locales.min.js"></script>
+  <script src="ui/popper.js/dist/umd/popper.min.js"></script>
+  <script src="ui/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+  <script src="ui/g1/dist/g1.min.js"></script>
+  <script src="ui/d3/build/d3.min.js"></script>
+  <script src="ui/noty/lib/noty.min.js"></script>
+  <script src="ui/numeral/min/numeral.min.js"></script>
+  <script src="ui/vega/build/vega.min.js"></script>
+  <script type="text/javascript" src="components/trendline.js"></script>
+  <script type="text/javascript" src="components/combo_chart.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/analytics.js"></script>
+  <script src="js/log_capture.js"></script>
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "//uphealthdashboard.in/matomo/";
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '3']);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+
+  {% include 'templates/google-analytics-script.html' %}
+</body>
+
+</html>

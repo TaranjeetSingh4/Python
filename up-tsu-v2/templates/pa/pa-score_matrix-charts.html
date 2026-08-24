@@ -1,0 +1,63 @@
+<div class="tab-content overflow-auto custm-mh-1 pb-5" id="pills-tabContent">
+  <% _.each(indicator_data, function(ind, i){ %>
+  <div class="tab-pane fade <%- (ind.indicator_id == _indicator_id) ? 'show active' : '' %> px-0" id="pills-indicator_<%- ind.indicator_id %>"
+    role="tabpanel" aria-labelledby="pills-state-tab">
+    <div class="px-4">
+      <div class="d-flex justify-content-between border-bottom border-color13">
+        <h4><span class="sm3 font font-italic text-color1">UP AVERAGE</span></h4>
+        <h4><span class="sm3 font font-italic text-color17"><%- isFinite(ind.avg) ? ind.avg.toFixed(2) : 'NA'  %></span>
+        </h4>
+      </div>
+      <div class="d-flex justify-content-between">
+        <h4><span class="sm3 font font-italic text-color1">BEST PERFORMING DISTRICT</span></h4>
+        <h4><span class="sm3 font font-italic text-color1"><%- ind.best_dist %> <%- isFinite(ind.best) ? '-' : 'NA' %>
+            <%- isFinite(ind.best) ? ind.best.toFixed(2) : '' %></span></h4>
+      </div>
+    </div>
+    <!-- cards -->
+    <% var sel_data = data[ind.indicator_id] %>
+    <% $('.no_data_card').addClass('d-none') %>
+    <% if(sel_data) { %>
+    <% _.each (regions, function(region){ %>
+    <% var i = _.filter(sel_data, (d)=> d[compare_type] == region)[0] %>
+    <% if(i == undefined){  i = {}; i[compare_type] = region } else {} %>
+    <div class="card border-radius border-0 shadow mx-3 pt-3 mt-2 mb-2" id="card-active">
+      <div class="card-header bg-transparent border-0 d-flex px-4 justify-content-between align-items-center">
+        <h6 class="text-color1 font-weight-bolder"><%- region %></h6>
+        <h5 class="text-color1 d-flex align-items-center"><span class="opacity-50 sm3 date-label">JUL-19 to
+            DEC-19</span>
+        </h5>
+      </div>
+      <div class="d-flex align-items-start px-4 justify-content-between my-2">
+        <div class="h4 mb-0">
+          <div class="text-color1 sm3 mb-1"><span
+              class="font-weight-bold <%=  _.isFinite(i.up_avg_change) ? ((i.up_avg_change != undefined && i.up_avg_change.toFixed(2) <= 0) ? 'text-color23': 'text-color12') : 'text-color1' %>"><%- (i && _.isFinite(i.up_avg_change)) ?  Math.abs(i.up_avg_change.toFixed(2)) : 'NA' %></span>
+            wrt. UP Avg.
+          </div>
+          <div class="text-color1 sm3"><span
+              class="font-weight-bold <%= _.isFinite(i.dist_best_change) ? ((i.up_avg_change != undefined  && i.dist_best_change.toFixed(2) <= 0) ? 'text-color23': 'text-color12') : 'text-color1' %>"><%- (i && _.isFinite(i.dist_best_change)) ? Math.abs(i.dist_best_change.toFixed(2)) : 'NA' %></span>
+            Best Perf. Dist
+          </div>
+        </div>
+        <div class="display-2 mt-n1 text-right">
+          <div class="sm5 font-weight-bold color-cell" data-max="100">
+            <%- (i && _.isFinite(i.value)) ? i.value.toFixed(2) : 'NA' %>
+          </div>
+        </div>
+      </div>
+      <!-- charts -->
+      <div class="mb-2 chart pa-area-chart <%- slug_(i[compare_type]+' '+ind.indicator_id) %>">
+        <% if(chart_data[i[compare_type]] && chart_data[i[compare_type]][ind.indicator_id]) { %>
+        <% setTimeout(function() { %>
+        <% var _data = chart_data[i[compare_type]][ind.indicator_id]; render_area_chart(_data, slug_(i[compare_type]+' '+ind.indicator_id)); %>
+        <% },250) %>
+        <% } %>
+      </div>
+    </div>
+    <% })%>
+    <% } else { %>
+    <% render_no_data_template() %>
+    <% } %>
+  </div>
+  <% }) %>
+</div>

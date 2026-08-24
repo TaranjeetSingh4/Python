@@ -1,0 +1,85 @@
+<% url = g1.url.parse(location.href) %>
+
+<div class="cal_pos datepicker-container h-100 d-none z-999 pos-b position-fixed w-100">
+<div class="w-320 z-999 pos-br mr-3 position-fixed b-65" >
+  <div class="mt-n3 p-0">
+    <div class="mb-3 bg-white border-radius h-325 shadow">
+      <div class="cal-nav-pills">
+        <span class="text-right cursor-pointer h4 position-absolute p-1 mr-2 mt-2 right-0 text-secondary" id="close-cal">
+          <i class="fa fa-times float-right sm3"></i>
+        </span>
+        <ul class="nav nav-pills cust-nav-pills justify-content-between px-3 py-3 border-color-12 border-bottom mb-3 h3" id="pills-tab" role="tablist">
+          <% cal_vals = ['year', 'quarter', 'month'] %>
+          <% _.each(cal_vals, function(d){ %>
+          <li class="nav-item pointer-events-none" data-tab="<%- d %>">
+            <a class="nav-link <%- (d == url.searchKey.type)?'active':'' %> text-color31 font-weight-bold sm3 rounded-0 px-1 pb-1 cal-id" id="pills-<%- d %>-tab" data-toggle="pill" href="#pills-<%- d %>" role="tab" aria-controls="pills-<%- d %>" aria-selected="false">By <%- _.capitalize(d) %></a>
+          </li>
+          <% }) %>
+        </ul>
+
+      </div>
+      <div class="tab-content h-100" id="pills-tabContent">
+        <% _.each(cal_vals, function(tab){%>
+        <div class="tab-pane fade <%- (tab == (url.searchKey.type))?'show active':''%>" id="pills-<%- tab %>" role="tabpanel" aria-labelledby="pills-<%- tab %>-tab">
+          <div class="card-title mb-0 py-2 no-border-radius border-0 px-0 h4">
+            <div class="row mx-0 sm3 font-weight-bold">
+              <div class="col-3 text-center text-dark">
+                <p class="mb-0 py-1 fa fa-chevron-left float-right color-dark cursor-pointer"></p>
+              </div>
+              <div class="col-6 text-center">
+                <p class="mb-0 px-2 py-1 text-dark year cursor-pointer" data-attr="<%-current_year%>">
+                  <%-current_year%> - <%-current_year+1%>
+                </p>
+              </div>
+              <div class="col-3 text-center text-dark">
+                <p class="mb-0 py-1 fa fa-chevron-right float-left color-dark cursor-pointer"></p>
+              </div>
+            </div>
+          </div>
+          <% if(tab == 'year'){ %>
+          <div class="d-flex flex-wrap justify-content-between h4 mb-4 pb-3 px-3 n-child-mr-0">
+            <% _.each(d_year, function(yr){ %>
+            <span class="year_div y_<%- yr %>  bg-color14 text-color3 cal-cell cal-tab-<%-tab %> rounded sm3 w-23 text-middle py-3 font-weight-600 text-center mb-1 cursor-pointer %>" data-attr="<%- yr %>"><span class="opacity-70 lh-1"><%- yr %></span></span>
+            <% }) %>
+          </div>
+          <% } else if( tab == 'quarter'){ %>
+          <div class="px-3 mb-4 pb-3">
+            <%_.each(quarter, function(d, i){%>
+            <div class="col-3 h4 cursor-pointer text-center pb-3 px-1 float-left">
+              <p class="mb-0 bg-color14 text-color3 sm3 font-weight-bold btn p-1 w-100 quarter <%-i%>" data-attr="<%-i%>">
+                <%-i%>
+                <span class="d-block sm1 text-secondary font-weight-light text-uppercase"><%-d%></span>
+              </p>
+            </div>
+            <%})%>
+          </div>
+          <% } else if( tab == 'month'){ %>
+          <div class="px-3 mb-4 pb-3">
+            <table id="pa_table" class="table collapse-border text-center h4 cal-text mb-0 month_row">
+              <tbody>
+                <% _.each(months, function(d, i){%>
+
+                <% if (month_row_start.indexOf(i) >= 0){ %>
+                <tr>
+                  <% } %>
+                  <td class=" bg-color14 text-color3 border-radius px-2 py-3 <%-d%> text-uppercase sm3 mb-0 border border-5 border-white month cursor-pointer" data-attr="<%-d%>" data-year="<%- current_year %>">
+                    <%- d %>
+                  </td>
+                  <% if (month_row_end.indexOf(i) >= 0){ %>
+                </tr>
+                <% } %>
+                <% }) %>
+              </tbody>
+            </table>
+          </div>
+          <% } %>
+          <div class="h3 mb-0 pos-b">
+            <button type="button" class="btn bg-color20 text-white py-2 lh-4 font-weight-bold br-tl-tr-0 w-100 sm3 ls-1 submit tail-br">APPLY</button>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

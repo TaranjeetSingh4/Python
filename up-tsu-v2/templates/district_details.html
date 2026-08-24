@@ -1,0 +1,9 @@
+<p class="p-12 mb-0 font-italic">Rank <%- rank %> </p>
+<p class="p-11 mb-0"># of Blocks <span class="font-weight-bold"><%- blocks_count %></span></p>
+<p class="h3 mb-0 font-weight-light district-color <%= district %>"><%- score.toFixed(2) %>
+<% if(diff > 0) { %>
+  <i class="fa fa-long-arrow-up positive-arrow"></i>
+<% } else { %>
+  <i class="fa fa-long-arrow-down negative-arrow"></i>
+<% } %>
+</p>

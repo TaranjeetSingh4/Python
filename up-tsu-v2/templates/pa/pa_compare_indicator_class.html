@@ -1,0 +1,11 @@
+<%var url = g1.url.parse(location.href)%>
+<div class="d-flex">
+  <select class="selectpicker w-100 dd-bg-1 show-menu-arrow" id="comp-indicator-select"
+    data-style="bg-transparent text-color22 font-weight-bold h6 mb-0 pt-0">
+    <%_.each(pa_classes, function(d){ %>
+    <option value="<%-d %>" class="text-white font-weight-bold border-color13 border-bottom py-2 my-1 indicator-cls"
+      <%- d ==  url.searchKey.class ? 'selected' : '' %>>
+      <%- d %></option>
+    <% })%>
+  </select>
+</div>

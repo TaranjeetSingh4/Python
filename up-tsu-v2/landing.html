@@ -1,0 +1,111 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+
+{% set import json %}
+{% set from gramex.config import variables %}
+
+{% set user_info = handler.get_session().get("user", {}) %}
+{% set username = user_info.get("user", "") %}
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>UP-TSU | Mobile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+    href="ui/bootstraptheme.css?primary=%2351A9FF&secondary=%23979797&success=%23767676&info=%233E81ED&warning=%23F9A77E&danger=%23F46448&light=%23ffffff&dark=%23000000&color1=%23424852&color2=%239b9b9b&color3=%23344052&color4=%232C3138&body-bg=%23F4F6F8&font-family-base=open-sans&">
+  <link rel="stylesheet" href="ui/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/landing.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+
+<body>
+  <i class="user_name" id="{{username}}"></i>
+  <div class="loading-icon loading d-none">
+    <i class="fa fa-circle-o-notch fa-spin pos-cc"></i>
+  </div>
+  <script class="nav_bar" type="text/html" src="templates/nav_bar.html"></script>
+  <script src="templates/land-template.html" type="text/html" id="program-area"></script>
+  <div class="px-2 mt-30 z-9 position-relative">
+    <script class="nav_bar" type="text/html" src="templates/nav_bar.html"></script>
+  </div>
+  <div class="mx-5"></div>
+  <div class="footer position-fixed w-100 z-9 fixed-bottom">
+    <nav class="nav nav-pills no-border-radius justify-content-between w-100 text-center">
+      <a class="d-flex justify-content-between flex-column  nav_4 nav-link col no-border-radius px-1 py-2 text-center font-weight-light text-uppercase p-11 active" href="./landing"><img src="./img/fill-white.png" alt="icon" class="d-block mx-auto">Home</a>
+      <a class="d-flex justify-content-between flex-column  nav_4 nav-link col no-border-radius px-1 py-2 font-weight-light text-uppercase p-11" href="./deepdive_cm"><img src="./img/deepdrive-light.png" alt="icon" class="d-block mx-auto">Deep Dive</a>
+    </nav>
+  </div>
+</body>
+
+{% set scripts = '' %}
+<script src="ui/jquery/dist/jquery.min.js"></script>
+<script src="ui/popper.js/dist/umd/popper.min.js"></script>
+<script src="ui/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="ui/lodash/lodash.min.js"></script>
+<script src="ui/moment/min/moment-with-locales.min.js"></script>
+<script src="ui/g1/dist/g1.min.js"></script>
+<script src="ui/noty/lib/noty.js"></script>
+<script src="js/common.js"></script>
+<script src="js/log_capture.js"></script>
+<script type="text/javascript">
+/* exported user_data, pa_config, indicator_mapping */
+  var user_data = {{ json.dumps(user_info) }}
+  var pa_config = {{ json.dumps(variables['landing_page_list']) }}
+
+  // update pa_config with below api
+  fetch("./cm_indicators_data").then(function (response) {
+    return response.json();
+  }).then(function (resp) {
+    let ind = {}
+    pa_config.forEach(k => {
+      ind = resp.find(p => p.indicator_id == k.indicator_id);
+      if (ind) {
+        // let ind_date = new Date(ind.date);
+        // ind_date = ind_date.toLocaleString('en-us', { month: 'short', year: 'numeric' });
+        k.value = ind.value;
+        k.date = ind.date;
+      }
+    });
+
+    $('#program-area').template({ data: pa_config })
+
+  }).catch(function (err) {
+    console.log("landing_page_list indicators - ", err)
+  });
+
+  var indicator_mapping = {{ json.dumps(variables['indicator-mapping_cm']) }}
+  // Program Blocks template
+  // $('#program-area').template({ data: pa_config })
+  $(".side-nav-menu").one('template', function () {
+    $('.last_date').text(moment().date() < 15 ? moment().format('[01] MMM YY') : moment().format('[15] MMM YY'))
+  }).template({ nav_data: pa_config.dashboard_data_pa, user_data: user_data })
+</script>
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function () {
+    var u = "//uphealthdashboard.in/matomo/";
+    _paq.push(['setTrackerUrl', u + 'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+    g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+<!--
+  D3: ui/d3/build/d3.min.js
+  Lodash: ui/lodash/lodash.min.js
+  Moment: ui/moment/min/moment-with-locales.min.js
+  Noty: ui/noty/lib/noty.min.js
+  Daterangepicker: ui/daterangepicker/daterangepicker.js
+  Leaflet: ui/leaflet/dist/leaflet.js
+  TopoJSON: ui/topojson/dist/topojson.min.js
+  g1: ui/g1/dist/g1.min.js-->
+</html>

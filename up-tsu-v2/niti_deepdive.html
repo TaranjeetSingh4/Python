@@ -1,0 +1,179 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>UP-TSU | DeepDive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="ui/bootstraptheme.css?primary=%230776FF&secondary=%234F4644&success=%23F5F5F5&info=%238EF0FF&warning=%23E09C24&danger=%23DB5F3B&light=%23ffffff&dark=%23000000&body-bg=%23ffffff&font-family-base=open-sans&color4=%23528a2e&color5=%23b53735&">
+  <link rel="stylesheet" href="ui/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/summary.css">
+  <link rel="stylesheet" href="css/deepdive.css">
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-sweetalert/dist/sweetalert.css">
+</head>
+<body>
+  {% set import json %}
+  {% set import gramex %}
+  {% set import numpy as np %}
+  {% set import up_tsu_app %}
+  {% set from gramex.config import variables %}
+  {% set user_info = handler.get_session().get("user", {}) %}
+  {% set username = user_info.get("user","") %}
+  {% set user_data = {} %}
+  {% for k, v in user_info.items() %}
+    {% set user_data[k] = np.asscalar(v) if isinstance(v, np.generic) else v %}
+  {% end %}
+  <i class="user_name" id="{{username}}"></i>
+  <div class="loading-icon loading">
+    <i class="fa fa-circle-o-notch fa-spin pos-cc"></i>
+  </div>
+  <script class="nav_bar" type="text/html" src="templates/nav_bar.html"></script>
+  <div class="w-100 position-fixed">
+    <script class="dropdown" type="text/html" src="templates/dropdown.html"></script>
+    <div class="custom-cls bg-custom1 card-header pb-2 pt-3 border-white border-top-0 border-left-0 border-right-0" id="indicator-top-bar">
+      <i class="m-1 back-button text-white fa fa-chevron-left cursor-pointer"></i>
+      <span class="text-white" id="name"></span>
+    </div>
+    <div class="card no-border-radius border-0 bg-white py-1">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between">
+          <div class="">
+            <ul class="nav d-flex">
+              <li class="nav-item align-self-center pr-2">
+                <img src="./img/calendar-face-2.svg" alt="icon" id="for-date" class="cursor-pointer">
+              </li>
+              <li class="nav-item p-9">
+                <p class="mb-0 text-uppercase">Selected Time period</p>
+                <p class="mb-0 font-weight-bold text-uppercase" id="for-date-label">Jul 2018</p>
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <ul class="nav d-flex">
+              <!-- <li class="nav-item align-self-center px-3">
+                <img src="./img/insight-face-2.svg" alt="icon" class="cursor-pointer mr-3" data-toggle="modal" data-target="#insights-modal">
+              </li> -->
+              <li class="nav-item align-self-center screenshot">
+                <img src="./img/screen-capture.png" alt="icon" class="cursor-pointer">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script class="insights" type="text/html" src="templates/insights.html"></script>
+  </div>
+  <div class="pt-5 mt-5"></div>
+  <div class="" id="cal">
+    <script class="calendar" type="text/html" src="templates/calendar.html"></script>
+  </div>
+  <!-- calendar -->
+  <div id="deepdive-container pt-5 mt-5" class="deepdive-mainview">
+    <div id="for-accordion">
+      <script class="accordion" type="text/html" src="templates/deepdive_accordion.html"></script>
+    </div>
+    <div id="for-bars">
+      <script class="bars" type="text/html" src="templates/deepdive_bars.html"></script>
+    </div>
+    <div id="for-table mb-5 pb-5">
+      <div class="d-flex justify-content-between">
+        <div class="ml-2 switch table-switch mx-0 my-1 text-uppercase">
+          <label class="sm1" for="level1">By Division</label>
+          <div class="switch-primary round">
+            <input type="checkbox" id="level" name="level">
+            <label for="level"><div class="invisible">switch</div></label>
+          </div>
+          <label class="sm1" for="level1">By District</label>
+        </div>
+        <div class="text-right mt-1"><span class = "mr-2 landing_ticker sm3 data_last_updated"></span></div>
+      </div>
+      <div class="table-container">
+        <script class="table" type="text/html" src="templates/deepdive_table.html"></script>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="mx-5"></div>
+  {% if username != 'CM_Office1' %}
+  <div class="footer position-fixed pos-b d-none">
+    <nav class="nav nav-pills no-border-radius justify-content-between w-100 text-center">
+      <a class="d-flex justify-content-between flex-column  nav_4 nav-link col no-border-radius px-1 py-2 font-weight-light text-uppercase p-11 active" id="deepdive_url" href="./niti_deepdive"><img src="./img/deepdrive-light.png" alt="icon" class="d-block mx-auto">Niti Deepdive</a>
+    </nav>
+  </div>
+  {% else %}
+  <div class="footer position-fixed pos-b d-none">
+    <nav class="nav nav-pills no-border-radius justify-content-between w-100 text-center">
+      <a class="d-flex justify-content-between flex-column  nav_4 nav-link col no-border-radius px-1 py-2 text-center font-weight-light text-uppercase p-11" href="./landing"><img src="./img/fill-white.png" alt="icon" class="d-block mx-auto">Home</a>
+      <a class="d-flex justify-content-between flex-column  nav_4 nav-link col no-border-radius px-1 py-2 font-weight-light text-uppercase p-11 active" href="./deepdive"><img src="./img/deepdrive-light.png" alt="icon" class="d-block mx-auto">Deep Dive</a>
+    </nav>
+  </div>
+  {% end %}
+  <script type="text/javascript">
+    /* exported user_data, defaults, data_map, indicator_mapping */
+    var user_data = {{ json.dumps(user_data) }}
+    var defaults = {% raw up_tsu_app.get_config(handler) %}
+
+    // update defaults date related values
+    fetch("./get_niti_maximum_date").then(function (response) {
+      return response.json();
+    }).then(function (resp) {
+      let timestmp = resp ? resp[0][0] : null
+      if (timestmp) {
+        let date = new Date(timestmp);
+        let month = (parseInt(date.getMonth()) + 1)
+        if (month < 10) {
+          month = '0' + month;
+        }
+        let date_format = (date.getFullYear() + '-' + (month) + '-' + "01");
+        // let financial_yr_start = (date.getMonth() + 1) >= 4 ? parseInt(date.getFullYear()) : parseInt(date.getFullYear()) - 1;
+        let yr = parseInt(date.getFullYear());
+        let month_name = date.toLocaleString('en-us', { month: 'short' })
+        defaults["date"] = date_format;
+        defaults["year"] = yr;
+        defaults["month"] = month_name;
+      }
+    }).catch(function (err) {
+      console.log("latest date error", err)
+    });
+
+    var data_map = {{ json.dumps(variables['data-map-niti']) }}
+    var indicator_mapping = {{ json.dumps(variables['indicator-mapping_niti']) }}
+    if(user_data.user == 'CM_Office1')
+      indicator_mapping = {{ json.dumps(variables['indicator-mapping_cm']) }}
+    if(user_data.user == 'CM_Office1')
+      data_map = {{ json.dumps(variables['data-map-cm']) }}
+  </script>
+  <script src="ui/jquery/dist/jquery.min.js"></script>
+  <script src="ui/lodash/lodash.min.js"></script>
+  <script src="ui/moment/min/moment-with-locales.min.js"></script>
+  <script src="ui/popper.js/dist/umd/popper.min.js"></script>
+  <script src="ui/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="ui/g1/dist/g1.min.js"></script>
+  <script src="ui/d3/build/d3.min.js"></script>
+  <script type="text/javascript" src="node_modules/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
+  <script src="node_modules/moment-fquarter/moment-fquarter.min.js"></script>
+  <script src="ui/numeral/min/numeral.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/deepdive.js"></script>
+  <script src="js/log_capture.js"></script>
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "//uphealthdashboard.in/matomo/";
+      _paq.push(['setTrackerUrl', u + 'matomo.php']);
+      _paq.push(['setSiteId', '3']);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+
+  {% include 'templates/google-analytics-script.html' %}
+</body>
+</html>

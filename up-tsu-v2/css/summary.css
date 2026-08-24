@@ -1,0 +1,169 @@
+.row.mx-0.quarter_row {
+  margin-top: 20px !important;
+}
+p.mb-0.cal-bg.p-12.text-light.btn.p-2.w-100 {
+  height: 65px;
+  font-size: 18px !important;
+  padding-top: 20px !important;
+}
+.calendar_templet_class {
+  margin-top: 10px;
+}
+.card-title.mb-0.cal-bg.py-2.no-border-radius.border-0.px-0.pt-10 {
+  margin-top: 30px !important;
+}
+.calendar_header_class {
+  margin-top: 20px;
+}
+.bg-custom1 {
+  background-color: #191614;
+}
+.bg-custom2 {
+  background-color: #4d4742;
+  height: 32px;
+  width: 32px;
+}
+.bg-custom3 {
+  background-color: #e09c24;
+}
+.bg-custom4 {
+  background-color: #db5f3b !important;
+}
+.bg-image {
+  background-image: url(../img/face-2-bg.svg);
+  background-size: cover;
+}
+.card-header a:before,
+.custom-cls.card-header > a:before {
+  float: right !important;
+  font-family: "FontAwesome", sans-serif;
+  padding-right: 5px;
+}
+.custom-cls.card-header > a:before {
+  font-size: 18px;
+  content: "\f0d8";
+}
+.custom-cls.card-header a.collapsed:before {
+  float: right !important;
+  content: "\f0d7";
+  font-size: 18px;
+}
+.card-header a:before {
+  content: "\f068";
+}
+.card-header a.collapsed:before {
+  float: right !important;
+  content: "\f067";
+}
+.panel-title a:active,
+.panel-title a:focus,
+.panel-title a:hover {
+  text-decoration: none;
+}
+.drop {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+}
+.new_card {
+  opacity: 0.6;
+  margin-left: -16px;
+  margin-bottom: -15px !important;
+  font-size: 13px;
+  padding-left: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  bottom: 0;
+  color: #faebd7;
+}
+/* switch-primary::before {
+  background-color: red;
+} */
+/* .new_card,
+switch-primary::after {
+  background-color: #000;
+} */
+.new_card::after {
+  background-color: #000;
+}
+#cal {
+  display: none;
+}
+#year_selected,
+p#active_q {
+  background-color: #fff;
+  color: #00f !important;
+}
+#year_selected {
+  color: #000 !important;
+}
+.dot_green,
+.dot_red,
+.dot_yellow {
+  height: 10px;
+  width: 10px;
+  background-color: #9b2f2d;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot_green,
+.dot_yellow {
+  background-color: #528a2e;
+}
+.dot_yellow {
+  background-color: #e09c24;
+}
+#legend_gauage_chart,
+#legend_gauage_chart.clicked {
+  width: 80px !important;
+  background-color: #fff !important;
+  font-size: 12px;
+}
+#legend_gauage_chart.clicked {
+  width: 20px !important;
+}
+.legend_data {
+  padding-left: 5px;
+}
+#insights_div {
+  display: block;
+  width: auto;
+  word-wrap: break-word;
+  text-align: center;
+  margin-top: -15px;
+  font-size: 12px;
+}
+.rank_type_block {
+  height: 80px;
+  line-height: 1.1;
+}
+.color1 {
+  background-color: #4f4543 !important;
+}
+.color2 {
+  background-color: #786449 !important;
+}
+.color3 {
+  background-color: #db5f3b !important;
+}
+.color4 {
+  background-color: #7d7371 !important;
+}
+.color5 {
+  background-color: #e19c25 !important;
+}
+.color6 {
+  background-color: #b59972 !important;
+}
+.division_display {
+  display: none;
+}
+.bg-color-i2 {
+  background-color: #91bbd4 !important;
+}
+.custom-round {
+  border-radius: 20px !important;
+}
+.pointer-none {
+  pointer-events: none;
+}

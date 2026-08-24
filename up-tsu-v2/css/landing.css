@@ -1,0 +1,19 @@
+.footer {
+  bottom: 0;
+}
+.footer .nav-pills .nav-link {
+  color: rgba(225, 225, 225, 0.4);
+  background-color: #4d4742;
+  border-radius: 0px;
+}
+.footer .nav-pills .nav-link.active,
+.footer .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #ec6d43;
+}
+.modal-left {
+  z-index: 9999;
+}
+.card-icon {
+  width: 125px;
+}

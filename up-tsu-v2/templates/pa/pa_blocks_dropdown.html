@@ -1,0 +1,31 @@
+<!-- block level modal -->
+<div class="modal fade modal-z-ind dropdown-template" id="district_dropdown_2" tabindex="-1" role="dialog" aria-labelledby="block dropdown" aria-hidden="true">
+  <div class="modal-dialog border-radius top-34 tail-tr custom-tail-tr bg-white w-320 m-auto" role="document">
+    <div class="modal-content border-0 text-center">
+      <div class="modal-header text-center py-3 d-block">
+        <h5 class="modal-title font-15 text-color11" id="block-header">
+        Please Select <%- (dist_type == 'division_list')?' Dist.':' Blocks' %></h5>
+      </div>
+      <div class="modal-body m-0 px-0 py-0 row border-0">
+        <div class="col-6 border-right border-color13 overflow-auto custm-mh-2 py-3">
+          <ul class="nav text-left flex-column blocks_type">
+          <% _.each(data, function(d){ %>
+            <li class="mb-3 font-weight-bolder block_type nav-item text-color1 font-13 d-flex justify-content-between <%- ( (d == area)?'':'opacity-40')  %> " value="<%- d %>"><span
+            class="w-75"><%- _.toUpper(d) %></span><span class="ml-4"><img src="img/triangle-black.png" alt="traingle" class="block_arrow <%- ((d == area)?'':'d-none')  %>"
+              width="10px" /></span></li>
+          <% }) %>
+          </ul>
+        </div>
+        <div class="col-6 py-3 overflow-auto custm-mh-2 pr-0">
+          <ul class="nav text-left flex-column block_dropdown_vals">
+          </ul>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <div class="h3 mb-0 pos-b pt-3">
+            <button type="button" class="btn bg-color20 text-white py-2 lh-4 font-weight-bold br-tl-tr-0 w-100 sm3 ls-1 block-dropdown-submit" data-dismiss="modal" >APPLY</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

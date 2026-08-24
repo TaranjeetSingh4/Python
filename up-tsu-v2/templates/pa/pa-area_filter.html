@@ -1,0 +1,24 @@
+<div class="dropdown-menu position-relative comp-dropdown-menu p-0 m-0 border-0 border-radius show" role="menu" aria-labelledby="sort"
+  x-placement="bottom-start">
+  <!----dropdown card-->
+  <div class="card border-radius w-100 px-2 bg-white tail-bc dropdown-template" id="dist-dropdown">
+    <div class="card-body pb-2 px-0 bg-transparent">
+      <div class="row">
+        <div class="col _dist_list overflow-y" value="">
+          <ul class="nav flex-column h5 mb-0 text-uppercase font-weight-bold">
+            <% _.each(area_options, function(v, k){ %>
+            <li class="nav-item">
+              <a class="nav-link mb-2 sm3 p-0 cursor-pointer <%- ((selected_area == k) ? 'text-primary' : 'opacity-30') %>"
+                value="<%- k %>"><%- v %><i class="fa fa-circle float-right" aria-hidden="true"></i></a>
+            </li>
+            <% }) %>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer px-0 bg-transparent border-top-1 text-center">
+      <button class="sm1 text-uppercaset text-primary font-weight-bold bg-transparent border-0 dist-dropdown-submit"
+        data-dismiss="modal">APPLY</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="modal fade modal-z-ind" id="top-filter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog top-13 position-relative" role="document">
+    <div class="modal-content bg-white border-radius tail-tr mx-auto pb-0 top-15 w-320">
+      <div class="modal-body px-0">
+        <div>
+          <ul class="nav nav-pills justify-content-between custm-pills-3 border-bottom mb-3 px-4 flex-nowrap overflow-auto h3 pb-2" id="pills-tab"
+            role="tablist">
+            <%_.each(pa_classes, function(d){ %>
+            <li class="nav-item mr-3 li-pills-tab text-nowrap" data-name="<%= d %>">
+              <a class="nav-link sm3 font-weight-bold text-color3 opacity-30 px-0 rounded-0 <%- (d.toLowerCase() == 'all') ? 'active' : '' %>" id="pills-profile-tab"
+                data-toggle="pill" href="#pills-<%= slug_(d.toLowerCase()) %>" role="tab" aria-controls="pills-profile"
+                aria-selected="false"><%= d %></a>
+            </li>
+            <% }) %>
+          </ul>
+          <div class="tab-content px-4 mx-2 custm-mh-2 overflow-auto pb-4" id="pills-tabContent">
+            <%_.each(pa_classes,function(d){ %>
+            <div class="tab-pane fade <%- (d.toLowerCase() == 'all') ? 'active show' : '' %>" id="pills-<%= slug_(d.toLowerCase()) %>" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <% var ind_list = (d == 'ALL') ? data : class_data[d] %>
+              <% _.each(ind_list, function(ind_obj,i){ %>
+              <h3 class="h3 text-black mb-3 border-bottom pb-3 d-flex indicator-card card_indicator_<%= ind_obj.indicator_id %> <%= ( ind_obj.indicator_id.toString() === default_indicator) ? 'opacity-100' : 'opacity-50'  %>"
+                id="<%= ind_obj.indicator_id %>" data-attr="<%= ind_obj.class %>">
+                <span class="sm3 d-block lh-3 w-87 font-weight-bold mr-2 slected_ind" data-attr="<%- ind_obj.indicator_name %>">
+                  <%= ind_obj.indicator_name %>
+                  <div class="text-white h5 mb-0 lh-1 mr-2 mt-1">
+                    <div class="sm3 font-weight-800 br-5 custm-pb-1 px-1 bg-color3 d-inline-block" data-class="<%= d %>"><%= ind_obj.class %></div>
+                  </div>
+                </span>
+                <img class="<%- ( ind_obj.indicator_id.toString() === default_indicator) ? '' : 'd-none' %>" src="img/tick_blue.svg" width="50" alt="tick-blue" />
+              </h3>
+              <% }) %>
+            </div>
+            <% }) %>
+            <div class="h3 mb-0 pos-b pt-3 modal-footer border-0 px-0 pb-0">
+              <button type="button"
+                class="btn bg-color20 text-white py-2 lh-4 font-weight-bold br-tl-tr-0 w-100 sm3 ls-1 apply_class" data-dismiss="modal">APPLY</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

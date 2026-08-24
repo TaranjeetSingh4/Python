@@ -1,0 +1,80 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+
+{% set page_title = 'Program Area Selected' %}
+{% include 'templates/pa/pa-head.html' %}
+
+{% set import json %}
+{% set from gramex.config import variables %}
+{% set user_session_id = handler.get_session().get("id", {}) %}
+{% set user_info = handler.get_session().get("user", {}) %}
+
+
+<body>
+  <nav class="navbar navbar-expand-md  position-fixed p-0">
+    <div class="d-flex align-items-center nav-bg-1 navbar w-100">
+      <a href="pa-landing">
+        <img src="img/back-arrow.svg" alt="back arrow" /></img>
+      </a>
+      <h6 class="text-white font-weight-bold ml-3 mb-0 class-name ">Maternal Health</h6>
+      <div class="ml-auto">
+        <a class="fa fa-home mr-3 fa-2x text-white" aria-hidden="true" href="./"></a>
+      </div>
+    </div>
+    <div class="d-flex flex-column w-100 nav-bg-gardient navbar" id="navbar_pa">
+    <a class="bg-primary border-radius mt-4 w-100 py-2 compare-button" >
+      <div class="d-flex justify-content-between align-items-center px-3">
+        <div class="text-left text-white w-7">
+          <h6 class="font-weight-bold mb-0 font-15">Compare</h6>
+          <p class="mb-0 font-11">Compare 6 Districts / Divisions / Blocks</p>
+        </div>
+        <div><img src="img/forward-arrow.svg" alt="arrow" /></div>
+      </div>
+    </a>
+    <div class="font-weight-normal ml-auto mr-auto mt-4 text-center display-3">
+      <span class="text-white sm5 d-block">Explore Indicators</span>
+    </div>
+    <!-- class links -->
+    <div class="pa_class_container w-100 my-4">
+      <script class="pa_class_links" data-target=".pa_class_container" type="text/html" src="templates/pa/pa_class.html"></script>
+    </div>
+  </div>
+  </nav>
+
+  <div class="px-2 position-absolute z-9 mt-70 mb-5 pb-5 w-100">
+    <script class="no_data" type="text/html" src="templates/pa/no_data.html"></script>
+
+    <script class="programs_details" type="text/html" src="templates/pa/program_details.html"></script>
+    <script class="side-nav-menu" src="templates/pa/program-area-side-nav-template.html" type="text/html"></script>
+  </div>
+
+  <footer class="bg-color4 py-3 fixed-bottom z-9 px-3">
+    <script class="datepicker" type="text/html" src="templates/pa/datepicker.html"></script>
+    <div class="h5 text-right" >
+      <img src="img/calendar-white.svg" alt="calendar" id="cal-icon" />
+      <span class="sm2 mx-2 text-white date-label">Jul 2018</span><span><img src="img/drop-up-white.svg" alt="drop-up" /></span>
+    </div>
+  </footer>
+
+</body>
+
+{% set scripts = ['vega'] %}
+{% include 'templates/pa/pa-scripts.html' %}
+<script type="text/javascript">
+  /* exported session_id, program_config, user_data */
+  var program_config = {{ json.dumps(variables['program-config']) }}
+  var session_id = {{ json.dumps(user_session_id) }}
+  var user_data = {{json.dumps(user_info)}}
+
+  $(".side-nav-menu").one('template', function () {
+    $('.last_date').text(moment().date() < 15 ? moment().format('[01] MMM YY') : moment().format('[15] MMM YY'))
+  }).template({ nav_data: program_config.dashboard_data_pa, user_data: user_data })
+
+</script>
+
+<script src="js/pa/pa_selected.js"></script>
+<script src="components/pa/trend_line.js"></script>
+<script src="ui/moment/min/moment-with-locales.min.js"></script>
+<script src="js/log_capture.js"></script>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>UP-TSU | Overall</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="ui/bootstraptheme.css?primary=%230776FF&secondary=%23EAEEF2&success=%23F5F5F5&info=%238EF0FF&warning=%23EC6D43&danger=%234D4742&light=%23ffffff&dark=%23000000&body-bg=%23ffffff&font-family-base=lato&">
+  <link rel="stylesheet" href="ui/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/by_domain.css">
+</head>
+
+<body>
+  <!--calendar-->
+  <script class="nav_bar" type="text/html" src="templates/nav_bar.html"></script>
+  <script class="calendar_" type="text/html" src="templates/calendar.html"></script>
+  <!--Rank-->
+    <!--end-->
+  <script src="ui/jquery/dist/jquery.min.js"></script>
+  <script src="ui/popper.js/dist/umd/popper.min.js"></script>
+  <script src="ui/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="ui/lodash/lodash.min.js"></script>
+  <script type="text/javascript" src="ui/moment/min/moment-with-locales.min.js"></script>
+  <script src="ui/g1/dist/g1.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script src="ui/d3/build/d3.min.js"></script>
+  <!-- <script type="text/javascript" src="js/summary.js"></script> -->
+  <!--
+D3: ui/d3/build/d3.min.js
+Lodash: ui/lodash/lodash.min.js
+Moment: ui/moment/min/moment-with-locales.min.js
+Noty: ui/noty/lib/noty.min.js
+Daterangepicker: ui/daterangepicker/daterangepicker.js
+Leaflet: ui/leaflet/dist/leaflet.js
+TopoJSON: ui/topojson/dist/topojson.min.js
+g1: ui/g1/dist/g1.min.js
+-->
+
+<script>
+
+  function render_date(){
+    _.each($('.cal-btn').find('p'), function(d){
+      if($(d).css('opacity') == 1){
+        var key = $(d).attr('class').split(' ').pop()
+        $('.'+key).text($('#active').text() + " " +$('.year').text())
+      }
+    })
+  }
+
+  $('body')
+  .on('click', 'table td', function(){
+    $('table td').removeAttr('id');
+    $(this).attr('id', 'active')
+    render_date()
+  })
+  .on('click', '.fa-chevron-left', function(){
+    $('.year').text(parseInt($('.year').text())-1)
+    render_date()
+  })
+  .on('click', '.fa-chevron-right', function(){
+    $('.year').text(parseInt($('.year').text())+1)
+    render_date()
+  })
+  .on('click', '.navigation .btn', function(){
+    if($(this).text() == 'CM'){
+      $('table td').removeAttr('id');
+      $('.'+moment().subtract(2, 'month').format('MMM')).attr('id', 'active');
+    }
+    else if($(this).text() == 'PM'){
+      $('table td').removeAttr('id');
+      $('.'+moment().subtract(3, 'month').format('MMM')).attr('id', 'active');
+    }
+    else if($(this).text() == 'CFY'){
+      $('.year').text(moment().format('YYYY'))
+    }
+    else{
+      $('.year').text(moment().subtract(1, 'year').format('YYYY'))
+    }
+    render_date()
+  })
+  .on('click', '.cal-btn', function(){
+    if($(this).find('p').attr('class').indexOf('second') > 0){
+      $('.second').attr('style', 'opacity:1')
+      $('.first').attr('style', 'opacity:0.4')
+    }
+    else{
+      $('.first').attr('style', 'opacity:1')
+      $('.second').attr('style', 'opacity:0.4')
+    }
+  })
+  .on('click', '.submit', function(){
+    var cal = {}
+    cal['to'] = moment('01-' + _.reverse($('.first').text().split(' ')).join('-')).format('YYYY-MM-DD')
+    cal['from'] = moment('01-'+_.reverse($('.second').text().split(' ')).join('-')).format('YYYY-MM-DD')
+    url_update(cal)
+  })
+  .on('click', '.prev_view', function(){
+    var referrer =  document.referrer;
+    window.location.href = referrer
+  })
+
+$('.calendar_').on('template', function(){
+  $('.second').attr('style', 'opacity:0.4')
+  var params = g1.url.parse(location.href).searchKey
+  var active_ = params.to
+  if(params.cal == "for"){
+    $('.second').attr('style', 'opacity:0.4')
+    $('.first').attr('style', 'opacity:1')
+    active_ = params.to
+  }
+  else if(params.cal == "to"){
+    $('.first').attr('style', 'opacity:0.4')
+    $('.second').attr('style', 'opacity:1')
+    active_ = params.from
+  }
+
+  if(params.to !== undefined) {
+    _.each($('table td'), function(d){
+      if($(d).text().trim() === moment(active_).format('MMM')){
+        $(d).attr('id', 'active')
+      }
+      else{
+        $(d).attr('id', '')
+      }
+    })
+    $('.first').text(moment(params.to).format('MMM YYYY'))
+    $('.second').text(moment(params.from).format('MMM YYYY'))
+  } else {
+    $('.first').text(moment().subtract(2,'month').format('MMM YYYY'))
+    $('.second').text(moment().subtract(3,'month').format('MMM YYYY'))
+  }
+})
+.template({months: moment.monthsShort(), navigation: ['CM', 'PM', 'CFY', 'PFY'], current_month: moment().subtract(2, 'month').format('MMM'), current_year: moment().format('YYYY')})
+
+
+function url_update(uri){
+  var clear_url = g1.url.parse(location.href).update(uri)
+  var uri_ = (clear_url.searchKey.deepdive === "") ? _.replace(clear_url.toString(), 'calendar?deepdive=&', 'deepdive?') : _.replace(clear_url.toString(), 'calendar', '')
+  if(clear_url.searchKey.compare === "") {uri_ = _.replace(clear_url.toString(), 'calendar?compare=&', 'compare?')}
+  if(clear_url.searchKey.map === "") { uri_ = _.replace(clear_url.toString(), 'calendar?map=&', 'map?')}
+  window.location.href = uri_
+}
+
+$( document ).ready(function() {
+  $('#icon').css("pointerEvents", 'none')
+  $('.form-control').css("pointerEvents", 'none')
+  $('Select').find(":selected").text("calendar")
+});
+</script>
+</body>
+
+</html>

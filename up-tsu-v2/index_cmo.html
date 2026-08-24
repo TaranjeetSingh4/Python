@@ -1,0 +1,199 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CMO Dashboard</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="ui/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="ui/@fortawesome/fontawesome-free/css/all.min.css">
+    <link
+      href="ui/bootstraptheme.css?primary=%23344052&secondary=%237ED321&success=%237ED321&info=%231A1A0F&warning=%23EBEBEB&danger=%23FCFCFC&light=rgba(9,10,12,0.07)&dark=%23000&color1=%23B9C4D6&color2=%2300C5C5&color3=%23D66F8B&color4=%23A94191&color5=%23E8A324&color6=%23FFDF0D&color7=%23C2DC10&color8=%2355B9C5&color9=%23C5B3DB&color10=%238588D0&color-15=%23005DCA&color-11=%230D72E8&color-13=rgba(151, 151, 151, 0.21)&color-14=%23626C7B&color-15=%23B1B8C1&color-16=%2300C200&color-17=%23F46448&color-18=%23F24322&color-19=%23D8D8D8&color-20=%23EDF1F5&color-21=%23DEDEDE&color-22=%23F8F9F9&color-23=%23B0D2F9&color-24=%23EDF1F2&color-25=%237CA7FF&color-26=%23E01087&color-27=rgba(185,196,214,0.36)&color-28=%23E3E7E8&color-29=%23D0021B&color-30=%2359A600&color-31=rgba(0, 0, 0, 0.1)&color-32=%23FCFCFC&color-33=%23D8007B&color-34=rgba(0, 0, 0, 0.11)&color-35=%23D2D2D2&color-36=rgba(151,151,151,0.18)&color-37=%23F7F7F7&color-38=%23E6E6E6&color-39=%23737373&color-40=%23FA8A3B&color-41=rgba(0,0,0,0.36)&color42=%23684A68&color43=%23D11E3B&color44=%236CBB71&color45=%23A6B2C6&color46=%23C0CED2&color47=rgba(9%2C10%2C12%2C0.07)&color48=%23E1E6EE&color49=rgba(244%2C94%2C32%2C0.4)&color50=%23F4ECE6&color51=%23DEE3EB&color52=%23F47D7D&color53=%23F5F5F7&color54=%23CDD5E1&color55=%23d4e3f5&color56=%230c64cc&color65=%23F46318&color66=%23DB5F3B&color69=%23f4ece6&color70=%23522836&grid-gutter-width=80px&line-height-1=1&line-height-2=16px&line-height-3=14px&font-family-base=Nunito Sans&body-bg=white"
+      rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/introjs.min.css">
+      <link rel="stylesheet" href="css/style_tb.css">
+      <link rel="stylesheet" href="css/view1.css">
+      <link rel="stylesheet" href="node_modules/ion-rangeslider/css/ion.rangeSlider.min.css">
+      <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-sweetalert/dist/sweetalert.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,900&display=swap" rel="stylesheet">
+      <script src="js/app_cookie.js"></script>
+    </head>
+    <body>
+      <script>
+      /* globals createCookie */
+      createCookie("userfrom", "nikshay", 30, "/")
+      // function goBack() {
+      //     window.history.back()
+      //     // url = g1.url.parse(location.href)
+      //     setTimeout(draw_view1_table() , 1000);
+      //   }
+      </script>
+      {% set import json %}
+      {% set user_session_id = handler.get_session().get("id", {}) %}
+      {% set from gramex.config import variables %}
+      {% set base = '.' %}
+      {% include template-navbar.html %}
+      <div class="background">
+        <div class="loader"></div>
+      </div>
+      <div class="d-flex">
+        <div class="container-fluid border-radius position-absolute mt-n6">
+          <div class="bg-danger  border-radius top-filtres h-100">
+            <div class="bg-lg-primary px-md-3 py-2 border-radius top-filtres br-blr"></div>
+            <div class="mt-n5">
+              <div class="px-3">
+                <div class="filter-one">
+                  <div class="d-flex ml-3 h3 mb-0 mr-4 mt-0 state-filter">
+                    <script type="text/html" src="templates/state_select.html" class="render_state_template"></script>
+                  </div>
+                  <div class="d-flex ml-3 h3 mb-0 mr-4 mt-0 district-filter"></div>
+                  <div class="tab-state-filter bg-cu-color70 text-white px-0 mt-0 mr-5 z-6 h-70 ">
+                    <script type="text/html" src="templates/catorgry_select.html" class="render_category_template"></script>
+                  </div>
+                </div>
+                <div class="filter-two">
+                  <!-- Composite Score only dropdown -->
+                  <div class="d-flex flex-wrap w-100 mt-0 composite-filters align-items-center justify-content-xl-between justify-content-md-start justify-content-between">
+                    <!--indicator start -->
+                    <div class="d-flex mt-1 h3 mb-0 mr-4 z-1 mr-3" id="indicator_dropdown_wrapper">
+                      <script type="text/html" src="templates/indicator_dropdown_cmo.html" class="render_indicator_template"></script>
+                    </div>
+                    <!--indicator end -->
+                    <!--  calendar start -->
+                    <div class="tab-state-filter text-white px-0 mt-2 mr-xl-4 mr-lg-3 z-6 h-70">
+                      <script type="text/html" src="templates/state_select.html" class="render_state_template1"></script>
+                    </div>
+                    <div class="z-10 mr-3">
+                      <script class="calendar" type="text/html" src="templates/calendar_tb.html"></script>
+                    </div>
+                    <!-- calendar end -->
+                    <!-- <div class="d-md-none">
+                    <figure class="d-flex mb-0 round btn bg-white p-2 w-c32 toggle-search"><img src="img/search-1.svg" alt="search-1"></figure>
+                    </div> -->
+                  <div class="table-opt d-md-flex d-none h3 mb-0 z-10 w-100 col-lg-8 col-md-5 justify-content-between px-0 col-12">
+                    <!--search column-->
+                    <div class="col-12 px-md-4 px-0 pt-md-0 pt-3 col-lg-10 position-relative">
+                      <!-- search image -->
+                      <div class="position-relative">
+                        <!-- <script class="search_tb" type="text/html" src="templates/search_tb.html"></script> -->
+                      </div>
+                    </div>
+                    <!--dropdown column-->
+                    <!-- <div class="dropdown position-relative d-md-flex d-none custom-dropdown">
+                      <button class="btn d-flex justify-content-between align-items-center fs-14 btn bg-c-primary text-white border border-color-41 border-radius-lg py-1 mb-0 h-28" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Download<img class="pl-3" src="img/download.svg" alt="download">
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <!--<a class="dropdown-item nav-link divison_data cursor-pointer"><img class="pr-2" src="img/data_set.svg" alt="download">Division data</a>-->
+                        <!-- <a class="dropdown-item nav-link district_data cursor-pointer"><img class="pr-2" src="img/data_set.svg" alt="download">District data</a> -->
+                        <!--<a class="dropdown-item nav-link block_data cursor-pointer"><img class="pr-2" src="img/data_set.svg" alt="download">Block data</a>-->
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-right" ><span class = "mr-3 landing_ticker sm3 data_last_updated"></span></div>
+            <div class="d-flex flex-wrap col-12 overview-tabs border-radius custom-r-0 bg-danger px-lg-3 px-2">
+              <div class="d-flex h-auto align-items-center justify-content-end w-100 pt-2">
+                <!-- overview and rankings ing tabs starts here -->
+                <ul class="nav nav-pills px-0" id="pills-tab" role="tablist">
+                  <li class="nav-item lh-1 mr-3 pl-2">
+                    <a class="text-decoration-underline text-decoration-thickness d-block font-weight-900 text-black active" id="pills-overview-tab"
+                      data-toggle="pill" role="tab" aria-controls="pills-overview"
+                    aria-selected="true"></a>
+                  </li>
+                </ul>
+                <!-- <marquee class="w-50 text-color66 ticker_msg mx-3"></marquee> -->
+                <marquee class="w-50 text-color66 cmo_ticker mx-3"></marquee>
+                <div class="d-flex flex-wrap justify-content-between col-12 pl-1 pr-0">
+                  <!-- <div class="bg-transparent text-primary note d-none last_update mr-3"></div> -->
+                  <!-- <div class="slider-image d-none round h-auto"></div> -->
+                  <div class="d-flex align-items-center h4 mb-0 mb-3 mr-2">
+                    <p class="d-flex align-items-center sm3 mb-0 mr-3"><span class="tbl-legend border-1 mr-1"></span><span>Process</span></p>
+                    <p class="d-flex align-items-center sm3 mb-0"><span class="tbl-legend border-2 mr-1"></span><span>Outcome</span></p>
+                  </div>
+                  <img class="mr-2 ml-3 mb-3 legend-cmo" src="img/legend-cmo.svg" height="18px" alt="legend-cmo">
+                </div>
+                <!-- <img src="img/legend-cmo.svg" alt="legend-cmo" class="d-lg-flex d-none"> -->
+              </div>
+              <!-- overview content -->
+              <div class="tab-content w-100" id="pills-tabContent">
+                <div class="alert no_data_show d-none alert-dark text-center" role="alert"> Data not Available </div>
+                <div class="tab-pane fade show active" id="pills-overview" role="tabpanel" aria-labelledby="pills-overview-tab">
+                  <div class="d-flex flex-wrap col-12 px-0">
+                    <script type="text/html" class="view1-table" src="templates/view1_table.html"></script>
+                    <div class="d-flex flex-wrap row">
+                    </div>
+                  </div>
+                  <!-- <section class="mt-n5 mb-5 d-none" id="GFG_DOWN"> -->
+                  <div class="py-2 mt-4 d-none" id="GFG_DOWN">
+                    <div class="row border-0 border-radius">
+                      <div class="text-center h-full col-12 m-auto">
+                        <p class="font-weight-bold"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- </section> -->
+                </div>
+              </div>
+              <!-- Ranking content -->
+            </div>
+          </div>
+        </div>
+        </div><!-- container end -->
+        <!-- Modal -->
+        <div class="modal fade" id="expand_graph" tabindex="-1" role="dialog" aria-labelledby="expand_graph"
+          aria-hidden="true">
+          <script class="expand_chart_modal" type="text/html" src="templates/chart_modal.html"></script>
+        </div>
+      </div>
+      <script type="text/html" src="templates/district_select.html" class="render_district_template"
+      data-target=".district-filter"></script>
+      <script type="text/javascript">
+      /* exported indicator_mapping, data_table_dict, annotations_coordinates, tooltip_data, order_ind, session_id */
+      let indicator_mapping = {{ json.dumps(variables['indicator-mapping_cmo']) }}
+      let tooltip_data = {{ json.dumps(variables['tooltip_data']) }}
+      let data_table_dict = {{ json.dumps(variables['data_table_dict']) }}
+      let annotations_coordinates = {{ json.dumps(variables['annotations_coordinates']) }}
+      let order_ind = {{ json.dumps(variables['order_ind']) }}
+      var session_id = {{ json.dumps(user_session_id) }}
+      </script>
+      <script src="ui/jquery/dist/jquery.min.js"></script>
+      <script src="https://browser.sentry-cdn.com/5.6.3/bundle.min.js"
+      integrity="sha384-/Cqa/8kaWn7emdqIBLk3AkFMAHBk0LObErtMhO+hr52CntkaurEnihPmqYj3uJho"
+      crossorigin="anonymous"></script>
+      <script src="ui/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="ui/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+      <script src="ui/moment/min/moment-with-locales.min.js"></script>
+      <script src="ui/lodash/lodash.min.js"></script>
+      <script src="ui/g1/dist/g1.min.js"></script>
+      <script src="node_modules/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+      <script src="ui/d3/build/d3.min.js"></script>
+      <script src="ui/d3-scale-chromatic/dist/d3-scale-chromatic.min.js"></script>
+      <script src="ui/vega/build/vega.min.js"></script>
+      <script src="ui/topojson/dist/topojson.min.js"></script>
+      <script src="node_modules/d3-color/dist/d3-color.min.js"></script>
+      <script type="text/javascript" src="node_modules/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
+      <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.3.2/d3-annotation.js"></script>
+      <script src="node_modules/vega-tooltip/build/vega-tooltip.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.2.2/math.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/intro.min.js"></script>
+      <script src="js/helper.js"></script>
+      <script src="js/common_calendar.js"></script>
+      <script src="ui/numeral/min/numeral.min.js"></script>
+      <script src="js/common_tb.js"></script>
+      <script src="js/common_cmo.js"></script>
+      <script src="js/log_capture.js"></script>
+      <script type="text/javascript">
+      $(".toggle-search").click(function(){
+      $(".table-opt").toggleClass('d-none d-block');
+      });
+      </script>
+    </body>
+  </html>

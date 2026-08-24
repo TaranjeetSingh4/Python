@@ -1,0 +1,219 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+{% set page_title = 'Program Area Selected' %}
+{% include 'templates/pa/pa-head.html' %}
+
+{% set import json %}
+{% set from gramex.config import variables %}
+
+{% set user_session_id = handler.get_session().get("id", {}) %}
+{% set user_info = handler.get_session().get("user", {}) %}
+{% set username = user_info.get("user", "") %}
+
+
+<body>
+    <nav class="navbar navbar-expand-md nav-bg-gardient position-fixed pt-3 pb-5" id="pa_overview_nav">
+      <div class="d-flex align-items-center w-100">
+        <a class="back_arrow_link">
+          <img src="img/back-arrow.svg" alt="back arrow" /></img>
+        </a>
+          <h3 class="text-white ml-3 mb-0 font-weight-bold"><span class="sm3 d-block program-h">Maternal Health</span></h3>
+          <div class="ml-auto">
+            <a class="fa fa-home mr-3 fa-2x text-white" aria-hidden="true" href="./"></a>
+          </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center ml-3 px-3 pb-4">
+      <div class="text-left text-white indicator_container">
+        <h6 class="d-flex justify-content-between"><span
+            class="font-13 d-block w-75 font-weight-normal lh-3 indicator-text">% of pregnant women received free
+            transport facility from health unit to home against delivery</span>
+          <span class="align-self-center ml-3 cursor-pointer"><img src="img/drop-down-circle.svg" alt="arrow"
+              data-toggle="modal" data-target="#top-filter"/></span>
+        </h6>
+        <div class="d-flex h5 mb-0">
+          <div class="text-info h5 mb-0 text-center lh-1 mr-2">
+            <div class="sm3 bg-white br-5 px-1 font-weight-800 ind-class">MDR</div>
+          </div>
+          <span class="sm3 font-weight-bold up-avg-val">(UP AVG : 24)</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="px-2 position-absolute z-9 mt-30 pb-5 mb-4">
+    <script class="side-nav-menu" src="templates/pa/program-area-side-nav-template.html" type="text/html"></script>
+  </div>
+  <div class="position-absolute mt-30 pb-3 w-100">
+    <ul class="nav nav-pills flex-nowrap pl-3 overflow-auto custm-pills-2 pb-3 justify-content-between" id="pills-tab"
+      role="tablist">
+      <li class="nav-item mr-2">
+        <a class="nav-link active px-4 bg-color6 text-color7 h-64 shadow-1 pt-2" id="pills-state-tab" data-toggle="pill"
+          href="#" role="tab" aria-controls="pills-state" aria-selected="true">
+          <div class="d-flex flex-column px-2 h5 mb-0 pt-2 active-border">
+            <div class="sm3">HOME</div>
+            <h6 class="font-weight-bold text-truncate mb-0">UP</h6>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item mr-2">
+        <a class="nav-link bg-color6 text-color7 custm-w-2 h-64 shadow-1 pt-2" id="pills-districts-tab"
+          data-toggle="pill" href="#" role="tab" aria-controls="pills-districts" aria-selected="false">
+          <div class="active-border" data-toggle="modal"
+          data-target="#district_dropdown_1">
+            <div class="d-flex justify-content-between w-75 pt-2">
+              <div class="d-flex flex-column px-2 h5 w-100 mb-0 mr-2">
+                <div class="sm3">DIST / DIV. PROFILE</div>
+                <h6 class="font-weight-bold text-truncate custm-min-w mb-0 dist-label"> Select Dist./Div.</h6>
+              </div>
+              <div class="d-flex align-self-center modal-active dist-dropdwn">
+                <img src="img/dropdown-arrow.svg" alt="dropdown-circle" />
+                <img src="img/dropdown-active.svg" alt="dropdown-circle" class="drop-active" />
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item mr-2">
+        <a class="nav-link  bg-color6 text-color7 custm-w-2 h-64 shadow-1" id="pills-contact-tab" data-toggle="pill"
+          href="#" role="tab" aria-controls="pills-contact" aria-selected="false">
+          <div class="active-border" data-toggle="modal" data-target="#district_dropdown_2">
+            <div class="d-flex justify-content-between w-75 pt-2">
+              <div class="d-flex flex-column px-2 h5 w-100 mb-0 mr-2">
+                <div class="sm3">AREA OVERVIEW</div>
+                <h6 class="font-weight-bold text-truncate custm-min-w mb-0 block-label">Mohamdi Kheri..</h6>
+              </div>
+              <div class="d-flex align-self-center modal-active">
+                <img src="img/dropdown-arrow.svg" alt="dropdown-circle" />
+                <img src="img/dropdown-active.svg" alt="dropdown-circle" class="drop-active" />
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item mr-2">
+        <a class="nav-link px-4 bg-color6 text-color7 h-64 shadow-1 pt-2" id="pills-compare-tab"
+          role="tab" aria-controls="pills-state" aria-selected="true">
+          <div class="d-flex flex-column px-2 h5 mb-0 pt-2 active-border">
+            <h6 class="font-weight-bold text-truncate custm-min-w mb-0">Compare View</h6>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <div class="tab-content overflow-auto custm-mh-1" id="pills-tabContent">
+      <div class="tab-pane fade show active px-0 program-area-view-cards" id="home-panel" role="tabpanel"
+        aria-labelledby="pills-state-tab">
+        <script class="pa-indicator-card" type="text/html" src="templates/pa/program_indicator_card.html"></script>
+      </div>
+
+      <div class="tab-pane fade pb-5 program-area-view-cards" id="district-view-section" role="tabpanel"
+        aria-labelledby="pills-districts-tab">
+        <script class="pa-view-class" src="templates/pa/pa_view_class.html" type="text/html"></script>
+        <script class="no-data" src="templates/pa/no_data.html" type="text/html"></script>
+        <script class="pa-district-card" type="text/html" src="templates/pa/pa_district_card.html"></script>
+      </div>
+
+      <div class="tab-pane fade program-area-view-cards" id="block-view-section" role="tabpanel"
+        aria-labelledby="pills-contact-tab">
+        <div class="districts_list_cards">
+          <script class="pa-indicator-card-block" type="text/html"
+            src="templates/pa/program_indicator_card.html"></script>
+        </div>
+
+        <div class="indicators_list_cards d-none">
+          <span class="close-block-details pos-tr pt-4 mr-2 mt-5"><i
+              class="fa fa-times-circle bg-white cursor-pointer"></i></span>
+          <script class="pa-view-class" src="templates/pa/pa_view_class.html" type="text/html"></script>
+          <script class="no-data" src="templates/pa/no_data.html" type="text/html"></script>
+          <script class="pa-district-card-block" type="text/html" src="templates/pa/pa_district_card.html"></script>
+        </div>
+      </div>
+
+      <div class="tab-pane fade pb-5 program-area-view-cards" id="notification-section" role="tabpanel"
+        aria-labelledby="no-data-tab">
+        <div class="container card shadow h3 p-4 mt-3 pt-4 rounded border-0 align-items-center">
+          <div class="sm2 text-uppercase">
+            <strong>Data not Available </strong>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- top dropdown -->
+  <div>
+    <script class="collapse-dropdown" src="templates/pa/pa-indicator-dropdown.html" type="text/html"></script>
+  </div>
+  <!-- insights modal -->
+  <script class="auto_insights" src="templates/pa/pa-insights.html" type="text/html"></script>
+  <footer class="d-flex justify-content-between align-items-center bg-color4 fixed-bottom px-3">
+    <div class="footer_tab_1 d-flex align-items-center justify-content-end font-13 border-color13 border-right py-3 pr-4"
+      data-toggle="modal" data-target="#district-list"> <span class="mx-2 font text-white area-selected">All
+        Districts</span><span><img src="img/drop-up-white.svg" alt="drop-up" class="arrow_icon_area" /></span></div>
+    <div class="d-flex align-items-center justify-content-end font-13 border-color13 border-right py-3 pr-4"
+      data-toggle="modal" data-target="#score-list"><span
+        class="mx-2 font text-white selected-opt">Score</span><span><img src="img/drop-up-white.svg"
+          alt="drop-up" /></span> </div>
+    <div class="font-13">
+      <script class="datepicker" type="text/html" src="templates/pa/datepicker.html"></script>
+      <img src="img/calendar-white.svg" alt="calander" id="cal-icon" />
+      <span class="mx-2 font text-white date-label">DEC - 19</span><span><img src="img/drop-up-white.svg" alt="drop-up" /></span>
+    </div>
+  </footer>
+
+  <div class="modal fade pos-b" id="district-list" tabindex="-1" role="dialog" aria-labelledby="district-list"
+    aria-hidden="true">
+    <div class="modal-dialog pb-0 pos-b position-fixed my-5" role="document">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-body p-0">
+          <script class="dist-drop-up" src="templates/pa/pa-area_filter.html" type="text/html"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade pos-b" id="score-list" tabindex="-1" role="dialog" aria-labelledby="score-list"
+    aria-hidden="true">
+    <div class="modal-dialog pos-b position-fixed my-5 pb-0" role="document">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-body mx-auto p-0">
+          <script class="sort-drop-up" src="templates/pa/pa-sort.html" type="text/html"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- block level modal -->
+  <script class="block_custom_dropdown" src="templates/pa/pa_blocks_dropdown.html" type="text/html"></script>
+  <!-- districts level modal -->
+
+  <script class="district_custom_dropdown" src="templates/pa/pa_district_dropdown.html" type="text/html"></script>
+</body>
+{% set scripts = ['vega', 'map'] %}
+{% include 'templates/pa/pa-scripts.html' %}
+
+<script>
+  /* exported url, program_config, session_id, default_program, program_image_mapping, user_data */
+  var url = g1.url.parse(location.href)
+  var program_config = {{ json.dumps(variables['program-config']) }}
+  var default_program = program_config['default_program']
+  var session_id = {{ json.dumps(user_session_id) }}
+  var user_data = {{ json.dumps(user_info)}}
+  var program_image_mapping = program_config['program_image_mapping']
+  var type_dist = url.searchKey.chart_districts || 'all'
+  $('.chart-districts-filter li').find('a[value=' + type_dist + ']').removeClass('opacity-30')
+
+  // Program Blocks template
+  $(".side-nav-menu").one('template', function () {
+    $('.last_date').text(moment().date() < 15 ? moment().format('[01] MMM YY') : moment().format('[15] MMM YY'))
+  }).template({ nav_data: program_config.dashboard_data_pa, user_data: user_data })
+
+</script>
+
+<script src="components/pa/area_chart.js"></script>
+<script src="js/pa/pa_overview.js"></script>
+<script src="ui/moment/min/moment-with-locales.min.js"></script>
+  <script src="js/log_capture.js"></script>
+
+</html>

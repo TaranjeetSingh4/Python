@@ -1,0 +1,279 @@
+quaterly-districts:
+  SELECT d.calc_type, f.composite_index, f.composite_rank, f.date,
+  d.district_name AS district, d.district_id, d.div_map_id, d.division_name AS division,
+  d.domain_name AS domain, f.domain_index, f.domain_rank, d.indicator_name AS indicator,
+  d.indicator_id, d.indicator_id AS indicator_ids, f.indicator_index, f.indicator_rank,
+  d.map_id, f.perc_point, f.quarter, d.type_name AS type_, f.type_index, f.type_rank, f.year
+  FROM dim_phase1_district_data as d
+  JOIN fact_phase1_district_data_quaterly as f
+  ON d.district_id_num = f.district_id_num
+  AND
+  d.indicator_id = f.indicator_id {where};
+
+monthly-districts: SELECT d.calc_type, f.composite_index,
+  f.composite_rank, f.date,
+  d.district_name AS district, d.district_id,
+  d.div_map_id, d.division_name AS division,
+  d.domain_name AS domain, f.domain_index,
+  f.domain_rank, d.indicator_name AS indicator,
+  d.indicator_id, d.indicator_id AS indicator_ids,
+  f.indicator_index, f.indicator_rank,
+  d.map_id, f.perc_point,
+  QUARTER(f.date) as quarter, d.type_name AS type_,
+  f.type_index, f.type_rank,
+  year(f.date) as year
+  FROM dim_phase1_district_data as d
+  JOIN fact_phase1_district_data_monthly as f
+  ON d.district_id_num = f.district_id_num
+  AND
+  d.indicator_id = f.indicator_id
+  {where};
+
+yearly-districts: SELECT d.calc_type, f.composite_index,
+  f.composite_rank, f.date,
+  d.district_name AS district, d.district_id,
+  d.div_map_id, d.division_name AS division,
+  d.domain_name AS domain, f.domain_index,
+  f.domain_rank, d.indicator_name AS indicator,
+  d.indicator_id, d.indicator_id AS indicator_ids,
+  f.indicator_index, f.indicator_rank,
+  d.map_id, f.perc_point,
+  QUARTER(f.date) as quarter, d.type_name AS type_,
+  f.type_index, f.type_rank,
+  f.year
+  FROM dim_phase1_district_data as d
+  JOIN fact_phase1_district_data_yearly as f
+  ON d.district_id_num = f.district_id_num
+  AND
+  d.indicator_id = f.indicator_id
+  {where};
+
+monthly-blocks: SELECT d.block_name as block, f.block_id_num as div_map_id,
+  d.calc_type, f.composite_index,
+  f.composite_rank, f.count, f.date,
+  d.district_name AS district, d.district_id,
+  d.domain_name AS domain, f.domain_index,
+  f.domain_rank, d.indicator_name AS indicator,
+  d.indicator_id, d.indicator_id AS indicator_ids,
+  f.indicator_index, f.indicator_rank,
+  d.map_id, f.perc_point,
+  QUARTER(f.date) as quarter, d.type_name AS type_,
+  f.type_index, f.type_rank,
+  year(f.date) as year
+  FROM dim_phase1_block_data as d
+  JOIN fact_phase1_block_data_monthly as f
+  ON d.block_id_num = f.block_id_num
+  AND
+  d.indicator_id = f.indicator_id
+  {where};
+
+quaterly-blocks: SELECT d.block_name as block, f.block_id_num as div_map_id,
+  d.calc_type, f.composite_index,
+  f.composite_rank, f.count, f.date,
+  d.district_name AS district, d.district_id,
+  d.domain_name AS domain, f.domain_index,
+  f.domain_rank, d.indicator_name AS indicator,
+  d.indicator_id, d.indicator_id AS indicator_ids,
+  f.indicator_index, f.indicator_rank,
+  d.map_id, f.perc_point,
+  QUARTER(f.date) as quarter, d.type_name AS type_,
+  f.type_index, f.type_rank,
+  f.year
+  FROM dim_phase1_block_data as d
+  JOIN fact_phase1_block_data_quaterly as f
+  ON d.block_id_num = f.block_id_num
+  AND
+  d.indicator_id = f.indicator_id
+  {where};
+
+yearly-blocks: SELECT d.block_name as block, f.block_id_num as div_map_id,
+  d.calc_type, f.composite_index,
+  f.composite_rank, f.count, f.date,
+  d.district_name AS district, d.district_id,
+  d.domain_name AS domain, f.domain_index,
+  f.domain_rank, d.indicator_name AS indicator,
+  d.indicator_id, d.indicator_id AS indicator_ids,
+  f.indicator_index, f.indicator_rank,
+  d.map_id, f.perc_point,
+  QUARTER(f.date) as quarter, d.type_name AS type_,
+  f.type_index, f.type_rank,
+  f.year
+  FROM dim_phase1_block_data as d
+  JOIN fact_phase1_block_data_yearly as f
+  ON d.block_id_num = f.block_id_num
+  AND
+  d.indicator_id = f.indicator_id
+  {where};
+
+# block analytics month
+block_score_by_type_month:
+  SELECT DATE_FORMAT(t1.date, '%Y-%m-%d') AS date, avg(t1.perc_point) as perc_point,
+  t2.block_name as block, t2.type_name as type, t2.indicator_name as indicator
+  FROM fact_phase1_block_data_monthly t1
+  left join dim_phase1_block_data t2
+  on t2.block_id_num = t1.block_id_num
+  and t2.indicator_id = t1.indicator_id
+  {where_clause}
+  group by t1.date, t2.block_name, t2.type_name
+  # where (t1.date='{from_date}' or t1.date='{to_date}')
+
+block_score_by_domain_month:
+  SELECT DATE_FORMAT(t1.date, '%Y-%m-%d') AS date, avg(t1.perc_point) as perc_point,
+  t2.block_name as block, t2.domain_name as domain, t2.indicator_name as indicator
+  FROM fact_phase1_block_data_monthly t1
+  left join dim_phase1_block_data t2
+  on t2.block_id_num = t1.block_id_num
+  and t2.indicator_id = t1.indicator_id
+  {where_clause}
+  group by t1.date, t2.block_name, t2.domain_name
+  # where (t1.date='{from_date}' or t1.date='{to_date}')
+
+block_score_by_indicator_month:
+  SELECT DATE_FORMAT(t1.date, '%Y-%m-%d') AS date, avg(t1.perc_point) as perc_point,
+  t2.block_name as block,  t2.indicator_name as indicator
+  FROM fact_phase1_block_data_monthly t1
+  left join dim_phase1_block_data t2
+  on t2.block_id_num = t1.block_id_num
+  and t2.indicator_id = t1.indicator_id
+  {where_clause}
+  group by t1.date, t2.block_name, t2.indicator_name
+  # where (t1.date='{from_date}' or t1.date='{to_date}')
+
+block_indicator_type_month:
+  SELECT DATE_FORMAT(t1.date, '%Y-%m-%d') AS date, avg(t1.perc_point) as perc_point,
+  t2.block_name as block, t2.type_name as type, t2.indicator_name as indicator
+  FROM fact_phase1_block_data_monthly t1
+  left join dim_phase1_block_data t2
+  on t2.block_id_num = t1.block_id_num
+  and t2.indicator_id = t1.indicator_id
+  {where_clause}
+  group by t1.date, t2.block_name, t2.type_name, t2.indicator_name
+  # where (t1.date='{from_date}' or t1.date='{to_date}')
+
+block_indicator_domain_month:
+  SELECT DATE_FORMAT(t1.date, '%Y-%m-%d') AS date, avg(t1.perc_point) as perc_point,
+  t2.block_name as block, t2.domain_name as domain, t2.indicator_name as indicator
+  FROM fact_phase1_block_data_monthly t1
+  left join dim_phase1_block_data t2
+  on t2.block_id_num = t1.block_id_num
+  and t2.indicator_id = t1.indicator_id
+  {where_clause}
+  group by t1.date, t2.block_name, t2.domain_name, t2.indicator_name
+  # where (t1.date='{from_date}' or t1.date='{to_date}')
+
+# block analytics quarters
+block_score_by_type_quarter:
+  SELECT t1.quarter, t1.year, avg(t1.perc_point) as perc_point,
+  t2.block_name as block, t2.domain_name as domain, t2.indicator_name as indicator
+  FROM fact_phase1_block_data_quaterly t1
+  left join dim_phase1_block_data t2
+  on t2.block_id_num = t1.block_id_num
+  and t2.indicator_id = t1.indicator_id
+  {where_clause}
+  group by t1.quarter, t1.year, t2.block_name, t2.domain_name, t2.indicator_name;
+  # where (t1.quarter={from_value} or t1.quarter={to_value})
+  # and (t1.year={from_year} or t1.year={to_year})
+
+block_score_by_domain_quarter:
+  SELECT t1.quarter, t1.year, avg(t1.perc_point) as perc_point,
+  t2.block_name as block, t2.domain_name as domain, t2.indicator_name as indicator
+  FROM fact_phase1_block_data_quaterly t1
+  left join dim_phase1_block_data t2
+  on t2.block_id_num = t1.block_id_num
+  and t2.indicator_id = t1.indicator_id
+  {where_clause}
+  group by t1.quarter, t1.year, t2.block_name, t2.domain_name
+  # where (t1.quarter={from_value} or t1.quarter={to_value})
+  # and (t1.year={from_year} or t1.year={to_year})
+
+block_score_by_indicator_quarter:
+  SELECT t1.quarter, t1.year, avg(t1.perc_point) as perc_point,
+  t2.block_name as block,  t2.indicator_name as indicator
+  FROM fact_phase1_block_data_quaterly t1
+  left join dim_phase1_block_data t2
+  on t2.block_id_num = t1.block_id_num
+  and t2.indicator_id = t1.indicator_id
+  {where_clause}
+  group by t1.quarter, t1.year, t2.block_name, t2.indicator_name
+  # where (t1.quarter={from_value} or t1.quarter={to_value})
+  # and (t1.year={from_year} or t1.year={to_year})
+
+block_indicator_type_quarter:
+  SELECT t1.quarter, t1.year, avg(t1.perc_point) as perc_point,
+  t2.block_name as block, t2.type_name as type, t2.indicator_name as indicator
+  FROM fact_phase1_block_data_quaterly t1
+  left join dim_phase1_block_data t2
+  on t2.block_id_num = t1.block_id_num
+  and t2.indicator_id = t1.indicator_id
+  {where_clause}
+  group by t1.quarter, t1.year, t2.block_name, t2.type_name, t2.indicator_name
+  # where (t1.quarter={from_value} or t1.quarter={to_value})
+  # and (t1.year={from_year} or t1.year={to_year})
+
+block_indicator_domain_quarter:
+  SELECT t1.quarter, t1.year, avg(t1.perc_point) as perc_point,
+  t2.block_name as block, t2.domain_name as domain, t2.indicator_name as indicator
+  FROM fact_phase1_block_data_quaterly t1
+  left join dim_phase1_block_data t2
+  on t2.block_id_num = t1.block_id_num
+  and t2.indicator_id = t1.indicator_id
+  {where_clause}
+  group by t1.quarter, t1.year, t2.block_name, t2.domain_name, t2.indicator_name
+  # where (t1.quarter={from_value} or t1.quarter={to_value})
+  # and (t1.year={from_year} or t1.year={to_year})
+
+# block analytics years:
+block_score_by_type_year:
+  SELECT t1.year, avg(t1.perc_point) as perc_point,
+  t2.block_name as block, t2.domain_name as domain, t2.indicator_name as indicator
+  FROM fact_phase1_block_data_yearly t1
+  left join dim_phase1_block_data t2
+  on t2.block_id_num = t1.block_id_num
+  and t2.indicator_id = t1.indicator_id
+  {where_clause}
+  group by t1.year, t2.block_name, t2.domain_name, t2.indicator_name;
+  # where (t1.year={from_year} or t1.year={to_year})
+
+block_score_by_domain_year:
+  SELECT t1.year, avg(t1.perc_point) as perc_point,
+  t2.block_name as block, t2.domain_name as domain, t2.indicator_name as indicator
+  FROM fact_phase1_block_data_yearly t1
+  left join dim_phase1_block_data t2
+  on t2.block_id_num = t1.block_id_num
+  and t2.indicator_id = t1.indicator_id
+  {where_clause}
+  group by t1.year, t2.block_name, t2.domain_name
+  # where (t1.year={from_year} or t1.year={to_year})
+
+block_score_by_indicator_year:
+  SELECT t1.year, avg(t1.perc_point) as perc_point,
+  t2.block_name as block,  t2.indicator_name as indicator
+  FROM fact_phase1_block_data_yearly t1
+  left join dim_phase1_block_data t2
+  on t2.block_id_num = t1.block_id_num
+  and t2.indicator_id = t1.indicator_id
+  {where_clause}
+  group by t1.year, t2.block_name, t2.indicator_name
+  # where (t1.year={from_year} or t1.year={to_year})
+
+block_indicator_type_year:
+  SELECT t1.year, avg(t1.perc_point) as perc_point,
+  t2.block_name as block, t2.type_name as type, t2.indicator_name as indicator
+  FROM fact_phase1_block_data_yearly t1
+  left join dim_phase1_block_data t2
+  on t2.block_id_num = t1.block_id_num
+  and t2.indicator_id = t1.indicator_id
+  {where_clause}
+  group by t1.year, t2.block_name, t2.type_name, t2.indicator_name
+  # where (t1.year={from_year} or t1.year={to_year})
+
+block_indicator_domain_year:
+  SELECT t1.year, avg(t1.perc_point) as perc_point,
+  t2.block_name as block, t2.domain_name as domain, t2.indicator_name as indicator
+  FROM fact_phase1_block_data_yearly t1
+  left join dim_phase1_block_data t2
+  on t2.block_id_num = t1.block_id_num
+  and t2.indicator_id = t1.indicator_id
+  {where_clause}
+  group by t1.year, t2.block_name, t2.domain_name, t2.indicator_name
+  # where (t1.year={from_year} or t1.year={to_year})

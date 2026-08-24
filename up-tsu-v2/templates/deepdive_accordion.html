@@ -1,0 +1,39 @@
+<div class="px-3 d-flex justify-content-between py-2 border border-left-0 border-right-0">
+  <p class="mb-0 p-15 align-self-center font-weight-bold text-uppercase">indicators contribution</p>
+  <p id="expand-all" class="mb-0 p-11 align-self-center font-italic text-capitalize text-primary cursor-pointer" data-attr="expand">Expand All</p>
+</div>
+<div class="w-100 rounded-0 border-0 bg-white">
+  <div id="deepdive-accordion" class="mb-5 bg-white">
+    <% var card_type = url.searchKey['card'] %>
+    <% var district_name = url.searchKey['district']%>
+    <% _.each(data, function(rows, name) { %>
+      <div class="card rounded-0 text-dark border-0 bg-white">
+        <div class="rounded-0 bg-warning deepdive card-header pb-2 pt-1 border-white border-top-0 border-left-0 border-right-0">
+          <a class="<% if(card_type.toLowerCase() !== name.split('_').join(' ')){%> collapsed <%}%>card-link text-white text-uppercase p-12 collapse-title" data-toggle="collapse" href="#collapse_<%-name.split(' ').join('_')%>"><%- name.split('_').join(' ') %>
+          </a>
+        </div>
+        <div id="collapse_<%-name.split(' ').join('_')%>" class="collapse cursor-pointer <% if(card_type.toLowerCase() === name.split('_').join(' ')){%> show <%}%> bg-white collapse-body" data-parent="#deepdive-accordion">
+          <table class="table p-9 mb-0">
+            <thead class="thead-light">
+              <tr>
+                <th class="col-10" scope="col">Indicators</th>
+                <th class="col-2" scope="col">Score</th>
+                <% if(district_name !== undefined) { %><th scope="col">Rank</th><% } %>
+              </tr>
+            </thead>
+            <tbody>
+              <% _.each(data[name], function(row) { %>
+              <tr>
+              <% var indicator = _.find(indicator_mapping, {indicator_name: row.indicator}) %>
+                <th scope="row" class="ind-name font-weight-normal" id="<%-row.id%>"><%-indicator.short_name%></th>
+                <td class="font-weight-bold"><%- indicator.unit == 'Rs' ? numeral(row.score).format('0,0.00'): row.score %> <%-indicator.unit%></td>
+                <% if(district_name !== undefined) { %><td class="font-weight-bold"><%- row.rank %></td><% } %>
+              </tr>
+              <% }) %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<!-- districts level modal -->
+<div class="modal fade modal-z-ind dropdown-template" id="district_dropdown_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog border-radius top-34 tail-tr custom-tail-tr bg-white w-320 m-auto" role="document">
+    <div class="modal-content border-0 text-center">
+      <div class="modal-header text-center py-3 d-block">
+        <h5 class="modal-title font-15 text-color11" id="exampleModalLabel">Select a District or Division</h5>
+      </div>
+      <div class="modal-body m-0 px-0 py-0 row border-0">
+        <div class="col-7 border-right border-color13 py-3 pr-0 overflow-auto custm-mh-2">
+          <ul class="nav text-left flex-column districts_type" value="">
+            <li class="mb-3 font-weight-bolder text-color1 nav-item font-13 d-flex justify-content-between" value="district_all">
+              <a class="cursor-pointer"><span class="w-87">DISTRICTS</span><span class="ml-2 dist_arrow"><img src="img/triangle-black.png" alt="traingle"
+                  width="10px" /></span></a></li>
+            <li class="mb-3 font-weight-bolder text-color1 nav-item font-13 d-flex justify-content-between opacity-40" value="district_asp">
+              <a class="cursor-pointer"><span class="w-87">ASPIRATION DIST.</span> <span class="ml-2 d-none dist_arrow"><img src="img/triangle-black.png" alt="traingle"
+                  width="10px" /></span></a></li>
+            <li class="mb-3 font-weight-bolder text-color1 nav-item font-13 d-flex justify-content-between opacity-40" value="district_hp">
+              <a class="cursor-pointer"><span class="w-87">HIGH PRIORITY DIST.</span> <span class="ml-2 d-none dist_arrow"><img src="img/triangle-black.png"
+                  alt="traingle" width="10px" /></span></a></li>
+            <li class="mb-3 font-weight-bolder text-color1 nav-item font-13 d-flex justify-content-between opacity-40  d-none" value="division_list">
+              <a class="cursor-pointer"><span class="w-87">DIVISIONS</span> <span class="ml-2 d-none dist_arrow"><img src="img/triangle-black.png"
+                  alt="traingle" width="10px" /></span></a></li>
+          </ul>
+        </div>
+        <div class="col-5 py-3 pr-0 overflow-auto custm-mh-2">
+          <ul class="nav text-left flex-column dist_dropdown_vals">
+            <% _.each(data.opt_data, function(dist_name){ %>
+              <li class="mb-3 font-13 <%- (dist_name == (url.searchKey.area))?'text-color17': 'text-color21' %>  d-flex -justify-content-between dist_opt" value="<%- dist_name %>"><span
+                class="w-77 text-truncate dis-txt"><%- _.toUpper(dist_name) %></span><span class="ml-2">
+                    <img class="dist_tick <%- (dist_name == (url.searchKey.area))?'':'d-none' %> " src="img/tick_blue.svg" alt="tick-blue" />
+                  </span></li>
+            <% }) %>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <div class="h3 mb-0 pos-b pt-3">
+            <button type="button" class="btn bg-color20 text-white py-2 lh-4 font-weight-bold br-tl-tr-0 w-100 sm3 ls-1 district-dropdown-submit" data-dismiss="modal">APPLY</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

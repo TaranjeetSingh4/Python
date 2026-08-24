@@ -1,0 +1,61 @@
+<!--dropdown-->
+<div class="w-100 rounded-0 border-0 bg-white custom-drop position-sticky">
+  <% district_indicators = _.uniq(_.map(_.filter(indicator_mapping, function(o) { return o.type_ind == 'dist_block' || o.type_ind == 'district'; }), 'indicator_name')) %>
+  <% district_indicators = district_indicators.slice(0,)%>
+  <% district_indicators = district_indicators.sort() %>
+  <div id="top-dropdown">
+    <div class="card rounded-0 text-dark border-0 bg-white">
+      <div class="custom-cls bg-custom1 card-header pb-2 pt-3 border-white border-top-0 border-left-0 border-right-0 d-flex">
+      <div class="w-10 cursor-pointer back-button">
+        <i class="text-white mr-2"></i>
+      </div>
+        <a id="top-panel" class="w-100 click_header collapsed card-link text-white text-uppercase cursor-pointer" data-toggle="collapse" href="#collapsemain">
+          <%- overall %>
+        </a>
+      </div>
+      <div id="collapsemain" class="collapse bg-white w-100" data-parent="#top-dropdown">
+        <!-- <% if (url.file !='niti_deepdive') { %>
+        <div class="bg-success py-2 border-white border-top-0 border-left-0 border-right-0 cursor-pointer">
+          <a class="dropdown-default text-dark text-uppercase dropdown-item p-14 font-weight-bold text-dark"><%- overall %></a>
+        </div>
+        <%}%> -->
+        <div id="accordion-in" class="bg-white">
+        <% var indicator = indicator ? indicator : false %>
+        <% if(indicator) { %>
+          <% _.each(district_indicators, function(item) { %>
+            <% var indicator_name = item, type_ = item %>
+            <% if(url.file === "map"){ %>
+              <% type_ = _.split(item, "__")[1] %>
+              <% indicator_name = _.split(item, "__")[0] %>
+            <%}%>
+            <a class="indicator-dropdown-value cursor-pointer text-uppercase dropdown-item py-2 p-15 font-weight-bold text-dark <%- type_ %>" data-value="<%- type_ %>"><%- _.find(indicator_mapping, {indicator_name: indicator_name}).short_name %></a>
+          <% }) %>
+        <% } else { %>
+          <% _.each(data, function(values, key) { %>
+            <div class="card rounded-0 text-dark border-0">
+              <div class="card-header py-2 border-white border-top-0 border-left-0 border-right-0">
+                <a class="collapsed card-link text-dark text-uppercase cursor-pointer" data-toggle="collapse" href="#<%-key.split(' ').join('_')%>"><%- key.split('_').join(' ') %>
+                  <span class="float-right dropdown-arrow cursor-pointer" data-param="<%- filter %>" data-value="<%- key %>">
+                    <img src="img/back-face2.png" alt="icon" class="mr-3 cursor-pointer">
+                  </span>
+                </a>
+              </div>
+              <div id="<%-key.split(' ').join('_')%>" class="collapse" data-parent="#accordion-in">
+                <div class="card-body py-0 text-dark">
+                  <% _.each(values, function(item) { %>
+                    <% var type_ = item%>
+                    <% if(url.file === "map"){ %>
+                      <%type_ = _.split(item, "__")[1]%>
+                    <%}%>
+                    <a class="dropdown-value cursor-pointer text-uppercase dropdown-item py-2 p-15 font-weight-bold text-dark <%- type_ %>" parent-param="<%-filter%>" parent-value="<%-key%>" data-param="<%- param %>" data-value="<%- type_ %>"><%- item.split('_').join(' ') %></a>
+                  <% }) %>
+                </div>
+              </div>
+            </div>
+          <% }) %>
+        <% } %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

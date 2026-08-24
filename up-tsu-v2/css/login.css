@@ -1,0 +1,8 @@
+@media (min-width: 540px) and (max-width: 767px) {
+  .vh-100 {
+    height: 100%;
+  }
+  .row img {
+    padding-top: 30px;
+  }
+}

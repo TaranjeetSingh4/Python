@@ -1,0 +1,73 @@
+<nav class="navbar navbar-expand-md bg-gradient-nav py-3  position-fixed pos-t">
+  <!-- Toggler/collapsibe Button -->
+  <a class="px-3 text-center cursor-pointer" data-toggle="modal" data-target=".bd-overlay-sm-left">
+    <img src="img/hamburger.png" alt="search" class="" width="19" height="12">
+  </a>
+  <span class="h5 mb-0 text-light">Dashboard</span>
+  <!-- Navbar links -->
+    <div class="d-flex ml-auto search-input">
+    <div class="text-right">
+      <span class="input-group-text bg-transparent no-border-radius rounded-0 border-0 cursor-pointer" id="search-icon"><i class="fa fa-search cursor-pointer text-white"></i></span>
+    </div>
+    <div id="ind_input1">
+      <div class="input-group custom-class pos-t w-100 bg-white">
+        <div class="input-group-append">
+          <span class="input-group-text bg-white no-border-radius rounded-0 border-0">
+            <i class="fa fa-search cursor-pointer text-dark "></i>
+          </span>
+        </div>
+        <input type="text" id="ind_input" class="form-control border-0 px-0" placeholder="Search" onkeyup="search_ind()">
+        <div class="input-group-append">
+          <span class="input-group-text bg-white no-border-radius rounded-0 border-0"><i id="close_nav1" class="fa fa-remove cursor-pointer text-dark "></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul id="myUL1" class="nav flex-column position-absolute pos-tr p-3 w-100 bg-light mt-5 vh-100">
+    <% _.each(container_data, function(d){%>
+    <li class="nav-item"><a href="?indicator=<%-d.id%>" class="nav-link text-dark" data-attr="<%- d.id %>"><%-d.select%></a></li>
+    <%})%>
+  </ul>
+  <div id="aside-nav" class="sidenav sidenav_show">
+    <div class="container-fluid w-75 position-absolute bg-light vh-100">
+      <div class="row bg-gradient py-3">
+        <div class="col-10 pr-0">
+          <div class="admin-image mb-2"><img src="img/man.png" alt="admin-image" width="50px" height="50px" class="round bg-dark"></div>
+          <p class="text-light mb-0 p-12 user_person">Virendra Pankaj Prithu</p>
+        </div>
+        <div class="col-2 pl-0 text-right">
+          <div class="close-icon"> <a href="javascript:void(0)" class="closebtn h3 mb-0 text-light" id="closeNav">&times;</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-area pt-2">
+        <ul class="nav d-flex flex-column">
+          <% _.each(dashboard_details, function(d) { %>
+            <li class="nav-item"><a class="nav-link px-0 text-dark font-weight-bold" href="<%- d.nav %>"><img src="img/<%- d.img %>.png" alt="<%- d.img %>" class="pr-3"><%- d.name %></a></li>
+          <% }) %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!--space needed-->
+<div class="pt-5 mt-2"></div>
+<!--Select Menu-->
+<div class="card no-border-radius border-0 bg-secondary">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-1 pr-0 align-self-center">
+        <a class="prev_view cursor-pointer"> <img src="img/back.png" alt="search" width="9" height="auto"></a>
+      </div>
+      <div class="col-11 pl-1 pr-2">
+        <select class="form-control text-primary  no-border-radius border-0 bg-transparent p-15 pl-0 text-uppercase" aria-label="dropdown" id="sel2">
+          <% _.each(container_data, function(d){ %>
+            <option class="urlfilter p-15 border border-dark border-top-0 border-right-0 border-left-0"
+            href="?select=<%-d.id%>" data-attr="<%- d.id %>" aria-label="dropdown">
+            <%- d.select %></option>
+          <% }) %>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>

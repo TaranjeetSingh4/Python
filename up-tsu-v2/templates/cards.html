@@ -1,0 +1,46 @@
+<div class="card with_out_map no-border-radius border-0 bg-transparent pb-2">
+  <div class="container-fluid">
+    <div class="row">
+      <% _.each(cards, function(d, i){ %>
+        <% var padding_ = "pl-1" %>
+        <% if(i % 2 === 0 ) { %>
+          <% padding_ = "pr-1" %>
+        <% } %>
+      <div class="col-6 d-flex <%= padding_ %> pb-2">
+        <div class="<%- d.color %> w-100 p-3 cursor-pointer urlfilter card_data <%- d.name %>" data-attr="<%- d.name %>">
+          <div class="row mx-0 pb-2">
+            <div class="col-8 px-0">
+              <img src="img/<%-d.name || Coverage %>.png" alt="<%-d.name%>">
+            </div>
+            <div class="col-4 px-0 text-right">
+              <p class="p-13 mb-0 text-light card_rank"><%-d.rank%></p>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col-12 px-0">
+              <p class="p-12 mb-0 font-weight-light text-light text-uppercase wrap_text">
+              <%-d.name%></p>
+              <p class="h2 mb-0 mt-1 text-light text-uppercase">
+                <%-d.value%>
+                <% var arrow_type = "down-arrow-white" %>
+                <%if(d.per_cg == Infinity){%>
+                  <%d.per_cg = 0 %>
+                <%}%>
+                <% if(d.per_cg >= 0) { %>
+                  <% arrow_type = "up-arrow-white" %>
+                <% }%>
+                <img src="img/<%- arrow_type %>.png" alt="<%- arrow_type %>">
+                <span class="color-light p-13 pl-0"><%-_.round(d.per_cg, 1)%>%</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+</div>
+<div class="note pb-2 with_out_map">
+  <div class="container-fluid">
+    <p class="mb-0 font-italic color-light-dark p-10">Note: Select type to see individual indicator level details</p>
+  </div>
+</div>

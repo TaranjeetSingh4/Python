@@ -1,0 +1,300 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>UP-TSU | Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="ui/bootstraptheme.css?primary=%230776FF&secondary=%234F4644&success=%23F5F5F5&info=%238EF0FF&warning=%23E09C24&danger=%23DB5F3B&light=%23ffffff&dark=%23000000&body-bg=%23ffffff&font-family-base=open-sans&">
+  <link rel="stylesheet" href="node_modules/bootstrap-select/dist/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="ui/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="node_modules/jquery-ui-dist/jquery-ui.css">
+  <!-- <link rel="stylesheet" href="bower_components/jQuery-ui-Slider-Pips/dist/jquery-ui-slider-pips.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/simeydotme/jQuery-ui-Slider-Pips/dist/jquery-ui-slider-pips.min.css">
+  <link rel="stylesheet" href="ui/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/summary.css">
+</head>
+
+<body>
+  {% set import json %}
+  {% set import up_tsu_app %}
+  {% set from gramex.config import variables %}
+  {% set import gramex %} {% set user_info = handler.get_session().get("user", {}) %} {% set username = user_info.get("user","") %}
+  {% if username == 'CM_Office1' %}
+    {% set handler.redirect('landing') %}
+  {% end %}
+  <i class="user_name" id="{{username}}"></i>
+  <div class="loading-icon loading">
+    <i class="fa fa-circle-o-notch fa-spin pos-cc"></i>
+  </div>
+  <script class="nav_bar" type="text/html" src="templates/nav_bar.html"></script>
+  <div class="w-100 position-fixed">
+    <script class="_dropdown" type="text/html" src="templates/dropdown_map.html"></script>
+    <!--calendar-->
+    <div class="card no-border-radius border-0 bg-white py-2 calendar_cc">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between mb-2">
+          <div class="">
+            <ul class="nav d-flex">
+              <li class="nav-item align-self-center pr-2">
+                <img src="img/calendar-face-2.svg" alt="icon" id="for-date" class="w-20" />
+              </li>
+              <li class="nav-item p-9">
+                <!-- <p class="mb-0 text-uppercase">selected Time period</p> -->
+                <p class="mb-0 font-weight-bold calendar_time pt-2"> May 2019</p>
+              </li>
+            </ul>
+          </div>
+          <div class="legend_container">
+            <script id="id_legend_circle" type="text/html" src="templates/legend_circles.html"></script>
+          </div>
+          <div class="dropdown_dist_wrapper">
+            <ul class="nav d-flex">
+              <li class="nav-item align-self-center">
+                <div class="dropdown">
+                  <button class="btn btn-danger dropdown-toggle p-9 resp-p2 text-truncate" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Uttar Pradesh
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-height" aria-labelledby="dropdownMenuButton">
+                    <div class="content"></div>
+                    <script type="text/html" id="userlist">
+                      <a class="dropdown-item cursor-pointer active" id="">Uttar Pradesh</a>
+                      <% users = _.sortBy(users, _district)%>
+                      <% _.each(users, function(user) { %>
+                      <a class="dropdown-item cursor-pointer" id="<%- user[_type] %>_layer"><%- _.includes(Object.keys(district_name_mapping), user[_district]) ? district_name_mapping[user[_district]] : user[_district] %></a>
+                      <% }); %>
+                    </script>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <ul class="nav d-flex">
+              <!-- <li class="nav-item align-self-center px-3">
+                <img src="img/insight-face-2.svg" alt="icon">
+              </li> -->
+              <li class="nav-item align-self-center screenshot">
+                <a class="fa fa-close mr-3 text-dark" aria-hidden="true" href="./summary"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="border border-top-0 border-right-0 border-left-0"></div>
+    </div>
+  </div>
+  <div class="pt-5 mt-5"></div>
+  <div class="" id="cal">
+    <script class="calendar" type="text/html" src="templates/calendar.html"></script>
+  </div>
+  <!--switch section-->
+  <div class="px-3 py-3 pt-5 card-title mb-0 anvesh d-flex">
+    <form>
+      <label for="mp1" class="font-weight-bold sm1 mb-0 mr-2">DISTRICTS</label>
+      <div class="switch-primary round">
+        <input type="checkbox" id="map-section" class="map1">
+        <label for="map-section"><div class="invisible">jk</div></label>
+      </div>
+  <label for="mp1" class="sm1 mb-0 ml-2">DIVISION</label>
+  </form>
+
+
+  <ol class="breadcrumb d-flex py-0 m-0 px-3 align-self-center bg-transparent small"></ol>
+  </div>
+  <div class="ml-5 small">
+  <div id="double-label-slider" class="pl-4"> </div>
+</div>
+  <div id="mapid" class="mapid"></div>
+  <div id="mapid2" class="mapid2"></div>
+  <!-- </div> -->
+  <!-- <div class="pt-5"></div> -->
+  <script type="text/javascript">
+    /* exported defaults, indicator_mapping, map_dropdown_indicators_14, user_data */
+    var user_data = {{ json.dumps(user_info) }}
+    var defaults = {% raw up_tsu_app.get_config(handler) %}
+    var indicator_mapping = {{ json.dumps(variables['indicator-mapping']) }}
+    var map_dropdown_indicators_14 = {{ json.dumps(variables['map_dropdown_indicators_14']) }}
+
+  </script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/jquery-ui-dist/jquery-ui.js"></script>
+  <script src="ui/lodash/lodash.min.js"></script>
+  <script src="ui/moment/min/moment-with-locales.min.js"></script>
+  <script src="ui/popper.js/dist/umd/popper.min.js"></script>
+  <script src="ui/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="ui/topojson/dist/topojson.min.js"></script>
+  <script src="node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+  <!-- <script type="text/javascript" src="bower_components/jQuery-ui-Slider-Pips/dist/jquery-ui-slider-pips.js"></script> -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/simeydotme/jQuery-ui-Slider-Pips/dist/jquery-ui-slider-pips.min.js"></script>
+  <script src="node_modules/g1/dist/g1.min.js"></script>
+  <script type="text/javascript" src="ui/leaflet/dist/leaflet.js"></script>
+  <script src="ui/d3/build/d3.min.js"></script>
+  <script src="node_modules/d3-scale-chromatic/dist/d3-scale-chromatic.min.js"></script>
+  <script src="node_modules/g1/dist/mapviewer.min.js"></script>
+  <script src="ui/numeral/min/numeral.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/map.js"></script>
+
+  <script>
+    /* global master, url_update, render_map, UI, map_updivisions, map_updivisions2 */
+    /* exported div_dis_map */
+    var url = g1.url.parse(location.href)
+    var div_dis_map = UI.fetch_data("div_dist_map", "")
+    // $('#userlist').off()
+    // $('#userlist').template({
+    //   users: div_dis_map,
+    //   _district: "district",
+    //   _type : "map_id"
+    // })
+    var dict_ = {}
+    $('body')
+      .on('click', '.submit', render_map)
+
+    $(document).on("click", "#closeNav", function() {
+      $("#aside-nav").hide();
+    })
+    .on("click", "#myUL li", function(){
+      url_update({indicator_id : $(this).find('span').attr('id'), type : $(this).find('span').attr('data-attr')})
+      $('#close_nav').click()
+      render_map()
+    })
+    .on("click", ".map_legend_content", function() {
+      $('.map_legend_content ul').toggleClass('d-none');
+    })
+    .on("click", "body", function(event) {
+      if (['aside-nav'].indexOf($(event.target).attr('id')) < 0) {
+        if ($(event.target).attr('id') === 'openNav' && $("#aside-nav").css("display") === 'none')
+          $("#aside-nav").show();
+        else
+          $("#aside-nav").hide();
+      }
+    })
+    .on("click", "#c", function() {
+      $("#right-aside-nav").hide();
+    })
+    .on("click", "body", function(event) {
+      if (['right-aside-nav'].indexOf($(event.target).attr('id')) < 0) {
+        if ($(event.target).attr('id') === 'p' && $("#right-aside-nav").css("display") === 'none')
+          $("#right-aside-nav").show();
+        else
+          $("#right-aside-nav").hide();
+      }
+    })
+    .on("click", "#cc", function() {
+      $("#right-aside-nav1").hide();
+    })
+    .on("click", "body", function(event) {
+      if (['right-aside-nav1'].indexOf($(event.target).attr('id')) < 0) {
+        if ($(event.target).attr('id') === 'pp' && $("#right-aside-nav1").css("display") === 'none')
+          $("#right-aside-nav1").show();
+        else
+          $("#right-aside-nav1").hide();
+      }
+    })
+    .on('click', '.calendar', function() {
+      dict_['cal'] = $(this).children().eq(0).text() === "Performance for" ? "for" : "to"
+      url.update(dict_)
+      var new_url_ = url.join('calendar')
+      window.location.href = new_url_
+    })
+    .on('change', '#sel1', function() {
+      dict_['district'] = this.value
+      url_update(dict_)
+      master()
+    })
+    .on('click', '.prev_view', function() {
+      var referrer = document.referrer;
+      window.location.href = referrer
+    })
+    .on('click', '.card_data', function() {
+      dict_['card'] = $(this).attr('data-attr')
+      url.update(dict_, 'add')
+      var new_url = url.join('deepdive')
+      window.location.href = new_url
+    })
+    .on('click', '.map1', function() {
+      $('.breadcrumb').empty()
+      $('#dropdownMenuButton').text("Uttar Pradesh")
+      if ($(this).prop('checked')) {
+        url_update({'toggle': 'yes'})
+        $('.mapid').hide()
+        $('.mapid2').show()
+        // $('#userlist').off()
+        // $('#userlist').template({
+        //   users: _.uniqBy(div_dis_map, "division"),
+        //   _district: "division",
+        //   _type : "div_map_id"
+        // })
+      } else {
+        url_update({'toggle': 'no'})
+        $('.mapid2').hide()
+        $('.mapid').show()
+        // $('#userlist').off()
+        // $('#userlist').template({
+        //   users: div_dis_map,
+        //   _district: "district",
+        //   _type : "map_id"
+        // })
+      }
+    })
+    .on('click', '.close', function(){
+      $('.map_legend_content img').css('z-index', 9999)
+    })
+    .on('click', '.hamburger', function(){
+      $('.map_legend_content img').css('z-index', 0)
+    })
+    .on('click', '.click_header', function(){
+      if($('.calendar_cc').css('display') !== 'none')
+        {$('.calendar_cc').hide()}
+      else{
+        $('.calendar_cc').show()
+      }
+    })
+    .on('click', '.dropdown .dropdown-item', function(){
+      $('.leaflet-interactive').css('opacity', 1)
+      var bla = $(this).text().trim()
+      // debugger
+      $('#dropdownMenuButton').text(bla)
+      $('.dropdown-item').removeClass('active')
+      $(this).addClass('active')
+      if(_.lowerCase(bla) === "uttar pradesh"){
+        $('.leaflet-control-zoom-reset').click()
+        $('.leaflet-control-zoom-reset').click()
+      }
+      var _click = ""
+      $('.leaflet-control-zoom-reset').click()
+      $('.leaflet-control-zoom-reset').click()
+      var _map = $('#map-section').prop('checked') ? "div_map_id" : "map_id"
+      var _type = $('#map-section').prop('checked') ? "division" : "district"
+      bla = _.replace(bla,new RegExp("Prayagraj",'g'),"Allahabad")
+      bla = _.replace(bla,new RegExp("Ayodhya",'g'),"Faizabad")
+      _.each(div_dis_map, function(d){
+        if(bla === d[_type]){
+          _click = d[_map]
+        }
+      })
+      setTimeout(function(){
+        if($('#map-section').prop('checked')){
+          map_updivisions2.gLayers['indiaGeojson2'].eachLayer(function(sublayer) {
+            if(sublayer.feature.properties.Id == _click){
+              sublayer.fire('click');
+            }
+          })
+        }
+        else{
+          map_updivisions.gLayers['indiaGeojson'].eachLayer(function(sublayer) {
+            if(sublayer.feature.properties.Id == _click){
+              sublayer.fire('click');
+            }
+          })
+        }
+      }, 500);
+    })
+  </script>
+  {% include 'templates/google-analytics-script.html' %}
+</body>
+</html>

@@ -1,0 +1,43 @@
+url:
+  up-tsu-desktop/program-area:
+    pattern: /$YAMLURL/pa-landing
+    handler: FileHandler
+    kwargs:
+      path: $YAMLPATH/program-area.html
+      template: true
+      auth: &AUTH
+        login_url: /$YAMLURL/login
+        membership:
+          Approval: Approved
+        template: $YAMLPATH/error/403.html
+
+  up-tsu-desktop/program-area-selected:
+    pattern: /$YAMLURL/pa
+    handler: FileHandler
+    kwargs:
+      path: $YAMLPATH/program-area-selected.html
+      template: true
+      auth: *AUTH
+
+  up-tsu-desktop/selected-states-view:
+    pattern: /$YAMLURL/pa-overview
+    handler: FileHandler
+    kwargs:
+      path: $YAMLPATH/selected-states-view.html
+      template: true
+      auth: *AUTH
+
+  up-tsu-desktop/pa-compare:
+    pattern: /$YAMLURL/pa-compare
+    handler: FileHandler
+    kwargs:
+      path: $YAMLPATH/indicators-card.html
+      template: true
+      auth: *AUTH
+
+  up-tsu-desktop/$*:
+    pattern: /$YAMLURL/(\w+[-\w+]*)
+    handler: FormHandler
+    kwargs:
+      url: $YAMLPATH/data/pa/{_0}.csv
+      auth: *AUTH

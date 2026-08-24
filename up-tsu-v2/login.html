@@ -1,0 +1,96 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>UP-TSU | Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="ui/bootstraptheme.css?primary=%2348A3D4&secondary=%23AFAFAF&success=%23767676&info=%238EF0FF&warning=%23F9A77E&danger=%23FB3353&light=%23ffffff&dark=%23000000&body-bg=%23ffffff&font-family-base=open-sans&">
+  <link rel="stylesheet" href="ui/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" type="text/css" href="ui/noty/lib/noty.css">
+</head>
+
+<body class="body-bg bg-no-repeat vh-100 index">
+  {% set import up_tsu_app %}
+  <div class="px-0">
+    <div class="d-flex align-self-center vh-100">
+      <div class="col-12 align-self-center px-0">
+        <div class="row mb-5 pb-4 mx-0">
+          <div class="col-6 text-right">
+            <img src="img/uttar-pradesh-government.png" alt="uttar-pradesh-government">
+          </div>
+          <div class="col-6 text-left pl-1">
+            <img src="img/login-right-logo.png" alt="logo-left">
+          </div>
+        </div>
+        <div class="card bg-transparent no-border-radius border-0 login">
+          <form class="login-input" method="POST" id="loginform">
+            {% if error %}
+              <div class="mx-auto alert alert-warning alert-dismissible fade show text-center">
+                <strong> Invalid Credentials! </strong>
+                <p class="ml-2 sm1"> Please re-enter username and password. Response will be delayed by 1 min after 5 invalid login attempts. </p>
+              </div>
+            {% end %}
+            <input type="hidden" name="_xsrf" value="{{ handler.xsrf_token }}">
+            <div class=" w-50 mx-auto mb-3">
+              <input type="text" class="form-control bg-transparent border border-top-0 border-left-0 border-right-0 h5 no-border-radius text-white text-center w-100 pb-3 font-weight-light border-warning" id="inputUser" placeholder="Username" name="user" autocomplete="on">
+            </div>
+            <div class="w-50 mx-auto mb-3">
+              <input type="password" class="form-control bg-transparent border border-top-0 border-left-0 border-right-0 h5 no-border-radius text-white text-center w-100 pb-3 font-weight-light border-warning" id="inputPassword" placeholder="Password" name="password" autocomplete="off">
+            </div>
+            <div class="w-50 mx-auto pb-5 text-center">
+              <a href="#" id="reset" class="text-capitalize text-warning small font-italic cursor-pointer nav-link p-0">Forgot Password</a>
+            </div>
+            <div class="mt-5 text-center">
+              <button type="submit" class="no-border-radius border-0 h5 py-4 mb-0 btn-light font-weight-light w-100 cursor-pointer"><a class="text-uppercase text-danger nav-link p-0">Sign In</a></button>
+            </div>
+          </form>
+          <form class="reset-password d-none" method="POST" id="resetform">
+            {% if error %}
+              <div class="mx-auto alert alert-warning alert-dismissible fade show text-center">
+                <strong>Warning!</strong>
+                <p class="p-12"> Invalid Mobile Number. </p>
+              </div>
+            {% end %}
+            <input type="hidden" name="_xsrf" value="{{ handler.xsrf_token }}">
+            <div class=" w-50 mx-auto mb-3">
+              <input type="text" pattern="[d]{10}" class="form-control bg-transparent border border-top-0 border-left-0 border-right-0 h5 no-border-radius text-white text-center w-100 pb-3 font-weight-light border-warning" id="phonenumber" placeholder="Mobile Number" name="phone" autocomplete="off" required>
+            </div>
+            <div class="w-50 mx-auto pb-5 text-center">
+              <a href="#" id="login" class="text-capitalize text-warning small font-italic cursor-pointer nav-link p-0">Sign in</a>
+            </div>
+            <div class="mt-5 text-center">
+              <button type="submit" class="no-border-radius border-0 h5 py-4 mb-0 btn-light font-weight-light w-100 cursor-pointer" id="send-otp"><a class="text-uppercase text-danger nav-link p-0">Send OTP</a></button>
+            </div>
+          </form>
+          <div class="privacy-statement mx-auto">
+            <a href="privacy" target="_blank" rel="noopener" class="text-white">Privacy Statement</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="ui/jquery/dist/jquery.min.js"></script>
+<script src="ui/popper.js/dist/umd/popper.min.js"></script>
+<script src="ui/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="ui/noty/lib/noty.min.js"></script>
+<script src="ui/g1/dist/g1.min.js"></script>
+<script src="node_modules/crypto-js/crypto-js.js"></script>
+<script src="js/login.js"></script>
+<!--
+  D3: ui/d3/build/d3.min.js
+  Lodash: ui/lodash/lodash.min.js
+  Moment: ui/moment/min/moment-with-locales.min.js
+  Noty: ui/noty/lib/noty.min.js
+  Daterangepicker: ui/daterangepicker/daterangepicker.js
+  Leaflet: ui/leaflet/dist/leaflet.js
+  TopoJSON: ui/topojson/dist/topojson.min.js
+  g1: ui/g1/dist/g1.min.js
+-->
+
+</html>

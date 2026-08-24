@@ -1,0 +1,44 @@
+<!--dropdown-->
+<div class="w-100 rounded-0 border-0 bg-white custom-drop position-sticky">
+  <% url = g1.url.parse(location.href) %>
+  <% indicator_flag = (url.searchKey['indicator_id'] === undefined) ? 'false' : url.searchKey['indicator_id'] %>
+  <div id="top-dropdown">
+    <div class="card rounded-0 text-dark border-0 bg-white">
+      <div class="custom-cls bg-custom1 card-header pb-2 pt-3 border-white border-top-0 border-left-0 border-right-0 d-flex">
+        <div class="w-10 cursor-pointer">
+          <i class="back-button text-white fa fa-chevron-left mr-2 cursor-pointer"></i>
+        </div>
+        <a id="top-panel" class="w-100 click_header collapsed card-link text-white text-uppercase cursor-pointer" data-toggle="collapse" href="#collapsemain">
+          <%- overall %>
+        </a>
+      </div>
+      <div id="collapsemain" class="collapse bg-white vh-100 w-100" data-parent="#top-dropdown">
+        <div class="py-2 border-white border-top-0 border-left-0 border-right-0 cursor-pointer">
+          <a class="map_composite_drop dropdown-default font-weight-bold text-dark text-uppercase dropdown-item p-14 <%-indicator_flag=='false' ? 'bg-secondary' : '' %> "><%- overall %></a>
+        </div>
+        <div id="accordion-in" class="bg-white vh-100">
+
+          <% var temp_list = [] %>
+          <% _.each(map_dropdown_indicators_14, function(elem){ %>
+          <% var id_no = _.split(_.split(elem, "__")[1], '_')[1]  %>
+          <% var padded_id = id_no.length > 1 ? id_no : '0'+id_no  %>
+          <% temp_list.push({'id': padded_id , 'name': elem }) %>
+          <% }) %>
+
+          <% sorted_dict = _.sortBy(temp_list, 'id', 'asc') %>
+          <% sorted_array = _.map(sorted_dict, 'name') %>
+          <% _.each(sorted_array, function(item) { %>
+          <% var indicator_name = item, type_ = item %>
+          <% if(url.file === "map" || url.file === "trend"){ %>
+          <% type_ = _.split(item, "__")[1] %>
+          <% indicator_name = _.split(item, "__")[0] %>
+          <%}%>
+          <a class=" map_composite_drop dropdown-value indicator-dropdown-value cursor-pointer text-uppercase dropdown-item py-2 p-15 font-weight-bold text-dark <%- type_ %>     <%-indicator_flag==type_ ? 'bg-secondary' : '' %>" data-value="<%- type_ %>" data-param="indicator_id" ><%- _.find(indicator_mapping, {indicator_name: indicator_name}).short_name %></a>
+          <% }) %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

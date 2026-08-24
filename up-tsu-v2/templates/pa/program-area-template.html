@@ -1,0 +1,20 @@
+<% _.each(data, function(d){ %>
+  <div class="card border-radius shadow pt-3 border-0 mb-3">
+    <div class="d-flex justify-content-between h-100">
+      <div class="w-50 h-100">
+        <img class="card-icon" src="img/<%= d.image_name %>" alt="<%= d.name %>">
+      </div>
+      <div class="w-50 h-100 pl-2 card bg-transparent border-0 rounded-0">
+        <div class="card-body pt-0 px-0 pb-4 mb-3 h-75">
+          <h6 class="mb-0 font-weight-bolder pr-2 text-color3 line-height-1 text-capitalize w-75 pb-1">
+            <%= d.name %></h6>
+        </div>
+        <div class="card-footer border-top p-0 bg-transparent mt-4">
+          <a class="font-weight-bold text-color2 h3 mb-0 d-flex align-items-center text-decoration-none" <%= d.href %>>
+            <span class="sm3 hover-fg-primary focus-fg-primary">explore </span><span class="mx-2"><img src="img/arrow-grey.svg" alt="arrow" /></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+<% })%>

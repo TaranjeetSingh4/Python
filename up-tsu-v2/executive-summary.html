@@ -1,0 +1,264 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>UP-TSU | Summary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="ui/bootstraptheme.css?primary=%230776FF&secondary=%23EAEEF2&success=%23F5F5F5&info=%23f6f6f6&warning=%23EC6D43&danger=%234D4742&light=%23ffffff&dark=%23000000&body-bg=%23ffffff&font-family-base=open-sans&">
+  <link rel="stylesheet" href="ui/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/summary.css">
+  <link rel="stylesheet" href="css/by_domain.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <link rel="stylesheet" href="css/executive.css">
+  <link rel="stylesheet" href="ui/leaflet/dist/leaflet.css">
+</head>
+
+<body class="bg-info">
+  {% set import json %}
+  {% set import up_tsu_app %}
+  {% set from gramex.config import variables %}
+  {% set user_info = handler.get_session().get("user", {}) %}
+  {% set username = user_info.get("user", "") %}
+  {% if username == 'CM_Office1' %}
+    {% set handler.redirect('landing') %}
+  {% end %}
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script type="text/javascript">
+    /* exported indicator_mapping, default_params, user_data */
+    var indicator_mapping = {{ json.dumps(variables['indicator-mapping']) }}
+    var default_params = {% raw up_tsu_app.get_config(handler) %}
+    var user_data = {{ json.dumps(user_info) }}
+  </script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <div class="loading-icon">
+    <i class="fa fa-circle-o-notch fa-spin pos-cc"></i>
+  </div>
+
+<i class="user_name" id="{{username}}"></i>
+<script class="nav_bar" type="text/html" src="templates/nav_bar.html"></script>
+<!--bars-->
+<!-- Page 1 content starts  -->
+<div class="mt-3">
+    <script class="calendar" type="text/html" src="templates/pa/pa_calendar.html"></script>
+
+    <div class="d-flex justify-content-md-end justify-content-end">
+
+      <!-- calendar, download div starts -->
+      <div class="align-self-center">
+        <ul class="nav d-flex">
+          <li class="nav-item p-9 text-right align-self-center text-uppercase">
+            <!-- <p class="mb-0">Selected Time period</p> -->
+            <p class="mb-0 font-weight-bold date-label"></p>
+          </li>
+          <li class="nav-item align-self-center pl-2 pr-4 cursor-pointer">
+            <img src="img/calendar-face-2.svg" alt="icon" id="cal-icon">
+          </li>
+        </ul>
+      </div>
+      <!-- calendar, download div ends -->
+
+    </div>
+  <script class="no_data" type="text/html" src="templates/pa/no_data.html"></script>
+  <script class="executive_sum" type="text/html" src="templates/executive_sum.html"></script>
+  <script class="executive_sum_state" type="text/html" src="templates/executive_sum_state.html"></script>
+</div>
+<!-- Page 1 content ends  -->
+
+<!-- Page 2,3 content starts  -->
+<div class="page_2_3 container-fluid px-md-4 px-3 mt-0 pt-0 mb-2">
+  <div class="m mb-4 page_2_container">
+
+    <div class="row ">
+      <!-- Executive Insights start code -->
+      <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+        <div class="container_executive_p2_insights">
+          <script class="executive_p2_insights" type="text/html" src="templates/executive_p2_insights.html"></script>
+        </div>
+      </div>
+      <!-- Executive Insights end code -->
+      <!-- Rank chart start code -->
+      <div class="col-12 col-sm-12 col-md-12 col-lg-7 rank-container bg-white mt-2">
+        <div class="h3 py-3 text-uppercase">
+          <span class="sm3 d-block mb-2 text-center font-weight-bold">RANK MOVEMENT (COMPOSITE SCORE)</span>
+          <span class="sm3 d-block mb-2 text-center font-weight-bold mb-4 rank_chart_title">-BLOCK LEVEL</span>
+          <div class="rank_chart position-relative"></div>
+        </div>
+      </div>
+      <!-- Rank chart end code -->
+    </div>
+  </div>
+
+  <!-- Executive Table code -->
+  <div class="pb-2 mb-2">
+    <div class="container_executive_table pb-4 mb-4">
+      <script class="executive_table" type="text/html" src="templates/executive_table.html"></script>
+    </div>
+  </div>
+
+</div>
+<!-- Page 2,3 content ends  -->
+
+
+<!--footer-->
+{% if username != 'CM_Office1' %}
+<div class="footer position-fixed pos-b">
+  <nav class="nav nav-pills no-border-radius justify-content-between d-flex w-100 text-center">
+        <a class="d-flex justify-content-between flex-column  nav_4 nav-link col no-border-radius px-1 py-2 text-center font-weight-light text-uppercase p-11" href="./summary"><img src="./img/fill-white.png" alt="icon" class="d-block mx-auto">Summary</a>
+        <a class="d-flex justify-content-between flex-column  nav_4 nav-link col no-border-radius px-1 py-2 font-weight-light text-uppercase p-11" href="./deepdive"><img src="./img/deepdrive-light.png" alt="icon" class="d-block mx-auto">Deep Dive</a>
+        <!-- <a class="d-flex justify-content-between flex-column  nav_4 nav-link col no-border-radius px-1 py-2 font-weight-light text-uppercase p-11" href="./niti_deepdive"><img src="./img/deepdrive-light.png" alt="icon" class="d-block mx-auto">Niti Deepdive</a> -->
+        <a class="d-flex justify-content-between flex-column  nav_4 nav-link col no-border-radius px-1 py-2 font-weight-light text-uppercase p-11" href="./analytics"><img src="./img/analytics.png" alt="icon" class="d-block mx-auto">Analytics</a>
+        <a id="executive_nav" class=" d-flex justify-content-between flex-column nav_4 nav-link col no-border-radius px-1 py-2 text-center font-weight-light text-uppercase p-11 executive-sum-nav active" href="./executive-summary"><img src="./img/executive_grey.svg" alt="icon" class="d-block mx-auto">Executive</a>
+  </nav>
+</div>
+{% end %}
+</div>
+<!--modal for popup-text-->
+<div class="modal fade bg-rgba-4 bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title district__ranking px-5 text-center">District Ranking</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <script type="text/html" id="ranking">
+          <table class="table border-0 p-10 mb-2">
+            <tbody>
+              <% if(data === undefined || data.length === 0) { %>
+              <tr>
+                <div class="justify-content-between">
+                  <h6 class="alert alert-info p-14 font-weight-bold m-4 text-center text-uppercase">No data available</h6>
+                </div>
+              </tr>
+              <% } else { %>
+              <% _.each(data, function(row) { %>
+              <% if(row.rank !== 0) { %>
+              <tr class="bar_click cursor-pointer">
+                <th rowspan="1" class="border-0 text-dark font-weight-normal text-right pr-1 p-11"><%- _.includes(Object.keys(district_name_mapping), row.district) ? district_name_mapping[row.district] : row.district %></th>
+                <td class="border-0 font-weight-bold text-dark font-italic text-center px-0" rowspan="1"><%- row.rank %></td>
+                <td colspan="3" class="border-0 w-50 pl-1">
+                  <div class="d-flex">
+                    <div class="custom-round bg-color-i2 text-white text-left cm_bar pl-1 pr-0" width="<%- (row.cm_index * 100) > 100 ? 100 : (row.cm_index * 100) %>"><%- row.cm_index? _.round(row.cm_index,2) : _.round(row.cm_index,2) %> </div>
+                    <span class="border border-dark border-top-0 border-bottom-0 border-left-0 pm_bar" width="<%- ((row.pm_index-row.cm_index) * 100) > 100 ? 100 : ((row.pm_index-row.cm_index) * 100) %>" data-toggle="tooltip" title="<%- row.pm_index %>"></span>
+                  </div>
+                </td>
+              </tr>
+              <% } %>
+              <% }) %>
+              <% } %>
+            </tbody>
+          </table>
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <script src="js/vega_4.3.0.min.js"></script> -->
+<script src="node_modules/vega/build/vega.min.js"></script>
+<script src="ui/jquery/dist/jquery.min.js"></script>
+<script src="ui/lodash/lodash.min.js"></script>
+<script src="ui/moment/min/moment-with-locales.min.js"></script>
+<script src="ui/popper.js/dist/umd/popper.min.js"></script>
+<script src="ui/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="ui/topojson/dist/topojson.min.js"></script>
+<script type="text/javascript" src="ui/leaflet/dist/leaflet.js"></script>
+<script src="ui/g1/dist/g1.min.js"></script>
+<script src="ui/d3/build/d3.min.js"></script>
+<script type="text/javascript" src="components/donut.js"></script>
+<script type="text/javascript" src="components/bar_chart.js"></script>
+<script src="components/rank_chart.js"></script>
+
+<script type="text/javascript" src="components/map.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script src="js/calendar.js"></script>
+<script src="js/executive_summary.js"></script>
+  <script src="js/log_capture.js"></script>
+<script>
+
+  /* global master, dict_, url, url_update*/
+
+  $(document).on("click", "#closeNav", function() {
+    $("#aside-nav").hide();
+  })
+  .on("click", "body", function(event) {
+    if (['aside-nav'].indexOf($(event.target).attr('id')) < 0) {
+      if ($(event.target).attr('id') === 'openNav' && $("#aside-nav").css("display") === 'none')
+        $("#aside-nav").show();
+      else
+        $("#aside-nav").hide();
+    }
+  })
+  .on("click", "#c", function() {
+    $("#right-aside-nav").hide();
+  })
+  .on("click", "body", function(event) {
+    if (['right-aside-nav'].indexOf($(event.target).attr('id')) < 0) {
+      if ($(event.target).attr('id') === 'p' && $("#right-aside-nav").css("display") === 'none')
+        $("#right-aside-nav").show();
+      else
+        $("#right-aside-nav").hide();
+    }
+  })
+  .on("click", "#cc", function() {
+    $("#right-aside-nav1").hide();
+  })
+  .on("click", "body", function(event) {
+    if (['right-aside-nav1'].indexOf($(event.target).attr('id')) < 0) {
+      if ($(event.target).attr('id') === 'pp' && $("#right-aside-nav1").css("display") === 'none')
+        $("#right-aside-nav1").show();
+      else
+        $("#right-aside-nav1").hide();
+    }
+  })
+  .on('change', '#sel1', function() {
+    dict_['district'] = this.value
+    url_update(dict_)
+    master()
+  })
+  .on('click', '.prev_view', function() {
+    var referrer = document.referrer;
+    window.location.href = referrer
+  })
+  .on('click', '.card_data', function() {
+    dict_['card'] = $(this).attr('data-attr')
+    url.update(dict_, 'add')
+    var new_url = url.join('deepdive')
+    window.location.href = new_url
+  })
+  .on('click', '#close-profile', function() {
+    $('#district-stats').hide()
+    $('body').css('overflow', 'auto')
+  })
+  .on('click', '#profile_div', function() {
+    $('#district-stats').show()
+    $('body').css('overflow', 'hidden')
+  })
+
+
+</script>
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function () {
+    var u = "//uphealthdashboard.in/matomo/";
+    _paq.push(['setTrackerUrl', u + 'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+    g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+{% include 'templates/google-analytics-script.html' %}
+</body>
+
+</html>

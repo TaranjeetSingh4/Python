@@ -1,0 +1,85 @@
+.custom_lable1,
+.custom_lable2 {
+  height: 11px;
+  width: 11px;
+  background-color: #e09c24;
+}
+.custom_lable2 {
+  background-color: #846734;
+}
+.custom-bg-clr1 {
+  background-color: #e09c24;
+}
+.custom-bg-clr2 {
+  background-color: #846734;
+}
+.custom-bg-clr3 {
+  background-color: #f2f0f0;
+}
+.custom-bg-clr4 {
+  background-color: #db5f3b;
+}
+.bootstrap-select > .dropdown-toggle {
+  z-index: 0 !important;
+}
+.nav-pills .nav-link.active {
+  color: #fff !important;
+  background-color: #0776ff;
+}
+.custom-border {
+  border: 1px solid #e1e1e1;
+}
+.custom-border_bottom_left {
+  border-bottom: 3px solid #db5f3b;
+}
+.custom-border_bottom_right {
+  border-bottom: 3px solid #000;
+}
+@media (max-width: 375px) {
+  .phase2 .p-15 {
+    font-size: 10px;
+  }
+}
+.bar-grey-axis .domain {
+  stroke: #c5c2bc;
+}
+.bar-axis text,
+.bar-grey-axis text {
+  fill: #595959;
+}
+.no-ticks line {
+  stroke: none;
+}
+.grid line {
+  stroke: #d3d3d3;
+  stroke-opacity: 0.3;
+  shape-rendering: crispEdges;
+}
+.grid path {
+  stroke-width: 0;
+}
+.bottom-axis path,
+.cal,
+.geo-view,
+.left-axis path,
+.time-view {
+  display: none;
+}
+.dropdown-menu {
+  min-width: auto !important;
+  max-height: 200px !important;
+}
+.dropdown-menu.show {
+  width: 100% !important;
+}
+button[data-id="geo-district-dropdown"] + .dropdown-menu.show,
+button[data-id="time-district-dropdown"] + .dropdown-menu.show {
+  left: -75%;
+  width: 200% !important;
+}
+.text-blue {
+  color: #1e90ff;
+}
+.text-green {
+  color: #006400;
+}

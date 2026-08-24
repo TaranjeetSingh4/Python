@@ -1,0 +1,16 @@
+<ul class="nav nav-pills flex-nowrap pl-3 overflow-auto custm-pills-2 pb-3 justify-content-between" id="pills-tab"
+  role="tablist">
+  <%_.each(indicator_data,function(ind, i){ %>
+  <li class="nav-item mr-2">
+    <a class="nav-link <%- ind.indicator_id == _indicator_id ? 'active' : '' %> px-3 indicator-sel bg-color6 text-color7 custm-w-2 h-64 shadow-1 overflow-auto"
+      id="pills-state-tab" data-toggle="pill" href="#pills-indicator_<%- ind.indicator_id %>" role="tab"
+      aria-controls="pills-state" aria-selected="true" data-value="<%- ind.indicator_id %>">
+      <div class="h4 mb-0 active-border px-1">
+        <div class="sm3 font-weight-bold custm-ls-1 custm-mh-3">
+            <%- ind.indicator_name.length <= 60 ? ind.indicator_name : ind.indicator_name.slice(0,60) + "..."  %>
+        </div>
+      </div>
+    </a>
+  </li>
+  <% })%>
+</ul>

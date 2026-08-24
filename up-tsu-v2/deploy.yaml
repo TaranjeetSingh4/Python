@@ -1,0 +1,33 @@
+app:
+  settings:
+    cookie_secret: deploy-secret-key
+    Server: BMGF
+
+url:
+  default:
+    pattern: /(.*)
+    handler: FileHandler
+    kwargs:
+      index: false
+      ignore: ["*"]
+      allow:
+        [
+          "*.ico",
+          "*.PNG",
+          "*.json",
+          "*.html",
+          "*.png",
+          "*.css",
+          "*.eot",
+          "*.gif",
+          "*.jpg",
+          "*.js",
+          "*.pdf",
+          "*.svg",
+          "*.ttf",
+          "*.woff*",
+          "*.txt",
+          "*.xlsx",
+        ]
+      headers:
+        Cache-Control: max-age=60

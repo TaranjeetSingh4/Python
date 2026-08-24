@@ -1,0 +1,79 @@
+<!-- top dropdown -->
+<div class="modal z-999 fade" id="area-dropdown" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog top-13 position-relative" role="document">
+    <div class="modal-content bg-white border-radius tail-tr tail-tr-1 mx-auto pb-0 top-15 w-320">
+      <div class="modal-body px-0">
+        <ul class="nav nav-pills cust-nav-pills justify-content-between border-bottom border-color13 mb-3 px-4 h3 pb-2"
+          id="pa-pills-tab" role="tablist" value="">
+          <% _.each(header, function(val){ %>
+          <li class="nav-item mr-3 <%- (val == 'block')?'pointer-events-none':'' %>" value="<%- val %>">
+            <a class="nav-link sm3 font-weight-bold text-color30 px-0 rounded-0 <%- (val == sel_opt )?'active':'' %> "
+              id="pills-<%- val %>-tab" data-toggle="pill" href="#pills-<%- val %>" role="tab"
+              aria-controls="pills-<%- val %>" aria-selected="true"><%- _.capitalize(val)+'s' %></a>
+          </li>
+          <% }) %>
+          </li>
+        </ul>
+        <div class="tab-content mx-2 custm-mh-2 overflow-auto pb-4 pa-comp-header" id="pills-tabContent">
+          <% _.each(data, function(val, opt){%>
+          <div class="tab-pane fade <%- ((opt == sel_opt)?' show active':'') %>" id="pills-<%- opt %>" role="tabpanel"
+            aria-labelledby="pills-<%- opt %>-tab">
+            <div class="d-flex justify-content-between border-bottom border-color13 px-4">
+              <div class="d-flex mb-2">
+                <img src="img/search.svg" alt="search" />
+                <input type="text" class="district-dropdown-search form-control-plaintext py-0 border-0"
+                  id="inlineFormInputGroup" placeholder="Search Districts" data-search="@text"
+                  data-target=".district_list .pa-comp-opt .comp-opt" data-hide-class="d-none">
+              </div>
+              <div class="d-flex mb-2 district-dropdown-reset">
+                <img src="img/reset.svg" alt="reset" />
+              </div>
+            </div>
+            <div class="row mx-0 mb-4 pt-3">
+              <div class="col-5 px-0 border-color13 border-right">
+                <div class="nav flex-column nav-pills nav-pills-4" id="v-pills-tab" role="tablist"
+                  aria-orientation="vertical">
+                  <% _.each(hier_div[opt], function(op){ %>
+                  <a class="nav-link <%- (hier_div[opt][0] == op)?'active':'' %> comp_opt_type text-color3 opacity-50 px-3 font-13"
+                    id="v-pills-<%- op %>-tab" data-toggle="pill" href="#v-pills-<%- op %>" role="tab"
+                    aria-controls="v-pills-<%- op %>" aria-selected="true" value="<%- op %>"><%- _.startCase(op) %></a>
+                  <% }) %>
+                </div>
+              </div>
+              <div class="col-7 px-0 custm-mh-2 overflow-auto">
+                <div class="tab-content district_list" id="v-pills-tabContent">
+                  <% _.each(val, function(list, key){ %>
+                  <% var tmp_opt = key %>
+                  <div class="tab-pane fade show active " id="v-pills-<%- tmp_opt %>" role="tabpanel"
+                    aria-labelledby="v-pills-<%- tmp_opt %>-tab">
+                    <ul class="nav flex-column pa-comp-opt" value="">
+                      <% _.each(list, function(txt){ %>
+                      <li class="comp-opt mb-2" value="<%- txt %>">
+                        <div class="custom-control pb-1 custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" value="<%- txt %>"
+                            id="customCheck<%-  _.replace(tmp_opt+txt, ' ', '_') %>">
+                          <label class="custom-control-label font-13 text-dark label-custm"
+                            for="customCheck<%- _.replace(tmp_opt+txt, ' ', '_') %>"><span
+                              class="d-block text-truncate custm-w-5 nav-item"><%- _.startCase(txt) %></span></label>
+                        </div>
+                      </li>
+                      <% }) %>
+                    </ul>
+                  </div>
+                  <% }) %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <% }) %>
+          <div class="h3 mb-0 pos-b pt-3">
+            <button type="button"
+              class="btn bg-color20 text-white py-2 lh-4 font-weight-bold br-tl-tr-0 w-100 sm3 ls-1 comp-submit"
+              data-dismiss="modal" data-target="#area-dropdown">APPLY</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

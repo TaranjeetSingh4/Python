@@ -1,0 +1,11 @@
+<div class="card no-border-radius border-0 bg-transparent pb-2 with_out_map">
+    <div class="container-fluid">
+      <div class="row mx-0 progress">
+        <% _.each(stack_data, function(d){%>
+          <div class="progress-bar <%-d.name%> no-border-radius font-weight-light text-center py-2" role="progressbar" data-attr="<%-d.stack_data%>">
+            <%-_.round(d.stack_data, 2)%>%
+          </div>
+        <%})%>
+      </div>
+    </div>
+  </div>

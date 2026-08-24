@@ -1,0 +1,54 @@
+<% if(data.perf_data.length > 0) { %>
+<div class="container d-flex flex-column">
+  <div class="row">
+    <select class="w-75 mx-auto border text-capitalize bg-white text-dark p-14" data-style="btn bg-white w-100 text-dark p-14" id="bar-dropdown" aria-label="dropdown">
+    <% _.each(data.categories, function(category) { %>
+      <option class="sm1 text-capitalize" aria-label="dropdown"><%- category.split('_').join(' ') %></option>
+    <% }) %>
+  </select>
+  </div>
+  <div class="tab-content">
+    <div class="card bg-transparent no-border-radius border-0 text-dark">
+      <div class="card-header p-0 mt-3 bg-transparent no-border-radius border-0">
+      <p class="p-11 font-weight-bold text-uppercase"><%-_.find(indicator_mapping, {indicator_name: data.title}).short_name%></p>
+      </div>
+    </div>
+    <div class="card-body p-0 no-border-radius border-0 bg-transparent">
+      <% _.each(data.perf_data, function(d){ %>
+        <% var name_ = d.name %>
+        <% if(d.per <= 0.3 && d.name.length > 10){%>
+          <% name_ = _.join(_.slice(d.name, 0, 6), "") + "..." %>
+        <% } %>
+        <% var bg_color = "bg-color4" %>
+        <% if (d.rank > 5 ) { %>
+          <% bg_color = "bg-color5" %>
+        <% } %>
+        <a class="nav-link p-0 text-light">
+          <div>
+            <div class="perf_bar mb-2 round cursor-pointer <%- bg_color %> w-100 p-9 py-1 px-2 text-light" width="<%- d.per %>" data-attr="<%-d.name%>">
+              <%-d.rank%> <%-name_%> (<%-Number(d.per).toFixed(2)%>)
+            </div>
+          </div>
+        </a>
+      <% }) %>
+    </div>
+  </div>
+  <div class="row mb-5 justify-content-between">
+    <div class="ml-3 p-2 prev-card cursor-pointer">
+      <% if(_.findIndex(cards, {indicator: data.title}) !== 0) { %>
+        <i class="fa fa-arrow-left"></i>
+      <% } %>
+    </div>
+    <div class="mr-3 p-2 next-card cursor-pointer">
+      <% if(_.findIndex(cards, {indicator: data.title}) !== cards.length-1) { %>
+        <i class="fa fa-arrow-right"></i>
+      <% } %>
+    </div>
+  </div>
+</div>
+<% } else { %>
+  <div class="my-5 mx-2 alert alert-warning text-uppercase">
+    <strong>No data available</strong>
+  </div>
+<% } %>
+<div class="mb-3"></div>

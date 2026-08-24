@@ -1,0 +1,5 @@
+// To override these rules, create a .htmlhintrc file in your app.
+// See https://htmlhint.com/docs/user-guide/list-rules
+{
+    "tag-pair": false
+}

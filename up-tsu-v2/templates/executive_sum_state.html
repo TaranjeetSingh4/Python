@@ -1,0 +1,130 @@
+<!-- <div class="row"> -->
+<div class="page_1">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-4  mb-lg-0">
+    <div class="executive">
+      <h2 class="font-weight-bold mb-0 text-uppercase text-md-left ml-3"><%= area_name.toUpperCase()%></h2>
+      <div id="mapid" class="py-md-2 py-4 mb-2 text-center"></div>
+<!--       <div class="d-flex justify-content-between mx-2">
+        <div class="card border-0 mb-md-0 mb-3 mr-3 bg-white px-md-3 px-2 w-100 text-center py-1">
+          <p class="sm1 mb-0 text-uppercase">Composite score</p>
+          <div class="py-2 donut_chart"></div>
+          <p class="sm2 mb-0"><%=change_perc%>% v/s Previous Month</p>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+  <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+    <div class="mb-3">
+      <div class="bg-white p-3">
+        <%var _area2_ = (_area === 'block')? 'district' : 'division'%>
+
+        <h5 class="text-uppercase">Executive Summary  </h5>
+        <p class="mb-1 sm1 text-justify">UP's best performing indicator is <span class="font-weight-bold"><%= table_data[0].indicator%></span> with a score of <span class="font-weight-bold"><%= table_data[0].perc_point.toFixed(2)%></span> as compared to last month. </p>
+        <p class="mb-1 sm1 text-justify">The next best performing indicator is <span class="font-weight-bold"><%= table_data[1].indicator%></span> with a score of <span class="font-weight-bold"><%= table_data[1].perc_point.toFixed(2)%></span> as compared to last month.</p>
+        <p class="mb-1 sm1 text-justify"><span class="font-weight-bold"> <%= _.join(_.map(top_3, _area), ", ") %> </span> are the top performing <%=_area%>s wrt composite score.</p>
+        <p class="mb-1 sm1 text-justify"><span class="font-weight-bold"> <%= _.join(_.map(bottom_3, _area), ", ") %> </span> are the least performing <%=_area%>s wrt composite score.</p>
+
+      </div>
+      <div class="mb-3 p-3">
+        <div class="table-responsive">
+          <table class="table mb-0">
+            <thead class="border-0">
+              <tr>
+                <th scope="col" class="h3 mb-0 border-0 py-2 px-0"><span class="sm3 d-block text-uppercase font-weight-bold">Indicator Performance Change</span></th>
+                  <th scope="col" class="border-0 py-2">
+                    <p class="sm2 mb-0 font-weight-light">Indicator
+                      <span class="d-block">Value</span></p>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="font-weight-light sm1 py-2 px-0 d-flex"><img src="img/thumb-up.svg" alt="thumb-down" class="mr-3"><%= table_data[0].indicator%></th>
+                    <td class="font-weight-bold py-2"><%= table_data[0].perc_point.toFixed(2)%></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="font-weight-light sm1 py-2 px-0  d-flex"><img src="img/thumb-up.svg" alt="thumb-down" class="mr-3"><%= table_data[1].indicator%></th>
+                    <td class="font-weight-bold py-2"><%= table_data[1].perc_point.toFixed(2)%></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="font-weight-light sm1 py-2 px-0  d-flex"><img src="img/thumb-down.svg" alt="thumb-down" class="mr-3"><%= table_data[table_data.length-2].indicator%></th>
+                    <td class="font-weight-bold py-2"><%= table_data[table_data.length-2].perc_point.toFixed(2)%></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="font-weight-light sm1 py-2 px-0  d-flex"><img src="img/thumb-down.svg" alt="thumb-down" class="mr-3"><%= table_data[table_data.length-1].indicator%></th>
+                    <td class="font-weight-bold py-2"><%= table_data[table_data.length-1].perc_point.toFixed(2)%></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="border-right-1 pr-3 mt-3 bg-white p-3 mb-4">
+            <div class="pb-3">
+              <div class="pb-2">
+                <p class="mb-1 sm1"><span class=" p-1 custom-white text-uppercase font-weight-bold">Top <%= _.size(top_3) %> Performance <%=_.startCase(_area)%>s</span></p>
+              </div>
+              <div class="d-flex justify-content-between row">
+                <% _.forEach(top_3, function(array1){ %>
+                <div class="align-self-center col-4">
+                  <h2 class="font-weight-bold mb-1"><%= array1.composite_index.toFixed(2) %></h2>
+                  <p class="mb-0"><%=  (_area === 'block')? array1[_area].split(" ").length > 1 ? array1[_area].replace(area_name, "") : array1[_area] : array1[_area]  %></p>
+                </div>
+                <% }) %>
+
+              </div>
+            </div>
+            <div class="">
+              <div class="pb-2">
+                <p class="mb-1 sm1"><span class=" p-1 custom-white text-uppercase font-weight-bold">Bottom <%= _.size(bottom_3) %> Performance <%=_.startCase(_area)%><%= (_.size(bottom_3) < 2)? '' : 's' %></span></p>
+              </div>
+              <div class="d-flex justify-content-between row">
+                <% _.forEach(bottom_3, function(array1){ %>
+                <div class="align-self-center col-4">
+                  <h2 class="font-weight-bold mb-1"><%= array1.composite_index.toFixed(2) %></h2>
+                  <p class="mb-0"><%= (_area === 'block')? array1[_area].split(" ").length > 1 ? array1[_area].replace(area_name, "") : array1[_area] : array1[_area]  %></p>
+                </div>
+                <% }) %>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="d-block pb-3 px-3">
+              <h3 class=" mb-3 text-uppercase"><span class="d-block sm3 font-weight-bold"><%=_area%> performance change</span></h3>
+              <div class="divider"></div>
+              <div class="">
+                <div class="d-flex justify-content-end">
+                  <p class="mb-0 align-self-center sm2 mr-3">
+                    <img src="img/shape-11.svg" alt="thumb-down" class="mr-2">Last Month
+                  </p>
+                  <p class="mb-0 align-self-center sm2">
+                    <img src="img/shape-22.svg" alt="thumb-down" class="mr-2">Current Month
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="d-md-flex justify-content-between">
+              <div class="align-self-center mb-4 mb-md-0">
+                <% if (increase_blocks.length == 0) { %>
+                  <p class="mb-0 px-2 pb-2 sm1 text-center font-weight-bold">No increase was observed from last month</p>
+                  <% } %>
+                  <div class="bar_chart <%- (increase_blocks.length == 0)? 'd-none' : ''%>"></div>
+                  <% if (increase_blocks.length != 0) { %>
+                  <p class="mb-0 pt-3 sm2 text-center"><%= _.startCase(_area) %> that posted Highest Increase from Last Month</p>
+                  <% } %>
+              </div>
+              <div class="align-self-center mb-4 pb-0 mb-md-0">
+                <% if (decrease_blocks.length == 0) { %>
+                <p class="mb-4 pt-5 sm1 text-center font-weight-bold">No decrease was observed from last month</p>
+                <% } %>
+                <div class="bar_chart1"></div>
+                <% if (decrease_blocks.length != 0) { %>
+                <p class="mb-4 pt-3 pb-0 sm2 text-center"><%= _.startCase(_area) %> that posted Lowest Decrease from Last Month</p>
+                <% } %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+

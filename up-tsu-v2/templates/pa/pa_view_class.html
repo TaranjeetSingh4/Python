@@ -1,0 +1,10 @@
+<ul class="nav nav-pills justify-content-between custm-pills-3 mb-0 px-4 flex-nowrap overflow-auto h3 pb-2"
+  id="pills-tab" role="tablist">
+  <%_.each(pa_classes, function(d){ %>
+  <li class="nav-item mr-3 li-pills-tab text-nowrap view_class" data-name="<%= d %>">
+    <a class="nav-link sm3 font-weight-bold text-color3 opacity-30 px-0 rounded-0 <%- (d.toLowerCase() == 'all') ? 'active' : '' %>"
+      id="pills-profile-tab" data-toggle="pill" href="#pills-<%= slug_(d.toLowerCase()) %>" role="tab"
+      aria-controls="pills-profile" aria-selected="false"><%= d %></a>
+  </li>
+  <% }) %>
+</ul>

@@ -1,0 +1,14 @@
+<!-- Creates shallow copy for pa_classes -->
+<% pa_classes_copy = JSON.parse(JSON.stringify(pa_classes)) %>
+<% pa_classes_copy.unshift('all')%>
+<% active_class = (active_class)? active_class : 'all' %>
+
+<ul class="nav nav-pills custm-pills-1 justify-content-between mb-3 h3" id="class_links_id" role="tablist">
+<% _.each(pa_classes_copy, function(_class){ %>
+  <li class="class_links nav-item mr-3" data-link="<%= _class.replace(/\s+/g, '_')%>">
+    <a class="text-uppercase nav-link sm3 font-weight-bold text-white opacity-30 px-0 rounded-0
+      <%- (active_class==_class)?'active':'' %>"
+    data-toggle="pill" role="tab" ><%= class_short_name[_class] ? class_short_name[_class] : _class%></a>
+  </li>
+<% }) %>
+</ul>

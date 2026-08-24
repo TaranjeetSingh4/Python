@@ -1,0 +1,12 @@
+# See http://doc.gitlab.com/ce/ci/yaml/README.html
+
+validate:
+  image: gramener/builderrors
+  script: builderrors
+
+# Deploy application to a server
+deploy:
+  stage: deploy
+  only: [dev-mobile-test]                          # Only deploy on dev-mobile-test branch commit
+  script:
+    - ssh gramener@bmgf-apps.gramener.com "cd /home/gramener/bmgf-data/bmgf/up-tsu-mobile-container-test/up-tsu-v2-test/;git checkout -- .;git pull;"

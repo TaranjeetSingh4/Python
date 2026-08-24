@@ -1,0 +1,15 @@
+<select class="selectpicker bootstrap-select w-100 bg-white text-dark p-14 <%- id %>" data-style="btn bg-white w-100 text-dark text-capitalize p-14" id="<%- id %>" aria-label="dropdown">
+  <% var short_name = short_name ? short_name : false %>
+  <% var url = g1.url.parse(location.href) %>
+  <% var _select = url.search.select || 'district' %>
+  <% var data = _.sortBy(data, [select]) %>
+<% if(short_name) { %>
+  <% _.each(data, function(row) { %>
+    <option class="sm1 text-capitalize" data-attr="<%-row[column]%>" aria-label="dropdown" value="<%- row[column] %>"><%- _.find(indicator_mapping, {indicator_name: row[column]}).short_name %></option>
+  <% }) %>
+<% } else { %>
+  <% _.each(data, function(row) { %>
+    <option class="sm1 text-capitalize" data-attr="<%-row[column]%>" aria-label="dropdown"><%- _.includes(Object.keys(district_name_mapping), row[column].split('_').join(' ')) ? district_name_mapping[row[column].split('_').join(' ')] : row[column].split('_').join(' ') %></option>
+  <% }) %>
+<% } %>
+</select>

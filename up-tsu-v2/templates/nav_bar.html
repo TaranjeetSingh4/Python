@@ -1,0 +1,145 @@
+<% var url = g1.url.parse(location.href)  %>
+<% var _dashboard = {'executive-summary': 'UP HEALTH DASHBOARD', 'analytics': 'UP HEALTH DASHBOARD', 'summary': 'UP HEALTH DASHBOARD', 'deepdive': 'UP HEALTH DASHBOARD', 'niti_deepdive' : 'NITI Dashboard', 'deepdive_cm': 'CM Dashboard', 'landing': 'CM Dashboard' }%>
+<nav class="navbar navbar-expand-md bg-gradient-nav py-3 position-fixed pos-t">
+  <!-- - Toggler/collapsibe Button -->
+  <!-- <img src="img/hamburger.png" alt="search" width="19" height="12" id="openNav" class="cursor-pointer mr-3"> -->
+  <a class="fa fa-home mr-3 fa-2x text-white" aria-hidden="true" href="./"></a>
+  <span class="h5 mb-0 text-light mr-auto"><%- _dashboard[url.file] %></span>
+  <!-- Navbar links -->
+  <!-- <div class="d-flex ml-auto search-input">
+<input type="text" id="myInput" onkeyup="searchFun()"
+class="pl-4 pr-3 position-absolute pos-tr py-3 text-light border-0">
+</div> -->
+
+<% if(_.includes(['', 'deepdive', 'niti_deepdive', 'summary'], url.file)) { %>
+  <div class="d-flex ml-auto search-input">
+    <div class="text-right">
+      <span class="input-group-text bg-transparent no-border-radius rounded-0 border-0 cursor-pointer" id="icon"><i class="fa fa-search cursor-pointer text-white"></i></span>
+    </div>
+    <div id="myInput1">
+      <div class="input-group custom-class pos-t w-100 bg-white">
+        <div class="input-group-append">
+          <span class="input-group-text bg-white no-border-radius rounded-0 border-0"><i class="fa fa-search cursor-pointer text-dark "></i></span>
+        </div>
+        <input type="text" id="myInput" class="form-control border-0 px-0" placeholder="<%=(url.file == 'map')?'Search Indicators':'Search Districts' %>" onkeyup="searchFun()">
+        <div class="input-group-append">
+          <span class="input-group-text bg-white no-border-radius rounded-0 border-0"><i id="close_nav" class="fa fa-remove cursor-pointer text-dark "></i></span>
+        </div>
+      </div>
+    </div>
+    <% } %>
+    <!--     <div class="text-right">
+<div class="text-right">
+<img src="img/search.png" alt="bn" class="cursor-pointer" id="icon">
+</div>
+<input type="text" id="myInput" onkeyup="searchFun()"
+class="position-absolute pos-tr text-dark border-0">
+</div> -->
+  </div>
+  <% if(url.file != "landing" && user_data.user != "CM_Office1") {%>
+  <ul id="myUL" class="nav flex-column position-absolute ui-autocomplete pos-tr p-3 w-100 bg-light mt-5 vh-100">
+    <div class="search-check w-50 mx-auto alert alert-warning alert-dismissible fade show"><strong>Warning!</strong> No Data Available</div>
+    <% if(url.file !== "map"){%>
+      <% _.each(container_data, function(d){%>
+        <li class="nav-item">
+          <% if(url.file !== "map"){%>
+            <span class="cursor-pointer nav-link text-dark ui-menu-item-wrapper">
+              <%-d[area]%>
+            </span>
+            <%} else{ %>
+              <span class="nav-link text-dark map_view cursor-pointer" id="<%-d[area]%>">
+              <%-d[area]%>
+            </span>
+              <%}%>
+        </li>
+        <%})%>
+    <% } else {%>
+      <% _.each(indicator_, function(d){%>
+        <li class="nav-item">
+          <span class="nav-link text-dark map_view cursor-pointer" id="<%-d.indicator_id%>" data-attr="<%- d.type%>">
+            <%-_.find(indicator_mapping, {indicator_name: d.indicator}).short_name %>
+          </span>
+        </li>
+        <%})%>
+    <%}%>
+
+  </ul>
+  <% }%>
+</nav>
+  <div class="left">
+    <div class="modal fade bd-overlay-sm-left modal-left" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="modal-dialog w-75 modal-md text-white rounded tail-lt">
+        <div class="modal-content pb-3 rounded-0">
+          <div class="modal-body cutsom-overflow-left p-0">
+            <div class="container-fluid  bg-light vh-100 px-0">
+              <div class="d-flex justify-content-between bg-gradient py-3">
+                <div class="col pr-0">
+                  <div class="admin-image mb-2"><img src="img/man.png" alt="admin-image" width="50px" height="50px" class="round bg-dark"></div>
+                  <p class="text-light mb-0 p-12 user_person pl-2">Virendra Pankaj Prithu</p>
+                </div>
+                <div class="col pl-0 text-right">
+                  <div class="close-icon">
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="nav-area pt-2 px-3">
+                <ul class="nav d-flex flex-column">
+                  <% _.each(dashboard_details, function(d) { %>
+                    <% if(_.includes(['Tutorial (short)', 'Tutorial (long)'], d.name)) { %>
+                      <li class="nav-item"><a class="nav-link px-0 text-dark font-weight-bold" href="<%- d.nav %>" data-toggle="modal" data-target="<%- d.target %>"><img src="img/<%- d.img %>.png" alt="<%- d.img %>" class="pr-3"><%- d.name %></a></li>
+                    <% } else { %>
+                      <li class="nav-item"><a class="nav-link px-0 text-dark font-weight-bold" id="<%- d.nav %>" href="<%- d.nav %>" <%- _.includes(['User Manual'], d.name) ? 'download'  : '' %>><img src="img/<%- d.img %>.png" alt="<%- d.img %>" class="pr-3"><%- d.name %></a></li>
+                    <% }}) %>
+                </ul>
+              </div>
+              <div class="pb-5"></div>
+              <span class="pt-2 px-3 text-dark p-9"><em>Last Updated on 20th  </em><span class="font-weight-bold last_date"></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--space needed-->
+<div class="pt-5 mt-2"></div>
+
+<div class="modal fade" id="forVideo" tabindex="-1" role="dialog" aria-labelledby="forVideoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="forVideoLabel">Tutorial (short)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <video class="video_pause" controls width="100%">
+          <source src="files/UPTSU-Mobile-short.mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal - long video -->
+<div class="modal fade" id="forVideoLong" tabindex="-1" role="dialog" aria-labelledby="forVideoLongLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="forVideoLongLabel">Tutorial (long)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <video class="video_pause" controls width="100%">
+          <source src="files/UPTSU-Mobile-long.mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</div>

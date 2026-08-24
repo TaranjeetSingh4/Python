@@ -1,0 +1,44 @@
+<div class="right">
+  <div class="modal fade bd-overlay-sm-right modal-right" id="side-menu-pa" tabindex="-1" role="dialog"
+    aria-hidden="true">
+    <div class="modal-dialog w-75 modal-md text-white rounded tail-lt">
+      <div class="modal-content pb-3 rounded-0">
+        <div class="modal-body cutsom-overflow-left p-0">
+          <div class="container-fluid  bg-light vh-100 px-0">
+            <div class="d-flex justify-content-between bg-gradient py-3">
+              <div class="col pr-0">
+                <div class="admin-image mb-2"><img src="img/man.png" alt="admin-image" width="50px" height="50px"
+                    class="round bg-dark"></div>
+                <p class="text-light mb-0 p-12 user_person pl-2"><%= user_data.user %></p>
+              </div>
+              <div class="col pl-0 text-right">
+                <div class="close-icon">
+                  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="nav-area pt-2 px-3">
+              <ul class="nav d-flex flex-column">
+                <% _.each(nav_data, function(d) { %>
+                <% if(_.includes(['Tutorial (short)', 'Tutorial (long)'], d.name)) { %>
+                <li class="nav-item"><a class="nav-link px-0 text-dark font-weight-bold" href="<%- d.nav %>"
+                    data-toggle="modal" data-target="<%- d.target %>"><img src="img/<%- d.img %>.png" alt="<%- d.img %>"
+                      class="pr-3"><%- d.name %></a></li>
+                <% } else { %>
+                <li class="nav-item"><a class="nav-link px-0 text-dark font-weight-bold" id="<%- d.nav %>"
+                    href="<%- d.nav %>" <%- _.includes(['User Manual'], d.name) ? 'download'  : '' %>><img
+                      src="img/<%- d.img %>.png" alt="<%- d.img %>" class="pr-3"><%- d.name %></a></li>
+                <% }}) %>
+              </ul>
+            </div>
+            <div class="pb-5"></div>
+            <span class="pt-2 px-3 text-dark p-9"><em>Last Updated on </em><span
+                class="font-weight-bold last_date"></span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

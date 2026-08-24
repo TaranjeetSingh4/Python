@@ -1,0 +1,70 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+
+{% set import json %}
+{% set from gramex.config import variables %}
+
+{% set user_info = handler.get_session().get("user", {}) %}
+{% set username = user_info.get("user", "") %}
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>UP-TSU | Mobile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+    href="ui/bootstraptheme.css?primary=%2351A9FF&secondary=%23979797&success=%23767676&info=%233E81ED&warning=%23F9A77E&danger=%23F46448&light=%23ffffff&dark=%23000000&color1=%23424852&color2=%239b9b9b&color3=%23344052&color4=%232C3138&body-bg=%23F4F6F8&font-family-base=open-sans&">
+  <link rel="stylesheet" href="ui/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/program-area.css">
+  <!-- <link rel="stylesheet" href="css/custom.css"> -->
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-color1 position-fixed w-100 transition_pa pb-0 nav_pa z-2">
+    <div class="d-flex align-items-center w-100">
+      <h4 class="text-white font-weight-normal mb-0"><a class="fa fa-home mr-3 text-white" aria-hidden="true" href="./"></a><span class="sm3">UP HEALTH DASHBOARD</span></h4>
+      <!-- <div class="cursor-pointer ml-auto side-nav-pa">
+        <img src="img/mobile-menu.svg" width="14px" alt="menu" id="side-menu-ham" data-toggle="modal"
+          data-target="#side-menu-pa">
+      </div> -->
+    </div>
+    <div class="font-weight-normal ml-auto mr-auto mt-4 text-center display-3 pt-3">
+      <span class="text-white sm5 d-block">Explore a Program</span>
+    </div>
+    <div class="w-100 text-right" ><span class = "mr-2 text-white landing_ticker sm3 data_last_updated"></span></div>
+  </nav>
+  <div class="col-12 bg-color1 py-4 pos-t custom-height1" id="navbar_pa">
+  </div>
+  <div class="px-2 position-absolute z-9 mt-30">
+    <script src="templates/pa/program-area-template.html" type="text/html" id="program-area"></script>
+    <script class="side-nav-menu" src="templates/pa/program-area-side-nav-template.html" type="text/html"></script>
+  </div>
+</body>
+
+{% set scripts = '' %}
+{% include 'templates/pa/pa-scripts.html' %}
+<script type="text/javascript" src="js/common.js"></script>
+<script src="ui/moment/min/moment-with-locales.min.js"></script>
+  <script src="js/log_capture.js"></script>
+<script type="text/javascript">
+  /* globals get_latest_date */
+  var latest_date = get_latest_date()
+  $(".data_last_updated").html("Data last updated on "+latest_date)
+  var pa_config = {{ json.dumps(variables['program-config']) }}
+  var user_data = {{ json.dumps(user_info) }}
+  $('#program-area').template({ data: pa_config.program_image_mapping })
+  $(".side-nav-menu").one('template', function () {
+    $('.last_date').text(moment().date() < 15 ? moment().format('[01] MMM YY') : moment().format('[15] MMM YY'))
+  }).template({ nav_data: pa_config.dashboard_data_pa, user_data: user_data })
+</script>
+<!--
+  D3: ui/d3/build/d3.min.js
+  Lodash: ui/lodash/lodash.min.js
+  Moment: ui/moment/min/moment-with-locales.min.js
+  Noty: ui/noty/lib/noty.min.js
+  Daterangepicker: ui/daterangepicker/daterangepicker.js
+  Leaflet: ui/leaflet/dist/leaflet.js
+  TopoJSON: ui/topojson/dist/topojson.min.js
+  g1: ui/g1/dist/g1.min.js-->
+</html>

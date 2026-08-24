@@ -1,0 +1,169 @@
+{% autoescape None %}
+<!doctype html>
+<html lang="en">
+{% set page_title = 'indicator cards' %}
+{% include 'templates/pa/pa-head.html' %}
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>UP-TSU | Mobile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+{% set import json %}
+{% set from gramex.config import variables %}
+
+{% set user_session_id = handler.get_session().get("id", {}) %}
+{% set user_info = handler.get_session().get("user", {}) %}
+{% set username = user_info.get("user", "") %}
+
+<body>
+  <nav class="navbar navbar-expand-md nav-bg-gardient position-fixed pt-3 pb-6 px-0">
+    <div class="d-flex align-items-center w-100 px-3">
+      <a class="back_arrow_link">
+        <img src="img/back-arrow.svg" alt="back arrow" /></img>
+      </a>
+      <h3 class="text-white ml-3 mb-0 font-weight-bold"><span class="sm3 d-block compare-h">Maternal Health : <span
+            class="mx-1 d-inline-block">Compare</span></span></h3>
+      <div class="cursor-pointer ml-auto">
+        <a class="fa fa-home mr-3 fa-2x text-white" aria-hidden="true" href="./"></a>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between align-items-center px-5 pb-0">
+      <div class="text-left text-white">
+        <h6 class="d-flex"><span class="font-13 d-block w-77 font-weight-normal lh-3">
+            <span class="area-type"><span class="text-color22"></span></span></span>
+          <span class="align-self-center ml-3 cursor-pointer"><img src="img/drop-down-circle.svg" alt="arrow"
+              class="comp_circle" data-toggle="modal" data-target="#area-dropdown" /></span>
+        </h6>
+      </div>
+    </div>
+  </nav>
+  <div class="position-fixed pb-5 mb-4 w-100 z-999 custm-mt-23">
+      <div class="mt-2 col-12 px-4 mx-2">
+          <div class="d-flex justify-content-between">
+              <!-- indicator-class-selection-template -->
+              <script class="comp-indicator-class" src="templates/pa/pa_compare_indicator_class.html" type="text/html"> </script>
+              <!-- score-matrix-selection -->
+              <div class="d-flex">
+                <select class="selectpicker w-100 dd-bg-1 show-menu-arrow" id="custm-select"
+                  data-style="bg-transparent text-color22 font-weight-bold h6 mb-0 pt-0">
+                  <option value="score" class="text-white font-weight-bold border-color13 border-bottom py-2 my-1"
+                    selected>Score Matrix</option>
+                  <option value="map" class="text-white font-weight-bold border-color13 border-bottom py-2 my-1">Map Cards
+                  </option>
+                  <option value="trends" class="text-white font-weight-bold border-color13 border-bottom py-2 my-1">Trend
+                    Cards</option>
+                </select>
+                </div>
+            </div>
+      </div>
+      <div class="d-grid position-absolute w-100 indicator-pills">
+          <script class="score-matrix" src="templates/pa/pa-score_matrix.html" type="text/html"> </script>
+      </div>
+    <script class="side-nav-menu" src="templates/pa/program-area-side-nav-template.html" type="text/html"></script>
+  </div>
+  <div class="position-absolute mt-53 pb-5 w-100">
+    <!-- score-matrix -->
+    <div>
+      <div id="score" class="pa-scorecards">
+        <script class="score-matrix-charts" src="templates/pa/pa-score_matrix-charts.html" type="text/html"> </script>
+        <script class="no-data" src="templates/pa/no_data.html" type="text/html"></script>
+      </div>
+    </div>
+    <script class="indicator-cards" src="templates/pa/comp_indicator_cards.html" type="text/html"> </script>
+
+  </div>
+  <!-- top dropdown -->
+  <script class="pa_comp_dropdown" src="templates/pa/pa_comp_dropdown.html" type="text/html"></script>
+  <footer class="d-flex justify-content-between align-items-center py-1 bg-color4 fixed-bottom">
+    <div class="d-flex justify-content-end border-color13 border-right py-2 slider-div">
+      <span class="sm1 text-color9 mx-2"> LO </span>
+      <div class="slider-image round comp-slider-img d-none"></div>
+      <div class="card bg-transparent border-0 rounded-0 comp-slider">
+        <div class="slider-image round"></div>
+        <div class="for-slider mt-n5">
+          <input type="text" class="js-range-slider w-100" data-from="0" data-to="100" name="slider" value="">
+        </div>
+      </div>
+      <span class="sm1 text-color9 mx-2"> HI </span>
+    </div>
+    <div class="d-flex justify-content-center align-items-center pl-2 mx-auto font-13 col py-2 cal-drpdwn"
+      href="#cal_model" role="button" aria-expanded="false" aria-controls="cal_model"> <img src="img/calendar-white.svg"
+        alt="calander" /> <span class="mx-2 font text-white font-weight-bold date-label">JUL-19 to
+        DEC-19</span><span><img src="img/drop-up-white.svg" alt="drop-up" /></span> </div>
+  </footer>
+  <!-- calendar modal -->
+  <div class="" id="cal_model">
+    <script class="pa_comp_calendar" src="templates/pa/pa_comp_calendar.html" type="text/html"></script>
+    <script class="datepicker" type="text/html" src="templates/pa/datepicker.html"></script>
+
+  </div>
+
+</body>
+{% set scripts = ['vega', 'map'] %}
+{% include 'templates/pa/pa-scripts.html' %}
+
+
+<script src="components/pa/area_chart.js"></script>
+<script>
+  /* exported program_config, session_id, program_image_mapping, user_data */
+  /* global url_update, render, render_score_matrix */
+  var program_config = {{ json.dumps(variables['program-config']) }}
+  var user_data = {{ json.dumps(user_info)}}
+  var program_image_mapping = {{ json.dumps(variables['program-config']['program_image_mapping']) }}
+
+  $('#custm-select').selectpicker()
+  $('.modal-z-ind').on('show.bs.modal', function () {
+    var temp = $(this).attr('id')
+    $('body').find('div[data-target="#' + temp + '"').img.addClass('z-2000')
+  })
+  $('.modal-z-ind').on('hidden.bs.modal', function () {
+    var temp = $(this).attr('id')
+    $('body').find('div[data-target="#' + temp + '"').closest('li').removeClass('z-2000');
+    $('body').find('div[data-target="#' + temp + '"] img.drop-active').removeClass('rotate-180');
+  })
+  $(".js-range-slider")
+    .ionRangeSlider({
+      type: 'double',
+      skin: 'sharp',
+      min: 0,
+      max: 100,
+      from: 0,
+      to: 100
+    })
+  $('.pa-scorecards').hide();
+  var url = g1.url.parse(location.href), tab = url.searchKey.tab || 'score'
+  $('#' + tab).show();
+  $('#custm-select').change(function () {
+    $('.pa-scorecards').hide();
+    $('#' + $(this).val()).show();
+    $(".indicator-pills").show()
+    $(".comp-slider-img, .comp-slider").addClass("d-none")
+    url_update({ 'tab': $(this).val() })
+    $(".slider-div").addClass("d-flex").removeClass("d-none")
+    if ($(this).val() != 'score') {
+      $(".indicator-pills").hide()
+      $(".comp-slider-img").removeClass("d-none")
+      if ($(this).val() === 'trends') {
+        $(".slider-div").removeClass("d-flex").addClass("d-none")
+      }
+    } else {
+      $(".comp-slider").removeClass("d-none")
+    }
+    render()
+    render_score_matrix()
+  });
+
+  $(".side-nav-menu").one('template', function () {
+    $('.last_date').text(moment().date() < 15 ? moment().format('[01] MMM YY') : moment().format('[15] MMM YY'))
+  }).template({ nav_data: program_config.dashboard_data_pa, user_data: user_data })
+</script>
+<script src="js/pa/pa_map.js"></script>
+<script src="components/pa/area_chart.js"></script>
+<script src="components/pa/multi_line.js"></script>
+<script src="js/pa/pa_compare.js"></script>
+<script src="ui/moment/min/moment-with-locales.min.js"></script>
+<script src="js/log_capture.js"></script>
+
+</html>

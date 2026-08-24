@@ -1,0 +1,54 @@
+<div class="d-flex justify-content-between px-4">
+  <h5 class="text-color8"><span class="sm3">RANK</span></h5>
+  <h5 class="text-color8"><span class="sm3 text-capitalize"><%- area.toUpperCase() %> NAME</span></h5>
+  <h5 class="text-color8"><span class="sm3">CURR. SCORE</span></h5>
+  <h5 class="text-color8"><span class="sm3">% CHANGE</span></h5>
+</div>
+<% _.each(temp_data, function(row){ %>
+<div class="card border-radius border-0 shadow mx-2 mb-2 indicator_district_card " data-attr="<%- row[area] %>"
+  id="card-active">
+  <div class="card-header bg-transparent border-0 d-flex justify-content-between px-3 align-items-center">
+    <h5 class="text-color3 mb-0 text-center mb-0 mr-3 col-1 px-0"><span
+        class="font-15 bg-color14 br-10 custm-w-3 d-block custm-h-2"><%- row.rank || 'NA' %></span></h5>
+    <h4 class="text-color11 text-truncate mr-2 col-3 px-0"><span class="sm3 font-weight-bolder text-capitalize text-left insight-area"><%- row[area].toUpperCase() %></span></h4>
+    <div class="text-color8 col-3 px-0 mr-2 w-25">
+      <div class="progress md-progress bg-color9 rounded-0">
+        <div class="progress-bar bg-color10 text-color11 font-weight-bolder h4 mb-0 rounded-0" role="progressbar"
+          class="w-25" aria-valuenow="<%- row.value %>" aria-valuemin="0" aria-valuemax="100"
+          <%- 'style=width:' %><%- row.value %>%> <span
+            class="sm3"><%- row.value? row.value.toFixed(2) : row.value %></span>
+        </div>
+      </div>
+    </div>
+    <!-- % growth code -->
+    <div class="d-flex align-items-center col-4 px-0">
+      <h5
+        class="ind-p-change mb-0 <%- (row.change < 0) ? 'text-danger' : ((!isFinite(row.change) || (row.change == 0)) ? 'text-warning' : 'text-color20') %> lh-1 font-weight-bold align-self-end">
+        <span class="d-block sm2">
+          <i class="pr-1 fa <%- (row.change < 0) ? 'fa-caret-down' : ((!isFinite(row.change) || (row.change == 0)) ? '' : 'fa-caret-up') %>"
+            aria-hidden="true"></i><%- isFinite(row.change) ? _.round(row.change ,1)+ '%' : '-' %></span></h5>
+      <% var period_type = url.searchKey.type %>
+      <% var period_dict = {'year': 'PY', 'month': 'PM', 'quarter': 'PQ' } %>
+      <h6 class="mb-0 text-color1 opacity-50 font-weight-normal ml-1">
+        <span class="sm2 d-block">vs <%=period_dict[period_type]%></span>
+      </h6>
+    </div>
+  </div>
+  <!-- chart code -->
+  <div class="card-body py-1">
+    <div class="py-0 border-0 pa-area-chart w-100 <%- slug_(row[area]) %>">
+      <% setTimeout(function() { %>
+      <% var _data = chart_data[row[area]]; render_area_chart(_data, slug_(row[area])); %>
+      <% },250) %>
+    </div>
+  </div>
+  <div class="card-footer bg-transparent py-0 border-top border-color13 cd-foter d-none">
+    <div class="d-flex justify-content-between justify-content-center h3 mb-0">
+      <a href="#" class="sm3 font-weight-bolder border-right border-color13 px-0 col text-center py-3"
+        data-toggle="modal" data-target=".insights_bottom">Insights</a>
+      <a href="#" class="sm3 font-weight-bolder px-0 text-center col py-3 explore_<%-view_name%> ">explore <span
+          class="pl-2"><img src="img/arrow-blue.svg" alt="arrow-blue"></span></a>
+    </div>
+  </div>
+</div>
+<% }) %>

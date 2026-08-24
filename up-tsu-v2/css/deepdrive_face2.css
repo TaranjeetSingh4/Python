@@ -1,0 +1,37 @@
+.deepdrive.card-header > a:before {
+  margin-top: 5px !important;
+}
+.bg-custom-table1 {
+  background-color: #e09c24;
+}
+.table .thead-light th {
+  border-bottom: 0 !important;
+  border-top: 0 !important;
+  border-right: 1px solid #fff;
+}
+.bg-lighten,
+.custom-table-factory .table .thead-light th {
+  background-color: #eaeef2;
+}
+.bg-table-clr {
+  background-color: #f6f6f6 !important;
+}
+.bg-table-clr2 {
+  background-color: #d7edc9 !important;
+}
+.bg-table-clr3 {
+  background-color: #9fd47d !important;
+}
+.bg-table-clr4 {
+  background-color: #e7aead !important;
+}
+.custom-table-factory .table td,
+.custom-table-factory .table th {
+  padding: 0.75rem;
+}
+.w-40 {
+  width: 40%;
+}
+.w-20 {
+  width: 20%;
+}

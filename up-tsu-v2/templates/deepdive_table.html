@@ -1,0 +1,244 @@
+<div class="d-flex nav-fill nav sm3 font-weight-bold border border-left-0 border-right-0 border-top-0 border-white bg-lighten">
+  <% url = g1.url.parse(location.href) %>
+  <% var ind_param = (url.file == 'deepdive')?'composite_score':'% ANC registered in First trimester'%>
+  <% url_indicator = url.searchKey['indicator'] || ind_param  %>
+  <% indicator_unit = _.find(indicator_mapping, {indicator_name: url_indicator}).unit  %>
+
+  <% if(type !== 'indicator') { %>
+  <div class="nav-item w-5 py-2 border border-left-0 border-bottom-0 border-top-0 text-capitalize"></div><%}%>
+  <div class="nav-item <% if(type !== 'indicator'){ %>col-sort w-15<%}else{%>w-20<%}%> py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize" id="table-header" data-attr="name">
+  All <%-type %>s <% if(type !== 'indicator') { %><i class="ml-3 fa fa-sort"></i><% } %></div>
+  <% if(type === 'indicator') { %>
+  <div class="nav-item w-20 py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize font-italic">UP Avg</div>
+  <div class="nav-item w-20 py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize font-italic">Best Perf.</div>
+  <% } %>
+  <% if (selection === 'month' && type === 'indicator'){ %>
+    <div class="nav-item w-20 py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize font-italic col-sort cursor-pointer" data-attr="monthly">Monthly</div>
+    <div class="nav-item w-20 py-2 text-capitalize font-italic col-sort cursor-pointer" data-attr="fin_year">Financial Year</i></div>
+  <% } %>
+  <%if(type !== 'indicator') { %><div class="nav-item w-20 py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize font-italic col-sort cursor-pointer" data-attr="rank">
+  Rank <i class="ml-3 fa fa-sort"></i> </div> <% } %>
+  <% if(selection === 'month' && type !== 'indicator') { %>
+  <div class="nav-item w-20 py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize font-italic col-sort cursor-pointer" data-attr="monthly">Monthly <i class="ml-3 fa fa-sort"></i></div>
+  <div class="nav-item w-20 py-2 text-capitalize font-italic col-sort cursor-pointer" data-attr="fin_year">Financial Year
+    <i class="ml-3 fa fa-sort"></i></div> <% } %>
+  <% if(selection === 'quarter'){ %>
+  <div class="nav-item w-20 py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize font-italic col-sort cursor-pointer" data-attr="quarterly" >Quarterly <i class="ml-3 fa fa-sort"></i></div>
+  <div class="nav-item w-20 py-2 text-capitalize font-italic col-sort cursor-pointer" data-attr="fin_year">Financial Year
+    <i class="ml-3 fa fa-sort"></i></div>
+  <% } %>
+  <% if(selection === 'year'){ %>
+    <!-- <div class="nav-item w-20 py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize font-italic col-sort cursor-pointer" data-attr="quarterly" >Quarterly <i class="ml-3 fa fa-sort"></i></div> -->
+    <div class="nav-item w-20 py-2 text-capitalize font-italic col-sort cursor-pointer" data-attr="fin_year">Financial Year
+      <i class="ml-3 fa fa-sort"></i></div>
+  <% } %>
+</div>
+
+<% if(type === 'district') { %>
+  <div class="deepdive-table mb-5 pb-4" id="level-one">
+    <% _.each(level_one_data, function(row) { %>
+      <div class="card border-0 rounded-0">
+        <div class="p-0 border border-left-0 border-right-0 border-top-0 border-white">
+          <a class="card-link p-0">
+            <div class="d-flex nav-fill nav sm3 font-weight-bold border border-left-0 border-right-0 border-top-0 border-white">
+              <% if(row.next) { %>
+                <div class="w-5 nav-item bg-table-clr cursor-pointer level-one text-middle <%-row.name.split(' ').join('_')%>" data-toggle="collapse" href="#<%-row.name.toLowerCase().split(' ').join('_')%>" >
+                <i class="p-2 fa fa-plus text-primary" data-attr="district" ></i></div>
+              <% }else { %>
+                <div class="w-5 nav-item bg-table-clr cursor-pointer level-one" ></div>
+              <% } %>
+            <div class="w-15 nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize  bg-table-clr <%- row.next ? 'cursor-pointer district-name': ''%>" data-val="<%-row.name.toLowerCase().split(' ').join('_')%>" data-attr="<%- row.name %>"><%- row.name %></div>
+            <div class="w-20 bg-table-clr nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize"><%- row.rank %></div>
+            <% if(selection === 'month') { %>
+            <% l1_dis_domain_month_max = level_one_domain['monthly'] ? level_one_domain['monthly']['monthly'] : 0 %>
+            <% l1_dis_domain_month_min = level_one_domain['monthly_min'] ? level_one_domain['monthly_min']['monthly'] : 0 %>
+            <div class="w-20 color-cell nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize" value="<%-row.monthly%>" domain-attr="<%- l1_dis_domain_month_max %>" domain-attr_min="<%- l1_dis_domain_month_min %>"><%- (indicator_unit == 'Rs' && row.monthly !== undefined) ? numeral(_.round(row.monthly, 2)).format('0,0.00') : _.round(row.monthly, 2) || 0 %> <%- indicator_unit %></div>
+            <% } %>
+            <% if(selection === 'quarter') { %>
+            <% l1_dis_domain_quarter_max = level_one_domain['quarterly'] ? level_one_domain['quarterly']['quarterly'] : 0 %>
+            <% l1_dis_domain_quarter_min = level_one_domain['quarterly_min'] ? level_one_domain['quarterly_min']['quarterly'] : 0 %>
+            <div class="w-20 color-cell nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize" value="<%-row.quarterly%>" domain-attr="<%- l1_dis_domain_quarter_max %>" domain-attr_min="<%- l1_dis_domain_quarter_min %>"><%- (indicator_unit == 'Rs' && row.quarterly !== undefined) ? numeral(_.round(row.quarterly, 2)).format('0,0.00') : _.round(row.quarterly, 2) || 0 %> <%- indicator_unit %></div>
+            <% } %>
+            <% l1_dis_domain_fin_year_max = level_one_domain['fin_year'] ? level_one_domain['fin_year']['fin_year'] : 0 %>
+            <% l1_dis_domain_fin_year_min = level_one_domain['fin_year_min'] ? level_one_domain['fin_year_min']['fin_year'] : 0 %>
+            <div class="w-20 color-cell nav-item py-2 text-capitalize" value="<%-row.fin_year%>" domain-attr="<%- l1_dis_domain_fin_year_max %>" domain-attr_min="<%- l1_dis_domain_fin_year_min %>"><%- (indicator_unit == 'Rs' && row.fin_year !== undefined) ? numeral(_.round(row.fin_year, 2)).format('0,0.00') :_.round(row.fin_year, 2) || 0 %> <%- indicator_unit %></div>
+          </div>
+          </a>
+        </div>
+      </div>
+      <div id="<%-row.name.toLowerCase().split(' ').join('_')%>" class="collapse" data-parent="#level-one">
+      <% _.each(level_two_data[row.name], function(item) { %>
+        <div class="card-body p-0">
+          <div id="<%-item.name.split(' ').join('_')%>">
+            <div class="card border-0 rounded-0">
+              <div class="p-0 border border-left-0 border-right-0 border-top-0 border-white">
+                <a class="card-link p-0">
+                  <div class="d-flex nav-fill nav sm3 font-weight-bold border border-left-0 border-right-0 border-top-0 border-white">
+                    <div class="w-5 nav-item bg-white"></div>
+                    <div class="w-15 nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize block-name cursor-pointer" data-attr="<%-item.name%>"><%-item.name%></div>
+                    <div class="w-20 nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize"><%-item.rank%></div>
+                    <% if(selection === 'month') { %>
+                      <% l3_block_domain_month_max = district_block_domain[item.district]['monthly'] ? district_block_domain[item.district]['monthly']['monthly'] : 0%>
+                      <% l3_block_domain_month_min = district_block_domain[item.district]['monthly_min'] ? district_block_domain[item.district]['monthly_min']['monthly'] : 0%>
+
+                    <div class="w-20 color-cell nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize" value="<%-item.monthly%>" domain-attr="<%- l3_block_domain_month_max %>" domain-attr_min="<%- l3_block_domain_month_min %>"><%- (indicator_unit == 'Rs' && row.monthly !== undefined) ? numeral(_.round(item.monthly, 2)).format('0,0.00') :_.round(item.monthly, 2) || (isFinite(item['monthly']) ? 0 : '0') %> <%- indicator_unit %></div><%}%>
+                    <% if(selection === 'quarter') { %>
+                      <% l3_block_domain_quarter_max = district_block_domain[item.district]['monthly'] ? district_block_domain[item.district]['monthly']['monthly'] : 0%>
+                      <% l3_block_domain_quarter_min = district_block_domain[item.district]['monthly_min'] ? district_block_domain[item.district]['monthly_min']['monthly'] : 0%>
+                    <div class="w-20 color-cell nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize" value="<%-item.quarterly%>" domain-attr="<%- l3_block_domain_quarter_max %>" domain-attr_min="<%- l3_block_domain_quarter_min %>"><%- (indicator_unit == 'Rs' && row.quarterly !== undefined) ? numeral(_.round(item.quarterly, 2)).format('0,0.00') : _.round(item.quarterly, 2) || (isFinite(item['quarterly']) ? 0 : '0') %> <%- indicator_unit %></div><% } %>
+
+                    <% l3_block_domain_fin_year_max = district_block_domain[item.district]['fin_year'] ? district_block_domain[item.district]['fin_year']['fin_year'] : 0%>
+                    <% l3_block_domain_fin_year_min = district_block_domain[item.district]['fin_year_min'] ? district_block_domain[item.district]['fin_year_min']['fin_year'] : 0%>
+                    <div class="w-20 color-cell nav-item py-2 text-capitalize" value="<%-item.fin_year%>" domain-attr="<%- l3_block_domain_fin_year_max %>" domain-attr_min="<%- l3_block_domain_fin_year_min %>"><%- (indicator_unit == 'Rs' && row.fin_year !== undefined) ? numeral(_.round(item.fin_year, 2)).format('0,0.00') :_.round(item.fin_year, 2) || (isFinite(item['fin_year']) ? 0 : '0') %> <%- indicator_unit %></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% }) %>
+      </div>
+    <% }) %>
+  </div>
+<% } else if(type === 'division'){ %>
+  <div class="deepdive-table pb-4" id="level-one">
+    <% _.each(level_one_data, function(row) { %>
+      <div class="card border-0 rounded-0">
+        <div class="p-0 border border-left-0 border-right-0 border-top-0 border-white">
+          <a class="card-link p-0">
+            <div class="d-flex nav-fill nav sm3 font-weight-bold border border-left-0 border-right-0 border-top-0 border-white">
+              <% if(row.next) { %>
+              <div class="w-5 nav-item bg-table-clr3 level-one cursor-pointer" data-toggle="collapse" href="#<%-row.name.toLowerCase().split(' ').join('_')%>" >
+              <i class="p-2 fa fa-plus text-primary" data-attr="division" ></i></div>
+              <%} else { %>
+                <div class="w-5 nav-item bg-table-clr3 cursor-pointer level-one" ></div>
+              <% } %>
+            <div class="w-15 nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize bg-table-clr3 <%- row.next ? 'cursor-pointer division-name': ''%>" data-val="<%-row.name.toLowerCase().split(' ').join('_')%>" data-attr="<%- row.name %>"><%- row.name %></div>
+            <div class="w-20 bg-table-clr3 nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize"><%- row.rank %></div>
+
+            <% if(selection === 'month') { %>
+            <% l1_div_domain_month_max = level_one_domain['monthly'] ? level_one_domain['monthly']['monthly'] : 0 %>
+            <% l1_div_domain_month_min = level_one_domain['monthly_min'] ? level_one_domain['monthly_min']['monthly'] : 0 %>
+            <div class="w-20 color-cell nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize" value="<%- row.monthly %>" domain-attr="<%- l1_div_domain_month_max %>" domain-attr_min="<%- l1_div_domain_month_min %>"><%- (indicator_unit == 'Rs' && row.monthly !== undefined) ? numeral(_.round(row.monthly, 2)).format('0,0.00') : _.round(row.monthly, 2) || 0 %> <%- indicator_unit %></div>
+            <% } %>
+
+
+            <% if(selection === 'quarter') { %>
+            <% l1_div_domain_quarter_max = level_one_domain['quarterly'] ? level_one_domain['quarterly']['quarterly'] : 0 %>
+            <% l1_div_domain_quarter_min = level_one_domain['quarterly_min'] ? level_one_domain['quarterly_min']['quarterly'] : 0 %>
+            <div class="w-20 color-cell nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize" value="<%- row.quarterly %>" domain-attr="<%- l1_div_domain_quarter_max %>" domain-attr_min="<%- l1_div_domain_quarter_min %>"><%- (indicator_unit == 'Rs' && row.quarterly !== undefined) ? numeral(_.round(row.quarterly, 2)).format('0,0.00') : _.round(row.quarterly, 2) || 0 %> <%- indicator_unit %></div>
+            <% } %>
+            <% l1_div_domain_fin_year_max = level_one_domain['fin_year'] ? level_one_domain['fin_year']['fin_year'] : 0 %>
+            <% l1_div_domain_fin_year_min = level_one_domain['fin_year_min'] ? level_one_domain['fin_year_min']['fin_year'] : 0 %>
+            <div class="w-20 color-cell nav-item py-2 text-capitalize" value="<%- row.fin_year %>" domain-attr="<%- l1_div_domain_fin_year_max %>" domain-attr_min="<%- l1_div_domain_fin_year_min %>"><%- (indicator_unit == 'Rs' && row.fin_year !== undefined) ? numeral(_.round(row.fin_year, 2)).format('0, 0.00') :_.round(row.fin_year, 2) || 0 %> <%- indicator_unit %></div>
+          </div>
+          </a>
+        </div>
+      </div>
+      <div id="<%-row.name.toLowerCase().split(' ').join('_')%>" class="collapse" data-parent="#level-one">
+      <% _.each(level_two_data[row.name], function(item) { %>
+        <div class="card-body p-0">
+          <div id="<%-item.name.split(' ').join('_')%>">
+            <div class="card border-0 rounded-0">
+              <div class="p-0 border border-left-0 border-right-0 border-top-0 border-white">
+                <a class="card-link p-0">
+                  <div class="d-flex nav-fill nav sm3 font-weight-bold border border-left-0 border-right-0 border-top-0 border-white">
+                    <div class="w-5 bg-table-clr2 nav-item level-two cursor-pointer text-middle" data-toggle="collapse" href="#<%-item.name.split(' ').join('_')%>-level-two">
+                    <i class="p-2 fa fa-plus text-primary" data-attr="district" parent-attr="<%-row.name.split(' ').join('_')%>"></i></div>
+                    <div class="w-15 nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize district-name bg-table-clr2 cursor-pointer" data-attr="<%-item.name%>"><%- item.name %></div>
+                    <div class="w-20 nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize bg-table-clr2"><%-item.rank%></div>
+                    <% if(selection === 'month') { %>
+                    <% l2_div_domain_month_max = level_two_domain['monthly'] ? level_two_domain['monthly']['monthly'] : 0 %>
+                    <% l2_div_domain_month_min = level_two_domain['monthly_min'] ? level_two_domain['monthly_min']['monthly'] : 0 %>
+                    <div class="w-20 color-cell nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize" value="<%-item.monthly%>" domain-attr="<%- l2_div_domain_month_max %>" domain-attr_min="<%- l2_div_domain_month_min %>">
+                    <%- (indicator_unit == 'Rs' && row.monthly !== undefined) ? numeral(_.round(item.monthly, 2)).format('0,0.00') : _.round(item.monthly, 2) || 0 %> <%- indicator_unit %></div><% } %>
+                    <% if(selection === 'quarter') { %>
+                    <% l2_div_domain_quarter_max = level_two_domain['quarterly'] ? level_two_domain['quarterly']['quarterly'] : 0 %>
+                    <% l2_div_domain_quarter_min = level_two_domain['quarterly_min'] ? level_two_domain['quarterly_min']['quarterly'] : 0 %>
+                    <div class="w-20 color-cell nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize" value="<%-item.quarterly%>" domain-attr="<%- l2_div_domain_quarter_max %>" domain-attr_min="<%- l2_div_domain_quarter_min %>" ><%- (indicator_unit == 'Rs' && row.quarterly !== undefined) ? numeral(_.round(item.quarterly, 2)).format('0,0.00') : _.round(item.quarterly, 2) || 0 %> <%- indicator_unit %> </div><% } %>
+                    <% l2_div_domain_fin_year_max = level_two_domain['fin_year'] ? level_two_domain['fin_year']['fin_year'] : 0 %>
+                    <% l2_div_domain_fin_year_min = level_two_domain['fin_year_min'] ? level_two_domain['fin_year_min']['fin_year'] : 0 %>
+                    <div class="w-20 color-cell nav-item py-2 text-capitalize" value="<%-item.fin_year%>" domain-attr="<%- l2_div_domain_fin_year_max %>" domain-attr_min="<%- l2_div_domain_fin_year_min %>"><%- (indicator_unit == 'Rs' && row.fin_year !== undefined) ? numeral(_.round(item.fin_year, 2)).format('0,0.00'): _.round(item.fin_year, 2) || 0 %> <%- indicator_unit %> </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="<%-item.name.split(' ').join('_')%>-level-two" class="collapse" data-parent="#<%-row.name.toLowerCase().split(' ').join('_')%>">
+          <% _.each(level_three_data[item.name], function(value){ %>
+            <div class="card-body p-0">
+              <div id="<%-value.name.split(' ').join('_')%>">
+                <div class="card border-0 rounded-0">
+                  <div class="p-0 border border-left-0 border-right-0 border-top-0 border-white">
+                    <a class="card-link p-0">
+                      <div class="d-flex nav-fill nav sm3 font-weight-bold border border-left-0 border-right-0 border-top-0 border-white">
+                        <div class="w-5 nav-item bg-white"></div>
+                        <div class="w-15 nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize block-name cursor-pointer" data-attr="<%-value.name%>"><%- value.name %></div>
+                        <div class="w-20 nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize"><%-value.rank%></div>
+                        <% if(selection === 'month') { %>
+                        <% l3_block_domain_month_max = district_block_domain[value.district]['monthly'] ? district_block_domain[value.district]['monthly']['monthly'] : 0%>
+                        <% l3_block_domain_month_min = district_block_domain[value.district]['monthly_min'] ? district_block_domain[value.district]['monthly_min']['monthly'] : 0%>
+                        <div class="w-20 color-cell nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize" value="<%-value.monthly%>" domain-attr="<%- l3_block_domain_month_max %>" domain-attr_min="<%- l3_block_domain_month_min %>"><%- (indicator_unit == 'Rs' && row.monthly !== undefined) ? numeral(_.round(value.monthly, 2)).format(0,0.00) : _.round(value.monthly, 2) || 0 %> <%- indicator_unit %></div><% } %>
+                        <% if(selection === 'quarter') { %>
+                        <% l3_block_domain_quarter_max = district_block_domain[value.district]['monthly'] ? district_block_domain[value.district]['monthly']['monthly'] : 0%>
+                        <% l3_block_domain_quarter_min = district_block_domain[value.district]['monthly_min'] ? district_block_domain[value.district]['monthly_min']['monthly'] : 0%>
+                        <div class="w-20 color-cell nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize" value="<%-value.quarterly%>" domain-attr="<%- l3_block_domain_quarter_max %>" domain-attr_min="<%- l3_block_domain_quarter_min %>"><%- (indicator_unit == 'Rs' && row.quarterly !== undefined) ? numeral(_.round(value.quarterly, 2)).format('0,0.00') : _.round(value.quarterly, 2)  || 0 %> <%- indicator_unit %></div><% } %>
+                        <% l3_block_domain_fin_year_max = district_block_domain[value.district]['fin_year'] ? district_block_domain[value.district]['fin_year']['fin_year'] : 0%>
+                        <% l3_block_domain_fin_year_min = district_block_domain[value.district]['fin_year_min'] ? district_block_domain[value.district]['fin_year_min']['fin_year'] : 0%>
+                        <div class="w-20 color-cell nav-item py-2 text-capitalize" value="<%-value.fin_year%>" domain-attr="<%- l3_block_domain_fin_year_max %>" domain-attr_min="<%- l3_block_domain_fin_year_min %>"><%- (indicator_unit == 'Rs' && row.fin_year !== undefined) ? numeral(_.round(value.fin_year, 2)).format('0,0.00') : _.round(value.fin_year, 2) || 0 %> <%- indicator_unit %></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% }) %>
+        </div>
+      <% }) %>
+      </div>
+    <% }) %>
+  </div>
+<% } else { %>
+  <div class="deepdive-table pb-4">
+    <% _.each(indicator_data, function(item) { %>
+    <% var indicator = _.find(mapping, {indicator_name: item.name}) %>
+      <div class="card-body p-0">
+        <div id="<%-item.name.split(' ').join('_')%>">
+          <div class="card border-0 rounded-0">
+            <div class="p-0 border border-left-0 border-right-0 border-top-0 border-white">
+              <a class="card-link p-0">
+                <div class="d-flex nav-fill nav sm3 font-weight-bold border border-left-0 border-right-0 border-top-0 border-white">
+                  <div class="w-20 pl-1 nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize"><%- indicator.short_name == "TB Notification Rate" ? "*"+indicator.short_name : indicator.short_name %></div>
+                  <div class="w-20 color-cell nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize" value="<%-item.avg%>" indicator_sign="<%- indicator.positive_negative %>" domain-attr="<%-item.avg_max%>" domain-attr_min="<%-item.avg_min%>">
+                    <%- item.avg ? (_.round(item.avg, 2) || 0 %> <%- indicator.unit) : '0' %>
+                  </div>
+                  <div class="w-20 color-cell nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize" value="<%- indicator.positive_negative == 'positive' ? item.max : item.min %>" indicator_sign="<%- indicator.positive_negative %>" domain-attr="<%-item.max%>" domain-attr_min="<%-item.min%>">
+                    <% var actual_val = indicator.positive_negative == 'positive' ? item.max : item.min %>
+                    <%- actual_val ? (_.round(actual_val, 2) || 0 %> <%- indicator.unit) : '0' %>
+                  </div>
+                  <% if(selection === 'month') { %>
+                    <div class="w-20 color-cell nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize" value="<%-item.monthly%>" indicator_sign="<%- indicator.positive_negative %>" domain-attr="<%-item.max%>" domain-attr_min="<%-item.min%>">
+                      <%- item.monthly ? (_.round(item.monthly, 2) || 0 %> <%- indicator.unit) : '0' %>
+                    </div>
+                  <% } %>
+                  <% if(selection === 'quarter') { %>
+                    <div class="w-20 color-cell nav-item py-2 border border-left-0 border-bottom-0 border-top-0 border-white text-capitalize" value="<%-item.quarterly%>" indicator_sign="<%- indicator.positive_negative %>" domain-attr="<%-item.max%>" domain-attr_min="<%-item.min%>">
+                      <%- item.quarterly ? (_.round(item.quarterly, 2) || 0 %> <%- indicator.unit) : '0' %>
+                    </div>
+                  <% } %>
+                  <div class="w-20 color-cell nav-item py-2 text-capitalize" value="<%-item.fin_year%>" indicator_sign="<%- indicator.positive_negative %>" domain-attr="<%-item.fy_max%>" domain-attr_min="<%-item.fy_min%>">
+                    <%- item.fin_year ? (_.round(item.fin_year, 2) || 0 %> <%- indicator.unit) : '0' %>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% }) %>
+    <%if(url.file != "niti_deepdive") { %>
+      <p class="p-12 font-weight-bold">*<%- month %> month's data is fetched from Nikshay portal for calculating TB notification indicator</p>
+    <% }%>
+  </div>
+<% } %>

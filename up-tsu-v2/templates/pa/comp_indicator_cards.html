@@ -1,0 +1,97 @@
+<div id="map" class="pa-scorecards mt-23">
+  <div class="d-flex flex-nowrap pl-2 overflow-auto">
+    <% var slide = url.searchKey['slide'] || 0 %>
+    <% _.each(data, function(items, k) { %>
+    <% _.each(items[k], function(item, key) { %>
+    <div class="card border-radius mr-2 flex-90 mw-100">
+      <div class="card-body">
+        <h3 class="card-title text-color1 text-center"><span class="sm3 d-block font-weight-600">
+            <%- item.indicator %>
+          </span></h3>
+        <div class="text-left mt-4 pt-3 position-absolute r-0 mr-5">
+          <h4 class="mb-0"><span class="text-color25 sm3 d-block font-weight-bold">UP AVG.</span></h4>
+          <h6 class="text-color25 font-weight-bold"><%- item.avg ? item.avg.toFixed(2) : 'NA' %></h6>
+        </div>
+        <div class="">
+          <div class="map-div" id="ind-<%- slug_(item.indicator) %>-map">
+            <% setTimeout(function() { %>
+            <% var map_config = data['map_config']; map_config.data = item[item.indicator]; map_config.max=item.best; map_config.map_id = 'ind-'+slug_(item.indicator)+'-map'  %>
+            <% map_config.data_attr = 'district'; map_config.isCompare = true; compare_map(map_config) %>
+            <% },500) %>
+          </div>
+          <i class="fa fa-spin fa-circle-notch text-color5 opacity-20 spin-icon"></i>
+        </div>
+        <div class="col px-0 mt-2">
+          <ol class="d-block h4 mb-0 pl-0">
+            <% _.each(regions, function(region) { %>
+            <li class="d-flex nav-item sm3 mb-2 font-weight-bold justify-content-around">
+              <h4 class="font-weight-600 text-color1 col-5 px-0"><span
+                  class="sm3 d-block"><%- region.toUpperCase() %></span>
+              </h4>
+              <h4 class="font-weight-800 <%- item.scores[region] > 0 ? 'text-dark': 'text-danger' %> col-2 px-0"><span
+                  class="sm3 d-block"><%- item.scores[region] ? item.scores[region].toFixed(2) : 'NA'  %></span></h4>
+              <h4 class="text-color1 d-flex mb-0 col-2 px-0"><span class="d-block mt-n1 lh-1">
+                  <% var change = _.filter(item[item.indicator], function(d) { if(d[comp_type] == region) return d }) %>
+                  <i class="fa <%- (change[0] && isFinite(change[0].change)) ? ((change[0] && isFinite(change[0].change) && change[0].change > 0) ? 'fa-caret-up text-color20' : 'fa-caret-down text-danger'): '' %> mr-2"
+                    aria-hidden="true"></i></span><span
+                  class="sm3 d-inline-block"><%- (change[0] && isFinite(change[0].change)) ?  change[0].change.toFixed(1) : 'NA' %></span>
+              </h4>
+            </li>
+            <% }) %>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <% }) %>
+    <% }) %>
+  </div>
+  <script class="no-data" src="templates/pa/no_data.html" type="text/html"></script>
+</div>
+<div id="trends" class="pa-scorecards mt-23">
+  <div class="d-flex flex-nowrap pl-2 overflow-auto">
+    <% var reg = _.cloneDeep(regions.sort()) %>
+    <% reg.push('up value') %>
+    <% _.each(data, function(items, k) { %>
+    <% _.each(items[k], function(item, key) { %>
+    <div class="card border-radius mw-100 flex-90 mr-2">
+      <div class="card-body">
+        <h3 class="card-title text-color1 text-center"><span
+            class="sm3 d-block font-weight-600"><%- item.indicator %></span></h3>
+        <div class="text-center">
+          <div class="trend-div" id="<%- slug_(item.indicator) %>">
+            <% setTimeout(function() { %>
+            <% var spec_data = get_trend_line_data(chart_data[item.indicator_id], up_data[item.indicator_id]); render_multi_line_chart(spec_data, '#' + slug_(item.indicator)); %>
+            <% },250) %>
+          </div>
+        </div>
+        <div class="col px-0 mt-3">
+          <% var i = 0, disp_txt = "" %>
+          <% for(i=0; _.size(reg) > i; i=i+2) { %>
+          <% disp_txt = _.includes(reg[i], 'Division')?_.replace(reg[i], "Division", "Div"):reg[i] %>
+          <div class="d-flex justify-content-between">
+            <div class=" h4 mb-0 d-flex align-items-center col-6 mr-4 px-0">
+              <span class="d-block mr-2"
+                <%- 'style=color:' %><%- (_.includes(['up value'], reg[i])) ? 'grey' : color_arr[i] %>><i
+                  class="fa fa-minus" aria-hidden="true"></i></span>
+              <span class="d-block text-color1 font-weight-600 sm3"><%- disp_txt.toUpperCase() %></span>
+            </div>
+            <% var x = i+1 %>
+            <% disp_txt = _.includes(reg[x], 'Division')?_.replace(reg[x], "Division", "Div"):reg[x] %>
+            <% if(_.size(reg) > x) { %>
+            <div class="h4 mb-0 d-flex align-items-center col-6 px-0">
+              <span class="d-block mr-2"
+                <%- 'style=color:' %><%- (_.includes(['up value'], reg[x])) ? 'grey' : color_arr[x] %>><i
+                  class="fa fa-minus" aria-hidden="true"></i></span>
+              <span class="d-block text-color1 font-weight-600 sm3"><%- disp_txt.toUpperCase() %></span>
+            </div>
+            <% } %>
+          </div>
+          <% } %>
+        </div>
+      </div>
+    </div>
+    <% }) %>
+    <% }) %>
+  </div>
+  <script class="no-data" src="templates/pa/no_data.html" type="text/html"></script>
+</div>
